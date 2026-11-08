@@ -60,7 +60,7 @@ function Wires({ paths, id }: { paths: PathSpec[]; id: string }) {
   );
 }
 
-export function ConceptMap({ data, onBranch }: { data: ConceptMapData; onBranch?: (id: string) => void }) {
+export function ConceptMap({ data, onBranch, seq }: { data: ConceptMapData; onBranch?: (id: string) => void; /** Número de secuencia por rama (opcional). */ seq?: Record<string, string> }) {
   const ref = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState<string | null>(null);
   const paths = useConnectors(ref, [data], (q, box) => {
@@ -124,7 +124,7 @@ export function ConceptMap({ data, onBranch }: { data: ConceptMapData; onBranch?
           </div>
         ))}
       </div>
-      <div className="cmap__branches" style={{ gridTemplateColumns: `repeat(${Math.min(data.branches.length, 4)}, minmax(0, 1fr))` }}>
+      <div className="cmap__branches" style={{ gridTemplateColumns: `repeat(${Math.min(data.branches.length, seq ? 5 : 4)}, minmax(0, 1fr))` }}>
         {data.branches.map((b) => (
           <button
             key={b.id}
@@ -138,7 +138,10 @@ export function ConceptMap({ data, onBranch }: { data: ConceptMapData; onBranch?
             onBlur={() => setActive(null)}
             onClick={() => onBranch?.(b.id)}
           >
-            <span className="cmap__branch-title">{b.label}</span>
+            <span className="cmap__branch-title">
+              {seq?.[b.id] && <span className="cmap__seq">{seq[b.id]}</span>}
+              {b.label}
+            </span>
             <ul>
               {b.items.map((it, i) => (
                 <li key={i}>{it}</li>

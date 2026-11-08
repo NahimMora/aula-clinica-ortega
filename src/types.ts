@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react';
 import type { Escena } from './escenas/tipos';
 import type { VisualBlock } from './visual/tipos';
+import type { PlanEstudio } from './estudio/tipos';
 
 /** Prioridad pedagógica de un subtema.
  *  - imprescindible: el profesor indica expresamente que se evalúa o lo enfatiza.
@@ -149,6 +150,8 @@ export interface Chapter {
   escenas?: Escena[];
   /** Hay narración por paso en public/media/<id>/pasos/ (la genera `npm run tts`). */
   audioPasos?: boolean;
+  /** Piloto Aula Clínica 2.0: si existe, el capítulo se muestra por pestañas (src/estudio). */
+  estudio?: PlanEstudio;
 }
 
 export interface ChapterMeta {

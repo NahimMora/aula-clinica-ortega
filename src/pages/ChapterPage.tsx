@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { lazy, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import type { Chapter, TheorySection } from '@/types';
 import { findChapter, findSystem, neighbours } from '@content/curriculum';
@@ -14,6 +14,9 @@ import { AnimContext } from '@/components/Anim';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { devPending, lastAttempt, markVisited, setCompleted, setLast, toggleBookmark, useProgress } from '@/lib/progress';
 import { NotFound, Loading } from './Misc';
+
+// Piloto por pestañas: se descarga solo para los capítulos que lo declaran.
+const StudyView = lazy(() => import('@/estudio/StudyView'));
 
 interface SectionDef {
   id: string;
@@ -47,6 +50,7 @@ export function ChapterPage() {
   if (state.status === 'loading') return <Loading label="Cargando capítulo…" />;
   if (state.status === 'missing') return <SoonChapter id={meta.id} />;
   if (state.status === 'error') return <NotFound message={`No se pudo cargar el capítulo (${state.error}).`} />;
+  if (state.chapter.estudio) return <StudyView c={state.chapter} />;
   return <ChapterView c={state.chapter} />;
 }
 

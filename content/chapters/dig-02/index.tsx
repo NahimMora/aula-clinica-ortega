@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { estudio } from './estudio';
 
 /*
  * dig-02 — Dolor abdominal y abdomen agudo.
@@ -808,6 +809,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  estudio,
   diagrams: {},
 };
 

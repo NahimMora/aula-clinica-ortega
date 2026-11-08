@@ -54,6 +54,14 @@ Instrucciones originales completas del proyecto: ver `docs/progress/PLAN.md` (or
 - Se eliminaron: @remotion/player en la web (SlideDeck/SlidesBlock, `src/video/kit.tsx`), `slides.tsx`, `narration.json`, `timing.json`, la página «Teoría por pasos».
 - `content/maneuvers/index.ts`, `content/sources.ts`, `content/traceability/<id>.md`, `src/lib/progress.ts` (localStorage `aula-clinica-ortega:v1`) igual que antes.
 
+## 4b. Piloto «Aula Clínica 2.0» (solo dig-02, en evaluación)
+- **No escalar a otros capítulos hasta que la usuaria evalúe el piloto.**
+- Un capítulo lo activa con `estudio` (`src/types.ts`). Sin ese campo se sigue usando la página clásica; `StudyView` se carga diferido.
+- `src/estudio/`: `tipos.ts` (bloques y plan), `StudyView.tsx` (pestañas, persistencia, modo repaso, ?t= y ?s=), `bloques.tsx` (render; `desde` reutiliza bloques de `theory`, `escena` reutiliza escenas de abdomen), `figuras.tsx`. Estilos aislados bajo `.estudio` en `src/styles/estudio.css`.
+- Contenido: `content/chapters/dig-02/estudio.ts` organiza lo existente y agrega la fisiopatología (bloques `mecanismo`, `precision`). `theory`, choice, desarrollos y memoria siguen en `index.tsx`: manual, PDF, buscador y práctica no cambian.
+- `ConceptMap` admite `seq` opcional (número por rama).
+- Recursos y licencias: `content/traceability/dig-02.md`. Prueba: `node scripts/test-estudio.mjs <url> dig-02 <carpeta>`.
+
 ## 5. Comandos
 ```bash
 npm install
