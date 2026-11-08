@@ -105,3 +105,4 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 ## 9. Bitácora
 - 2026-11-07 — Inventario, arquitectura, Etapa 1 y dig-01 publicados y verificados.
 - 2026-11-08 — Feedback de la usuaria (sección 2). Se crea este HANDOFF.
+- 2026-11-08 (tarde) — Video dig-01 re-renderizado (6:18) y diapositivas paso a paso; verificado en la URL pública (check-video + interaction-test 14/14).
