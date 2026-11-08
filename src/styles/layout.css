@@ -320,3 +320,4 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
   .sysp__head { flex-direction: column; padding: 20px; }
   .soon { padding: 24px; }
 }
+.hero__cta .btn { white-space: normal; text-align: left; }

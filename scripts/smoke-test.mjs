@@ -22,7 +22,8 @@ for (const [vw, vh, tag] of [[1440, 900, 'desk'], [390, 844, 'mob']]) {
     const errs = [];
     page.on('console', (m) => m.type() === 'error' && errs.push(`console: ${m.text()}`));
     page.on('pageerror', (e) => errs.push(`pageerror: ${e.message}`));
-    page.on('requestfailed', (q) => !q.url().includes('youtube') && errs.push(`requestfailed: ${q.url()} ${q.failure()?.errorText}`));
+    // Los medios se piden por rangos y el navegador aborta la descarga tras leer metadatos: no es un error.
+    page.on('requestfailed', (q) => !q.url().includes('youtube') && !(/\.(mp4|mp3)$/.test(q.url()) && q.failure()?.errorText === 'net::ERR_ABORTED') && errs.push(`requestfailed: ${q.url()} ${q.failure()?.errorText}`));
     page.on('response', (s) => s.status() >= 400 && !s.url().includes('youtube') && errs.push(`HTTP ${s.status()}: ${s.url()}`));
     const url = base.replace(/\/$/, '') + '/#' + r;
     await page.goto(url, { waitUntil: 'load', timeout: 60000 });
