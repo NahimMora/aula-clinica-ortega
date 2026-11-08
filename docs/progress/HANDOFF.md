@@ -74,10 +74,11 @@ Chrome para puppeteer: `C:/Program Files/Google/Chrome/Application/chrome.exe`. 
 
 Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i "sources/local/maneuvers/Semiología Médica Argente Álvarez.mp4" -frames:v 1 ...` y armar hoja con `scripts/contact_sheet.py`. La duración local coincide con YouTube (14 522 s), así que los segundos sirven para el embed.
 
-## 6. Estado
-- Etapa 1 (estructura) y **dig-01** publicados y verificados (ver `STATUS.md`).
-- **dig-01 debe REESCRIBIRSE** según la sección 2: más conciso, centrado en lo que dice el profe, preguntas de examen destacadas, fisiopatología del libro, sin relleno de bibliografía.
-- Maniobras verificadas hasta ahora: boca/orofaringe (3008–3090 s), supraclaviculares (1936–1982 s), bazuqueo (9594–9644 s).
+## 6. Estado (2026-11-08, noche)
+- Publicados y verificados (interaction-test + check:content): **dig-01 a dig-05**. Cada capítulo: mapa, «Lo que toma» (P0/P1 con cita textual verificada), fichas visuales (bloques de `src/visual` + explicaciones animadas `anim`), choice, desarrollos, memoria, cierre.
+- dig-04 (ictericia): no hay clase grabada; el profe remite al apunte = libro p. 10–15 (es su material) y avisa en MC6 16:23 que se toma.
+- dig-05: biblioteca de maniobras ampliada a 17 (abdomen, ascitis, puntos, hígado, bazo, vesícula), fragmentos del video Argente verificados por fotogramas (capítulos 21–27).
+- Videos por capítulo: solo dig-01 tiene video (el viejo, 6:18). Las explicaciones animadas no tienen audio todavía salvo dig-01 (`audioPasos`). Pendiente: `npm run tts` + render para los nuevos.
 
 ## 7. Próximos pasos (en orden)
 1. Estudiar `C:\Claude\semiologia-ortega` (nefro) y `C:\Claude\farrmaco` → anotar acá el patrón a seguir.
