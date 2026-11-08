@@ -4,7 +4,7 @@ import { ChoiceBar, Donut, Flow, PAL, type FlowNode } from '@/components/diagram
 import type { Tone } from '@/types';
 
 /** Texto multilínea para SVG. */
-function T({ x, y, lines, size = 12, weight = 400, fill = '#554a5e', anchor = 'start', lh = 1.3 }: { x: number; y: number; lines: string[]; size?: number; weight?: number; fill?: string; anchor?: 'start' | 'middle' | 'end'; lh?: number }) {
+function T({ x, y, lines, size = 12, weight = 400, fill = 'var(--d-text-2)', anchor = 'start', lh = 1.3 }: { x: number; y: number; lines: string[]; size?: number; weight?: number; fill?: string; anchor?: 'start' | 'middle' | 'end'; lh?: number }) {
   return (
     <text x={x} y={y} fontSize={size} fontWeight={weight} fill={fill} textAnchor={anchor}>
       {lines.map((l, i) => (
@@ -48,12 +48,12 @@ export function TrayectoAlto() {
       ))}
       {STATIONS.map((s, i) => (
         <g key={s.name}>
-          <circle cx={X} cy={yOf(i)} r={s.ring ? 13 : 10} fill="#fff" stroke={PAL[s.tone].ink} strokeWidth={s.ring ? 5 : 3} />
+          <circle cx={X} cy={yOf(i)} r={s.ring ? 13 : 10} fill="var(--d-card)" stroke={PAL[s.tone].ink} strokeWidth={s.ring ? 5 : 3} />
           {s.ring && <circle cx={X} cy={yOf(i)} r={5} fill={PAL[s.tone].ink} />}
-          <text x={X + 26} y={yOf(i) - 3} fontSize={14} fontWeight={700} fill="#2b2331">
+          <text x={X + 26} y={yOf(i) - 3} fontSize={14} fontWeight={700} fill="var(--d-text)">
             {s.name}
           </text>
-          <text x={X + 26} y={yOf(i) + 14} fontSize={12} fill="#554a5e">
+          <text x={X + 26} y={yOf(i) + 14} fontSize={12} fill="var(--d-text-2)">
             {s.fn}
           </text>
         </g>
@@ -61,7 +61,7 @@ export function TrayectoAlto() {
       {bracket(0, 2, ['Disfagia', 'orofaríngea'], 'peach')}
       {bracket(3, 5, ['Disfagia', 'esofágica'], 'sky')}
       {bracket(6, 8, ['Dispepsia', '(abdomen superior)'], 'lilac')}
-      <text x={20} y={556} fontSize={11.5} fill="#85798c">
+      <text x={20} y={556} fontSize={11.5} fill="var(--d-text-3)">
         Los anillos marcan esfínteres. Náuseas y vómitos pueden originarse en cualquier tramo… o fuera del tubo digestivo.
       </text>
     </svg>
@@ -109,10 +109,10 @@ export function DeglucionFases() {
   const eesOpen = p >= 1;
   const tube = (d: string) => (
     <>
-      <path d={d} stroke="#d9ccc4" strokeWidth={34} strokeLinecap="round" fill="none" />
+      <path d={d} stroke="var(--d-line)" strokeWidth={34} strokeLinecap="round" fill="none" />
     </>
   );
-  const inner = (d: string) => <path d={d} stroke="#fff6f1" strokeWidth={27} strokeLinecap="round" fill="none" />;
+  const inner = (d: string) => <path d={d} stroke="var(--d-tube-in)" strokeWidth={27} strokeLinecap="round" fill="none" />;
   const paths = ['M60,140 L238,140', 'M238,140 L262,58', 'M246,140 L258,238', 'M242,238 L236,350', 'M274,238 L282,350'];
   return (
     <div className="dfig dfig--split">
@@ -133,24 +133,24 @@ export function DeglucionFases() {
           {paths.map((d) => (
             <g key={'i' + d}>{inner(d)}</g>
           ))}
-          <path d="M72,158 Q150,124 228,158 Z" fill="#f5c6d3" stroke="#e48fa8" strokeWidth={1.5} style={{ transform: p === 0 ? 'translateY(-5px)' : 'none', transition: 'transform .6s' }} />
+          <path d="M72,158 Q150,124 228,158 Z" fill="var(--d-rose-fill)" stroke="var(--d-rose-stroke)" strokeWidth={1.5} style={{ transform: p === 0 ? 'translateY(-5px)' : 'none', transition: 'transform .6s' }} />
           <g style={{ transform: `rotate(${velum}deg)`, transformOrigin: '226px 124px', transition: 'transform .6s' }}>
-            <line x1={226} y1={124} x2={258} y2={124} stroke="#b4506f" strokeWidth={6} strokeLinecap="round" />
+            <line x1={226} y1={124} x2={258} y2={124} stroke="var(--d-rose-ink)" strokeWidth={6} strokeLinecap="round" />
           </g>
           <g style={{ transform: `rotate(${epi}deg)`, transformOrigin: '232px 232px', transition: 'transform .6s' }}>
-            <line x1={232} y1={232} x2={260} y2={232} stroke="#7458b3" strokeWidth={6} strokeLinecap="round" />
+            <line x1={232} y1={232} x2={260} y2={232} stroke="var(--d-lilac-ink)" strokeWidth={6} strokeLinecap="round" />
           </g>
-          <line x1={eesOpen ? 261 : 268} y1={258} x2={eesOpen ? 261 : 268} y2={270} stroke="#2e5f88" strokeWidth={5} strokeLinecap="round" style={{ transition: 'all .5s' }} />
-          <line x1={eesOpen ? 295 : 288} y1={258} x2={eesOpen ? 295 : 288} y2={270} stroke="#2e5f88" strokeWidth={5} strokeLinecap="round" style={{ transition: 'all .5s' }} />
-          <circle r={11} fill="#933a58" style={{ transform: `translate(${bolus[0]}px, ${bolus[1]}px)`, transition: 'transform .8s ease-in-out' }} />
-          <T x={92} y={184} lines={['Cavidad oral']} size={13} weight={700} fill="#2b2331" />
+          <line x1={eesOpen ? 261 : 268} y1={258} x2={eesOpen ? 261 : 268} y2={270} stroke="var(--d-sky-ink)" strokeWidth={5} strokeLinecap="round" style={{ transition: 'all .5s' }} />
+          <line x1={eesOpen ? 295 : 288} y1={258} x2={eesOpen ? 295 : 288} y2={270} stroke="var(--d-sky-ink)" strokeWidth={5} strokeLinecap="round" style={{ transition: 'all .5s' }} />
+          <circle r={11} fill="var(--d-rose-ink)" style={{ transform: `translate(${bolus[0]}px, ${bolus[1]}px)`, transition: 'transform .8s ease-in-out' }} />
+          <T x={92} y={184} lines={['Cavidad oral']} size={13} weight={700} fill="var(--d-text)" />
           <T x={274} y={62} lines={['Nasofaringe']} size={12} />
           <T x={300} y={170} lines={['Faringe']} size={12} />
           <T x={128} y={300} lines={['Laringe →', 'tráquea']} size={12} anchor="start" />
           <T x={304} y={312} lines={['Esófago']} size={12} />
-          <T x={304} y={268} lines={['EES']} size={12} weight={700} fill="#2e5f88" />
-          <T x={220} y={108} lines={['velo del paladar']} size={11} fill="#933a58" anchor="end" />
-          <T x={150} y={232} lines={['epiglotis']} size={11} fill="#5b4394" />
+          <T x={304} y={268} lines={['EES']} size={12} weight={700} fill="var(--d-sky-ink)" />
+          <T x={220} y={108} lines={['velo del paladar']} size={11} fill="var(--d-rose-ink)" anchor="end" />
+          <T x={150} y={232} lines={['epiglotis']} size={11} fill="var(--d-lilac-ink)" />
         </svg>
         <div className="dlegend">
           <button className="btn btn--ghost btn--sm" onClick={() => setAuto((a) => !a)}>
@@ -165,7 +165,7 @@ export function DeglucionFases() {
               {i + 1}. {f.title} · <small>{f.kind}</small>
             </h5>
             <p style={{ margin: '0 0 6px' }}>{f.what}</p>
-            <p style={{ margin: 0, color: '#933a58' }}>
+            <p style={{ margin: 0, color: 'var(--d-rose-ink)' }}>
               <strong>Si falla:</strong> {f.fail}
             </p>
           </div>
@@ -181,7 +181,7 @@ const STOMACH =
   'M250,60 C238,30 268,14 300,22 C350,34 392,92 396,160 C400,232 356,292 292,306 C244,316 196,308 164,290 L150,282 L150,258 C180,266 216,266 246,254 C282,238 300,200 294,150 C290,110 282,84 276,62 Z';
 
 export function EstomagoFunciones() {
-  const lead = (x1: number, y1: number, x2: number, y2: number) => <path d={`M${x1},${y1} L${x2},${y2}`} stroke="#b9aab2" strokeWidth={1.2} strokeDasharray="3 3" />;
+  const lead = (x1: number, y1: number, x2: number, y2: number) => <path d={`M${x1},${y1} L${x2},${y2}`} stroke="var(--d-line-2)" strokeWidth={1.2} strokeDasharray="3 3" />;
   return (
     <svg viewBox="0 0 700 360" role="img" aria-label="Estómago esquemático con fundus, cuerpo, antro y píloro y la función de cada región">
       <defs>
@@ -189,30 +189,30 @@ export function EstomagoFunciones() {
           <path d={STOMACH} />
         </clipPath>
       </defs>
-      <path d="M250,0 L276,0 L276,64 L250,64 Z" fill="#dfedf9" stroke="#7fb0dc" strokeWidth={2} />
-      <path d="M150,262 C118,262 104,278 104,302 L104,360" fill="none" stroke="#d9ccc4" strokeWidth={30} />
-      <path d="M150,262 C118,262 104,278 104,302 L104,360" fill="none" stroke="#fff6f1" strokeWidth={24} />
+      <path d="M250,0 L276,0 L276,64 L250,64 Z" fill="var(--d-sky-fill)" stroke="var(--d-sky-stroke)" strokeWidth={2} />
+      <path d="M150,262 C118,262 104,278 104,302 L104,360" fill="none" stroke="var(--d-line)" strokeWidth={30} />
+      <path d="M150,262 C118,262 104,278 104,302 L104,360" fill="none" stroke="var(--d-tube-in)" strokeWidth={24} />
       <g clipPath="url(#stomclip)">
         <rect x={0} y={0} width={700} height={96} fill={PAL.lilac.fill} />
         <rect x={0} y={96} width={700} height={142} fill={PAL.rose.fill} />
         <rect x={0} y={238} width={700} height={130} fill={PAL.peach.fill} />
       </g>
-      <path d={STOMACH} fill="none" stroke="#85798c" strokeWidth={2.5} />
-      <line x1={150} y1={256} x2={150} y2={284} stroke="#2e5f88" strokeWidth={7} strokeLinecap="round" />
-      <circle cx={92} cy={330} r={5} fill="#96572a" />
-      <T x={40} y={352} lines={['papila de Vater']} size={11} fill="#96572a" />
+      <path d={STOMACH} fill="none" stroke="var(--d-text-3)" strokeWidth={2.5} />
+      <line x1={150} y1={256} x2={150} y2={284} stroke="var(--d-sky-ink)" strokeWidth={7} strokeLinecap="round" />
+      <circle cx={92} cy={330} r={5} fill="var(--d-peach-ink)" />
+      <T x={40} y={352} lines={['papila de Vater']} size={11} fill="var(--d-peach-ink)" />
       <T x={300} y={64} lines={['FUNDUS']} size={12} weight={700} fill={PAL.lilac.ink} anchor="middle" />
       <T x={340} y={172} lines={['CUERPO']} size={12} weight={700} fill={PAL.rose.ink} anchor="middle" />
       <T x={236} y={292} lines={['ANTRO']} size={12} weight={700} fill={PAL.peach.ink} anchor="middle" />
-      <T x={150} y={240} lines={['PÍLORO']} size={11} weight={700} fill="#2e5f88" anchor="middle" />
+      <T x={150} y={240} lines={['PÍLORO']} size={11} weight={700} fill="var(--d-sky-ink)" anchor="middle" />
       {lead(330, 50, 440, 42)}
       <T x={446} y={36} lines={['Fundus: acomodación', 'Se relaja al comer (reflejo vagal) y', 'recibe el alimento sin subir la presión.']} size={12} />
       {lead(380, 160, 440, 132)}
       <T x={446} y={126} lines={['Cuerpo: secreción', 'Células parietales: ácido clorhídrico y', 'factor intrínseco (absorción de B12).']} size={12} />
       {lead(300, 286, 440, 228)}
       <T x={446} y={222} lines={['Antro y píloro: vaciamiento', 'Trituran, mezclan y dosifican el paso', 'del contenido al duodeno.']} size={12} />
-      <rect x={440} y={282} width={252} height={70} rx={12} fill="#fff" stroke="#d9ccc4" />
-      <T x={452} y={302} lines={['Barrera mucosa: moco + bicarbonato +', 'prostaglandinas. Los AINEs bajan las', 'prostaglandinas; H. pylori la inflama.']} size={11.5} fill="#2b2331" />
+      <rect x={440} y={282} width={252} height={70} rx={12} fill="var(--d-card)" stroke="var(--d-line)" />
+      <T x={452} y={302} lines={['Barrera mucosa: moco + bicarbonato +', 'prostaglandinas. Los AINEs bajan las', 'prostaglandinas; H. pylori la inflama.']} size={11.5} fill="var(--d-text)" />
     </svg>
   );
 }
@@ -233,7 +233,7 @@ export function ReflejoVomito() {
     <svg viewBox="0 0 770 420" role="img" aria-label="Esquema del reflejo del vómito: cinco vías aferentes convergen en el centro del vómito del bulbo y producen náusea, arcadas y vómito">
       <defs>
         <marker id="vh" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-          <path d="M0,0 L10,5 L0,10 z" fill="#85798c" />
+          <path d="M0,0 L10,5 L0,10 z" fill="var(--d-text-3)" />
         </marker>
       </defs>
       {INPUTS.map((inp, i) => {
@@ -243,27 +243,27 @@ export function ReflejoVomito() {
             <rect x={8} y={y} width={244} height={66} rx={14} fill={PAL[inp.tone].fill} stroke={PAL[inp.tone].stroke} strokeWidth={1.5} />
             <T x={20} y={y + 22} lines={[inp.t]} size={13} weight={700} fill={PAL[inp.tone].ink} />
             <T x={20} y={y + 40} lines={inp.d} size={11.5} />
-            <path d={`M252,${y + 33} C 280,${y + 33} 280,${cy} 300,${cy}`} fill="none" stroke="#b9aab2" strokeWidth={1.8} markerEnd="url(#vh)" strokeDasharray={i === 4 ? '5 4' : undefined} />
+            <path d={`M252,${y + 33} C 280,${y + 33} 280,${cy} 300,${cy}`} fill="none" stroke="var(--d-line-2)" strokeWidth={1.8} markerEnd="url(#vh)" strokeDasharray={i === 4 ? '5 4' : undefined} />
           </g>
         );
       })}
-      <ellipse cx={395} cy={cy} rx={92} ry={52} fill="#2b2331" />
-      <T x={395} y={cy - 4} lines={['Centro del vómito']} size={15} weight={700} fill="#fff" anchor="middle" />
-      <T x={395} y={cy + 16} lines={['(bulbo raquídeo)']} size={12} fill="#e9dff0" anchor="middle" />
+      <ellipse cx={395} cy={cy} rx={92} ry={52} fill="var(--d-strong)" />
+      <T x={395} y={cy - 4} lines={['Centro del vómito']} size={15} weight={700} fill="var(--d-on-strong)" anchor="middle" />
+      <T x={395} y={cy + 16} lines={['(bulbo raquídeo)']} size={12} fill="var(--d-on-strong-2)" anchor="middle" />
       {[
         { t: 'Náusea', d: ['Deseo de vomitar; palidez,', 'sudoración, salivación'], y: 40 },
         { t: 'Arcadas', d: ['Contracciones rítmicas con', 'la glotis cerrada'], y: 172 },
         { t: 'Vómito', d: ['Diafragma + abdominales se contraen,', 'el EEI se relaja: expulsión'], y: 304 },
       ].map((o, i) => (
         <g key={o.t}>
-          <rect x={522} y={o.y} width={240} height={70} rx={14} fill="#fff" stroke="#d9ccc4" strokeWidth={1.5} />
-          <T x={536} y={o.y + 24} lines={[o.t]} size={14} weight={700} fill="#2b2331" />
+          <rect x={522} y={o.y} width={240} height={70} rx={14} fill="var(--d-card)" stroke="var(--d-line)" strokeWidth={1.5} />
+          <T x={536} y={o.y + 24} lines={[o.t]} size={14} weight={700} fill="var(--d-text)" />
           <T x={536} y={o.y + 42} lines={o.d} size={11.5} />
-          <path d={`M487,${cy} C 505,${cy} 500,${o.y + 35} 518,${o.y + 35}`} fill="none" stroke="#b9aab2" strokeWidth={1.8} markerEnd="url(#vh)" />
-          {i < 2 && <path d={`M642,${o.y + 70} L642,${o.y + 128}`} stroke="#85798c" strokeWidth={1.8} markerEnd="url(#vh)" />}
+          <path d={`M487,${cy} C 505,${cy} 500,${o.y + 35} 518,${o.y + 35}`} fill="none" stroke="var(--d-line-2)" strokeWidth={1.8} markerEnd="url(#vh)" />
+          {i < 2 && <path d={`M642,${o.y + 70} L642,${o.y + 128}`} stroke="var(--d-text-3)" strokeWidth={1.8} markerEnd="url(#vh)" />}
         </g>
       ))}
-      <T x={395} y={300} lines={['La HTE puede saltear la náusea', '(línea punteada): vómito en chorro.']} size={11.5} fill="#96572a" anchor="middle" />
+      <T x={395} y={300} lines={['La HTE puede saltear la náusea', '(línea punteada): vómito en chorro.']} size={11.5} fill="var(--d-peach-ink)" anchor="middle" />
     </svg>
   );
 }
@@ -314,24 +314,24 @@ export function DisfagiaDonde() {
           ]}
         />
         <svg viewBox="0 0 240 300" role="img" aria-label="Silueta que muestra dónde localiza el paciente la disfagia: cuello en la orofaríngea, detrás del esternón en la esofágica">
-          <circle cx={120} cy={50} r={32} fill="#f7efe9" stroke="#d9ccc4" strokeWidth={2} />
-          <path d="M104,80 L136,80 L138,116 L102,116 Z" fill="#f7efe9" stroke="#d9ccc4" strokeWidth={2} />
-          <path d="M44,300 L44,170 Q44,126 102,116 L138,116 Q196,126 196,170 L196,300 Z" fill="#f7efe9" stroke="#d9ccc4" strokeWidth={2} />
-          <path d="M120,92 L120,250" stroke="#7fb0dc" strokeWidth={6} strokeLinecap="round" opacity={0.5} />
+          <circle cx={120} cy={50} r={32} fill="var(--d-skin)" stroke="var(--d-line)" strokeWidth={2} />
+          <path d="M104,80 L136,80 L138,116 L102,116 Z" fill="var(--d-skin)" stroke="var(--d-line)" strokeWidth={2} />
+          <path d="M44,300 L44,170 Q44,126 102,116 L138,116 Q196,126 196,170 L196,300 Z" fill="var(--d-skin)" stroke="var(--d-line)" strokeWidth={2} />
+          <path d="M120,92 L120,250" stroke="var(--d-sky-stroke)" strokeWidth={6} strokeLinecap="round" opacity={0.5} />
           <g opacity={on('oro')} style={{ transition: 'opacity .3s' }}>
-            <circle cx={120} cy={100} r={18} fill="none" stroke="#e9a46d" strokeWidth={3}>
+            <circle cx={120} cy={100} r={18} fill="none" stroke="var(--d-peach-stroke)" strokeWidth={3}>
               <animate attributeName="r" values="12;20;12" dur="1.8s" repeatCount="indefinite" />
             </circle>
-            <circle cx={120} cy={100} r={6} fill="#96572a" />
-            <T x={150} y={98} lines={['"Acá, en la', 'garganta"']} size={11} fill="#96572a" />
+            <circle cx={120} cy={100} r={6} fill="var(--d-peach-ink)" />
+            <T x={150} y={98} lines={['"Acá, en la', 'garganta"']} size={11} fill="var(--d-peach-ink)" />
           </g>
           <g opacity={on('eso')} style={{ transition: 'opacity .3s' }}>
-            <circle cx={120} cy={180} r={18} fill="none" stroke="#7fb0dc" strokeWidth={3}>
+            <circle cx={120} cy={180} r={18} fill="none" stroke="var(--d-sky-stroke)" strokeWidth={3}>
               <animate attributeName="r" values="12;20;12" dur="1.8s" repeatCount="indefinite" />
             </circle>
-            <circle cx={120} cy={180} r={6} fill="#2e5f88" />
-            <circle cx={120} cy={244} r={5} fill="#2e5f88" opacity={0.6} />
-            <T x={150} y={178} lines={['"Se me traba', 'detrás del pecho"']} size={11} fill="#2e5f88" />
+            <circle cx={120} cy={180} r={6} fill="var(--d-sky-ink)" />
+            <circle cx={120} cy={244} r={5} fill="var(--d-sky-ink)" opacity={0.6} />
+            <T x={150} y={178} lines={['"Se me traba', 'detrás del pecho"']} size={11} fill="var(--d-sky-ink)" />
           </g>
         </svg>
       </div>
@@ -408,20 +408,20 @@ export function DisfagiaAlgoritmo() {
 function XRay({ children, label }: { children: ReactNode; label: string }) {
   return (
     <svg viewBox="0 0 200 300" role="img" aria-label={label}>
-      <rect x={0} y={0} width={200} height={300} rx={14} fill="#231c28" />
+      <rect x={0} y={0} width={200} height={300} rx={14} fill="var(--d-xray)" />
       {children}
     </svg>
   );
 }
 
 export function Esofagograma() {
-  const barium = '#efeaf3';
+  const barium = 'var(--d-barium)';
   return (
     <div className="layers-demo">
       <figure>
         <XRay label="Esofagograma normal: esófago de calibre uniforme que desemboca en el estómago">
           <path d="M92,20 L108,20 L110,212 C150,222 170,256 158,282 C146,300 80,298 74,280 C68,258 80,234 94,222 Z" fill={barium} />
-          <ellipse cx={136} cy={238} rx={16} ry={9} fill="#231c28" opacity={0.85} />
+          <ellipse cx={136} cy={238} rx={16} ry={9} fill="var(--d-xray)" opacity={0.85} />
         </XRay>
         <figcaption>
           <strong>Normal</strong>
@@ -437,13 +437,13 @@ export function Esofagograma() {
             </clipPath>
           </defs>
           <g clipPath="url(#acal)">
-            <rect x={0} y={0} width={200} height={110} fill="#5a5062" />
+            <rect x={0} y={0} width={200} height={110} fill="var(--d-air)" />
             <rect x={0} y={110} width={200} height={200} fill={barium} />
           </g>
-          <line x1={58} y1={110} x2={150} y2={110} stroke="#fff" strokeWidth={1} strokeDasharray="3 3" opacity={0.7} />
+          <line x1={58} y1={110} x2={150} y2={110} stroke="var(--d-card)" strokeWidth={1} strokeDasharray="3 3" opacity={0.7} />
           <path d="M101,286 L102,298" stroke={barium} strokeWidth={2} />
-          <T x={150} y={106} lines={['nivel']} size={10} fill="#fff" />
-          <T x={116} y={282} lines={['pico de', 'pájaro']} size={10} fill="#f6d26b" />
+          <T x={150} y={106} lines={['nivel']} size={10} fill="var(--d-card)" />
+          <T x={116} y={282} lines={['pico de', 'pájaro']} size={10} fill="var(--gold-700)" />
         </XRay>
         <figcaption>
           <strong>Acalasia</strong>
@@ -457,8 +457,8 @@ export function Esofagograma() {
             d="M90,20 L90,118 L82,122 L97,128 L93,138 L99,147 L95,157 L100,166 L92,174 L82,178 L90,184 L90,226 C62,236 60,286 98,290 C142,292 146,240 110,226 L110,184 L118,178 L104,172 L108,162 L103,152 L107,143 L102,133 L117,124 L110,118 L110,20 Z"
             fill={barium}
           />
-          <path d="M122,124 L150,110" stroke="#f6d26b" strokeWidth={1.2} />
-          <T x={136} y={100} lines={['estenosis', 'irregular']} size={10} fill="#f6d26b" />
+          <path d="M122,124 L150,110" stroke="var(--gold-700)" strokeWidth={1.2} />
+          <T x={136} y={100} lines={['estenosis', 'irregular']} size={10} fill="var(--gold-700)" />
         </XRay>
         <figcaption>
           <strong>Cáncer de esófago</strong>
@@ -631,15 +631,15 @@ export function VomitoNivel() {
             const x = cx - s.w / 2;
             return (
               <g key={s.name}>
-                <rect x={x} y={s.y} width={s.w} height={s.h} rx={s.w > 60 ? 26 : 16} fill={on ? PAL[v.tone].fill : '#f6f1ee'} stroke={on ? PAL[v.tone].ink : '#d9ccc4'} strokeWidth={on ? 3 : 1.5} style={{ transition: 'all .3s' }} />
-                <text x={cx + s.w / 2 + 12} y={s.y + s.h / 2 + 4} fontSize={13} fontWeight={on ? 700 : 500} fill={on ? PAL[v.tone].ink : '#85798c'}>
+                <rect x={x} y={s.y} width={s.w} height={s.h} rx={s.w > 60 ? 26 : 16} fill={on ? PAL[v.tone].fill : 'var(--d-off)'} stroke={on ? PAL[v.tone].ink : 'var(--d-line)'} strokeWidth={on ? 3 : 1.5} style={{ transition: 'all .3s' }} />
+                <text x={cx + s.w / 2 + 12} y={s.y + s.h / 2 + 4} fontSize={13} fontWeight={on ? 700 : 500} fill={on ? PAL[v.tone].ink : 'var(--d-text-3)'}>
                   {s.name}
                 </text>
               </g>
             );
           })}
-          <circle cx={68} cy={232} r={4} fill="#96572a" />
-          <text x={60} y={236} fontSize={10.5} fill="#96572a" textAnchor="end">
+          <circle cx={68} cy={232} r={4} fill="var(--d-peach-ink)" />
+          <text x={60} y={236} fontSize={10.5} fill="var(--d-peach-ink)" textAnchor="end">
             papila
           </text>
         </svg>
@@ -690,24 +690,24 @@ function Wall({ variant }: { variant: 'normal' | 'mw' | 'boer' }) {
   return (
     <svg viewBox="0 0 160 160" role="img" aria-label={variant === 'normal' ? 'Corte transversal normal del esófago' : variant === 'mw' ? 'Desgarro limitado a la mucosa' : 'Rotura de todo el espesor de la pared'}>
       <circle cx={80} cy={80} r={62} fill={PAL.peach.fill} stroke={PAL.peach.stroke} strokeWidth={2} />
-      <circle cx={80} cy={80} r={44} fill="#fdf2f5" stroke={PAL.rose.stroke} strokeWidth={1.5} />
+      <circle cx={80} cy={80} r={44} fill="var(--d-rose-soft)" stroke={PAL.rose.stroke} strokeWidth={1.5} />
       <circle cx={80} cy={80} r={32} fill={PAL.rose.fill} stroke={PAL.rose.ink} strokeWidth={1.5} />
-      <circle cx={80} cy={80} r={16} fill="#fff" stroke="#d9ccc4" />
+      <circle cx={80} cy={80} r={16} fill="var(--d-card)" stroke="var(--d-line)" />
       {variant === 'mw' && (
         <>
-          <path d="M80,64 L74,48 L86,48 Z" fill="#b8435f" />
-          <circle cx={80} cy={72} r={2.5} fill="#b8435f" />
-          <circle cx={84} cy={76} r={2} fill="#b8435f" />
+          <path d="M80,64 L74,48 L86,48 Z" fill="var(--d-red)" />
+          <circle cx={80} cy={72} r={2.5} fill="var(--d-red)" />
+          <circle cx={84} cy={76} r={2} fill="var(--d-red)" />
         </>
       )}
       {variant === 'boer' && (
         <>
-          <path d="M77,64 L74,14 L86,14 L83,64 Z" fill="#b8435f" />
-          <path d="M80,12 L80,2" stroke="#b8435f" strokeWidth={2} />
-          <path d="M66,8 L58,0 M94,8 L102,0" stroke="#b8435f" strokeWidth={2} />
+          <path d="M77,64 L74,14 L86,14 L83,64 Z" fill="var(--d-red)" />
+          <path d="M80,12 L80,2" stroke="var(--d-red)" strokeWidth={2} />
+          <path d="M66,8 L58,0 M94,8 L102,0" stroke="var(--d-red)" strokeWidth={2} />
         </>
       )}
-      <text x={80} y={154} textAnchor="middle" fontSize={9} fill="#85798c">
+      <text x={80} y={154} textAnchor="middle" fontSize={9} fill="var(--d-text-3)">
         mucosa · submucosa · muscular
       </text>
     </svg>

@@ -7,18 +7,28 @@ import type { CSSProperties, FC, ReactNode } from 'react';
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from 'remotion';
 
 export const C = {
-  bg: '#fcf7f3',
-  ink: '#2b2331',
-  ink2: '#554a5e',
-  ink3: '#85798c',
-  line: '#e2d5cd',
-  rose: { fill: '#fbe3ea', stroke: '#e48fa8', ink: '#933a58' },
-  lilac: { fill: '#ece4f9', stroke: '#a98fdb', ink: '#5b4394' },
-  sky: { fill: '#dfedf9', stroke: '#7fb0dc', ink: '#2e5f88' },
-  mint: { fill: '#dbf0e6', stroke: '#5fb592', ink: '#2b6d54' },
-  peach: { fill: '#ffe7d4', stroke: '#e9a46d', ink: '#96572a' },
-  red: '#b8435f',
-  gold: '#f6d26b',
+  bg: '#16131b',
+  ink: '#f3eef6',
+  ink2: '#cfc5d8',
+  ink3: '#9a8fa7',
+  line: '#463d53',
+  card: '#241f2c',
+  tube: '#4a4056',
+  tubeIn: '#2b2434',
+  skin: '#2b2434',
+  track: '#2b2434',
+  xray: '#0f0c13',
+  barium: '#ece6f2',
+  air: '#4d4357',
+  strong: '#f3eef6',
+  onStrong: '#16131b',
+  rose: { fill: '#3a2431', stroke: '#e58fa9', ink: '#f9c3d3' },
+  lilac: { fill: '#302747', stroke: '#a98fdb', ink: '#dccffd' },
+  sky: { fill: '#203043', stroke: '#7fb0dc', ink: '#c4def8' },
+  mint: { fill: '#20352b', stroke: '#6fc29f', ink: '#b7ead2' },
+  peach: { fill: '#3a2b1f', stroke: '#e9a46d', ink: '#f9d2b2' },
+  red: '#f2879f',
+  gold: '#f6d98a',
 };
 export type ToneName = 'rose' | 'lilac' | 'sky' | 'mint' | 'peach';
 export const DISPLAY = "'Fraunces Variable', Georgia, serif";
@@ -96,11 +106,11 @@ export const Card: FC<{ tone?: ToneName; title?: string; tag?: string; children?
   return (
     <div
       style={{
-        background: `linear-gradient(160deg, ${c.fill}, #fff 80%)`,
+        background: `linear-gradient(160deg, ${c.fill}, ${C.card} 80%)`,
         border: `3px solid ${highlight ? c.ink : c.stroke}`,
         borderRadius: 28,
         padding: '26px 32px',
-        boxShadow: '0 18px 40px -22px rgba(95,60,115,.35)',
+        boxShadow: '0 18px 40px -22px rgba(0,0,0,.6)',
         fontFamily: BODY,
         color: C.ink2,
         fontSize: 30,

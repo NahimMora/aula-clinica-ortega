@@ -3,15 +3,9 @@ import type { Tone } from '@/types';
 import { Rich } from './Rich';
 
 /** Paleta en hex para SVG (los atributos de presentación no admiten var()). */
-export const PAL: Record<Tone | 'ink' | 'gray', { fill: string; stroke: string; ink: string }> = {
-  rose: { fill: '#fbe3ea', stroke: '#e48fa8', ink: '#933a58' },
-  lilac: { fill: '#ece4f9', stroke: '#a98fdb', ink: '#5b4394' },
-  sky: { fill: '#dfedf9', stroke: '#7fb0dc', ink: '#2e5f88' },
-  mint: { fill: '#dbf0e6', stroke: '#5fb592', ink: '#2b6d54' },
-  peach: { fill: '#ffe7d4', stroke: '#e9a46d', ink: '#96572a' },
-  ink: { fill: '#f4eef0', stroke: '#85798c', ink: '#2b2331' },
-  gray: { fill: '#f6f1ee', stroke: '#d9ccc4', ink: '#554a5e' },
-};
+export const PAL: Record<Tone | 'ink' | 'gray', { fill: string; stroke: string; ink: string }> = Object.fromEntries(
+  (['rose', 'lilac', 'sky', 'mint', 'peach', 'ink', 'gray'] as const).map((k) => [k, { fill: `var(--d-${k}-fill)`, stroke: `var(--d-${k}-stroke)`, ink: `var(--d-${k}-ink)` }]),
+) as Record<Tone | 'ink' | 'gray', { fill: string; stroke: string; ink: string }>;
 
 /* ───────── Algoritmo en árbol (HTML: el texto ajusta y en móvil pasa a lista sangrada) ───────── */
 
@@ -88,7 +82,7 @@ export function Donut({ parts, size = 170, center }: { parts: { label: string; v
   return (
     <div className="donut">
       <svg viewBox="0 0 160 160" width={size} height={size} role="img" aria-label={parts.map((p) => `${p.label} ${Math.round((p.value / total) * 100)}%`).join(', ')}>
-        <circle cx="80" cy="80" r={r} fill="none" stroke="#f1e8e3" strokeWidth="22" />
+        <circle cx="80" cy="80" r={r} fill="none" stroke="var(--d-off)" strokeWidth="22" />
         {parts.map((p, i) => {
           const len = (p.value / total) * c;
           const el = (

@@ -55,7 +55,7 @@ export function ManualPage() {
               {c.title}
             </a>
             <ul>
-              {[...c.bases.sections, ...c.theory].filter(match).map((s) => (
+              {[...(c.bases?.sections ?? []), ...c.theory].filter(match).map((s) => (
                 <li key={s.id}>
                   <a href={`#mt-${c.id}-${s.id}`} onClick={(e) => (e.preventDefault(), document.getElementById(`mt-${c.id}-${s.id}`)?.scrollIntoView({ behavior: 'smooth' }))}>
                     {s.title}
@@ -92,7 +92,7 @@ export function ManualPage() {
                   Ir al capítulo interactivo <Icon name="arrowRight" size={14} />
                 </Link>
               </div>
-              {[...c.bases.sections, ...c.theory].filter(match).map((s) => (
+              {[...(c.bases?.sections ?? []), ...c.theory].filter(match).map((s) => (
                 <section key={s.id} className="tblock" id={`mt-${c.id}-${s.id}`}>
                   <header className="tblock__head">
                     <div className="tblock__row">
@@ -186,7 +186,7 @@ export function PrintManual() {
                 </ul>
               </div>
             </div>
-            {[...c.bases.sections, ...c.theory].map((s) => (
+            {[...(c.bases?.sections ?? []), ...c.theory].map((s) => (
               <section key={s.id} className="tblock">
                 <header className="tblock__head">
                   <div className="tblock__row">
@@ -204,7 +204,7 @@ export function PrintManual() {
               </section>
             ))}
             <h2 className="print__h2">Fichas de consulta rápida</h2>
-            {c.quickRef.map((q, i) => (
+            {(c.quickRef ?? []).map((q, i) => (
               <div key={i} className="qref">
                 <div className="qref__title">{q.title}</div>
                 <table className="btable">

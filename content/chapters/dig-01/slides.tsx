@@ -38,7 +38,7 @@ const Intro: FC<SceneProps> = ({ t }) => {
           const y = 300 + i * 140;
           return (
             <g key={s} opacity={p}>
-              <circle cx={1380} cy={y} r={26} fill="#fff" stroke={C[tones[i]].ink} strokeWidth={7} />
+              <circle cx={1380} cy={y} r={26} fill={C.card} stroke={C[tones[i]].ink} strokeWidth={7} />
               <text x={1430} y={y + 13} fontSize={40} fontWeight={700} fill={C.ink} fontFamily="Inter Variable, sans-serif">
                 {s}
               </text>
@@ -90,16 +90,16 @@ const Deglucion: FC<SceneProps> = ({ t }) => {
     <>
       <svg viewBox="0 0 460 760" style={{ position: 'absolute', left: 150, top: 240, width: 484, height: 800 }}>
         {paths.map((d) => (
-          <path key={d} d={d} stroke="#d9ccc4" strokeWidth={34} strokeLinecap="round" fill="none" />
+          <path key={d} d={d} stroke={C.tube} strokeWidth={34} strokeLinecap="round" fill="none" />
         ))}
         {paths.map((d) => (
-          <path key={'i' + d} d={d} stroke="#fff6f1" strokeWidth={27} strokeLinecap="round" fill="none" />
+          <path key={'i' + d} d={d} stroke={C.tubeIn} strokeWidth={27} strokeLinecap="round" fill="none" />
         ))}
         <ellipse cx={305} cy={695} rx={78} ry={52} fill={C.lilac.fill} stroke={C.lilac.stroke} strokeWidth={3} />
         <text x={305} y={745} textAnchor="middle" fontSize={18} fill={C.lilac.ink} fontWeight={700}>
           estómago
         </text>
-        <path d="M72,158 Q150,124 228,158 Z" fill="#f5c6d3" stroke={C.rose.stroke} strokeWidth={1.5} transform={`translate(0 ${f > c1 && f < c1 + 150 ? -6 : 0})`} />
+        <path d="M72,158 Q150,124 228,158 Z" fill={C.rose.fill} stroke={C.rose.stroke} strokeWidth={1.5} transform={`translate(0 ${f > c1 && f < c1 + 150 ? -6 : 0})`} />
         <line x1={226} y1={124} x2={258} y2={124} stroke={C.rose.ink} strokeWidth={6} strokeLinecap="round" transform={`rotate(${velum} 226 124)`} />
         <line x1={232} y1={232} x2={260} y2={232} stroke={C.lilac.ink} strokeWidth={6} strokeLinecap="round" transform={`rotate(${epi} 232 232)`} />
         <line x1={268 - 7 * ees} y1={258} x2={268 - 7 * ees} y2={272} stroke={C.sky.ink} strokeWidth={5} strokeLinecap="round" />
@@ -171,9 +171,9 @@ const Donde: FC<SceneProps> = ({ t }) => {
   return (
     <>
       <svg viewBox="0 0 240 300" style={{ position: 'absolute', left: 170, top: 300, width: 520, height: 650 }}>
-        <circle cx={120} cy={50} r={32} fill="#f7efe9" stroke="#d9ccc4" strokeWidth={2} />
-        <path d="M104,80 L136,80 L138,116 L102,116 Z" fill="#f7efe9" stroke="#d9ccc4" strokeWidth={2} />
-        <path d="M44,300 L44,170 Q44,126 102,116 L138,116 Q196,126 196,170 L196,300 Z" fill="#f7efe9" stroke="#d9ccc4" strokeWidth={2} />
+        <circle cx={120} cy={50} r={32} fill={C.skin} stroke={C.tube} strokeWidth={2} />
+        <path d="M104,80 L136,80 L138,116 L102,116 Z" fill={C.skin} stroke={C.tube} strokeWidth={2} />
+        <path d="M44,300 L44,170 Q44,126 102,116 L138,116 Q196,126 196,170 L196,300 Z" fill={C.skin} stroke={C.tube} strokeWidth={2} />
         <path d="M120,92 L120,250" stroke={C.sky.stroke} strokeWidth={6} strokeLinecap="round" opacity={0.5} />
         <g opacity={oro}>
           <circle cx={120} cy={100} r={14 * pulse} fill="none" stroke={C.peach.stroke} strokeWidth={3} />
@@ -215,8 +215,8 @@ const CausasOro: FC<SceneProps> = ({ t }) => {
   const chips = ['Parkinson', 'Esclerosis múltiple', 'ELA', 'Miastenia gravis', 'Miopatías'];
   return (
     <>
-      <div style={{ position: 'absolute', left: 110, top: 270, width: 1700, height: 96, borderRadius: 48, background: '#f1e8e3', overflow: 'hidden' }}>
-        <div style={{ width: `${w * 100}%`, height: '100%', background: `linear-gradient(90deg, ${C.rose.stroke}, ${C.lilac.stroke})`, display: 'flex', alignItems: 'center', paddingLeft: 34, color: '#fff', fontSize: 36, fontWeight: 800, whiteSpace: 'nowrap' }}>
+      <div style={{ position: 'absolute', left: 110, top: 270, width: 1700, height: 96, borderRadius: 48, background: C.track, overflow: 'hidden' }}>
+        <div style={{ width: `${w * 100}%`, height: '100%', background: `linear-gradient(90deg, ${C.rose.stroke}, ${C.lilac.stroke})`, display: 'flex', alignItems: 'center', paddingLeft: 34, color: C.card, fontSize: 36, fontWeight: 800, whiteSpace: 'nowrap' }}>
           ≈ 75 % neuromusculares
         </div>
         <div style={{ position: 'absolute', right: 30, top: 26, fontSize: 30, fontWeight: 700, color: C.ink2, opacity: rest }}>≈ 25 % otras</div>
@@ -272,11 +272,11 @@ const MuroMotor: FC<SceneProps> = ({ t }) => {
         <Chip big tone="lilac">MOTOR · motora</Chip>
       </Appear>
       <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
-        <path d="M500,340 L500,560 Q530,600 500,640 L500,920 L620,920 L620,640 Q590,600 620,560 L620,340 Z" fill="#fff6f1" stroke="#d9ccc4" strokeWidth={5} />
+        <path d="M500,340 L500,560 Q530,600 500,640 L500,920 L620,920 L620,640 Q590,600 620,560 L620,340 Z" fill={C.tubeIn} stroke={C.tube} strokeWidth={5} />
         <path d="M500,560 Q545,600 500,640 M620,560 Q575,600 620,640" fill="none" stroke={C.sky.ink} strokeWidth={6} />
         {drops(560, c2, true)}
         <circle cx={560 + shake} cy={ballY} r={34} fill={C.peach.ink} opacity={f > c2 + 10 ? 1 : 0} />
-        <path d="M1300,340 L1300,920 L1420,920 L1420,340 Z" fill="#fff6f1" stroke="#d9ccc4" strokeWidth={5} />
+        <path d="M1300,340 L1300,920 L1420,920 L1420,340 Z" fill={C.tubeIn} stroke={C.tube} strokeWidth={5} />
         {drops(1360, c4, false)}
         <circle cx={1360} cy={470 + 8 * Math.sin(f / 10)} r={34} fill={C.peach.ink} opacity={f > c4 ? 1 : 0} />
         <g opacity={ease(f, c4, c4 + 20)}>
@@ -342,7 +342,7 @@ const Acalasia: FC<SceneProps> = ({ t }) => {
           </clipPath>
         </defs>
         <g opacity={ease(f, cue(t, 2), cue(t, 2) + 20)}>
-          <path d={body} fill="#fff6f1" stroke="#d9ccc4" strokeWidth={5} />
+          <path d={body} fill={C.tubeIn} stroke={C.tube} strokeWidth={5} />
           <rect x={cx - 200} y={bot - 30 - 380 * level} width={400} height={400} fill={C.peach.fill} clipPath="url(#esoclip)" />
           <circle cx={cx} cy={bot + 6} r={20} fill="none" stroke={C.red} strokeWidth={8} />
           <text x={cx + 44} y={bot + 14} fontSize={26} fontWeight={700} fill={C.red}>
@@ -362,19 +362,19 @@ const Acalasia: FC<SceneProps> = ({ t }) => {
       ].map((p) => (
         <Appear key={p.label} at={p.at} style={{ left: p.x, top: 410, width: 420 }}>
           <svg viewBox="0 0 200 300" width={280} height={400}>
-            <rect width={200} height={300} rx={14} fill="#231c28" />
+            <rect width={200} height={300} rx={14} fill={C.xray} />
             {p.air ? (
               <>
                 <clipPath id="ac2">
                   <path d={p.path} />
                 </clipPath>
                 <g clipPath="url(#ac2)">
-                  <rect width={200} height={110} fill="#5a5062" />
-                  <rect y={110} width={200} height={200} fill="#efeaf3" />
+                  <rect width={200} height={110} fill={C.air} />
+                  <rect y={110} width={200} height={200} fill={C.barium} />
                 </g>
               </>
             ) : (
-              <path d={p.path} fill="#efeaf3" />
+              <path d={p.path} fill={C.barium} />
             )}
           </svg>
           <div style={{ fontFamily: DISPLAY, fontSize: 38, fontWeight: 650, marginTop: 10 }}>{p.label}</div>
@@ -396,7 +396,7 @@ const Dispepsia: FC<SceneProps> = ({ t }) => {
   return (
     <>
       <svg viewBox="0 0 300 420" style={{ position: 'absolute', left: 130, top: 260, width: 450, height: 630 }}>
-        <path d="M60,420 L60,90 Q60,30 150,30 Q240,30 240,90 L240,420 Z" fill="#f7efe9" stroke="#d9ccc4" strokeWidth={3} />
+        <path d="M60,420 L60,90 Q60,30 150,30 Q240,30 240,90 L240,420 Z" fill={C.skin} stroke={C.tube} strokeWidth={3} />
         <ellipse cx={150} cy={190} rx={58} ry={42} fill={C.rose.stroke} opacity={0.5 * glow} />
         <circle cx={150} cy={290} r={5} fill={C.ink3} />
         <line x1={40} y1={290} x2={260} y2={290} stroke={C.ink3} strokeWidth={2} strokeDasharray="6 6" />
@@ -430,8 +430,8 @@ const Dispepsia: FC<SceneProps> = ({ t }) => {
         </div>
       ))}
       <Appear at={cue(t, 3)} style={{ left: 700, top: 590, width: 1080 }}>
-        <div style={{ position: 'relative', height: 70, borderRadius: 35, background: '#f1e8e3' }}>
-          <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: '50%', borderRadius: 35, background: C.lilac.stroke, color: '#fff', fontWeight: 800, fontSize: 28, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Últimos 3 meses</div>
+        <div style={{ position: 'relative', height: 70, borderRadius: 35, background: C.track }}>
+          <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: '50%', borderRadius: 35, background: C.lilac.stroke, color: C.card, fontWeight: 800, fontSize: 28, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Últimos 3 meses</div>
           <div style={{ position: 'absolute', left: 26, top: 18, fontSize: 28, fontWeight: 700, color: C.ink2 }}>Inicio ≥ 6 meses antes</div>
         </div>
         <div style={{ marginTop: 14, fontSize: 28, color: C.ink2 }}>+ sin lesión estructural que lo explique (endoscopía)</div>
@@ -462,7 +462,7 @@ const Funcional: FC<SceneProps> = ({ t }) => {
   return (
     <>
       <svg width={460} height={460} style={{ position: 'absolute', left: 130, top: 290 }}>
-        <circle cx={230} cy={230} r={r} fill="none" stroke="#f1e8e3" strokeWidth={70} />
+        <circle cx={230} cy={230} r={r} fill="none" stroke={C.track} strokeWidth={70} />
         <circle cx={230} cy={230} r={r} fill="none" stroke={C.lilac.stroke} strokeWidth={70} strokeDasharray={`${circ * a} ${circ}`} transform="rotate(-90 230 230)" />
         <circle cx={230} cy={230} r={r} fill="none" stroke={C.rose.stroke} strokeWidth={70} strokeDasharray={`${circ * b} ${circ}`} strokeDashoffset={-circ * 0.6} transform="rotate(-90 230 230)" />
         <text x={230} y={225} textAnchor="middle" fontSize={56} fontWeight={800} fill={C.lilac.ink} fontFamily="Inter Variable, sans-serif">
@@ -526,8 +526,8 @@ const Alarma: FC<SceneProps> = ({ t }) => {
     <>
       <div style={{ position: 'absolute', left: 110, top: 250, width: 1700, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 18 }}>
         {items.map(([l, s], i) => (
-          <div key={i} style={{ opacity: ease(f, spread(t, 0, 8, i), spread(t, 0, 8, i) + 12), display: 'flex', alignItems: 'center', gap: 14, background: '#fff', border: `3px solid ${C.rose.stroke}`, borderRadius: 22, padding: '14px 18px', fontSize: 27, fontWeight: 650 }}>
-            <span style={{ width: 52, height: 52, borderRadius: 16, background: C.rose.ink, color: '#fff', display: 'grid', placeItems: 'center', fontFamily: DISPLAY, fontSize: 32 }}>{l}</span>
+          <div key={i} style={{ opacity: ease(f, spread(t, 0, 8, i), spread(t, 0, 8, i) + 12), display: 'flex', alignItems: 'center', gap: 14, background: C.card, border: `3px solid ${C.rose.stroke}`, borderRadius: 22, padding: '14px 18px', fontSize: 27, fontWeight: 650 }}>
+            <span style={{ width: 52, height: 52, borderRadius: 16, background: C.rose.ink, color: C.card, display: 'grid', placeItems: 'center', fontFamily: DISPLAY, fontSize: 32 }}>{l}</span>
             {s}
           </div>
         ))}
@@ -584,11 +584,11 @@ const Reflejo: FC<SceneProps> = ({ t }) => {
           );
         })}
         <g opacity={ease(f, cue(t, 0), cue(t, 0) + 20)}>
-          <ellipse cx={960} cy={620} rx={175} ry={95} fill={C.ink} />
-          <text x={960} y={610} textAnchor="middle" fontSize={36} fontWeight={800} fill="#fff" fontFamily="Inter Variable, sans-serif">
+          <ellipse cx={960} cy={620} rx={175} ry={95} fill={C.strong} />
+          <text x={960} y={610} textAnchor="middle" fontSize={36} fontWeight={800} fill={C.onStrong} fontFamily="Inter Variable, sans-serif">
             Centro del vómito
           </text>
-          <text x={960} y={652} textAnchor="middle" fontSize={26} fill="#e9dff0" fontFamily="Inter Variable, sans-serif">
+          <text x={960} y={652} textAnchor="middle" fontSize={26} fill={C.onStrong} fontFamily="Inter Variable, sans-serif">
             bulbo raquídeo
           </text>
         </g>
@@ -618,7 +618,7 @@ const Reflejo: FC<SceneProps> = ({ t }) => {
       ))}
       {outs.map((o, i) => (
         <Appear key={o} at={spread(t, 2, 3, i)} style={{ left: 1300, top: 320 + i * 220, width: 440 }}>
-          <div style={{ background: '#fff', border: `3px solid ${C.line}`, borderRadius: 22, padding: '18px 26px', fontFamily: DISPLAY, fontSize: 42, fontWeight: 650 }}>
+          <div style={{ background: C.card, border: `3px solid ${C.line}`, borderRadius: 22, padding: '18px 26px', fontFamily: DISPLAY, fontSize: 42, fontWeight: 650 }}>
             {i + 1}. {o}
           </div>
         </Appear>
@@ -653,7 +653,7 @@ const Contenido: FC<SceneProps> = ({ t }) => {
           const tone = active ? C[active.tone] : null;
           return (
             <g key={s.n}>
-              <rect x={330 - s.w / 2} y={s.y} width={s.w} height={s.h} rx={Math.min(40, s.w / 2)} fill={on && tone ? tone.fill : '#f6f1ee'} stroke={on && tone ? tone.ink : '#d9ccc4'} strokeWidth={on ? 6 : 3} />
+              <rect x={330 - s.w / 2} y={s.y} width={s.w} height={s.h} rx={Math.min(40, s.w / 2)} fill={on && tone ? tone.fill : C.track} stroke={on && tone ? tone.ink : C.tube} strokeWidth={on ? 6 : 3} />
               <text x={330 + s.w / 2 + 20} y={s.y + s.h / 2 + 10} fontSize={28} fontWeight={on ? 800 : 500} fill={on && tone ? tone.ink : C.ink3} fontFamily="Inter Variable, sans-serif">
                 {s.n}
               </text>
@@ -690,9 +690,9 @@ const Contenido: FC<SceneProps> = ({ t }) => {
 const Wall: FC<{ variant: 'normal' | 'mw' | 'boer'; size: number }> = ({ variant, size }) => (
   <svg viewBox="0 0 160 160" width={size} height={size}>
     <circle cx={80} cy={80} r={62} fill={C.peach.fill} stroke={C.peach.stroke} strokeWidth={2} />
-    <circle cx={80} cy={80} r={44} fill="#fdf2f5" stroke={C.rose.stroke} strokeWidth={1.5} />
+    <circle cx={80} cy={80} r={44} fill={C.rose.fill} stroke={C.rose.stroke} strokeWidth={1.5} />
     <circle cx={80} cy={80} r={32} fill={C.rose.fill} stroke={C.rose.ink} strokeWidth={1.5} />
-    <circle cx={80} cy={80} r={16} fill="#fff" stroke="#d9ccc4" />
+    <circle cx={80} cy={80} r={16} fill={C.card} stroke={C.tube} />
     {variant === 'mw' && <path d="M80,64 L74,48 L86,48 Z" fill={C.red} />}
     {variant === 'boer' && <path d="M77,64 L74,10 L86,10 L83,64 Z" fill={C.red} />}
   </svg>

@@ -9,7 +9,7 @@
   align-items: center;
   gap: 18px;
   padding: 0 20px;
-  background: rgba(252, 247, 243, 0.86);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: saturate(1.4) blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -23,7 +23,7 @@
   border-radius: 12px;
   background: linear-gradient(135deg, var(--rose-100), var(--lilac-100));
   color: var(--rose-700);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), var(--shadow-xs);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 10%, transparent), var(--shadow-xs);
 }
 .brand__text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand__name { font-family: var(--font-display); font-weight: 650; font-size: 1.12rem; }
@@ -144,7 +144,7 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
   align-items: flex-start;
   padding: 14px 16px;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-xs);
 }
@@ -215,7 +215,7 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
 .route::before { content: ''; position: absolute; left: 19px; top: 10px; bottom: 10px; width: 2px; background: repeating-linear-gradient(var(--accent-200) 0 6px, transparent 6px 12px); }
 .route__item { position: relative; display: flex; gap: 18px; margin-bottom: 14px; }
 .route__n { position: relative; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent-400); color: var(--accent-700); font-weight: 700; flex-shrink: 0; }
-.route__item.is-done .route__n { background: var(--mint-600); border-color: var(--mint-600); color: #fff; }
+.route__item.is-done .route__n { background: var(--mint-600); border-color: var(--mint-600); color: var(--on-ink); }
 .route__item.is-soon .route__n { border-style: dashed; border-color: var(--line-2); color: var(--ink-3); }
 .route__card { flex: 1; padding: 16px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-xs); }
 .route__item.is-soon .route__card { background: var(--surface-2); }
@@ -306,7 +306,7 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
   }
   .sidebar__nav--mobile { display: block; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
   .is-menu-open .sidebar { transform: none; }
-  .is-menu-open .shell__scrim { display: block; position: fixed; inset: var(--topbar-h) 0 0 0; background: rgba(43, 35, 49, 0.25); z-index: 44; }
+  .is-menu-open .shell__scrim { display: block; position: fixed; inset: var(--topbar-h) 0 0 0; background: rgba(0, 0, 0, 0.5); z-index: 44; }
   .hero { grid-template-columns: 1fr; padding: 24px; }
   .manual { grid-template-columns: minmax(0, 1fr); }
   .manual__toc { position: static; max-height: none; }

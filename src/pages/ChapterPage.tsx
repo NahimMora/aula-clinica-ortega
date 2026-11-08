@@ -31,10 +31,11 @@ function sectionDefs(c: Chapter): SectionDef[] {
   const p: Mode[] = ['completo', 'practica'];
   const defs: SectionDef[] = [
     { id: 'ubicate', letter: 'A', label: 'Ubicate', title: 'Ubicate antes de empezar', modes: t },
-    { id: 'bases', letter: 'B', label: 'Bases', title: 'Primero entendé esto', modes: t },
-    { id: 'clase', letter: 'C', label: 'Clase', title: 'Clase principal', modes: t },
-    { id: 'consulta', letter: 'D', label: 'Consulta', title: 'Teoría de consulta rápida', modes: t },
   ];
+  if (c.developments.some((d) => d.prio)) defs.push({ id: 'radar', letter: '★', label: 'Lo que toma', title: 'Lo que pregunta el profe', modes: all });
+  if (c.bases?.sections.length) defs.push({ id: 'bases', letter: 'B', label: 'Bases', title: 'Primero entendé esto', modes: t });
+  defs.push({ id: 'clase', letter: 'C', label: 'Fichas', title: 'Lo que tenés que saber', modes: t });
+  if (c.quickRef?.length) defs.push({ id: 'consulta', letter: 'D', label: 'Consulta', title: 'Teoría de consulta rápida', modes: t });
   if (c.video || c.slides) defs.push({ id: 'video', letter: 'E', label: 'Video', title: 'Video y diapositivas animadas', modes: t });
   defs.push(
     { id: 'choice', letter: 'F', label: 'Choice', title: 'Preguntas choice', modes: p },
@@ -183,8 +184,8 @@ function ChapterView({ c }: { c: Chapter }) {
           )}
 
           {visible.some((d) => d.id === 'bases') && (
-            <Section def={defs.find((d) => d.id === 'bases')!} chapterId={c.id} intro={c.bases.intro}>
-              {c.bases.sections.map((s) => (
+            <Section def={defs.find((d) => d.id === 'bases')!} chapterId={c.id} intro={c.bases?.intro}>
+              {c.bases?.sections.map((s) => (
                 <TheoryBlock key={s.id} s={s} chapterId={c.id} />
               ))}
             </Section>
@@ -207,7 +208,7 @@ function ChapterView({ c }: { c: Chapter }) {
 
           {visible.some((d) => d.id === 'consulta') && (
             <Section def={defs.find((d) => d.id === 'consulta')!} chapterId={c.id} intro="Fichas compactas para volver rápido a un dato. El manual web reúne la teoría de todo el sistema y el PDF la deja lista para imprimir.">
-              {c.quickRef.map((q, i) => (
+              {(c.quickRef ?? []).map((q, i) => (
                 <div key={i} className="qref">
                   <div className="qref__title">{q.title}</div>
                   <div className="table-wrap">

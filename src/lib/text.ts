@@ -88,9 +88,9 @@ export interface SearchDoc {
 export function chapterDocs(c: Chapter): SearchDoc[] {
   const base = { chapterId: c.id, chapterTitle: c.title };
   const docs: SearchDoc[] = [];
-  c.bases.sections.forEach((s) => docs.push({ ...base, sectionId: `t-${s.id}`, title: s.title, kind: 'Bases', text: blocksText(s.blocks) }));
+  (c.bases?.sections ?? []).forEach((s) => docs.push({ ...base, sectionId: `t-${s.id}`, title: s.title, kind: 'Bases', text: blocksText(s.blocks) }));
   c.theory.forEach((s) => docs.push({ ...base, sectionId: `t-${s.id}`, title: s.title, kind: 'Teoría', text: blocksText(s.blocks) }));
-  c.quickRef.forEach((q, i) => docs.push({ ...base, sectionId: 'consulta', title: q.title, kind: 'Consulta', text: plain([q.head.join(' '), ...q.rows.map((r) => r.join(' '))].join(' ')) + ' ' + i }));
+  (c.quickRef ?? []).forEach((q, i) => docs.push({ ...base, sectionId: 'consulta', title: q.title, kind: 'Consulta', text: plain([q.head.join(' '), ...q.rows.map((r) => r.join(' '))].join(' ')) + ' ' + i }));
   c.mcq.forEach((q) => docs.push({ ...base, sectionId: 'choice', title: plain(q.stem).slice(0, 90), kind: 'Choice', text: plain([q.stem, ...q.options.map((o) => o.text + ' ' + o.why)].join(' ')) }));
   c.developments.forEach((d) => docs.push({ ...base, sectionId: 'desarrollos', title: plain(d.question), kind: 'Desarrollo', text: blocksText(d.answer) }));
   c.memory.forEach((m) => docs.push({ ...base, sectionId: 'memoria', title: m.title, kind: 'Memoria', text: plain([m.purpose, m.interpret, m.mnemonic.hook, m.mnemonic.explain].join(' ')) + ' ' + blocksText(m.evaluates) }));

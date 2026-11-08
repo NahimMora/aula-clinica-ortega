@@ -73,11 +73,19 @@ export interface MCQ {
   refs?: SourceRef[];
 }
 
+/** Prioridad de examen: P0 = el profe dice que se toma · P1 = muy remarcado o pregunta del preguntero · P2 = complementario. */
+export type ExamPrio = 'P0' | 'P1' | 'P2';
+
 export interface Development {
   id: string;
   question: Inline;
   priority: Priority;
   emphasis?: boolean;
+  prio?: ExamPrio;
+  /** Frase textual del profesor sobre esta pregunta (verificada en la transcripción). */
+  quote?: { text: string; refs: SourceRef[] };
+  /** Ficha de teoría donde se estudia (id de TheorySection). */
+  ficha?: string;
   answer: Block[];
   keyPoints?: Inline[];
   refs?: SourceRef[];
@@ -124,9 +132,9 @@ export interface Chapter {
   estimatedMinutes: number;
   sources: SourceRef[];
   map: ConceptMapData;
-  bases: { intro: Inline; sections: TheorySection[] };
+  bases?: { intro: Inline; sections: TheorySection[] };
   theory: TheorySection[];
-  quickRef: QuickRef[];
+  quickRef?: QuickRef[];
   video?: VideoMeta;
   mcq: MCQ[];
   developments: Development[];
