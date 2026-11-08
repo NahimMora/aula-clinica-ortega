@@ -6,7 +6,7 @@ _Última actualización: 2026-11-07_
 | Capítulo | Estado | Contenido | Verificación |
 |---|---|---|---|
 | Etapa 1 · estructura | Desplegado y verificado | Inicio, sistemas, búsqueda, práctica, examen, repasar, progreso, manual, maniobras | Workflow OK, URL 200, test de humo escritorio/móvil |
-| dig-01 · Disfagia, dispepsia, náuseas y vómitos | En despliegue (se confirma en la URL publicada) | 4 bases + 11 bloques de teoría, 13 diagramas, 11 diapositivas animadas, video 8:37, 28 choice + 6 de simulacro, 10 desarrollos, 8 tarjetas de memoria, 3 maniobras, 3 fichas de consulta, PDF del sistema (59 p.) | Local: typecheck, build, check de fuentes privadas, test de interacción 12/12, video en reproductor, móvil sin desborde |
+| dig-01 · Disfagia, dispepsia, náuseas y vómitos | **Desplegado y verificado en la URL pública** | 4 bases + 11 bloques de teoría, 13 diagramas, 11 diapositivas animadas, video 8:37, 28 choice + 6 de simulacro, 10 desarrollos, 8 tarjetas de memoria, 3 maniobras, 3 fichas de consulta, PDF del sistema (59 p.) | Local y en GitHub Pages: workflow OK, test de humo 20/20 (escritorio y móvil), test de interacción 12/12, video 1920×1080 con 121 subtítulos, PDF y audios accesibles |
 
 ## Hecho
 - **Inventario**: Drive “Videos_Ortega” listado (121 archivos). Transcripciones de Drive verificadas idénticas a las locales (60/60). Libro descargado (mismo contenido que la copia local). Manifiesto con duraciones reales: 65 fuentes, 31 h de clase.
