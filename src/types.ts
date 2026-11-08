@@ -8,7 +8,7 @@ import type { VisualBlock } from './visual/tipos';
  *  - complementario: amplía o aclara. */
 export type Priority = 'imprescindible' | 'muy-importante' | 'complementario';
 
-export type Tone = 'rose' | 'lilac' | 'sky' | 'mint' | 'peach';
+export type Tone = 'rose' | 'lilac' | 'sky' | 'mint' | 'peach' | 'gold' | 'red';
 
 /** Referencia a una fuente del registro `content/sources.ts`.
  *  `t` = marca de tiempo dentro de la grabación (mm:ss), `p` = página del libro. */

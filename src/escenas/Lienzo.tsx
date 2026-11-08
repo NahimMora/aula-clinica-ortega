@@ -557,8 +557,8 @@ function NotaLado({ nota, tono, t, x = 520 }: { nota: NotaFig; tono: Tono; t: nu
     <g opacity={o} transform={`translate(${(1 - o) * 26} 0)`}>
       <rect x={x} y={40} width={w} height={H - 80} rx={26} fill={f(tono)} stroke={c(tono)} strokeWidth={3} />
       <rect x={x} y={40} width={12} height={H - 80} rx={6} fill={c(tono)} />
-      <Multi x={x + 36} y={92 + (lt - 1) * 24} t={nota.t} n={nt} s={42} w={650} c={c(tono)} fam={DISPLAY} />
-      {nota.d && <Multi x={x + 36} y={330 + (lt - 1) * 20} t={nota.d} n={nd} s={27} w={520} c={tinta} lh={1.3} />}
+      <Multi x={x + 36} y={96 + ((lt - 1) * 50) / 2} t={nota.t} n={nt} s={42} w={650} c={c(tono)} fam={DISPLAY} />
+      {nota.d && <Multi x={x + 36} y={96 + lt * 50 + 34 + ((renglones(nota.d, nd).length - 1) * 35) / 2} t={nota.d} n={nd} s={27} w={520} c={tinta} lh={1.3} />}
     </g>
   );
 }

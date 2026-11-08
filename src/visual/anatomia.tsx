@@ -136,11 +136,14 @@ export function AbdomenFig({
         (Object.keys(REGIONES) as Region[]).map((r) => {
           const [x, y] = centroRegion(r);
           const on = Boolean(luz[r]);
-          return (
-            <Label key={r} x={x} y={y} s={on ? 15 : 12.5} w={on ? 800 : 600} c={on ? col(luz[r]) : INK3}>
-              {REGIONES[r].n}
+          const n = REGIONES[r].n;
+          const k = n.lastIndexOf(' ');
+          const lineas = k > 0 && n.length > 11 ? [n.slice(0, k), n.slice(k + 1)] : [n];
+          return lineas.map((l, j) => (
+            <Label key={r + j} x={x} y={y + (j - (lineas.length - 1) / 2) * (on ? 17 : 15)} s={on ? 15.5 : 13} w={on ? 800 : 600} c={on ? col(luz[r]) : INK3}>
+              {l}
             </Label>
-          );
+          ));
         })}
       {ruta && rutaPts.length > 1 && (
         <g>
