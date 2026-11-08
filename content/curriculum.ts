@@ -57,7 +57,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('renal', 'ren-03', 'Síndrome nefrítico', 'Síndromes', 'Capilares que se rompen: las 3 H (hematuria, HTA, hiperazoemia), postestreptocócica y complicaciones.', 'Clase Sd. nefrítico · Libro p442–444', 'published'),
       ch('renal', 'ren-04', 'Síndrome nefrótico', 'Síndromes', 'Membrana basal permeable: proteinuria > 3,5 g, hipoalbuminemia, edema e hiperlipidemia; causas por edad y el círculo del edema.', 'Clase Sd. nefrótico · Libro p440–442', 'published'),
       ch('renal', 'ren-05', 'Insuficiencia renal', 'Síndromes', 'Aguda (RIFLE/AKIN, prerrenal/renal/posrenal, sodio urinario) y crónica (hiperfiltración, estadios, síndrome urémico).', 'Clases IR 1–3 · Libro p429–439', 'published'),
-      ch('renal', 'ren-06', 'Infección urinaria', 'Síndromes', 'Cistitis, pielonefritis, diagnóstico y sedimento urinario.', 'Clases ITU 1–2 · Libro p420–428'),
+      ch('renal', 'ren-06', 'Infección urinaria', 'Síndromes', 'Vía ascendente, gérmenes (E. coli, Proteus, Pseudomonas), cistitis vs pielonefritis, ITU complicada, recaída vs reinfección.', 'Clases ITU 1–2', 'published'),
       ch('renal', 'ren-07', 'Litiasis renoureteral', 'Síndromes', 'Cólico renal: mecanismo, clínica y diagnóstico.', 'Clases Litiasis 1–2'),
     ],
   },
