@@ -92,11 +92,15 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 
 ## 6b. Estado al cortar la sesión (2026-11-08)
 - HECHO y publicado: paleta oscura; dig-01 reescrito conciso (sección “Lo que pregunta el profe” con P0/P1 y citas verificadas, 7 fichas con “¿Por qué?” del libro, 7 preguntas de examen, 12 choice, 5 tarjetas de memoria); narración nueva (10 escenas, 6:18) con escena hematemesis vs hemoptisis.
-- PENDIENTE inmediato:
-  1. Ajustar escenas `intro`, `complicaciones` y `cierre` de `content/chapters/dig-01/slides.tsx` a los cues nuevos (ver `timing.json`), luego `npm run video:render -- dig-01 video/out/dig-01-master.mp4 --codec=h264 --crf=20`, ffmpeg a `public/media/dig-01.mp4` (+ póster) y volver a poner `video` en `content/chapters/dig-01/index.tsx` (`import video from './video.json'`).
-  2. Modo **paso a paso** (estilo farrmaco) en `src/components/SlideDeck.tsx`: cada cue = un paso (seek al final del cue, texto del paso visible, puntos de progreso, Anterior/Siguiente).
-  3. Sección **Examen físico** por sistema y región (digestivo: abdomen, hígado, bazo, vesícula; renal; neuro; soma) con fragmentos del video Argente verificados por fotogramas + pizarras + clases EF.
-  4. Regenerar PDF (`npm run pdf`) y correr `scripts/interaction-test.mjs` (ajustar: ya no hay sección `bases`/`consulta`).
+- HECHO en la sesión siguiente (2026-11-08, tarde):
+  - Escenas `intro`, `complicaciones` y `cierre` rehechas sobre los cues nuevos (intro = los 4 temas que toma el profe; complicaciones con la tríada de Mallory-Weiss como cronología; cierre = lo que no puede faltar). Se borraron las escenas viejas sin uso (deglución, causas-oro, funcional, reflejo).
+  - Video re-renderizado y vuelto a enlazar (`video` en `content/chapters/dig-01/index.tsx`).
+  - **Diapositivas paso a paso** (estilo farrmaco) en `src/components/SlideDeck.tsx`: modo por defecto «Paso a paso» (cada oración = un paso; la escena queda congelada con el paso dibujado, texto debajo, puntos de progreso, Anterior/Siguiente, flechas del teclado, «Escuchar este paso») + modo «Reproducir» (de corrido, como antes). El fotograma congelado se toma antes de los fundidos (`Show` 12 f, fin de escena 12 f).
+  - `scripts/interaction-test.mjs` actualizado (secciones obligatorias por id; prueba paso a paso y modo reproducir). Pasa completo en local.
+- PENDIENTE:
+  1. Sección **Examen físico** por sistema y región (digestivo: abdomen, hígado, bazo, vesícula; renal; neuro; soma) con fragmentos del video Argente verificados por fotogramas + pizarras + clases EF.
+  2. Regenerar PDF (`npm run pdf`, con preview en 4791).
+  3. Siguiente capítulo: dig-02 (dolor abdominal / abdomen agudo: 5 tipos P0, Cullen/Grey-Turner P0).
 
 ## 9. Bitácora
 - 2026-11-07 — Inventario, arquitectura, Etapa 1 y dig-01 publicados y verificados.

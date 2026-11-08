@@ -466,6 +466,15 @@
 .sdeck__chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .sdeck__chips button { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 5px 12px; font-size: 0.82rem; cursor: pointer; color: var(--ink-2); }
 .sdeck__chips button.is-on { background: var(--accent-100); border-color: var(--accent-200); color: var(--accent-700); font-weight: 650; }
+.sdeck__modes { display: inline-flex; justify-self: start; gap: 2px; padding: 3px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); }
+.sdeck__modes button { display: inline-flex; align-items: center; gap: 6px; border: 0; background: transparent; color: var(--ink-2); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+.sdeck__modes button.is-on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-sm); }
+.sdeck__step { min-height: 4.2em; padding: 14px 18px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent-400); }
+.sdeck__say { margin: 0; font-size: clamp(1rem, 0.94rem + 0.3vw, 1.12rem); line-height: 1.55; color: var(--ink); }
+.sdeck__dots { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.sdeck__dots button { width: 10px; height: 10px; padding: 0; border-radius: 50%; border: 1px solid var(--ink-3); background: transparent; cursor: pointer; }
+.sdeck__dots button.is-done { background: var(--ink-3); }
+.sdeck__dots button.is-on { width: 24px; border-radius: 999px; background: var(--accent-700); border-color: var(--accent-700); }
 .sdeck__text { font-size: 0.9rem; color: var(--ink-2); }
 .sdeck__text summary { cursor: pointer; font-weight: 600; }
 .vtabs { margin-bottom: 14px; }

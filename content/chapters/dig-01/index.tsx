@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { diagrams } from './diagrams';
+import video from './video.json';
 
 /*
  * Reescrito el 2026-11-08 según el pedido de la usuaria:
@@ -596,7 +597,7 @@ const chapter: Chapter = {
     ],
   },
 
-  // video: se re-renderiza con el guion nuevo (video.json ya actualizado); ver HANDOFF.
+  video,
   slides: () => import('./slides'),
   diagrams,
 };

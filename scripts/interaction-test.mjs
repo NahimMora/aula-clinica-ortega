@@ -27,26 +27,41 @@ await page.goto(url(`/capitulo/${chapterId}`), { waitUntil: 'load' });
 await page.waitForSelector('#ubicate', { timeout: 30000 });
 await sleep(800);
 
-// 1. Secciones A–I presentes y no vacías
+// 1. Secciones obligatorias presentes y no vacías (las opcionales dependen del capítulo)
 const sections = await page.$$eval('section.csec', (s) => s.map((x) => ({ id: x.id, len: x.innerText.length })));
-check('secciones del capítulo', sections.length >= 9 && sections.every((s) => s.len > 120), sections.map((s) => `${s.id}:${s.len}`).join(' '));
+const required = ['ubicate', 'clase', 'choice', 'desarrollos', 'memoria', 'integracion'];
+const ids = sections.map((s) => s.id);
+check('secciones del capítulo', required.every((r) => ids.includes(r)) && sections.every((s) => s.len > 120), sections.map((s) => `${s.id}:${s.len}`).join(' '));
 
 // 2. Diagramas sin "no disponible"
 const missing = await page.$$eval('.diagram__missing', (d) => d.length);
 check('diagramas presentes', missing === 0, `faltantes: ${missing}`);
 
-// 3. Diapositiva animada: abrir, reproducir y avanzar
+// 3. Diapositiva animada: abrir, avanzar paso a paso y probar el modo de corrido
 const poster = await page.$('.tblock .slides__poster');
 await poster.evaluate((n) => n.scrollIntoView({ block: 'center' }));
 await poster.evaluate((n) => n.click());
 await page.waitForSelector('.sdeck__stage', { timeout: 30000 });
 await sleep(2500);
 const playerOk = await page.$eval('.sdeck__stage', (n) => n.getBoundingClientRect().height > 150);
-await (await page.$('.sdeck')).screenshot({ path: join(out, 'slide-open.png') });
-const t0 = await page.$eval('.sdeck__stage', (n) => n.innerText);
-await sleep(3000);
-await (await page.$('.sdeck')).screenshot({ path: join(out, 'slide-playing.png') });
-check('diapositiva abre y reproduce', playerOk, `texto visible: ${t0.slice(0, 60).replace(/\n/g, ' ')}`);
+await (await page.$('.sdeck')).screenshot({ path: join(out, 'slide-step1.png') });
+const say0 = await page.$eval('.sdeck__say', (n) => n.innerText);
+const stage0 = await page.$eval('.sdeck__stage', (n) => n.innerText);
+const next = await page.$('.sdeck__bar button[aria-label="Paso siguiente"]');
+await next.evaluate((n) => n.click());
+await sleep(900);
+await next.evaluate((n) => n.click());
+await sleep(900);
+const say2 = await page.$eval('.sdeck__say', (n) => n.innerText);
+const stage2 = await page.$eval('.sdeck__stage', (n) => n.innerText);
+await (await page.$('.sdeck')).screenshot({ path: join(out, 'slide-step3.png') });
+check('diapositiva abre en paso a paso', playerOk && say0.length > 10, say0.slice(0, 60));
+check('paso a paso avanza (texto y escena)', say2 !== say0 && stage2 !== stage0, `${say2.slice(0, 50)} · escena ${stage0.length}→${stage2.length} caracteres`);
+const playTab = await page.$('.sdeck__modes button:nth-child(2)');
+await playTab.evaluate((n) => n.click());
+await sleep(1500);
+const hasControls = await page.$eval('.sdeck', (n) => !n.querySelector('.sdeck__say'));
+check('modo reproducir disponible', hasControls, '');
 
 // 4. Choice: responder y ver corrección
 const firstOpt = await page.$('#choice .mcq__opt');
@@ -56,7 +71,8 @@ await sleep(300);
 const fb = await page.$eval('#choice .mcq', (n) => n.querySelector('.mcq__feedback')?.innerText ?? '');
 check('choice corrige al instante', fb.includes('Por qué'), fb.slice(0, 50).replace(/\n/g, ' '));
 const retry = await page.$('#choice .mcq .mcq__feedback .btn');
-await retry.click();
+await retry.evaluate((n) => n.scrollIntoView({ block: "center" }));
+await retry.evaluate((n) => n.click());
 await sleep(200);
 check('choice permite reintentar', (await page.$eval('#choice .mcq', (n) => !n.querySelector('.mcq__feedback'))) === true);
 

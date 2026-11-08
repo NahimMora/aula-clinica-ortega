@@ -40,7 +40,7 @@ export function SlidesBlock({ ids, title, caption, startOpen = false }: { ids: s
           <span className="slides__play">{state === 'loading' ? <span className="spinner" /> : <Icon name="play" size={28} />}</span>
           <span className="slides__kicker">Diapositiva animada{ids.length > 1 ? `s · ${ids.length} escenas` : ''}</span>
           <span className="slides__title">{title}</span>
-          <span className="slides__hint">{state === 'error' ? 'No se pudo cargar. Tocá para reintentar.' : 'Reproducí, pausá y avanzá a tu ritmo · con narración opcional'}</span>
+          <span className="slides__hint">{state === 'error' ? 'No se pudo cargar. Tocá para reintentar.' : 'Paso a paso, con el texto de cada paso · o de corrido con narración'}</span>
         </button>
       )}
       {caption && (
