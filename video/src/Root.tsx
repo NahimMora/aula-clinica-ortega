@@ -8,6 +8,12 @@ import { Lienzo } from '../../src/escenas/Lienzo';
 import type { Escena } from '../../src/escenas/tipos';
 import { escenas as dig01 } from '../../content/chapters/dig-01/escenas';
 import tiempos01 from '../../content/chapters/dig-01/tiempos.json';
+import { clase as planDig02 } from '../../content/chapters/dig-02/clase';
+import tiemposDig02 from '../../content/chapters/dig-02/clase-tiempos.json';
+import type { PlanClase } from '../../src/clase/tipos';
+import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
+import '../../src/styles/tokens.css';
+import '../../src/styles/clase.css';
 
 interface Beat {
   escena: number;
@@ -140,9 +146,88 @@ function Clase({ cap }: { cap: Cap }) {
 // Cada capítulo se liga a su propio componente: las props de Remotion deben ser serializables.
 const BOUND = CAPS.map((cap) => ({ cap, Video: () => <Clase cap={cap} /> }));
 
+/* ───────── Clase completa: las mismas diapositivas de la web, con la voz de Tomás ───────── */
+
+interface TiempoDiapo {
+  mazo: string;
+  id: string;
+  inicio: number;
+  frames: number;
+  beats: { inicio: number; frames: number }[];
+}
+interface TiemposClase {
+  fps: number;
+  total: number;
+  portada: number;
+  cierre: number;
+  diapos: TiempoDiapo[];
+}
+
+interface CapClase {
+  id: string;
+  titulo: string;
+  plan: PlanClase;
+  tiempos: TiemposClase;
+}
+
+const CLASES: CapClase[] = [{ id: 'dig-02-clase', titulo: 'Dolor abdominal y abdomen agudo', plan: planDig02, tiempos: tiemposDig02 as TiemposClase }];
+
+const SEC_FADE = 7;
+
+function ClaseCompleta({ cap }: { cap: CapClase }) {
+  useFuentes();
+  const frame = useCurrentFrame();
+  const T = cap.tiempos;
+  const primera = T.diapos[0].inicio;
+  const ult = T.diapos[T.diapos.length - 1];
+  const fin = ult.inicio + ult.frames;
+  const portada = frame < primera;
+  const cierre = frame >= fin;
+  let k = 0;
+  for (let i = 0; i < T.diapos.length; i++) if (frame >= T.diapos[i].inicio) k = i;
+  const td = T.diapos[k];
+  const mazo = td.mazo === 'fisio' ? cap.plan.fisio : cap.plan.teoria;
+  const d = mazo.diapos.find((x) => x.id === td.id)!;
+  let b = 0;
+  for (let i = 0; i < td.beats.length; i++) if (frame >= td.beats[i].inicio) b = i;
+  const seccion = mazo.secciones.find((s) => s.id === d.sec)?.label;
+  const reloj = { t: (frame - td.inicio) / T.fps, paso: b, dt: (frame - td.beats[b].inicio) / T.fps };
+  const fade = interpolate(frame - td.inicio, [0, SEC_FADE], [0, 1], { extrapolateRight: 'clamp' });
+  const avance = (frame - primera) / (fin - primera);
+  return (
+    <AbsoluteFill style={{ background: '#1d1925', color: TINTA, fontFamily: TXT }}>
+      {portada && (
+        <AbsoluteFill style={{ justifyContent: 'center', padding: '0 150px', opacity: interpolate(frame, [0, 14], [0, 1], { extrapolateRight: 'clamp' }) }}>
+          <div style={{ fontSize: 32, fontWeight: 650, color: ACENTO, letterSpacing: 2, textTransform: 'uppercase' }}>Semiología I · Clase completa</div>
+          <div style={{ fontFamily: TIT, fontWeight: 620, fontSize: 112, lineHeight: 1.04, marginTop: 16 }}>{cap.titulo}</div>
+        </AbsoluteFill>
+      )}
+      {!portada && !cierre && (
+        <AssetCtx.Provider value={(p) => staticFile(p)}>
+          <AbsoluteFill style={{ opacity: fade }}>
+            <Diapositiva d={d} reloj={reloj} video seccion={seccion} />
+          </AbsoluteFill>
+          <div style={{ position: 'absolute', left: 0, bottom: 0, height: 5, width: `${avance * 100}%`, background: ACENTO, opacity: 0.8 }} />
+        </AssetCtx.Provider>
+      )}
+      {cierre && (
+        <AbsoluteFill style={{ justifyContent: 'center', padding: '0 150px', opacity: interpolate(frame, [fin, fin + 12], [0, 1], { extrapolateRight: 'clamp' }) }}>
+          <div style={{ fontFamily: TIT, fontWeight: 620, fontSize: 92, lineHeight: 1.08 }}>Ahora volvé a las diapositivas y practicá</div>
+          <div style={{ fontSize: 38, marginTop: 24, color: TINTA2 }}>Choice, desarrollos, memoria y simulacro.</div>
+        </AbsoluteFill>
+      )}
+    </AbsoluteFill>
+  );
+}
+
+const CLASES_LIGADAS = CLASES.map((cap) => ({ cap, Video: () => <ClaseCompleta cap={cap} /> }));
+
 export const Root: React.FC = () => (
   <>
     {BOUND.map(({ cap, Video }) => (
+      <Composition key={cap.id} id={cap.id} component={Video} durationInFrames={cap.tiempos.total} fps={cap.tiempos.fps} width={1920} height={1080} />
+    ))}
+    {CLASES_LIGADAS.map(({ cap, Video }) => (
       <Composition key={cap.id} id={cap.id} component={Video} durationInFrames={cap.tiempos.total} fps={cap.tiempos.fps} width={1920} height={1080} />
     ))}
   </>

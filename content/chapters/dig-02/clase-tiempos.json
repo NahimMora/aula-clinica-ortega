@@ -1,0 +1,1329 @@
+{
+ "fps": 24,
+ "total": 40050,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-via",
+   "inicio": 96,
+   "frames": 1098,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 363
+    },
+    {
+     "inicio": 459,
+     "frames": 291
+    },
+    {
+     "inicio": 750,
+     "frames": 242
+    },
+    {
+     "inicio": 992,
+     "frames": 202
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-fibras",
+   "inicio": 1194,
+   "frames": 616,
+   "beats": [
+    {
+     "inicio": 1194,
+     "frames": 332
+    },
+    {
+     "inicio": 1526,
+     "frames": 284
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hojas",
+   "inicio": 1810,
+   "frames": 609,
+   "beats": [
+    {
+     "inicio": 1810,
+     "frames": 306
+    },
+    {
+     "inicio": 2116,
+     "frames": 303
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-visceral",
+   "inicio": 2419,
+   "frames": 746,
+   "beats": [
+    {
+     "inicio": 2419,
+     "frames": 392
+    },
+    {
+     "inicio": 2811,
+     "frames": 178
+    },
+    {
+     "inicio": 2989,
+     "frames": 176
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-bilateral",
+   "inicio": 3165,
+   "frames": 564,
+   "beats": [
+    {
+     "inicio": 3165,
+     "frames": 341
+    },
+    {
+     "inicio": 3506,
+     "frames": 223
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-somatico",
+   "inicio": 3729,
+   "frames": 763,
+   "beats": [
+    {
+     "inicio": 3729,
+     "frames": 309
+    },
+    {
+     "inicio": 4038,
+     "frames": 134
+    },
+    {
+     "inicio": 4172,
+     "frames": 320
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-referido",
+   "inicio": 4492,
+   "frames": 750,
+   "beats": [
+    {
+     "inicio": 4492,
+     "frames": 267
+    },
+    {
+     "inicio": 4759,
+     "frames": 111
+    },
+    {
+     "inicio": 4870,
+     "frames": 119
+    },
+    {
+     "inicio": 4989,
+     "frames": 253
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-apendicitis",
+   "inicio": 5242,
+   "frames": 930,
+   "beats": [
+    {
+     "inicio": 5242,
+     "frames": 255
+    },
+    {
+     "inicio": 5497,
+     "frames": 272
+    },
+    {
+     "inicio": 5769,
+     "frames": 153
+    },
+    {
+     "inicio": 5922,
+     "frames": 250
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-maniobra",
+   "inicio": 6172,
+   "frames": 688,
+   "beats": [
+    {
+     "inicio": 6172,
+     "frames": 142
+    },
+    {
+     "inicio": 6314,
+     "frames": 205
+    },
+    {
+     "inicio": 6519,
+     "frames": 341
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-contractura",
+   "inicio": 6860,
+   "frames": 680,
+   "beats": [
+    {
+     "inicio": 6860,
+     "frames": 197
+    },
+    {
+     "inicio": 7057,
+     "frames": 214
+    },
+    {
+     "inicio": 7271,
+     "frames": 269
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-peristaltismo",
+   "inicio": 7540,
+   "frames": 447,
+   "beats": [
+    {
+     "inicio": 7540,
+     "frames": 209
+    },
+    {
+     "inicio": 7749,
+     "frames": 238
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-lucha",
+   "inicio": 7987,
+   "frames": 880,
+   "beats": [
+    {
+     "inicio": 7987,
+     "frames": 192
+    },
+    {
+     "inicio": 8179,
+     "frames": 314
+    },
+    {
+     "inicio": 8493,
+     "frames": 182
+    },
+    {
+     "inicio": 8675,
+     "frames": 192
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-paralitico",
+   "inicio": 8867,
+   "frames": 715,
+   "beats": [
+    {
+     "inicio": 8867,
+     "frames": 294
+    },
+    {
+     "inicio": 9161,
+     "frames": 135
+    },
+    {
+     "inicio": 9296,
+     "frames": 286
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-aire",
+   "inicio": 9582,
+   "frames": 653,
+   "beats": [
+    {
+     "inicio": 9582,
+     "frames": 211
+    },
+    {
+     "inicio": 9793,
+     "frames": 188
+    },
+    {
+     "inicio": 9981,
+     "frames": 254
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-peritonitis",
+   "inicio": 10235,
+   "frames": 683,
+   "beats": [
+    {
+     "inicio": 10235,
+     "frames": 264
+    },
+    {
+     "inicio": 10499,
+     "frames": 260
+    },
+    {
+     "inicio": 10759,
+     "frames": 159
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sangre",
+   "inicio": 10918,
+   "frames": 620,
+   "beats": [
+    {
+     "inicio": 10918,
+     "frames": 209
+    },
+    {
+     "inicio": 11127,
+     "frames": 193
+    },
+    {
+     "inicio": 11320,
+     "frames": 218
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hipovolemia",
+   "inicio": 11538,
+   "frames": 761,
+   "beats": [
+    {
+     "inicio": 11538,
+     "frames": 301
+    },
+    {
+     "inicio": 11839,
+     "frames": 172
+    },
+    {
+     "inicio": 12011,
+     "frames": 125
+    },
+    {
+     "inicio": 12136,
+     "frames": 163
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-isquemia",
+   "inicio": 12299,
+   "frames": 847,
+   "beats": [
+    {
+     "inicio": 12299,
+     "frames": 173
+    },
+    {
+     "inicio": 12472,
+     "frames": 130
+    },
+    {
+     "inicio": 12602,
+     "frames": 200
+    },
+    {
+     "inicio": 12802,
+     "frames": 344
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sindrome",
+   "inicio": 13146,
+   "frames": 946,
+   "beats": [
+    {
+     "inicio": 13146,
+     "frames": 336
+    },
+    {
+     "inicio": 13482,
+     "frames": 273
+    },
+    {
+     "inicio": 13755,
+     "frames": 159
+    },
+    {
+     "inicio": 13914,
+     "frames": 178
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-visceral",
+   "inicio": 14092,
+   "frames": 599,
+   "beats": [
+    {
+     "inicio": 14092,
+     "frames": 260
+    },
+    {
+     "inicio": 14352,
+     "frames": 115
+    },
+    {
+     "inicio": 14467,
+     "frames": 96
+    },
+    {
+     "inicio": 14563,
+     "frames": 128
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-somatico",
+   "inicio": 14691,
+   "frames": 651,
+   "beats": [
+    {
+     "inicio": 14691,
+     "frames": 217
+    },
+    {
+     "inicio": 14908,
+     "frames": 102
+    },
+    {
+     "inicio": 15010,
+     "frames": 87
+    },
+    {
+     "inicio": 15097,
+     "frames": 115
+    },
+    {
+     "inicio": 15212,
+     "frames": 130
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-rebote",
+   "inicio": 15342,
+   "frames": 610,
+   "beats": [
+    {
+     "inicio": 15342,
+     "frames": 231
+    },
+    {
+     "inicio": 15573,
+     "frames": 150
+    },
+    {
+     "inicio": 15723,
+     "frames": 229
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-referido",
+   "inicio": 15952,
+   "frames": 657,
+   "beats": [
+    {
+     "inicio": 15952,
+     "frames": 179
+    },
+    {
+     "inicio": 16131,
+     "frames": 150
+    },
+    {
+     "inicio": 16281,
+     "frames": 207
+    },
+    {
+     "inicio": 16488,
+     "frames": 121
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasificacion",
+   "inicio": 16609,
+   "frames": 413,
+   "beats": [
+    {
+     "inicio": 16609,
+     "frames": 413
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-duracion",
+   "inicio": 17022,
+   "frames": 596,
+   "beats": [
+    {
+     "inicio": 17022,
+     "frames": 146
+    },
+    {
+     "inicio": 17168,
+     "frames": 229
+    },
+    {
+     "inicio": 17397,
+     "frames": 221
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-medico",
+   "inicio": 17618,
+   "frames": 773,
+   "beats": [
+    {
+     "inicio": 17618,
+     "frames": 351
+    },
+    {
+     "inicio": 17969,
+     "frames": 168
+    },
+    {
+     "inicio": 18137,
+     "frames": 134
+    },
+    {
+     "inicio": 18271,
+     "frames": 120
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-inespecifico",
+   "inicio": 18391,
+   "frames": 588,
+   "beats": [
+    {
+     "inicio": 18391,
+     "frames": 187
+    },
+    {
+     "inicio": 18578,
+     "frames": 89
+    },
+    {
+     "inicio": 18667,
+     "frames": 147
+    },
+    {
+     "inicio": 18814,
+     "frames": 165
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ecg",
+   "inicio": 18979,
+   "frames": 503,
+   "beats": [
+    {
+     "inicio": 18979,
+     "frames": 215
+    },
+    {
+     "inicio": 19194,
+     "frames": 188
+    },
+    {
+     "inicio": 19382,
+     "frames": 100
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cinco",
+   "inicio": 19482,
+   "frames": 698,
+   "beats": [
+    {
+     "inicio": 19482,
+     "frames": 280
+    },
+    {
+     "inicio": 19762,
+     "frames": 101
+    },
+    {
+     "inicio": 19863,
+     "frames": 89
+    },
+    {
+     "inicio": 19952,
+     "frames": 88
+    },
+    {
+     "inicio": 20040,
+     "frames": 140
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cuadro5",
+   "inicio": 20180,
+   "frames": 466,
+   "beats": [
+    {
+     "inicio": 20180,
+     "frames": 203
+    },
+    {
+     "inicio": 20383,
+     "frames": 66
+    },
+    {
+     "inicio": 20449,
+     "frames": 67
+    },
+    {
+     "inicio": 20516,
+     "frames": 66
+    },
+    {
+     "inicio": 20582,
+     "frames": 64
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-itis",
+   "inicio": 20646,
+   "frames": 545,
+   "beats": [
+    {
+     "inicio": 20646,
+     "frames": 250
+    },
+    {
+     "inicio": 20896,
+     "frames": 295
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cronologia",
+   "inicio": 21191,
+   "frames": 649,
+   "beats": [
+    {
+     "inicio": 21191,
+     "frames": 335
+    },
+    {
+     "inicio": 21526,
+     "frames": 99
+    },
+    {
+     "inicio": 21625,
+     "frames": 215
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-triada",
+   "inicio": 21840,
+   "frames": 619,
+   "beats": [
+    {
+     "inicio": 21840,
+     "frames": 210
+    },
+    {
+     "inicio": 22050,
+     "frames": 75
+    },
+    {
+     "inicio": 22125,
+     "frames": 74
+    },
+    {
+     "inicio": 22199,
+     "frames": 260
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-estadios",
+   "inicio": 22459,
+   "frames": 653,
+   "beats": [
+    {
+     "inicio": 22459,
+     "frames": 276
+    },
+    {
+     "inicio": 22735,
+     "frames": 101
+    },
+    {
+     "inicio": 22836,
+     "frames": 104
+    },
+    {
+     "inicio": 22940,
+     "frames": 172
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colecistitis",
+   "inicio": 23112,
+   "frames": 702,
+   "beats": [
+    {
+     "inicio": 23112,
+     "frames": 331
+    },
+    {
+     "inicio": 23443,
+     "frames": 74
+    },
+    {
+     "inicio": 23517,
+     "frames": 64
+    },
+    {
+     "inicio": 23581,
+     "frames": 233
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen-inflamatorio",
+   "inicio": 23814,
+   "frames": 770,
+   "beats": [
+    {
+     "inicio": 23814,
+     "frames": 386
+    },
+    {
+     "inicio": 24200,
+     "frames": 159
+    },
+    {
+     "inicio": 24359,
+     "frames": 87
+    },
+    {
+     "inicio": 24446,
+     "frames": 138
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-blumberg",
+   "inicio": 24584,
+   "frames": 406,
+   "beats": [
+    {
+     "inicio": 24584,
+     "frames": 203
+    },
+    {
+     "inicio": 24787,
+     "frames": 203
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-obstructivo",
+   "inicio": 24990,
+   "frames": 733,
+   "beats": [
+    {
+     "inicio": 24990,
+     "frames": 226
+    },
+    {
+     "inicio": 25216,
+     "frames": 120
+    },
+    {
+     "inicio": 25336,
+     "frames": 206
+    },
+    {
+     "inicio": 25542,
+     "frames": 181
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-obstructivo-clinica",
+   "inicio": 25723,
+   "frames": 881,
+   "beats": [
+    {
+     "inicio": 25723,
+     "frames": 140
+    },
+    {
+     "inicio": 25863,
+     "frames": 178
+    },
+    {
+     "inicio": 26041,
+     "frames": 163
+    },
+    {
+     "inicio": 26204,
+     "frames": 163
+    },
+    {
+     "inicio": 26367,
+     "frames": 113
+    },
+    {
+     "inicio": 26480,
+     "frames": 124
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mecanico-paralitico",
+   "inicio": 26604,
+   "frames": 463,
+   "beats": [
+    {
+     "inicio": 26604,
+     "frames": 259
+    },
+    {
+     "inicio": 26863,
+     "frames": 204
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-perforativo",
+   "inicio": 27067,
+   "frames": 532,
+   "beats": [
+    {
+     "inicio": 27067,
+     "frames": 245
+    },
+    {
+     "inicio": 27312,
+     "frames": 287
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-perforativo-clinica",
+   "inicio": 27599,
+   "frames": 735,
+   "beats": [
+    {
+     "inicio": 27599,
+     "frames": 164
+    },
+    {
+     "inicio": 27763,
+     "frames": 126
+    },
+    {
+     "inicio": 27889,
+     "frames": 256
+    },
+    {
+     "inicio": 28145,
+     "frames": 189
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-contractura",
+   "inicio": 28334,
+   "frames": 503,
+   "beats": [
+    {
+     "inicio": 28334,
+     "frames": 343
+    },
+    {
+     "inicio": 28677,
+     "frames": 160
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-jobert",
+   "inicio": 28837,
+   "frames": 657,
+   "beats": [
+    {
+     "inicio": 28837,
+     "frames": 398
+    },
+    {
+     "inicio": 29235,
+     "frames": 123
+    },
+    {
+     "inicio": 29358,
+     "frames": 136
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-popper",
+   "inicio": 29494,
+   "frames": 361,
+   "beats": [
+    {
+     "inicio": 29494,
+     "frames": 208
+    },
+    {
+     "inicio": 29702,
+     "frames": 153
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hemorragico",
+   "inicio": 29855,
+   "frames": 728,
+   "beats": [
+    {
+     "inicio": 29855,
+     "frames": 286
+    },
+    {
+     "inicio": 30141,
+     "frames": 153
+    },
+    {
+     "inicio": 30294,
+     "frames": 170
+    },
+    {
+     "inicio": 30464,
+     "frames": 119
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-matidez",
+   "inicio": 30583,
+   "frames": 610,
+   "beats": [
+    {
+     "inicio": 30583,
+     "frames": 241
+    },
+    {
+     "inicio": 30824,
+     "frames": 123
+    },
+    {
+     "inicio": 30947,
+     "frames": 140
+    },
+    {
+     "inicio": 31087,
+     "frames": 106
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cullen",
+   "inicio": 31193,
+   "frames": 651,
+   "beats": [
+    {
+     "inicio": 31193,
+     "frames": 229
+    },
+    {
+     "inicio": 31422,
+     "frames": 119
+    },
+    {
+     "inicio": 31541,
+     "frames": 303
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-aire-sangre",
+   "inicio": 31844,
+   "frames": 518,
+   "beats": [
+    {
+     "inicio": 31844,
+     "frames": 303
+    },
+    {
+     "inicio": 32147,
+     "frames": 215
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-vascular",
+   "inicio": 32362,
+   "frames": 784,
+   "beats": [
+    {
+     "inicio": 32362,
+     "frames": 362
+    },
+    {
+     "inicio": 32724,
+     "frames": 190
+    },
+    {
+     "inicio": 32914,
+     "frames": 108
+    },
+    {
+     "inicio": 33022,
+     "frames": 124
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hora-oro",
+   "inicio": 33146,
+   "frames": 905,
+   "beats": [
+    {
+     "inicio": 33146,
+     "frames": 178
+    },
+    {
+     "inicio": 33324,
+     "frames": 211
+    },
+    {
+     "inicio": 33535,
+     "frames": 95
+    },
+    {
+     "inicio": 33630,
+     "frames": 174
+    },
+    {
+     "inicio": 33804,
+     "frames": 124
+    },
+    {
+     "inicio": 33928,
+     "frames": 123
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alicia",
+   "inicio": 34051,
+   "frames": 704,
+   "beats": [
+    {
+     "inicio": 34051,
+     "frames": 238
+    },
+    {
+     "inicio": 34289,
+     "frames": 65
+    },
+    {
+     "inicio": 34354,
+     "frames": 64
+    },
+    {
+     "inicio": 34418,
+     "frames": 64
+    },
+    {
+     "inicio": 34482,
+     "frames": 64
+    },
+    {
+     "inicio": 34546,
+     "frames": 209
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-acompanantes",
+   "inicio": 34755,
+   "frames": 988,
+   "beats": [
+    {
+     "inicio": 34755,
+     "frames": 167
+    },
+    {
+     "inicio": 34922,
+     "frames": 162
+    },
+    {
+     "inicio": 35084,
+     "frames": 269
+    },
+    {
+     "inicio": 35353,
+     "frames": 177
+    },
+    {
+     "inicio": 35530,
+     "frames": 86
+    },
+    {
+     "inicio": 35616,
+     "frames": 127
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-inspeccion",
+   "inicio": 35743,
+   "frames": 1075,
+   "beats": [
+    {
+     "inicio": 35743,
+     "frames": 320
+    },
+    {
+     "inicio": 36063,
+     "frames": 188
+    },
+    {
+     "inicio": 36251,
+     "frames": 120
+    },
+    {
+     "inicio": 36371,
+     "frames": 132
+    },
+    {
+     "inicio": 36503,
+     "frames": 111
+    },
+    {
+     "inicio": 36614,
+     "frames": 117
+    },
+    {
+     "inicio": 36731,
+     "frames": 87
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-palpacion",
+   "inicio": 36818,
+   "frames": 596,
+   "beats": [
+    {
+     "inicio": 36818,
+     "frames": 260
+    },
+    {
+     "inicio": 37078,
+     "frames": 107
+    },
+    {
+     "inicio": 37185,
+     "frames": 101
+    },
+    {
+     "inicio": 37286,
+     "frames": 128
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-percusion",
+   "inicio": 37414,
+   "frames": 416,
+   "beats": [
+    {
+     "inicio": 37414,
+     "frames": 269
+    },
+    {
+     "inicio": 37683,
+     "frames": 147
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-auscultacion",
+   "inicio": 37830,
+   "frames": 611,
+   "beats": [
+    {
+     "inicio": 37830,
+     "frames": 228
+    },
+    {
+     "inicio": 38058,
+     "frames": 80
+    },
+    {
+     "inicio": 38138,
+     "frames": 135
+    },
+    {
+     "inicio": 38273,
+     "frames": 168
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-laboratorio",
+   "inicio": 38441,
+   "frames": 857,
+   "beats": [
+    {
+     "inicio": 38441,
+     "frames": 109
+    },
+    {
+     "inicio": 38550,
+     "frames": 91
+    },
+    {
+     "inicio": 38641,
+     "frames": 64
+    },
+    {
+     "inicio": 38705,
+     "frames": 234
+    },
+    {
+     "inicio": 38939,
+     "frames": 62
+    },
+    {
+     "inicio": 39001,
+     "frames": 64
+    },
+    {
+     "inicio": 39065,
+     "frames": 115
+    },
+    {
+     "inicio": 39180,
+     "frames": 118
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-imagenes",
+   "inicio": 39298,
+   "frames": 632,
+   "beats": [
+    {
+     "inicio": 39298,
+     "frames": 193
+    },
+    {
+     "inicio": 39491,
+     "frames": 162
+    },
+    {
+     "inicio": 39653,
+     "frames": 277
+    }
+   ]
+  }
+ ]
+}

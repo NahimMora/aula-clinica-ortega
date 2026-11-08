@@ -85,6 +85,7 @@ export const SOURCES: Record<string, SourceInfo> = Object.fromEntries(
     { id: 'libro', label: 'Libro Clínica Médica I (2023) — L. Ortega', kind: 'libro' },
     { id: 'pizarra', label: 'Fotos de pizarra (clases prácticas)', kind: 'pizarra' },
     { id: 'argente', label: 'Video de maniobras — Semiología Médica (Argente-Álvarez)', kind: 'video-maniobras' },
+    { id: 'argente-libro', label: 'Argente-Álvarez, Semiología Médica', kind: 'libro' },
   ].map((s): [string, SourceInfo] => [s.id, s as SourceInfo]),
 );
 

@@ -1,7 +1,7 @@
 import type { ComponentType } from 'react';
 import type { Escena } from './escenas/tipos';
 import type { VisualBlock } from './visual/tipos';
-import type { PlanEstudio } from './estudio/tipos';
+import type { PlanClase } from './clase/tipos';
 
 /** Prioridad pedagógica de un subtema.
  *  - imprescindible: el profesor indica expresamente que se evalúa o lo enfatiza.
@@ -73,6 +73,8 @@ export interface MCQ {
   /** El profesor enfatiza este tema para el examen (respaldado por una referencia). */
   emphasis?: boolean;
   integration?: boolean;
+  /** De dónde sale la pregunta: dicha por el profesor, del preguntero o armada para practicar. */
+  origen?: 'clase' | 'preguntero' | 'practica';
   topic: string;
   refs?: SourceRef[];
 }
@@ -86,6 +88,8 @@ export interface Development {
   priority: Priority;
   emphasis?: boolean;
   prio?: ExamPrio;
+  /** De dónde sale la pregunta: dicha por el profesor, del preguntero o armada para practicar. */
+  origen?: 'clase' | 'preguntero' | 'practica';
   /** Frase textual del profesor sobre esta pregunta (verificada en la transcripción). */
   quote?: { text: string; refs: SourceRef[] };
   /** Ficha de teoría donde se estudia (id de TheorySection). */
@@ -150,8 +154,8 @@ export interface Chapter {
   escenas?: Escena[];
   /** Hay narración por paso en public/media/<id>/pasos/ (la genera `npm run tts`). */
   audioPasos?: boolean;
-  /** Piloto Aula Clínica 2.0: si existe, el capítulo se muestra por pestañas (src/estudio). */
-  estudio?: PlanEstudio;
+  /** Clase visual: si existe, el capítulo se muestra por pestañas (src/clase). */
+  clase?: PlanClase;
 }
 
 export interface ChapterMeta {

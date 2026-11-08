@@ -13,6 +13,7 @@
     "pdf": "node scripts/build-pdfs.mjs http://localhost:4791/aula-clinica-ortega/",
     "smoke": "node scripts/smoke-test.mjs",
     "tts": "node scripts/tts.mjs",
+    "tts:clase": "node scripts/tts-clase.mjs",
     "video:render": "remotion render video/src/index.ts"
   },
   "dependencies": {

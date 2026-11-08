@@ -54,13 +54,16 @@ Instrucciones originales completas del proyecto: ver `docs/progress/PLAN.md` (or
 - Se eliminaron: @remotion/player en la web (SlideDeck/SlidesBlock, `src/video/kit.tsx`), `slides.tsx`, `narration.json`, `timing.json`, la página «Teoría por pasos».
 - `content/maneuvers/index.ts`, `content/sources.ts`, `content/traceability/<id>.md`, `src/lib/progress.ts` (localStorage `aula-clinica-ortega:v1`) igual que antes.
 
-## 4b. Piloto «Aula Clínica 2.0» (solo dig-02, en evaluación)
-- **No escalar a otros capítulos hasta que la usuaria evalúe el piloto.**
-- Un capítulo lo activa con `estudio` (`src/types.ts`). Sin ese campo se sigue usando la página clásica; `StudyView` se carga diferido.
-- `src/estudio/`: `tipos.ts` (bloques y plan), `StudyView.tsx` (pestañas, persistencia, modo repaso, ?t= y ?s=), `bloques.tsx` (render; `desde` reutiliza bloques de `theory`, `escena` reutiliza escenas de abdomen), `figuras.tsx`. Estilos aislados bajo `.estudio` en `src/styles/estudio.css`.
-- Contenido: `content/chapters/dig-02/estudio.ts` organiza lo existente y agrega la fisiopatología (bloques `mecanismo`, `precision`). `theory`, choice, desarrollos y memoria siguen en `index.tsx`: manual, PDF, buscador y práctica no cambian.
-- `ConceptMap` admite `seq` opcional (número por rama).
-- Recursos y licencias: `content/traceability/dig-02.md`. Prueba: `node scripts/test-estudio.mjs <url> dig-02 <carpeta>`.
+## 4b. Clase visual (piloto en dig-02, reemplaza a «Aula Clínica 2.0»)
+- **No escalar a otros capítulos hasta que la usuaria evalúe el piloto.** Se retiró `src/estudio/`.
+- Un capítulo la activa con `clase` (`src/types.ts`, `src/clase/tipos.ts`); sin ese campo usa la página clásica. `ClaseView` se carga diferido y conserva la cabecera y navegación clásicas.
+- Pestañas: Mapa · Fisiopatología · Diapositivas · Video · Choice · Desarrollo · Memoria · Maniobras (si hay) · Cierre · Simulacro.
+- **Un motor, dos salidas:** `src/clase/Diapositiva.tsx` + `figuras.tsx` dibujan en función de `(t, paso, dt)`. La web usa `Visor.tsx`; el video, `ClaseCompleta` en `video/src/Root.tsx`. No usar `import.meta` ni router ni alias con valor (`@/…` solo en `import type`) en ese código: Remotion lo importa.
+- Contenido: `content/chapters/<id>/clase.ts` (mapa jerárquico `MapaArbol`, mazos `fisio` y `teoria`, casos). Cada diapositiva: `voz` por pasos, `aclara` («Para entenderlo mejor»), `examen` (`ortega` solo si él lo dice; si no, `preguntero`), `soloWeb`/`soloDiapo` para lo que no va en video.
+- `theory`, choice, desarrollos y memoria siguen en `index.tsx`: manual, PDF, buscador y práctica no cambian.
+- Video: `npm run tts:clase -- <id>` → `npx remotion render video/src/index.ts <id>-clase video/out/<id>-clase.mp4 --muted --codec=h264 --crf=22 --concurrency=8` → unir con `narracion.wav` (ver `content/traceability/dig-02.md`). Falta agregar el capítulo en `CLASES`.
+- Fuentes: Argente-Álvarez está escaneado (sin texto): índice de PDF = página impresa + 7. Solo mecanismos que Ortega no explica.
+- Prueba: `node scripts/test-clase.mjs <url> <id> <carpeta> [--fotos]`.
 
 ## 5. Comandos
 ```bash
@@ -111,4 +114,5 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 - 2026-11-08 (tarde) — Video dig-01 re-renderizado (6:18) y diapositivas paso a paso; verificado en la URL pública (check-video + interaction-test 14/14).
 - 2026-11-08 (noche) — La versión «por pasos» no gustó: se volvió a la versión de mapas y fichas (revert de 8e99a0a/ed5745b) y se agregó lo mejor de farmaco: explicaciones animadas dentro de las fichas, bloques visuales genéricos, choice mezclado.
 - 2026-11-08 (noche) — dig-02 a dig-15 publicados de a uno (cada uno con su commit y deploy). Digestivo completo. Siguiente: nefrourológico.
+- 2026-11-08 (corrección) — dig-02: se abandona Aula Clínica 2.0; vuelve la estructura original con mapa jerárquico, fisiopatología, diapositivas navegables y clase completa con Tomás.
 - 2026-11-08 (madrugada) — Kit `urinario` + `nefrona`; ren-01 a ren-07 publicados de a uno; 6 maniobras renales. Renal completo. Siguiente: nervioso.

@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState, type RefObject } from 'react';
 import { Link } from 'react-router-dom';
 import type { ClosingData, ConceptMapData } from '@/types';
+import type { MapaConceptual, NodoMapa } from '@/clase/tipos';
 import { Rich } from './Rich';
 import { Icon } from './Icon';
 
@@ -60,7 +61,7 @@ function Wires({ paths, id }: { paths: PathSpec[]; id: string }) {
   );
 }
 
-export function ConceptMap({ data, onBranch, seq }: { data: ConceptMapData; onBranch?: (id: string) => void; /** Número de secuencia por rama (opcional). */ seq?: Record<string, string> }) {
+export function ConceptMap({ data, onBranch }: { data: ConceptMapData; onBranch?: (id: string) => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState<string | null>(null);
   const paths = useConnectors(ref, [data], (q, box) => {
@@ -124,7 +125,7 @@ export function ConceptMap({ data, onBranch, seq }: { data: ConceptMapData; onBr
           </div>
         ))}
       </div>
-      <div className="cmap__branches" style={{ gridTemplateColumns: `repeat(${Math.min(data.branches.length, seq ? 5 : 4)}, minmax(0, 1fr))` }}>
+      <div className="cmap__branches" style={{ gridTemplateColumns: `repeat(${Math.min(data.branches.length, 4)}, minmax(0, 1fr))` }}>
         {data.branches.map((b) => (
           <button
             key={b.id}
@@ -138,10 +139,7 @@ export function ConceptMap({ data, onBranch, seq }: { data: ConceptMapData; onBr
             onBlur={() => setActive(null)}
             onClick={() => onBranch?.(b.id)}
           >
-            <span className="cmap__branch-title">
-              {seq?.[b.id] && <span className="cmap__seq">{seq[b.id]}</span>}
-              {b.label}
-            </span>
+            <span className="cmap__branch-title">{b.label}</span>
             <ul>
               {b.items.map((it, i) => (
                 <li key={i}>{it}</li>
@@ -154,6 +152,126 @@ export function ConceptMap({ data, onBranch, seq }: { data: ConceptMapData; onBr
             )}
           </button>
         ))}
+      </div>
+    </div>
+  );
+}
+
+function NodoArbolMapa({ n, nivel, padre }: { n: NodoMapa; nivel: number; padre?: string }) {
+  const caja = (
+    <div className={`mtree__nodo mtree__nodo--${Math.min(nivel, 2)} tone-${n.tone ?? 'lilac'}`} data-mid={n.id} data-mpadre={padre} data-tone={n.tone ?? 'lilac'}>
+      <span className="mtree__t">
+        {n.n && <span className="mtree__n">{n.n}</span>}
+        {n.label}
+        {n.examen && (
+          <span className="mtree__ex" title="Pregunta de examen">
+            ❗
+          </span>
+        )}
+      </span>
+      {n.nota && (
+        <span className="mtree__d">
+          <Rich text={n.nota} />
+        </span>
+      )}
+    </div>
+  );
+  if (!n.hijos?.length) return caja;
+  return (
+    <div className="mtree__fila">
+      {caja}
+      <div className="mtree__hijos">
+        {n.hijos.map((h) => (
+          <NodoArbolMapa key={h.id} n={h} nivel={nivel + 1} padre={n.id} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Mapa inicial: mismo marco que ConceptMap, con la jerarquía médica del tema en lugar de ramas de índice. */
+export function MapaArbol({ data, arbol }: { data: ConceptMapData; arbol: MapaConceptual }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const paths = useConnectors(ref, [data, arbol], (q, box) => {
+    const el = ref.current;
+    if (!el) return [];
+    const rel = (r: DOMRect) => ({ x: r.left - box.left, y: r.top - box.top, w: r.width, h: r.height });
+    const out: PathSpec[] = [];
+    const hub = q('[data-node="hub"]')[0];
+    if (hub) {
+      const H = rel(hub);
+      q('[data-node="pre"]').forEach((r) => {
+        const a = rel(r);
+        out.push({ d: hcurve(a.x + a.w, a.y + a.h / 2, H.x - 4, H.y + H.h / 2), tone: 'ink' });
+      });
+      q('[data-node="out"]').forEach((r) => {
+        const a = rel(r);
+        out.push({ d: hcurve(H.x + H.w, H.y + H.h / 2, a.x - 4, a.y + a.h / 2), tone: 'ink' });
+      });
+    }
+    const nodos = Array.from(el.querySelectorAll<HTMLElement>('[data-mid]'));
+    const porId = new Map(nodos.map((n) => [n.dataset.mid!, n]));
+    nodos.forEach((n) => {
+      const pid = n.dataset.mpadre;
+      if (!pid) return;
+      const p = porId.get(pid);
+      if (!p) return;
+      const a = rel(p.getBoundingClientRect());
+      const b = rel(n.getBoundingClientRect());
+      out.push({ d: hcurve(a.x + a.w, a.y + a.h / 2, b.x - 4, b.y + b.h / 2), tone: n.dataset.tone ?? 'lilac' });
+    });
+    return out;
+  });
+  return (
+    <div className="cmap cmap--arbol" ref={ref}>
+      <Wires paths={paths} id="mtree" />
+      <div className="cmap__col cmap__pre">
+        <div className="cmap__label">
+          <Icon name="layers" size={16} /> Necesitás saber
+        </div>
+        {data.prereqs.map((p, i) => (
+          <div key={i} className="cmap__node cmap__node--pre" data-node="pre">
+            <div className="cmap__node-title">{p.chapterId ? <Link to={`/capitulo/${p.chapterId}`}>{p.label}</Link> : p.label}</div>
+            {p.detail && (
+              <div className="cmap__node-detail">
+                <Rich text={p.detail} />
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+      <div className="cmap__hub" data-node="hub">
+        <div className="cmap__hub-title">{data.center}</div>
+        <div className="cmap__hub-why">
+          <Rich text={data.why} />
+        </div>
+      </div>
+      <div className="cmap__col cmap__out">
+        <div className="cmap__label">
+          <Icon name="target" size={16} /> Al terminar vas a poder
+        </div>
+        {data.outcomes.map((o, i) => (
+          <div key={i} className="cmap__node cmap__node--out" data-node="out">
+            <Icon name="check" size={16} />
+            <span>
+              <Rich text={o} />
+            </span>
+          </div>
+        ))}
+      </div>
+      <div className="mtree">
+        {arbol.raices.map((r) => (
+          <NodoArbolMapa key={r.id} n={r} nivel={0} />
+        ))}
+        {arbol.nexos && (
+          <ul className="mtree__nexos">
+            {arbol.nexos.map((x, i) => (
+              <li key={i}>
+                <Rich text={x} />
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,310 @@
+{
+  "src": "media/dig-02/clase.mp4",
+  "poster": "media/dig-02/clase.jpg",
+  "vtt": "media/dig-02/clase.vtt",
+  "duration": "27:49",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · La señal del dolor"
+    },
+    {
+      "t": 100,
+      "label": "Fisiopatología · Por qué duele distinto"
+    },
+    {
+      "t": 257,
+      "label": "Fisiopatología · Rebote y contractura"
+    },
+    {
+      "t": 314,
+      "label": "Fisiopatología · El intestino"
+    },
+    {
+      "t": 399,
+      "label": "Fisiopatología · Aire y sangre"
+    },
+    {
+      "t": 512,
+      "label": "Fisiopatología · Isquemia"
+    },
+    {
+      "t": 547,
+      "label": "Teoría · Tipos de dolor"
+    },
+    {
+      "t": 692,
+      "label": "Teoría · Clasificación"
+    },
+    {
+      "t": 811,
+      "label": "Teoría · Los 5 quirúrgicos"
+    },
+    {
+      "t": 860,
+      "label": "Teoría · Inflamatorio y Murphy"
+    },
+    {
+      "t": 1041,
+      "label": "Teoría · Obstructivo"
+    },
+    {
+      "t": 1127,
+      "label": "Teoría · Perforativo"
+    },
+    {
+      "t": 1243,
+      "label": "Teoría · Hemorrágico"
+    },
+    {
+      "t": 1348,
+      "label": "Teoría · Vascular"
+    },
+    {
+      "t": 1418,
+      "label": "Teoría · Exploración"
+    },
+    {
+      "t": 1601,
+      "label": "Teoría · Estudios"
+    }
+  ],
+  "script": [
+    {
+      "title": "Del estímulo a la corteza",
+      "text": "Antes de hablar de abdomen, veamos cómo funciona el dolor. Todo empieza en el nociceptor, que no es más que una terminal nerviosa libre. Responde a tres tipos de estímulo: mecánico, térmico o químico. Esa señal llega a la médula por la raíz posterior. En el asta dorsal, la primera neurona hace sinapsis y libera dos neurotransmisores: sustancia P y glutamato. La segunda neurona cruza al lado opuesto por la comisura gris anterior, y sube por el cordón anterolateral. Es la vía espinotalámica. Termina en el tálamo, y de ahí a la corteza. Recién en ese momento el estímulo se convierte en dolor."
+    },
+    {
+      "title": "Dos fibras, dos dolores",
+      "text": "El dolor viaja por dos cables distintos. Las fibras A delta son mielínicas: conducen rápido, unos veinte metros por segundo, y dan un dolor agudo, punzante, de límites precisos. Las fibras C no tienen mielina y conducen unas diez veces más lento. Son las que predominan en las vísceras. Por eso el dolor visceral es vago y tardío."
+    },
+    {
+      "title": "La pared y sus dos hojas",
+      "text": "Ahora la anatomía que necesitás. Por dentro de la pared está el peritoneo parietal. Lo inervan nervios espinales, de dorsal siete a lumbar uno, igual que a la piel. Pegado a los órganos está el peritoneo visceral. Sus fibras, en cambio, viajan con los nervios simpáticos. Son dos cables distintos para dos hojas distintas."
+    },
+    {
+      "title": "Dolor visceral: qué lo dispara",
+      "text": "El dolor visceral no se dispara por cortar, sino por estirar. Puede estirarse la pared de un órgano hueco, como en una obstrucción, o la cápsula de un órgano macizo, como en la hepatitis. También lo produce la isquemia o la inflamación. Los receptores están en la capa muscular y en la cápsula. La señal sale por fibras C. El resultado es un dolor sordo, que tarda en aparecer y que el paciente no puede señalar con precisión."
+    },
+    {
+      "title": "Por qué uno se localiza y el otro no",
+      "text": "Y acá está la clave de por qué el dolor visceral es mal localizado. Sus fibras ingresan a la médula en forma bilateral. El cerebro recibe la señal de los dos lados, y la ubica en la línea media. El somático funciona distinto: un nervio segmentario, de un solo lado. Por eso el paciente lo señala con un dedo."
+    },
+    {
+      "title": "Dolor somático: cuando llega al parietal",
+      "text": "Cuando la inflamación llega al peritoneo parietal, todo cambia. El estímulo puede ser bacteriano, en una peritonitis, o químico, como el jugo gástrico de una úlcera perforada. Ahora se activan nervios espinales, rápidos y segmentarios. El dolor es intenso, brusco y localizado. Y empeora con cualquier cosa que mueva el peritoneo: caminar, toser, incluso respirar. Por eso este paciente no se mueve."
+    },
+    {
+      "title": "Dolor referido: la convergencia",
+      "text": "El dolor referido se explica por una convergencia. En el asta dorsal, una fibra que viene de la víscera y otra que viene de la piel terminan en la misma neurona. Esa neurona manda un único mensaje hacia arriba. El cerebro no puede saber por cuál de los dos axones entró. Y como está acostumbrado a recibir señales de la piel, proyecta la sensación ahí. Por eso un infarto de cara inferior puede doler en el epigastrio."
+    },
+    {
+      "title": "Apendicitis: un dolor que cambia de mecanismo",
+      "text": "La apendicitis es el mejor ejemplo para entender todo esto junto. Empieza con un fecalito que obstruye la luz, y la pared del apéndice se distiende. Esa distensión activa fibras viscerales. Y el dolor no aparece en la fosa ilíaca, sino en el epigastrio, porque es un dolor visceral en la línea media. Con las horas, la inflamación atraviesa toda la pared y llega al peritoneo parietal. Ahí el dolor cambia de carácter y se instala en la fosa ilíaca derecha. El apéndice nunca se movió: lo que cambió fue la hoja irritada."
+    },
+    {
+      "title": "Comprimir y soltar: qué estás explorando",
+      "text": "Ahora llevá eso a la mano. Mirá lo que pasa cuando palpás. Al comprimir despacio, presionás el órgano y su hoja visceral. Si le duele, esa hoja está irritada. Al soltar de golpe, la pared vuelve bruscamente y arrastra el peritoneo parietal. Si le duele más que cuando apretabas, la hoja parietal está comprometida. Ese es el signo del rebote."
+    },
+    {
+      "title": "Por qué se endurece el abdomen",
+      "text": "Y por qué se pone duro el abdomen. El peritoneo parietal irritado manda su señal por el nervio espinal. Esa señal, en la médula, activa directamente la motoneurona de los músculos de la pared. Es un espasmo reflejo. El resultado es una contractura involuntaria. El paciente no puede aflojarla aunque quiera. En una perforación, ese es el abdomen en tabla."
+    },
+    {
+      "title": "El intestino normal",
+      "text": "Veamos el intestino. En condiciones normales, las ondas de peristaltismo empujan el contenido hacia abajo. El contenido se mezcla con gas, y esa mezcla en movimiento es lo que escuchás con el estetoscopio. Son los ruidos hidroaéreos."
+    },
+    {
+      "title": "Obstáculo: el intestino lucha",
+      "text": "Ahora poné un obstáculo: un tumor, una brida, una hernia. El contenido no puede pasar. Por arriba del obstáculo sube la presión, y el intestino aumenta su peristaltismo para tratar de vencerlo. Cada contracción es un cólico. Y lo que escuchás son los ruidos de lucha. Lo que no puede bajar, sube. Por eso todo síndrome obstructivo se acompaña de vómitos. Y por debajo del obstáculo no llega nada: no hay gases, no hay materia fecal, y los ruidos disminuyen."
+    },
+    {
+      "title": "Íleo paralítico: sin obstáculo, sin movimiento",
+      "text": "El otro extremo es el íleo paralítico. No hay ningún obstáculo: el intestino simplemente deja de moverse. Un órgano inflamado irrita las asas vecinas. Se detiene el peristaltismo en ese segmento, y el gas se acumula. Si afecta un tramo cerca del órgano inflamado, se llama asa centinela. Si es generalizado, pensá en peritonitis o perforación: un abdomen silencioso."
+    },
+    {
+      "title": "Si se perfora: el aire sube",
+      "text": "Pasemos a lo que ocupa la cavidad. Cuando se perfora una víscera hueca, el gas que tenía adentro se escapa al peritoneo. Y el gas flota. Sube, y se ubica debajo del diafragma, justo por encima del hígado. El hígado es macizo y suena mate. Pero ahora hay gas interpuesto: al percutir, donde tendría que haber matidez, escuchás timpanismo."
+    },
+    {
+      "title": "Qué contenido irrita el peritoneo",
+      "text": "No todas las perforaciones contaminan igual. En el estómago, el contenido es ácido y tiene pocos gérmenes: al principio la inflamación es química. En el colon la situación es otra: en el sigmoides hay del orden de diez a la once bacterias por gramo de materia fecal. La infección es polimicrobiana. La regla es simple: cuanto más distal la perforación, mayor la carga bacteriana."
+    },
+    {
+      "title": "Si sangra: la sangre cae",
+      "text": "Con la sangre pasa exactamente lo contrario. Se rompe un vaso o un órgano, y la sangre sale a la cavidad. La sangre no sube: cae. Se acumula en las partes declives y desplaza el aire de las asas. Por eso al percutir encontrás matidez. Aire arriba, timpanismo. Sangre abajo, matidez."
+    },
+    {
+      "title": "El cuerpo compensa la pérdida",
+      "text": "Mientras tanto, el paciente se está desangrando. Cae la volemia, y el corazón se acelera para sostener el gasto. Cuando no alcanza, aparece la hipotensión. El organismo redistribuye la sangre hacia los órganos vitales: la piel se pone fría y sudorosa. Disminuye la perfusión renal, y el paciente deja de orinar. Y cuando no llega suficiente sangre al sistema nervioso central, se altera la conciencia."
+    },
+    {
+      "title": "Isquemia mesentérica: el intestino se muere",
+      "text": "El último mecanismo. La arteria mesentérica superior lleva la sangre al intestino. Si una trombosis o una embolia la ocluye, el flujo se corta. El tejido sin oxígeno pasa a metabolismo anaerobio y produce lactato. Por eso se pide en sangre. Si no se resuelve, el intestino se infarta. Y esa barrera, que contenía a la flora intestinal, deja de existir: las bacterias pasan a la sangre, y el paciente muere por shock séptico y falla multiorgánica."
+    },
+    {
+      "title": "Abdomen agudo: qué es",
+      "text": "Vamos con la teoría. El abdomen agudo es un síndrome, un conjunto de signos y síntomas, cuyo síntoma cardinal es el dolor abdominal. Puede o no venir acompañado de otros síntomas. Ojo con la definición: no incluye la reagudización de un dolor crónico. Un paciente con cáncer de páncreas que tiene un pico de dolor no tiene un abdomen agudo. Y muchas veces el origen ni siquiera está en el abdomen: puede ser cardíaco o pulmonar. Es un motivo de consulta muy frecuente. El profesor ve cuatro o cinco por guardia."
+    },
+    {
+      "title": "Dolor visceral",
+      "text": "Son dos tipos de dolor, aunque decimos tres. El primero es el visceral: aparece cuando se inflama un órgano y se compromete su peritoneo visceral. El paciente no puede decir exactamente dónde le duele. Puede tener características diversas. Y al examen físico lo reconocés porque duele cuando comprimís."
+    },
+    {
+      "title": "Dolor somático",
+      "text": "El segundo es el somático. Aparece cuando la inflamación del peritoneo visceral llega secundariamente al parietal. Acá el paciente te señala el punto exacto. El dolor cambia con la posición. Puede acompañarse de contractura o defensa abdominal. Y lo identificás a la palpación: duele cuando descomprimís."
+    },
+    {
+      "title": "Compresión, descompresión y rebote",
+      "text": "Fijate cómo se traduce en la mano. Si comprimís y le duele, pero al soltar no, solo está irritado el peritoneo visceral. Si le duele al comprimir y también al descomprimir, están comprometidas las dos hojas. Y si al descomprimir le duele más que cuando apretabas, hay compromiso del peritoneo parietal. Eso se llama signo del rebote."
+    },
+    {
+      "title": "Dolor referido",
+      "text": "El tercero es el referido: es de origen visceral, pero se siente lejos del sitio donde está el problema. El ejemplo clásico: una apendicitis que empieza doliendo en la boca del estómago. Otro muy importante: un infarto de cara inferior del corazón, que se presenta como si fuera una úlcera o una gastritis. Y la colecistitis aguda, que irradia al hombro derecho."
+    },
+    {
+      "title": "Cómo se clasifica",
+      "text": "Hay dos formas de clasificarlo. Por su duración: agudo, si dura menos de siete días, y crónico, si dura más de siete días. Y por su etiología, que es la parte más importante: médico, quirúrgico e inespecífico."
+    },
+    {
+      "title": "Agudo y crónico",
+      "text": "El agudo dura menos de siete días y puede ser tanto médico como quirúrgico. El crónico dura más de siete días, y lo habitual es que tenga tratamiento médico: dispepsias, intestino irritable, úlceras. La regla práctica es esta: todo abdomen agudo lleva interconsulta con cirugía, porque te podés estar comiendo un cuadro quirúrgico."
+    },
+    {
+      "title": "Abdomen agudo médico",
+      "text": "El abdomen agudo médico se resuelve con tratamiento médico, a veces ambulatorio y a veces con internación. Si el paciente vomita todo, no le va a servir nada por boca: hay que internarlo y poner un suero. Hay causas torácicas, como el infarto, la pericarditis o la perforación esofágica. Hay abdominales, como la gastroenteritis o la pielonefritis. Y hay metabólicas, como la cetoacidosis diabética."
+    },
+    {
+      "title": "Abdomen agudo inespecífico",
+      "text": "Y está el inespecífico: un dolor muy intenso, generalizado, que no tiene signos que lo definan. Aparece mucho en mujeres jóvenes. Es un diagnóstico por exclusión. Hay que estudiarlo y seguirlo. Y se escribe así: abdomen agudo inespecífico, y entre paréntesis lo que sospechás."
+    },
+    {
+      "title": "La regla que no se negocia",
+      "text": "Y una regla que no se negocia. Todo paciente con dolor abdominal agudo por arriba del ombligo lleva electrocardiograma. Puede ser epigastrio o cualquiera de los hipocondrios. Hay que descartar que se esté infartando. Y más todavía si tiene factores de riesgo."
+    },
+    {
+      "title": "Los cinco abdómenes agudos quirúrgicos",
+      "text": "Esto es pregunta de parcial, y hay que saberlo como el Padre Nuestro. Son cinco. El primero, y el que te vas a topar siempre, es el inflamatorio. El segundo, el obstructivo mecánico. El tercero, el perforativo. El cuarto, el hemorrágico. Y el quinto, el vascular o isquémico: el más letal de todos."
+    },
+    {
+      "title": "El cuadro para estudiar",
+      "text": "Y este es el cuadro que resume todo. Lo vamos a desarrollar de a uno. El inflamatorio. El obstructivo. El perforativo. El hemorrágico. Y el vascular."
+    },
+    {
+      "title": "Inflamatorio: todo lo que termina en -itis",
+      "text": "El inflamatorio es todo lo que termina en itis. La apendicitis y la colecistitis aguda se operan en el noventa y siete por ciento de los casos. La pancreatitis, la diverticulitis y la adenitis mesentérica, en cambio, empiezan con tratamiento médico. La diverticulitis depende de la clasificación de Hinchey."
+    },
+    {
+      "title": "Cronología de Murphy: el recorrido",
+      "text": "En la apendicitis hay dos cosas que el profesor quiere que diferencies: la cronología de Murphy y la tríada de Murphy. La cronología es el recorrido del dolor. Empieza en el epigastrio. Después desciende a la zona periumbilical. Y termina localizándose en la fosa ilíaca derecha. Cuando se localiza, ya hay compromiso del peritoneo parietal."
+    },
+    {
+      "title": "Tríada de Murphy: la secuencia",
+      "text": "La tríada, en cambio, es una secuencia de síntomas, y el orden importa. Primero aparece el dolor. Después los vómitos. Y por último la fiebre. Por eso la fiebre te orienta: si aparece antes del dolor, pensá en una gastroenteritis. Si aparece después, en un abdomen agudo inflamatorio."
+    },
+    {
+      "title": "Apendicitis: cuatro estadios",
+      "text": "La causa más frecuente son los fecalitos, que obstruyen la luz del apéndice. Y la evolución tiene cuatro estadios. La primera es congestiva. Después se hace flegmonosa, con pus. Luego gangrenosa, y la pared se necrosa. Y por último se perfora. En ese momento pasa a ser un abdomen agudo perforativo."
+    },
+    {
+      "title": "Colecistitis aguda",
+      "text": "La segunda causa de abdomen agudo inflamatorio es la colecistitis aguda. También tiene su tríada, que puede ser una tétrada. Dolor en el hipocondrio derecho que se irradia al hombro derecho. Vómitos biliosos. Fiebre. Y la ictericia, que puede estar o no. Aparece cuando un cálculo se escapa y se aloja en el colédoco, y es de tipo obstructivo."
+    },
+    {
+      "title": "Qué encontrás al examen",
+      "text": "Clínica y examen. El paciente deja de eliminar gases y materia fecal, porque está inflamado el peritoneo visceral y se detiene el peristaltismo: es el íleo paralítico. El abdomen puede estar normal al comienzo, o distendido. A la auscultación, los ruidos pueden estar normales, disminuidos o ausentes. A la percusión, timpanismo. Y a la palpación, reacción peritoneal: dolor a la descompresión."
+    },
+    {
+      "title": "Blumberg y Gueneau de Mussy",
+      "text": "Ese dolor a la descompresión tiene nombre según dónde esté. Si es localizado, es el signo de Blumberg. Si es generalizado, en todo el abdomen, es el signo de Gueneau de Mussy. Rebote es el nombre general."
+    },
+    {
+      "title": "Obstructivo: las causas",
+      "text": "El segundo es el obstructivo mecánico. La obstrucción puede ser intraluminal: algo que crece por dentro, como un tumor. Puede estar en la pared, como las neoplasias infiltrantes. Las bridas son adherencias que aparecen después de una cirugía: las asas se pegan entre sí y no deja pasar la materia fecal. Y las hernias, los vólvulos y la invaginación intestinal, típica de los dos meses a los seis años."
+    },
+    {
+      "title": "Clínica y examen",
+      "text": "El dolor es de tipo cólico, porque aumenta y disminuye, y es visceral. Todo síndrome obstructivo se acompaña de vómitos, y el paciente no elimina gases ni materia fecal. A la inspección, distensión. A veces se ven las ondas peristálticas. A la auscultación, ruidos de lucha por arriba de la obstrucción, y disminuidos por debajo. A la percusión, timpanismo, porque hay gas. Y a la palpación, dolor, que suele ser generalizado."
+    },
+    {
+      "title": "No confundir: mecánico y paralítico",
+      "text": "No los confundas. En el mecánico hay un obstáculo real, y el intestino lucha contra él. Dolor cólico y ruidos de lucha. En el paralítico no hay obstáculo: el intestino dejó de moverse. Abdomen distendido y silencioso."
+    },
+    {
+      "title": "Perforativo: causas y peritonitis",
+      "text": "El tercero es el perforativo. Se perforó una víscera hueca, y las causas más frecuentes son dos: la úlcera y la apendicitis. Cuando hablamos de perforativo, hablamos de peritonitis secundaria, polimicrobiana. Existe además la primaria, sin perforación y monomicrobiana, y la terciaria."
+    },
+    {
+      "title": "Clínica: el paciente inmóvil",
+      "text": "El dolor es intenso, permanente y generalizado, y no calma con analgésicos. El paciente está inmóvil, porque todo lo que hace le hace doler. Una vez que se perforó, se detiene todo el tránsito. Ruidos hidroaéreos ausentes. El paciente vomita y se deshidrata. Pasa a estados muy graves, con hipotensión y taquicardia. Se va directamente a cirugía."
+    },
+    {
+      "title": "Contractura y defensa",
+      "text": "Y acá va una diferencia que tenés que tener clara. La contractura muscular es involuntaria: el peritoneo parietal está irritado, y los músculos se endurecen solos. Eso es el abdomen en tabla. La defensa es voluntaria: te duele, y te encogés, no querés que te toquen."
+    },
+    {
+      "title": "Signo de Jobert",
+      "text": "Y llegamos a una pregunta de parcial. El profesor es claro: si no sabés este signo, te manda a tu casa. El signo de Jobert es la ausencia de la matidez hepática, por neumoperitoneo, secundario a la perforación de una víscera hueca. Como vimos, el gas asciende y tapa la matidez del hígado. Y a la percusión, donde tendría que estar mate, suena timpánico."
+    },
+    {
+      "title": "Signo de Popper",
+      "text": "Lo mismo se ve en la radiografía de tórax de pie. Fijate esa línea oscura entre el diafragma y el hígado. Es aire libre bajo el diafragma, y se llama signo de Popper, o de la media luna."
+    },
+    {
+      "title": "Hemorrágico: se desangra adentro",
+      "text": "El cuarto es el hemorrágico. El paciente se está desangrando dentro del abdomen. La causa más frecuente es ginecológica: el embarazo ectópico. Además del dolor, lo que más te tiene que llamar la atención son los signos de hipovolemia. El paciente está hipotenso, taquicárdico, frío, sudoroso, y deja de orinar. Y si sigue perdiendo sangre, entra en shock hipovolémico."
+    },
+    {
+      "title": "A la percusión: matidez",
+      "text": "Y acá está lo que te van a preguntar en el parcial. A la percusión hay matidez: la sangre se fue a las partes bajas y desplazó el aire. El abdomen está distendido, porque se está llenando de sangre. Duele a la palpación, pero es blando: no es un abdomen en tabla. Los ruidos hidroaéreos suelen estar normales."
+    },
+    {
+      "title": "Cullen y Grey-Turner",
+      "text": "Si la sangre llega al retroperitoneo, pueden aparecer dos signos. El signo de Cullen es una equimosis alrededor del ombligo. El signo de Grey-Turner es una equimosis en los flancos. Y mucha atención: muchos dicen que son patognomónicos de la pancreatitis necrohemorrágica. No es así. Aparecen en cualquier hemorragia con sangre en el retroperitoneo."
+    },
+    {
+      "title": "Lo que no se puede olvidar",
+      "text": "El profesor insiste: lo que no se pueden olvidar son dos cosas. En el perforativo hay aire libre, timpanismo en el área hepática, signo de Jobert, y abdomen en tabla. En el hemorrágico hay sangre: matidez, y un abdomen doloroso pero blando. Aire sube, sangre baja."
+    },
+    {
+      "title": "Vascular o isquémico: el más letal",
+      "text": "El quinto es el vascular o isquémico, y es el más letal de todos, a pesar de ser poco frecuente. Disminuye el flujo sanguíneo hacia las vísceras, sobre todo por oclusión de la mesentérica, y el intestino se infarta. Pensá siempre en un paciente mayor, tabaquista, diabético, hipertenso o que toma anticonceptivos. Y mientras tanto, el intestino se va muriendo. Las bacterias se escapan, y el paciente muere por shock séptico."
+    },
+    {
+      "title": "Clínica: la hora de oro",
+      "text": "El dolor empieza leve, va progresando, se generaliza, y no responde a ningún analgésico. Esto no se olvida nunca: es la hora de oro. Tiempo que pasa, minuto que pasa, intestino que muere. Al principio el examen es casi normal. Los ruidos hidroaéreos están conservados, y después desaparecen, porque el intestino ya se murió. El paciente puede tener dolor a la compresión y descompresión. Y se pide lactato: mayor a dos indica mala perfusión."
+    },
+    {
+      "title": "Anamnesis: ALICIA",
+      "text": "Vamos al diagnóstico. Primero la anamnesis. El dolor se semiografía con ALICIA. Antigüedad. Localización. Irradiación. Carácter. Intensidad. Y atenuantes o agravantes. Y siempre preguntá por alcoholismo, antiinflamatorios y cirugías previas."
+    },
+    {
+      "title": "Lo que acompaña al dolor",
+      "text": "Después preguntá lo que acompaña. Náuseas y vómitos casi siempre están. El tránsito: si elimina gases, si tiene diarrea, y cómo es esa diarrea. La fiebre es fundamental: acompaña a los inflamatorios, perforativos e isquémicos. En el hemorrágico no: el paciente tiende a la hipotermia. Ojo con el shock: hipovolémico en la hemorragia, séptico en la perforación o el infarto intestinal. Los síntomas ginecológicos. Y los urológicos, para descartar litiasis o infección."
+    },
+    {
+      "title": "Signos vitales e inspección",
+      "text": "Examen físico. Empezá por los signos vitales. La temperatura, la frecuencia cardíaca, la tensión y la frecuencia respiratoria, que se altera con mucha frecuencia. A la inspección, mirá cómo está el paciente. Inmóvil, indica irritación peritoneal. Si tiene cicatrices quirúrgicas, pensá en bridas. La distensión generalizada aparece en obstrucciones y ascitis. La localizada, en plastrones y abscesos. Las ondas peristálticas visibles indican obstrucción. Y buscá siempre las equimosis."
+    },
+    {
+      "title": "Palpación",
+      "text": "A la palpación. Un dolor profundo, sin contractura ni defensa, suele corresponder a un cólico biliar, un cólico renal o una gastroenteritis. El dolor a la compresión habla del peritoneo visceral. El dolor a la descompresión, del parietal. Y un abdomen doloroso pero blando te hace pensar en hemoperitoneo."
+    },
+    {
+      "title": "Percusión",
+      "text": "A la percusión, la forma de la matidez te da información. El líquido libre, sea ascitis o sangre, deja una matidez con concavidad superior. En cambio, un embarazo o un tumor dan una matidez con convexidad superior."
+    },
+    {
+      "title": "Auscultación",
+      "text": "A la auscultación, cuatro patrones. Si los ruidos están muy aumentados, son ruidos de lucha, por íleo mecánico. Pueden estar conservados. Pueden estar disminuidos, como en el íleo paralítico localizado. O pueden estar ausentes, en un íleo paralítico generalizado por peritonitis o perforación."
+    },
+    {
+      "title": "Laboratorio",
+      "text": "En el laboratorio, hemograma y leucocitos. Glucemia, por la cetoacidosis. Uremia. La amilasa: orienta a pancreatitis, pero ojo, también sube en otras causas, como el embarazo ectópico o la obstrucción intestinal. Hepatograma. Ionograma. Troponina, si tenés un electrocardiograma alterado. Y siempre, prueba de embarazo y análisis de orina."
+    },
+    {
+      "title": "Imágenes",
+      "text": "Y las imágenes. Lo primero que se pide es la ecografía: es lo más barato y lo más rápido. La radiografía de tórax y abdomen de pie, para buscar aire libre y asas dilatadas. Y si a las veinticuatro horas no hay diagnóstico, tomografía de abdomen y pelvis. Con esto, ya tenés todo el capítulo. Ahora a practicar."
+    }
+  ]
+}

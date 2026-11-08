@@ -1,6 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
-import { estudio } from './estudio';
+import { clase } from './clase';
 
 /*
  * dig-02 — Dolor abdominal y abdomen agudo.
@@ -13,6 +13,7 @@ const M3 = (t: string) => r('mc-dig-3', t);
 const M4 = (t: string) => r('mc-dig-4', t);
 const EF1 = (t: string) => r('ef-dig-1', t);
 const L = (p: string) => r('libro', undefined, p);
+const A = (p: string) => r('argente-libro', undefined, p);
 
 const chapter: Chapter = {
   id: 'dig-02',
@@ -355,6 +356,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig02-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -379,6 +381,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -394,6 +397,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d03',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       ficha: 'obstructivo',
@@ -408,6 +412,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d04',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -423,6 +428,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d05',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       ficha: 'hemorragico',
@@ -437,6 +443,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d06',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       ficha: 'vascular',
@@ -451,6 +458,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d07',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -465,6 +473,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d08',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'dolor',
@@ -477,6 +486,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d09',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'estudio',
@@ -486,6 +496,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-d10',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'regiones',
@@ -510,6 +521,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig02-q01',
+      origen: 'practica',
       topic: 'Tipos de dolor',
       difficulty: 1,
       stem: 'Al palpar la fosa ilíaca derecha, el dolor aumenta al **soltar** la mano de golpe. Esto indica compromiso del:',
@@ -524,6 +536,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q02',
+      origen: 'practica',
       topic: 'Murphy',
       difficulty: 1,
       emphasis: true,
@@ -539,6 +552,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q03',
+      origen: 'practica',
       topic: 'Murphy',
       difficulty: 2,
       stem: '¿Por qué el dolor de la apendicitis **empieza en el epigastrio**?',
@@ -553,6 +567,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q04',
+      origen: 'practica',
       topic: 'Los 5 quirúrgicos',
       difficulty: 1,
       emphasis: true,
@@ -568,6 +583,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q05',
+      origen: 'practica',
       topic: 'Perforativo',
       difficulty: 2,
       emphasis: true,
@@ -583,6 +599,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q06',
+      origen: 'practica',
       topic: 'Hemorrágico',
       difficulty: 2,
       emphasis: true,
@@ -598,6 +615,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q07',
+      origen: 'practica',
       topic: 'Hemorrágico',
       difficulty: 2,
       stem: 'Mujer joven, hipotensa y taquicárdica, con dolor abdominal; a la percusión hay **matidez** y el abdomen está **blando**. Pensás primero en:',
@@ -612,6 +630,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q08',
+      origen: 'practica',
       topic: 'Obstructivo',
       difficulty: 2,
       stem: 'Dolor cólico, vómitos, no elimina gases y se auscultan **ruidos hidroaéreos de lucha**. ¿Qué ocurre?',
@@ -626,6 +645,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q09',
+      origen: 'practica',
       topic: 'Vascular',
       difficulty: 2,
       stem: 'Hombre de 70 años, tabaquista, con dolor abdominal progresivo que **no calma con analgésicos** y un examen casi normal. Lactato 4. ¿Qué sospechás?',
@@ -640,6 +660,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q10',
+      origen: 'practica',
       topic: 'Clasificación',
       difficulty: 1,
       stem: 'Un paciente hipertenso consulta por dolor epigástrico agudo. ¿Qué estudio no puede faltar?',
@@ -654,6 +675,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q11',
+      origen: 'practica',
       topic: 'Signos',
       difficulty: 2,
       stem: 'Dolor a la descompresión en **todo** el abdomen:',
@@ -668,6 +690,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig02-q12',
+      origen: 'practica',
       topic: 'Perforativo',
       difficulty: 3,
       stem: 'El **abdomen en tabla** se debe a:',
@@ -679,6 +702,66 @@ const chapter: Chapter = {
       ],
       answer: 1,
       refs: [M4('02:13'), M4('02:57')],
+    },
+    {
+      id: 'dig02-q13',
+      origen: 'practica',
+      topic: 'Mecanismos',
+      difficulty: 2,
+      stem: 'El dolor visceral suele percibirse en la **línea media** porque:',
+      options: [
+        { text: 'Las fibras viscerales ingresan a la médula en forma bilateral.', why: 'Correcto: la señal llega de ambos lados y se ubica en el centro.' },
+        { text: 'Los órganos abdominales están todos en la línea media.', why: 'El apéndice o la vesícula no lo están y su dolor inicial igual es central.' },
+        { text: 'Lo conducen nervios espinales de un solo lado.', why: 'Eso describe al dolor somático.' },
+        { text: 'Porque es un dolor referido a la piel.', why: 'El referido se explica por convergencia en el asta dorsal, otro mecanismo.' },
+      ],
+      answer: 0,
+      refs: [A('650')],
+    },
+    {
+      id: 'dig02-q14',
+      origen: 'practica',
+      topic: 'Mecanismos',
+      difficulty: 3,
+      stem: 'El dolor referido se explica porque:',
+      options: [
+        { text: 'Aferentes viscerales y cutáneas convergen en la misma neurona del asta dorsal.', why: 'Correcto: el cerebro no distingue el origen y proyecta la sensación a la piel.' },
+        { text: 'La inflamación se extiende por el peritoneo hasta la piel.', why: 'No hay extensión anatómica de la lesión.' },
+        { text: 'Las fibras C conducen más rápido que las Aδ.', why: 'Es al revés, y no explica el fenómeno.' },
+        { text: 'El peritoneo parietal se irrita a distancia.', why: 'Eso daría dolor somático localizado en el sitio irritado.' },
+      ],
+      answer: 0,
+      refs: [A('650')],
+    },
+    {
+      id: 'dig02-q15',
+      origen: 'practica',
+      topic: 'Obstructivo',
+      difficulty: 2,
+      stem: 'En una obstrucción intestinal, los ruidos hidroaéreos:',
+      options: [
+        { text: 'Están aumentados por arriba del obstáculo y disminuidos por debajo.', why: 'Correcto: arriba el intestino lucha; abajo no llega contenido.' },
+        { text: 'Están ausentes en todo el abdomen.', why: 'Eso corresponde al íleo paralítico generalizado.' },
+        { text: 'Son iguales por encima y por debajo.', why: 'El obstáculo marca la diferencia.' },
+        { text: 'Están aumentados solo por debajo.', why: 'Por debajo no hay gases ni contenido.' },
+      ],
+      answer: 0,
+      refs: [M3('33:24'), M3('34:04')],
+    },
+    {
+      id: 'dig02-q16',
+      origen: 'practica',
+      topic: 'Anamnesis',
+      difficulty: 1,
+      stem: 'Un paciente tuvo fiebre **antes** de que empezara el dolor abdominal. Orienta a:',
+      options: [
+        { text: 'Gastroenteritis.', why: 'Correcto: en el abdomen agudo inflamatorio la fiebre aparece después del dolor.' },
+        { text: 'Apendicitis.', why: 'La tríada de Murphy es dolor, vómitos y después fiebre.' },
+        { text: 'Abdomen agudo hemorrágico.', why: 'En el hemorrágico no hay fiebre: tiende a la hipotermia.' },
+        { text: 'Cólico biliar simple.', why: 'No se caracteriza por fiebre previa.' },
+      ],
+      answer: 0,
+      refs: [M4('19:19')],
     },
   ],
 
@@ -730,14 +813,19 @@ const chapter: Chapter = {
     },
   ],
 
+  maneuvers: {
+    ids: ['abd-inspeccion-estatica-dinamica', 'abd-auscultacion-rha', 'abd-percusion-traube', 'palpacion-superficial-tension', 'puntos-dolorosos-abdomen', 'descompresion-blumberg', 'vesicula-murphy'],
+    note: 'Inspección, auscultación, percusión y palpación del abdomen agudo.',
+  },
+
   closing: {
     map: {
-      center: 'Abdomen agudo en una mirada',
+      center: 'Del mecanismo al signo',
       nodes: [
-        { label: 'Dolor', tone: 'sky', items: ['Visceral: compresión', 'Somático: rebote', 'Referido: lejos'] },
-        { label: '5 quirúrgicos ★', tone: 'rose', items: ['Inflamatorio · obstructivo', 'Perforativo · hemorrágico', 'Vascular'] },
-        { label: 'Signos ★', tone: 'peach', items: ['Murphy · McBurney · Blumberg', 'Jobert · Popper', 'Cullen · Grey-Turner'] },
-        { label: 'Conducta', tone: 'lilac', items: ['Supraumbilical → ECG', 'Agudo → cirugía', 'Eco primero'] },
+        { label: 'Qué hoja se irrita', tone: 'sky', items: ['Visceral: fibras C, comprime, difuso', 'Parietal: D7–L1, rebote, preciso', 'Reflejo: contractura y tabla'] },
+        { label: 'Qué hace el intestino', tone: 'peach', items: ['Obstáculo: lucha y cólico', 'Inflamado cerca: asa centinela', 'Generalizado: silencio'] },
+        { label: 'Qué ocupa la cavidad', tone: 'rose', items: ['Aire sube: timpanismo, Jobert, Popper', 'Sangre baja: matidez, blando', 'Retroperitoneo: Cullen, Grey-Turner'] },
+        { label: 'Qué no podés perder', tone: 'lilac', items: ['Sin flujo: lactato, hora de oro', 'Sobre el ombligo: ECG', 'Agudo: interconsulta con cirugía'] },
       ],
     },
     essentials: [
@@ -765,6 +853,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig02-x01',
+      origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Dolor súbito y generalizado, abdomen en tabla y timpanismo en el área hepática. El diagnóstico sindromático es:',
@@ -779,6 +868,7 @@ const chapter: Chapter = {
       },
       {
         id: 'dig02-x02',
+      origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'El íleo paralítico **localizado** junto a un órgano inflamado se llama:',
@@ -793,6 +883,7 @@ const chapter: Chapter = {
       },
       {
         id: 'dig02-x03',
+      origen: 'practica',
         topic: 'Integración',
         difficulty: 1,
         stem: 'La causa más frecuente de abdomen agudo hemorrágico es:',
@@ -809,7 +900,7 @@ const chapter: Chapter = {
   },
 
   escenas,
-  estudio,
+  clase,
   diagrams: {},
 };
 

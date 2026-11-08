@@ -4,19 +4,20 @@ import type { Chapter, TheorySection } from '@/types';
 import { findChapter, findSystem, neighbours } from '@content/curriculum';
 import { useChapter } from '@/lib/useChapter';
 import { Blocks, DiagramContext, PriorityBadge } from '@/components/Blocks';
-import { ConceptMap, SummaryMap } from '@/components/ConceptMap';
-import { DevList, ExamBadge, MemoryCard, QuizList, McqCard } from '@/components/Practice';
+import { ConceptMap } from '@/components/ConceptMap';
+import { Closing } from '@/components/Closing';
+import { DevList, ExamBadge, MemoryCard, QuizList } from '@/components/Practice';
 import { VideoPlayer, asset } from '@/components/VideoPlayer';
 import { Rich, Refs } from '@/components/Rich';
 import { Icon } from '@/components/Icon';
 import { ManeuverList } from '@/components/Maneuvers';
 import { AnimContext } from '@/components/Anim';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
-import { devPending, lastAttempt, markVisited, setCompleted, setLast, toggleBookmark, useProgress } from '@/lib/progress';
+import { markVisited, setCompleted, setLast, toggleBookmark, useProgress } from '@/lib/progress';
 import { NotFound, Loading } from './Misc';
 
-// Piloto por pestañas: se descarga solo para los capítulos que lo declaran.
-const StudyView = lazy(() => import('@/estudio/StudyView'));
+// Clase visual por pestañas: se descarga solo para los capítulos que la declaran.
+const ClaseView = lazy(() => import('@/clase/ClaseView'));
 
 interface SectionDef {
   id: string;
@@ -50,7 +51,7 @@ export function ChapterPage() {
   if (state.status === 'loading') return <Loading label="Cargando capítulo…" />;
   if (state.status === 'missing') return <SoonChapter id={meta.id} />;
   if (state.status === 'error') return <NotFound message={`No se pudo cargar el capítulo (${state.error}).`} />;
-  if (state.chapter.estudio) return <StudyView c={state.chapter} />;
+  if (state.chapter.clase) return <ClaseView c={state.chapter} />;
   return <ChapterView c={state.chapter} />;
 }
 
@@ -371,102 +372,5 @@ function TheoryBlock({ s, chapterId }: { s: TheorySection; chapterId: string }) 
       <Blocks blocks={s.blocks} />
       <Refs refs={s.refs} />
     </section>
-  );
-}
-
-function Closing({ c }: { c: Chapter }) {
-  const progress = useProgress();
-  const now = Date.now();
-  const pendingDevs = c.developments.filter((d) => progress.devs[d.id] && devPending(progress, d.id, now));
-  const wrong = c.mcq.filter((q) => {
-    const a = lastAttempt(progress, q.id);
-    return a && !a.correct;
-  });
-  const mem = c.memory.filter((m) => progress.memory[m.id]?.status === 'unknown');
-  const nothing = !pendingDevs.length && !wrong.length && !mem.length;
-  return (
-    <div className="closing">
-      {(
-        <>
-          <h3 className="closing__h">Mapa conceptual de cierre</h3>
-          <SummaryMap map={c.closing.map} />
-          <div className="closing__grid">
-            <div className="closing__card tone-rose">
-              <h4>
-                <Icon name="star" size={16} /> Lo imprescindible
-              </h4>
-              <ul>
-                {c.closing.essentials.map((e, i) => (
-                  <li key={i}>
-                    <Rich text={e} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="closing__card tone-peach">
-              <h4>
-                <Icon name="alert" size={16} /> Errores que pueden aparecer en el examen
-              </h4>
-              <ul>
-                {c.closing.pitfalls.map((e, i) => (
-                  <li key={i}>
-                    <Rich text={e} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="closing__card tone-sky">
-              <h4>
-                <Icon name="route" size={16} /> Conexiones con otros capítulos
-              </h4>
-              <ul>
-                {c.closing.links.map((l, i) => (
-                  <li key={i}>
-                    <Rich text={l.text} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </>
-      )}
-      <h3 className="closing__h">Mini simulacro</h3>
-      <div className="quiz__list">
-        {c.closing.miniExam.map((q, i) => (
-          <McqCard key={q.id} q={q} chapterId={c.id} n={i + 1} />
-        ))}
-      </div>
-      <h3 className="closing__h">Lo que todavía necesito repasar</h3>
-      {nothing ? (
-        <p className="empty">Todavía no hay pendientes registrados en este capítulo. Aparecen acá los desarrollos que marques como "No lo sabía", las choice que erraste y las tarjetas de memoria que no recordaste.</p>
-      ) : (
-        <ul className="pending">
-          {pendingDevs.map((d) => (
-            <li key={d.id}>
-              <span className="chip">Desarrollo</span>
-              <a href={`#d-${d.id}`} onClick={(e) => (e.preventDefault(), document.getElementById(`d-${d.id}`)?.scrollIntoView({ behavior: 'smooth' }))}>
-                <Rich text={d.question} />
-              </a>
-            </li>
-          ))}
-          {wrong.map((q) => (
-            <li key={q.id}>
-              <span className="chip">Choice</span>
-              <a href={`#q-${q.id}`} onClick={(e) => (e.preventDefault(), document.getElementById(`q-${q.id}`)?.scrollIntoView({ behavior: 'smooth' }))}>
-                {q.topic}
-              </a>
-            </li>
-          ))}
-          {mem.map((m) => (
-            <li key={m.id}>
-              <span className="chip">Memoria</span>
-              <a href={`#m-${m.id}`} onClick={(e) => (e.preventDefault(), document.getElementById(`m-${m.id}`)?.scrollIntoView({ behavior: 'smooth' }))}>
-                {m.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
   );
 }

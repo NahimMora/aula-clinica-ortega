@@ -10,6 +10,8 @@ const DIFF = { 1: 'Básica', 2: 'Intermedia', 3: 'Avanzada' } as const;
 
 /* ───────────────────────── Choice ───────────────────────── */
 
+const ORIGEN = { clase: 'Dicha en clase', preguntero: 'Preguntero', practica: 'Elaborada para practicar' } as const;
+
 export function McqCard({ q, chapterId, n }: { q: MCQ; chapterId: string; n: number }) {
   const progress = useProgress();
   const [choice, setChoice] = useState<number | null>(null);
@@ -34,6 +36,7 @@ export function McqCard({ q, chapterId, n }: { q: MCQ; chapterId: string; n: num
           </span>
         )}
         {q.integration && <span className="chip chip--integ">Integración</span>}
+        {q.origen && <span className="chip">{ORIGEN[q.origen]}</span>}
         <span className="mcq__topic">{q.topic}</span>
       </header>
       <div className="mcq__stem">
@@ -166,6 +169,7 @@ export function DevCard({ d, chapterId, n }: { d: Development; chapterId: string
             <Icon name="star" size={13} /> Lo enfatiza el profesor
           </span>
         )}
+        {d.origen && <span className="chip">{ORIGEN[d.origen]}</span>}
         <span className={`dev__status dev__status--${status ?? 'none'}`}>{devDueLabel(rec)}</span>
       </header>
       <h4 className="dev__q">
