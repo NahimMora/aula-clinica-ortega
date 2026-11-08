@@ -227,6 +227,7 @@ const MARCA: Record<Organo, [number, number]> = {
   recto: [220, 500],
 };
 const ORDEN: Organo[] = ['higado', 'vesicula', 'bazo', 'pancreas', 'colon', 'apendice', 'yeyuno', 'ileon', 'duodeno', 'esofago', 'estomago', 'piloro', 'recto'];
+const BASE: Partial<Record<Organo, string>> = { higado: 'var(--v-liver)', vesicula: 'var(--v-bile)', bazo: 'var(--v-spleen)', pancreas: 'var(--v-pan)' };
 
 export function TractoFig({ luz = {}, marca, treitz, t }: { luz?: Partial<Record<Organo, VTone>>; marca?: { o: Organo; tone: VTone }; treitz?: boolean; t?: number }) {
   const pu = pulso(t);
@@ -241,11 +242,11 @@ export function TractoFig({ luz = {}, marca, treitz, t }: { luz?: Partial<Record
           return (
             <g key={o}>
               <path d={g.d} fill="none" stroke={tone ? col(tone) : LINE} strokeWidth={g.tubo + 7} strokeLinecap="round" strokeLinejoin="round" opacity={tone ? 0.75 + 0.25 * pu : 1} className={tone && t === undefined ? 'v-pulse-soft' : undefined} />
-              <path d={g.d} fill="none" stroke={tone ? fil(tone) : 'var(--v-card)'} strokeWidth={g.tubo} strokeLinecap="round" strokeLinejoin="round" />
+              <path d={g.d} fill="none" stroke={tone ? fil(tone) : 'var(--v-gut)'} strokeWidth={g.tubo} strokeLinecap="round" strokeLinejoin="round" />
             </g>
           );
         }
-        return <path key={o} d={g.d} fill={tone ? fil(tone) : 'var(--v-card)'} stroke={tone ? col(tone) : LINE} strokeWidth={tone ? 4 : 2.5} />;
+        return <path key={o} d={g.d} fill={tone ? fil(tone) : BASE[o] ?? 'var(--v-card)'} stroke={tone ? col(tone) : LINE} strokeWidth={tone ? 4 : 2.5} />;
       })}
       {treitz && (
         <g>
@@ -307,6 +308,17 @@ const PIEDRA: Record<ViaBiliar, [number, number]> = {
   duodeno: [166, 340],
 };
 const ORDEN_B: ViaBiliar[] = ['higado', 'duodeno', 'pancreas', 'wirsung', 'vesicula', 'hepatico', 'cistico', 'coledoco', 'ampolla'];
+const BASE_B: Record<ViaBiliar, string> = {
+  higado: 'var(--v-liver)',
+  duodeno: 'var(--v-gut)',
+  pancreas: 'var(--v-pan)',
+  wirsung: 'var(--v-card)',
+  vesicula: 'var(--v-bile)',
+  hepatico: 'var(--v-bile)',
+  cistico: 'var(--v-bile)',
+  coledoco: 'var(--v-bile)',
+  ampolla: 'var(--v-bile)',
+};
 
 function Piedras({ x, y }: { x: number; y: number }) {
   return (
@@ -342,12 +354,12 @@ export function BiliarFig({ luz = {}, calculo, tumor, dilata = [], t }: { luz?: 
           return (
             <g key={o}>
               <path d={g.d} fill="none" stroke={tone ? col(tone) : LINE} strokeWidth={w + 6} strokeLinecap="round" strokeLinejoin="round" opacity={tone ? 0.75 + 0.25 * pu : 1} className={tone && t === undefined ? 'v-pulse-soft' : undefined} />
-              <path d={g.d} fill="none" stroke={tone ? fil(tone) : 'var(--v-bile)'} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" />
+              <path d={g.d} fill="none" stroke={tone ? fil(tone) : BASE_B[o]} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" />
             </g>
           );
         }
         const esc = o === 'vesicula' && dil ? 'translate(112 222) scale(1.28) translate(-112 -222)' : undefined;
-        return <path key={o} d={g.d} transform={esc} fill={tone ? fil(tone) : o === 'vesicula' ? 'var(--v-bile)' : 'var(--v-card)'} stroke={tone ? col(tone) : LINE} strokeWidth={tone ? 4 : 2.5} />;
+        return <path key={o} d={g.d} transform={esc} fill={tone ? fil(tone) : BASE_B[o]} stroke={tone ? col(tone) : LINE} strokeWidth={tone ? 4 : 2.5} />;
       })}
       {(Object.keys(luz) as ViaBiliar[]).map((o) => {
         const g = VIAS[o];

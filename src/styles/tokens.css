@@ -120,7 +120,8 @@
   --v-rose: #f2a7be; --v-rose-f: #3a2431; --v-lilac: #c4b0f2; --v-lilac-f: #302747; --v-sky: #a3cbef; --v-sky-f: #203043;
   --v-mint: #8fd4b5; --v-mint-f: #20352b; --v-peach: #f1b88b; --v-peach-f: #3a2b1f; --v-gold: #f6d98a; --v-gold-f: #3a3218;
   --v-red: #ff6b7d; --v-red-f: #45202a;
-  --v-skin: #2a2330; --v-stone: #d9b26a; --v-stone-2: #8a6a2c; --v-bile: #3c4a24; --v-stool: #9a6b45; --v-stool-2: #5e3d22;
+  --v-skin: #2a2330; --v-stone: #d9b26a; --v-stone-2: #8a6a2c; --v-bile: #46562a; --v-stool: #9a6b45; --v-stool-2: #5e3d22;
+  --v-liver: #3e2727; --v-spleen: #36243b; --v-pan: #3d2e22; --v-gut: #2e2532;
 
   /* Acento según sistema (se redefine con .tone-*) */
   --accent-50: var(--rose-50);
@@ -158,6 +159,7 @@ html.is-print {
   --v-rose: #b4506f; --v-rose-f: #fbe3ea; --v-lilac: #7458b3; --v-lilac-f: #ece4f9; --v-sky: #3f78a8; --v-sky-f: #dfedf9;
   --v-mint: #3a8a6c; --v-mint-f: #dbf0e6; --v-peach: #b8703a; --v-peach-f: #ffe7d4; --v-gold: #8a5a00; --v-gold-f: #fff3cf;
   --v-red: #c0334f; --v-red-f: #fde1e6; --v-skin: #f7efe9; --v-bile: #e3ecc8;
+  --v-liver: #f3dcd8; --v-spleen: #eadcf0; --v-pan: #f8e6d4; --v-gut: #f6eef0;
 }
 
 .tone-rose { --accent-50: var(--rose-50); --accent-100: var(--rose-100); --accent-200: var(--rose-200); --accent-400: var(--rose-400); --accent-600: var(--rose-600); --accent-700: var(--rose-700); }
