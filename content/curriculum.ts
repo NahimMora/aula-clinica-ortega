@@ -55,7 +55,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('renal', 'ren-01', 'Motivos de consulta nefrourológicos', 'Motivos de consulta', 'Edema renal, obstrucción urinaria, poliuria, hematuria (dismórfica vs isomórfica, tres vasos) y trastornos de la micción.', 'MC Renal 1–2 · Libro p445–454', 'published'),
       ch('renal', 'ren-02', 'Examen físico nefrourológico', 'Examen físico', 'El paciente con proteinuria, los colores de la orina y el examen: Guyon, Montenegro, Israel, Glenard, puñopercusión y puntos ureterales.', 'MC Renal 3 · Libro p459–460', 'published'),
       ch('renal', 'ren-03', 'Síndrome nefrítico', 'Síndromes', 'Capilares que se rompen: las 3 H (hematuria, HTA, hiperazoemia), postestreptocócica y complicaciones.', 'Clase Sd. nefrítico · Libro p442–444', 'published'),
-      ch('renal', 'ren-04', 'Síndrome nefrótico', 'Síndromes', 'Barrera de filtración, proteinuria masiva, hipoalbuminemia, edema y dislipemia.', 'Clase Sd. nefrótico · Libro p440–444'),
+      ch('renal', 'ren-04', 'Síndrome nefrótico', 'Síndromes', 'Membrana basal permeable: proteinuria > 3,5 g, hipoalbuminemia, edema e hiperlipidemia; causas por edad y el círculo del edema.', 'Clase Sd. nefrótico · Libro p440–442', 'published'),
       ch('renal', 'ren-05', 'Insuficiencia renal', 'Síndromes', 'Insuficiencia renal aguda y crónica: causas, estadios y manifestaciones.', 'Clases IR 1–3 · Libro p429–439'),
       ch('renal', 'ren-06', 'Infección urinaria', 'Síndromes', 'Cistitis, pielonefritis, diagnóstico y sedimento urinario.', 'Clases ITU 1–2 · Libro p420–428'),
       ch('renal', 'ren-07', 'Litiasis renoureteral', 'Síndromes', 'Cólico renal: mecanismo, clínica y diagnóstico.', 'Clases Litiasis 1–2'),

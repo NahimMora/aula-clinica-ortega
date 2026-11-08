@@ -1,0 +1,447 @@
+import type { Chapter, SourceRef } from '@/types';
+import { escenas } from './escenas';
+
+/*
+ * ren-04 — Síndrome nefrótico. Fuente: clase «Síndrome nefrótico» (Ortega) + libro p. 440–442.
+ * Lo que marca el profe: la causa más frecuente («la pregunta que siempre hacen en los parciales»: nefropatía diabética),
+ * las glomerulopatías primarias por edad y la fisiopatología («si me conocen bien esto, me van a entender todo»).
+ * Dislipidemia: se explica por el aumento de la síntesis hepática (el libro dice que el mecanismo no está aclarado).
+ * Edad de la amiloidosis: el profe dice > 65 y el libro > 75; se pone «en el anciano».
+ */
+const r = (src: string, t?: string, p?: string): SourceRef => ({ src, t, p });
+const S = (t: string) => r('nefrotico', t);
+const L = (p: string) => r('libro', undefined, p);
+
+const chapter: Chapter = {
+  id: 'ren-04',
+  systemId: 'renal',
+  title: 'Síndrome nefrótico',
+  subtitle: 'La membrana basal que deja pasar proteínas: proteinuria > 3,5 g, hipoalbuminemia, edema e hiperlipidemia; causas por edad, el círculo del edema y las complicaciones.',
+  estimatedMinutes: 35,
+  sources: [S('02:26–32:49'), L('p440–442')],
+
+  map: {
+    center: 'Síndrome nefrótico',
+    why: '«…síndrome nefrótico, síndrome nefrítico, que son dos síndromes que **siempre preguntan** los parciales.» La causa más frecuente es «**la pregunta que siempre hacen en los parciales**», y la fisiopatología es fundamental: «si me conocen bien esto, **me van a entender todo**».',
+    prereqs: [
+      { label: 'Proteinuria (ren-02)', detail: 'Cantidades, selectividad, métodos.', chapterId: 'ren-02' },
+      { label: 'Síndrome nefrítico (ren-03)', detail: 'El hermano: rotura en vez de permeabilidad.', chapterId: 'ren-03' },
+    ],
+    branches: [
+      { id: 'definicion', label: 'Qué es', tone: 'gold', items: ['Proteinuria > 3,5 g', 'Albúmina < 3 g/dl', 'Edema, hiperlipidemia'] },
+      { id: 'causas', label: 'Causas ★', tone: 'peach', items: ['Nefropatía diabética', 'Niño: cambios mínimos', 'Adulto: membranosa'] },
+      { id: 'fisiopatologia', label: 'Fisiopatología ★', tone: 'sky', items: ['↓ Oncótica', 'SRAA', 'Hígado → lípidos'] },
+      { id: 'clinica', label: 'Clínica y diagnóstico', tone: 'lilac', items: ['Edema con fóvea', 'TA normal o baja', '24 h, biopsia'] },
+      { id: 'complicaciones', label: 'Complicaciones', tone: 'red', items: ['Infecciones (PBE)', 'Trombosis', 'IRC'] },
+    ],
+    outcomes: [
+      'Definir el síndrome nefrótico con sus **cuatro** elementos.',
+      'Nombrar la **causa más frecuente** y las glomerulopatías primarias por edad.',
+      'Explicar el **círculo del edema** y la hiperlipidemia.',
+      'Deducir las **complicaciones** de cada proteína que se pierde.',
+    ],
+  },
+
+  theory: [
+    {
+      id: 'definicion',
+      kicker: 'Definición',
+      title: 'Qué es el síndrome nefrótico',
+      priority: 'imprescindible',
+      summary: 'Alteración de la membrana basal glomerular que la vuelve permeable a las proteínas.',
+      blocks: [
+        { t: 'anim', id: 'barrera' },
+        {
+          t: 'triad',
+          title: 'Síndrome nefrótico',
+          items: ['Proteinuria > 3,5 g/24 h', 'Hipoalbuminemia < 3 g/dl', 'Edema'],
+          plus: ['Hiperlipidemia ± lipiduria'],
+          plusLabel: 'Agregar la hiperlipidemia',
+          center: 'Nefrótico',
+          tone: 'gold',
+          note: 'La proteinuria es **selectiva**: 80–90 % albúmina. La lipiduria aparece cuando el síndrome está descompensado.',
+          refs: [S('04:32'), S('05:12'), S('05:53'), L('p440')],
+        },
+        { t: 'callout', kind: 'note', title: 'Primarias y secundarias', text: '**Primarias:** la enfermedad es del glomérulo mismo («in situ»). **Secundarias:** una enfermedad sistémica afecta al riñón (diabetes, lupus, amiloidosis…).', refs: [S('02:26'), S('03:06')] },
+      ],
+      refs: [S('03:51'), S('04:32'), L('p440')],
+    },
+    {
+      id: 'causas',
+      kicker: 'Lo que toma ★',
+      title: 'Causas: quién y a qué edad',
+      priority: 'imprescindible',
+      summary: 'La más frecuente: nefropatía diabética. Primarias: cambios mínimos (niño), membranosa (adulto), focal y segmentaria (2.ª en ambos).',
+      blocks: [
+        { t: 'callout', kind: 'prof', title: 'La pregunta de siempre', text: '«¿Cuál es la causa más frecuente de síndrome nefrótico? Esa es **la pregunta que siempre hacen en los parciales**.» Es la **nefropatía diabética**.', refs: [S('07:15'), S('10:37')] },
+        {
+          t: 'cuadro',
+          title: 'La causa más frecuente según quién (tapalo)',
+          cols: [
+            { t: 'Causa más frecuente', tone: 'peach' },
+            { t: 'Para recordar', tone: 'gold' },
+          ],
+          rows: [
+            { k: 'En general ★', v: ['**Nefropatía diabética** (secundaria)', 'La n.º 1 de todas'] },
+            { k: 'Primaria en el niño', v: ['**Cambios mínimos** (70–80 %)', 'Cilindros grasos'] },
+            { k: 'Primaria en el adulto', v: ['**Membranosa**', 'Sobre todo después de los 40'] },
+            { k: '2.ª primaria (ambos)', v: ['**Focal y segmentaria**', 'Glomeruloesclerosis'] },
+            { k: 'Anciano', v: ['**Amiloidosis**', 'Biopsia de recto, encía o grasa'] },
+            { k: 'Mujer joven', v: ['**Lupus**', 'Eritema en alas de mariposa'] },
+          ],
+          refs: [S('07:55'), S('08:36'), S('09:17'), S('09:57'), S('10:37'), L('p440')],
+        },
+        { t: 'callout', kind: 'tip', title: 'La diabetes, en etapas', text: 'En la nefropatía diabética el nefrótico aparece en el **estadio 4**, y en el **5** la insuficiencia renal crónica: por eso la diabetes es también la causa más frecuente de IRC.', refs: [S('32:09'), S('32:49')] },
+      ],
+      refs: [S('07:15'), S('09:57'), L('p440')],
+    },
+    {
+      id: 'fisiopatologia',
+      kicker: 'Lo que toma ★',
+      title: 'Fisiopatología: el círculo del edema',
+      priority: 'imprescindible',
+      summary: 'Proteinuria → hipoalbuminemia → ↓ oncótica → edema y ↓ volumen efectivo → SRAA → retención → más edema.',
+      blocks: [
+        { t: 'callout', kind: 'prof', title: 'Fundamental', text: '«La fisiopatología aquí es **fundamental**… si me conocen bien esto, me van a entender todo lo que estamos hablando.»', refs: [S('10:37')] },
+        { t: 'anim', id: 'circulo' },
+        { t: 'anim', id: 'perdidas' },
+      ],
+      refs: [S('11:18'), S('11:59'), S('12:40'), S('14:00'), S('14:40'), S('15:20'), S('16:40'), L('p440')],
+    },
+    {
+      id: 'clinica',
+      kicker: 'Clínica',
+      title: 'Clínica y diagnóstico',
+      priority: 'muy-importante',
+      summary: 'Edema frío, blando, con fóvea; TA normal o baja; orina espumosa. Proteinuria de 24 h: la más certera.',
+      blocks: [
+        {
+          t: 'cards',
+          cols: 3,
+          items: [
+            { tag: 'Edema', title: 'Frío, blando, con fóvea', text: 'Tobillos y genitales → **párpados** (facies abotagada) → **anasarca** con ascitis y derrames.', tone: 'sky' },
+            { tag: 'TA', title: 'Normal o baja', text: 'El volumen se fue al intersticio: **no** es hipertenso (a diferencia del nefrítico).', tone: 'mint' },
+            { tag: 'Orina', title: 'Espumosa', text: 'La espuma no desaparece: proteinuria.', tone: 'gold' },
+            { tag: 'Piel', title: 'Xantomas y xantelasmas', text: 'Por la **hiperlipidemia**.', tone: 'lilac' },
+            { tag: 'Uñas', title: 'Bandas blancas transversales', text: 'Por la **hipoalbuminemia** (signo de Muehrcke).', tone: 'peach' },
+            { tag: 'Serosas', title: 'Derrames', text: 'Ascitis (distensión), pleural (disnea), pericárdico (taponamiento, raro).', tone: 'red' },
+          ],
+        },
+        {
+          t: 'scale',
+          title: 'Los estudios',
+          items: [
+            { k: 'Proteinuria 24 h ★', t: '> 3,5 g', d: 'La **más certera**. Las tiras dan un valor aproximado.', tone: 'gold' },
+            { k: 'Proteinograma', t: 'Albúmina < 3 g/dl', d: 'Hipoproteinemia; una gamma alta con pico monoclonal orienta a secundario.', tone: 'peach' },
+            { k: 'Lipidograma', t: 'Colesterol, LDL, TAG ↑', tone: 'lilac' },
+            { k: 'Orina completa', t: 'Sedimento nefrótico', d: '**Cilindros grasos**, cuerpos ovales grasos (cruz de Malta). Si hay hematuria, pensá en un componente nefrítico.', tone: 'sky' },
+            { k: 'Etiológico', t: 'Glucemia, FAN, ANCA', d: 'Diabetes, lupus, vasculitis; serologías virales.', tone: 'mint' },
+            { k: 'Biopsia renal', t: 'Adulto y niño > 10 años', d: 'En el niño < 10 años sin hematuria se trata como cambios mínimos sin biopsia. Siempre guiada por ecografía.', tone: 'red' },
+          ],
+        },
+      ],
+      refs: [S('17:20'), S('18:02'), S('18:42'), S('19:22'), S('20:02'), S('22:45'), S('23:25'), S('24:05'), S('25:26'), S('26:06'), L('p441')],
+    },
+    {
+      id: 'complicaciones',
+      kicker: 'Complicaciones',
+      title: 'Complicaciones',
+      priority: 'muy-importante',
+      summary: 'Infecciones (PBE), trombosis, aterosclerosis, balance nitrogenado negativo, IRA e IRC.',
+      blocks: [
+        {
+          t: 'cards',
+          cols: 3,
+          items: [
+            { tag: 'IgG y complemento', title: 'Infecciones', text: 'La más frecuente: **peritonitis bacteriana espontánea** (con la ascitis). También urinarias.', tone: 'red' },
+            { tag: 'Antitrombina III + hemoconcentración', title: 'Trombosis', text: 'Hipercoagulabilidad: trombosis venosas (incluida la de la vena renal).', tone: 'lilac' },
+            { tag: 'Lípidos', title: 'Aterosclerosis', text: 'Colesterol y triglicéridos altos: ateromas.', tone: 'gold' },
+            { tag: 'Proteínas', title: 'Balance nitrogenado negativo', text: 'Desnutrición proteica.', tone: 'peach' },
+            { tag: 'Riñón', title: 'IRA e IRC', text: 'La IRC es común en el diabético mal controlado.', tone: 'sky' },
+          ],
+        },
+      ],
+      refs: [S('27:28'), S('28:08'), S('29:28'), S('30:08'), S('30:48'), S('31:29'), L('p442')],
+    },
+  ],
+
+  developments: [
+    {
+      id: 'ren04-d01',
+      prio: 'P0',
+      priority: 'imprescindible',
+      emphasis: true,
+      ficha: 'definicion',
+      question: 'Defina síndrome nefrótico.',
+      quote: { text: '«…yo quiero que me sepan la definición del síndrome nefrótico»', refs: [S('03:51')] },
+      answer: [{ t: 'p', text: 'Conjunto de signos y síntomas por una alteración de la **membrana basal glomerular** que se vuelve **permeable a las proteínas**. Se caracteriza por **proteinuria > 3,5 g/24 h** (selectiva, 80–90 % albúmina), **hipoalbuminemia < 3 g/dl**, **edema** (por ↓ presión oncótica) e **hiperlipidemia** con o sin lipiduria.' }],
+      refs: [S('04:32'), S('05:12'), S('05:53'), L('p440')],
+    },
+    {
+      id: 'ren04-d02',
+      prio: 'P0',
+      priority: 'imprescindible',
+      emphasis: true,
+      ficha: 'causas',
+      question: '¿Cuál es la causa más frecuente de síndrome nefrótico? Nombre las glomerulopatías primarias según la edad.',
+      quote: { text: '«Esa es la pregunta que siempre hacen en los parciales»', refs: [S('07:15')] },
+      answer: [
+        { t: 'p', text: 'La más frecuente es la **nefropatía diabética** (glomerulopatía secundaria).' },
+        { t: 'p', text: '**Primarias:** en el **niño**, la enfermedad por **cambios mínimos** (70–80 %); en el **adulto**, la **membranosa** (sobre todo > 40 años); la **focal y segmentaria** es la segunda en ambos. En el **anciano**, la **amiloidosis**; en la **mujer joven**, el **lupus**.' },
+      ],
+      refs: [S('07:55'), S('08:36'), S('09:57'), S('10:37'), L('p440')],
+    },
+    {
+      id: 'ren04-d03',
+      prio: 'P0',
+      priority: 'imprescindible',
+      emphasis: true,
+      ficha: 'fisiopatologia',
+      question: 'Explique la fisiopatología del síndrome nefrótico.',
+      quote: { text: '«La fisiopatología aquí es fundamental»', refs: [S('10:37')] },
+      answer: [
+        { t: 'p', text: 'El daño glomerular **aumenta la permeabilidad de la membrana basal**: proteinuria > 3,5 g → **hipoalbuminemia** → **↓ presión oncótica** → el agua pasa al intersticio (**edema**) y cae el **volumen efectivo** → se activa el **SRAA** → retención de agua y sodio que diluye más las proteínas y empeora el edema (**anasarca**).' },
+        { t: 'p', text: 'Se pierden además **IgG y complemento** (infecciones), **antitrombina III** (trombosis), **transferrina** (anemia) y transportadoras (vitamina D, tiroideas, cobre, zinc). El hígado aumenta la síntesis de proteínas y **lipoproteínas** → **hiperlipidemia**.' },
+      ],
+      refs: [S('11:18'), S('12:40'), S('14:00'), S('15:20'), S('16:40'), L('p440')],
+    },
+    {
+      id: 'ren04-d04',
+      prio: 'P1',
+      priority: 'muy-importante',
+      ficha: 'complicaciones',
+      question: '¿Cuáles son las complicaciones del síndrome nefrótico?',
+      quote: { text: '«…las complicaciones más frecuentes que tiene como infección el síndrome nefrótico es la peritonitis bacteriana espontánea»', refs: [S('28:08')] },
+      answer: [{ t: 'p', text: '**Infecciones** (pérdida de IgG y complemento; la más frecuente, la **peritonitis bacteriana espontánea**), **trombosis** (↓ antitrombina III + hemoconcentración), **aterosclerosis** (hiperlipidemia), balance nitrogenado negativo, **IRA** e **IRC** (sobre todo en el diabético).' }],
+      refs: [S('27:28'), S('29:28'), S('30:48'), S('31:29'), L('p442')],
+    },
+  ],
+
+  mcq: [
+    {
+      id: 'ren04-q01',
+      topic: 'Etiología',
+      difficulty: 1,
+      emphasis: true,
+      stem: 'La causa más frecuente de síndrome nefrótico es:',
+      options: [
+        { text: 'La nefropatía diabética.', why: 'Correcto.' },
+        { text: 'La enfermedad por cambios mínimos.', why: 'Es la primaria más frecuente en el niño.' },
+        { text: 'La glomerulonefritis postestreptocócica.', why: 'Da síndrome nefrítico.' },
+        { text: 'La amiloidosis.', why: 'Es la más frecuente en el anciano.' },
+      ],
+      answer: 0,
+      refs: [S('07:15')],
+    },
+    {
+      id: 'ren04-q02',
+      topic: 'Etiología',
+      difficulty: 2,
+      emphasis: true,
+      stem: 'La glomerulopatía primaria más frecuente como causa de nefrótico en el **niño** es:',
+      options: [
+        { text: 'Cambios mínimos.', why: 'Correcto.' },
+        { text: 'Membranosa.', why: 'Es la del adulto.' },
+        { text: 'Focal y segmentaria.', why: 'Es la segunda.' },
+        { text: 'Por IgA.', why: 'Da hematuria/nefrítico.' },
+      ],
+      answer: 0,
+      refs: [S('07:55'), S('08:36')],
+    },
+    {
+      id: 'ren04-q03',
+      topic: 'Etiología',
+      difficulty: 2,
+      stem: 'En el **adulto**, la glomerulopatía primaria más frecuente que da nefrótico es:',
+      options: [
+        { text: 'Membranosa.', why: 'Correcto.' },
+        { text: 'Cambios mínimos.', why: 'Es la del niño.' },
+        { text: 'Postestreptocócica.', why: 'Da nefrítico.' },
+        { text: 'Amiloidosis.', why: 'Es secundaria y del anciano.' },
+      ],
+      answer: 0,
+      refs: [S('08:36')],
+    },
+    {
+      id: 'ren04-q04',
+      topic: 'Definición',
+      difficulty: 1,
+      stem: '¿Cuál **no** forma parte de la definición del síndrome nefrótico?',
+      options: [
+        { text: 'Hipertensión arterial.', why: 'Correcto: es del nefrítico; en el nefrótico la TA es normal o baja.' },
+        { text: 'Proteinuria > 3,5 g/24 h.', why: 'Sí forma parte.' },
+        { text: 'Hipoalbuminemia < 3 g/dl.', why: 'Sí forma parte.' },
+        { text: 'Hiperlipidemia.', why: 'Sí forma parte.' },
+      ],
+      answer: 0,
+      refs: [S('18:42'), L('p440')],
+    },
+    {
+      id: 'ren04-q05',
+      topic: 'Fisiopatología',
+      difficulty: 2,
+      stem: 'El edema del síndrome nefrótico empeora porque:',
+      options: [
+        { text: 'El volumen efectivo baja y el SRAA retiene agua y sodio.', why: 'Correcto: el círculo del edema.' },
+        { text: 'Sube la presión oncótica.', why: 'Baja.' },
+        { text: 'Hay rotura de capilares glomerulares.', why: 'Eso es el nefrítico.' },
+        { text: 'Hay obstrucción linfática.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [S('16:40'), L('p440')],
+    },
+    {
+      id: 'ren04-q06',
+      topic: 'Fisiopatología',
+      difficulty: 2,
+      stem: 'La tendencia a la **trombosis** del síndrome nefrótico se debe a:',
+      options: [
+        { text: 'Pérdida de antitrombina III y hemoconcentración.', why: 'Correcto.' },
+        { text: 'Pérdida de inmunoglobulinas.', why: 'Da infecciones.' },
+        { text: 'Pérdida de transferrina.', why: 'Da anemia.' },
+        { text: 'Hipertensión arterial.', why: 'No es típica.' },
+      ],
+      answer: 0,
+      refs: [S('14:00'), S('30:48')],
+    },
+    {
+      id: 'ren04-q07',
+      topic: 'Complicaciones',
+      difficulty: 2,
+      emphasis: true,
+      stem: 'La infección más frecuente en el síndrome nefrótico es:',
+      options: [
+        { text: 'La peritonitis bacteriana espontánea.', why: 'Correcto.' },
+        { text: 'La neumonía.', why: 'No es la que remarca la clase.' },
+        { text: 'La endocarditis.', why: 'No.' },
+        { text: 'La meningitis.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [S('28:08')],
+    },
+    {
+      id: 'ren04-q08',
+      topic: 'Clínica',
+      difficulty: 1,
+      stem: 'Las bandas blancas transversales en las uñas del paciente nefrótico se deben a:',
+      options: [
+        { text: 'La hipoalbuminemia.', why: 'Correcto (Muehrcke).' },
+        { text: 'La hiperlipidemia.', why: 'Da xantelasmas.' },
+        { text: 'La hipertensión.', why: 'No.' },
+        { text: 'La hematuria.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [S('19:22'), L('p441')],
+    },
+    {
+      id: 'ren04-q09',
+      topic: 'Diagnóstico',
+      difficulty: 2,
+      stem: 'El estudio más certero para confirmar la proteinuria nefrótica es:',
+      options: [
+        { text: 'La proteinuria de 24 horas.', why: 'Correcto.' },
+        { text: 'La tira reactiva.', why: 'Es aproximada.' },
+        { text: 'La ecografía renal.', why: 'No mide proteínas.' },
+        { text: 'El hemograma.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [S('22:45')],
+    },
+    {
+      id: 'ren04-q10',
+      topic: 'Diagnóstico',
+      difficulty: 3,
+      stem: 'En un niño de 6 años con nefrótico puro (sin hematuria), lo habitual es:',
+      options: [
+        { text: 'Tratar como cambios mínimos sin biopsia.', why: 'Correcto: la biopsia se reserva para > 10 años o dudas.' },
+        { text: 'Biopsia renal de entrada siempre.', why: 'No en el menor de 10 sin datos atípicos.' },
+        { text: 'Biopsia de recto.', why: 'Es para amiloidosis.' },
+        { text: 'No estudiar.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [S('26:06'), L('p441')],
+    },
+  ],
+
+  memory: [
+    {
+      id: 'ren04-m01',
+      title: 'Definición',
+      purpose: 'Lo primero que piden.',
+      evaluates: [{ t: 'list', items: ['Proteinuria > 3,5 g/24 h', 'Albúmina < 3 g/dl', 'Edema', 'Hiperlipidemia ± lipiduria'] }],
+      interpret: 'TA normal o baja.',
+      mnemonic: { hook: '3,5 que se van, 3 que quedan.', explain: 'Pierde más de 3,5 g por día y la albúmina queda por debajo de 3 g/dl.' },
+      recall: { q: '¿Cuáles son los cuatro elementos del síndrome nefrótico?', a: 'Proteinuria > 3,5 g/24 h, hipoalbuminemia < 3 g/dl, edema e hiperlipidemia con o sin lipiduria.' },
+    },
+    {
+      id: 'ren04-m02',
+      title: 'Causas por edad',
+      purpose: '«La pregunta que siempre hacen».',
+      evaluates: [{ t: 'list', items: ['General: diabetes', 'Niño: cambios mínimos', 'Adulto: membranosa', 'Anciano: amiloidosis', 'Mujer joven: lupus'] }],
+      interpret: 'Focal y segmentaria: 2.ª primaria en ambos.',
+      mnemonic: { hook: 'Niño Mínimo, Adulto Membranoso, Abuelo Amiloide, Dama Lupus… y el Diabético primero.', explain: 'La causa según quién consulta.' },
+      recall: { q: '¿Cuál es la causa más frecuente de síndrome nefrótico y la primaria en el niño y en el adulto?', a: 'Nefropatía diabética. Primaria: cambios mínimos en el niño, membranosa en el adulto.' },
+    },
+    {
+      id: 'ren04-m03',
+      title: 'Lo que se pierde',
+      purpose: 'Para deducir complicaciones.',
+      evaluates: [{ t: 'list', items: ['IgG y complemento → infecciones (PBE)', 'Antitrombina III → trombosis', 'Transferrina → anemia'] }],
+      interpret: 'Cada proteína perdida es una complicación.',
+      mnemonic: { hook: 'Se va la defensa, se va el freno y se va el hierro.', explain: 'Infecciones, trombosis, anemia ferropénica.' },
+      recall: { q: '¿Por qué el paciente nefrótico tiene infecciones y trombosis?', a: 'Pierde IgG y complemento por la orina (infecciones, sobre todo PBE) y antitrombina III, con hemoconcentración (trombosis).' },
+    },
+  ],
+
+  closing: {
+    map: {
+      center: 'Síndrome nefrótico en una mirada',
+      nodes: [
+        { label: 'Qué es', tone: 'gold', items: ['> 3,5 g/24 h', 'Albúmina < 3', 'Edema, lípidos'] },
+        { label: 'Causas ★', tone: 'peach', items: ['Diabetes', 'Niño: cambios mínimos', 'Adulto: membranosa'] },
+        { label: 'Fisiopatología ★', tone: 'sky', items: ['↓ Oncótica', 'SRAA', 'Hígado → lípidos'] },
+        { label: 'Complicaciones', tone: 'red', items: ['PBE', 'Trombosis', 'IRC'] },
+      ],
+    },
+    essentials: [
+      'Membrana basal **permeable** (no rota): proteinuria **> 3,5 g/24 h** selectiva (albúmina), **albúmina < 3 g/dl**, **edema**, **hiperlipidemia** ± lipiduria.',
+      'Causa más frecuente: **nefropatía diabética**. Primarias: **cambios mínimos** (niño), **membranosa** (adulto), focal y segmentaria (2.ª). Anciano: amiloidosis; mujer joven: lupus.',
+      'Círculo: ↓ oncótica → edema + ↓ volumen efectivo → **SRAA** → retención → más edema → anasarca.',
+      'Edema frío, blando, con fóvea; **TA normal o baja**; orina espumosa; xantelasmas; uñas de Muehrcke.',
+      'Proteinuria de **24 h** (la más certera), proteinograma, lipidograma, sedimento con **cilindros grasos**; biopsia en adultos y niños > 10 años.',
+      'Complicaciones: **infecciones** (PBE), **trombosis**, aterosclerosis, IRA, **IRC**.',
+    ],
+    links: [
+      { chapterId: 'ren-03', text: '[[ren-03|Síndrome nefrítico]]: el hermano (rotura, hematuria, HTA).' },
+      { chapterId: 'ren-05', text: '[[ren-05|Insuficiencia renal]]: hacia donde evoluciona el nefrótico.' },
+      { chapterId: 'dig-10', text: '[[dig-10|Peritonitis]]: la peritonitis bacteriana espontánea.' },
+    ],
+    pitfalls: [
+      'Responder «cambios mínimos» como causa más frecuente en general (es la primaria del niño).',
+      'Poner hipertensión en el nefrótico.',
+      'Olvidar que el edema se perpetúa por el SRAA (volumen efectivo bajo).',
+      'Confundir cilindros grasos (nefrótico) con cilindros hemáticos (nefrítico).',
+    ],
+    miniExam: [
+      {
+        id: 'ren04-x01',
+        topic: 'Integración',
+        difficulty: 2,
+        stem: 'Niño de 4 años con edema palpebral y de tobillos, orina espumosa, TA normal, albúmina 1,8 g/dl y proteinuria 5 g/24 h. Pensás en:',
+        options: [
+          { text: 'Síndrome nefrótico por cambios mínimos.', why: 'Correcto.' },
+          { text: 'Glomerulonefritis postestreptocócica.', why: 'Tendría HTA y hematuria.' },
+          { text: 'Insuficiencia cardíaca.', why: 'No explica la proteinuria.' },
+          { text: 'Nefropatía diabética.', why: 'No a esa edad sin diabetes.' },
+        ],
+        answer: 0,
+        refs: [S('08:36'), L('p441')],
+      },
+    ],
+  },
+
+  escenas,
+  diagrams: {},
+};
+
+export default chapter;
