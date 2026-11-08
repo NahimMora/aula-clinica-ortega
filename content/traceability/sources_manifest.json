@@ -1,0 +1,652 @@
+[
+ {
+  "id": "mc-dig-1",
+  "tema": "MC DEL APARATO DIGESTIVO (parte 1)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 1).mp4",
+  "transcripcion": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 1).md",
+  "duracion_s": 2113,
+  "disponible": true
+ },
+ {
+  "id": "mc-dig-2",
+  "tema": "MC DEL APARATO DIGESTIVO (parte 2)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 2).mp4",
+  "transcripcion": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 2).md",
+  "duracion_s": 2172,
+  "disponible": true
+ },
+ {
+  "id": "mc-dig-3",
+  "tema": "MC DEL APARATO DIGESTIVO (parte 3)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 3).mp4",
+  "transcripcion": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 3).md",
+  "duracion_s": 2114,
+  "disponible": true
+ },
+ {
+  "id": "mc-dig-4",
+  "tema": "MC DEL APARATO DIGESTIVO (parte 4)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 4).mp4",
+  "transcripcion": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 4).md",
+  "duracion_s": 2030,
+  "disponible": true
+ },
+ {
+  "id": "mc-dig-5",
+  "tema": "MC DEL APARATO DIGESTIVO (parte 5)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 5).mp4",
+  "transcripcion": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 5).md",
+  "duracion_s": 2204,
+  "disponible": true
+ },
+ {
+  "id": "mc-dig-6",
+  "tema": "MC DEL APARATO DIGESTIVO (parte 6)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 6).mp4",
+  "transcripcion": "0 Aparato_digestivo/MC DEL APARATO DIGESTIVO (parte 6).md",
+  "duracion_s": 1025,
+  "disponible": true
+ },
+ {
+  "id": "ef-dig-1",
+  "tema": "EXAMEN FÍSICO DEL APARATO DIGESTIVO (parte 1)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/EXAMEN FÍSICO DEL APARATO DIGESTIVO (parte 1).mp4",
+  "transcripcion": "0 Aparato_digestivo/EXAMEN FÍSICO DEL APARATO DIGESTIVO (parte 1).md",
+  "duracion_s": 1853,
+  "disponible": true
+ },
+ {
+  "id": "ef-dig-2",
+  "tema": "EXAMEN FÍSICO DEL APARATO DIGESTIVO (parte 2)",
+  "carpeta": "0 Aparato_digestivo",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "0 Aparato_digestivo/EXAMEN FÍSICO DEL APARATO DIGESTIVO (parte 2).mp4",
+  "transcripcion": "0 Aparato_digestivo/EXAMEN FÍSICO DEL APARATO DIGESTIVO (parte 2).md",
+  "duracion_s": 1607,
+  "disponible": true
+ },
+ {
+  "id": "sd-esof",
+  "tema": "1-SD. ESOFÁGICO",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/1-SD. ESOFÁGICO.mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/1-SD. ESOFÁGICO.md",
+  "duracion_s": 1484,
+  "disponible": true
+ },
+ {
+  "id": "sd-ulc-1",
+  "tema": "2-SD.ULCEROSO - GASTRITIS (parte 1)",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/2-SD.ULCEROSO - GASTRITIS (parte 1).mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/2-SD.ULCEROSO - GASTRITIS (parte 1).md",
+  "duracion_s": 511,
+  "disponible": true
+ },
+ {
+  "id": "sd-ulc-2",
+  "tema": "3-SD.ULCEROSO - GASTRITIS (parte 2)",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/3-SD.ULCEROSO - GASTRITIS (parte 2).mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/3-SD.ULCEROSO - GASTRITIS (parte 2).md",
+  "duracion_s": 2083,
+  "disponible": true
+ },
+ {
+  "id": "sd-ulc-3",
+  "tema": "4-SD.ULCEROSO - GASTRITIS (parte 3)",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/4-SD.ULCEROSO - GASTRITIS (parte 3).mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/4-SD.ULCEROSO - GASTRITIS (parte 3).md",
+  "duracion_s": 1005,
+  "disponible": true
+ },
+ {
+  "id": "sd-pil",
+  "tema": "5-SÍNDROME PILÓRICO",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/5-SÍNDROME PILÓRICO.mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/5-SÍNDROME PILÓRICO.md",
+  "duracion_s": 1014,
+  "disponible": true
+ },
+ {
+  "id": "ileo",
+  "tema": "6-ÍLEO",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/6-ÍLEO.mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/6-ÍLEO.md",
+  "duracion_s": 1028,
+  "disponible": true
+ },
+ {
+  "id": "malabs-1",
+  "tema": "7-SÍNDROME DE MALA ABSORCIÓN (parte 1)",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/7-SÍNDROME DE MALA ABSORCIÓN (parte 1).mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/7-SÍNDROME DE MALA ABSORCIÓN (parte 1).md",
+  "duracion_s": 2064,
+  "disponible": true
+ },
+ {
+  "id": "malabs-2",
+  "tema": "8-SÍNDROME DE MALA ABSORCIÓN (parte 2)",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/8-SÍNDROME DE MALA ABSORCIÓN (parte 2).mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/8-SÍNDROME DE MALA ABSORCIÓN (parte 2).md",
+  "duracion_s": 1002,
+  "disponible": true
+ },
+ {
+  "id": "sii",
+  "tema": "9-SÍNDROME DE INTESTINO IRRITABLE",
+  "carpeta": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/9-SÍNDROME DE INTESTINO IRRITABLE.mp4",
+  "transcripcion": "1 SÍNDROMES O ENFERMEDADES DEL APARATO DIGESTIVO_ “TUBO DIGESTIVO”/9-SÍNDROME DE INTESTINO IRRITABLE.md",
+  "duracion_s": 997,
+  "disponible": true
+ },
+ {
+  "id": "perit-1",
+  "tema": "10-PERITONITIS (parte 1)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/10-PERITONITIS (parte 1).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/10-PERITONITIS (parte 1).md",
+  "duracion_s": 1485,
+  "disponible": true
+ },
+ {
+  "id": "perit-2",
+  "tema": "11-PERITONITIS (parte 2)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/11-PERITONITIS (parte 2).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/11-PERITONITIS (parte 2).md",
+  "duracion_s": 392,
+  "disponible": true
+ },
+ {
+  "id": "vesic",
+  "tema": "12-SÍNDROMES VESICULARES",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/12-SÍNDROMES VESICULARES.mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/12-SÍNDROMES VESICULARES.md",
+  "duracion_s": 1796,
+  "disponible": true
+ },
+ {
+  "id": "hd-1",
+  "tema": "13-HEMORRAGÍAS DIGESTIVAS (parte 1)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/13-HEMORRAGÍAS DIGESTIVAS (parte 1).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/13-HEMORRAGÍAS DIGESTIVAS (parte 1).md",
+  "duracion_s": 1920,
+  "disponible": true
+ },
+ {
+  "id": "hd-2",
+  "tema": "14-HEMORRAGÍAS DIGESTIVAS (parte 2)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/14-HEMORRAGÍAS DIGESTIVAS (parte 2).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/14-HEMORRAGÍAS DIGESTIVAS (parte 2).md",
+  "duracion_s": 735,
+  "disponible": true
+ },
+ {
+  "id": "cirr-1",
+  "tema": "15-CIRROSIS (parte 1)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/15-CIRROSIS (parte 1).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/15-CIRROSIS (parte 1).md",
+  "duracion_s": 1531,
+  "disponible": true
+ },
+ {
+  "id": "cirr-2",
+  "tema": "16-CIRROSIS (parte 2)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/16-CIRROSIS (parte 2).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/16-CIRROSIS (parte 2).md",
+  "duracion_s": 562,
+  "disponible": true
+ },
+ {
+  "id": "htp-1",
+  "tema": "17-HTP (parte 1)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/17-HTP (parte 1).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/17-HTP (parte 1).md",
+  "duracion_s": 1283,
+  "disponible": true
+ },
+ {
+  "id": "htp-2",
+  "tema": "18-HTP (parte 2)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/18-HTP (parte 2).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/18-HTP (parte 2).md",
+  "duracion_s": 1617,
+  "disponible": true
+ },
+ {
+  "id": "ih",
+  "tema": "19-INSUFICIENCIA HEPÁTICA",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/19-INSUFICIENCIA HEPÁTICA.mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/19-INSUFICIENCIA HEPÁTICA.md",
+  "duracion_s": 3074,
+  "disponible": true
+ },
+ {
+  "id": "pa-1",
+  "tema": "20-PANCREATITIS AGUDA (parte 1)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/20-PANCREATITIS AGUDA (parte 1).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/20-PANCREATITIS AGUDA (parte 1).md",
+  "duracion_s": 562,
+  "disponible": true
+ },
+ {
+  "id": "pa-2",
+  "tema": "21-PANCREATITIS AGUDA (parte 2)",
+  "carpeta": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/21-PANCREATITIS AGUDA (parte 2).mp4",
+  "transcripcion": "2 SÍNDROME O ENFERMEDADES DEL APARATO DIGESTIVO_ “HIGADO, PÁNCREAS Y VÍAS BILIARES_ EMERGENCIAS DIGESTIVAS”/21-PANCREATITIS AGUDA (parte 2).md",
+  "duracion_s": 1504,
+  "disponible": true
+ },
+ {
+  "id": "mc-ren-1",
+  "tema": "MOTIVOS DE CONSULTA DE RENAL (parte 1)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/MOTIVOS DE CONSULTA DE RENAL (parte 1).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/MOTIVOS DE CONSULTA DE RENAL (parte 1).md",
+  "duracion_s": 2187,
+  "disponible": true
+ },
+ {
+  "id": "mc-ren-2",
+  "tema": "MOTIVOS DE CONSULTA DE RENAL (parte 2)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/MOTIVOS DE CONSULTA DE RENAL (parte 2).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/MOTIVOS DE CONSULTA DE RENAL (parte 2).md",
+  "duracion_s": 1997,
+  "disponible": true
+ },
+ {
+  "id": "ef-ren",
+  "tema": "MOTIVOS DE CONSULTA DE RENAL (parte 3) - EXAMEN FÍSICO",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/MOTIVOS DE CONSULTA DE RENAL (parte 3) - EXAMEN FÍSICO.mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/MOTIVOS DE CONSULTA DE RENAL (parte 3) - EXAMEN FÍSICO.md",
+  "duracion_s": 1950,
+  "disponible": true
+ },
+ {
+  "id": "nefritico",
+  "tema": "SÍNDROME NEFRÍTICO",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/SÍNDROME NEFRÍTICO.mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/SÍNDROME NEFRÍTICO.md",
+  "duracion_s": 2034,
+  "disponible": true
+ },
+ {
+  "id": "nefrotico",
+  "tema": "SÍNDROME NEFRÓTICO",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/SÍNDROME NEFRÓTICO.mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/SÍNDROME NEFRÓTICO.md",
+  "duracion_s": 2006,
+  "disponible": true
+ },
+ {
+  "id": "ir-1",
+  "tema": "INSUFICIENCIA RENAL (parte 1)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/INSUFICIENCIA RENAL (parte 1).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/INSUFICIENCIA RENAL (parte 1).md",
+  "duracion_s": 2112,
+  "disponible": true
+ },
+ {
+  "id": "ir-2",
+  "tema": "INSUFICIENCIA RENAL (parte 2)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/INSUFICIENCIA RENAL (parte 2).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/INSUFICIENCIA RENAL (parte 2).md",
+  "duracion_s": 2137,
+  "disponible": true
+ },
+ {
+  "id": "ir-3",
+  "tema": "INSUFICIENCIA RENAL (parte 3)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/INSUFICIENCIA RENAL (parte 3).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/INSUFICIENCIA RENAL (parte 3).md",
+  "duracion_s": 883,
+  "disponible": true
+ },
+ {
+  "id": "itu-1",
+  "tema": "INFECCIÓN URINARIA (parte 1)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/INFECCIÓN URINARIA (parte 1).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/INFECCIÓN URINARIA (parte 1).md",
+  "duracion_s": 2035,
+  "disponible": true
+ },
+ {
+  "id": "itu-2",
+  "tema": "INFECCIÓN URINARIA (parte 2)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/INFECCIÓN URINARIA (parte 2).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/INFECCIÓN URINARIA (parte 2).md",
+  "duracion_s": 1030,
+  "disponible": true
+ },
+ {
+  "id": "lit-1",
+  "tema": "LITIASIS RENOURETERAL (parte 1)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/LITIASIS RENOURETERAL (parte 1).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/LITIASIS RENOURETERAL (parte 1).md",
+  "duracion_s": 1038,
+  "disponible": true
+ },
+ {
+  "id": "lit-2",
+  "tema": "LITIASIS RENOURETERAL (parte 2)",
+  "carpeta": "3 APARATO NEFROUROLOGICO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "3 APARATO NEFROUROLOGICO/LITIASIS RENOURETERAL (parte 2).mp4",
+  "transcripcion": "3 APARATO NEFROUROLOGICO/LITIASIS RENOURETERAL (parte 2).md",
+  "duracion_s": 1472,
+  "disponible": true
+ },
+ {
+  "id": "mc-neu-1",
+  "tema": "MC NEUROLOGÍA (parte 1)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 1).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 1).md",
+  "duracion_s": 1904,
+  "disponible": true
+ },
+ {
+  "id": "mc-neu-2",
+  "tema": "MC NEUROLOGÍA (parte 2)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 2).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 2).md",
+  "duracion_s": 2145,
+  "disponible": true
+ },
+ {
+  "id": "mc-neu-3",
+  "tema": "MC NEUROLOGÍA (parte 3)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 3).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 3).md",
+  "duracion_s": 2226,
+  "disponible": true
+ },
+ {
+  "id": "mc-neu-4",
+  "tema": "MC NEUROLOGÍA (parte 4)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 4).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/MC NEUROLOGÍA (parte 4).md",
+  "duracion_s": 1834,
+  "disponible": true
+ },
+ {
+  "id": "pc-1",
+  "tema": "PARES CRANEALES (parte 1)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 1).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 1).md",
+  "duracion_s": 1915,
+  "disponible": true
+ },
+ {
+  "id": "pc-2",
+  "tema": "PARES CRANEALES (parte 2)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 2).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 2).md",
+  "duracion_s": 2155,
+  "disponible": true
+ },
+ {
+  "id": "pc-3",
+  "tema": "PARES CRANEALES (parte 3)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 3).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 3).md",
+  "duracion_s": 2082,
+  "disponible": true
+ },
+ {
+  "id": "pc-4",
+  "tema": "PARES CRANEALES (parte 4)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 4).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 4).md",
+  "duracion_s": 1747,
+  "disponible": true
+ },
+ {
+  "id": "pc-5",
+  "tema": "PARES CRANEALES (parte 5)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 5).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 5).md",
+  "duracion_s": 1609,
+  "disponible": true
+ },
+ {
+  "id": "pc-6",
+  "tema": "PARES CRANEALES (parte 6)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 6).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/PARES CRANEALES (parte 6).md",
+  "duracion_s": 1229,
+  "disponible": true
+ },
+ {
+  "id": "sn-1",
+  "tema": "SÍNDROMES DEL SN (parte 1)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 1).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 1).md",
+  "duracion_s": 1973,
+  "disponible": true
+ },
+ {
+  "id": "sn-2",
+  "tema": "SÍNDROMES DEL SN (parte 2)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 2).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 2).md",
+  "duracion_s": 2065,
+  "disponible": true
+ },
+ {
+  "id": "sn-3",
+  "tema": "SÍNDROMES DEL SN (parte 3)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 3).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 3).md",
+  "duracion_s": 1960,
+  "disponible": true
+ },
+ {
+  "id": "sn-4",
+  "tema": "SÍNDROMES DEL SN (parte 4)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 4).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 4).md",
+  "duracion_s": 1624,
+  "disponible": true
+ },
+ {
+  "id": "sn-5",
+  "tema": "SÍNDROMES DEL SN (parte 5)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 5).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 5).md",
+  "duracion_s": 1871,
+  "disponible": true
+ },
+ {
+  "id": "sn-6",
+  "tema": "SÍNDROMES DEL SN (parte 6)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 6).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 6).md",
+  "duracion_s": 2176,
+  "disponible": true
+ },
+ {
+  "id": "sn-7",
+  "tema": "SÍNDROMES DEL SN (parte 7)",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 7).mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/SÍNDROMES DEL SN (parte 7).md",
+  "duracion_s": 390,
+  "disponible": true
+ },
+ {
+  "id": "neu-rec-1026",
+  "tema": "26.10.2026_22.38.43_REC",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/26.10.2026_22.38.43_REC.mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/26.10.2026_22.38.43_REC.md",
+  "duracion_s": 3220,
+  "disponible": true
+ },
+ {
+  "id": "neu-meet-1024",
+  "tema": "Screen_Recording_20261024_121309_Meet",
+  "carpeta": "4 SISTEMA NERVIOSO",
+  "tipo": "clase grabada + transcripción con marcas de tiempo",
+  "video": "4 SISTEMA NERVIOSO/Screen_Recording_20261024_121309_Meet.mp4",
+  "transcripcion": "4 SISTEMA NERVIOSO/Screen_Recording_20261024_121309_Meet.md",
+  "duracion_s": 5483,
+  "disponible": true
+ },
+ {
+  "id": "meningeo-osteo",
+  "tema": "Meningeo y osteo",
+  "carpeta": "archivos sueltos (caché local)",
+  "tipo": "audio/video + transcripción",
+  "video": "Meningeo y osteo.m4a",
+  "transcripcion": "Archivos sueltos/Meningeo y osteo.md",
+  "duracion_s": 4863,
+  "disponible": true
+ },
+ {
+  "id": "repaso-pato",
+  "tema": "Clase Pato repaso",
+  "carpeta": "archivos sueltos (caché local)",
+  "tipo": "audio/video + transcripción",
+  "video": "Clase Pato repaso.mp4",
+  "transcripcion": "Archivos sueltos/Clase Pato repaso.md",
+  "duracion_s": 3628,
+  "disponible": true
+ },
+ {
+  "id": "libro",
+  "tema": "Clínica Médica I 2023 — L. Ortega (511 p.)",
+  "carpeta": "raíz del Drive",
+  "tipo": "libro PDF",
+  "video": null,
+  "transcripcion": null,
+  "duracion_s": null,
+  "disponible": true
+ },
+ {
+  "id": "argente",
+  "tema": "Semiología Médica Argente-Álvarez — 35 videos (YouTube EC9tSepFn_U)",
+  "carpeta": "sources/local/maneuvers",
+  "tipo": "video de maniobras + SRT + transcripciones",
+  "video": "Semiología Médica Argente Álvarez.mp4",
+  "transcripcion": "Transcripcion_con_tiempos.txt",
+  "duracion_s": 14522,
+  "disponible": true
+ },
+ {
+  "id": "pizarra",
+  "tema": "Fotos de pizarra (Pizzarra1.pdf 22 p., Pizzarra2.pdf 2 p.)",
+  "carpeta": "sources/local/whiteboards",
+  "tipo": "fotografías",
+  "video": null,
+  "transcripcion": null,
+  "duracion_s": null,
+  "disponible": true
+ }
+]

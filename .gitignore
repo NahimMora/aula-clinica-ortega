@@ -1,0 +1,15 @@
+# Fuentes académicas privadas: NUNCA se suben (libro, grabaciones, transcripciones, fotos)
+sources/
+.venv/
+node_modules/
+dist/
+video/out/
+video/public/audio/
+video/node_modules/
+*.log
+.DS_Store
+docs/progress/_*.log
+content/traceability/drive_manifest.raw.json
+content/traceability/drive_download_log.json
+content/traceability/book_index.txt
+content/traceability/book_index*.txt

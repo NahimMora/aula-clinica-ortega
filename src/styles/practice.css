@@ -1,0 +1,74 @@
+/* ───── Choice ───── */
+.quiz__bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-bottom: 16px; padding: 12px 14px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+.quiz__stats { font-size: 0.9rem; color: var(--ink-2); margin-right: auto; }
+.quiz__list { display: grid; gap: 14px; }
+.mcq { padding: 20px 22px; border-radius: var(--radius-lg); background: var(--surface); border: 1.5px solid var(--line); box-shadow: var(--shadow-xs); scroll-margin-top: calc(var(--topbar-h) + 70px); list-style: none; }
+.mcq.is-correct { border-color: #bfe3d1; }
+.mcq.is-wrong { border-color: #f1c9d4; }
+.mcq__head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 10px; }
+.mcq__n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 0.8rem; font-weight: 700; margin-right: 4px; flex-shrink: 0; }
+.mcq__topic { margin-left: auto; font-size: 0.78rem; color: var(--ink-3); }
+.mcq__stem { font-weight: 560; font-size: 1.03rem; margin-bottom: 12px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.mcq__opts { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.mcq__opt { width: 100%; display: flex; align-items: flex-start; gap: 12px; text-align: left; padding: 11px 14px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--surface-2); cursor: pointer; transition: border-color 0.15s, background 0.15s; line-height: 1.45; }
+.mcq__opt:hover:not(:disabled) { border-color: var(--lilac-400); background: var(--lilac-50); }
+.mcq__opt:disabled { cursor: default; }
+.mcq__letter { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; background: var(--surface); border: 1.5px solid var(--line-2); font-weight: 700; font-size: 0.82rem; flex-shrink: 0; }
+.mcq__opt-text { flex: 1; }
+.mcq__opt.is-answer { border-color: var(--ok); background: var(--ok-bg); }
+.mcq__opt.is-answer .mcq__letter { background: var(--ok); border-color: var(--ok); color: #fff; }
+.mcq__opt.is-answer svg { color: var(--ok); flex-shrink: 0; }
+.mcq__opt.is-chosen { border-color: var(--bad); background: var(--bad-bg); }
+.mcq__opt.is-chosen .mcq__letter { background: var(--bad); border-color: var(--bad); color: #fff; }
+.mcq__opt.is-picked { border-color: var(--lilac-600); background: var(--lilac-50); }
+.mcq__opt.is-picked .mcq__letter { background: var(--lilac-600); border-color: var(--lilac-600); color: #fff; }
+.mcq__opt.is-dim { opacity: 0.6; }
+.mcq__feedback { margin-top: 14px; padding: 14px 16px; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line); display: grid; gap: 10px; justify-items: start; animation: rise 0.25s ease both; }
+.mcq__verdict { font-family: var(--font-display); font-weight: 650; font-size: 1.1rem; }
+.is-correct .mcq__verdict { color: var(--ok); }
+.is-wrong .mcq__verdict { color: var(--bad); }
+.mcq__why { font-size: 0.94rem; }
+.mcq__why--ok { padding: 10px 12px; border-radius: 12px; background: var(--ok-bg); width: 100%; }
+.mcq__distractors { width: 100%; font-size: 0.92rem; }
+.mcq__distractors summary { cursor: pointer; font-weight: 600; color: var(--ink-2); }
+.mcq__distractors ul { margin: 8px 0 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.mcq__distractors li.is-chosen { color: var(--bad); }
+.mcq__hist { margin-top: 10px; font-size: 0.78rem; color: var(--ink-3); }
+
+/* ───── Desarrollos ───── */
+.devs { display: grid; gap: 14px; }
+.dev { padding: 20px 22px; border-radius: var(--radius-lg); background: var(--surface); border: 1.5px solid var(--line); box-shadow: var(--shadow-xs); scroll-margin-top: calc(var(--topbar-h) + 70px); }
+.dev.is-known { border-color: #bfe3d1; }
+.dev.is-unknown { border-color: #f1c9d4; }
+.dev__head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 10px; }
+.dev__n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--lilac-100); color: var(--lilac-700); font-weight: 700; font-size: 0.8rem; }
+.dev__status { margin-left: auto; font-size: 0.78rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--bg-2); color: var(--ink-3); }
+.dev__status--known { background: var(--ok-bg); color: var(--ok); }
+.dev__status--unknown { background: var(--bad-bg); color: var(--bad); }
+.dev__q { font-family: var(--font-display); font-size: 1.18rem; font-weight: 600; margin-bottom: 14px; }
+.dev__answer { margin: 4px 0 16px; padding: 18px 20px; border-radius: 18px; background: linear-gradient(170deg, var(--lilac-50), var(--surface) 60%); border: 1px solid var(--lilac-100); animation: rise 0.25s ease both; }
+.dev__answer-label { font-size: 0.74rem; font-weight: 750; text-transform: uppercase; letter-spacing: 0.08em; color: var(--lilac-700); margin-bottom: 4px; }
+.dev__keys { margin-top: 14px; padding: 12px 14px; border-radius: 14px; background: var(--surface); border: 1px dashed var(--lilac-200); }
+.dev__keys-title { display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 0.86rem; color: var(--lilac-700); }
+.dev__keys ul { margin: 6px 0 0; padding-left: 1.1em; font-size: 0.93rem; }
+.dev__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+
+/* ───── Memoria ───── */
+.mem-list { display: grid; gap: 18px; }
+.mem { padding: 22px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-xs); scroll-margin-top: calc(var(--topbar-h) + 70px); }
+.mem__title { font-size: 1.3rem; }
+.mem__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.mem__cell { padding: 14px 16px; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line); font-size: 0.94rem; }
+.mem__cell--wide { grid-column: 1 / -1; }
+.mem__label { font-size: 0.72rem; font-weight: 750; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-700); margin-bottom: 4px; }
+.mem__hook { background: linear-gradient(140deg, #fff6dc, var(--rose-50)); border-color: #f3dc9c; }
+.mem__hook-text { font-family: var(--font-display); font-size: 1.35rem; font-weight: 650; line-height: 1.25; color: #7a4f00; margin-bottom: 4px; }
+.mem__hook-explain { font-size: 0.92rem; color: var(--ink-2); }
+.mem__recall { margin-top: 12px; padding: 14px 16px; border-radius: 16px; border: 1.5px dashed var(--lilac-200); }
+.mem__q { font-weight: 600; margin: 4px 0 10px; }
+.mem__a { padding: 10px 12px; border-radius: 12px; background: var(--lilac-50); }
+
+@media (max-width: 760px) {
+  .mem__grid { grid-template-columns: 1fr; }
+  .mcq, .dev, .mem { padding: 16px; }
+}
