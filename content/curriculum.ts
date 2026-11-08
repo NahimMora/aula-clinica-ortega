@@ -37,7 +37,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('digestivo', 'dig-09', 'Malabsorción e intestino irritable', 'Tubo digestivo', 'Fases de la malabsorción, esteatorrea, Van de Kamer y D-xilosa; intestino irritable y criterios de Roma.', 'Clases Malabsorción 1–2 · SII · Libro p378–382', 'published'),
       ch('digestivo', 'dig-10', 'Peritonitis', 'Emergencias', 'Plastrón, peritonitis primaria (PBE), secundaria y terciaria; paracentesis y más de 250 neutrófilos.', 'Clases Peritonitis 1–2 · Libro p383', 'published'),
       ch('digestivo', 'dig-11', 'Síndromes vesiculares', 'Vías biliares', 'El viaje del cálculo: litiasis, cólico, colecistitis, Mirizzi, coledocolitiasis, Charcot y pancreatitis biliar.', 'Clase Síndromes vesiculares · Libro p385–387', 'published'),
-      ch('digestivo', 'dig-12', 'Hemorragias digestivas', 'Emergencias', 'Hemorragia digestiva alta y baja, clasificaciones y conducta.', 'Clases Hemorragias 1–2'),
+      ch('digestivo', 'dig-12', 'Hemorragias digestivas', 'Emergencias', 'Clases I a IV, ortostatismo, alta vs baja (úlcera vs hemorroides), melena, hematoquecia y estudios.', 'Clases Hemorragias 1–2 · Libro p389–390', 'published'),
       ch('digestivo', 'dig-13', 'Cirrosis e hipertensión portal', 'Hígado', 'Fisiopatología de la cirrosis, Child-Pugh y manifestaciones de la hipertensión portal.', 'Clases Cirrosis 1–2 · HTP 1–2'),
       ch('digestivo', 'dig-14', 'Insuficiencia hepática', 'Hígado', 'Insuficiencia hepática aguda y crónica, encefalopatía y estigmas.', 'Clase Insuficiencia hepática'),
       ch('digestivo', 'dig-15', 'Pancreatitis aguda', 'Páncreas', 'Etiología, clínica, criterios diagnósticos y de gravedad.', 'Clases Pancreatitis 1–2'),
