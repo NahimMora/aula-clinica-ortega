@@ -1,0 +1,116 @@
+import type { Escena } from '@/escenas/tipos';
+
+// Explicaciones animadas de ren-01 (motivos de consulta nefrourológicos). Clases MC Renal 1–2 + libro p. 445–454.
+export const escenas: Escena[] = [
+  {
+    tipo: 'nefrona',
+    id: 'edema',
+    titulo: 'Los tres edemas renales',
+    pasos: [
+      {
+        tono: 'gold',
+        luz: ['glomerulo'],
+        fuga: ['proteinas'],
+        nota: { t: '1 · Pierde proteínas', d: 'Baja la presión oncótica: el agua se va al intersticio. Típico del síndrome NEFRÓTICO.' },
+        di: 'El profe pide saber que el edema renal se produce por tres mecanismos distintos. El primero: el glomérulo deja pasar proteínas, baja la presión oncótica y el agua se va al intersticio. Es un edema blando, matutino, simétrico, que empieza en los párpados: el del síndrome nefrótico.',
+        retener: ['↓ oncótica → nefrótico'],
+      },
+      {
+        tono: 'red',
+        luz: ['glomerulo'],
+        fuga: ['hematies'],
+        nota: { t: '2 · Capilares rotos', d: 'La inflamación destruye los capilares glomerulares: aumenta la permeabilidad. Típico del NEFRÍTICO.' },
+        di: 'El segundo: hay una inflamación que destruye los capilares del glomérulo. Aumenta la permeabilidad capilar, y además se pierden glóbulos rojos por la orina. Es el edema del síndrome nefrítico: matinal, periorbitario y blando.',
+        retener: ['↑ permeabilidad → nefrítico'],
+      },
+      {
+        tono: 'sky',
+        luz: ['glomerulo', 'arteriola'],
+        marca: 'glomerulo',
+        nota: { t: '3 · No filtra', d: 'Cae el filtrado: el paciente no orina, retiene volumen y sube la presión hidrostática. INSUFICIENCIA RENAL.' },
+        di: 'El tercero: cae el filtrado glomerular. El paciente no orina, retiene ese volumen en la sangre, queda hipervolémico y sube la presión hidrostática. Es el edema de la insuficiencia renal, que en realidad suma los tres mecanismos.',
+        retener: ['↓ filtrado → ↑ hidrostática → IR'],
+      },
+    ],
+  },
+  {
+    tipo: 'urinario',
+    id: 'obstruccion',
+    titulo: 'El paciente con obstrucción urinaria',
+    pasos: [
+      {
+        tono: 'lilac',
+        luz: ['prostata', 'uretra'],
+        dilata: ['prostata'],
+        nota: { t: 'Hiperplasia de próstata', d: 'La causa más frecuente en el hombre (≈ 77 %): la próstata agrandada estrangula la uretra.' },
+        di: 'La causa más frecuente de obstrucción en el hombre es la hiperplasia benigna de próstata: la próstata agrandada estrangula la uretra. En la mujer, lo más frecuente son las infecciones y los cálculos.',
+        retener: ['HPB: n.º 1 en el hombre'],
+      },
+      {
+        tono: 'peach',
+        luz: ['vejiga', 'prostata', 'uretra'],
+        dilata: ['prostata', 'vejiga'],
+        nota: { t: 'Globo vesical', d: 'La vejiga no se vacía y se distiende: se palpa y se percute arriba del pubis. Obstrucción INFRAVESICAL → sonda.' },
+        di: 'La orina no puede salir y la vejiga se distiende: es el globo vesical, que se palpa y se percute por encima del pubis. Si está, la obstrucción es infravesical, y el primer paso es colocar una sonda.',
+        retener: ['Globo vesical = infravesical', 'Sonda vesical'],
+      },
+      {
+        tono: 'red',
+        luz: ['pelvis-d', 'pelvis-i', 'ureter-d', 'ureter-i'],
+        dilata: ['prostata', 'vejiga', 'ureter-d', 'ureter-i', 'pelvis-d', 'pelvis-i'],
+        nota: { t: 'IRA posrenal', d: 'La orina vuelve: uréteres dilatados e HIDRONEFROSIS. Si no se resuelve rápido, insuficiencia renal aguda posrenal.' },
+        di: 'Si no se resuelve, la presión de la orina vuelve hacia arriba: se dilatan los uréteres y las pelvis, la hidronefrosis, y se distiende la cápsula, que es lo que duele. El profe lo marca como pregunta de parcial: toda obstrucción urinaria puede terminar en una insuficiencia renal aguda posrenal.',
+        retener: ['Hidronefrosis', 'IRA posrenal'],
+      },
+      {
+        tono: 'sky',
+        luz: ['ureter-d', 'pelvis-d', 'rinon-i'],
+        calculo: 'ureter-d',
+        dilata: ['pelvis-d', 'ureter-d'],
+        nota: { t: 'Si es de un solo lado', d: 'El riñón sano compensa y orina más (poliuria compensatoria). Anuria = obstrucción completa.' },
+        di: 'Si la obstrucción es de un solo lado, por ejemplo un cálculo en el uréter derecho, el riñón izquierdo compensa y orina más: poliuria compensatoria. La anuria habla de una obstrucción completa; la oliguria, de una incompleta. Y al destapar, el paciente orina muchísimo: la diuresis posobstructiva.',
+        retener: ['Unilateral: el otro compensa', 'Diuresis posobstructiva'],
+      },
+    ],
+  },
+  {
+    tipo: 'nefrona',
+    id: 'poliuria',
+    titulo: 'Poliuria: ¿sobra soluto o sobra agua?',
+    pasos: [
+      {
+        tono: 'gold',
+        luz: ['proximal'],
+        fuga: ['glucosa'],
+        nota: { t: 'Diuresis osmótica', d: 'Osmolaridad urinaria > 300. La glucosa arrastra agua. Causa n.º 1: DIABETES MELLITUS.' },
+        di: 'Poliuria es orinar más de tres litros por día. Lo primero es medir la osmolaridad urinaria. Si es mayor de 300, sobra soluto: diuresis osmótica. La causa más frecuente es la diabetes mellitus: la glucosa supera el umbral renal de 180 y arrastra agua.',
+        retener: ['> 300 = osmótica', 'Diabetes mellitus'],
+      },
+      {
+        tono: 'peach',
+        luz: ['proximal'],
+        fuga: ['glucosa'],
+        marca: 'proximal',
+        nota: { t: 'Glucosuria con glucemia normal', d: 'El túbulo proximal no reabsorbe la glucosa: síndrome de Fanconi.' },
+        di: 'Si hay glucosuria pero la glucemia es normal, no llega al umbral: el problema es el túbulo proximal, que no reabsorbe la glucosa. Es el síndrome de Fanconi.',
+        retener: ['Fanconi: falla el proximal'],
+      },
+      {
+        tono: 'sky',
+        luz: ['colector'],
+        fuga: ['agua'],
+        nota: { t: 'Diuresis acuosa: diabetes insípida', d: 'Osmolaridad < 200 y sodio alto. El colector no reabsorbe agua: falta ADH (central) o no responde la acuaporina 2 (nefrogénica).' },
+        di: 'Si la osmolaridad es menor de 200, sobra agua: diuresis acuosa. Si el sodio en sangre está alto, es una diabetes insípida: el colector no reabsorbe agua. Se hace la prueba de la antidiurética: si mejora, es central, porque faltaba la hormona; si no responde, es nefrogénica, porque falla el receptor, la acuaporina 2.',
+        retener: ['< 200 + Na alto = insípida', 'Responde a ADH = central'],
+      },
+      {
+        tono: 'mint',
+        luz: ['colector'],
+        fuga: ['agua'],
+        nota: { t: 'Sodio normal: potomanía', d: 'El paciente toma muchísima agua y la orina. Poliuria fisiológica.' },
+        di: 'Y si la orina es diluida pero el sodio es normal, el paciente simplemente toma muchísima agua: potomanía. El profe aclara que este cuadrito lo pregunta la doctora González.',
+        retener: ['Na normal = potomanía'],
+      },
+    ],
+  },
+];

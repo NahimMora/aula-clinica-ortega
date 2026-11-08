@@ -234,6 +234,8 @@ function BlockView({ b }: { b: Block }) {
     case 'abdomen':
     case 'organos':
     case 'biliar':
+    case 'urinario':
+    case 'nefrona':
     case 'triad':
     case 'scale':
     case 'calc':

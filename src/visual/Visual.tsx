@@ -3,7 +3,7 @@ import { useMemo, useState, type ReactNode } from 'react';
 import { Rich, Refs } from '@/components/Rich';
 import { Icon } from '@/components/Icon';
 import type { Organo, Region, ViaBiliar, VisualBlock, VTone, FlowNode } from './tipos';
-import { ABD_H, ABD_W, AbdomenFig, BIL_H, BIL_W, BiliarFig, BristolGlyph, TR_H, TR_W, TractoFig } from './anatomia';
+import { ABD_H, ABD_W, AbdomenFig, BIL_H, BIL_W, BiliarFig, BristolGlyph, NEF_H, NEF_W, NefronaFig, TR_H, TR_W, TractoFig, URI_H, URI_W, UrinarioFig } from './anatomia';
 
 type B<K extends VisualBlock['t']> = Extract<VisualBlock, { t: K }>;
 
@@ -15,6 +15,10 @@ export function VisualView({ b }: { b: VisualBlock }) {
       return <OrganosBlock b={b} />;
     case 'biliar':
       return <BiliarBlock b={b} />;
+    case 'urinario':
+      return <UrinarioBlock b={b} />;
+    case 'nefrona':
+      return <NefronaBlock b={b} />;
     case 'triad':
       return <Triad b={b} />;
     case 'scale':
@@ -139,6 +143,22 @@ function BiliarBlock({ b }: { b: B<'biliar'> }) {
       }}
     />
   );
+}
+
+function UrinarioBlock({ b }: { b: B<'urinario'> }) {
+  return (
+    <Explorer
+      title={b.title}
+      items={b.items}
+      caption={b.caption}
+      vb={`0 0 ${URI_W} ${URI_H}`}
+      fig={(i) => <UrinarioFig key={b.items[i].id} v={b.items[i]} tone={b.items[i].tone} idp={`uri-${b.items[i].id}`} />}
+    />
+  );
+}
+
+function NefronaBlock({ b }: { b: B<'nefrona'> }) {
+  return <Explorer title={b.title} items={b.items} caption={b.caption} vb={`0 0 ${NEF_W} ${NEF_H}`} fig={(i) => <NefronaFig key={b.items[i].id} v={b.items[i]} tone={b.items[i].tone} />} />;
 }
 
 /* ───────── Tríada / péntada ───────── */

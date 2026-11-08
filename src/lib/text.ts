@@ -72,6 +72,8 @@ export function blocksText(blocks: Block[]): string {
       case 'abdomen':
       case 'organos':
       case 'biliar':
+      case 'urinario':
+      case 'nefrona':
         if (b.title) out.push(b.title);
         b.items.forEach((i) => out.push(i.t, i.d));
         if (b.caption) out.push(b.caption);

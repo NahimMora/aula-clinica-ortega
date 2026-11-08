@@ -52,7 +52,7 @@ export const SYSTEMS: SystemMeta[] = [
     description: 'Del motivo de consulta al síndrome: edema, alteraciones de la orina, síndromes nefrítico y nefrótico, insuficiencia renal, infección urinaria y litiasis.',
     pdf: 'pdf/manual-renal.pdf',
     chapters: [
-      ch('renal', 'ren-01', 'Motivos de consulta nefrourológicos', 'Motivos de consulta', 'Edema, alteraciones de la diuresis y del aspecto de la orina, dolor y síntomas miccionales.', 'MC Renal 1–2 · Libro p445–458'),
+      ch('renal', 'ren-01', 'Motivos de consulta nefrourológicos', 'Motivos de consulta', 'Edema renal, obstrucción urinaria, poliuria, hematuria (dismórfica vs isomórfica, tres vasos) y trastornos de la micción.', 'MC Renal 1–2 · Libro p445–454', 'published'),
       ch('renal', 'ren-02', 'Examen físico nefrourológico', 'Examen físico', 'Palpación renal (Guyon, Israel, Montenegro), puntos ureterales y puñopercusión.', 'MC Renal 3 · Libro p459–460'),
       ch('renal', 'ren-03', 'Síndrome nefrítico', 'Síndromes', 'Inflamación glomerular: hematuria, HTA, edema y oliguria.', 'Clase Sd. nefrítico'),
       ch('renal', 'ren-04', 'Síndrome nefrótico', 'Síndromes', 'Barrera de filtración, proteinuria masiva, hipoalbuminemia, edema y dislipemia.', 'Clase Sd. nefrótico · Libro p440–444'),

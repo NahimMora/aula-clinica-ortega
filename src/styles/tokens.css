@@ -122,6 +122,7 @@
   --v-red: #ff6b7d; --v-red-f: #45202a;
   --v-skin: #2a2330; --v-stone: #d9b26a; --v-stone-2: #8a6a2c; --v-bile: #46562a; --v-stool: #9a6b45; --v-stool-2: #5e3d22;
   --v-liver: #3e2727; --v-spleen: #36243b; --v-pan: #3d2e22; --v-gut: #2e2532;
+  --v-kidney: #47262d; --v-urine: #4a4222; --v-vessel: #7a3343;
 
   /* Acento según sistema (se redefine con .tone-*) */
   --accent-50: var(--rose-50);
@@ -160,6 +161,7 @@ html.is-print {
   --v-mint: #3a8a6c; --v-mint-f: #dbf0e6; --v-peach: #b8703a; --v-peach-f: #ffe7d4; --v-gold: #8a5a00; --v-gold-f: #fff3cf;
   --v-red: #c0334f; --v-red-f: #fde1e6; --v-skin: #f7efe9; --v-bile: #e3ecc8;
   --v-liver: #f3dcd8; --v-spleen: #eadcf0; --v-pan: #f8e6d4; --v-gut: #f6eef0;
+  --v-kidney: #f3d9da; --v-urine: #f6edc6; --v-vessel: #e9b3bd;
 }
 
 .tone-rose { --accent-50: var(--rose-50); --accent-100: var(--rose-100); --accent-200: var(--rose-200); --accent-400: var(--rose-400); --accent-600: var(--rose-600); --accent-700: var(--rose-700); }

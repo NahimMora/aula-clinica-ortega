@@ -2,7 +2,7 @@
 // y por las escenas animadas (Lienzo/video). Colores por variables --v-* (definidas en tokens.css).
 // Si se pasa `t` (segundos), la animación se calcula con t (video); si no, la hacen clases CSS (web).
 import type { ReactNode } from 'react';
-import type { Organo, Punto, Region, VTone, ViaBiliar } from './tipos';
+import type { Fuga, Nefrona, NefronaVista, Organo, Punto, Region, UrinarioVista, VTone, ViaBiliar, ViaUrinaria } from './tipos';
 
 export const col = (t: VTone | 'ink' = 'lilac') => (t === 'ink' ? 'var(--v-ink2)' : `var(--v-${t})`);
 export const fil = (t: VTone | 'ink' = 'lilac') => (t === 'ink' ? 'var(--v-card)' : `var(--v-${t}-f)`);
@@ -447,4 +447,328 @@ export function BristolGlyph({ n }: { n: number }) {
         </g>
       );
   }
+}
+
+/* ───────────────────────── Utilidades: masa tumoral, curva suave y recorrido por una polilínea ───────────────────────── */
+
+function Masa({ x, y }: { x: number; y: number }) {
+  return (
+    <path
+      d={`M${x - 22},${y} C${x - 24},${y - 20} ${x + 6},${y - 28} ${x + 22},${y - 10} C${x + 34},${y + 6} ${x + 10},${y + 26} ${x - 6},${y + 20} C${x - 18},${y + 16} ${x - 20},${y + 8} ${x - 22},${y} Z`}
+      fill={col('red')}
+      opacity={0.85}
+    />
+  );
+}
+
+/** Curva suave (Catmull-Rom → Bézier) que pasa por todos los puntos. */
+function suave(p: [number, number][]) {
+  let d = `M${p[0][0]},${p[0][1]}`;
+  for (let i = 0; i < p.length - 1; i++) {
+    const a = p[Math.max(0, i - 1)];
+    const b = p[i];
+    const c2 = p[i + 1];
+    const e = p[Math.min(p.length - 1, i + 2)];
+    d += ` C${(b[0] + (c2[0] - a[0]) / 6).toFixed(1)},${(b[1] + (c2[1] - a[1]) / 6).toFixed(1)} ${(c2[0] - (e[0] - b[0]) / 6).toFixed(1)},${(c2[1] - (e[1] - b[1]) / 6).toFixed(1)} ${c2[0]},${c2[1]}`;
+  }
+  return d;
+}
+
+/** Punto a la fracción u (0..1) de una polilínea. */
+function enPoli(p: [number, number][], u: number): [number, number] {
+  const L: number[] = [0];
+  for (let i = 1; i < p.length; i++) L.push(L[i - 1] + Math.hypot(p[i][0] - p[i - 1][0], p[i][1] - p[i - 1][1]));
+  const s = u * L[L.length - 1];
+  let i = 1;
+  while (i < L.length - 1 && L[i] < s) i++;
+  const k = (s - L[i - 1]) / (L[i] - L[i - 1] || 1);
+  return [p[i - 1][0] + (p[i][0] - p[i - 1][0]) * k, p[i - 1][1] + (p[i][1] - p[i - 1][1]) * k];
+}
+
+/* ───────────────────────── Aparato urinario (viewBox 0 0 420 470) ───────────────────────── */
+
+export const URI_W = 420;
+export const URI_H = 470;
+const RD: [number, number] = [112, 132]; // riñón derecho (a la izquierda del dibujo, más bajo por el hígado)
+const RI: [number, number] = [308, 116];
+/** Riñón en forma de poroto: s = 1 si el hilio mira a la derecha del dibujo, -1 si mira a la izquierda. */
+const rinonP = ([x, y]: [number, number], s: number) =>
+  `M${x},${y - 62} C${x - 42 * s},${y - 62} ${x - 50 * s},${y - 20} ${x - 48 * s},${y + 10} C${x - 46 * s},${y + 48} ${x - 26 * s},${y + 64} ${x},${y + 62} C${x + 22 * s},${y + 60} ${x + 30 * s},${y + 44} ${x + 22 * s},${y + 24} C${x + 14 * s},${y + 10} ${x + 14 * s},${y - 6} ${x + 22 * s},${y - 20} C${x + 32 * s},${y - 42} ${x + 24 * s},${y - 62} ${x},${y - 62} Z`;
+/** Pelvis renal: embudo que se afina hacia el hilio (unión pieloureteral) con tres cálices hacia la corteza. */
+const pelvisP = ([x, y]: [number, number], s: number) =>
+  `M${x + 30 * s},${y + 12} C${x + 16 * s},${y + 16} ${x - 12 * s},${y + 24} ${x - 13 * s},${y + 4} C${x - 14 * s},${y - 16} ${x + 10 * s},${y - 10} ${x + 30 * s},${y + 6} Z`;
+const calizP = ([x, y]: [number, number], s: number) =>
+  `M${x - 6 * s},${y - 8} L${x - 22 * s},${y - 26} M${x - 12 * s},${y + 4} L${x - 30 * s},${y + 2} M${x - 6 * s},${y + 14} L${x - 22 * s},${y + 32}`;
+const URETER: Record<'ureter-d' | 'ureter-i', string> = {
+  'ureter-d': 'M142,144 C150,200 160,250 166,290 C171,325 176,345 186,364',
+  'ureter-i': 'M278,128 C270,190 260,250 254,290 C249,325 244,345 234,364',
+};
+const VEJIGA = 'M150,374 C150,334 270,334 270,374 C270,410 242,420 210,420 C178,420 150,410 150,374 Z';
+const URI_LAB: Record<ViaUrinaria, { n: string; lx: number; ly: number; la?: 'start' | 'middle' | 'end' }> = {
+  'rinon-d': { n: 'Riñón der.', lx: 112, ly: 212 },
+  'rinon-i': { n: 'Riñón izq.', lx: 308, ly: 196 },
+  'pelvis-d': { n: 'Pelvis renal', lx: 150, ly: 104, la: 'start' },
+  'pelvis-i': { n: 'Pelvis renal', lx: 270, ly: 74, la: 'end' },
+  'ureter-d': { n: 'Uréter', lx: 148, ly: 236, la: 'end' },
+  'ureter-i': { n: 'Uréter', lx: 272, ly: 236, la: 'start' },
+  vejiga: { n: 'Vejiga', lx: 210, ly: 382 },
+  prostata: { n: 'Próstata', lx: 258, ly: 444, la: 'start' },
+  uretra: { n: 'Uretra', lx: 222, ly: 464, la: 'start' },
+};
+const PIEDRA_U: Record<ViaUrinaria, [number, number]> = {
+  'rinon-d': [100, 104],
+  'rinon-i': [320, 88],
+  'pelvis-d': [124, 138],
+  'pelvis-i': [296, 122],
+  'ureter-d': [164, 274],
+  'ureter-i': [256, 274],
+  vejiga: [210, 400],
+  prostata: [210, 432],
+  uretra: [210, 458],
+};
+const ESTRECHECES: [number, number][] = [
+  [144, 152],
+  [164, 276],
+  [184, 360],
+];
+
+function Tubo({ d, w, tone, base, pu, t }: { d: string; w: number; tone?: VTone; base: string; pu: number; t?: number }) {
+  return (
+    <g>
+      <path d={d} fill="none" stroke={tone ? col(tone) : LINE} strokeWidth={w + 6} strokeLinecap="round" strokeLinejoin="round" opacity={tone ? 0.75 + 0.25 * pu : 1} className={tone && t === undefined ? 'v-pulse-soft' : undefined} />
+      <path d={d} fill="none" stroke={tone ? fil(tone) : base} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+  );
+}
+
+export function UrinarioFig({ v, tone, t, idp = 'uri' }: { v: UrinarioVista; tone: VTone; t?: number; idp?: string }) {
+  const pu = pulso(t);
+  const on = (o: ViaUrinaria) => (v.luz.includes(o) ? tone : undefined);
+  const dil = (o: ViaUrinaria) => (v.dilata ?? []).includes(o);
+  const lado = (r: 'd' | 'i') => {
+    const c = r === 'd' ? RD : RI;
+    const s = r === 'd' ? 1 : -1;
+    const hidro = dil(`rinon-${r}`) || dil(`pelvis-${r}`);
+    const kt = on(`rinon-${r}`);
+    const pt = on(`pelvis-${r}`);
+    const px = c[0] + 26 * s; // la dilatación crece desde la unión pieloureteral hacia adentro
+    return (
+      <g key={r}>
+        <path d={rinonP(c, s)} transform={hidro ? `translate(${c[0]} ${c[1]}) scale(1.14) translate(${-c[0]} ${-c[1]})` : undefined} fill={kt ? fil(kt) : 'var(--v-kidney)'} stroke={kt ? col(kt) : LINE} strokeWidth={kt ? 4 : 2.5} />
+        <g transform={hidro ? `translate(${px} ${c[1] + 9}) scale(1.4) translate(${-px} ${-c[1] - 9})` : undefined}>
+          <path d={calizP(c, s)} fill="none" stroke={pt ? col(pt) : 'var(--v-urine)'} strokeWidth={hidro ? 7 : 6} strokeLinecap="round" />
+          <path d={pelvisP(c, s)} fill={pt ? fil(pt) : 'var(--v-urine)'} stroke={pt ? col(pt) : LINE} strokeWidth={pt ? 3.5 : 2} />
+        </g>
+      </g>
+    );
+  };
+  const vt = on('vejiga');
+  const prt = on('prostata');
+  const big = dil('prostata');
+  return (
+    <g>
+      <defs>
+        <marker id={`${idp}-arr`} viewBox="0 0 10 10" refX={6} refY={5} markerWidth={5} markerHeight={5} orient="auto">
+          <path d="M0,0 L10,5 L0,10 z" fill={col(tone)} />
+        </marker>
+      </defs>
+      {lado('d')}
+      {lado('i')}
+      {(['ureter-d', 'ureter-i'] as const).map((u) => (
+        <Tubo key={u} d={URETER[u]} w={dil(u) ? 17 : 9} tone={on(u)} base="var(--v-urine)" pu={pu} t={t} />
+      ))}
+      <path d={VEJIGA} transform={dil('vejiga') ? 'translate(210 378) scale(1.36) translate(-210 -378)' : undefined} fill={vt ? fil(vt) : 'var(--v-urine)'} stroke={vt ? col(vt) : LINE} strokeWidth={vt ? 4 : 2.5} />
+      <Tubo d="M210,420 L210,470" w={big ? 5 : 9} tone={on('uretra')} base="var(--v-urine)" pu={pu} t={t} />
+      <ellipse cx={210} cy={432} rx={big ? 40 : 26} ry={big ? 25 : 16} fill={prt ? fil(prt) : 'var(--v-spleen)'} stroke={prt ? col(prt) : LINE} strokeWidth={prt ? 4 : 2.5} opacity={0.95} />
+      {v.estrecheces &&
+        ESTRECHECES.map(([x, y], k) => (
+          <g key={k}>
+            <circle cx={x} cy={y} r={13} fill="none" stroke={col('gold')} strokeWidth={3} opacity={0.6 + 0.4 * pu} className={t === undefined ? 'v-pulse-soft' : undefined} />
+            <Label x={x - 26} y={y} c={col('gold')} s={14}>
+              {k + 1}
+            </Label>
+          </g>
+        ))}
+      {v.irradia && (
+        <path
+          d="M58,150 C52,210 70,270 104,320 C130,356 160,400 192,450"
+          fill="none"
+          stroke={col(tone)}
+          strokeWidth={5}
+          strokeLinecap="round"
+          strokeDasharray="10 9"
+          markerEnd={`url(#${idp}-arr)`}
+          className={t === undefined ? 'v-dash' : undefined}
+          strokeDashoffset={t === undefined ? undefined : -t * 30}
+        />
+      )}
+      {v.luz.map((o) => {
+        const g = URI_LAB[o];
+        return (
+          <Label key={o} x={g.lx} y={g.ly} a={g.la} c={col(tone)} s={15}>
+            {g.n}
+          </Label>
+        );
+      })}
+      {v.calculo && <Piedras x={PIEDRA_U[v.calculo][0]} y={PIEDRA_U[v.calculo][1]} />}
+      {v.tumor && <Masa x={PIEDRA_U[v.tumor][0]} y={PIEDRA_U[v.tumor][1]} />}
+      {v.vasos && (
+        <g transform="translate(14 352)">
+          <Label x={52} y={0} c={INK3} s={12} w={700}>
+            Tres vasos
+          </Label>
+          {v.vasos.map((rojo, k) => (
+            <g key={k} transform={`translate(${k * 36} 14)`}>
+              <path d="M4,20 L24,20 L22,48 L6,48 Z" fill={rojo ? col('red') : 'var(--v-urine)'} opacity={rojo ? 0.8 + 0.2 * pu : 1} className={rojo && t === undefined ? 'v-pulse-soft' : undefined} />
+              <path d="M0,0 L28,0 L24,50 L4,50 Z" fill="none" stroke={INK3} strokeWidth={2.2} strokeLinejoin="round" />
+              <Label x={14} y={64} c={rojo ? col('red') : INK3} s={13}>
+                {k + 1}
+              </Label>
+            </g>
+          ))}
+        </g>
+      )}
+    </g>
+  );
+}
+
+/* ───────────────────────── Nefrona (viewBox 0 0 420 420) ───────────────────────── */
+
+export const NEF_W = 420;
+export const NEF_H = 420;
+const GLO: [number, number] = [112, 116];
+/** Recorrido del filtrado: glomérulo → proximal → Henle → distal → colector. */
+const RUTA_N: [number, number][] = [
+  [112, 116],
+  [158, 118],
+  [182, 96],
+  [204, 122],
+  [226, 94],
+  [248, 120],
+  [262, 152],
+  [260, 250],
+  [258, 340],
+  [268, 368],
+  [284, 372],
+  [296, 350],
+  [298, 262],
+  [300, 184],
+  [318, 162],
+  [302, 142],
+  [322, 126],
+  [344, 144],
+  [372, 124],
+  [372, 250],
+  [372, 410],
+];
+const TRAMO_N: Record<'proximal' | 'henle' | 'distal', [number, number]> = { proximal: [1, 6], henle: [6, 13], distal: [13, 18] };
+const NEF_LAB: Record<Nefrona, { n: string; lx: number; ly: number; la?: 'start' | 'middle' | 'end' }> = {
+  arteriola: { n: 'Arteriola', lx: 30, ly: 150 },
+  glomerulo: { n: 'Glomérulo', lx: 112, ly: 182 },
+  bowman: { n: 'Cápsula de Bowman', lx: 100, ly: 46 },
+  proximal: { n: 'Túbulo proximal', lx: 215, ly: 68 },
+  henle: { n: 'Asa de Henle', lx: 246, ly: 300, la: 'end' },
+  distal: { n: 'Túbulo distal', lx: 322, ly: 96 },
+  colector: { n: 'Colector', lx: 360, ly: 398, la: 'end' },
+};
+const MARCA_N: Record<Nefrona, [number, number]> = {
+  arteriola: [40, 126],
+  glomerulo: [112, 116],
+  bowman: [150, 84],
+  proximal: [204, 110],
+  henle: [259, 300],
+  distal: [322, 140],
+  colector: [372, 300],
+};
+const FUGA: Record<Fuga, { n: number; desde: number; dur: number }> = {
+  proteinas: { n: 7, desde: 0, dur: 6 },
+  hematies: { n: 5, desde: 0, dur: 6.5 },
+  glucosa: { n: 6, desde: 0, dur: 6 },
+  agua: { n: 8, desde: 18, dur: 3.2 },
+};
+
+function Particula({ f }: { f: Fuga }) {
+  switch (f) {
+    case 'proteinas':
+      return <circle r={4.5} fill={col('gold')} stroke={BG} strokeWidth={1.5} />;
+    case 'hematies':
+      return (
+        <g>
+          <circle r={7} fill={col('red')} stroke={BG} strokeWidth={1.5} />
+          <circle r={2.8} fill={fil('red')} />
+        </g>
+      );
+    case 'glucosa':
+      return <polygon points={[0, 1, 2, 3, 4, 5].map((j) => `${(Math.cos((j * Math.PI) / 3) * 6).toFixed(1)},${(Math.sin((j * Math.PI) / 3) * 6).toFixed(1)}`).join(' ')} fill={col('mint')} stroke={BG} strokeWidth={1.5} />;
+    case 'agua':
+      return <path d="M0,-8 C4,-3 6,0 6,3 A6,6 0 0 1 -6,3 C-6,0 -4,-3 0,-8 Z" fill={col('sky')} stroke={BG} strokeWidth={1.2} />;
+  }
+}
+
+export function NefronaFig({ v, tone, t }: { v: NefronaVista; tone: VTone; t?: number }) {
+  const pu = pulso(t);
+  const on = (o: Nefrona) => (v.luz.includes(o) ? tone : undefined);
+  const art = on('arteriola');
+  const bow = on('bowman');
+  const glo = on('glomerulo');
+  const colec = on('colector');
+  return (
+    <g>
+      {/* Arteriolas aferente (entra) y eferente (sale) */}
+      <Tubo d="M0,128 C30,128 52,126 76,122" w={v.isquemia ? 3.5 : 10} tone={art} base="var(--v-vessel)" pu={pu} t={t} />
+      <Tubo d="M76,104 C50,96 28,92 0,92" w={7} base="var(--v-vessel)" pu={pu} t={t} />
+      {/* Colector */}
+      <Tubo d="M372,36 L372,410" w={18} tone={colec} base="var(--v-urine)" pu={pu} t={t} />
+      {/* Túbulos */}
+      {(Object.keys(TRAMO_N) as (keyof typeof TRAMO_N)[]).map((k) => {
+        const [a, b] = TRAMO_N[k];
+        return <Tubo key={k} d={suave(RUTA_N.slice(a, b + 1))} w={11} tone={on(k)} base="var(--v-urine)" pu={pu} t={t} />;
+      })}
+      {/* Cápsula de Bowman y ovillo glomerular */}
+      <circle cx={GLO[0]} cy={GLO[1]} r={44} fill={bow ? fil(bow) : 'var(--v-card)'} stroke={bow ? col(bow) : LINE} strokeWidth={bow ? 4 : 3} />
+      {[
+        [-12, -10, 11],
+        [10, -12, 10],
+        [14, 8, 11],
+        [-8, 13, 10],
+        [0, 0, 8],
+      ].map(([dx, dy, r], k) => (
+        <circle key={k} cx={GLO[0] + dx} cy={GLO[1] + dy} r={r} fill="none" stroke={glo ? col(glo) : 'var(--v-vessel)'} strokeWidth={glo ? 5 : 4.5} opacity={glo ? 0.75 + 0.25 * pu : 1} className={glo && t === undefined ? 'v-pulse-soft' : undefined} />
+      ))}
+      {(v.fuga ?? []).map((f) => {
+        const F = FUGA[f];
+        const ruta = RUTA_N.slice(F.desde);
+        const d = ruta.map((p, i) => `${i ? 'L' : 'M'}${p[0]},${p[1]}`).join(' ');
+        return Array.from({ length: F.n }, (_, k) => {
+          if (t === undefined) {
+            return (
+              <g key={`${f}${k}`}>
+                <animateMotion path={d} dur={`${F.dur}s`} begin={`${(-k * F.dur) / F.n}s`} repeatCount="indefinite" />
+                <Particula f={f} />
+              </g>
+            );
+          }
+          const [x, y] = enPoli(ruta, (t / F.dur + k / F.n) % 1);
+          return (
+            <g key={`${f}${k}`} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}>
+              <Particula f={f} />
+            </g>
+          );
+        });
+      })}
+      {v.marca && (
+        <g stroke={col('red')} strokeWidth={6} strokeLinecap="round">
+          <path d={`M${MARCA_N[v.marca][0] - 12},${MARCA_N[v.marca][1] - 12} L${MARCA_N[v.marca][0] + 12},${MARCA_N[v.marca][1] + 12} M${MARCA_N[v.marca][0] + 12},${MARCA_N[v.marca][1] - 12} L${MARCA_N[v.marca][0] - 12},${MARCA_N[v.marca][1] + 12}`} style={{ paintOrder: 'stroke' }} />
+        </g>
+      )}
+      {v.luz.map((o) => {
+        const g = NEF_LAB[o];
+        return (
+          <Label key={o} x={g.lx} y={g.ly} a={g.la} c={col(tone)} s={15}>
+            {g.n}
+          </Label>
+        );
+      })}
+    </g>
+  );
 }

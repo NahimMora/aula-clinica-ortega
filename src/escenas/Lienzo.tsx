@@ -3,9 +3,9 @@
 // con el número de fotograma (t = segundos desde que empezó el paso).
 // Colores: variables CSS --v-* (la web las toma de la paleta oscura; el video las define en línea).
 import type { ReactNode } from 'react';
-import type { Escena, EscenaAbdomen, EscenaBiliar, EscenaCuadro, EscenaFlujo, EscenaLista, EscenaOrganos, EscenaPaneles, EscenaTubo, Figura, NotaFig, Tono, Tramo } from './tipos';
+import type { Escena, EscenaAbdomen, EscenaBiliar, EscenaCuadro, EscenaFlujo, EscenaLista, EscenaNefrona, EscenaOrganos, EscenaPaneles, EscenaTubo, EscenaUrinario, Figura, NotaFig, Tono, Tramo } from './tipos';
 import type { Organo, Region, ViaBiliar } from '../visual/tipos';
-import { ABD_H, ABD_W, AbdomenFig, BIL_H, BIL_W, BiliarFig, TR_H, TR_W, TractoFig } from '../visual/anatomia';
+import { ABD_H, ABD_W, AbdomenFig, BIL_H, BIL_W, BiliarFig, NEF_H, NEF_W, NefronaFig, TR_H, TR_W, TractoFig, URI_H, URI_W, UrinarioFig } from '../visual/anatomia';
 
 export const W = 960;
 export const H = 600;
@@ -608,6 +608,32 @@ function BiliarEsc({ e, i, t }: { e: EscenaBiliar; i: number; t: number }) {
   );
 }
 
+function UrinarioEsc({ e, i, t }: { e: EscenaUrinario; i: number; t: number }) {
+  const p = e.pasos[i];
+  const sc = Math.min((H - 30) / URI_H, 490 / URI_W);
+  return (
+    <g>
+      <g transform={`translate(${(510 - URI_W * sc) / 2} ${(H - URI_H * sc) / 2}) scale(${sc})`}>
+        <UrinarioFig v={p} tone={p.tono} t={t} idp={`esc-${e.id}-${i}`} />
+      </g>
+      <NotaLado nota={p.nota} tono={p.tono} t={t} />
+    </g>
+  );
+}
+
+function NefronaEsc({ e, i, t }: { e: EscenaNefrona; i: number; t: number }) {
+  const p = e.pasos[i];
+  const sc = Math.min((H - 40) / NEF_H, 480 / NEF_W);
+  return (
+    <g>
+      <g transform={`translate(${(510 - NEF_W * sc) / 2} ${(H - NEF_H * sc) / 2}) scale(${sc})`}>
+        <NefronaFig v={p} tone={p.tono} t={t} />
+      </g>
+      <NotaLado nota={p.nota} tono={p.tono} t={t} />
+    </g>
+  );
+}
+
 export function Lienzo({ e, i, t, titulo = false }: { e: Escena; i: number; t: number; titulo?: boolean }) {
   const k = Math.max(0, Math.min(i, e.pasos.length - 1));
   return (
@@ -621,6 +647,8 @@ export function Lienzo({ e, i, t, titulo = false }: { e: Escena; i: number; t: n
       {e.tipo === 'abdomen' && <AbdomenEsc e={e} i={k} t={t} />}
       {e.tipo === 'organos' && <OrganosEsc e={e} i={k} t={t} />}
       {e.tipo === 'biliar' && <BiliarEsc e={e} i={k} t={t} />}
+      {e.tipo === 'urinario' && <UrinarioEsc e={e} i={k} t={t} />}
+      {e.tipo === 'nefrona' && <NefronaEsc e={e} i={k} t={t} />}
     </svg>
   );
 }

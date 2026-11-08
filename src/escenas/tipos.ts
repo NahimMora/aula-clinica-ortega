@@ -2,7 +2,7 @@
 // (paso a paso) y se renderizan en el video, así el texto y el dibujo nunca se contradicen.
 // Modelo tomado de farmaco-flor (src/vis): el dibujo es función pura de (escena, paso, t).
 
-import type { Organo, Punto, Region, ViaBiliar } from '../visual/tipos';
+import type { NefronaVista, Organo, Punto, Region, UrinarioVista, ViaBiliar } from '../visual/tipos';
 
 export type Tono = 'rose' | 'lilac' | 'sky' | 'mint' | 'peach' | 'gold' | 'red';
 
@@ -130,5 +130,21 @@ export interface EscenaBiliar {
   pasos: (PasoBase & { tono: Tono; luz: ViaBiliar[]; calculo?: ViaBiliar; tumor?: ViaBiliar; dilata?: ViaBiliar[]; nota: NotaFig })[];
 }
 
-export type Escena = EscenaCuadro | EscenaLista | EscenaTubo | EscenaFlujo | EscenaPaneles | EscenaAbdomen | EscenaOrganos | EscenaBiliar;
+/** Aparato urinario: cálculo, hidronefrosis, globo vesical, tres vasos, irradiación del cólico. */
+export interface EscenaUrinario {
+  tipo: 'urinario';
+  id: string;
+  titulo: string;
+  pasos: (PasoBase & UrinarioVista & { tono: Tono; nota: NotaFig })[];
+}
+
+/** Nefrona: qué parte se lesiona y qué se pierde por la orina. */
+export interface EscenaNefrona {
+  tipo: 'nefrona';
+  id: string;
+  titulo: string;
+  pasos: (PasoBase & NefronaVista & { tono: Tono; nota: NotaFig })[];
+}
+
+export type Escena = EscenaCuadro | EscenaLista | EscenaTubo | EscenaFlujo | EscenaPaneles | EscenaAbdomen | EscenaOrganos | EscenaBiliar | EscenaUrinario | EscenaNefrona;
 export type PasoCualquiera = Escena['pasos'][number];
