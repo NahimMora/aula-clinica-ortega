@@ -40,7 +40,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('digestivo', 'dig-12', 'Hemorragias digestivas', 'Emergencias', 'Clases I a IV, ortostatismo, alta vs baja (úlcera vs hemorroides), melena, hematoquecia y estudios.', 'Clases Hemorragias 1–2 · Libro p389–390', 'published'),
       ch('digestivo', 'dig-13', 'Cirrosis e hipertensión portal', 'Hígado', 'Cirrosis, estigmas y Child-Pugh (BATEA); hipertensión portal, colaterales, ascitis y GASA.', 'Clases Cirrosis 1–2 · HTP 1–2', 'published'),
       ch('digestivo', 'dig-14', 'Insuficiencia hepática', 'Hígado', 'Qué deja de hacer el hígado, O’Grady, encefalopatía hepática (amoníaco, asterixis) y aguda vs crónica.', 'Clase Insuficiencia hepática', 'published'),
-      ch('digestivo', 'dig-15', 'Pancreatitis aguda', 'Páncreas', 'Etiología, clínica, criterios diagnósticos y de gravedad.', 'Clases Pancreatitis 1–2'),
+      ch('digestivo', 'dig-15', 'Pancreatitis aguda', 'Páncreas', 'La bilis que vuelve: causas, hemicinturón, Cullen y Grey-Turner, hemoconcentración, Ranson y Balthazar.', 'Clases Pancreatitis 1–2', 'published'),
     ],
   },
   {

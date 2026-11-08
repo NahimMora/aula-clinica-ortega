@@ -60,6 +60,9 @@ export const PUNTOS: Record<Punto, { x: number; y: number; n: string; r?: number
   hd: { x: 104, y: 120, n: 'HD' },
   'renal-d': { x: 92, y: 212, n: 'Riñón der.' },
   'renal-i': { x: 308, y: 212, n: 'Riñón izq.' },
+  // Chauffard se dibuja como triángulo: ombligo, línea media hacia arriba y bisectriz del cuadrante superior derecho.
+  chauffard: { x: 182, y: 210, n: 'Chauffard' },
+  desjardins: { x: 162, y: 186, n: 'Desjardins' },
 };
 
 export function AbdomenFig({
@@ -132,6 +135,20 @@ export function AbdomenFig({
       <path d="M78,64 Q142,160 200,112 Q258,160 322,64" fill="none" stroke={INK3} strokeWidth={2.5} opacity={0.7} />
       <circle cx={200} cy={246} r={5} fill="none" stroke={INK3} strokeWidth={2.5} />
       <path d="M90,350 Q140,400 200,446 Q260,400 310,350" fill="none" stroke={INK3} strokeWidth={2} opacity={0.45} />
+      {ruta && rutaPts.length > 1 && (
+        <g>
+          <path d={rutaD} fill="none" stroke={col(rutaTone)} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" strokeDasharray="10 9" markerEnd={`url(#${idp}-arr)`} className={t === undefined ? 'v-dash' : undefined} strokeDashoffset={t === undefined ? undefined : -t * 30} />
+          {rutaPts.map((p, i) => (
+            <circle key={i} cx={p[0]} cy={p[1] - 32} r={11} fill={col(rutaTone)} />
+          ))}
+          {rutaPts.map((p, i) => (
+            <text key={`n${i}`} x={p[0]} y={p[1] - 31} textAnchor="middle" dominantBaseline="middle" fontSize={13} fontWeight={800} fill={BG} fontFamily={FONT}>
+              {i + 1}
+            </text>
+          ))}
+          {dot && <circle cx={dot[0]} cy={dot[1]} r={9} fill={col(rutaTone)} stroke={BG} strokeWidth={3} />}
+        </g>
+      )}
       {etiquetas &&
         (Object.keys(REGIONES) as Region[]).map((r) => {
           const [x, y] = centroRegion(r);
@@ -145,26 +162,14 @@ export function AbdomenFig({
             </Label>
           ));
         })}
-      {ruta && rutaPts.length > 1 && (
-        <g>
-          <path d={rutaD} fill="none" stroke={col(rutaTone)} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" strokeDasharray="10 9" markerEnd={`url(#${idp}-arr)`} className={t === undefined ? 'v-dash' : undefined} strokeDashoffset={t === undefined ? undefined : -t * 30} />
-          {rutaPts.map((p, i) => (
-            <circle key={i} cx={p[0]} cy={p[1] - 22} r={11} fill={col(rutaTone)} />
-          ))}
-          {rutaPts.map((p, i) => (
-            <text key={`n${i}`} x={p[0]} y={p[1] - 21} textAnchor="middle" dominantBaseline="middle" fontSize={13} fontWeight={800} fill={BG} fontFamily={FONT}>
-              {i + 1}
-            </text>
-          ))}
-          {dot && <circle cx={dot[0]} cy={dot[1]} r={9} fill={col(rutaTone)} stroke={BG} strokeWidth={3} />}
-        </g>
-      )}
       {puntos.map(({ p, tone }) => {
         const P = PUNTOS[p];
         const pares = p === 'greyturner' ? [P.x, 400 - P.x] : p === 'renal-d' || p === 'renal-i' ? [P.x] : [P.x];
         return pares.map((x, k) => (
           <g key={`${p}${k}`}>
-            {P.r ? (
+            {p === 'chauffard' ? (
+              <polygon points="200,246 200,178 150,196" fill={col(tone)} stroke={col(tone)} strokeWidth={2.5} strokeLinejoin="round" fillOpacity={0.3 + 0.25 * pu} className={t === undefined ? 'v-pulse' : undefined} />
+            ) : P.r ? (
               <ellipse cx={x} cy={P.y} rx={P.r} ry={P.r * (p === 'greyturner' ? 1.9 : 0.8)} fill={col(tone)} opacity={0.35 + 0.25 * pu} className={t === undefined ? 'v-pulse' : undefined} />
             ) : (
               <>
@@ -173,7 +178,7 @@ export function AbdomenFig({
               </>
             )}
             {k === 0 && (
-              <Label x={x + (P.r ? 0 : 0)} y={P.y + (P.r ? (p === 'greyturner' ? 66 : 36) : 26)} c={col(tone)} s={14}>
+              <Label x={p === 'chauffard' ? 112 : x} y={p === 'chauffard' ? 204 : P.y + (P.r ? (p === 'greyturner' ? 66 : 36) : 26)} c={col(tone)} s={14}>
                 {P.n}
               </Label>
             )}

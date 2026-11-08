@@ -20,7 +20,9 @@ export type Punto =
   | 'fii'
   | 'hd'
   | 'renal-d' // ángulo costovertebral (proyección anterior)
-  | 'renal-i';
+  | 'renal-i'
+  | 'chauffard' // zona coledocopancreática: arriba y a la derecha del ombligo
+  | 'desjardins'; // punto pancreático: 5–7 cm del ombligo hacia la axila derecha
 
 /** Órganos del dibujo del aparato digestivo. */
 export type Organo =
