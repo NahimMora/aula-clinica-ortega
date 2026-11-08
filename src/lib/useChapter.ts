@@ -38,7 +38,8 @@ export async function loadChapter(id: string): Promise<Chapter | null> {
   const loader = chapterLoader(id);
   if (!meta || !loader || !isAvailable(meta)) return null;
   const mod = await loader();
-  const c: Chapter = { ...mod.default, mcq: mod.default.mcq.map(mezclarOpciones) };
+  const d = mod.default;
+  const c: Chapter = { ...d, mcq: d.mcq.map(mezclarOpciones), closing: { ...d.closing, miniExam: d.closing.miniExam.map(mezclarOpciones) } };
   cache.set(id, c);
   return c;
 }

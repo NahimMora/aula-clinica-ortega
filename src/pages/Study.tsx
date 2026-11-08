@@ -98,7 +98,7 @@ export function ExamPage() {
     return () => window.clearInterval(t);
   }, [exam]);
   if (!chapters || sel === null) return <Loading />;
-  const pool = chapters.filter((c) => sel.includes(c.id)).flatMap((c) => c.mcq.map((q) => ({ q, ch: c.id })));
+  const pool = chapters.filter((c) => sel.includes(c.id)).flatMap((c) => [...c.mcq, ...c.closing.miniExam].map((q) => ({ q, ch: c.id })));
   const limit = exam ? exam.qs.length * 60_000 : 0;
   const elapsed = exam ? now - exam.start : 0;
   const remaining = Math.max(0, limit - elapsed);
@@ -233,7 +233,7 @@ export function ReviewPage() {
       .map((c) => ({
         c,
         devs: c.developments.filter((d) => progress.devs[d.id] && devPending(progress, d.id)),
-        mcq: c.mcq.filter((q) => {
+        mcq: [...c.mcq, ...c.closing.miniExam].filter((q) => {
           const a = lastAttempt(progress, q.id);
           return a && !a.correct;
         }),

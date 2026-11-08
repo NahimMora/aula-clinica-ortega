@@ -26,7 +26,6 @@ export function App() {
             <Route index element={<Home />} />
             <Route path="sistema/:id" element={<SystemPage />} />
             <Route path="capitulo/:id" element={<ChapterPage />} />
-            <Route path="capitulo/:id/:paso" element={<ChapterPage />} />
             <Route path="manual/:id" element={<ManualPage />} />
             <Route path="practica" element={<PracticePage />} />
             <Route path="examen" element={<ExamPage />} />

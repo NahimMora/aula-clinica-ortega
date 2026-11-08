@@ -25,18 +25,29 @@ html.is-print body { background: #fff; }
 .print__ch > h1 { font-size: 2.1rem; margin-bottom: 4px; }
 .print__h2 { margin-top: 28px; padding-bottom: 6px; border-bottom: 2px solid var(--accent-100); font-size: 1.45rem; break-after: avoid; }
 .print__h3 { margin-top: 18px; font-size: 1.1rem; }
-
+.print__map { display: grid; grid-template-columns: 1fr 1.4fr 1fr; gap: 12px; margin: 16px 0 22px; padding: 14px; border-radius: 18px; background: var(--surface-2); border: 1px solid var(--line); break-inside: avoid; }
+.print__map h4 { font-family: var(--font-body); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
+.print__map ul { margin: 0; padding-left: 1.1em; font-size: 0.86rem; }
+.print__map-hub { padding: 12px; border-radius: 16px; background: linear-gradient(150deg, var(--accent-100), var(--lilac-100)); text-align: center; }
+.print__map-hub strong { font-family: var(--font-display); font-size: 1.15rem; display: block; }
+.print__map-hub p { font-size: 0.82rem; color: var(--ink-2); margin: 6px 0; }
+.print__map-branches { display: grid; gap: 6px; text-align: left; }
+.print__map-branch { padding: 6px 10px; border-radius: 10px; background: #fff; border: 1px solid var(--accent-200); font-size: 0.8rem; }
+.print__map-branch b { display: block; color: var(--accent-700); }
 .print__mem, .print__dev { padding: 12px 16px; margin: 12px 0; border-radius: 14px; border: 1px solid var(--line); break-inside: avoid; }
 .print__hook { padding: 8px 12px; border-radius: 10px; background: #fff6dc; }
 .print__mcq > li { margin: 12px 0; break-inside: avoid; }
 .print__mcq ol { margin: 4px 0; }
 .print__answers li { margin: 6px 0; font-size: 0.92rem; }
-
+.print .tblock { box-shadow: none; padding: 16px 18px; border-radius: 16px; }
+.print .tblock > *:not(header) { max-width: none; }
 .print .acc__body[hidden], .print .case__a[hidden] { display: block !important; }
 .print .acc__btn svg, .print .case button, .print .iconbtn { display: none; }
 .print .wires { display: none; }
 .print .diagram, .print .def, .print .callout, .print .table-wrap, .print .cards, .print .compare, .print .steps, .print .chain, .print .case, .print .kv { break-inside: avoid; }
+.print .diagram button { display: none; }
 
+@page { size: A4; margin: 14mm 13mm 16mm; }
 @media print {
   body { background: #fff; font-size: 12.5px; }
   .topbar, .sidebar, .secnav, .foot, .chero__modes, .btn, .iconbtn, .vplayer, .skip { display: none !important; }

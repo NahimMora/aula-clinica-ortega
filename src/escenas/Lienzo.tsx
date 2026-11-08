@@ -3,7 +3,9 @@
 // con el número de fotograma (t = segundos desde que empezó el paso).
 // Colores: variables CSS --v-* (la web las toma de la paleta oscura; el video las define en línea).
 import type { ReactNode } from 'react';
-import type { Escena, EscenaCuadro, EscenaFlujo, EscenaLista, EscenaPaneles, EscenaTubo, Figura, Tono, Tramo } from './tipos';
+import type { Escena, EscenaAbdomen, EscenaBiliar, EscenaCuadro, EscenaFlujo, EscenaLista, EscenaOrganos, EscenaPaneles, EscenaTubo, Figura, NotaFig, Tono, Tramo } from './tipos';
+import type { Organo, Region, ViaBiliar } from '../visual/tipos';
+import { ABD_H, ABD_W, AbdomenFig, BIL_H, BIL_W, BiliarFig, TR_H, TR_W, TractoFig } from '../visual/anatomia';
 
 export const W = 960;
 export const H = 600;
@@ -94,7 +96,9 @@ function Cuadro({ e, i, t }: { e: EscenaCuadro; i: number; t: number }) {
         const on = k === luz;
         return (
           <g key={k} opacity={o} transform={`translate(${nueva ? (1 - o) * 24 : 0} 0)`}>
-            <rect x={14} y={y + 3} width={W - 28} height={rh - 6} rx={14} fill={on ? carta : 'transparent'} stroke={on ? linea : 'transparent'} strokeWidth={2} />
+            <rect x={14} y={y + 3} width={W - 28} height={rh - 6} rx={14} fill={on ? carta : 'transparent'} stroke={on ? c('gold') : 'transparent'} strokeWidth={2.5} />
+            <rect x={X[1]} y={y + 7} width={WC[1]} height={rh - 14} rx={12} fill={f(e.cols[0].tono)} opacity={on ? 1 : 0.55} />
+            <rect x={X[2]} y={y + 7} width={WC[2]} height={rh - 14} rx={12} fill={f(e.cols[1].tono)} opacity={on ? 1 : 0.55} />
             <Multi x={X[0] + 12} y={y + rh / 2} t={r.k} n={12} s={23} w={800} c={tinta3} />
             <Multi x={X[1] + 14} y={y + rh / 2} t={r.a} n={24} s={rh < 70 ? 25 : 28} w={650} c={c(e.cols[0].tono)} lh={1.15} />
             <Multi x={X[2] + 14} y={y + rh / 2} t={r.b} n={23} s={rh < 70 ? 25 : 28} w={650} c={c(e.cols[1].tono)} lh={1.15} />
@@ -126,7 +130,8 @@ function Lista({ e, i, t }: { e: EscenaLista; i: number; t: number }) {
         const on = luz.includes(k);
         return (
           <g key={k} opacity={o * (on || !luz.length ? 1 : 0.62)} transform={`translate(${nueva ? (1 - o) * 30 : 0} 0)`}>
-            <rect x={14} y={y} width={W - 28} height={ih} rx={18} fill={on ? f(it.tono) : carta} stroke={on ? c(it.tono) : linea} strokeWidth={on ? 3 : 2} />
+            {on && <rect x={8} y={y - 6} width={W - 16} height={ih + 12} rx={22} fill={c(it.tono)} opacity={0.1 + 0.06 * Math.sin(t * 4)} />}
+            <rect x={14} y={y} width={W - 28} height={ih} rx={18} fill={f(it.tono)} stroke={on ? c(it.tono) : linea} strokeWidth={on ? 3 : 2} />
             <rect x={14} y={y} width={10} height={ih} rx={5} fill={c(it.tono)} />
             <T x={44} y={y + ih * 0.3} s={31} w={800} c={c(it.tono)}>
               {it.t}
@@ -233,9 +238,27 @@ function Flujo({ e, i, t }: { e: EscenaFlujo; i: number; t: number }) {
         const y2 = horiz ? B.y : B.y - Math.sign(dy) * (cb.h / 2 + 6);
         const d = horiz ? `M${x1},${y1} C${(x1 + x2) / 2},${y1} ${(x1 + x2) / 2},${y2} ${x2},${y2}` : `M${x1},${y1} C${x1},${(y1 + y2) / 2} ${x2},${(y1 + y2) / 2} ${x2},${y2}`;
         const o = Math.min(op(l.a), op(l.b));
+        const hacia = luz.has(l.b);
+        const tb = byId[l.b].tono ?? 'lilac';
+        const bez = horiz
+          ? ([x1, y1, (x1 + x2) / 2, y1, (x1 + x2) / 2, y2, x2, y2] as const)
+          : ([x1, y1, x1, (y1 + y2) / 2, x2, (y1 + y2) / 2, x2, y2] as const);
+        const punto = (u: number) => {
+          const v = 1 - u;
+          return [
+            v * v * v * bez[0] + 3 * v * v * u * bez[2] + 3 * v * u * u * bez[4] + u * u * u * bez[6],
+            v * v * v * bez[1] + 3 * v * v * u * bez[3] + 3 * v * u * u * bez[5] + u * u * u * bez[7],
+          ];
+        };
         return (
           <g key={k} opacity={o}>
-            <path d={d} fill="none" stroke={tinta3} strokeWidth={3} markerEnd={`url(#fl-${e.id})`} />
+            <path d={d} fill="none" stroke={hacia ? c(tb) : tinta3} strokeWidth={hacia ? 4 : 3} markerEnd={`url(#fl-${e.id})`} opacity={hacia ? 0.9 : 0.75} />
+            {o > 0.9 &&
+              [0, 1, 2].map((j) => {
+                const u = (t * 0.45 + j / 3) % 1;
+                const [px, py] = punto(u);
+                return <circle key={j} cx={px} cy={py} r={hacia ? 5.5 : 4} fill={hacia ? c(tb) : tinta3} opacity={Math.sin(u * Math.PI)} />;
+              })}
             {l.t && (
               <T x={(x1 + x2) / 2} y={(y1 + y2) / 2 - 14} a="middle" s={18} w={700} c={tinta3}>
                 {l.t}
@@ -252,9 +275,10 @@ function Flujo({ e, i, t }: { e: EscenaFlujo; i: number; t: number }) {
         const tono = n.tono ?? 'lilac';
         return (
           <g key={n.id} opacity={o} transform={`translate(0 ${(1 - o) * 14})`}>
-            <rect x={n.x - b.w / 2} y={n.y - b.h / 2} width={b.w} height={b.h} rx={16} fill={on ? f(tono) : carta} stroke={c(tono)} strokeWidth={on ? 3.5 : 2} />
+            {on && <rect x={n.x - b.w / 2 - 8} y={n.y - b.h / 2 - 8} width={b.w + 16} height={b.h + 16} rx={22} fill={c(tono)} opacity={0.12 + 0.08 * Math.sin(t * 4)} />}
+            <rect x={n.x - b.w / 2} y={n.y - b.h / 2} width={b.w} height={b.h} rx={16} fill={f(tono)} stroke={c(tono)} strokeWidth={on ? 3.5 : 2} opacity={on ? 1 : 0.92} />
             {b.lines.map((l, k) => (
-              <T key={k} x={n.x} y={n.y + (k - (b.lines.length - 1) / 2) * 31} a="middle" s={26} w={on ? 750 : 600} c={on ? c(tono) : tinta}>
+              <T key={k} x={n.x} y={n.y + (k - (b.lines.length - 1) / 2) * 31} a="middle" s={26} w={on ? 800 : 600} c={on ? c(tono) : tinta}>
                 {l}
               </T>
             ))}
@@ -521,6 +545,69 @@ function Franja({ f: fr, prevHasta, t }: { f: NonNullable<EscenaPaneles['pasos']
 
 /* ───────────────────────── Lienzo ───────────────────────── */
 
+/* ───────────────────────── Figuras anatómicas con nota ───────────────────────── */
+
+function NotaLado({ nota, tono, t, x = 520 }: { nota: NotaFig; tono: Tono; t: number; x?: number }) {
+  const o = ap(t, 0.25, 0.5);
+  const w = W - x - 24;
+  const nt = Math.max(10, Math.floor(w / 25));
+  const nd = Math.max(16, Math.floor(w / 15));
+  const lt = renglones(nota.t, nt).length;
+  return (
+    <g opacity={o} transform={`translate(${(1 - o) * 26} 0)`}>
+      <rect x={x} y={40} width={w} height={H - 80} rx={26} fill={f(tono)} stroke={c(tono)} strokeWidth={3} />
+      <rect x={x} y={40} width={12} height={H - 80} rx={6} fill={c(tono)} />
+      <Multi x={x + 36} y={92 + (lt - 1) * 24} t={nota.t} n={nt} s={42} w={650} c={c(tono)} fam={DISPLAY} />
+      {nota.d && <Multi x={x + 36} y={330 + (lt - 1) * 20} t={nota.d} n={nd} s={27} w={520} c={tinta} lh={1.3} />}
+    </g>
+  );
+}
+
+function AbdomenEsc({ e, i, t }: { e: EscenaAbdomen; i: number; t: number }) {
+  const p = e.pasos[i];
+  const luz: Partial<Record<Region, Tono>> = {};
+  p.regiones?.forEach((r) => (luz[r] = p.tono));
+  const sc = (H - 30) / ABD_H;
+  return (
+    <g>
+      <g transform={`translate(${(500 - ABD_W * sc) / 2} 15) scale(${sc})`}>
+        <AbdomenFig luz={luz} puntos={(p.puntos ?? []).map((q) => ({ p: q, tone: p.tono }))} ruta={p.ruta} rutaTone={p.tono} t={t} idp={`esc-${e.id}-${i}`} />
+      </g>
+      <NotaLado nota={p.nota} tono={p.tono} t={t} />
+    </g>
+  );
+}
+
+function OrganosEsc({ e, i, t }: { e: EscenaOrganos; i: number; t: number }) {
+  const p = e.pasos[i];
+  const luz: Partial<Record<Organo, Tono>> = {};
+  p.organos.forEach((o) => (luz[o] = p.tono));
+  const sc = (H - 30) / TR_H;
+  return (
+    <g>
+      <g transform={`translate(${(500 - TR_W * sc) / 2} 15) scale(${sc})`}>
+        <TractoFig luz={luz} marca={p.marca ? { o: p.marca, tone: 'red' } : undefined} treitz={e.treitz} t={t} />
+      </g>
+      <NotaLado nota={p.nota} tono={p.tono} t={t} />
+    </g>
+  );
+}
+
+function BiliarEsc({ e, i, t }: { e: EscenaBiliar; i: number; t: number }) {
+  const p = e.pasos[i];
+  const luz: Partial<Record<ViaBiliar, Tono>> = {};
+  p.luz.forEach((o) => (luz[o] = p.tono));
+  const sc = (H - 40) / BIL_H;
+  return (
+    <g>
+      <g transform={`translate(${(500 - BIL_W * sc) / 2} 20) scale(${sc})`}>
+        <BiliarFig luz={luz} calculo={p.calculo} tumor={p.tumor} dilata={p.dilata} t={t} />
+      </g>
+      <NotaLado nota={p.nota} tono={p.tono} t={t} />
+    </g>
+  );
+}
+
 export function Lienzo({ e, i, t, titulo = false }: { e: Escena; i: number; t: number; titulo?: boolean }) {
   const k = Math.max(0, Math.min(i, e.pasos.length - 1));
   return (
@@ -531,6 +618,9 @@ export function Lienzo({ e, i, t, titulo = false }: { e: Escena; i: number; t: n
       {e.tipo === 'tubo' && <Tubo e={e} i={k} t={t} />}
       {e.tipo === 'flujo' && <Flujo e={e} i={k} t={t} />}
       {e.tipo === 'paneles' && <Paneles e={e} i={k} t={t} />}
+      {e.tipo === 'abdomen' && <AbdomenEsc e={e} i={k} t={t} />}
+      {e.tipo === 'organos' && <OrganosEsc e={e} i={k} t={t} />}
+      {e.tipo === 'biliar' && <BiliarEsc e={e} i={k} t={t} />}
     </svg>
   );
 }

@@ -1,4 +1,6 @@
+import type { ComponentType } from 'react';
 import type { Escena } from './escenas/tipos';
+import type { VisualBlock } from './visual/tipos';
 
 /** Prioridad pedagógica de un subtema.
  *  - imprescindible: el profesor indica expresamente que se evalúa o lo enfatiza.
@@ -29,6 +31,7 @@ export type Block =
   | { t: 'list'; items: Inline[]; ordered?: boolean }
   | { t: 'def'; term: string; text: Inline; refs?: SourceRef[] }
   | { t: 'callout'; kind: CalloutKind; title?: string; text?: Inline; items?: Inline[]; refs?: SourceRef[] }
+  | { t: 'diagram'; id: string; caption?: Inline }
   | { t: 'table'; head: string[]; rows: Inline[][]; caption?: Inline }
   | { t: 'cards'; items: { title: string; text: Inline; tone?: Tone; tag?: string }[]; cols?: 2 | 3 | 4 }
   | { t: 'steps'; title?: string; items: { title: string; text: Inline }[] }
@@ -36,7 +39,29 @@ export type Block =
   | { t: 'compare'; title?: string; cols: { title: string; tone?: Tone; items: Inline[] }[] }
   | { t: 'accordion'; items: { title: string; blocks: Block[] }[] }
   | { t: 'case'; title: string; text: Inline; question?: Inline; answer?: Inline }
-  | { t: 'kv'; items: { k: string; v: Inline }[] };
+  | { t: 'kv'; items: { k: string; v: Inline }[] }
+  /** Explicación animada paso a paso: id de una escena de `chapter.escenas`. */
+  | { t: 'anim'; id: string }
+  /** Diagramas visuales e interactivos genéricos (src/visual). */
+  | VisualBlock;
+
+export interface TheorySection {
+  id: string;
+  title: string;
+  kicker?: string;
+  priority: Priority;
+  summary?: Inline;
+  blocks: Block[];
+  refs?: SourceRef[];
+}
+
+export interface ConceptMapData {
+  center: string;
+  why: Inline;
+  prereqs: { label: string; detail?: Inline; chapterId?: string }[];
+  branches: { id: string; label: string; tone: Tone; items: string[] }[];
+  outcomes: Inline[];
+}
 
 export interface MCQ {
   id: string;
@@ -62,8 +87,8 @@ export interface Development {
   prio?: ExamPrio;
   /** Frase textual del profesor sobre esta pregunta (verificada en la transcripción). */
   quote?: { text: string; refs: SourceRef[] };
-  /** Cuadro del capítulo donde se repasa (id de Cuadro). */
-  cuadro?: string;
+  /** Ficha de teoría donde se estudia (id de TheorySection). */
+  ficha?: string;
   answer: Block[];
   keyPoints?: Inline[];
   refs?: SourceRef[];
@@ -88,29 +113,20 @@ export interface VideoMeta {
   script: { title: string; text: string }[];
 }
 
-/** Cuadro de consulta: lo que hay que saber de memoria, con el porqué al lado. */
-export interface Cuadro {
-  id: string;
-  titulo: string;
-  prio?: ExamPrio;
-  /** Frase textual del profesor (verificada en la transcripción). */
-  quote?: { text: string; refs: SourceRef[] };
+export interface ClosingData {
+  map: { center: string; nodes: { label: string; tone: Tone; items: string[] }[] };
+  essentials: Inline[];
+  links: { chapterId?: string; text: Inline }[];
+  pitfalls: Inline[];
+  miniExam: MCQ[];
+}
+
+export interface QuickRef {
+  title: string;
   head: string[];
   rows: Inline[][];
-  /** Fisiopatología del libro: para defender la respuesta. */
-  porque?: Inline;
-  nota?: Inline;
-  refs?: SourceRef[];
 }
 
-/** «Sabete esto»: lo mínimo del capítulo, en bloques que se pueden tapar para practicar. */
-export interface Esencial {
-  objetivo: Inline;
-  avisos?: { text: Inline; refs?: SourceRef[] }[];
-  bloques: { titulo: string; tono: Tone; prio?: ExamPrio; puntos: { k: Inline; v: Inline }[] }[];
-}
-
-/** Capítulo: se recorre por pasos (Sabete esto · Teoría · Video · Cuadros · Choice · Desarrollo · Repaso). */
 export interface Chapter {
   id: string;
   systemId: string;
@@ -118,18 +134,21 @@ export interface Chapter {
   subtitle: string;
   estimatedMinutes: number;
   sources: SourceRef[];
-  esencial: Esencial;
-  /** Teoría paso a paso (las mismas escenas del video). */
-  escenas: Escena[];
-  cuadros: Cuadro[];
+  map: ConceptMapData;
+  bases?: { intro: Inline; sections: TheorySection[] };
+  theory: TheorySection[];
+  quickRef?: QuickRef[];
   video?: VideoMeta;
   mcq: MCQ[];
   developments: Development[];
   memory: MemoryItem[];
-  /** Errores que pueden aparecer en el examen. */
-  trampas: Inline[];
-  links?: { chapterId?: string; text: Inline }[];
   maneuvers?: { ids: string[]; note: Inline };
+  closing: ClosingData;
+  diagrams: Record<string, ComponentType>;
+  /** Escenas animadas paso a paso (web y video comparten el mismo dibujo y la misma narración). */
+  escenas?: Escena[];
+  /** Hay narración por paso en public/media/<id>/pasos/ (la genera `npm run tts`). */
+  audioPasos?: boolean;
 }
 
 export interface ChapterMeta {

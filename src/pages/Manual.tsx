@@ -1,11 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import type { Chapter, Cuadro } from '@/types';
+import type { Chapter, TheorySection } from '@/types';
 import { findSystem, isAvailable } from '@content/curriculum';
 import { loadChapter } from '@/lib/useChapter';
-import { norm, plain } from '@/lib/text';
-import { Blocks } from '@/components/Blocks';
-import { ExamBadge } from '@/components/Practice';
+import { blocksText, norm, plain } from '@/lib/text';
+import { Blocks, DiagramContext, PriorityBadge } from '@/components/Blocks';
 import { Rich, Refs } from '@/components/Rich';
 import { Icon } from '@/components/Icon';
 import { asset } from '@/components/VideoPlayer';
@@ -25,59 +24,7 @@ function useSystemChapters(systemId: string | undefined) {
   return list;
 }
 
-
-
-function TablaCuadro({ q }: { q: Cuadro }) {
-  return (
-    <section className="cuadro" id={`mc-${q.id}`}>
-      <h3>
-        {q.titulo} {q.prio && <ExamBadge prio={q.prio} />}
-      </h3>
-      {q.quote && (
-        <p className="radar__quote">
-          {q.quote.text} <Refs refs={q.quote.refs} label="" />
-        </p>
-      )}
-      <div className="table-wrap">
-        <table className="btable">
-          {q.head.some(Boolean) && (
-            <thead>
-              <tr>
-                {q.head.map((h, j) => (
-                  <th key={j}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-          )}
-          <tbody>
-            {q.rows.map((r, j) => (
-              <tr key={j}>
-                {r.map((cell, k) => (
-                  <td key={k}>
-                    <Rich text={cell} />
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      {q.porque && (
-        <p className="porque-print">
-          <b>¿Por qué?</b> <Rich text={q.porque} />
-        </p>
-      )}
-      {q.nota && (
-        <p className="aviso chico">
-          <Rich text={q.nota} />
-        </p>
-      )}
-      <Refs refs={q.refs} />
-    </section>
-  );
-}
-
-/* ───────────────────────── Cuadros del sistema (consulta rápida) ───────────────────────── */
+/* ───────────────────────── Manual web navegable ───────────────────────── */
 
 export function ManualPage() {
   const { id } = useParams();
@@ -94,41 +41,78 @@ export function ManualPage() {
     return () => window.clearTimeout(t);
   }, [params, chapters]);
 
-  const match = useMemo(() => (q: Cuadro) => !f || norm(q.titulo).includes(f) || norm(plain(q.rows.flat().join(' '))).includes(f), [f]);
+  const match = useMemo(() => (s: TheorySection) => !f || norm(s.title).includes(f) || norm(blocksText(s.blocks)).includes(f), [f]);
 
   if (!sys) return <NotFound />;
-  if (!chapters) return <Loading label="Armando los cuadros…" />;
+  if (!chapters) return <Loading label="Armando el manual…" />;
   return (
-    <div className={`page page--narrow manual tone-${sys.tone}`}>
-      <header className="manual__head">
-        <h1>Cuadros de {sys.title.toLowerCase()}</h1>
-        <p className="muted">Todos los cuadros publicados del sistema, para consultar rápido.</p>
-        <div className="manual__tools">
-          <div className="search">
-            <Icon name="search" size={17} />
-            <input value={filter} onChange={(e) => setFilter(e.target.value)} placeholder="Filtrar por término…" aria-label="Filtrar los cuadros" />
-          </div>
-          {sys.pdf && (
-            <a className="btn btn--soft" href={asset(sys.pdf)} download>
-              <Icon name="download" size={16} /> Descargar PDF
+    <div className={`page manual tone-${sys.tone}`}>
+      <aside className="manual__toc" aria-label="Índice del manual">
+        <div className="manual__toc-title">Índice</div>
+        {chapters.map((c) => (
+          <div key={c.id} className="manual__toc-ch">
+            <a href={`#m-${c.id}`} onClick={(e) => (e.preventDefault(), document.getElementById(`m-${c.id}`)?.scrollIntoView({ behavior: 'smooth' }))}>
+              {c.title}
             </a>
-          )}
-        </div>
-      </header>
-      {chapters.length === 0 && <p className="empty">Todavía no hay capítulos publicados en este sistema.</p>}
-      {chapters.map((c) => (
-        <section className="manual__ch" id={`m-${c.id}`} key={c.id}>
-          <div className="manual__ch-head">
-            <h2>{c.title}</h2>
-            <Link to={`/capitulo/${c.id}`} className="btn btn--ghost btn--sm">
-              Ir al capítulo <Icon name="arrowRight" size={14} />
-            </Link>
+            <ul>
+              {[...(c.bases?.sections ?? []), ...c.theory].filter(match).map((s) => (
+                <li key={s.id}>
+                  <a href={`#mt-${c.id}-${s.id}`} onClick={(e) => (e.preventDefault(), document.getElementById(`mt-${c.id}-${s.id}`)?.scrollIntoView({ behavior: 'smooth' }))}>
+                    {s.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-          {c.cuadros.filter(match).map((q) => (
-            <TablaCuadro key={q.id} q={q} />
-          ))}
-        </section>
-      ))}
+        ))}
+      </aside>
+      <div className="manual__main">
+        <header className="manual__head">
+          <h1>Manual de {sys.title.toLowerCase()}</h1>
+          <p className="muted">Toda la teoría publicada del sistema en un solo lugar, para consultar sin buscar dentro de un video.</p>
+          <div className="manual__tools">
+            <div className="search">
+              <Icon name="search" size={17} />
+              <input value={filter} onChange={(e) => setFilter(e.target.value)} placeholder="Filtrar secciones por término…" aria-label="Filtrar el manual" />
+            </div>
+            {sys.pdf && (
+              <a className="btn btn--soft" href={asset(sys.pdf)} download>
+                <Icon name="download" size={16} /> Descargar PDF
+              </a>
+            )}
+          </div>
+        </header>
+        {chapters.length === 0 && <p className="empty">Todavía no hay capítulos publicados en este sistema.</p>}
+        {chapters.map((c) => (
+          <DiagramContext.Provider key={c.id} value={c.diagrams}>
+            <section className="manual__ch" id={`m-${c.id}`}>
+              <div className="manual__ch-head">
+                <h2>{c.title}</h2>
+                <Link to={`/capitulo/${c.id}`} className="btn btn--ghost btn--sm">
+                  Ir al capítulo interactivo <Icon name="arrowRight" size={14} />
+                </Link>
+              </div>
+              {[...(c.bases?.sections ?? []), ...c.theory].filter(match).map((s) => (
+                <section key={s.id} className="tblock" id={`mt-${c.id}-${s.id}`}>
+                  <header className="tblock__head">
+                    <div className="tblock__row">
+                      <h3>{s.title}</h3>
+                      <PriorityBadge p={s.priority} />
+                    </div>
+                    {s.summary && (
+                      <p className="tblock__summary">
+                        <Rich text={s.summary} />
+                      </p>
+                    )}
+                  </header>
+                  <Blocks blocks={s.blocks} />
+                  <Refs refs={s.refs} />
+                </section>
+              ))}
+            </section>
+          </DiagramContext.Provider>
+        ))}
+      </div>
     </div>
   );
 }
@@ -153,7 +137,7 @@ export function PrintManual() {
     <div className={`print tone-${sys.tone}`}>
       <section className="print__cover">
         <div className="print__brand">Aula Clínica — Semiología I</div>
-        <h1>{sys.title}: lo que pregunta el profe</h1>
+        <h1>Manual de {sys.title.toLowerCase()}</h1>
         <p className="print__lead">{sys.description}</p>
         <ul className="print__covlist">
           {chapters.map((c) => (
@@ -165,112 +149,144 @@ export function PrintManual() {
         </p>
       </section>
       {chapters.map((c, ci) => (
-        <section className="print__ch" key={c.id}>
-          <div className="print__ch-kicker">Capítulo {ci + 1}</div>
-          <h1>{c.title}</h1>
-          <p className="print__lead">
-            <Rich text={c.esencial.objetivo} />
-          </p>
-          {c.esencial.avisos?.map((a, k) => (
-            <p key={k} className="aviso chico">
-              <Rich text={a.text} />
-            </p>
-          ))}
-
-          <h2 className="print__h2">Lo que pregunta el profe</h2>
-          <ol className="print__radar">
-            {[...c.developments]
-              .filter((d) => d.prio)
-              .sort((a, b) => (a.prio ?? 'P9').localeCompare(b.prio ?? 'P9'))
-              .map((d) => (
-                <li key={d.id}>
-                  <b>{d.prio}</b> <Rich text={d.question} /> {d.quote && <span className="muted">— {d.quote.text}</span>}
+        <DiagramContext.Provider key={c.id} value={c.diagrams}>
+          <section className="print__ch">
+            <div className="print__ch-kicker">Capítulo {ci + 1}</div>
+            <h1>{c.title}</h1>
+            <p className="print__lead">{c.subtitle}</p>
+            <div className="print__map">
+              <div className="print__map-col">
+                <h4>Necesitás saber</h4>
+                <ul>
+                  {c.map.prereqs.map((p, i) => (
+                    <li key={i}>{p.label}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="print__map-hub">
+                <strong>{c.map.center}</strong>
+                <p>
+                  <Rich text={c.map.why} />
+                </p>
+                <div className="print__map-branches">
+                  {c.map.branches.map((b) => (
+                    <div key={b.id} className={`print__map-branch tone-${b.tone}`}>
+                      <b>{b.label}</b>
+                      <span>{b.items.join(' · ')}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="print__map-col">
+                <h4>Al terminar vas a poder</h4>
+                <ul>
+                  {c.map.outcomes.map((o, i) => (
+                    <li key={i}>{plain(o)}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            {[...(c.bases?.sections ?? []), ...c.theory].map((s) => (
+              <section key={s.id} className="tblock">
+                <header className="tblock__head">
+                  <div className="tblock__row">
+                    <h3>{s.title}</h3>
+                    <PriorityBadge p={s.priority} />
+                  </div>
+                  {s.summary && (
+                    <p className="tblock__summary">
+                      <Rich text={s.summary} />
+                    </p>
+                  )}
+                </header>
+                <Blocks blocks={s.blocks} />
+                <Refs refs={s.refs} />
+              </section>
+            ))}
+            <h2 className="print__h2">Fichas de consulta rápida</h2>
+            {(c.quickRef ?? []).map((q, i) => (
+              <div key={i} className="qref">
+                <div className="qref__title">{q.title}</div>
+                <table className="btable">
+                  <thead>
+                    <tr>
+                      {q.head.map((h, j) => (
+                        <th key={j}>{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {q.rows.map((r, j) => (
+                      <tr key={j}>
+                        {r.map((cell, k) => (
+                          <td key={k}>
+                            <Rich text={cell} />
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+            <h2 className="print__h2">Memoria activa</h2>
+            {c.memory.map((m) => (
+              <div key={m.id} className="print__mem">
+                <h4>{m.title}</h4>
+                <p>
+                  <b>Para qué sirve:</b> <Rich text={m.purpose} />
+                </p>
+                <Blocks blocks={m.evaluates} />
+                <p>
+                  <b>Cómo interpretarlo:</b> <Rich text={m.interpret} />
+                </p>
+                <p className="print__hook">
+                  <b>Mnemotecnia: {m.mnemonic.hook}</b> — <Rich text={m.mnemonic.explain} />
+                </p>
+              </div>
+            ))}
+            <h2 className="print__h2">Integración: lo imprescindible</h2>
+            <ul className="blist">
+              {c.closing.essentials.map((e, i) => (
+                <li key={i}>
+                  <Rich text={e} />
                 </li>
               ))}
-          </ol>
-
-          <h2 className="print__h2">Sabete esto</h2>
-          {c.esencial.bloques.map((b) => (
-            <div key={b.titulo} className="print__bloque">
-              <h4>
-                {b.titulo} {b.prio && <ExamBadge prio={b.prio} />}
-              </h4>
-              <dl className="kv">
-                {b.puntos.map((pt, k) => (
-                  <div key={k} className="kv__row">
-                    <dt>
-                      <Rich text={pt.k} />
-                    </dt>
-                    <dd>
-                      <Rich text={pt.v} />
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          ))}
-
-          <h2 className="print__h2">Cuadros</h2>
-          {c.cuadros.map((q) => (
-            <TablaCuadro key={q.id} q={q} />
-          ))}
-
-          <h2 className="print__h2">Desarrollos modelo</h2>
-          {[...c.developments]
-            .sort((a, b) => (a.prio ?? 'P9').localeCompare(b.prio ?? 'P9'))
-            .map((d, i) => (
+            </ul>
+            <h2 className="print__h2">Desarrollos modelo</h2>
+            {c.developments.map((d, i) => (
               <div key={d.id} className="print__dev">
                 <h4>
-                  {i + 1}. {d.prio && <ExamBadge prio={d.prio} />} <Rich text={d.question} />
+                  {i + 1}. <Rich text={d.question} />
                 </h4>
                 <Blocks blocks={d.answer} />
               </div>
             ))}
-
-          <h2 className="print__h2">Memoria activa</h2>
-          {c.memory.map((m) => (
-            <div key={m.id} className="print__mem">
-              <h4>{m.title}</h4>
-              <Blocks blocks={m.evaluates} />
-              <p className="print__hook">
-                <b>Mnemotecnia: {m.mnemonic.hook}</b> — <Rich text={m.mnemonic.explain} />
-              </p>
-            </div>
-          ))}
-
-          <h2 className="print__h2">Errores que pueden aparecer en el examen</h2>
-          <ul className="blist">
-            {c.trampas.map((e, i) => (
-              <li key={i}>
-                <Rich text={e} />
-              </li>
-            ))}
-          </ul>
-
-          <h2 className="print__h2">Preguntas de repaso (choice)</h2>
-          <ol className="print__mcq">
-            {c.mcq.map((q) => (
-              <li key={q.id}>
-                <Rich text={q.stem} />
-                <ol type="A">
-                  {q.options.map((o, i) => (
-                    <li key={i}>
-                      <Rich text={o.text} />
-                    </li>
-                  ))}
-                </ol>
-              </li>
-            ))}
-          </ol>
-          <h3 className="print__h3">Respuestas</h3>
-          <ol className="print__answers">
-            {c.mcq.map((q) => (
-              <li key={q.id}>
-                <b>{'ABCDE'[q.answer]}</b> — <Rich text={q.options[q.answer].why} />
-              </li>
-            ))}
-          </ol>
-        </section>
+            <h2 className="print__h2">Preguntas de repaso (choice)</h2>
+            <ol className="print__mcq">
+              {c.mcq.map((q) => (
+                <li key={q.id}>
+                  <Rich text={q.stem} />
+                  <ol type="A">
+                    {q.options.map((o, i) => (
+                      <li key={i}>
+                        <Rich text={o.text} />
+                      </li>
+                    ))}
+                  </ol>
+                </li>
+              ))}
+            </ol>
+            <h3 className="print__h3">Respuestas</h3>
+            <ol className="print__answers">
+              {c.mcq.map((q) => (
+                <li key={q.id}>
+                  <b>{'ABCDE'[q.answer]}</b> — <Rich text={q.options[q.answer].why} />
+                </li>
+              ))}
+            </ol>
+          </section>
+        </DiagramContext.Provider>
       ))}
     </div>
   );

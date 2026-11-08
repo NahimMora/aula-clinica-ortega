@@ -2,7 +2,9 @@
 // (paso a paso) y se renderizan en el video, así el texto y el dibujo nunca se contradicen.
 // Modelo tomado de farmaco-flor (src/vis): el dibujo es función pura de (escena, paso, t).
 
-export type Tono = 'rose' | 'lilac' | 'sky' | 'mint' | 'peach' | 'red';
+import type { Organo, Punto, Region, ViaBiliar } from '../visual/tipos';
+
+export type Tono = 'rose' | 'lilac' | 'sky' | 'mint' | 'peach' | 'gold' | 'red';
 
 export interface PasoBase {
   /** Narración del paso: lo que se lee debajo del dibujo y lo que dice la voz en el video. */
@@ -97,5 +99,36 @@ export interface EscenaPaneles {
   })[];
 }
 
-export type Escena = EscenaCuadro | EscenaLista | EscenaTubo | EscenaFlujo | EscenaPaneles;
+/** Nota grande al costado de una figura anatómica. */
+export interface NotaFig {
+  t: string;
+  d?: string;
+}
+
+/** Abdomen con sus 9 regiones: se iluminan regiones, puntos o un recorrido (dolor que migra). */
+export interface EscenaAbdomen {
+  tipo: 'abdomen';
+  id: string;
+  titulo: string;
+  pasos: (PasoBase & { tono: Tono; regiones?: Region[]; puntos?: Punto[]; ruta?: Region[]; nota: NotaFig })[];
+}
+
+/** Aparato digestivo: se iluminan órganos y se marca la lesión. */
+export interface EscenaOrganos {
+  tipo: 'organos';
+  id: string;
+  titulo: string;
+  treitz?: boolean;
+  pasos: (PasoBase & { tono: Tono; organos: Organo[]; marca?: Organo; nota: NotaFig })[];
+}
+
+/** Vía biliar: dónde queda el cálculo o el tumor y qué se dilata. */
+export interface EscenaBiliar {
+  tipo: 'biliar';
+  id: string;
+  titulo: string;
+  pasos: (PasoBase & { tono: Tono; luz: ViaBiliar[]; calculo?: ViaBiliar; tumor?: ViaBiliar; dilata?: ViaBiliar[]; nota: NotaFig })[];
+}
+
+export type Escena = EscenaCuadro | EscenaLista | EscenaTubo | EscenaFlujo | EscenaPaneles | EscenaAbdomen | EscenaOrganos | EscenaBiliar;
 export type PasoCualquiera = Escena['pasos'][number];

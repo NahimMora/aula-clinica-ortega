@@ -115,6 +115,13 @@
   --d-gray-ink: #cfc5d8;
   --d-red: #f2879f;
 
+  /* Colores de los dibujos animados y bloques visuales (src/visual, src/escenas). */
+  --v-bg: #1d1925; --v-card: #272130; --v-ink: #f3eef6; --v-ink2: #cfc5d8; --v-ink3: #9a8fa7; --v-line: #3d3549;
+  --v-rose: #f2a7be; --v-rose-f: #3a2431; --v-lilac: #c4b0f2; --v-lilac-f: #302747; --v-sky: #a3cbef; --v-sky-f: #203043;
+  --v-mint: #8fd4b5; --v-mint-f: #20352b; --v-peach: #f1b88b; --v-peach-f: #3a2b1f; --v-gold: #f6d98a; --v-gold-f: #3a3218;
+  --v-red: #ff6b7d; --v-red-f: #45202a;
+  --v-skin: #2a2330; --v-stone: #d9b26a; --v-stone-2: #8a6a2c; --v-bile: #3c4a24; --v-stool: #9a6b45; --v-stool-2: #5e3d22;
+
   /* Acento según sistema (se redefine con .tone-*) */
   --accent-50: var(--rose-50);
   --accent-100: var(--rose-100);
@@ -147,6 +154,10 @@ html.is-print {
   --d-peach-fill: #ffe7d4; --d-peach-stroke: #e9a46d; --d-peach-ink: #96572a;
   --d-ink-fill: #f4eef0; --d-ink-stroke: #85798c; --d-ink-ink: #2b2331;
   --d-gray-fill: #f6f1ee; --d-gray-stroke: #d9ccc4; --d-gray-ink: #554a5e; --d-red: #b8435f;
+  --v-bg: #ffffff; --v-card: #fbf7f4; --v-ink: #2b2331; --v-ink2: #554a5e; --v-ink3: #85798c; --v-line: #d9ccc4;
+  --v-rose: #b4506f; --v-rose-f: #fbe3ea; --v-lilac: #7458b3; --v-lilac-f: #ece4f9; --v-sky: #3f78a8; --v-sky-f: #dfedf9;
+  --v-mint: #3a8a6c; --v-mint-f: #dbf0e6; --v-peach: #b8703a; --v-peach-f: #ffe7d4; --v-gold: #8a5a00; --v-gold-f: #fff3cf;
+  --v-red: #c0334f; --v-red-f: #fde1e6; --v-skin: #f7efe9; --v-bile: #e3ecc8;
 }
 
 .tone-rose { --accent-50: var(--rose-50); --accent-100: var(--rose-100); --accent-200: var(--rose-200); --accent-400: var(--rose-400); --accent-600: var(--rose-600); --accent-700: var(--rose-700); }
@@ -154,3 +165,6 @@ html.is-print {
 .tone-sky { --accent-50: var(--sky-50); --accent-100: var(--sky-100); --accent-200: var(--sky-200); --accent-400: var(--sky-400); --accent-600: var(--sky-600); --accent-700: var(--sky-700); }
 .tone-mint { --accent-50: var(--mint-50); --accent-100: var(--mint-100); --accent-200: var(--mint-200); --accent-400: var(--mint-200); --accent-600: var(--mint-600); --accent-700: var(--mint-700); }
 .tone-peach { --accent-50: var(--peach-50); --accent-100: var(--peach-100); --accent-200: var(--peach-200); --accent-400: var(--peach-200); --accent-600: var(--peach-600); --accent-700: var(--peach-700); }
+
+.tone-gold { --accent-50: var(--gold-50); --accent-100: #3a3218; --accent-200: var(--gold-200); --accent-400: var(--gold-200); --accent-600: var(--gold-700); --accent-700: var(--gold-700); }
+.tone-red { --accent-50: #2e1820; --accent-100: #45202a; --accent-200: #6e2c3c; --accent-400: #ff6b7d; --accent-600: #ff8f9d; --accent-700: #ffb3bd; }

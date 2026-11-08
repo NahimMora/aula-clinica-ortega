@@ -86,7 +86,6 @@
 .radar__item--P0 { border-color: var(--gold-200); background: linear-gradient(120deg, var(--gold-50), var(--surface) 70%); }
 .radar__top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .radar__q { font-weight: 650; font-size: 1.02rem; }
-.radar__quote { display: block; font-size: 0.88rem; color: var(--gold-700); font-style: italic; }
-.radar__quote .refs { display: inline-flex; margin: 4px 0 0 6px; font-style: normal; vertical-align: middle; }
-.radar__quote svg { vertical-align: -2px; margin-right: 4px; }
+.radar__quote { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 0.88rem; color: var(--gold-700); font-style: italic; }
+.radar__quote .refs { margin: 0; font-style: normal; }
 .radar__go { display: flex; gap: 8px; flex-wrap: wrap; }
