@@ -101,3 +101,4 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 - 2026-11-08 — Feedback de la usuaria (sección 2). Se crea este HANDOFF. Paleta oscura; dig-01 conciso.
 - 2026-11-08 (tarde) — Video re-renderizado y diapositivas paso a paso sobre Remotion (luego reemplazadas).
 - 2026-11-08 (noche) — Pedido: «estructura limpia como la de farmaco, sin tantas opciones» + diapositivas interactivas de verdad. Capítulo por pasos, motor de escenas propio, video desde las escenas, opciones de choice mezcladas.
+- 2026-11-08 (noche) — Publicado y verificado en la URL pública: interaction-test 26/26, smoke-test, check-video (9:35, 110 subtítulos), PDF.
