@@ -63,6 +63,8 @@ export const PUNTOS: Record<Punto, { x: number; y: number; n: string; r?: number
   // Chauffard se dibuja como triángulo: ombligo, línea media hacia arriba y bisectriz del cuadrante superior derecho.
   chauffard: { x: 182, y: 210, n: 'Chauffard' },
   desjardins: { x: 162, y: 186, n: 'Desjardins' },
+  'ureteral-sup': { x: 150, y: 246, n: 'Ureteral sup.' },
+  'ureteral-med': { x: 159, y: 384, n: 'Ureteral medio' },
 };
 
 export function AbdomenFig({
@@ -164,7 +166,7 @@ export function AbdomenFig({
         })}
       {puntos.map(({ p, tone }) => {
         const P = PUNTOS[p];
-        const pares = p === 'greyturner' ? [P.x, 400 - P.x] : p === 'renal-d' || p === 'renal-i' ? [P.x] : [P.x];
+        const pares = p === 'greyturner' || p === 'ureteral-sup' || p === 'ureteral-med' ? [P.x, 400 - P.x] : p === 'renal-d' || p === 'renal-i' ? [P.x] : [P.x];
         return pares.map((x, k) => (
           <g key={`${p}${k}`}>
             {p === 'chauffard' ? (
