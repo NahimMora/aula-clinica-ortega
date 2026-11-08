@@ -90,6 +90,14 @@ Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i 
 ## 8. Pedido original (resumen)
 Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cada capítulo: mapa inicial, bases, teoría visual, consulta/PDF, video Remotion con voz es-AR-TomasNeural, choice, desarrollos resueltos con “Lo sabía/No lo sabía” y repaso espaciado, mnemotecnias, integración. Un capítulo completo, probado y desplegado a la vez. No publicar material privado. Nunca atribuir al profesor frases que no dijo.
 
+## 6b. Estado al cortar la sesión (2026-11-08)
+- HECHO y publicado: paleta oscura; dig-01 reescrito conciso (sección “Lo que pregunta el profe” con P0/P1 y citas verificadas, 7 fichas con “¿Por qué?” del libro, 7 preguntas de examen, 12 choice, 5 tarjetas de memoria); narración nueva (10 escenas, 6:18) con escena hematemesis vs hemoptisis.
+- PENDIENTE inmediato:
+  1. Ajustar escenas `intro`, `complicaciones` y `cierre` de `content/chapters/dig-01/slides.tsx` a los cues nuevos (ver `timing.json`), luego `npm run video:render -- dig-01 video/out/dig-01-master.mp4 --codec=h264 --crf=20`, ffmpeg a `public/media/dig-01.mp4` (+ póster) y volver a poner `video` en `content/chapters/dig-01/index.tsx` (`import video from './video.json'`).
+  2. Modo **paso a paso** (estilo farrmaco) en `src/components/SlideDeck.tsx`: cada cue = un paso (seek al final del cue, texto del paso visible, puntos de progreso, Anterior/Siguiente).
+  3. Sección **Examen físico** por sistema y región (digestivo: abdomen, hígado, bazo, vesícula; renal; neuro; soma) con fragmentos del video Argente verificados por fotogramas + pizarras + clases EF.
+  4. Regenerar PDF (`npm run pdf`) y correr `scripts/interaction-test.mjs` (ajustar: ya no hay sección `bases`/`consulta`).
+
 ## 9. Bitácora
 - 2026-11-07 — Inventario, arquitectura, Etapa 1 y dig-01 publicados y verificados.
 - 2026-11-08 — Feedback de la usuaria (sección 2). Se crea este HANDOFF.

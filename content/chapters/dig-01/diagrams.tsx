@@ -782,18 +782,87 @@ export function VomitoComplicaciones() {
   );
 }
 
+
+/* ───────── Hematemesis vs hemoptisis (cuadro del profe, visual) ───────── */
+
+function Swatch({ kind }: { kind: 'cafe' | 'espuma' }) {
+  return (
+    <svg viewBox="0 0 120 120" width={96} height={96} role="img" aria-label={kind === 'cafe' ? 'Sangre oscura en borra de café' : 'Sangre roja espumosa'}>
+      {kind === 'cafe' ? (
+        <>
+          <circle cx={60} cy={60} r={50} fill="#4a2a1c" />
+          {[[38, 44], [70, 36], [52, 70], [80, 66], [36, 78], [62, 52], [86, 48], [48, 30]].map(([x, y], i) => (
+            <circle key={i} cx={x} cy={y} r={4 + (i % 3)} fill="#2a160e" />
+          ))}
+        </>
+      ) : (
+        <>
+          <circle cx={60} cy={60} r={50} fill="#d6233f" />
+          {[[40, 40, 9], [66, 34, 7], [80, 56, 10], [50, 64, 8], [70, 78, 6], [34, 72, 5], [58, 50, 4]].map(([x, y, rr], i) => (
+            <circle key={i} cx={x} cy={y} r={rr} fill="#ff9aa8" opacity={0.85} />
+          ))}
+        </>
+      )}
+    </svg>
+  );
+}
+
+export function HematHemop() {
+  const rows: [string, string, string][] = [
+    ['Sale con', 'el vómito (antes, náuseas)', 'la tos (antes, cosquilleo laríngeo)'],
+    ['Aspecto', 'oscura, borra de café, coágulos, restos de comida', 'roja rutilante, espumosa'],
+    ['Reacción', 'ácida', 'alcalina'],
+    ['Después', 'melena', 'esputo hemoptoico, sin melena'],
+    ['Antecedentes', 'digestivos', 'respiratorios'],
+  ];
+  return (
+    <div className="hh">
+      <div className="hh__col tone-peach">
+        <div className="hh__head">
+          <Swatch kind="cafe" />
+          <div>
+            <div className="hh__name">Hematemesis</div>
+            <div className="hh__tag">tubo digestivo alto</div>
+          </div>
+        </div>
+        <dl>
+          {rows.map(([k, a]) => (
+            <div key={k}>
+              <dt>{k}</dt>
+              <dd>{a}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+      <div className="hh__vs" aria-hidden="true">vs</div>
+      <div className="hh__col tone-rose">
+        <div className="hh__head">
+          <Swatch kind="espuma" />
+          <div>
+            <div className="hh__name">Hemoptisis</div>
+            <div className="hh__tag">vía aérea inferior / pulmón</div>
+          </div>
+        </div>
+        <dl>
+          {rows.map(([k, , b]) => (
+            <div key={k}>
+              <dt>{k}</dt>
+              <dd>{b}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  );
+}
+
 export const diagrams = {
-  'trayecto-alto': TrayectoAlto,
-  'deglucion-fases': DeglucionFases,
-  'estomago-funciones': EstomagoFunciones,
-  'reflejo-vomito': ReflejoVomito,
   'disfagia-donde': DisfagiaDonde,
   'disfagia-algoritmo': DisfagiaAlgoritmo,
   esofagograma: Esofagograma,
-  'dispepsia-roma': DispepsiaRoma,
-  'dispepsia-mecanismos': DispepsiaMecanismos,
   'dispepsia-algoritmo': DispepsiaAlgoritmo,
   'vomito-nivel': VomitoNivel,
   'vomito-reloj': VomitoReloj,
   'vomito-complicaciones': VomitoComplicaciones,
+  'hemat-hemop': HematHemop,
 };

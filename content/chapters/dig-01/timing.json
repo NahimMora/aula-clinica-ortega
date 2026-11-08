@@ -1,88 +1,178 @@
 {
  "fps": 30,
- "total": 15503,
+ "total": 11333,
  "scenes": [
   {
    "id": "intro",
-   "title": "Introducción",
+   "title": "Lo que toma el profe",
    "from": 0,
-   "frames": 954,
+   "frames": 725,
    "audio": "media/dig-01/audio/01-intro.mp3",
    "audioFrom": 12,
    "cues": [
     {
      "start": 15,
-     "end": 222,
-     "text": "Disfagia, dispepsia, náuseas y vómitos: los motivos de consulta del tubo digestivo alto."
+     "end": 112,
+     "text": "Vómitos, disfagia y dispepsia."
     },
     {
-     "start": 221,
-     "end": 415,
-     "text": "El profesor remarca que el aparato digestivo es una de las unidades más preguntadas en parciales y finales."
+     "start": 110,
+     "end": 288,
+     "text": "El profe remarca que digestivo es una de las unidades más preguntadas en parciales y finales."
     },
     {
-     "start": 415,
-     "end": 724,
-     "text": "La idea central de esta clase es una sola: a partir de lo que cuenta el paciente, ubicar dónde está el problema y qué mecanismo lo produce, antes de pedir cualquier estudio."
+     "start": 288,
+     "end": 587,
+     "text": "De este tema se toman sobre todo cuatro cosas: los tipos de vómito, el cuadro de hematemesis contra hemoptisis, la tríada de Mallory-Weiss y la acalasia."
     },
     {
-     "start": 724,
-     "end": 928,
-     "text": "Para eso vamos a seguir el camino del alimento: boca, faringe, esófago, estómago y duodeno."
+     "start": 587,
+     "end": 698,
+     "text": "Vamos directo a eso, con el porqué de cada una."
     }
    ]
   },
   {
-   "id": "deglucion",
-   "title": "Cómo tragamos",
-   "from": 954,
-   "frames": 1358,
-   "audio": "media/dig-01/audio/02-deglucion.mp3",
+   "id": "contenido",
+   "title": "Qué contiene y cuándo aparece",
+   "from": 725,
+   "frames": 1345,
+   "audio": "media/dig-01/audio/02-contenido.mp3",
    "audioFrom": 12,
    "cues": [
     {
      "start": 15,
-     "end": 97,
-     "text": "Tragar tiene tres mecanismos."
+     "end": 120,
+     "text": "El contenido del vómito indica de dónde viene."
     },
     {
-     "start": 96,
-     "end": 334,
-     "text": "Uno es voluntario: la masticación, en la que los músculos masticadores y la lengua forman el bolo y lo empujan hacia atrás."
+     "start": 118,
+     "end": 266,
+     "text": "Si sale la comida casi entera, sin ácido, viene del esófago."
     },
     {
-     "start": 334,
-     "end": 521,
-     "text": "Los otros dos son involuntarios y dependen del sistema autónomo, sobre todo del parasimpático."
+     "start": 266,
+     "end": 389,
+     "text": "Si es ácido y parcialmente digerido, del estómago."
     },
     {
-     "start": 521,
-     "end": 816,
-     "text": "En la fase faríngea, en apenas un segundo, el velo del paladar cierra la nariz, la epiglotis tapa la vía aérea y el esfínter esofágico superior se abre."
+     "start": 389,
+     "end": 657,
+     "text": "Si es bilioso, amarillo verdoso y amargo, hubo reflujo de contenido duodenal: por eso un síndrome pilórico no da vómitos biliosos."
     },
     {
-     "start": 816,
-     "end": 1061,
-     "text": "En la fase esofágica, una onda peristáltica lleva el bolo hasta el estómago, y el esfínter inferior se relaja para dejarlo pasar."
+     "start": 657,
+     "end": 855,
+     "text": "Si es rojo, hay un sangrado activo; si es en borra de café, la sangre ya fue digerida."
     },
     {
-     "start": 1061,
-     "end": 1202,
-     "text": "Si falla el arranque, el alimento se va a la nariz o a la vía aérea."
+     "start": 855,
+     "end": 993,
+     "text": "Y si es fecaloide, pensamos en una obstrucción intestinal baja."
     },
     {
-     "start": 1202,
-     "end": 1331,
-     "text": "Si falla el esófago, el bolo se detiene detrás del esternón."
+     "start": 993,
+     "end": 1318,
+     "text": "El horario también orienta: por la mañana en ayunas, embarazo, alcohol o hipertensión endocraneana; una hora después de comer, el estómago; varias horas después, el píloro."
+    }
+   ]
+  },
+  {
+   "id": "hemat-hemop",
+   "title": "Hematemesis vs hemoptisis",
+   "from": 2070,
+   "frames": 1206,
+   "audio": "media/dig-01/audio/03-hemat-hemop.mp3",
+   "audioFrom": 12,
+   "cues": [
+    {
+     "start": 15,
+     "end": 96,
+     "text": "Hematemesis contra hemoptisis."
+    },
+    {
+     "start": 94,
+     "end": 268,
+     "text": "El profe lo dice claro: es pregunta de parcial, y ese cuadrito tienen que sabérselo."
+    },
+    {
+     "start": 268,
+     "end": 457,
+     "text": "La hematemesis sale con el vómito, precedida de náuseas; la hemoptisis, con la tos."
+    },
+    {
+     "start": 457,
+     "end": 737,
+     "text": "La hematemesis es oscura, en borra de café, con coágulos o restos de comida, porque el ácido del estómago transforma la hemoglobina en hematina ácida."
+    },
+    {
+     "start": 737,
+     "end": 894,
+     "text": "La hemoptisis es roja rutilante y espumosa, porque viene mezclada con aire."
+    },
+    {
+     "start": 894,
+     "end": 1021,
+     "text": "La hematemesis es ácida y la hemoptisis, alcalina."
+    },
+    {
+     "start": 1021,
+     "end": 1180,
+     "text": "Y después de una hematemesis aparece melena: la sangre se digiere en el intestino."
+    }
+   ]
+  },
+  {
+   "id": "complicaciones",
+   "title": "Complicaciones y Mallory-Weiss",
+   "from": 3276,
+   "frames": 1218,
+   "audio": "media/dig-01/audio/04-complicaciones.mp3",
+   "audioFrom": 12,
+   "cues": [
+    {
+     "start": 15,
+     "end": 131,
+     "text": "Las complicaciones del vómito se preguntan en la cátedra."
+    },
+    {
+     "start": 129,
+     "end": 257,
+     "text": "Al vomitar se pierde ácido clorhídrico, agua y potasio."
+    },
+    {
+     "start": 257,
+     "end": 408,
+     "text": "Por eso aparecen alcalosis metabólica, hipopotasemia y deshidratación."
+    },
+    {
+     "start": 408,
+     "end": 608,
+     "text": "Si el paciente aspira el vómito, hace una neumonitis química que puede terminar en neumonía aspirativa."
+    },
+    {
+     "start": 608,
+     "end": 701,
+     "text": "Y el esfuerzo puede lesionar el esófago."
+    },
+    {
+     "start": 701,
+     "end": 1007,
+     "text": "El síndrome de Mallory-Weiss tiene una tríada que también es su cronología: alcoholismo, vómitos y hematemesis, por un desgarro lineal de la mucosa esofagogástrica."
+    },
+    {
+     "start": 1007,
+     "end": 1191,
+     "text": "En cambio, en el síndrome de Boerhaave se rompe todo el espesor de la pared: es una emergencia."
     }
    ]
   },
   {
    "id": "donde",
    "title": "¿Dónde se traba?",
-   "from": 2312,
+   "from": 4494,
    "frames": 948,
-   "audio": "media/dig-01/audio/03-donde.mp3",
+   "audio": "media/dig-01/audio/05-donde.mp3",
    "audioFrom": 12,
    "cues": [
     {
@@ -108,41 +198,11 @@
    ]
   },
   {
-   "id": "causas-oro",
-   "title": "Causas de la disfagia orofaríngea",
-   "from": 3260,
-   "frames": 1000,
-   "audio": "media/dig-01/audio/04-causas-oro.mp3",
-   "audioFrom": 12,
-   "cues": [
-    {
-     "start": 15,
-     "end": 185,
-     "text": "Alrededor del setenta y cinco por ciento de las disfagias orofaríngeas son neuromusculares."
-    },
-    {
-     "start": 184,
-     "end": 377,
-     "text": "La causa número uno es el accidente cerebrovascular, que lesiona los pares craneales de la deglución."
-    },
-    {
-     "start": 377,
-     "end": 650,
-     "text": "Le sigue la enfermedad de Parkinson, y después la esclerosis múltiple, la esclerosis lateral amiotrófica, la miastenia gravis y las miopatías."
-    },
-    {
-     "start": 650,
-     "end": 974,
-     "text": "El resto corresponde a trastornos motores locales, como la acalasia cricofaríngea, y a lesiones estructurales: tumores, radiación, cirugías o divertículos."
-    }
-   ]
-  },
-  {
    "id": "muro-motor",
    "title": "Mecánica o motora",
-   "from": 4260,
+   "from": 5442,
    "frames": 1404,
-   "audio": "media/dig-01/audio/05-muro-motor.mp3",
+   "audio": "media/dig-01/audio/06-muro-motor.mp3",
    "audioFrom": 12,
    "cues": [
     {
@@ -190,44 +250,44 @@
   {
    "id": "acalasia",
    "title": "Acalasia y esofagograma",
-   "from": 5664,
-   "frames": 1314,
-   "audio": "media/dig-01/audio/06-acalasia.mp3",
+   "from": 6846,
+   "frames": 1296,
+   "audio": "media/dig-01/audio/07-acalasia.mp3",
    "audioFrom": 12,
    "cues": [
     {
      "start": 15,
      "end": 284,
-     "text": "Hay un cuadro que, según el profesor, siempre suelen preguntar: disfagia lentamente progresiva para sólidos y líquidos, con regurgitación."
+     "text": "Hay un cuadro que, según el profe, siempre suelen preguntar: disfagia lentamente progresiva para sólidos y líquidos, con regurgitación."
     },
     {
-     "start": 283,
+     "start": 282,
      "end": 342,
      "text": "Es la acalasia."
     },
     {
      "start": 342,
-     "end": 559,
-     "text": "Se pierde la inervación del plexo mientérico: el esófago deja de contraerse y el esfínter inferior no se relaja."
+     "end": 541,
+     "text": "Se altera el plexo mientérico: el esófago deja de contraerse y el esfínter inferior no se relaja."
     },
     {
-     "start": 559,
-     "end": 664,
+     "start": 541,
+     "end": 645,
      "text": "El alimento se acumula y el esófago se dilata."
     },
     {
-     "start": 664,
-     "end": 777,
+     "start": 645,
+     "end": 758,
      "text": "En la Argentina hay que pensar en la enfermedad de Chagas."
     },
     {
-     "start": 777,
-     "end": 1040,
+     "start": 758,
+     "end": 1021,
      "text": "En el esofagograma con bario se ve un esófago grande, con nivel, que termina en pico de pájaro, y la manometría confirma el diagnóstico."
     },
     {
-     "start": 1040,
-     "end": 1288,
+     "start": 1021,
+     "end": 1269,
      "text": "Distinta es la imagen en manzana mordida, irregular y abrupta, que hace sospechar un cáncer y obliga a una endoscopía con biopsia."
     }
    ]
@@ -235,9 +295,9 @@
   {
    "id": "dispepsia",
    "title": "Dispepsia y criterios de Roma",
-   "from": 6978,
-   "frames": 1186,
-   "audio": "media/dig-01/audio/07-dispepsia.mp3",
+   "from": 8142,
+   "frames": 1181,
+   "audio": "media/dig-01/audio/08-dispepsia.mp3",
    "audioFrom": 12,
    "cues": [
     {
@@ -262,55 +322,15 @@
     },
     {
      "start": 953,
-     "end": 1160,
-     "text": "Para la clínica, el profesor usa una regla simple: las dos D y la P. Dolor, distensión y pirosis."
-    }
-   ]
-  },
-  {
-   "id": "funcional",
-   "title": "Orgánica o funcional",
-   "from": 8164,
-   "frames": 1186,
-   "audio": "media/dig-01/audio/08-funcional.mp3",
-   "audioFrom": 12,
-   "cues": [
-    {
-     "start": 15,
-     "end": 225,
-     "text": "Seis de cada diez dispepsias son funcionales: no hay lesión, y el diagnóstico se hace por exclusión."
-    },
-    {
-     "start": 223,
-     "end": 309,
-     "text": "Las otras cuatro son orgánicas."
-    },
-    {
-     "start": 309,
-     "end": 648,
-     "text": "La causa número uno es la úlcera péptica, seguida del reflujo gastroesofágico y del cáncer gástrico; también influyen los antiinflamatorios no esteroideos y algunos antibióticos."
-    },
-    {
-     "start": 648,
-     "end": 732,
-     "text": "¿Por qué duele un estómago sin lesión?"
-    },
-    {
-     "start": 732,
-     "end": 1030,
-     "text": "Porque el estrés y los factores psicológicos alteran el eje cerebro estómago: el fundus no se relaja al comer, el vaciamiento se enlentece y la mucosa se vuelve hipersensible."
-    },
-    {
-     "start": 1030,
-     "end": 1160,
-     "text": "Así aparecen la plenitud, la saciedad precoz y el dolor."
+     "end": 1155,
+     "text": "Para la clínica, el profe usa una regla simple: las dos D y la P. Dolor, distensión y pirosis."
     }
    ]
   },
   {
    "id": "alarma",
    "title": "Signos de alarma y conducta",
-   "from": 9350,
+   "from": 9323,
    "frames": 1256,
    "audio": "media/dig-01/audio/09-alarma.mp3",
    "audioFrom": 12,
@@ -348,177 +368,42 @@
    ]
   },
   {
-   "id": "reflejo",
-   "title": "El reflejo del vómito",
-   "from": 10606,
-   "frames": 1273,
-   "audio": "media/dig-01/audio/10-reflejo.mp3",
-   "audioFrom": 12,
-   "cues": [
-    {
-     "start": 15,
-     "end": 185,
-     "text": "El vómito es un reflejo que se integra en el centro del vómito, en el bulbo raquídeo."
-    },
-    {
-     "start": 184,
-     "end": 644,
-     "text": "Le llegan estímulos desde el tubo digestivo y el peritoneo, desde la zona gatillo del área postrema, sensible a fármacos, toxinas, uremia o embarazo, desde el aparato vestibular, desde la corteza, y desde un aumento de la presión intracraneal."
-    },
-    {
-     "start": 644,
-     "end": 797,
-     "text": "La respuesta sigue una secuencia: náusea, arcadas y vómito."
-    },
-    {
-     "start": 797,
-     "end": 1038,
-     "text": "Por eso un paciente puede vomitar por una enfermedad digestiva, neurológica, metabólica, cardíaca o por un embarazo."
-    },
-    {
-     "start": 1038,
-     "end": 1246,
-     "text": "Y un vómito en chorro, sin náuseas, con cefalea, obliga a pensar en hipertensión endocraneana."
-    }
-   ]
-  },
-  {
-   "id": "contenido",
-   "title": "Qué contiene y cuándo aparece",
-   "from": 11879,
-   "frames": 1345,
-   "audio": "media/dig-01/audio/11-contenido.mp3",
-   "audioFrom": 12,
-   "cues": [
-    {
-     "start": 15,
-     "end": 120,
-     "text": "El contenido del vómito indica de dónde viene."
-    },
-    {
-     "start": 118,
-     "end": 266,
-     "text": "Si sale la comida casi entera, sin ácido, viene del esófago."
-    },
-    {
-     "start": 266,
-     "end": 389,
-     "text": "Si es ácido y parcialmente digerido, del estómago."
-    },
-    {
-     "start": 389,
-     "end": 657,
-     "text": "Si es bilioso, amarillo verdoso y amargo, hubo reflujo de contenido duodenal: por eso un síndrome pilórico no da vómitos biliosos."
-    },
-    {
-     "start": 657,
-     "end": 855,
-     "text": "Si es rojo, hay un sangrado activo; si es en borra de café, la sangre ya fue digerida."
-    },
-    {
-     "start": 855,
-     "end": 993,
-     "text": "Y si es fecaloide, pensamos en una obstrucción intestinal baja."
-    },
-    {
-     "start": 993,
-     "end": 1318,
-     "text": "El horario también orienta: por la mañana en ayunas, embarazo, alcohol o hipertensión endocraneana; una hora después de comer, el estómago; varias horas después, el píloro."
-    }
-   ]
-  },
-  {
-   "id": "complicaciones",
-   "title": "Complicaciones del vómito",
-   "from": 13224,
-   "frames": 1366,
-   "audio": "media/dig-01/audio/12-complicaciones.mp3",
-   "audioFrom": 12,
-   "cues": [
-    {
-     "start": 15,
-     "end": 130,
-     "text": "Las complicaciones del vómito se preguntan en el examen."
-    },
-    {
-     "start": 128,
-     "end": 265,
-     "text": "Al vomitar se pierde ácido clorhídrico, agua y algo de potasio."
-    },
-    {
-     "start": 265,
-     "end": 425,
-     "text": "Sin ácido que neutralizar, sube el bicarbonato: alcalosis metabólica."
-    },
-    {
-     "start": 425,
-     "end": 589,
-     "text": "La hipovolemia activa la aldosterona y el riñón elimina potasio: hipopotasemia."
-    },
-    {
-     "start": 589,
-     "end": 695,
-     "text": "Y la pérdida de líquido lleva a la deshidratación."
-    },
-    {
-     "start": 695,
-     "end": 897,
-     "text": "Si el paciente aspira el vómito, aparece una neumonitis química que puede terminar en neumonía aspirativa."
-    },
-    {
-     "start": 897,
-     "end": 1013,
-     "text": "Además, el esfuerzo puede lesionar el esófago."
-    },
-    {
-     "start": 1013,
-     "end": 1183,
-     "text": "En el síndrome de Mallory-Weiss se desgarra la mucosa y el paciente presenta hematemesis."
-    },
-    {
-     "start": 1183,
-     "end": 1339,
-     "text": "En el síndrome de Boerhaave se rompe todo el espesor de la pared: es una emergencia."
-    }
-   ]
-  },
-  {
    "id": "cierre",
-   "title": "Para cerrar",
-   "from": 14590,
-   "frames": 913,
-   "audio": "media/dig-01/audio/13-cierre.mp3",
+   "title": "Lo que no puede faltar",
+   "from": 10579,
+   "frames": 754,
+   "audio": "media/dig-01/audio/10-cierre.mp3",
    "audioFrom": 12,
    "cues": [
     {
      "start": 15,
-     "end": 69,
-     "text": "Resumamos."
+     "end": 99,
+     "text": "Para cerrar, lo que no puede faltar."
     },
     {
-     "start": 67,
-     "end": 227,
-     "text": "Ante una disfagia: dónde se traba, con qué alimentos y cómo evoluciona."
+     "start": 98,
+     "end": 198,
+     "text": "El cuadro de hematemesis contra hemoptisis."
     },
     {
-     "start": 227,
-     "end": 446,
-     "text": "Ante una dispepsia: criterios de Roma, orgánica o funcional, y signos de alarma que llevan a la endoscopía."
+     "start": 198,
+     "end": 279,
+     "text": "Los tipos de vómito y su horario."
     },
     {
-     "start": 446,
-     "end": 609,
-     "text": "Ante un vómito: qué contiene, cuándo aparece y qué complicaciones puede traer."
+     "start": 279,
+     "end": 434,
+     "text": "La tríada de Mallory-Weiss: alcoholismo, vómitos y hematemesis."
     },
     {
-     "start": 609,
-     "end": 749,
-     "text": "Con estas preguntas, el interrogatorio ya te dice dónde está el problema."
+     "start": 434,
+     "end": 610,
+     "text": "Y la acalasia: sólidos y líquidos, lenta y progresiva, con regurgitación."
     },
     {
-     "start": 749,
-     "end": 887,
-     "text": "Ahora, a practicar con las preguntas y los desarrollos del capítulo."
+     "start": 610,
+     "end": 728,
+     "text": "Ahora, a responder las preguntas de examen del capítulo."
     }
    ]
   }

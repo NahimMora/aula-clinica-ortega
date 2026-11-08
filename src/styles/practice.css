@@ -73,3 +73,19 @@
   .mem__grid { grid-template-columns: minmax(0, 1fr); }
   .mcq, .dev, .mem { padding: 16px; }
 }
+
+/* Prioridad de examen y citas del profe */
+.xbadge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; white-space: nowrap; }
+.xbadge--P0 { background: var(--gold-700); color: var(--on-ink); }
+.xbadge--P1 { background: var(--rose-100); color: var(--rose-700); border: 1px solid var(--rose-200); }
+.xbadge--P2 { background: var(--surface-2); color: var(--ink-3); border: 1px solid var(--line-2); }
+.profquote { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: -4px 0 14px; padding: 10px 14px; border-radius: 12px; background: var(--gold-50); border: 1px solid var(--gold-200); color: var(--gold-700); font-style: italic; }
+.profquote .refs { margin: 0; font-style: normal; }
+.radar { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.radar__item { padding: 14px 16px; border-radius: var(--radius); background: var(--surface); border: 1.5px solid var(--line); display: grid; gap: 8px; }
+.radar__item--P0 { border-color: var(--gold-200); background: linear-gradient(120deg, var(--gold-50), var(--surface) 70%); }
+.radar__top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.radar__q { font-weight: 650; font-size: 1.02rem; }
+.radar__quote { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 0.88rem; color: var(--gold-700); font-style: italic; }
+.radar__quote .refs { margin: 0; font-style: normal; }
+.radar__go { display: flex; gap: 8px; flex-wrap: wrap; }

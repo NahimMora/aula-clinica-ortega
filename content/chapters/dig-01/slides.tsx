@@ -686,6 +686,37 @@ const Contenido: FC<SceneProps> = ({ t }) => {
   );
 };
 
+
+/* ───────── Hematemesis vs hemoptisis ───────── */
+const HematHemop: FC<SceneProps> = ({ t }) => {
+  const rows: [string, string, string, number][] = [
+    ['Sale con', 'el vómito (náuseas)', 'la tos', 2],
+    ['Aspecto', 'oscura, borra de café', 'roja rutilante, espumosa', 3],
+    ['Por qué', 'hematina ácida', 'mezclada con aire', 4],
+    ['Reacción', 'ácida', 'alcalina', 5],
+    ['Después', 'melena', 'sin melena', 6],
+  ];
+  return (
+    <>
+      <Appear at={cue(t, 1)} style={{ left: 110, top: 240 }}>
+        <Chip tone="peach">★ «Pregunta de parcial… ese cuadrito tienen que sabérselo»</Chip>
+      </Appear>
+      <div style={{ position: 'absolute', left: 110, top: 340, width: 1700, display: 'grid', gridTemplateColumns: '300px 1fr 1fr', gap: 16 }}>
+        <div />
+        <Appear at={cue(t, 0)} style={{ position: 'relative' }}><Card tone="peach" title="Hematemesis" style={{ padding: '16px 26px' }} /></Appear>
+        <Appear at={cue(t, 0, 20)} style={{ position: 'relative' }}><Card tone="rose" title="Hemoptisis" style={{ padding: '16px 26px' }} /></Appear>
+        {rows.map(([k, a, b, c]) => (
+          <div key={k} style={{ display: 'contents' }}>
+            <Appear at={cue(t, c)} style={{ position: 'relative', fontSize: 30, fontWeight: 800, color: C.ink3, alignSelf: 'center' }}>{k}</Appear>
+            <Appear at={cue(t, c)} style={{ position: 'relative', fontSize: 34, fontWeight: 650, color: C.peach.ink }}>{a}</Appear>
+            <Appear at={cue(t, c, 15)} style={{ position: 'relative', fontSize: 34, fontWeight: 650, color: C.rose.ink }}>{b}</Appear>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+
 /* ───────── 12. Complicaciones ───────── */
 const Wall: FC<{ variant: 'normal' | 'mw' | 'boer'; size: number }> = ({ variant, size }) => (
   <svg viewBox="0 0 160 160" width={size} height={size}>
@@ -791,6 +822,7 @@ export const deck: Deck = {
     alarma: Alarma,
     reflejo: Reflejo,
     contenido: Contenido,
+    'hemat-hemop': HematHemop,
     complicaciones: Complicaciones,
     cierre: Cierre,
   },

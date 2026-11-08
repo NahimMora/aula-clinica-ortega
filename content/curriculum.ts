@@ -26,7 +26,7 @@ export const SYSTEMS: SystemMeta[] = [
       'La unidad que el profesor define como una de las más preguntadas en parciales y finales: motivos de consulta, examen físico, síndromes del tubo digestivo, hígado, páncreas, vías biliares y emergencias.',
     pdf: 'pdf/manual-digestivo.pdf',
     chapters: [
-      ch('digestivo', 'dig-01', 'Disfagia, dispepsia, náuseas y vómitos', 'MC I · Tubo digestivo alto', 'Cómo se traga, por qué cuesta tragar, qué es la dispepsia y cómo leer un vómito.', 'MC Digestivo 1–2 · Libro p368–369', 'published'),
+      ch('digestivo', 'dig-01', 'Vómitos, disfagia y dispepsia', 'MC I · Tubo digestivo alto', 'Tipos de vómito, hematemesis vs hemoptisis, Mallory-Weiss, acalasia y signos de alarma: lo que toma el profe.', 'MC Digestivo 1–2 · Hemorragias 1 · Libro', 'published'),
       ch('digestivo', 'dig-02', 'Dolor abdominal y abdomen agudo', 'MC II · Dolor abdominal', 'Dolor visceral, somático y referido; los cinco grandes abdómenes agudos quirúrgicos.', 'MC Digestivo 2–4'),
       ch('digestivo', 'dig-03', 'Diarrea, constipación y trastornos anorrectales', 'MC III · Tubo digestivo bajo', 'Diarrea alta y baja, síndrome disentérico, criterios de Roma, escala de Bristol, pujo y tenesmo.', 'MC Digestivo 5–6'),
       ch('digestivo', 'dig-04', 'Ictericia', 'Repaso clave', 'Metabolismo de la bilirrubina e ictericias pre, intra y poshepáticas: el profesor insiste en repasarla.', 'MC Digestivo 6 · Libro p10–15'),

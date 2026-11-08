@@ -5,7 +5,7 @@ import { findChapter, findSystem, neighbours } from '@content/curriculum';
 import { useChapter } from '@/lib/useChapter';
 import { Blocks, DiagramContext, PriorityBadge } from '@/components/Blocks';
 import { ConceptMap, SummaryMap } from '@/components/ConceptMap';
-import { DevList, MemoryCard, QuizList, McqCard } from '@/components/Practice';
+import { DevList, ExamBadge, MemoryCard, QuizList, McqCard } from '@/components/Practice';
 import { VideoPlayer, asset } from '@/components/VideoPlayer';
 import { Rich, Refs } from '@/components/Rich';
 import { Icon } from '@/components/Icon';
@@ -180,6 +180,41 @@ function ChapterView({ c }: { c: Chapter }) {
           {visible.some((d) => d.id === 'ubicate') && (
             <Section def={defs.find((d) => d.id === 'ubicate')!} chapterId={c.id} intro="Antes de cualquier definición: qué vas a estudiar, de qué depende y cómo se conectan sus partes. Tocá un bloque para ir a su explicación.">
               <ConceptMap data={c.map} onBranch={(bid) => go(`t-${bid}`)} />
+            </Section>
+          )}
+
+          {visible.some((d) => d.id === 'radar') && (
+            <Section def={defs.find((d) => d.id === 'radar')!} chapterId={c.id} intro="Las preguntas de examen de este tema, ordenadas por prioridad, con lo que dijo el profe. Empezá por las P0.">
+              <ol className="radar">
+                {[...c.developments]
+                  .filter((d) => d.prio)
+                  .sort((a, b) => (a.prio ?? 'P9').localeCompare(b.prio ?? 'P9'))
+                  .map((d) => (
+                    <li key={d.id} className={`radar__item radar__item--${d.prio}`}>
+                      <div className="radar__top">
+                        <ExamBadge prio={d.prio!} />
+                        <span className="radar__q">
+                          <Rich text={d.question} />
+                        </span>
+                      </div>
+                      {d.quote && (
+                        <div className="radar__quote">
+                          <Icon name="cap" size={15} /> {d.quote.text} <Refs refs={d.quote.refs} label="" />
+                        </div>
+                      )}
+                      <div className="radar__go">
+                        {d.ficha && (
+                          <button className="btn btn--ghost btn--sm" onClick={() => go(`t-${d.ficha}`)}>
+                            <Icon name="book" size={14} /> Estudiar
+                          </button>
+                        )}
+                        <button className="btn btn--soft btn--sm" onClick={() => go(`d-${d.id}`)}>
+                          <Icon name="pen" size={14} /> Responder
+                        </button>
+                      </div>
+                    </li>
+                  ))}
+              </ol>
             </Section>
           )}
 

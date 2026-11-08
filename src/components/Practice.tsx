@@ -146,6 +146,11 @@ export function QuizList({ questions, chapterOf }: { questions: MCQ[]; chapterOf
 
 /* ───────────────────────── Desarrollos ───────────────────────── */
 
+const PRIO_LABEL = { P0: 'P0 · Lo toma', P1: 'P1 · Muy remarcado', P2: 'P2 · Complementario' } as const;
+export function ExamBadge({ prio }: { prio: 'P0' | 'P1' | 'P2' }) {
+  return <span className={`xbadge xbadge--${prio}`}>{PRIO_LABEL[prio]}</span>;
+}
+
 export function DevCard({ d, chapterId, n }: { d: Development; chapterId: string; n: number }) {
   const progress = useProgress();
   const [open, setOpen] = useState(false);
@@ -155,7 +160,7 @@ export function DevCard({ d, chapterId, n }: { d: Development; chapterId: string
     <article className={`dev ${status ? `is-${status}` : ''}`} id={`d-${d.id}`}>
       <header className="dev__head">
         <span className="dev__n">{n}</span>
-        <PriorityBadge p={d.priority} />
+        {d.prio ? <ExamBadge prio={d.prio} /> : <PriorityBadge p={d.priority} />}
         {d.emphasis && (
           <span className="chip chip--emph">
             <Icon name="star" size={13} /> Lo enfatiza el profesor
@@ -166,6 +171,13 @@ export function DevCard({ d, chapterId, n }: { d: Development; chapterId: string
       <h4 className="dev__q">
         <Rich text={d.question} />
       </h4>
+      {d.quote && (
+        <blockquote className="profquote">
+          <Icon name="cap" size={16} />
+          <span>{d.quote.text}</span>
+          <Refs refs={d.quote.refs} label="Clase" />
+        </blockquote>
+      )}
       {!open ? (
         <button className="btn btn--primary" onClick={() => setOpen(true)}>
           <Icon name="eye" size={17} /> Ver desarrollo modelo

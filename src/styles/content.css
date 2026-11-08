@@ -469,3 +469,16 @@
 .sdeck__text { font-size: 0.9rem; color: var(--ink-2); }
 .sdeck__text summary { cursor: pointer; font-weight: 600; }
 .vtabs { margin-bottom: 14px; }
+
+/* Cuadro hematemesis vs hemoptisis */
+.hh { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 14px; align-items: stretch; }
+.hh__col { border: 1.5px solid var(--accent-200); background: var(--accent-50); border-radius: var(--radius); padding: 16px; }
+.hh__head { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.hh__name { font-family: var(--font-display); font-size: 1.35rem; font-weight: 650; color: var(--accent-700); }
+.hh__tag { font-size: 0.8rem; color: var(--ink-3); }
+.hh dl { margin: 0; display: grid; gap: 8px; }
+.hh dl div { display: grid; grid-template-columns: 110px 1fr; gap: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+.hh dt { font-size: 0.74rem; font-weight: 750; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); }
+.hh dd { margin: 0; font-weight: 600; }
+.hh__vs { align-self: center; font-family: var(--font-display); font-size: 1.6rem; color: var(--ink-3); }
+@media (max-width: 760px) { .hh { grid-template-columns: 1fr; } .hh__vs { justify-self: center; } }
