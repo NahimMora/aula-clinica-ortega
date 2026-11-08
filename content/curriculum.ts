@@ -32,7 +32,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('digestivo', 'dig-04', 'Ictericia', 'Repaso clave', 'Metabolismo de la bilirrubina e ictericias pre, intra y poshepáticas: el profesor insiste en repasarla.', 'MC Digestivo 6 · Libro p10–15', 'published'),
       ch('digestivo', 'dig-05', 'Examen físico del aparato digestivo', 'Examen físico', 'Topografía, inspección, auscultación, percusión y palpación; ascitis, puntos dolorosos, hígado, bazo y vesícula con video.', 'EF Digestivo 1–2 · Pizarras · Video Argente', 'published'),
       ch('digestivo', 'dig-06', 'Síndrome esofágico', 'Tubo digestivo', 'Los cinco síntomas, etiologías, ERGE y Barrett, acalasia, cáncer y cómo se estudia el esófago.', 'Clase Sd. esofágico · Libro p368–369', 'published'),
-      ch('digestivo', 'dig-07', 'Síndrome ulceroso y gastritis', 'Tubo digestivo', 'Úlcera péptica, Helicobacter pylori, AINEs y gastritis.', 'Clases Sd. ulceroso 1–3'),
+      ch('digestivo', 'dig-07', 'Síndrome ulceroso y gastritis', 'Tubo digestivo', 'Úlcera péptica, Helicobacter pylori y AINE, complicaciones y gastritis A vs B.', 'Clases Sd. ulceroso 1–3 · Libro p370–372', 'published'),
       ch('digestivo', 'dig-08', 'Síndrome pilórico e íleo', 'Tubo digestivo', 'Obstrucción del vaciamiento gástrico e íleo mecánico y paralítico.', 'Clases Sd. pilórico · Íleo'),
       ch('digestivo', 'dig-09', 'Malabsorción e intestino irritable', 'Tubo digestivo', 'Síndrome de malabsorción, enfermedad celíaca y síndrome de intestino irritable.', 'Clases Malabsorción 1–2 · SII'),
       ch('digestivo', 'dig-10', 'Peritonitis', 'Emergencias', 'Peritonitis primaria, secundaria y terciaria; semiología de la irritación peritoneal.', 'Clases Peritonitis 1–2'),
