@@ -252,54 +252,37 @@ export function MemoryCard({ m, chapterId }: { m: MemoryItem; chapterId: string 
   const [reveal, setReveal] = useState(false);
   const st = progress.memory[m.id]?.status;
   return (
-    <article className="mem" id={`m-${m.id}`}>
-      <h4 className="mem__title">{m.title}</h4>
-      <div className="mem__grid">
-        <div className="mem__cell">
-          <div className="mem__label">1 · Para qué sirve</div>
-          <Rich text={m.purpose} />
-        </div>
-        <div className="mem__cell mem__cell--wide">
-          <div className="mem__label">2 · Qué elementos evalúa</div>
+    <article className={`mem ${st ? `is-${st}` : ''}`} id={`m-${m.id}`}>
+      <div className="mem__label">{m.title}</div>
+      <p className="mem__q">
+        <Rich text={m.recall.q} />
+      </p>
+      {!reveal ? (
+        <button className="btn btn--soft btn--sm" onClick={() => setReveal(true)}>
+          Mostrar respuesta
+        </button>
+      ) : (
+        <>
+          <p className="mem__a">
+            <Rich text={m.recall.a} />
+          </p>
           <Blocks blocks={m.evaluates} />
-        </div>
-        <div className="mem__cell">
-          <div className="mem__label">3 · Cómo interpretarlo</div>
-          <Rich text={m.interpret} />
-        </div>
-        <div className="mem__cell mem__hook">
-          <div className="mem__label">4 · Mnemotecnia</div>
-          <div className="mem__hook-text">{m.mnemonic.hook}</div>
-          <div className="mem__hook-explain">
-            <Rich text={m.mnemonic.explain} />
-          </div>
-        </div>
-      </div>
-      <div className="mem__recall">
-        <div className="mem__label">5 · Recuperación</div>
-        <p className="mem__q">
-          <Rich text={m.recall.q} />
-        </p>
-        {!reveal ? (
-          <button className="btn btn--soft btn--sm" onClick={() => setReveal(true)}>
-            Mostrar respuesta
-          </button>
-        ) : (
-          <>
-            <p className="mem__a">
-              <Rich text={m.recall.a} />
-            </p>
-            <div className="dev__actions">
-              <button className={`btn btn--known btn--sm ${st === 'known' ? 'is-on' : ''}`} onClick={() => setMemory(m.id, chapterId, true)}>
-                <Icon name="check" size={15} /> Lo sabía
-              </button>
-              <button className={`btn btn--unknown btn--sm ${st === 'unknown' ? 'is-on' : ''}`} onClick={() => setMemory(m.id, chapterId, false)}>
-                <Icon name="refresh" size={15} /> No lo sabía
-              </button>
+          <div className="mem__hook">
+            <div className="mem__hook-text">{m.mnemonic.hook}</div>
+            <div className="mem__hook-explain">
+              <Rich text={m.mnemonic.explain} />
             </div>
-          </>
-        )}
-      </div>
+          </div>
+          <div className="dev__actions">
+            <button className={`btn btn--known btn--sm ${st === 'known' ? 'is-on' : ''}`} onClick={() => setMemory(m.id, chapterId, true)}>
+              <Icon name="check" size={15} /> Lo sabía
+            </button>
+            <button className={`btn btn--unknown btn--sm ${st === 'unknown' ? 'is-on' : ''}`} onClick={() => setMemory(m.id, chapterId, false)}>
+              <Icon name="refresh" size={15} /> No lo sabía
+            </button>
+          </div>
+        </>
+      )}
     </article>
   );
 }

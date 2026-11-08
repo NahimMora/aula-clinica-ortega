@@ -1,0 +1,1176 @@
+{
+ "fps": 30,
+ "total": 17249,
+ "portada": 96,
+ "cierre": 150,
+ "beats": [
+  {
+   "escena": 0,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/definiciones-1.mp3",
+   "inicio": 96,
+   "frames": 434,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     164,
+     "Empezamos por las definiciones, que el preguntero pide tal cual. El vómito, o"
+    ],
+    [
+     164,
+     330,
+     "emesis, es la expulsión violenta por la boca del contenido gástrico o duodenal, con"
+    ],
+    [
+     330,
+     413,
+     "participación de la musculatura abdominal."
+    ]
+   ],
+   "retener": [
+    "Vómito: expulsión activa",
+    "Contenido gastroduodenal"
+   ]
+  },
+  {
+   "escena": 0,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/definiciones-2.mp3",
+   "inicio": 530,
+   "frames": 345,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     180,
+     "La náusea es la sensación desagradable de querer vomitar, y casi siempre lo precede."
+    ],
+    [
+     180,
+     324,
+     "Por eso el profe remarca que un vómito sin náuseas previas es llamativo."
+    ]
+   ],
+   "retener": [
+    "Náusea: deseo de vomitar"
+   ]
+  },
+  {
+   "escena": 0,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/definiciones-3.mp3",
+   "inicio": 875,
+   "frames": 369,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     171,
+     "Antes del vómito aparecen las arcadas, que son contracciones del abdomen. Y no hay"
+    ],
+    [
+     171,
+     331,
+     "que confundirlo con la regurgitación: ahí el contenido vuelve a la boca sin ningún"
+    ],
+    [
+     331,
+     349,
+     "esfuerzo."
+    ]
+   ],
+   "retener": [
+    "Regurgitación: sin esfuerzo"
+   ]
+  },
+  {
+   "escena": 0,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/definiciones-4.mp3",
+   "inicio": 1244,
+   "frames": 281,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     188,
+     "En la rumiación, el paciente vuelve a tragar lo que regurgitó. Entonces, lo que"
+    ],
+    [
+     188,
+     260,
+     "define al vómito es el esfuerzo."
+    ]
+   ],
+   "retener": [
+    "Rumiación: lo vuelve a tragar"
+   ]
+  },
+  {
+   "escena": 1,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/tipos-vomito-1.mp3",
+   "inicio": 1525,
+   "frames": 505,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     190,
+     "El profe lo dice así: la clasificación por tipo de vómito les pueden preguntar. La"
+    ],
+    [
+     190,
+     367,
+     "regla es simple: el contenido te dice de dónde viene. Si sale comida casi entera,"
+    ],
+    [
+     367,
+     485,
+     "sin ácido, nunca llegó al estómago: viene del esófago."
+    ]
+   ],
+   "retener": [
+    "Alimenticio → esófago"
+   ]
+  },
+  {
+   "escena": 1,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/tipos-vomito-2.mp3",
+   "inicio": 2030,
+   "frames": 284,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     168,
+     "Si es ácido y parcialmente digerido, estuvo en el estómago. Pensá en una"
+    ],
+    [
+     168,
+     264,
+     "gastroparesia o en una obstrucción pilórica."
+    ]
+   ],
+   "retener": [
+    "Ácido y digerido → estómago"
+   ]
+  },
+  {
+   "escena": 1,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/tipos-vomito-3.mp3",
+   "inicio": 2314,
+   "frames": 461,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     176,
+     "Si es bilioso, amarillo verdoso y amargo, refluyó contenido del duodeno, que es"
+    ],
+    [
+     176,
+     345,
+     "donde llega la bilis. Por eso un síndrome pilórico no da vómitos biliosos: con el"
+    ],
+    [
+     345,
+     440,
+     "píloro cerrado, la bilis no llega al estómago."
+    ]
+   ],
+   "retener": [
+    "Bilioso → duodeno",
+    "Síndrome pilórico: nunca bilioso"
+   ]
+  },
+  {
+   "escena": 1,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/tipos-vomito-4.mp3",
+   "inicio": 2775,
+   "frames": 488,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     198,
+     "Si es hemático, mirá el color. Rojo es un sangrado activo. En borra de café es"
+    ],
+    [
+     198,
+     400,
+     "sangre que ya fue digerida por el ácido. La hematemesis siempre es un sangrado alto:"
+    ],
+    [
+     400,
+     467,
+     "esófago, estómago o duodeno."
+    ]
+   ],
+   "retener": [
+    "Rojo: sangrado activo",
+    "Borra de café: sangre digerida"
+   ]
+  },
+  {
+   "escena": 1,
+   "paso": 4,
+   "archivo": "media/dig-01/pasos/tipos-vomito-5.mp3",
+   "inicio": 3263,
+   "frames": 448,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     176,
+     "Y si es fecaloide, marrón y con olor a materia fecal, hay una obstrucción intestinal"
+    ],
+    [
+     176,
+     330,
+     "baja. Cuanto más abajo está el problema, más procesado llega el vómito: primero"
+    ],
+    [
+     330,
+     428,
+     "alimentario, después bilioso y al final fecaloide."
+    ]
+   ],
+   "retener": [
+    "Fecaloide → obstrucción baja"
+   ]
+  },
+  {
+   "escena": 2,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/horario-1.mp3",
+   "inicio": 3711,
+   "frames": 368,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     182,
+     "El horario también orienta. Por la mañana, en ayunas, el profe pide pensar siempre"
+    ],
+    [
+     182,
+     347,
+     "en tres cosas: embarazo, alcohol la noche anterior o hipertensión endocraneana."
+    ]
+   ],
+   "retener": [
+    "Matinal: embarazo, alcohol, HTE"
+   ]
+  },
+  {
+   "escena": 2,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/horario-2.mp3",
+   "inicio": 4079,
+   "frames": 156,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     138,
+     "Una hora después de comer, el problema suele estar en el estómago."
+    ]
+   ],
+   "retener": [
+    "1 h después → estómago"
+   ]
+  },
+  {
+   "escena": 2,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/horario-3.mp3",
+   "inicio": 4235,
+   "frames": 433,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     179,
+     "Varias horas después, con alimentos comidos antes, pensá en el píloro. El libro lo"
+    ],
+    [
+     179,
+     351,
+     "explica: en el síndrome pilórico el estómago no se vacía, y el vómito aparece cuatro"
+    ],
+    [
+     351,
+     413,
+     "a seis horas después de comer."
+    ]
+   ],
+   "retener": [
+    "Varias horas → píloro"
+   ]
+  },
+  {
+   "escena": 2,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/horario-4.mp3",
+   "inicio": 4668,
+   "frames": 325,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     194,
+     "Un vómito en chorro, sin náuseas y con cefalea, es hipertensión endocraneana. Y si"
+    ],
+    [
+     194,
+     305,
+     "al vomitar se calma el dolor, pensá en una úlcera."
+    ]
+   ],
+   "retener": [
+    "En chorro sin náuseas → HTE",
+    "Calma el dolor → úlcera"
+   ]
+  },
+  {
+   "escena": 3,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/hemat-hemop-1.mp3",
+   "inicio": 4993,
+   "frames": 356,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     206,
+     "Hematemesis contra hemoptisis. El profe lo dice claro: es pregunta de parcial, y ese"
+    ],
+    [
+     206,
+     336,
+     "cuadrito tienen que sabérselo. Lo armamos fila por fila."
+    ]
+   ],
+   "retener": [
+    "«Ese cuadrito tienen que sabérselo»"
+   ]
+  },
+  {
+   "escena": 3,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/hemat-hemop-2.mp3",
+   "inicio": 5349,
+   "frames": 306,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     216,
+     "Primero, cómo sale. La hematemesis sale con el vómito, precedida de náuseas. La"
+    ],
+    [
+     216,
+     286,
+     "hemoptisis sale con la tos."
+    ]
+   ],
+   "retener": [
+    "Vómito vs tos"
+   ]
+  },
+  {
+   "escena": 3,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/hemat-hemop-3.mp3",
+   "inicio": 5655,
+   "frames": 355,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     209,
+     "El aspecto. La hematemesis es oscura, en borra de café, con coágulos o restos de"
+    ],
+    [
+     209,
+     335,
+     "comida. La hemoptisis es roja rutilante y espumosa."
+    ]
+   ],
+   "retener": [
+    "Borra de café vs roja espumosa"
+   ]
+  },
+  {
+   "escena": 3,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/hemat-hemop-4.mp3",
+   "inicio": 6010,
+   "frames": 492,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     186,
+     "El porqué, que es lo que te deja defenderlo. En el estómago, el ácido transforma la"
+    ],
+    [
+     186,
+     360,
+     "hemoglobina en hematina ácida, y por eso la sangre se oscurece. La sangre de la vía"
+    ],
+    [
+     360,
+     472,
+     "aérea viene mezclada con aire, y por eso es espumosa."
+    ]
+   ],
+   "retener": [
+    "Hematina ácida",
+    "Aire → espuma"
+   ]
+  },
+  {
+   "escena": 3,
+   "paso": 4,
+   "archivo": "media/dig-01/pasos/hemat-hemop-5.mp3",
+   "inicio": 6502,
+   "frames": 434,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     208,
+     "La reacción: la hematemesis es ácida y la hemoptisis, alcalina. Ojo: en la grabación"
+    ],
+    [
+     208,
+     400,
+     "se escucha al revés, pero el cuadro del libro del profe dice esto. Respondé con el"
+    ],
+    [
+     400,
+     414,
+     "libro."
+    ]
+   ],
+   "retener": [
+    "Hematemesis ácida · hemoptisis alcalina"
+   ]
+  },
+  {
+   "escena": 3,
+   "paso": 5,
+   "archivo": "media/dig-01/pasos/hemat-hemop-6.mp3",
+   "inicio": 6936,
+   "frames": 376,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     159,
+     "Y después: a la hematemesis le sigue la melena, porque la sangre que pasa al"
+    ],
+    [
+     159,
+     307,
+     "intestino se digiere. Los antecedentes cierran el cuadro: digestivos en una,"
+    ],
+    [
+     307,
+     356,
+     "respiratorios en la otra."
+    ]
+   ],
+   "retener": [
+    "Después: melena"
+   ]
+  },
+  {
+   "escena": 4,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/complicaciones-1.mp3",
+   "inicio": 7312,
+   "frames": 328,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     178,
+     "Las complicaciones del vómito se preguntan en la cátedra, y todas salen de lo que se"
+    ],
+    [
+     178,
+     308,
+     "pierde. Con cada vómito se van ácido clorhídrico, agua y potasio."
+    ]
+   ],
+   "retener": [
+    "Se pierden HCl, agua y K⁺"
+   ]
+  },
+  {
+   "escena": 4,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/complicaciones-2.mp3",
+   "inicio": 7640,
+   "frames": 347,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     201,
+     "Si se pierde ácido, sobra bicarbonato: alcalosis metabólica. En el vómito gástrico"
+    ],
+    [
+     201,
+     327,
+     "predomina la pérdida de cloro, y por eso es alcalosis."
+    ]
+   ],
+   "retener": [
+    "Alcalosis metabólica"
+   ]
+  },
+  {
+   "escena": 4,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/complicaciones-3.mp3",
+   "inicio": 7987,
+   "frames": 286,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     204,
+     "La pérdida de potasio da hipopotasemia. Y la pérdida de agua, deshidratación, con"
+    ],
+    [
+     204,
+     266,
+     "taquicardia e hipotensión."
+    ]
+   ],
+   "retener": [
+    "Hipopotasemia",
+    "Deshidratación"
+   ]
+  },
+  {
+   "escena": 4,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/complicaciones-4.mp3",
+   "inicio": 8273,
+   "frames": 242,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     175,
+     "Si el paciente aspira el vómito, hace una neumonitis química, que puede terminar en"
+    ],
+    [
+     175,
+     223,
+     "una neumonía aspirativa."
+    ]
+   ],
+   "retener": [
+    "Aspiración → neumonía aspirativa"
+   ]
+  },
+  {
+   "escena": 5,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/mallory-weiss-1.mp3",
+   "inicio": 8515,
+   "frames": 281,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     198,
+     "El esfuerzo del vómito también puede romper el esófago. Mirá la pared: mucosa,"
+    ],
+    [
+     198,
+     261,
+     "submucosa y capa muscular."
+    ]
+   ],
+   "retener": []
+  },
+  {
+   "escena": 5,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/mallory-weiss-2.mp3",
+   "inicio": 8796,
+   "frames": 350,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     184,
+     "En el síndrome de Mallory-Weiss se desgarra, en forma lineal, la mucosa de la unión"
+    ],
+    [
+     184,
+     329,
+     "esofagogástrica. Como la mucosa sangra, se manifiesta con hematemesis."
+    ]
+   ],
+   "retener": [
+    "Mallory-Weiss: desgarro de la mucosa"
+   ]
+  },
+  {
+   "escena": 5,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/mallory-weiss-3.mp3",
+   "inicio": 9146,
+   "frames": 314,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     162,
+     "Su tríada es también su cronología, y el profe la da en la clase de hemorragias:"
+    ],
+    [
+     162,
+     296,
+     "primero el alcoholismo, después los vómitos, y al final la hematemesis."
+    ]
+   ],
+   "retener": [
+    "Tríada: alcoholismo → vómitos → hematemesis"
+   ]
+  },
+  {
+   "escena": 5,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/mallory-weiss-4.mp3",
+   "inicio": 9460,
+   "frames": 313,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     172,
+     "No lo confundas con el síndrome de Boerhaave: ahí se rompe todo el espesor de la"
+    ],
+    [
+     172,
+     293,
+     "pared, y el contenido pasa al mediastino. Es una emergencia."
+    ]
+   ],
+   "retener": [
+    "Boerhaave: todo el espesor"
+   ]
+  },
+  {
+   "escena": 6,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/disfagia-donde-1.mp3",
+   "inicio": 9773,
+   "frames": 520,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     181,
+     "Ahora la disfagia: la dificultad para que el alimento pase de la boca al estómago."
+    ],
+    [
+     181,
+     338,
+     "La primera pregunta es dónde se traba. En la disfagia orofaríngea, alta o de"
+    ],
+    [
+     338,
+     499,
+     "transferencia, el paciente no puede iniciar la deglución y señala la garganta."
+    ]
+   ],
+   "retener": [
+    "Orofaríngea = alta = transferencia"
+   ]
+  },
+  {
+   "escena": 6,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/disfagia-donde-2.mp3",
+   "inicio": 10293,
+   "frames": 527,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     164,
+     "El profe dice que estas características no pueden olvidarse: tos, ahogo,"
+    ],
+    [
+     164,
+     339,
+     "regurgitación por la nariz y disfonía. Le cuesta más con los líquidos, y el riesgo"
+    ],
+    [
+     339,
+     507,
+     "es la neumonía aspirativa. La causa número uno es el accidente cerebrovascular."
+    ]
+   ],
+   "retener": [
+    "Tos, ahogo, regurgitación nasal",
+    "ACV: causa n.º 1"
+   ]
+  },
+  {
+   "escena": 6,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/disfagia-donde-3.mp3",
+   "inicio": 10820,
+   "frames": 290,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     155,
+     "En la disfagia esofágica, baja o de transporte, el paciente traga bien, pero"
+    ],
+    [
+     155,
+     271,
+     "enseguida siente que la comida se atasca detrás del esternón."
+    ]
+   ],
+   "retener": [
+    "Esofágica = baja = transporte"
+   ]
+  },
+  {
+   "escena": 7,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/muro-motor-1.mp3",
+   "inicio": 11110,
+   "frames": 386,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     185,
+     "Si es esofágica, la siguiente pregunta es con qué alimentos. Pensá en un muro: si"
+    ],
+    [
+     185,
+     365,
+     "hay un obstáculo, como una estenosis o un tumor, el líquido pasa, pero el sólido no."
+    ]
+   ],
+   "retener": []
+  },
+  {
+   "escena": 7,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/muro-motor-2.mp3",
+   "inicio": 11496,
+   "frames": 317,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     192,
+     "Es la disfagia mecánica: solo para sólidos, continua y progresiva. La causa más"
+    ],
+    [
+     192,
+     297,
+     "frecuente es la estenosis péptica por reflujo."
+    ]
+   ],
+   "retener": [
+    "Mecánica: solo sólidos, progresiva",
+    "Estenosis péptica: n.º 1"
+   ]
+  },
+  {
+   "escena": 7,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/muro-motor-3.mp3",
+   "inicio": 11813,
+   "frames": 410,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     173,
+     "Ahora pensá en un motor roto: si falla el peristaltismo, nadie empuja, y no"
+    ],
+    [
+     173,
+     336,
+     "progresan ni el sólido ni el líquido. Es la disfagia motora: para sólidos y"
+    ],
+    [
+     336,
+     390,
+     "líquidos, e intermitente."
+    ]
+   ],
+   "retener": [
+    "Motora: sólidos y líquidos"
+   ]
+  },
+  {
+   "escena": 7,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/muro-motor-4.mp3",
+   "inicio": 12223,
+   "frames": 204,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     185,
+     "Entre las motoras están la acalasia, el espasmo esofágico difuso y la esclerodermia."
+    ]
+   ],
+   "retener": [
+    "Acalasia · espasmo difuso · esclerodermia"
+   ]
+  },
+  {
+   "escena": 8,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/acalasia-1.mp3",
+   "inicio": 12427,
+   "frames": 382,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     190,
+     "Hay un cuadro que, según el profe, siempre suelen preguntar: disfagia intermitente y"
+    ],
+    [
+     190,
+     363,
+     "lentamente progresiva para sólidos y líquidos, con regurgitación. Es la acalasia."
+    ]
+   ],
+   "retener": [
+    "«Lo que siempre suelen preguntar»"
+   ]
+  },
+  {
+   "escena": 8,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/acalasia-2.mp3",
+   "inicio": 12809,
+   "frames": 438,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     183,
+     "El porqué está en el libro: se altera el plexo mientérico de Auerbach. El esófago"
+    ],
+    [
+     183,
+     352,
+     "deja de contraerse y el esfínter esofágico inferior no se relaja. El alimento se"
+    ],
+    [
+     352,
+     418,
+     "acumula y el esófago se dilata."
+    ]
+   ],
+   "retener": [
+    "Plexo de Auerbach",
+    "Aperistalsis + EEI no se relaja"
+   ]
+  },
+  {
+   "escena": 8,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/acalasia-3.mp3",
+   "inicio": 13247,
+   "frames": 183,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     164,
+     "En la Argentina hay que pensar en la enfermedad de Chagas, que altera ese plexo."
+    ]
+   ],
+   "retener": [
+    "Argentina: Chagas"
+   ]
+  },
+  {
+   "escena": 8,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/acalasia-4.mp3",
+   "inicio": 13430,
+   "frames": 317,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     191,
+     "En el esofagograma con bario se ve un esófago grande, con nivel, que termina en pico"
+    ],
+    [
+     191,
+     297,
+     "de pájaro. La manometría confirma el diagnóstico."
+    ]
+   ],
+   "retener": [
+    "Pico de pájaro",
+    "Manometría confirma"
+   ]
+  },
+  {
+   "escena": 8,
+   "paso": 4,
+   "archivo": "media/dig-01/pasos/acalasia-5.mp3",
+   "inicio": 13747,
+   "frames": 280,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     171,
+     "Distinta es la imagen en manzana mordida, irregular y abrupta: hace sospechar un"
+    ],
+    [
+     171,
+     261,
+     "cáncer y obliga a una endoscopía con biopsia."
+    ]
+   ],
+   "retener": [
+    "Manzana mordida → cáncer"
+   ]
+  },
+  {
+   "escena": 9,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/dispepsia-1.mp3",
+   "inicio": 14027,
+   "frames": 415,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     178,
+     "La dispepsia es el famoso dolor de la boca del estómago: siempre del ombligo para"
+    ],
+    [
+     178,
+     351,
+     "arriba. Es funcional en seis de cada diez casos; en la orgánica, la causa número uno"
+    ],
+    [
+     351,
+     394,
+     "es la úlcera péptica."
+    ]
+   ],
+   "retener": [
+    "Epigastrio",
+    "Funcional 60 % · úlcera n.º 1"
+   ]
+  },
+  {
+   "escena": 9,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/dispepsia-2.mp3",
+   "inicio": 14442,
+   "frames": 464,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     188,
+     "Según los criterios de Roma, se define por cuatro síntomas. Plenitud posprandial y"
+    ],
+    [
+     188,
+     344,
+     "saciedad precoz forman el síndrome de distrés posprandial. Dolor y ardor"
+    ],
+    [
+     344,
+     444,
+     "epigástrico, el síndrome de dolor epigástrico."
+    ]
+   ],
+   "retener": [
+    "Roma: 4 síntomas"
+   ]
+  },
+  {
+   "escena": 9,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/dispepsia-3.mp3",
+   "inicio": 14906,
+   "frames": 300,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     154,
+     "Los síntomas tienen que estar presentes en los últimos tres meses, haber empezado al"
+    ],
+    [
+     154,
+     281,
+     "menos seis meses antes, y no tener una lesión estructural que los explique."
+    ]
+   ],
+   "retener": [
+    "3 meses · inicio ≥ 6 meses"
+   ]
+  },
+  {
+   "escena": 9,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/dispepsia-4.mp3",
+   "inicio": 15206,
+   "frames": 254,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     176,
+     "Para la clínica, el profe usa una regla simple: siempre digo las dos D y la P."
+    ],
+    [
+     176,
+     235,
+     "Dolor, distensión y pirosis."
+    ]
+   ],
+   "retener": [
+    "2 D + P: dolor, distensión, pirosis"
+   ]
+  },
+  {
+   "escena": 10,
+   "paso": 0,
+   "archivo": "media/dig-01/pasos/alarma-1.mp3",
+   "inicio": 15460,
+   "frames": 516,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     158,
+     "Lo que define la conducta en una dispepsia son los signos de alarma: vómitos"
+    ],
+    [
+     158,
+     320,
+     "persistentes, ictericia, disfagia progresiva, anemia, pérdida de peso, edad mayor de"
+    ],
+    [
+     320,
+     478,
+     "cincuenta y cinco años, sangrado, y el uso de antiinflamatorios o los antecedentes"
+    ],
+    [
+     478,
+     497,
+     "de cáncer."
+    ]
+   ],
+   "retener": [
+    "Signos de alarma"
+   ]
+  },
+  {
+   "escena": 10,
+   "paso": 1,
+   "archivo": "media/dig-01/pasos/alarma-2.mp3",
+   "inicio": 15976,
+   "frames": 453,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     207,
+     "Una forma de recordarlos: una vida que pesa lleva a la VEDA. Vida: vómitos,"
+    ],
+    [
+     207,
+     385,
+     "ictericia, disfagia, anemia. Pesa: pérdida de peso, edad, sangrado y"
+    ],
+    [
+     385,
+     433,
+     "antiinflamatorios."
+    ]
+   ],
+   "retener": [
+    "VIDA que PESA → VEDA"
+   ]
+  },
+  {
+   "escena": 10,
+   "paso": 2,
+   "archivo": "media/dig-01/pasos/alarma-3.mp3",
+   "inicio": 16429,
+   "frames": 187,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     168,
+     "Si hay alarma, se hace una videoendoscopía digestiva alta con biopsias."
+    ]
+   ],
+   "retener": [
+    "Alarma → VEDA con biopsias"
+   ]
+  },
+  {
+   "escena": 10,
+   "paso": 3,
+   "archivo": "media/dig-01/pasos/alarma-4.mp3",
+   "inicio": 16616,
+   "frames": 483,
+   "lead": 8,
+   "cues": [
+    [
+     11,
+     184,
+     "Si el paciente es joven y no tiene alarma, se busca Helicobacter pylori con una"
+    ],
+    [
+     184,
+     357,
+     "prueba no invasiva. Si es positiva, se trata. Si es negativa, inhibidores de la"
+    ],
+    [
+     357,
+     462,
+     "bomba de protones, y si no responde, endoscopía."
+    ]
+   ],
+   "retener": [
+    "Sin alarma → H. pylori"
+   ]
+  }
+ ]
+}

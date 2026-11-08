@@ -1,5 +1,4 @@
-import type { ComponentType } from 'react';
-import type { Deck } from './video/kit';
+import type { Escena } from './escenas/tipos';
 
 /** Prioridad pedagógica de un subtema.
  *  - imprescindible: el profesor indica expresamente que se evalúa o lo enfatiza.
@@ -30,7 +29,6 @@ export type Block =
   | { t: 'list'; items: Inline[]; ordered?: boolean }
   | { t: 'def'; term: string; text: Inline; refs?: SourceRef[] }
   | { t: 'callout'; kind: CalloutKind; title?: string; text?: Inline; items?: Inline[]; refs?: SourceRef[] }
-  | { t: 'diagram'; id: string; caption?: Inline }
   | { t: 'table'; head: string[]; rows: Inline[][]; caption?: Inline }
   | { t: 'cards'; items: { title: string; text: Inline; tone?: Tone; tag?: string }[]; cols?: 2 | 3 | 4 }
   | { t: 'steps'; title?: string; items: { title: string; text: Inline }[] }
@@ -38,27 +36,7 @@ export type Block =
   | { t: 'compare'; title?: string; cols: { title: string; tone?: Tone; items: Inline[] }[] }
   | { t: 'accordion'; items: { title: string; blocks: Block[] }[] }
   | { t: 'case'; title: string; text: Inline; question?: Inline; answer?: Inline }
-  | { t: 'kv'; items: { k: string; v: Inline }[] }
-  /** Diapositivas animadas (escenas Remotion del capítulo), cargadas bajo demanda. */
-  | { t: 'slides'; ids: string[]; title: string; caption?: Inline };
-
-export interface TheorySection {
-  id: string;
-  title: string;
-  kicker?: string;
-  priority: Priority;
-  summary?: Inline;
-  blocks: Block[];
-  refs?: SourceRef[];
-}
-
-export interface ConceptMapData {
-  center: string;
-  why: Inline;
-  prereqs: { label: string; detail?: Inline; chapterId?: string }[];
-  branches: { id: string; label: string; tone: Tone; items: string[] }[];
-  outcomes: Inline[];
-}
+  | { t: 'kv'; items: { k: string; v: Inline }[] };
 
 export interface MCQ {
   id: string;
@@ -84,8 +62,8 @@ export interface Development {
   prio?: ExamPrio;
   /** Frase textual del profesor sobre esta pregunta (verificada en la transcripción). */
   quote?: { text: string; refs: SourceRef[] };
-  /** Ficha de teoría donde se estudia (id de TheorySection). */
-  ficha?: string;
+  /** Cuadro del capítulo donde se repasa (id de Cuadro). */
+  cuadro?: string;
   answer: Block[];
   keyPoints?: Inline[];
   refs?: SourceRef[];
@@ -110,20 +88,29 @@ export interface VideoMeta {
   script: { title: string; text: string }[];
 }
 
-export interface ClosingData {
-  map: { center: string; nodes: { label: string; tone: Tone; items: string[] }[] };
-  essentials: Inline[];
-  links: { chapterId?: string; text: Inline }[];
-  pitfalls: Inline[];
-  miniExam: MCQ[];
-}
-
-export interface QuickRef {
-  title: string;
+/** Cuadro de consulta: lo que hay que saber de memoria, con el porqué al lado. */
+export interface Cuadro {
+  id: string;
+  titulo: string;
+  prio?: ExamPrio;
+  /** Frase textual del profesor (verificada en la transcripción). */
+  quote?: { text: string; refs: SourceRef[] };
   head: string[];
   rows: Inline[][];
+  /** Fisiopatología del libro: para defender la respuesta. */
+  porque?: Inline;
+  nota?: Inline;
+  refs?: SourceRef[];
 }
 
+/** «Sabete esto»: lo mínimo del capítulo, en bloques que se pueden tapar para practicar. */
+export interface Esencial {
+  objetivo: Inline;
+  avisos?: { text: Inline; refs?: SourceRef[] }[];
+  bloques: { titulo: string; tono: Tone; prio?: ExamPrio; puntos: { k: Inline; v: Inline }[] }[];
+}
+
+/** Capítulo: se recorre por pasos (Sabete esto · Teoría · Video · Cuadros · Choice · Desarrollo · Repaso). */
 export interface Chapter {
   id: string;
   systemId: string;
@@ -131,19 +118,18 @@ export interface Chapter {
   subtitle: string;
   estimatedMinutes: number;
   sources: SourceRef[];
-  map: ConceptMapData;
-  bases?: { intro: Inline; sections: TheorySection[] };
-  theory: TheorySection[];
-  quickRef?: QuickRef[];
+  esencial: Esencial;
+  /** Teoría paso a paso (las mismas escenas del video). */
+  escenas: Escena[];
+  cuadros: Cuadro[];
   video?: VideoMeta;
   mcq: MCQ[];
   developments: Development[];
   memory: MemoryItem[];
+  /** Errores que pueden aparecer en el examen. */
+  trampas: Inline[];
+  links?: { chapterId?: string; text: Inline }[];
   maneuvers?: { ids: string[]; note: Inline };
-  closing: ClosingData;
-  diagrams: Record<string, ComponentType>;
-  /** Escenas animadas compartidas con el video (se importan solo al abrir una diapositiva). */
-  slides?: () => Promise<{ default: Deck }>;
 }
 
 export interface ChapterMeta {

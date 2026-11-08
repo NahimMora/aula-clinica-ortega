@@ -2,89 +2,97 @@
   "src": "media/dig-01.mp4",
   "poster": "media/dig-01-poster.jpg",
   "vtt": "media/dig-01.vtt",
-  "duration": "6:18 min",
+  "duration": "9:35 min",
   "chapters": [
     {
-      "t": 0,
-      "label": "Lo que toma el profe"
+      "t": 3,
+      "label": "Qué es y qué no es un vómito"
     },
     {
-      "t": 24,
-      "label": "Qué contiene y cuándo aparece"
+      "t": 50,
+      "label": "Tipos de vómito: el contenido dice de dónde viene"
     },
     {
-      "t": 69,
+      "t": 123,
+      "label": "Cuándo aparece el vómito"
+    },
+    {
+      "t": 166,
       "label": "Hematemesis vs hemoptisis"
     },
     {
-      "t": 109,
-      "label": "Complicaciones y Mallory-Weiss"
+      "t": 243,
+      "label": "Complicaciones del vómito: el porqué"
     },
     {
-      "t": 150,
-      "label": "¿Dónde se traba?"
+      "t": 283,
+      "label": "Mallory-Weiss y Boerhaave"
     },
     {
-      "t": 181,
-      "label": "Mecánica o motora"
+      "t": 325,
+      "label": "Disfagia: ¿dónde se traba?"
     },
     {
-      "t": 228,
-      "label": "Acalasia y esofagograma"
+      "t": 370,
+      "label": "Mecánica o motora: muro o motor"
     },
     {
-      "t": 271,
-      "label": "Dispepsia y criterios de Roma"
+      "t": 414,
+      "label": "Acalasia: la que siempre suelen preguntar"
     },
     {
-      "t": 311,
+      "t": 467,
+      "label": "Dispepsia: Roma y las 2 D + P"
+    },
+    {
+      "t": 515,
       "label": "Signos de alarma y conducta"
-    },
-    {
-      "t": 353,
-      "label": "Lo que no puede faltar"
     }
   ],
   "script": [
     {
-      "title": "Lo que toma el profe",
-      "text": "Vómitos, disfagia y dispepsia. El profe remarca que digestivo es una de las unidades más preguntadas en parciales y finales. De este tema se toman sobre todo cuatro cosas: los tipos de vómito, el cuadro de hematemesis contra hemoptisis, la tríada de Mallory-Weiss y la acalasia. Vamos directo a eso, con el porqué de cada una."
+      "title": "Qué es y qué no es un vómito",
+      "text": "Empezamos por las definiciones, que el preguntero pide tal cual. El vómito, o emesis, es la expulsión violenta por la boca del contenido gástrico o duodenal, con participación de la musculatura abdominal. La náusea es la sensación desagradable de querer vomitar, y casi siempre lo precede. Por eso el profe remarca que un vómito sin náuseas previas es llamativo. Antes del vómito aparecen las arcadas, que son contracciones del abdomen. Y no hay que confundirlo con la regurgitación: ahí el contenido vuelve a la boca sin ningún esfuerzo. En la rumiación, el paciente vuelve a tragar lo que regurgitó. Entonces, lo que define al vómito es el esfuerzo."
     },
     {
-      "title": "Qué contiene y cuándo aparece",
-      "text": "El contenido del vómito indica de dónde viene. Si sale la comida casi entera, sin ácido, viene del esófago. Si es ácido y parcialmente digerido, del estómago. Si es bilioso, amarillo verdoso y amargo, hubo reflujo de contenido duodenal: por eso un síndrome pilórico no da vómitos biliosos. Si es rojo, hay un sangrado activo; si es en borra de café, la sangre ya fue digerida. Y si es fecaloide, pensamos en una obstrucción intestinal baja. El horario también orienta: por la mañana en ayunas, embarazo, alcohol o hipertensión endocraneana; una hora después de comer, el estómago; varias horas después, el píloro."
+      "title": "Tipos de vómito: el contenido dice de dónde viene",
+      "text": "El profe lo dice así: la clasificación por tipo de vómito les pueden preguntar. La regla es simple: el contenido te dice de dónde viene. Si sale comida casi entera, sin ácido, nunca llegó al estómago: viene del esófago. Si es ácido y parcialmente digerido, estuvo en el estómago. Pensá en una gastroparesia o en una obstrucción pilórica. Si es bilioso, amarillo verdoso y amargo, refluyó contenido del duodeno, que es donde llega la bilis. Por eso un síndrome pilórico no da vómitos biliosos: con el píloro cerrado, la bilis no llega al estómago. Si es hemático, mirá el color. Rojo es un sangrado activo. En borra de café es sangre que ya fue digerida por el ácido. La hematemesis siempre es un sangrado alto: esófago, estómago o duodeno. Y si es fecaloide, marrón y con olor a materia fecal, hay una obstrucción intestinal baja. Cuanto más abajo está el problema, más procesado llega el vómito: primero alimentario, después bilioso y al final fecaloide."
+    },
+    {
+      "title": "Cuándo aparece el vómito",
+      "text": "El horario también orienta. Por la mañana, en ayunas, el profe pide pensar siempre en tres cosas: embarazo, alcohol la noche anterior o hipertensión endocraneana. Una hora después de comer, el problema suele estar en el estómago. Varias horas después, con alimentos comidos antes, pensá en el píloro. El libro lo explica: en el síndrome pilórico el estómago no se vacía, y el vómito aparece cuatro a seis horas después de comer. Un vómito en chorro, sin náuseas y con cefalea, es hipertensión endocraneana. Y si al vomitar se calma el dolor, pensá en una úlcera."
     },
     {
       "title": "Hematemesis vs hemoptisis",
-      "text": "Hematemesis contra hemoptisis. El profe lo dice claro: es pregunta de parcial, y ese cuadrito tienen que sabérselo. La hematemesis sale con el vómito, precedida de náuseas; la hemoptisis, con la tos. La hematemesis es oscura, en borra de café, con coágulos o restos de comida, porque el ácido del estómago transforma la hemoglobina en hematina ácida. La hemoptisis es roja rutilante y espumosa, porque viene mezclada con aire. La hematemesis es ácida y la hemoptisis, alcalina. Y después de una hematemesis aparece melena: la sangre se digiere en el intestino."
+      "text": "Hematemesis contra hemoptisis. El profe lo dice claro: es pregunta de parcial, y ese cuadrito tienen que sabérselo. Lo armamos fila por fila. Primero, cómo sale. La hematemesis sale con el vómito, precedida de náuseas. La hemoptisis sale con la tos. El aspecto. La hematemesis es oscura, en borra de café, con coágulos o restos de comida. La hemoptisis es roja rutilante y espumosa. El porqué, que es lo que te deja defenderlo. En el estómago, el ácido transforma la hemoglobina en hematina ácida, y por eso la sangre se oscurece. La sangre de la vía aérea viene mezclada con aire, y por eso es espumosa. La reacción: la hematemesis es ácida y la hemoptisis, alcalina. Ojo: en la grabación se escucha al revés, pero el cuadro del libro del profe dice esto. Respondé con el libro. Y después: a la hematemesis le sigue la melena, porque la sangre que pasa al intestino se digiere. Los antecedentes cierran el cuadro: digestivos en una, respiratorios en la otra."
     },
     {
-      "title": "Complicaciones y Mallory-Weiss",
-      "text": "Las complicaciones del vómito se preguntan en la cátedra. Al vomitar se pierde ácido clorhídrico, agua y potasio. Por eso aparecen alcalosis metabólica, hipopotasemia y deshidratación. Si el paciente aspira el vómito, hace una neumonitis química que puede terminar en neumonía aspirativa. Y el esfuerzo puede lesionar el esófago. El síndrome de Mallory-Weiss tiene una tríada que también es su cronología: alcoholismo, vómitos y hematemesis, por un desgarro lineal de la mucosa esofagogástrica. En cambio, en el síndrome de Boerhaave se rompe todo el espesor de la pared: es una emergencia."
+      "title": "Complicaciones del vómito: el porqué",
+      "text": "Las complicaciones del vómito se preguntan en la cátedra, y todas salen de lo que se pierde. Con cada vómito se van ácido clorhídrico, agua y potasio. Si se pierde ácido, sobra bicarbonato: alcalosis metabólica. En el vómito gástrico predomina la pérdida de cloro, y por eso es alcalosis. La pérdida de potasio da hipopotasemia. Y la pérdida de agua, deshidratación, con taquicardia e hipotensión. Si el paciente aspira el vómito, hace una neumonitis química, que puede terminar en una neumonía aspirativa."
     },
     {
-      "title": "¿Dónde se traba?",
-      "text": "Por eso la primera pregunta ante una disfagia es: ¿dónde se traba? En la disfagia orofaríngea, también llamada alta o de transferencia, el paciente no puede iniciar la deglución, señala la garganta, tose, se ahoga y puede regurgitar por la nariz. Le cuesta más con los líquidos, y el gran riesgo es la neumonía aspirativa. En la disfagia esofágica, baja o de transporte, el paciente traga bien, pero enseguida siente que la comida se le atasca detrás del esternón."
+      "title": "Mallory-Weiss y Boerhaave",
+      "text": "El esfuerzo del vómito también puede romper el esófago. Mirá la pared: mucosa, submucosa y capa muscular. En el síndrome de Mallory-Weiss se desgarra, en forma lineal, la mucosa de la unión esofagogástrica. Como la mucosa sangra, se manifiesta con hematemesis. Su tríada es también su cronología, y el profe la da en la clase de hemorragias: primero el alcoholismo, después los vómitos, y al final la hematemesis. No lo confundas con el síndrome de Boerhaave: ahí se rompe todo el espesor de la pared, y el contenido pasa al mediastino. Es una emergencia."
     },
     {
-      "title": "Mecánica o motora",
-      "text": "Si la disfagia es esofágica, la siguiente pregunta es: ¿con qué alimentos? Pensemos en un muro y en un motor. Si hay un obstáculo, como una estenosis o un tumor, el líquido pasa, pero el sólido no. Es la disfagia mecánica: solo para sólidos, continua y progresiva, que se alivia cuando el paciente regurgita. Si lo que falla es el peristaltismo, no hay quién empuje, y ni el sólido ni el líquido progresan. Es la disfagia motora: para sólidos y líquidos, intermitente e impredecible. La causa más frecuente de disfagia mecánica es la estenosis péptica por reflujo. Entre las motoras están la acalasia, el espasmo esofágico difuso y la esclerodermia."
+      "title": "Disfagia: ¿dónde se traba?",
+      "text": "Ahora la disfagia: la dificultad para que el alimento pase de la boca al estómago. La primera pregunta es dónde se traba. En la disfagia orofaríngea, alta o de transferencia, el paciente no puede iniciar la deglución y señala la garganta. El profe dice que estas características no pueden olvidarse: tos, ahogo, regurgitación por la nariz y disfonía. Le cuesta más con los líquidos, y el riesgo es la neumonía aspirativa. La causa número uno es el accidente cerebrovascular. En la disfagia esofágica, baja o de transporte, el paciente traga bien, pero enseguida siente que la comida se atasca detrás del esternón."
     },
     {
-      "title": "Acalasia y esofagograma",
-      "text": "Hay un cuadro que, según el profe, siempre suelen preguntar: disfagia lentamente progresiva para sólidos y líquidos, con regurgitación. Es la acalasia. Se altera el plexo mientérico: el esófago deja de contraerse y el esfínter inferior no se relaja. El alimento se acumula y el esófago se dilata. En la Argentina hay que pensar en la enfermedad de Chagas. En el esofagograma con bario se ve un esófago grande, con nivel, que termina en pico de pájaro, y la manometría confirma el diagnóstico. Distinta es la imagen en manzana mordida, irregular y abrupta, que hace sospechar un cáncer y obliga a una endoscopía con biopsia."
+      "title": "Mecánica o motora: muro o motor",
+      "text": "Si es esofágica, la siguiente pregunta es con qué alimentos. Pensá en un muro: si hay un obstáculo, como una estenosis o un tumor, el líquido pasa, pero el sólido no. Es la disfagia mecánica: solo para sólidos, continua y progresiva. La causa más frecuente es la estenosis péptica por reflujo. Ahora pensá en un motor roto: si falla el peristaltismo, nadie empuja, y no progresan ni el sólido ni el líquido. Es la disfagia motora: para sólidos y líquidos, e intermitente. Entre las motoras están la acalasia, el espasmo esofágico difuso y la esclerodermia."
     },
     {
-      "title": "Dispepsia y criterios de Roma",
-      "text": "La dispepsia es el famoso dolor de la boca del estómago, siempre del ombligo para arriba. Según los criterios de Roma, se define por cuatro síntomas: plenitud posprandial, saciedad precoz, dolor epigástrico y ardor epigástrico. Los dos primeros forman el síndrome de distrés posprandial; los otros dos, el síndrome de dolor epigástrico. Los síntomas deben estar presentes en los últimos tres meses, haber comenzado al menos seis meses antes, y no tener una lesión estructural que los explique. Para la clínica, el profe usa una regla simple: las dos D y la P. Dolor, distensión y pirosis."
+      "title": "Acalasia: la que siempre suelen preguntar",
+      "text": "Hay un cuadro que, según el profe, siempre suelen preguntar: disfagia intermitente y lentamente progresiva para sólidos y líquidos, con regurgitación. Es la acalasia. El porqué está en el libro: se altera el plexo mientérico de Auerbach. El esófago deja de contraerse y el esfínter esofágico inferior no se relaja. El alimento se acumula y el esófago se dilata. En la Argentina hay que pensar en la enfermedad de Chagas, que altera ese plexo. En el esofagograma con bario se ve un esófago grande, con nivel, que termina en pico de pájaro. La manometría confirma el diagnóstico. Distinta es la imagen en manzana mordida, irregular y abrupta: hace sospechar un cáncer y obliga a una endoscopía con biopsia."
+    },
+    {
+      "title": "Dispepsia: Roma y las 2 D + P",
+      "text": "La dispepsia es el famoso dolor de la boca del estómago: siempre del ombligo para arriba. Es funcional en seis de cada diez casos; en la orgánica, la causa número uno es la úlcera péptica. Según los criterios de Roma, se define por cuatro síntomas. Plenitud posprandial y saciedad precoz forman el síndrome de distrés posprandial. Dolor y ardor epigástrico, el síndrome de dolor epigástrico. Los síntomas tienen que estar presentes en los últimos tres meses, haber empezado al menos seis meses antes, y no tener una lesión estructural que los explique. Para la clínica, el profe usa una regla simple: siempre digo las dos D y la P. Dolor, distensión y pirosis."
     },
     {
       "title": "Signos de alarma y conducta",
-      "text": "Lo que define la conducta son los signos de alarma: vómitos persistentes, ictericia, disfagia progresiva, anemia, pérdida de peso, edad mayor de cincuenta y cinco años, sangrado, y el uso de antiinflamatorios o los antecedentes de cáncer. Una forma de recordarlos: una vida que pesa lleva a la VEDA. Si hay alarma, se hace una videoendoscopía digestiva alta con biopsias. Si el paciente es joven y no tiene alarma, se busca Helicobacter pylori con una prueba no invasiva. Si es positiva, se trata. Si es negativa, se indican inhibidores de la bomba de protones y, si no responde, endoscopía."
-    },
-    {
-      "title": "Lo que no puede faltar",
-      "text": "Para cerrar, lo que no puede faltar. El cuadro de hematemesis contra hemoptisis. Los tipos de vómito y su horario. La tríada de Mallory-Weiss: alcoholismo, vómitos y hematemesis. Y la acalasia: sólidos y líquidos, lenta y progresiva, con regurgitación. Ahora, a responder las preguntas de examen del capítulo."
+      "text": "Lo que define la conducta en una dispepsia son los signos de alarma: vómitos persistentes, ictericia, disfagia progresiva, anemia, pérdida de peso, edad mayor de cincuenta y cinco años, sangrado, y el uso de antiinflamatorios o los antecedentes de cáncer. Una forma de recordarlos: una vida que pesa lleva a la VEDA. Vida: vómitos, ictericia, disfagia, anemia. Pesa: pérdida de peso, edad, sangrado y antiinflamatorios. Si hay alarma, se hace una videoendoscopía digestiva alta con biopsias. Si el paciente es joven y no tiene alarma, se busca Helicobacter pylori con una prueba no invasiva. Si es positiva, se trata. Si es negativa, inhibidores de la bomba de protones, y si no responde, endoscopía."
     }
   ]
 }

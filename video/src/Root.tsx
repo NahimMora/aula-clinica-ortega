@@ -1,42 +1,149 @@
+// Video del capítulo: las mismas escenas de Teoría (src/escenas), narradas paso a paso.
+// Render: npm run video:render -- dig-01 video/out/dig-01-master.mp4 --codec=h264 --crf=20
 import '@fontsource-variable/fraunces';
 import '@fontsource-variable/inter';
-import { useEffect, useState } from 'react';
-import { Composition, Series, continueRender, delayRender, staticFile } from 'remotion';
-import { DeckScene } from '../../src/video/DeckScene';
-import type { Deck } from '../../src/video/kit';
-import dig01 from '../../content/chapters/dig-01/slides';
+import { useEffect, useState, type CSSProperties } from 'react';
+import { AbsoluteFill, Audio, Composition, Sequence, continueRender, delayRender, interpolate, staticFile, useCurrentFrame } from 'remotion';
+import { Lienzo } from '../../src/escenas/Lienzo';
+import type { Escena } from '../../src/escenas/tipos';
+import { escenas as dig01 } from '../../content/chapters/dig-01/escenas';
+import tiempos01 from '../../content/chapters/dig-01/tiempos.json';
 
-const DECKS: Deck[] = [dig01];
-
-/** Espera a que carguen las fuentes antes de renderizar cada frame. */
-function useFonts() {
-  const [handle] = useState(() => delayRender('fuentes'));
-  useEffect(() => {
-    document.fonts.ready.then(() => continueRender(handle));
-  }, [handle]);
+interface Beat {
+  escena: number;
+  paso: number;
+  archivo: string;
+  inicio: number;
+  frames: number;
+  lead: number;
+  cues: [number, number, string][];
+  retener: string[];
+}
+interface Tiempos {
+  fps: number;
+  total: number;
+  portada: number;
+  cierre: number;
+  beats: Beat[];
+}
+interface Cap {
+  id: string;
+  titulo: string;
+  objetivo: string;
+  escenas: Escena[];
+  tiempos: Tiempos;
 }
 
-const FullVideo: React.FC<{ deck: Deck }> = ({ deck }) => {
-  useFonts();
-  return (
-    <Series>
-      {deck.timing.scenes.map((s) => (
-        <Series.Sequence key={s.id} durationInFrames={s.frames}>
-          <DeckScene deck={deck} sceneId={s.id} audioSrc={staticFile(s.audio)} />
-        </Series.Sequence>
-      ))}
-    </Series>
-  );
-};
+const CAPS: Cap[] = [
+  {
+    id: 'dig-01',
+    titulo: 'Vómitos, disfagia y dispepsia',
+    objetivo: 'Tipos de vómito · hematemesis vs hemoptisis · Mallory-Weiss · acalasia · dispepsia',
+    escenas: dig01,
+    tiempos: tiempos01 as Tiempos,
+  },
+];
 
-// Cada mazo se liga a su propio componente: las props de Remotion deben ser serializables
-// y el mazo contiene componentes React.
-const BOUND = DECKS.map((d) => ({ d, Video: () => <FullVideo deck={d} /> }));
+// Paleta oscura de la web (mismas variables que .lienzo en capitulo.css).
+const VARS = {
+  '--v-bg': '#1d1925', '--v-card': '#272130', '--v-ink': '#f3eef6', '--v-ink2': '#cfc5d8', '--v-ink3': '#9a8fa7', '--v-line': '#3d3549',
+  '--v-rose': '#f2a7be', '--v-rose-f': '#3a2431', '--v-lilac': '#c4b0f2', '--v-lilac-f': '#302747', '--v-sky': '#a3cbef', '--v-sky-f': '#203043',
+  '--v-mint': '#8fd4b5', '--v-mint-f': '#20352b', '--v-peach': '#f1b88b', '--v-peach-f': '#3a2b1f', '--v-red': '#ff6b7d', '--v-red-f': '#45202a',
+} as CSSProperties;
+const FONDO = '#16131b';
+const TINTA = '#f3eef6';
+const TINTA2 = '#cfc5d8';
+const ACENTO = '#f2a7be';
+const TIT = "'Fraunces Variable', Georgia, serif";
+const TXT = "'Inter Variable', 'Segoe UI', sans-serif";
+
+function useFuentes() {
+  const [h] = useState(() => delayRender('fuentes'));
+  useEffect(() => {
+    document.fonts.ready.then(() => continueRender(h));
+  }, [h]);
+}
+
+function Clase({ cap }: { cap: Cap }) {
+  useFuentes();
+  const frame = useCurrentFrame();
+  const T = cap.tiempos;
+  const beats = T.beats;
+  const primero = beats[0].inicio;
+  const ultimo = beats[beats.length - 1];
+  const fin = ultimo.inicio + ultimo.frames;
+  let idx = 0;
+  for (let i = 0; i < beats.length; i++) if (frame >= beats[i].inicio) idx = i;
+  const b = beats[idx];
+  const e = cap.escenas[b.escena];
+  const t = (frame - b.inicio) / T.fps;
+  const local = frame - b.inicio;
+  const cue = b.cues.find((q) => local >= q[0] && local < q[1] + 6)?.[2] ?? (local < b.lead + 4 ? b.cues[0]?.[2] : b.cues[b.cues.length - 1]?.[2]);
+  // Lo que queda anotado se acumula dentro de cada escena, como en una pizarra.
+  const notas = beats.slice(0, idx + 1).filter((x) => x.escena === b.escena).flatMap((x) => x.retener).slice(-7);
+  const portada = frame < primero;
+  const cierre = frame >= fin;
+  const pasosEscena = beats.filter((x) => x.escena === b.escena).length;
+  return (
+    <AbsoluteFill style={{ ...VARS, background: FONDO, color: TINTA, fontFamily: TXT }}>
+      {beats.map((x) => (
+        <Sequence key={x.archivo} from={x.inicio + x.lead} durationInFrames={x.frames}>
+          <Audio src={staticFile(x.archivo)} />
+        </Sequence>
+      ))}
+      {portada && (
+        <AbsoluteFill style={{ justifyContent: 'center', padding: '0 140px', opacity: interpolate(frame, [0, 12], [0, 1], { extrapolateRight: 'clamp' }) }}>
+          <div style={{ fontSize: 34, fontWeight: 700, color: ACENTO, letterSpacing: 2, textTransform: 'uppercase' }}>Aula Clínica · Semiología I</div>
+          <div style={{ fontFamily: TIT, fontWeight: 650, fontSize: 120, lineHeight: 1, marginTop: 14 }}>{cap.titulo}</div>
+          <div style={{ fontSize: 36, marginTop: 26, color: TINTA2 }}>{cap.objetivo}</div>
+          <div style={{ marginTop: 34, height: 10, width: 300, background: ACENTO, borderRadius: 5 }} />
+        </AbsoluteFill>
+      )}
+      {!portada && !cierre && (
+        <>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 96, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 48px', borderBottom: '2px solid #352e40' }}>
+            <div style={{ fontFamily: TIT, fontWeight: 650, fontSize: 48 }}>
+              <span style={{ color: ACENTO }}>{b.escena + 1}.</span> {e.titulo}
+            </div>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {Array.from({ length: pasosEscena }, (_, k) => (
+                <div key={k} style={{ width: 46, height: 8, borderRadius: 4, background: k <= b.paso ? ACENTO : '#352e40' }} />
+              ))}
+            </div>
+          </div>
+          <div style={{ position: 'absolute', top: 120, left: 40, width: 1260, borderRadius: 26, overflow: 'hidden', border: '2px solid #352e40' }}>
+            <Lienzo e={e} i={b.paso} t={t} titulo />
+          </div>
+          <div style={{ position: 'absolute', top: 124, left: 1340, right: 44, bottom: 200, display: 'flex', flexDirection: 'column', gap: 14 }}>
+            {notas.length > 0 && <div style={{ fontFamily: TIT, fontWeight: 650, fontSize: 40, color: ACENTO }}>Retené esto</div>}
+            {notas.map((n, k) => (
+              <div key={n + k} style={{ fontSize: 30, fontWeight: 700, lineHeight: 1.18, borderLeft: `6px solid ${ACENTO}`, paddingLeft: 14 }}>
+                {n}
+              </div>
+            ))}
+          </div>
+          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 170, background: '#0e0c12', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 80px', textAlign: 'center', fontSize: 42, fontWeight: 600, lineHeight: 1.22 }}>
+            {cue}
+          </div>
+        </>
+      )}
+      {cierre && (
+        <AbsoluteFill style={{ justifyContent: 'center', padding: '0 140px', opacity: interpolate(frame, [fin, fin + 10], [0, 1], { extrapolateRight: 'clamp' }) }}>
+          <div style={{ fontFamily: TIT, fontWeight: 650, fontSize: 96, lineHeight: 1.04 }}>Ahora cerrá el video y respondé las preguntas de examen en voz alta</div>
+          <div style={{ fontSize: 38, marginTop: 24, color: TINTA2 }}>Recordar sin pistas, en días distintos, es lo que fija.</div>
+        </AbsoluteFill>
+      )}
+    </AbsoluteFill>
+  );
+}
+
+// Cada capítulo se liga a su propio componente: las props de Remotion deben ser serializables.
+const BOUND = CAPS.map((cap) => ({ cap, Video: () => <Clase cap={cap} /> }));
 
 export const Root: React.FC = () => (
   <>
-    {BOUND.map(({ d, Video }) => (
-      <Composition key={d.chapterId} id={d.chapterId} component={Video} durationInFrames={d.timing.total} fps={d.timing.fps} width={1920} height={1080} />
+    {BOUND.map(({ cap, Video }) => (
+      <Composition key={cap.id} id={cap.id} component={Video} durationInFrames={cap.tiempos.total} fps={cap.tiempos.fps} width={1920} height={1080} />
     ))}
   </>
 );

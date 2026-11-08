@@ -1,11 +1,7 @@
-import { createContext, useContext, useState, type ComponentType } from 'react';
+import { useState } from 'react';
 import type { Block, CalloutKind, Priority } from '@/types';
 import { Rich, Refs } from './Rich';
 import { Icon } from './Icon';
-import { SlidesBlock } from './SlidesBlock';
-import { ErrorBoundary } from './ErrorBoundary';
-
-export const DiagramContext = createContext<Record<string, ComponentType>>({});
 
 const CALLOUT: Record<CalloutKind, { label: string; icon: string }> = {
   prof: { label: 'Énfasis del profesor', icon: 'cap' },
@@ -33,7 +29,6 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
 }
 
 function BlockView({ b }: { b: Block }) {
-  const diagrams = useContext(DiagramContext);
   switch (b.t) {
     case 'p':
       return (
@@ -99,25 +94,6 @@ function BlockView({ b }: { b: Block }) {
           )}
           <Refs refs={b.refs} />
         </aside>
-      );
-    }
-    case 'diagram': {
-      const D = diagrams[b.id];
-      return (
-        <figure className="diagram">
-          {D ? (
-            <ErrorBoundary label="el diagrama" compact>
-              <D />
-            </ErrorBoundary>
-          ) : (
-            <div className="diagram__missing">Diagrama no disponible: {b.id}</div>
-          )}
-          {b.caption && (
-            <figcaption>
-              <Rich text={b.caption} />
-            </figcaption>
-          )}
-        </figure>
       );
     }
     case 'table':
@@ -224,12 +200,6 @@ function BlockView({ b }: { b: Block }) {
       return <Accordion items={b.items} />;
     case 'case':
       return <CaseBlock b={b} />;
-    case 'slides':
-      return (
-        <ErrorBoundary label="la diapositiva" compact>
-          <SlidesBlock ids={b.ids} title={b.title} caption={b.caption} />
-        </ErrorBoundary>
-      );
     case 'kv':
       return (
         <dl className="kv">

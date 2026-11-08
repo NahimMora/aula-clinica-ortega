@@ -23,7 +23,7 @@ export function SystemPage() {
           <div className="sysp__actions">
             {anyPublished && sys.id !== 'maniobras' && sys.id !== 'soma' && (
               <Link className="btn btn--soft" to={`/manual/${sys.id}`}>
-                <Icon name="book" size={16} /> Manual web del sistema
+                <Icon name="book" size={16} /> Cuadros del sistema
               </Link>
             )}
             {anyPublished && sys.pdf && (

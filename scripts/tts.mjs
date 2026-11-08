@@ -1,33 +1,38 @@
-// Genera la narración TTS de un capítulo escena por escena y los datos de sincronización.
+// Narración TTS paso a paso a partir de las escenas del capítulo (content/chapters/<id>/escenas.ts).
 // Uso (desde la raíz): node scripts/tts.mjs dig-01
-// Entrada:  content/chapters/<id>/narration.json
 // Salidas:
-//   public/media/<id>/audio/NN-escena.mp3     → narración (video y diapositivas con narración)
-//   content/chapters/<id>/timing.json          → frames por escena y tiempo de cada oración
-//   public/media/<id>.vtt                      → subtítulos sincronizados del video
-//   content/chapters/<id>/video.json           → duración, capítulos y guion para la web
+//   public/media/<id>/pasos/<escena>-<n>.mp3   → audio de cada paso («Escuchar este paso» y video)
+//   content/chapters/<id>/tiempos.json         → fotogramas de cada paso para el video
+//   public/media/<id>.vtt                      → subtítulos del video
+//   content/chapters/<id>/video.json           → duración, temas y guion para la web
 //   sources/tts-cache/<id>/                    → .srt y hashes (no se publican)
+// Si el texto de un paso no cambió, no se vuelve a sintetizar.
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { join, resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { build } from 'esbuild';
 
 const FPS = 30;
-const LEAD = 12; // frames de silencio antes de la voz
-const TAIL = 24; // frames después de la voz
+const VOICE = 'es-AR-TomasNeural';
+const RATE = '-4%';
+const LEAD = 8; // fotogramas de silencio antes de la voz
+const TAIL = 18; // fotogramas después de la voz
+export const PORTADA = 96; // fotogramas de la portada
+export const CIERRE = 150; // fotogramas del cierre
+
 const id = process.argv[2];
 if (!id) throw new Error('Falta el id del capítulo');
 const chDir = join('content', 'chapters', id);
-const script = JSON.parse(readFileSync(join(chDir, 'narration.json'), 'utf8'));
-// Pronunciaciones fonéticas → texto correcto en los subtítulos.
-const FIX = [
-  ['Málori Uáis', 'Mallory-Weiss'],
-  ['Búrjave', 'Boerhaave'],
-];
-const audioDir = join('public', 'media', id, 'audio');
+const tmp = join('sources', 'tts-cache', id, 'escenas.mjs');
+mkdirSync(join('sources', 'tts-cache', id), { recursive: true });
+await build({ entryPoints: [join(chDir, 'escenas.ts')], bundle: true, format: 'esm', platform: 'node', outfile: tmp, logLevel: 'error' });
+const { escenas } = await import(pathToFileURL(resolve(tmp)).href + `?v=${Date.now()}`);
+
+const audioDir = join('public', 'media', id, 'pasos');
 const cacheDir = join('sources', 'tts-cache', id);
 mkdirSync(audioDir, { recursive: true });
-mkdirSync(cacheDir, { recursive: true });
 
 const srtTime = (s) => {
   const [h, m, rest] = s.split(':');
@@ -42,11 +47,7 @@ const parseSrt = (txt) =>
     .filter((l) => l.length >= 3)
     .map((l) => {
       const [a, b] = l[1].split(' --> ');
-      let text = l.slice(2).join(' ').trim();
-      for (const [x, y] of FIX) text = text.replaceAll(x, y);
-      // edge-tts omite el signo de apertura: se repone en preguntas.
-      text = text.replace(/(^|[.:;]\s+)([^.:;¿?]*\?)/g, (m, pre, q) => (q.trim().startsWith('¿') ? m : `${pre}¿${q.trimStart()}`));
-      return { start: srtTime(a), end: srtTime(b), text };
+      return { start: srtTime(a), end: srtTime(b), text: l.slice(2).join(' ').trim() };
     });
 const probe = (f) => Number(spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], { encoding: 'utf8' }).stdout.trim());
 const vttTime = (t) => {
@@ -55,76 +56,73 @@ const vttTime = (t) => {
   const s = (t % 60).toFixed(3).padStart(6, '0');
   return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${s}`;
 };
-/** Parte oraciones largas en subtítulos de ≤ 90 caracteres, repartiendo el tiempo por longitud. */
-function splitCue(c) {
-  if (c.text.length <= 90) return [c];
-  const parts = [];
+
+/** Reparte el texto visible (di) en subtítulos de ≤ 84 caracteres, con tiempos proporcionales a la voz. */
+function subtitulos(di, dur, srt) {
+  const partes = [];
   let cur = '';
-  for (const w of c.text.split(/\s+/)) {
+  for (const w of di.split(/\s+/)) {
     if ((cur + ' ' + w).trim().length > 84 && cur) {
-      parts.push(cur.trim());
+      partes.push(cur.trim());
       cur = w;
     } else cur = (cur + ' ' + w).trim();
   }
-  if (cur) parts.push(cur.trim());
-  const total = parts.reduce((s, p) => s + p.length, 0);
-  let t = c.start;
-  return parts.map((p) => {
-    const d = ((c.end - c.start) * p.length) / total;
-    const out = { start: t, end: t + d, text: p };
+  if (cur) partes.push(cur.trim());
+  const ini = srt.length ? srt[0].start : 0;
+  const fin = srt.length ? srt[srt.length - 1].end : dur;
+  const total = partes.reduce((s, p) => s + p.length, 0);
+  let t = ini;
+  return partes.map((p) => {
+    const d = ((fin - ini) * p.length) / total;
+    const c = { start: t, end: t + d, text: p };
     t += d;
-    return out;
+    return c;
   });
 }
 
-const scenes = [];
-let cursor = 0;
-for (const [i, sc] of script.scenes.entries()) {
-  const say = sc.say ?? sc.text;
-  const hash = createHash('sha1').update(script.voice + script.rate + say).digest('hex').slice(0, 10);
-  const name = `${String(i + 1).padStart(2, '0')}-${sc.id}`;
-  const mp3 = join(audioDir, `${name}.mp3`);
-  const srt = join(cacheDir, `${name}.srt`);
-  const stamp = join(cacheDir, `${name}.hash`);
-  const fresh = existsSync(mp3) && existsSync(srt) && existsSync(stamp) && readFileSync(stamp, 'utf8') === hash;
-  if (!fresh) {
-    process.stdout.write(`TTS ${sc.id}… `);
-    let ok = false;
-    for (let a = 0; a < 3 && !ok; a++) {
-      const r = spawnSync('edge-tts', ['--voice', script.voice, `--rate=${script.rate}`, '--text', say, '--write-media', mp3, '--write-subtitles', srt], { encoding: 'utf8' });
-      ok = r.status === 0 && existsSync(mp3);
-      if (!ok) console.log('reintento', r.stderr?.slice(0, 200));
+const usados = new Set();
+const beats = [];
+let cursor = PORTADA;
+for (const [ei, e] of escenas.entries()) {
+  for (const [pi, p] of e.pasos.entries()) {
+    const say = p.voz ?? p.di;
+    const name = `${e.id}-${pi + 1}`;
+    usados.add(`${name}.mp3`);
+    const mp3 = join(audioDir, `${name}.mp3`);
+    const srt = join(cacheDir, `${name}.srt`);
+    const stamp = join(cacheDir, `${name}.hash`);
+    const hash = createHash('sha1').update(VOICE + RATE + say).digest('hex').slice(0, 12);
+    const fresh = existsSync(mp3) && existsSync(srt) && existsSync(stamp) && readFileSync(stamp, 'utf8') === hash;
+    if (!fresh) {
+      process.stdout.write(`TTS ${name}… `);
+      let ok = false;
+      for (let a = 0; a < 4 && !ok; a++) {
+        const r = spawnSync('edge-tts', ['--voice', VOICE, `--rate=${RATE}`, '--text', say, '--write-media', mp3, '--write-subtitles', srt], { encoding: 'utf8' });
+        ok = r.status === 0 && existsSync(mp3) && probe(mp3) > 0.5;
+        if (!ok) console.log('reintento', r.stderr?.slice(0, 160));
+      }
+      if (!ok) throw new Error(`No se pudo sintetizar ${name}`);
+      writeFileSync(stamp, hash);
+      console.log('ok');
     }
-    if (!ok) throw new Error(`No se pudo sintetizar ${sc.id}`);
-    writeFileSync(stamp, hash);
-    console.log('ok');
+    const dur = probe(mp3);
+    const frames = LEAD + Math.ceil(dur * FPS) + TAIL;
+    const cues = subtitulos(p.di, dur, parseSrt(readFileSync(srt, 'utf8'))).map((c) => [LEAD + Math.round(c.start * FPS), LEAD + Math.round(c.end * FPS), c.text]);
+    beats.push({ escena: ei, paso: pi, archivo: `media/${id}/pasos/${name}.mp3`, inicio: cursor, frames, lead: LEAD, cues, retener: p.retener ?? [] });
+    cursor += frames;
   }
-  const dur = probe(mp3);
-  const cues = parseSrt(readFileSync(srt, 'utf8'));
-  const frames = LEAD + Math.ceil(dur * FPS) + TAIL;
-  scenes.push({
-    id: sc.id,
-    title: sc.title,
-    from: cursor,
-    frames,
-    audio: `media/${id}/audio/${name}.mp3`,
-    audioFrom: LEAD,
-    cues: cues.map((c) => ({ start: LEAD + Math.round(c.start * FPS), end: LEAD + Math.round(c.end * FPS), text: c.text })),
-  });
-  cursor += frames;
 }
-const total = cursor;
-writeFileSync(join(chDir, 'timing.json'), JSON.stringify({ fps: FPS, total, scenes }, null, 1));
+// Audios de pasos que ya no existen.
+for (const f of readdirSync(audioDir)) if (!usados.has(f)) rmSync(join(audioDir, f));
+
+const total = cursor + CIERRE;
+writeFileSync(join(chDir, 'tiempos.json'), JSON.stringify({ fps: FPS, total, portada: PORTADA, cierre: CIERRE, beats }, null, 1));
 
 let vtt = 'WEBVTT\n\n';
 let n = 1;
-for (const s of scenes) {
-  for (const c0 of s.cues) {
-    for (const c of splitCue(c0)) {
-      const a = (s.from + c.start) / FPS;
-      const b = Math.min((s.from + c.end) / FPS, (s.from + s.frames) / FPS);
-      vtt += `${n++}\n${vttTime(a)} --> ${vttTime(b)}\n${c.text}\n\n`;
-    }
+for (const b of beats) {
+  for (const [a, z, text] of b.cues) {
+    vtt += `${n++}\n${vttTime((b.inicio + a) / FPS)} --> ${vttTime(Math.min(b.inicio + z, b.inicio + b.frames) / FPS)}\n${text}\n\n`;
   }
 }
 writeFileSync(join('public', 'media', `${id}.vtt`), vtt);
@@ -135,8 +133,8 @@ const meta = {
   poster: `media/${id}-poster.jpg`,
   vtt: `media/${id}.vtt`,
   duration: `${Math.floor(secs / 60)}:${String(Math.round(secs % 60)).padStart(2, '0')} min`,
-  chapters: scenes.map((s) => ({ t: Math.round(s.from / FPS), label: s.title })),
-  script: script.scenes.map((s) => ({ title: s.title, text: s.text })),
+  chapters: escenas.map((e, ei) => ({ t: Math.floor(beats.find((b) => b.escena === ei).inicio / FPS), label: e.titulo })),
+  script: escenas.map((e) => ({ title: e.titulo, text: e.pasos.map((p) => p.di).join(' ') })),
 };
 writeFileSync(join(chDir, 'video.json'), JSON.stringify(meta, null, 2));
-console.log(`Total: ${total} frames (${meta.duration}) · ${scenes.length} escenas · ${n - 1} subtítulos`);
+console.log(`Total: ${total} fotogramas (${meta.duration}) · ${beats.length} pasos · ${n - 1} subtítulos`);

@@ -37,9 +37,6 @@ export function blocksText(blocks: Block[]): string {
         if (b.text) out.push(b.text);
         if (b.items) out.push(...b.items);
         break;
-      case 'diagram':
-        if (b.caption) out.push(b.caption);
-        break;
       case 'table':
         out.push(b.head.join(' '), ...b.rows.map((r) => r.join(' ')));
         break;
@@ -67,9 +64,6 @@ export function blocksText(blocks: Block[]): string {
       case 'kv':
         b.items.forEach((i) => out.push(i.k, i.v));
         break;
-      case 'slides':
-        out.push(b.title, b.caption ?? '');
-        break;
     }
   };
   blocks.forEach(walk);
@@ -81,19 +75,18 @@ export interface SearchDoc {
   chapterTitle: string;
   sectionId: string;
   title: string;
-  kind: 'Teoría' | 'Bases' | 'Choice' | 'Desarrollo' | 'Memoria' | 'Consulta';
+  kind: 'Teoría' | 'Cuadro' | 'Choice' | 'Desarrollo' | 'Memoria';
   text: string;
 }
 
 export function chapterDocs(c: Chapter): SearchDoc[] {
   const base = { chapterId: c.id, chapterTitle: c.title };
   const docs: SearchDoc[] = [];
-  (c.bases?.sections ?? []).forEach((s) => docs.push({ ...base, sectionId: `t-${s.id}`, title: s.title, kind: 'Bases', text: blocksText(s.blocks) }));
-  c.theory.forEach((s) => docs.push({ ...base, sectionId: `t-${s.id}`, title: s.title, kind: 'Teoría', text: blocksText(s.blocks) }));
-  (c.quickRef ?? []).forEach((q, i) => docs.push({ ...base, sectionId: 'consulta', title: q.title, kind: 'Consulta', text: plain([q.head.join(' '), ...q.rows.map((r) => r.join(' '))].join(' ')) + ' ' + i }));
+  c.escenas.forEach((e) => docs.push({ ...base, sectionId: 'teoria', title: e.titulo, kind: 'Teoría', text: e.pasos.map((p) => p.di).join(' ') }));
+  c.cuadros.forEach((q) => docs.push({ ...base, sectionId: 'cuadros', title: q.titulo, kind: 'Cuadro', text: plain([q.head.join(' '), ...q.rows.map((r) => r.join(' ')), q.porque ?? ''].join(' ')) }));
   c.mcq.forEach((q) => docs.push({ ...base, sectionId: 'choice', title: plain(q.stem).slice(0, 90), kind: 'Choice', text: plain([q.stem, ...q.options.map((o) => o.text + ' ' + o.why)].join(' ')) }));
-  c.developments.forEach((d) => docs.push({ ...base, sectionId: 'desarrollos', title: plain(d.question), kind: 'Desarrollo', text: blocksText(d.answer) }));
-  c.memory.forEach((m) => docs.push({ ...base, sectionId: 'memoria', title: m.title, kind: 'Memoria', text: plain([m.purpose, m.interpret, m.mnemonic.hook, m.mnemonic.explain].join(' ')) + ' ' + blocksText(m.evaluates) }));
+  c.developments.forEach((d) => docs.push({ ...base, sectionId: 'desarrollo', title: plain(d.question), kind: 'Desarrollo', text: blocksText(d.answer) }));
+  c.memory.forEach((m) => docs.push({ ...base, sectionId: 'repaso', title: m.title, kind: 'Memoria', text: plain([m.purpose, m.interpret, m.mnemonic.hook, m.mnemonic.explain].join(' ')) + ' ' + blocksText(m.evaluates) }));
   return docs;
 }
 

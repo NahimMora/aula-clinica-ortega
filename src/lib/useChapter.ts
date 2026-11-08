@@ -1,8 +1,36 @@
 import { useEffect, useState } from 'react';
-import type { Chapter } from '@/types';
+import type { Chapter, MCQ } from '@/types';
 import { chapterLoader, findChapter, isAvailable, publishedChapters } from '@content/curriculum';
 
 const cache = new Map<string, Chapter>();
+
+/** Hash FNV-1a: semilla estable por pregunta. */
+function hash(s: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
+  return h >>> 0;
+}
+
+/**
+ * Ordena las opciones de cada choice con una permutación fija por pregunta, para que la correcta
+ * no quede siempre en la misma letra. Es determinística: la misma pregunta se ve igual en la web,
+ * en el examen y en el PDF, y el historial guardado sigue siendo válido.
+ */
+export function mezclarOpciones(q: MCQ): MCQ {
+  let seed = hash(q.id) || 1;
+  const rnd = () => {
+    seed ^= seed << 13;
+    seed ^= seed >>> 17;
+    seed ^= seed << 5;
+    return (seed >>> 0) / 4294967296;
+  };
+  const idx = q.options.map((_, i) => i);
+  for (let i = idx.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [idx[i], idx[j]] = [idx[j], idx[i]];
+  }
+  return { ...q, options: idx.map((i) => q.options[i]), answer: idx.indexOf(q.answer) };
+}
 
 export async function loadChapter(id: string): Promise<Chapter | null> {
   if (cache.has(id)) return cache.get(id)!;
@@ -10,8 +38,9 @@ export async function loadChapter(id: string): Promise<Chapter | null> {
   const loader = chapterLoader(id);
   if (!meta || !loader || !isAvailable(meta)) return null;
   const mod = await loader();
-  cache.set(id, mod.default);
-  return mod.default;
+  const c: Chapter = { ...mod.default, mcq: mod.default.mcq.map(mezclarOpciones) };
+  cache.set(id, c);
+  return c;
 }
 
 export async function loadAllPublished(): Promise<Chapter[]> {

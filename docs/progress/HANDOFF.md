@@ -40,21 +40,24 @@ Instrucciones originales completas del proyecto: ver `docs/progress/PLAN.md` (or
 - Mapeo id ↔ archivo: `content/traceability/sources_manifest.json` y `docs/progress/SOURCES.md`.
 - **Prohibido publicar**: enlace o IDs de Drive, libro, transcripciones, grabaciones, fotos. `npm run check:content` lo verifica (corre también en CI).
 
-## 4. Arquitectura
+## 4. Arquitectura (desde el 2026-11-08 noche: capítulo por pasos, modelo farmaco-flor)
 - Vite + React 18 + TypeScript, HashRouter, base `/aula-clinica-ortega/`. Deploy por GitHub Actions (`.github/workflows/deploy.yml`) en cada push a `main`.
-- `content/` = contenido médico tipado (separado de `src/`):
-  - `content/curriculum.ts` — sistemas y capítulos (`status: 'published' | 'soon'`). Un capítulo se ve solo si está `published` y existe `content/chapters/<id>/index.tsx`.
-  - `content/chapters/<id>/index.tsx` — datos del capítulo (tipo `Chapter` en `src/types.ts`): map, bases, theory (bloques), quickRef, mcq, developments, memory, maneuvers, closing, video, slides.
-  - `content/chapters/<id>/diagrams.tsx` — diagramas SVG/HTML del capítulo.
-  - `content/chapters/<id>/slides.tsx` — escenas Remotion (video + diapositivas interactivas). `narration.json` (guion), `timing.json` y `video.json` (generados).
-  - `content/maneuvers/index.ts` — biblioteca de maniobras (grupos + maniobras con segmento de YouTube verificado).
-  - `content/sources.ts` — rótulos de fuentes para las referencias `{src, t, p}`.
-  - `content/traceability/<id>.md` — matriz subtema → clase → minuto → prioridad.
-- `src/components/` — Blocks (renderiza bloques), ConceptMap, Practice (choice/desarrollos/memoria), Maneuvers (reproductor de fragmentos YouTube con IFrame API), SlidesBlock/SlideDeck (@remotion/player, carga diferida), VideoPlayer, diagram-kit (Flow, Donut, ChoiceBar, PAL), ErrorBoundary.
-- `src/video/kit.tsx` + `src/video/DeckScene.tsx` — kit de animación Remotion compartido (imports relativos; lo usa Vite y el bundler de Remotion).
-- `video/src/index.ts` + `Root.tsx` — entrada de Remotion solo para render.
-- Estilos: `src/styles/tokens.css` (paleta en variables CSS; acá se cambia a oscuro), base, layout, content, practice, print.
-- Progreso del estudiante: `src/lib/progress.ts` (localStorage `aula-clinica-ortega:v1`, Leitner, exportar/importar JSON).
+- **Pedido de la usuaria (2026-11-08):** «todo el capítulo con una estructura limpia como la de farmaco, sin tantas opciones» y diapositivas interactivas de verdad. Se aplicó así:
+  - Capítulo = **riel de pasos**, una pantalla por paso: `Sabete esto · Teoría · Video · Cuadros · Choice · Desarrollo · Repaso`. Ruta `#/capitulo/<id>/<paso>`; `#/capitulo/<id>` y los enlaces viejos `?s=` redirigen. Botón «Seguir con …» al final de cada paso. Sin modos ni toggles extra (solo «Mapa limpio/oculto» y «Ver todo/Tapar respuestas»).
+  - **Teoría = escenas + pasos** (como `src/vis` de farmaco): cada paso tiene `di` (texto que se lee y se narra), `voz` opcional (pronunciación) y `retener` (chips). El dibujo es **SVG puro, función de (escena, paso, t)**: la web lo anima con requestAnimationFrame y Remotion con el fotograma. Mismo texto y mismo dibujo en web y video.
+- `content/` = contenido médico tipado:
+  - `content/curriculum.ts` — sistemas y capítulos (`status`). Un capítulo se ve solo si está `published` y existe `content/chapters/<id>/index.tsx`.
+  - `content/chapters/<id>/index.tsx` — tipo `Chapter` (`src/types.ts`): `esencial` (objetivo, avisos, bloques del mapa), `escenas`, `cuadros` (tabla + `porque` del libro + `nota` + cita del profe), `mcq`, `developments` (preguntas de examen con `prio` y `quote`), `memory`, `trampas`, `links`, `maneuvers`, `video`.
+  - `content/chapters/<id>/escenas.ts` — Teoría paso a paso. `tiempos.json` y `video.json` los genera `npm run tts`.
+  - `content/maneuvers/index.ts`, `content/sources.ts`, `content/traceability/<id>.md` (igual que antes).
+- `src/escenas/tipos.ts` + `src/escenas/Lienzo.tsx` — motor de escenas. Tipos: `cuadro` (comparativo fila por fila), `lista` (tarjetas), `tubo` (tubo digestivo + muestra de vómito), `flujo` (causa→consecuencia, algoritmos), `paneles` (1–3 figuras: pared/MW/Boerhaave, paciente alta/baja, muro/motor, acalasia, pico de pájaro, manzana mordida; franja opcional para tríadas). Colores por variables `--v-*` (web: `.lienzo` en `src/styles/capitulo.css`; video: en línea en `video/src/Root.tsx`). Lienzo 960×600; textos ≥ 23 px de coordenada para que se lean en celular.
+- `src/pages/ChapterPage.tsx` — riel y pasos (Esencial, Cuadros, Repaso). `src/components/Teoria.tsx` — recorrido paso a paso (temas, puntos, narración, retener, Anterior/Siguiente, flechas, «Escuchar este paso» con `public/media/<id>/pasos/<escena>-<n>.mp3`).
+- `src/lib/useChapter.ts` — al cargar, **mezcla las opciones de cada choice con una permutación fija por pregunta** (antes la correcta quedaba casi siempre en B). Es determinística: igual en web, examen y PDF.
+- `src/pages/Manual.tsx` — `#/manual/<sistema>` = cuadros del sistema; `#/imprimir/<sistema>` = fuente del PDF (lo que pregunta el profe, sabete esto, cuadros, desarrollos, memoria, trampas, choice con respuestas).
+- `video/src/Root.tsx` — video de Remotion armado con las mismas escenas (portada, lienzo + «Retené esto» acumulado + subtítulo, cierre).
+- Se eliminaron: SlideDeck/SlidesBlock (@remotion/player en la web), `src/video/kit.tsx`, DeckScene, ConceptMap, diagram-kit, `diagrams.tsx`, `slides.tsx`, `narration.json`, `timing.json`.
+- Estilos: `src/styles/tokens.css` (paleta oscura), base, layout, content, practice, **capitulo.css** (riel, teoría, cuadros, repaso), print.
+- Progreso del estudiante: `src/lib/progress.ts` (localStorage `aula-clinica-ortega:v1`; los pasos vistos se guardan como `visited`).
 
 ## 5. Comandos
 ```bash
@@ -62,47 +65,39 @@ npm install
 npm run build                      # typecheck + build
 npx vite preview --port 4791       # (el puerto 4173 lo usa otra app del equipo)
 npm run check:content              # sin fuentes privadas
-npm run tts -- dig-01              # narración edge-tts es-AR-TomasNeural + timing + VTT + video.json
+npm run tts -- dig-01              # narra cada paso de escenas.ts (edge-tts es-AR-TomasNeural) → pasos/*.mp3, tiempos.json, VTT, video.json
 npm run video:render -- dig-01 video/out/dig-01-master.mp4 --codec=h264 --crf=20
 ffmpeg -i video/out/dig-01-master.mp4 -c:v libx264 -preset slow -crf 27 -tune animation -c:a aac -b:a 96k -movflags +faststart public/media/dig-01.mp4
 npm run pdf                        # PDFs desde #/imprimir/<sistema> (requiere preview en 4791)
 # Verificación (en Git Bash anteponer MSYS_NO_PATHCONV=1):
-node scripts/smoke-test.mjs <url> <carpeta> / /capitulo/dig-01
-node scripts/interaction-test.mjs <url> dig-01 <carpeta>
+node scripts/smoke-test.mjs <url> <carpeta> / /capitulo/dig-01/esencial /capitulo/dig-01/teoria
+node scripts/interaction-test.mjs <url> dig-01 <carpeta>     # 26 controles en ancho de celular
 node scripts/check-video.mjs <url> dig-01
-node scripts/shoot-sections.mjs "<url>#/capitulo/dig-01" <carpeta> 1440 "#ubicate" ...   # capturas para revisión visual
+node scripts/shoot-teoria.mjs "<url>#/capitulo/dig-01/teoria" <carpeta> 420   # captura cada paso de Teoría
+npx remotion still video/src/index.ts dig-01 out.png --frame=<n>               # revisar un cuadro del video
 ```
 Chrome para puppeteer: `C:/Program Files/Google/Chrome/Application/chrome.exe`. Python con PyMuPDF/Pillow: `.venv/Scripts/python`.
+Cambiar el texto de un paso obliga a `npm run tts` (solo re-narra lo que cambió) y a renderizar el video.
 
 Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i "sources/local/maneuvers/Semiología Médica Argente Álvarez.mp4" -frames:v 1 ...` y armar hoja con `scripts/contact_sheet.py`. La duración local coincide con YouTube (14 522 s), así que los segundos sirven para el embed.
 
 ## 6. Estado
-- Etapa 1 (estructura) y **dig-01** publicados y verificados (ver `STATUS.md`).
-- **dig-01 debe REESCRIBIRSE** según la sección 2: más conciso, centrado en lo que dice el profe, preguntas de examen destacadas, fisiopatología del libro, sin relleno de bibliografía.
+- **dig-01 rehecho por pasos** y verificado (ver 6b). Es la plantilla para los capítulos siguientes.
 - Maniobras verificadas hasta ahora: boca/orofaringe (3008–3090 s), supraclaviculares (1936–1982 s), bazuqueo (9594–9644 s).
 
 ## 7. Próximos pasos (en orden)
-1. Estudiar `C:\Claude\semiologia-ortega` (nefro) y `C:\Claude\farrmaco` → anotar acá el patrón a seguir.
-2. Paleta oscura + centrado/distribución.
-3. Sección “Examen físico” por sistema y región (digestivo: abdomen, hígado, bazo, vesícula…; renal; neuro; soma) con fragmentos verificados.
-4. Rehacer dig-01 conciso; luego dig-02 (dolor abdominal / abdomen agudo).
+1. Sección **Examen físico** por sistema y región (digestivo: abdomen, hígado, bazo, vesícula; renal; neuro; soma) con fragmentos del video Argente verificados por fotogramas + pizarras + clases EF.
+2. dig-02 (dolor abdominal / abdomen agudo: 5 tipos P0, Cullen/Grey-Turner P0) con la misma estructura: `esencial`, `escenas.ts`, `cuadros`, desarrollos del preguntero, choice, memoria.
 
 ## 8. Pedido original (resumen)
-Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cada capítulo: mapa inicial, bases, teoría visual, consulta/PDF, video Remotion con voz es-AR-TomasNeural, choice, desarrollos resueltos con “Lo sabía/No lo sabía” y repaso espaciado, mnemotecnias, integración. Un capítulo completo, probado y desplegado a la vez. No publicar material privado. Nunca atribuir al profesor frases que no dijo.
+Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cada capítulo con teoría visual, consulta/PDF, video con voz es-AR-TomasNeural, choice, desarrollos resueltos con «Lo sabía/No lo sabía» y repaso espaciado, mnemotecnias. Un capítulo completo, probado y desplegado a la vez. No publicar material privado. Nunca atribuir al profesor frases que no dijo.
 
-## 6b. Estado al cortar la sesión (2026-11-08)
-- HECHO y publicado: paleta oscura; dig-01 reescrito conciso (sección “Lo que pregunta el profe” con P0/P1 y citas verificadas, 7 fichas con “¿Por qué?” del libro, 7 preguntas de examen, 12 choice, 5 tarjetas de memoria); narración nueva (10 escenas, 6:18) con escena hematemesis vs hemoptisis.
-- HECHO en la sesión siguiente (2026-11-08, tarde):
-  - Escenas `intro`, `complicaciones` y `cierre` rehechas sobre los cues nuevos (intro = los 4 temas que toma el profe; complicaciones con la tríada de Mallory-Weiss como cronología; cierre = lo que no puede faltar). Se borraron las escenas viejas sin uso (deglución, causas-oro, funcional, reflejo).
-  - Video re-renderizado y vuelto a enlazar (`video` en `content/chapters/dig-01/index.tsx`).
-  - **Diapositivas paso a paso** (estilo farrmaco) en `src/components/SlideDeck.tsx`: modo por defecto «Paso a paso» (cada oración = un paso; la escena queda congelada con el paso dibujado, texto debajo, puntos de progreso, Anterior/Siguiente, flechas del teclado, «Escuchar este paso») + modo «Reproducir» (de corrido, como antes). El fotograma congelado se toma antes de los fundidos (`Show` 12 f, fin de escena 12 f).
-  - `scripts/interaction-test.mjs` actualizado (secciones obligatorias por id; prueba paso a paso y modo reproducir). Pasa completo en local.
-- PENDIENTE:
-  1. Sección **Examen físico** por sistema y región (digestivo: abdomen, hígado, bazo, vesícula; renal; neuro; soma) con fragmentos del video Argente verificados por fotogramas + pizarras + clases EF.
-  2. Regenerar PDF (`npm run pdf`, con preview en 4791).
-  3. Siguiente capítulo: dig-02 (dolor abdominal / abdomen agudo: 5 tipos P0, Cullen/Grey-Turner P0).
+## 6b. Estado al cortar la sesión (2026-11-08, noche)
+- dig-01 por pasos: 5 bloques en «Sabete esto» + 7 preguntas de examen (2 P0); **11 escenas / 47 pasos** de Teoría con narración por paso; video de 9:35 generado desde las mismas escenas; 8 cuadros con «¿por qué?» del libro; 15 choice (opciones mezcladas); 7 desarrollos; 5 tarjetas de recuperación; 5 trampas; 3 maniobras.
+- Verificado en local: interaction-test 26/26 (celular), smoke-test (12 rutas, escritorio y celular), check:content, PDF (15 páginas), revisión visual de los 47 pasos y de cuadros del video.
 
 ## 9. Bitácora
 - 2026-11-07 — Inventario, arquitectura, Etapa 1 y dig-01 publicados y verificados.
-- 2026-11-08 — Feedback de la usuaria (sección 2). Se crea este HANDOFF.
-- 2026-11-08 (tarde) — Video dig-01 re-renderizado (6:18) y diapositivas paso a paso; verificado en la URL pública (check-video + interaction-test 14/14).
+- 2026-11-08 — Feedback de la usuaria (sección 2). Se crea este HANDOFF. Paleta oscura; dig-01 conciso.
+- 2026-11-08 (tarde) — Video re-renderizado y diapositivas paso a paso sobre Remotion (luego reemplazadas).
+- 2026-11-08 (noche) — Pedido: «estructura limpia como la de farmaco, sin tantas opciones» + diapositivas interactivas de verdad. Capítulo por pasos, motor de escenas propio, video desde las escenas, opciones de choice mezcladas.
