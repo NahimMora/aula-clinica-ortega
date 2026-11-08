@@ -74,9 +74,13 @@ Chrome para puppeteer: `C:/Program Files/Google/Chrome/Application/chrome.exe`. 
 
 Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i "sources/local/maneuvers/Semiología Médica Argente Álvarez.mp4" -frames:v 1 ...` y armar hoja con `scripts/contact_sheet.py`. La duración local coincide con YouTube (14 522 s), así que los segundos sirven para el embed.
 
-## 6. Estado (2026-11-08, cierre de digestivo)
+## 6. Estado (2026-11-08, digestivo y renal completos)
 - **Digestivo completo: dig-01 a dig-15 publicados** y verificados uno por uno (interaction-test «Todas las verificaciones pasaron» + check:content) antes de cada push.
   - 01 vómitos/disfagia/dispepsia · 02 dolor abdominal y abdomen agudo · 03 diarrea, constipación, anorrectal · 04 ictericia · 05 examen físico digestivo · 06 síndrome esofágico · 07 ulceroso y gastritis · 08 pilórico e íleo · 09 malabsorción e intestino irritable · 10 peritonitis · 11 síndromes vesiculares · 12 hemorragias digestivas · 13 cirrosis e HTP · 14 insuficiencia hepática · 15 pancreatitis aguda.
+- **Nefrourológico completo: ren-01 a ren-07 publicados** (mismo criterio de verificación).
+  - 01 motivos de consulta (edema, obstrucción → IRA posrenal, poliuria, hematuria y tres vasos) · 02 examen físico y proteinuria · 03 nefrítico · 04 nefrótico · 05 insuficiencia renal aguda y crónica · 06 infección urinaria · 07 litiasis.
+  - Kit visual nuevo: bloques/escenas `urinario` (riñones con pelvis y cálices, uréteres, vejiga, próstata, uretra; cálculo, tumor, hidronefrosis, globo vesical, HPB, tres vasos, irradiación del cólico, estrecheces) y `nefrona` (glomérulo y túbulos; partículas que se pierden: proteínas, hematíes, glucosa, agua; lesión e isquemia). Tokens `--v-kidney`, `--v-urine`, `--v-vessel`. Puntos `ureteral-sup` y `ureteral-med` en el abdomen.
+  - Maniobras renales (grupo «Riñón», listo): Guyon (Argente 10958–11036) y puñopercusión (11037–11076) verificadas por fotogramas; Montenegro, Israel, Glenard y puntos renoureterales sin video.
 - Cada capítulo: mapa, «Lo que toma» (P0/P1 con cita textual verificada en la transcripción), fichas visuales (bloques de `src/visual` + 1–3 explicaciones animadas `anim`), choice (8–12), desarrollos, memoria, maniobras, cierre con mini simulacro.
 - Criterio de fuentes: lo que el profe marca define la prioridad; del libro, la fisiopatología y tablas (p. ej., Ranson p. 410). Escalas estándar que el libro no trae (Balthazar, West Haven, Forrest) se marcan en pantalla como «estándar». Si el profe se equivoca en un mecanismo, se explica el correcto **sin atribuirle** el error (p. ej., hipocalcemia de la pancreatitis = saponificación).
 - dig-04 (ictericia): no hay clase grabada; el profe remite al apunte = libro p. 10–15.
@@ -85,8 +89,8 @@ Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i 
 - Videos: solo dig-01 tiene video y audio por paso (`audioPasos`). Para los demás falta `npm run tts -- <id>` + render; antes hay que agregar las variables `--v-*` nuevas en `VARS` de `video/src/Root.tsx` y el capítulo en `CAPS`.
 
 ## 7. Próximos pasos (en orden)
-1. Sistema **nefrourológico** (8 capítulos en `content/curriculum.ts`), con el mismo kit. Faltan figuras propias del riñón/vía urinaria si hacen falta (agregar a `anatomia.tsx` + tipo en `visual/tipos.ts` + escena en `escenas/tipos.ts`/`Lienzo.tsx`, igual que abdomen/organos/biliar).
-2. Luego nervioso, examen físico (resto de sistemas) y soma.
+1. **Sistema nervioso** (capítulos en `content/curriculum.ts`; transcripciones en `sources/drive/transcripts/condensed/4 SISTEMA NERVIOSO`). Probablemente haga falta una figura propia (encéfalo/médula/vía motora) siguiendo el patrón de `urinario`/`nefrona`: figura en `anatomia.tsx` + tipo en `visual/tipos.ts` + bloque en `Visual.tsx` + escena en `escenas/tipos.ts` y `Lienzo.tsx` + casos en `text.ts` y `Blocks.tsx`.
+2. Examen físico neurológico (maniobras con fragmentos de Argente verificados por fotogramas) y soma.
 3. Audio por paso y video para dig-02…dig-15 (ver sección 6).
 4. Regenerar PDF (`npm run pdf`, con preview en 4791).
 
@@ -99,3 +103,4 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 - 2026-11-08 (tarde) — Video dig-01 re-renderizado (6:18) y diapositivas paso a paso; verificado en la URL pública (check-video + interaction-test 14/14).
 - 2026-11-08 (noche) — La versión «por pasos» no gustó: se volvió a la versión de mapas y fichas (revert de 8e99a0a/ed5745b) y se agregó lo mejor de farmaco: explicaciones animadas dentro de las fichas, bloques visuales genéricos, choice mezclado.
 - 2026-11-08 (noche) — dig-02 a dig-15 publicados de a uno (cada uno con su commit y deploy). Digestivo completo. Siguiente: nefrourológico.
+- 2026-11-08 (madrugada) — Kit `urinario` + `nefrona`; ren-01 a ren-07 publicados de a uno; 6 maniobras renales. Renal completo. Siguiente: nervioso.
