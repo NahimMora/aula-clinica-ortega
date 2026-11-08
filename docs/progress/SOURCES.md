@@ -106,3 +106,4 @@ Cada capítulo tiene su matriz detallada en `content/traceability/<capitulo>.md`
 
 | Capítulo | Fuentes principales | Matriz |
 |---|---|---|
+| dig-01 · Disfagia, dispepsia, náuseas y vómitos | MC Digestivo 1 (00:00–35:13), MC Digestivo 2 (00:00–32:03), Libro p368–369; maniobras Argente 32:16, 50:08, 2:39:54 | [`content/traceability/dig-01.md`](../../content/traceability/dig-01.md) |

@@ -10,6 +10,8 @@ import { VideoPlayer, asset } from '@/components/VideoPlayer';
 import { Rich, Refs } from '@/components/Rich';
 import { Icon } from '@/components/Icon';
 import { ManeuverList } from '@/components/Maneuvers';
+import { SlidesBlock, SlidesContext } from '@/components/SlidesBlock';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { devPending, lastAttempt, markVisited, setCompleted, setLast, toggleBookmark, useProgress } from '@/lib/progress';
 import { NotFound, Loading } from './Misc';
 
@@ -33,7 +35,7 @@ function sectionDefs(c: Chapter): SectionDef[] {
     { id: 'clase', letter: 'C', label: 'Clase', title: 'Clase principal', modes: t },
     { id: 'consulta', letter: 'D', label: 'Consulta', title: 'Teoría de consulta rápida', modes: t },
   ];
-  if (c.video) defs.push({ id: 'video', letter: 'E', label: 'Video', title: 'Video explicativo', modes: t });
+  if (c.video || c.slides) defs.push({ id: 'video', letter: 'E', label: 'Video', title: 'Video y diapositivas animadas', modes: t });
   defs.push(
     { id: 'choice', letter: 'F', label: 'Choice', title: 'Preguntas choice', modes: p },
     { id: 'desarrollos', letter: 'G', label: 'Desarrollos', title: 'Desarrollos resueltos', modes: p },
@@ -121,6 +123,7 @@ function ChapterView({ c }: { c: Chapter }) {
 
   return (
     <DiagramContext.Provider value={c.diagrams}>
+      <SlidesContext.Provider value={c.slides}>
       <article className={`chapter tone-${sys?.tone ?? 'rose'}`}>
         <header className="chero">
           <div className="chero__crumbs">
@@ -244,9 +247,9 @@ function ChapterView({ c }: { c: Chapter }) {
             </Section>
           )}
 
-          {c.video && visible.some((d) => d.id === 'video') && (
-            <Section def={defs.find((d) => d.id === 'video')!} chapterId={c.id} intro="Animaciones que muestran los mecanismos. Usá los capítulos para saltar a un tema; debajo tenés el guion completo.">
-              <VideoPlayer video={c.video} title={c.title} />
+          {(c.video || c.slides) && visible.some((d) => d.id === 'video') && (
+            <Section def={defs.find((d) => d.id === 'video')!} chapterId={c.id} intro="El video completo con narración, o las mismas escenas como diapositivas interactivas: reproducí, pausá y avanzá escena por escena. Debajo del video está el guion completo.">
+              <VideoSection c={c} />
             </Section>
           )}
 
@@ -303,7 +306,30 @@ function ChapterView({ c }: { c: Chapter }) {
           </div>
         </div>
       </article>
+      </SlidesContext.Provider>
     </DiagramContext.Provider>
+  );
+}
+
+function VideoSection({ c }: { c: Chapter }) {
+  const [tab, setTab] = useState<'video' | 'slides'>(c.video ? 'video' : 'slides');
+  return (
+    <>
+      <div className="seg vtabs" role="tablist" aria-label="Formato">
+        {c.video && (
+          <button role="tab" aria-selected={tab === 'video'} className={tab === 'video' ? 'is-on' : ''} onClick={() => setTab('video')}>
+            Video completo
+          </button>
+        )}
+        {c.slides && (
+          <button role="tab" aria-selected={tab === 'slides'} className={tab === 'slides' ? 'is-on' : ''} onClick={() => setTab('slides')}>
+            Diapositivas interactivas
+          </button>
+        )}
+      </div>
+      {tab === 'video' && c.video && <VideoPlayer video={c.video} title={c.title} />}
+      {tab === 'slides' && <SlidesBlock ids={[]} title="Todo el capítulo, escena por escena" startOpen />}
+    </>
   );
 }
 
@@ -321,7 +347,7 @@ function Section({ def, chapterId, intro, children }: { def: SectionDef; chapter
           )}
         </div>
       </header>
-      {children}
+      <ErrorBoundary label={`la sección “${def.title}”`}>{children}</ErrorBoundary>
     </section>
   );
 }

@@ -67,6 +67,9 @@ export function blocksText(blocks: Block[]): string {
       case 'kv':
         b.items.forEach((i) => out.push(i.k, i.v));
         break;
+      case 'slides':
+        out.push(b.title, b.caption ?? '');
+        break;
     }
   };
   blocks.forEach(walk);

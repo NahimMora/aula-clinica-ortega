@@ -2,6 +2,8 @@ import { createContext, useContext, useState, type ComponentType } from 'react';
 import type { Block, CalloutKind, Priority } from '@/types';
 import { Rich, Refs } from './Rich';
 import { Icon } from './Icon';
+import { SlidesBlock } from './SlidesBlock';
+import { ErrorBoundary } from './ErrorBoundary';
 
 export const DiagramContext = createContext<Record<string, ComponentType>>({});
 
@@ -103,7 +105,13 @@ function BlockView({ b }: { b: Block }) {
       const D = diagrams[b.id];
       return (
         <figure className="diagram">
-          {D ? <D /> : <div className="diagram__missing">Diagrama no disponible: {b.id}</div>}
+          {D ? (
+            <ErrorBoundary label="el diagrama" compact>
+              <D />
+            </ErrorBoundary>
+          ) : (
+            <div className="diagram__missing">Diagrama no disponible: {b.id}</div>
+          )}
           {b.caption && (
             <figcaption>
               <Rich text={b.caption} />
@@ -216,6 +224,12 @@ function BlockView({ b }: { b: Block }) {
       return <Accordion items={b.items} />;
     case 'case':
       return <CaseBlock b={b} />;
+    case 'slides':
+      return (
+        <ErrorBoundary label="la diapositiva" compact>
+          <SlidesBlock ids={b.ids} title={b.title} caption={b.caption} />
+        </ErrorBoundary>
+      );
     case 'kv':
       return (
         <dl className="kv">

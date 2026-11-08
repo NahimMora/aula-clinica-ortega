@@ -3,6 +3,7 @@ import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-do
 import { SYSTEMS, isAvailable } from '@content/curriculum';
 import { useProgress } from '@/lib/progress';
 import { Icon } from './Icon';
+import { ErrorBoundary } from './ErrorBoundary';
 
 const NAV = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
@@ -30,7 +31,9 @@ export function Layout() {
         <Sidebar />
         <div className="shell__scrim" onClick={() => setOpen(false)} aria-hidden="true" />
         <main id="main" className="shell__main">
-          <Outlet />
+          <ErrorBoundary key={loc.pathname} label="esta página">
+            <Outlet />
+          </ErrorBoundary>
           <footer className="foot">
             <p>
               <strong>Aula Clínica — Semiología I</strong> · Material de estudio original elaborado a partir de las clases del Dr. Ortega y su libro de Clínica Médica I. No reemplaza la bibliografía ni la consulta

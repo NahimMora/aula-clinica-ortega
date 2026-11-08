@@ -2,14 +2,14 @@
 
 Regla técnica: **un capítulo completo, probado y desplegado a la vez**. Regla pedagógica: **ubicarse → comprender → relacionar → memorizar y practicar**.
 
-Cada capítulo incluye: A. mapa inicial · B. bases · C. teoría visual · D. consulta rápida + manual web + PDF del sistema · E. video Remotion (voz es-AR-TomasNeural) · F. choice · G. desarrollos resueltos (Lo sabía / No lo sabía + repaso espaciado) · H. memoria activa y mnemotecnias · maniobras relacionadas (si corresponden) · I. integración final.
+Cada capítulo incluye: A. mapa inicial · B. bases · C. teoría visual · D. consulta rápida + manual web + PDF del sistema · E. video Remotion (voz es-AR-TomasNeural) + las mismas escenas como diapositivas interactivas en la teoría · F. choice · G. desarrollos resueltos (Lo sabía / No lo sabía + repaso espaciado) · H. memoria activa y mnemotecnias · maniobras relacionadas (si corresponden) · I. integración final.
 
 ## Etapa 1 — Preparación
 - [x] Inventario de Drive (121 archivos) y fuentes locales; manifiesto con duraciones (31 h de clase).
 - [x] Análisis del temario de MC digestivo (6 clases) y división en capítulos.
 - [x] Arquitectura (Vite + React + TS, contenido tipado en `content/`, carga diferida por capítulo).
 - [x] Diseño general y funciones globales (búsqueda, progreso, repaso, práctica, examen, manual, maniobras).
-- [ ] Repositorio `aula-clinica-ortega`, GitHub Actions y GitHub Pages con estructura inicial verificada.
+- [x] Repositorio `aula-clinica-ortega`, GitHub Actions y GitHub Pages con estructura inicial verificada.
 
 ## Orden de capítulos
 
@@ -17,7 +17,7 @@ La división de “Motivos de consulta digestivos” en tres capítulos responde
 
 | # | id | Capítulo | Fuentes principales |
 |---|---|---|---|
-| 1 | dig-01 | Disfagia, dispepsia, náuseas y vómitos | MC Digestivo 1 (00:00–35:13) y 2 (00:00–32:03) · Libro p368–369 |
+| 1 ✅ | dig-01 | Disfagia, dispepsia, náuseas y vómitos | MC Digestivo 1 (00:00–35:13) y 2 (00:00–32:03) · Libro p368–369 |
 | 2 | dig-02 | Dolor abdominal y abdomen agudo | MC Digestivo 2 (32:03–fin), 3 y 4 |
 | 3 | dig-03 | Diarrea, constipación y trastornos anorrectales | MC Digestivo 5 y 6 |
 | 4 | dig-04 | Ictericia (repaso que el profesor exige) | MC Digestivo 6 (15:58) · Libro p10–15 |

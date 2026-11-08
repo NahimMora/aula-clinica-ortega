@@ -1,5 +1,5 @@
 /* Versión imprimible (ruta /imprimir/:sistema) y @media print */
-.print { max-width: 820px; margin: 0 auto; padding: 24px; background: #fff; color: var(--ink); font-size: 13.5px; line-height: 1.55; }
+.print { max-width: 820px; margin: 0 auto; padding: 24px; overflow-x: hidden; background: #fff; color: var(--ink); font-size: 13.5px; line-height: 1.55; }
 html.is-print body { background: #fff; }
 .print__cover {
   min-height: 1000px;
@@ -58,3 +58,5 @@ html.is-print body { background: #fff; }
   .badge, .chip { border: 1px solid var(--line-2); }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+.print .dpanel { opacity: 1 !important; }
+.print .dchoice, .print .slides, .print .dlegend .btn { display: none !important; }

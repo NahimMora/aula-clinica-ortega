@@ -208,3 +208,6 @@ button { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
+
+.errbox { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 16px 0; padding: 16px 18px; border-radius: var(--radius-sm); background: var(--bad-bg); color: var(--bad); border: 1px solid #f1c9d4; }
+.errbox--compact { margin: 6px 0; }

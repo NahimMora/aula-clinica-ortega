@@ -25,8 +25,9 @@ for (const [vw, vh, tag] of [[1440, 900, 'desk'], [390, 844, 'mob']]) {
     page.on('requestfailed', (q) => !q.url().includes('youtube') && errs.push(`requestfailed: ${q.url()} ${q.failure()?.errorText}`));
     page.on('response', (s) => s.status() >= 400 && !s.url().includes('youtube') && errs.push(`HTTP ${s.status()}: ${s.url()}`));
     const url = base.replace(/\/$/, '') + '/#' + r;
-    await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
-    await new Promise((res) => setTimeout(res, 700));
+    await page.goto(url, { waitUntil: 'load', timeout: 60000 });
+    await page.waitForSelector('h1', { timeout: 30000 }).catch(() => null);
+    await new Promise((res) => setTimeout(res, 1500));
     const info = await page.evaluate(() => ({
       title: document.title,
       h1: document.querySelector('h1')?.textContent?.trim() ?? '(sin h1)',
@@ -35,7 +36,7 @@ for (const [vw, vh, tag] of [[1440, 900, 'desk'], [390, 844, 'mob']]) {
     }));
     const name = `${tag}_${r.replace(/[^\w]+/g, '_') || 'home'}.png`;
     await page.screenshot({ path: join(outDir, name), fullPage: false });
-    const bad = errs.length || info.overflowX || info.text < 200;
+    const bad = errs.length || info.overflowX || info.text < 200 || info.h1.includes('No encontramos');
     if (bad) failures++;
     console.log(`${bad ? 'FAIL' : 'ok  '} [${tag}] ${r} — h1: "${info.h1}" · texto: ${info.text} · overflowX: ${info.overflowX}${errs.length ? '\n      ' + errs.join('\n      ') : ''}`);
     await page.close();

@@ -8,7 +8,8 @@
 .mcq__head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 10px; }
 .mcq__n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 0.8rem; font-weight: 700; margin-right: 4px; flex-shrink: 0; }
 .mcq__topic { margin-left: auto; font-size: 0.78rem; color: var(--ink-3); }
-.mcq__stem { font-weight: 560; font-size: 1.03rem; margin-bottom: 12px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.mcq__stem { font-weight: 560; font-size: 1.03rem; margin-bottom: 12px; }
+.mcq__stem .mcq__n { display: inline-grid; vertical-align: 1px; margin-right: 8px; }
 .mcq__opts { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .mcq__opt { width: 100%; display: flex; align-items: flex-start; gap: 12px; text-align: left; padding: 11px 14px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--surface-2); cursor: pointer; transition: border-color 0.15s, background 0.15s; line-height: 1.45; }
 .mcq__opt:hover:not(:disabled) { border-color: var(--lilac-400); background: var(--lilac-50); }
@@ -55,7 +56,7 @@
 
 /* ───── Memoria ───── */
 .mem-list { display: grid; gap: 18px; }
-.mem { padding: 22px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-xs); scroll-margin-top: calc(var(--topbar-h) + 70px); }
+.mem { min-width: 0; padding: 22px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-xs); scroll-margin-top: calc(var(--topbar-h) + 70px); }
 .mem__title { font-size: 1.3rem; }
 .mem__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .mem__cell { padding: 14px 16px; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line); font-size: 0.94rem; }
@@ -69,6 +70,6 @@
 .mem__a { padding: 10px 12px; border-radius: 12px; background: var(--lilac-50); }
 
 @media (max-width: 760px) {
-  .mem__grid { grid-template-columns: 1fr; }
+  .mem__grid { grid-template-columns: minmax(0, 1fr); }
   .mcq, .dev, .mem { padding: 16px; }
 }

@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react';
+import type { Deck } from './video/kit';
 
 /** Prioridad pedagógica de un subtema.
  *  - imprescindible: el profesor indica expresamente que se evalúa o lo enfatiza.
@@ -37,7 +38,9 @@ export type Block =
   | { t: 'compare'; title?: string; cols: { title: string; tone?: Tone; items: Inline[] }[] }
   | { t: 'accordion'; items: { title: string; blocks: Block[] }[] }
   | { t: 'case'; title: string; text: Inline; question?: Inline; answer?: Inline }
-  | { t: 'kv'; items: { k: string; v: Inline }[] };
+  | { t: 'kv'; items: { k: string; v: Inline }[] }
+  /** Diapositivas animadas (escenas Remotion del capítulo), cargadas bajo demanda. */
+  | { t: 'slides'; ids: string[]; title: string; caption?: Inline };
 
 export interface TheorySection {
   id: string;
@@ -131,6 +134,8 @@ export interface Chapter {
   maneuvers?: { ids: string[]; note: Inline };
   closing: ClosingData;
   diagrams: Record<string, ComponentType>;
+  /** Escenas animadas compartidas con el video (se importan solo al abrir una diapositiva). */
+  slides?: () => Promise<{ default: Deck }>;
 }
 
 export interface ChapterMeta {

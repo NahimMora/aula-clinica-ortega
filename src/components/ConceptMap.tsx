@@ -117,7 +117,10 @@ export function ConceptMap({ data, onBranch }: { data: ConceptMapData; onBranch?
         </div>
         {data.outcomes.map((o, i) => (
           <div key={i} className="cmap__node cmap__node--out" data-node="out">
-            <Icon name="check" size={16} /> <Rich text={o} />
+            <Icon name="check" size={16} />
+            <span>
+              <Rich text={o} />
+            </span>
           </div>
         ))}
       </div>

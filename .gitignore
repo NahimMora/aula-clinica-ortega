@@ -4,8 +4,6 @@ sources/
 node_modules/
 dist/
 video/out/
-video/public/audio/
-video/node_modules/
 *.log
 .DS_Store
 docs/progress/_*.log

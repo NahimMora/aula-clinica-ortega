@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Maneuver } from '@/types';
 import { maneuverById } from '@content/maneuvers';
 import { Rich, Refs } from './Rich';
@@ -37,7 +37,12 @@ function loadYT(): Promise<void> {
   return apiPromise;
 }
 
-const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+const fmt = (t: number) => {
+  const h = Math.floor(t / 3600);
+  const m = Math.floor((t % 3600) / 60);
+  const s = String(Math.floor(t % 60)).padStart(2, '0');
+  return h ? `${h}:${String(m).padStart(2, '0')}:${s}` : `${m}:${s}`;
+};
 
 export function SegmentPlayer({ list, index, onIndex, autoNext }: { list: Maneuver[]; index: number; onIndex: (i: number) => void; autoNext: boolean }) {
   const host = useRef<HTMLDivElement>(null);
@@ -46,11 +51,23 @@ export function SegmentPlayer({ list, index, onIndex, autoNext }: { list: Maneuv
   state.current = { list, index, autoNext, onIndex };
   const [error, setError] = useState<string | null>(null);
   const [started, setStarted] = useState(false);
+  // El reproductor solo acepta comandos después de onReady; antes sus métodos no existen.
+  const ready = useRef(false);
+  const loaded = useRef(-1);
+
+  const loadIndex = (i: number) => {
+    const p = player.current;
+    const m = state.current.list[i];
+    if (!p || !ready.current || typeof p.loadVideoById !== 'function' || !m?.video) return;
+    loaded.current = i;
+    p.loadVideoById({ videoId: m.video.youtubeId, startSeconds: m.video.start, endSeconds: m.video.end });
+  };
 
   useEffect(() => {
     if (!started || !host.current) return;
     let alive = true;
-    const m = state.current.list[state.current.index];
+    const i = state.current.index;
+    const m = state.current.list[i];
     if (!m?.video) return;
     loadYT()
       .then(() => {
@@ -58,11 +75,17 @@ export function SegmentPlayer({ list, index, onIndex, autoNext }: { list: Maneuv
         const el = document.createElement('div');
         host.current.innerHTML = '';
         host.current.appendChild(el);
+        loaded.current = i;
         player.current = new window.YT.Player(el, {
           host: 'https://www.youtube-nocookie.com',
           videoId: m.video!.youtubeId,
           playerVars: { start: m.video!.start, end: m.video!.end, rel: 0, modestbranding: 1, playsinline: 1, autoplay: 1 },
           events: {
+            onReady: () => {
+              ready.current = true;
+              // Si la estudiante eligió otra maniobra mientras cargaba, se carga esa.
+              if (state.current.index !== loaded.current) loadIndex(state.current.index);
+            },
             onStateChange: (e: { data: number }) => {
               const s = state.current;
               if (e.data === window.YT!.PlayerState.ENDED && s.autoNext && s.index < s.list.length - 1) s.onIndex(s.index + 1);
@@ -73,16 +96,21 @@ export function SegmentPlayer({ list, index, onIndex, autoNext }: { list: Maneuv
       .catch((e: Error) => setError(e.message));
     return () => {
       alive = false;
-      player.current?.destroy();
+      ready.current = false;
+      try {
+        player.current?.destroy();
+      } catch {
+        /* el iframe pudo no haber terminado de crearse */
+      }
       player.current = null;
     };
   }, [started]);
 
-  // Cambio de maniobra: carga el nuevo fragmento en el mismo reproductor.
+  // Cambio de maniobra: carga el nuevo fragmento en el mismo reproductor (solo si cambió).
   useEffect(() => {
-    const m = list[index];
-    if (player.current && m?.video) player.current.loadVideoById({ videoId: m.video.youtubeId, startSeconds: m.video.start, endSeconds: m.video.end });
-  }, [index, list]);
+    if (index !== loaded.current) loadIndex(index);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
 
   const m = list[index];
   if (!m?.video) return null;
@@ -229,7 +257,9 @@ export function ManeuverPlaylist({ list }: { list: Maneuver[] }) {
 }
 
 export function ManeuverList({ ids }: { ids: string[] }) {
-  const list = ids.map(maneuverById).filter((m): m is Maneuver => Boolean(m));
+  const key = ids.join('|');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const list = useMemo(() => ids.map(maneuverById).filter((m): m is Maneuver => Boolean(m)), [key]);
   if (!list.length) return <p className="empty">Las maniobras de este capítulo se incorporan cuando sus fragmentos de video estén verificados.</p>;
   return <ManeuverPlaylist list={list} />;
 }

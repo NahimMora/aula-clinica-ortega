@@ -308,7 +308,7 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
   .is-menu-open .sidebar { transform: none; }
   .is-menu-open .shell__scrim { display: block; position: fixed; inset: var(--topbar-h) 0 0 0; background: rgba(43, 35, 49, 0.25); z-index: 44; }
   .hero { grid-template-columns: 1fr; padding: 24px; }
-  .manual { grid-template-columns: 1fr; }
+  .manual { grid-template-columns: minmax(0, 1fr); }
   .manual__toc { position: static; max-height: none; }
 }
 @media (max-width: 640px) {
