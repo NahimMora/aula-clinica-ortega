@@ -34,7 +34,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('digestivo', 'dig-06', 'Síndrome esofágico', 'Tubo digestivo', 'Los cinco síntomas, etiologías, ERGE y Barrett, acalasia, cáncer y cómo se estudia el esófago.', 'Clase Sd. esofágico · Libro p368–369', 'published'),
       ch('digestivo', 'dig-07', 'Síndrome ulceroso y gastritis', 'Tubo digestivo', 'Úlcera péptica, Helicobacter pylori y AINE, complicaciones y gastritis A vs B.', 'Clases Sd. ulceroso 1–3 · Libro p370–372', 'published'),
       ch('digestivo', 'dig-08', 'Síndrome pilórico e íleo', 'Tubo digestivo', 'Obstrucción del vaciamiento gástrico (vómito, bazuqueo, SNG, VEDA) e íleo paralítico vs mecánico.', 'Clases Sd. pilórico · Íleo · Libro p375–377', 'published'),
-      ch('digestivo', 'dig-09', 'Malabsorción e intestino irritable', 'Tubo digestivo', 'Síndrome de malabsorción, enfermedad celíaca y síndrome de intestino irritable.', 'Clases Malabsorción 1–2 · SII'),
+      ch('digestivo', 'dig-09', 'Malabsorción e intestino irritable', 'Tubo digestivo', 'Fases de la malabsorción, esteatorrea, Van de Kamer y D-xilosa; intestino irritable y criterios de Roma.', 'Clases Malabsorción 1–2 · SII · Libro p378–382', 'published'),
       ch('digestivo', 'dig-10', 'Peritonitis', 'Emergencias', 'Peritonitis primaria, secundaria y terciaria; semiología de la irritación peritoneal.', 'Clases Peritonitis 1–2'),
       ch('digestivo', 'dig-11', 'Síndromes vesiculares', 'Vías biliares', 'Litiasis biliar, cólico biliar, colecistitis y colangitis.', 'Clase Síndromes vesiculares'),
       ch('digestivo', 'dig-12', 'Hemorragias digestivas', 'Emergencias', 'Hemorragia digestiva alta y baja, clasificaciones y conducta.', 'Clases Hemorragias 1–2'),
