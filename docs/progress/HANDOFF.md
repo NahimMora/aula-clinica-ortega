@@ -74,35 +74,28 @@ Chrome para puppeteer: `C:/Program Files/Google/Chrome/Application/chrome.exe`. 
 
 Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i "sources/local/maneuvers/Semiología Médica Argente Álvarez.mp4" -frames:v 1 ...` y armar hoja con `scripts/contact_sheet.py`. La duración local coincide con YouTube (14 522 s), así que los segundos sirven para el embed.
 
-## 6. Estado (2026-11-08, noche)
-- Publicados y verificados (interaction-test + check:content): **dig-01 a dig-05**. Cada capítulo: mapa, «Lo que toma» (P0/P1 con cita textual verificada), fichas visuales (bloques de `src/visual` + explicaciones animadas `anim`), choice, desarrollos, memoria, cierre.
-- dig-04 (ictericia): no hay clase grabada; el profe remite al apunte = libro p. 10–15 (es su material) y avisa en MC6 16:23 que se toma.
-- dig-05: biblioteca de maniobras ampliada a 17 (abdomen, ascitis, puntos, hígado, bazo, vesícula), fragmentos del video Argente verificados por fotogramas (capítulos 21–27).
-- Videos por capítulo: solo dig-01 tiene video (el viejo, 6:18). Las explicaciones animadas no tienen audio todavía salvo dig-01 (`audioPasos`). Pendiente: `npm run tts` + render para los nuevos.
+## 6. Estado (2026-11-08, cierre de digestivo)
+- **Digestivo completo: dig-01 a dig-15 publicados** y verificados uno por uno (interaction-test «Todas las verificaciones pasaron» + check:content) antes de cada push.
+  - 01 vómitos/disfagia/dispepsia · 02 dolor abdominal y abdomen agudo · 03 diarrea, constipación, anorrectal · 04 ictericia · 05 examen físico digestivo · 06 síndrome esofágico · 07 ulceroso y gastritis · 08 pilórico e íleo · 09 malabsorción e intestino irritable · 10 peritonitis · 11 síndromes vesiculares · 12 hemorragias digestivas · 13 cirrosis e HTP · 14 insuficiencia hepática · 15 pancreatitis aguda.
+- Cada capítulo: mapa, «Lo que toma» (P0/P1 con cita textual verificada en la transcripción), fichas visuales (bloques de `src/visual` + 1–3 explicaciones animadas `anim`), choice (8–12), desarrollos, memoria, maniobras, cierre con mini simulacro.
+- Criterio de fuentes: lo que el profe marca define la prioridad; del libro, la fisiopatología y tablas (p. ej., Ranson p. 410). Escalas estándar que el libro no trae (Balthazar, West Haven, Forrest) se marcan en pantalla como «estándar». Si el profe se equivoca en un mecanismo, se explica el correcto **sin atribuirle** el error (p. ej., hipocalcemia de la pancreatitis = saponificación).
+- dig-04 (ictericia): no hay clase grabada; el profe remite al apunte = libro p. 10–15.
+- Maniobras: 17 en digestivo (abdomen, ascitis, puntos, hígado, bazo, vesícula) con fragmentos del video Argente verificados por fotogramas.
+- Figura del abdomen: puntos nuevos `chauffard` (se dibuja como triángulo) y `desjardins`; las etiquetas de región van por encima de la flecha de recorrido.
+- Videos: solo dig-01 tiene video y audio por paso (`audioPasos`). Para los demás falta `npm run tts -- <id>` + render; antes hay que agregar las variables `--v-*` nuevas en `VARS` de `video/src/Root.tsx` y el capítulo en `CAPS`.
 
 ## 7. Próximos pasos (en orden)
-1. Estudiar `C:\Claude\semiologia-ortega` (nefro) y `C:\Claude\farrmaco` → anotar acá el patrón a seguir.
-2. Paleta oscura + centrado/distribución.
-3. Sección “Examen físico” por sistema y región (digestivo: abdomen, hígado, bazo, vesícula…; renal; neuro; soma) con fragmentos verificados.
-4. Rehacer dig-01 conciso; luego dig-02 (dolor abdominal / abdomen agudo).
+1. Sistema **nefrourológico** (8 capítulos en `content/curriculum.ts`), con el mismo kit. Faltan figuras propias del riñón/vía urinaria si hacen falta (agregar a `anatomia.tsx` + tipo en `visual/tipos.ts` + escena en `escenas/tipos.ts`/`Lienzo.tsx`, igual que abdomen/organos/biliar).
+2. Luego nervioso, examen físico (resto de sistemas) y soma.
+3. Audio por paso y video para dig-02…dig-15 (ver sección 6).
+4. Regenerar PDF (`npm run pdf`, con preview en 4791).
 
 ## 8. Pedido original (resumen)
-Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cada capítulo: mapa inicial, bases, teoría visual, consulta/PDF, video Remotion con voz es-AR-TomasNeural, choice, desarrollos resueltos con “Lo sabía/No lo sabía” y repaso espaciado, mnemotecnias, integración. Un capítulo completo, probado y desplegado a la vez. No publicar material privado. Nunca atribuir al profesor frases que no dijo.
-
-## 6b. Estado al cortar la sesión (2026-11-08)
-- HECHO y publicado: paleta oscura; dig-01 reescrito conciso (sección “Lo que pregunta el profe” con P0/P1 y citas verificadas, 7 fichas con “¿Por qué?” del libro, 7 preguntas de examen, 12 choice, 5 tarjetas de memoria); narración nueva (10 escenas, 6:18) con escena hematemesis vs hemoptisis.
-- HECHO en la sesión siguiente (2026-11-08, tarde):
-  - Escenas `intro`, `complicaciones` y `cierre` rehechas sobre los cues nuevos (intro = los 4 temas que toma el profe; complicaciones con la tríada de Mallory-Weiss como cronología; cierre = lo que no puede faltar). Se borraron las escenas viejas sin uso (deglución, causas-oro, funcional, reflejo).
-  - Video re-renderizado y vuelto a enlazar (`video` en `content/chapters/dig-01/index.tsx`).
-  - **Diapositivas paso a paso** (estilo farrmaco) en `src/components/SlideDeck.tsx`: modo por defecto «Paso a paso» (cada oración = un paso; la escena queda congelada con el paso dibujado, texto debajo, puntos de progreso, Anterior/Siguiente, flechas del teclado, «Escuchar este paso») + modo «Reproducir» (de corrido, como antes). El fotograma congelado se toma antes de los fundidos (`Show` 12 f, fin de escena 12 f).
-  - `scripts/interaction-test.mjs` actualizado (secciones obligatorias por id; prueba paso a paso y modo reproducir). Pasa completo en local.
-- PENDIENTE:
-  1. Sección **Examen físico** por sistema y región (digestivo: abdomen, hígado, bazo, vesícula; renal; neuro; soma) con fragmentos del video Argente verificados por fotogramas + pizarras + clases EF.
-  2. Regenerar PDF (`npm run pdf`, con preview en 4791).
-  3. Siguiente capítulo: dig-02 (dolor abdominal / abdomen agudo: 5 tipos P0, Cullen/Grey-Turner P0).
+Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cada capítulo: mapa inicial, bases, teoría visual, consulta/PDF, video Remotion con voz es-AR-TomasNeural, choice, desarrollos resueltos con «Lo sabía/No lo sabía» y repaso espaciado, mnemotecnias, integración. Un capítulo completo, probado y desplegado a la vez. No publicar material privado. Nunca atribuir al profesor frases que no dijo.
 
 ## 9. Bitácora
 - 2026-11-07 — Inventario, arquitectura, Etapa 1 y dig-01 publicados y verificados.
 - 2026-11-08 — Feedback de la usuaria (sección 2). Se crea este HANDOFF.
 - 2026-11-08 (tarde) — Video dig-01 re-renderizado (6:18) y diapositivas paso a paso; verificado en la URL pública (check-video + interaction-test 14/14).
-- 2026-11-08 (noche) — La versión «por pasos» no gustó: se volvió a la versión de mapas y fichas (revert de 8e99a0a/ed5745b) y se agregó lo mejor de farmaco: explicaciones animadas dentro de las fichas, bloques visuales genéricos, choice mezclado. Siguiente: todos los capítulos de digestivo.
+- 2026-11-08 (noche) — La versión «por pasos» no gustó: se volvió a la versión de mapas y fichas (revert de 8e99a0a/ed5745b) y se agregó lo mejor de farmaco: explicaciones animadas dentro de las fichas, bloques visuales genéricos, choice mezclado.
+- 2026-11-08 (noche) — dig-02 a dig-15 publicados de a uno (cada uno con su commit y deploy). Digestivo completo. Siguiente: nefrourológico.
