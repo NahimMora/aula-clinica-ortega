@@ -1,0 +1,86 @@
+{
+  "src": "media/ren-04/clase.mp4",
+  "poster": "media/ren-04/clase.jpg",
+  "vtt": "media/ren-04/clase.vtt",
+  "duration": "6:28",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Barrera y edema"
+    },
+    {
+      "t": 81,
+      "label": "Fisiopatología · Complicaciones"
+    },
+    {
+      "t": 146,
+      "label": "Teoría · Qué es"
+    },
+    {
+      "t": 188,
+      "label": "Teoría · Causas"
+    },
+    {
+      "t": 244,
+      "label": "Teoría · Fisiopatología"
+    },
+    {
+      "t": 274,
+      "label": "Teoría · Clínica y estudios"
+    },
+    {
+      "t": 348,
+      "label": "Teoría · Complicaciones"
+    }
+  ],
+  "script": [
+    {
+      "title": "La barrera que deja pasar la albúmina",
+      "text": "Primero, la lesión. Normalmente la membrana basal, con su carga negativa, y los podocitos, con sus hendiduras, frenan el paso de la albúmina. En el síndrome nefrótico, los pies de los podocitos se borran y la membrana pierde su carga: la barrera se vuelve permeable a las proteínas. A diferencia del nefrítico, no se rompen capilares. Pasa albúmina en enormes cantidades: más de tres gramos y medio por día, sobre todo albúmina, sin sangre en la orina."
+    },
+    {
+      "title": "El círculo del edema",
+      "text": "La fisiopatología, que el profesor llama fundamental, es un círculo. Se pierde albúmina por la orina, y baja la albúmina en la sangre. La albúmina es la que retiene el agua dentro de los vasos: sin ella, baja la presión oncótica, y el líquido se escapa al intersticio. Aparece el edema. Pero ese líquido que se fue deja menos volumen dentro de los vasos. El riñón lo detecta y activa el sistema renina angiotensina aldosterona y la hormona antidiurética. Retiene sal y agua; pero como la albúmina sigue baja, ese líquido vuelve a escaparse. Más edema, hasta la anasarca."
+    },
+    {
+      "title": "Por qué el nefrótico hace trombosis",
+      "text": "Y la complicación que hay que explicar bien: la trombosis. El estado de hipercoagulabilidad tiene varias causas que se suman. Por la orina se pierde la antitrombina tres, un anticoagulante natural. Al mismo tiempo, aumentan en la sangre el fibrinógeno y varios factores de la coagulación. Además, con el líquido escapado al intersticio, la sangre queda concentrada y más viscosa, y las plaquetas se agregan más. El resultado son trombosis venosas y arteriales; la típica es la de la vena renal, que puede dar dolor en el flanco y hematuria."
+    },
+    {
+      "title": "Infecciones y lípidos",
+      "text": "Por la orina no se va solo la albúmina: también se pierden las inmunoglobulinas, factores del complemento y la transferrina, que necesitan los linfocitos. Las defensas bajan, y con la ascitis, la infección típica es la peritonitis bacteriana espontánea. Y los lípidos suben: colesterol, LDL y triglicéridos. Aparecen xantelasmas, grasa en la orina, y con el tiempo, aterosclerosis."
+    },
+    {
+      "title": "Síndrome nefrótico",
+      "text": "El síndrome nefrótico y el nefrítico son dos síndromes que siempre se preguntan en los parciales. Y del nefrótico, el profesor pide la definición: es una alteración de la membrana basal del glomérulo, que se vuelve permeable a las proteínas. Se caracteriza por una proteinuria de más de tres gramos y medio en veinticuatro horas, una albúmina en sangre menor de tres gramos por decilitro, edema, y muchas veces hiperlipidemia y grasa en la orina."
+    },
+    {
+      "title": "Primario o secundario",
+      "text": "El síndrome puede ser primario, cuando la enfermedad es del propio glomérulo, o secundario, cuando una enfermedad sistémica, como la diabetes, el lupus o la amiloidosis, termina dañando el riñón."
+    },
+    {
+      "title": "La causa más frecuente",
+      "text": "La pregunta que siempre hacen en los parciales: ¿cuál es la causa más frecuente de síndrome nefrótico? La nefropatía diabética, que es secundaria. Entre las primarias, depende de la edad. En el niño, la enfermedad de cambios mínimos, setenta a ochenta por ciento. En el adulto, la glomerulopatía membranosa, sobre todo después de los cuarenta. Y la segunda en los dos, la focal y segmentaria. En el anciano hay que pensar en amiloidosis, y en una mujer joven, en lupus."
+    },
+    {
+      "title": "La diabetes, en etapas",
+      "text": "La nefropatía diabética avanza por etapas. Primero aparece la microalbuminuria; en el estadio cuatro, el síndrome nefrótico; y en el cinco, la insuficiencia renal crónica. Por eso la diabetes es a la vez la causa más frecuente de síndrome nefrótico y de insuficiencia renal crónica."
+    },
+    {
+      "title": "Todo sale de la proteinuria",
+      "text": "Y la fisiopatología completa sale de una sola cosa: lo que se pierde por la orina. Se pierde albúmina, y aparece el edema. Se pierden inmunoglobulinas, complemento y transferrina, y aparecen las infecciones. Se pierde la antitrombina tres, y junto con la hemoconcentración y el aumento de los factores, aparecen las trombosis. Y la pérdida de proteínas en general lleva a un balance nitrogenado negativo, con pérdida de masa muscular."
+    },
+    {
+      "title": "Clínica",
+      "text": "La clínica. El edema es frío, blando, y deja fóvea; empieza en los tobillos, sube a los párpados, con una cara abotagada, y puede llegar a la anasarca. La presión es normal o baja, porque el volumen está en el intersticio: a diferencia del nefrítico, no es un hipertenso. La orina hace espuma. En la piel aparecen xantelasmas por los lípidos, y en las uñas, bandas blancas por la albúmina baja. Y se acumula líquido en las serosas: ascitis, derrame pleural, y más rara vez pericárdico."
+    },
+    {
+      "title": "Estudios",
+      "text": "Los estudios. La proteinuria de veinticuatro horas es la más certera: más de tres gramos y medio. El proteinograma muestra la albúmina baja, y el lipidograma, los lípidos altos. En el sedimento aparecen cilindros grasos; si además hay hematuria, hay un componente nefrítico. Se buscan las causas: la glucemia, los anticuerpos del lupus, serologías. Y la biopsia se hace en el adulto y en el niño de más de diez años; el niño más chico, sin hematuria, se trata directamente como una enfermedad de cambios mínimos."
+    },
+    {
+      "title": "Complicaciones",
+      "text": "Las complicaciones, cada una con su porqué. Infecciones, la más frecuente la peritonitis bacteriana espontánea, porque se pierden inmunoglobulinas y complemento. Trombosis, en la vena renal y en otras venas y arterias, por la antitrombina perdida, los factores aumentados y la sangre concentrada. Aterosclerosis, por los lípidos altos. Un balance nitrogenado negativo, por la pérdida de proteínas. Y la insuficiencia renal, aguda o crónica, sobre todo en el diabético mal controlado."
+    }
+  ]
+}

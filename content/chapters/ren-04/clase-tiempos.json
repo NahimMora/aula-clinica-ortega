@@ -1,0 +1,201 @@
+{
+ "fps": 24,
+ "total": 9315,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-barrera",
+   "inicio": 96,
+   "frames": 815,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 275
+    },
+    {
+     "inicio": 371,
+     "frames": 334
+    },
+    {
+     "inicio": 705,
+     "frames": 206
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-circulo",
+   "inicio": 911,
+   "frames": 1036,
+   "beats": [
+    {
+     "inicio": 911,
+     "frames": 250
+    },
+    {
+     "inicio": 1161,
+     "frames": 276
+    },
+    {
+     "inicio": 1437,
+     "frames": 274
+    },
+    {
+     "inicio": 1711,
+     "frames": 236
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-trombosis",
+   "inicio": 1947,
+   "frames": 892,
+   "beats": [
+    {
+     "inicio": 1947,
+     "frames": 477
+    },
+    {
+     "inicio": 2424,
+     "frames": 415
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-infecciones",
+   "inicio": 2839,
+   "frames": 673,
+   "beats": [
+    {
+     "inicio": 2839,
+     "frames": 401
+    },
+    {
+     "inicio": 3240,
+     "frames": 272
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 3512,
+   "frames": 689,
+   "beats": [
+    {
+     "inicio": 3512,
+     "frames": 386
+    },
+    {
+     "inicio": 3898,
+     "frames": 303
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-primarias",
+   "inicio": 4201,
+   "frames": 322,
+   "beats": [
+    {
+     "inicio": 4201,
+     "frames": 322
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas",
+   "inicio": 4523,
+   "frames": 844,
+   "beats": [
+    {
+     "inicio": 4523,
+     "frames": 256
+    },
+    {
+     "inicio": 4779,
+     "frames": 588
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diabetes",
+   "inicio": 5367,
+   "frames": 503,
+   "beats": [
+    {
+     "inicio": 5367,
+     "frames": 316
+    },
+    {
+     "inicio": 5683,
+     "frames": 187
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-fisio",
+   "inicio": 5870,
+   "frames": 715,
+   "beats": [
+    {
+     "inicio": 5870,
+     "frames": 715
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clinica",
+   "inicio": 6585,
+   "frames": 871,
+   "beats": [
+    {
+     "inicio": 6585,
+     "frames": 477
+    },
+    {
+     "inicio": 7062,
+     "frames": 394
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-estudios",
+   "inicio": 7456,
+   "frames": 909,
+   "beats": [
+    {
+     "inicio": 7456,
+     "frames": 497
+    },
+    {
+     "inicio": 7953,
+     "frames": 412
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-complicaciones",
+   "inicio": 8365,
+   "frames": 830,
+   "beats": [
+    {
+     "inicio": 8365,
+     "frames": 830
+    }
+   ]
+  }
+ ]
+}

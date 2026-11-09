@@ -38,6 +38,14 @@ import { clase as planDig14 } from '../../content/chapters/dig-14/clase';
 import tiemposDig14 from '../../content/chapters/dig-14/clase-tiempos.json';
 import { clase as planDig15 } from '../../content/chapters/dig-15/clase';
 import tiemposDig15 from '../../content/chapters/dig-15/clase-tiempos.json';
+import { clase as planRen01 } from '../../content/chapters/ren-01/clase';
+import tiemposRen01 from '../../content/chapters/ren-01/clase-tiempos.json';
+import { clase as planRen02 } from '../../content/chapters/ren-02/clase';
+import tiemposRen02 from '../../content/chapters/ren-02/clase-tiempos.json';
+import { clase as planRen03 } from '../../content/chapters/ren-03/clase';
+import tiemposRen03 from '../../content/chapters/ren-03/clase-tiempos.json';
+import { clase as planRen04 } from '../../content/chapters/ren-04/clase';
+import tiemposRen04 from '../../content/chapters/ren-04/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -199,6 +207,10 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'ren-04-clase', titulo: 'Síndrome nefrótico', plan: planRen04, tiempos: tiemposRen04 as TiemposClase },
+  { id: 'ren-03-clase', titulo: 'Síndrome nefrítico', plan: planRen03, tiempos: tiemposRen03 as TiemposClase },
+  { id: 'ren-02-clase', titulo: 'Examen físico nefrourológico', plan: planRen02, tiempos: tiemposRen02 as TiemposClase },
+  { id: 'ren-01-clase', titulo: 'Motivos de consulta nefrourológicos', plan: planRen01, tiempos: tiemposRen01 as TiemposClase },
   { id: 'dig-15-clase', titulo: 'Pancreatitis aguda', plan: planDig15, tiempos: tiemposDig15 as TiemposClase },
   { id: 'dig-14-clase', titulo: 'Insuficiencia hepática', plan: planDig14, tiempos: tiemposDig14 as TiemposClase },
   { id: 'dig-13-clase', titulo: 'Cirrosis e hipertensión portal', plan: planDig13, tiempos: tiemposDig13 as TiemposClase },

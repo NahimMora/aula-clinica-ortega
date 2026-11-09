@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * ren-04 — Síndrome nefrótico. Fuente: clase «Síndrome nefrótico» (Ortega) + libro p. 440–442.
@@ -68,7 +69,7 @@ const chapter: Chapter = {
     },
     {
       id: 'causas',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Causas: quién y a qué edad',
       priority: 'imprescindible',
       summary: 'La más frecuente: nefropatía diabética. Primarias: cambios mínimos (niño), membranosa (adulto), focal y segmentaria (2.ª en ambos).',
@@ -97,7 +98,7 @@ const chapter: Chapter = {
     },
     {
       id: 'fisiopatologia',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Fisiopatología: el círculo del edema',
       priority: 'imprescindible',
       summary: 'Proteinuria → hipoalbuminemia → ↓ oncótica → edema y ↓ volumen efectivo → SRAA → retención → más edema.',
@@ -154,7 +155,7 @@ const chapter: Chapter = {
           cols: 3,
           items: [
             { tag: 'IgG y complemento', title: 'Infecciones', text: 'La más frecuente: **peritonitis bacteriana espontánea** (con la ascitis). También urinarias.', tone: 'red' },
-            { tag: 'Antitrombina III + hemoconcentración', title: 'Trombosis', text: 'Hipercoagulabilidad: trombosis venosas (incluida la de la vena renal).', tone: 'lilac' },
+            { tag: 'Hipercoagulabilidad', title: 'Trombosis', text: 'Pierde **antitrombina III**, aumentan el fibrinógeno y los factores V, VII, VIII y X, hay hemoconcentración y más agregación plaquetaria: trombosis venosas y arteriales, típica la de la **vena renal** (8–20 %).', tone: 'lilac' },
             { tag: 'Lípidos', title: 'Aterosclerosis', text: 'Colesterol y triglicéridos altos: ateromas.', tone: 'gold' },
             { tag: 'Proteínas', title: 'Balance nitrogenado negativo', text: 'Desnutrición proteica.', tone: 'peach' },
             { tag: 'Riñón', title: 'IRA e IRC', text: 'La IRC es común en el diabético mal controlado.', tone: 'sky' },
@@ -168,6 +169,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'ren04-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -179,6 +181,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -193,6 +196,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-d03',
+      origen: 'practica',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -207,6 +211,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-d04',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'complicaciones',
@@ -220,6 +225,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'ren04-q01',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 1,
       emphasis: true,
@@ -235,6 +241,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q02',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 2,
       emphasis: true,
@@ -250,6 +257,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q03',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 2,
       stem: 'En el **adulto**, la glomerulopatía primaria más frecuente que da nefrótico es:',
@@ -264,6 +272,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q04',
+      origen: 'practica',
       topic: 'Definición',
       difficulty: 1,
       stem: '¿Cuál **no** forma parte de la definición del síndrome nefrótico?',
@@ -278,6 +287,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q05',
+      origen: 'practica',
       topic: 'Fisiopatología',
       difficulty: 2,
       stem: 'El edema del síndrome nefrótico empeora porque:',
@@ -292,6 +302,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q06',
+      origen: 'practica',
       topic: 'Fisiopatología',
       difficulty: 2,
       stem: 'La tendencia a la **trombosis** del síndrome nefrótico se debe a:',
@@ -306,6 +317,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q07',
+      origen: 'practica',
       topic: 'Complicaciones',
       difficulty: 2,
       emphasis: true,
@@ -321,6 +333,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q08',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 1,
       stem: 'Las bandas blancas transversales en las uñas del paciente nefrótico se deben a:',
@@ -335,6 +348,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q09',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 2,
       stem: 'El estudio más certero para confirmar la proteinuria nefrótica es:',
@@ -349,6 +363,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren04-q10',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 3,
       stem: 'En un niño de 6 años con nefrótico puro (sin hematuria), lo habitual es:',
@@ -425,6 +440,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'ren04-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Niño de 4 años con edema palpebral y de tobillos, orina espumosa, TA normal, albúmina 1,8 g/dl y proteinuria 5 g/24 h. Pensás en:',
@@ -441,6 +457,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 
