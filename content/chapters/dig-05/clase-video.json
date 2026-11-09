@@ -1,0 +1,214 @@
+{
+  "src": "media/dig-05/clase.mp4",
+  "poster": "media/dig-05/clase.jpg",
+  "vtt": "media/dig-05/clase.vtt",
+  "duration": "18:38",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Bases físicas"
+    },
+    {
+      "t": 55,
+      "label": "Fisiopatología · Líquido libre"
+    },
+    {
+      "t": 131,
+      "label": "Fisiopatología · La piel"
+    },
+    {
+      "t": 180,
+      "label": "Fisiopatología · Vísceras"
+    },
+    {
+      "t": 251,
+      "label": "Teoría · Antes de empezar"
+    },
+    {
+      "t": 319,
+      "label": "Teoría · Inspección"
+    },
+    {
+      "t": 556,
+      "label": "Teoría · Auscultación"
+    },
+    {
+      "t": 632,
+      "label": "Teoría · Percusión y ascitis"
+    },
+    {
+      "t": 735,
+      "label": "Teoría · Palpación"
+    },
+    {
+      "t": 855,
+      "label": "Teoría · Puntos dolorosos"
+    },
+    {
+      "t": 956,
+      "label": "Teoría · Hígado, bazo y vesícula"
+    },
+    {
+      "t": 1079,
+      "label": "Teoría · Hernias"
+    }
+  ],
+  "script": [
+    {
+      "title": "Por qué suena hueco o suena mate",
+      "text": "Empecemos por la física del examen. Cuando percutís sobre gas, la pared vibra y suena hueco: es el timpanismo, que ocupa casi todo el abdomen por el aire de las asas. Cuando debajo hay algo sólido o líquido, la vibración se apaga: es la matidez. Así suenan el hígado y el bazo, un tumor o la ascitis. Y la forma del límite te dice qué es: el líquido libre deja un borde cóncavo hacia arriba; una masa, un borde convexo."
+    },
+    {
+      "title": "Por qué se ausculta antes de palpar",
+      "text": "Y por qué en el abdomen el orden cambia respecto del tórax. Si primero palpás, movés las asas, estimulás el peristaltismo y modificás los ruidos que querías escuchar. Por eso se ausculta antes: inspección, auscultación, percusión y, al final, palpación."
+    },
+    {
+      "title": "Ascitis: el líquido cae, las asas flotan",
+      "text": "Ahora, la ascitis, que el profesor exige. El líquido libre cae por gravedad a los flancos, y las asas, que tienen gas, flotan arriba. Por eso, con el paciente boca arriba, el centro suena timpánico y los flancos suenan mates, con un límite cóncavo hacia arriba. Si lo ponés de costado, el líquido se va hacia el lado de abajo, y la matidez se corre con él. Eso es la matidez desplazable."
+    },
+    {
+      "title": "La onda ascítica",
+      "text": "La onda ascítica usa el mismo principio. Si golpeás suavemente un flanco, la onda viaja por el líquido y la sentís con la otra mano en el flanco opuesto. El borde de una mano, apoyado en la línea media, frena la vibración que podría transmitir la pared, y así te asegurás de que lo que llega es la onda del líquido."
+    },
+    {
+      "title": "Por qué el ombligo se evierte",
+      "text": "Y por qué el ombligo cambia. Cuando algo distiende el abdomen desde adentro, como la ascitis o un embarazo, la presión empuja el ombligo hacia afuera: queda en dedo de guante. En cambio, en la obesidad, la grasa de la pared rodea el ombligo y lo hunde. Por eso un abdomen globoso con el ombligo hacia adentro orienta a obesidad o meteorismo."
+    },
+    {
+      "title": "La sangre busca otro camino",
+      "text": "En la piel, la circulación colateral aparece cuando una vena grande está obstruida y la sangre busca otro camino. En la hipertensión portal, la sangre de la porta vuelve a la cava por las venas que rodean el ombligo, y se ve la cabeza de medusa. Si lo que está obstruido es la cava inferior, la sangre sube por las venas de la pared hacia la cava superior: son venas que ascienden desde el pubis hacia el tórax."
+    },
+    {
+      "title": "El hígado y las hormonas",
+      "text": "Otro signo de piel con mecanismo hormonal. En la cirrosis... aumentan los estrógenos y disminuyen los andrógenos. Y el hombre se feminiza: el vello pubiano toma una distribución triangular, como en la mujer, aparece ginecomastia y atrofia testicular. Es el hábito de Chvostek."
+    },
+    {
+      "title": "Por qué chapotea el estómago",
+      "text": "El chapoteo gástrico. Cuando el píloro está obstruido, el estómago no se vacía. Adentro queda líquido mezclado con aire, y cuando hundís la pared con golpes rápidos, se mueven. Se escucha y se siente como cuando le das palmadas al agua de una pileta."
+    },
+    {
+      "title": "Por qué se palpa en inspiración",
+      "text": "Y por qué se le pide al paciente que inspire. Con la inspiración el diafragma baja y empuja hacia abajo al hígado y al bazo. El borde del hígado desciende uno o dos centímetros, y hasta cuatro en una inspiración profunda. Por eso la mano lo espera quieta, debajo del reborde costal."
+    },
+    {
+      "title": "Por qué el bazo se busca desde la fosa ilíaca derecha",
+      "text": "Con el bazo pasa algo parecido. El bazo normal está escondido debajo de las costillas, y no se palpa. Sigue la dirección de las últimas costillas, así que cuando crece, avanza hacia abajo y hacia adentro, en dirección a la fosa ilíaca derecha. Por eso se empieza a buscar lejos, en la fosa ilíaca derecha. Si arrancás en el reborde costal, podés tener la mano encima del bazo y no sentir el borde."
+    },
+    {
+      "title": "Un examen de los más preguntados",
+      "text": "Vamos con la teoría. El profesor avisa que el examen físico del abdomen es, junto con el respiratorio, de los más preguntados. Se hace con el paciente en decúbito dorsal, relajado, con los brazos al costado; a veces se le flexionan las piernas para aflojar la pared."
+    },
+    {
+      "title": "Cuatro cuadrantes o nueve regiones",
+      "text": "Para describir lo que encontrás, el abdomen se divide. En cuatro cuadrantes, con dos líneas que se cruzan en el ombligo. O en nueve regiones, con dos líneas horizontales, a la altura de la décima costilla y de las espinas ilíacas, y dos verticales, que continúan las medioclaviculares. El profesor acepta cualquiera de las dos. Y cada región tiene sus órganos, que tenés que conocer de anatomía."
+    },
+    {
+      "title": "El orden cambia",
+      "text": "Y el orden: en el tórax era inspección, palpación, percusión y auscultación. En el abdomen se invierte: inspección, auscultación, percusión y palpación. Si te preguntan por qué: porque palpar modifica los ruidos hidroaéreos espontáneos."
+    },
+    {
+      "title": "Inspección estática: la forma",
+      "text": "La inspección puede ser estática o dinámica. En la estática, lo primero es la forma. El abdomen normal es plano arriba y apenas elevado abajo. El globoso está distendido en forma generalizada: obesidad, meteorismo, ascitis o embarazo. El abdomen en batracio aparece cuando el paciente con ascitis se acuesta: el líquido cae a los flancos, como en un sapo. El excavado está retraído: desnutrición, caquexia. El abdomen en tabla está rígido por la contractura involuntaria de la peritonitis. El abdomen en delantal, en la obesidad mórbida. Y el abovedamiento asimétrico es un bulto localizado: un tumor, una hernia o un órgano agrandado."
+    },
+    {
+      "title": "El ombligo en un abdomen distendido",
+      "text": "Y algo que el profesor pide saber como el Padre Nuestro. Un abdomen distendido con el ombligo hacia adentro: pensá en obesidad o meteorismo. Con el ombligo hacia afuera, en dedo de guante: embarazo o ascitis. Si solo está distendida la parte de arriba, puede ser algo que comió o tomó. Y si la distensión es localizada, un embarazo, un globo vesical o un tumor."
+    },
+    {
+      "title": "La piel: circulación y estrías",
+      "text": "En la piel se busca la circulación colateral. La portocava sale del ombligo y forma la cabeza de medusa: hipertensión portal. La cavocava es ascendente: las venas suben desde el pubis o el ombligo hacia el tórax. Y las estrías: rojo vinosas en el síndrome de Cushing; nacaradas, como secuela de embarazos o de una gran pérdida de peso."
+    },
+    {
+      "title": "Cicatrices: abdomen asimétrico",
+      "text": "Las cicatrices. El profesor insiste: todo paciente que fue operado y tiene una cicatriz, tiene un abdomen asimétrico. No te lo olvides nunca. Las más comunes: la de Kocher, para la vesícula; la mediana, para una exploración amplia; la de McBurney, para la apendicitis; y la de Pfannenstiel, para la cesárea."
+    },
+    {
+      "title": "Vello: el hábito de Chvostek",
+      "text": "El vello pubiano. En la hepatopatía crónica aumentan los estrógenos y bajan los andrógenos. El hombre pierde la distribución romboidal del vello y adopta la triangular de la mujer, con ginecomastia y atrofia testicular. Es el hábito de Chvostek, que el profesor avisa que se pregunta, y que junto con la ictericia, la circulación colateral y la ascitis orienta a cirrosis."
+    },
+    {
+      "title": "Equimosis: Cullen y Grey-Turner",
+      "text": "Las equimosis. El signo de Cullen es periumbilical. El de Grey-Turner, en los flancos. Indican sangre en el retroperitoneo: ectópico roto, pancreatitis necrohemorrágica, aneurisma de aorta o trauma. Y el profesor avisa: si decís que son patognomónicos de pancreatitis, te bocha."
+    },
+    {
+      "title": "Ombligo, latidos y ondas",
+      "text": "En el ombligo se busca una hernia, o el nódulo de la hermana María José, que es una metástasis de un tumor de estómago, de páncreas o de intestino. Arriba y a la izquierda del ombligo puede verse el latido de la aorta, sobre todo en personas delgadas. Si es muy intenso, pensá en un aneurisma. Y las ondas peristálticas pueden verse en personas delgadas; si son intensas y dolorosas, indican una obstrucción."
+    },
+    {
+      "title": "Inspección dinámica y maniobra del esfuerzo",
+      "text": "En la inspección dinámica, se le pide al paciente que saque la panza y que la hunda. Así aparecen hernias, eventraciones o un órgano agrandado. La maniobra del esfuerzo: el paciente levanta la cabeza contra tu mano, o levanta brazos y piernas, y aumenta la tensión de la pared. Así se evidencia la diástasis de los rectos: los rectos se separan sobre la línea alba, algo frecuente después de varios embarazos."
+    },
+    {
+      "title": "Ruidos hidroaéreos",
+      "text": "La auscultación se hace con la membrana, sin haber palpado antes. Se empieza en la fosa ilíaca izquierda, se sube al hipocondrio izquierdo, se cruza al derecho, se baja a la fosa ilíaca derecha, y se termina en el hipogastrio y el mesogastrio. Los ruidos hidroaéreos, o borborigmos, son continuos y no duelen. Si están aumentados, son ruidos de lucha: el intestino hace fuerza contra un obstáculo. Íleo mecánico. Si están ausentes, hay silencio abdominal: íleo paralítico. Localizado, es el asa centinela del abdomen inflamatorio; generalizado, el de la perforación."
+    },
+    {
+      "title": "Soplos, frotes y murmullo",
+      "text": "Y los soplos, que el profesor dice que no se olvidan. El más importante, el del aneurisma de aorta, por arriba y a la izquierda del ombligo. El de las arterias renales, en un joven con hipertensión renovascular. El de las mesentéricas, en el abdomen agudo isquémico. Los frotes, sobre la cápsula inflamada del hígado o el bazo. Y el murmullo venoso, en una hipertensión portal muy avanzada."
+    },
+    {
+      "title": "Percusión del abdomen",
+      "text": "La percusión del abdomen es distinta de la del tórax: no se percute con rebote, se hace en forma radiada, y se da un golpe y se baja, no tres. Todo el abdomen suena timpánico, salvo el hígado y el bazo. El timpanismo generalizado indica meteorismo; la matidez, líquido, un tumor o una víscera agrandada."
+    },
+    {
+      "title": "Espacio semilunar de Traube",
+      "text": "El espacio semilunar de Traube está en la base del hemitórax izquierdo, y suena timpánico por el aire del estómago. Arriba está el corazón, adentro el lóbulo izquierdo del hígado, afuera el bazo y abajo el reborde costal. Si ese espacio se vuelve mate, algo lo tapa: una esplenomegalia, un derrame pleural izquierdo, una cardiomegalia, el hígado agrandado o un tumor del estómago."
+    },
+    {
+      "title": "Ascitis: matidez de concavidad superior",
+      "text": "Y la ascitis, que el profesor pide saber como la palma de la mano: si no la sabés, te bochan. El líquido libre cae a la parte baja del abdomen, y al percutir encontrás una matidez de concavidad superior. Donde hay líquido, no se escuchan ruidos hidroaéreos. En cambio, un embarazo, un tumor, un quiste de ovario o un mioma dan una matidez de convexidad superior."
+    },
+    {
+      "title": "Tres maniobras para la ascitis",
+      "text": "Para confirmarla hay tres maniobras. La matidez desplazable: ponés al paciente de costado, y si la matidez se corre al lado de abajo, el líquido es libre. La onda ascítica: golpeás un flanco y sentís la onda en el otro, con el borde de una mano en la línea media. Y el témpano: en una ascitis a tensión, al hundir la mano, el hígado rebota como un hielo que flota en el agua."
+    },
+    {
+      "title": "Palpación: la parte más preguntada",
+      "text": "La palpación es, según el profesor, la parte más preguntada y en la que más se bocha. Es la técnica más importante del examen abdominal. Puede ser digital o en pinza, por ejemplo para buscar el signo de Godet en el edema de los flancos; monomanual o bimanual, con una mano que palpa y otra que relaja la pared, como en las maniobras de Galambos u Obrastzov; y superficial o profunda."
+    },
+    {
+      "title": "Palpación superficial: la secuencia",
+      "text": "La palpación superficial sigue una secuencia. Primero la mano del escultor: pasás la mano plana por todo el abdomen y buscás sensibilidad, temperatura y bultos. Si encontrás un bulto, la maniobra del esfuerzo te dice si está en la pared. Después la tensión abdominal: con flexiones rítmicas de los dedos, desde las fosas ilíacas hacia arriba, comparando un lado con el otro. Normalmente la tensión es mayor arriba y a la derecha, por el hígado. Y por último la compresión y la descompresión."
+    },
+    {
+      "title": "Abdomen tenso y doloroso",
+      "text": "Si el abdomen está muy tenso, puede ser una contractura, involuntaria, por irritación peritoneal: la peritonitis, el abdomen en tabla. O una defensa, voluntaria: el paciente te saca la mano. Y la compresión y descompresión: si duele al comprimir, peritoneo visceral; si duele al soltar, parietal. Localizado, es el signo de Blumberg, que no se olvida; generalizado, el de Gueneau de Mussy. La tensión disminuida es rara: ancianos, caquécticos, desnutridos."
+    },
+    {
+      "title": "Chapoteo o bazuqueo gástrico",
+      "text": "Y otra pregunta de parcial: el chapoteo o bazuqueo gástrico. El paciente tiene mucha tensión en el epigastrio y el hipocondrio izquierdo, y al hundir con golpes rápidos con la punta de los dedos, escuchás y sentís como palmadas sobre el agua. Es el signo característico del síndrome pilórico: el estómago retiene líquido."
+    },
+    {
+      "title": "Puntos apendiculares",
+      "text": "Los puntos dolorosos. Los apendiculares, el profesor los pide como la palma de la mano. El más importante, el de McBurney: en la línea que une el ombligo con la espina ilíaca anterosuperior derecha, en la unión del tercio externo con los dos tercios internos. El de Morris está en la misma línea, más cerca del ombligo; el de Cope, en el medio; el de Lanz, en la línea entre las dos espinas ilíacas; y el de Lecene, atrás, para el apéndice retrocecal."
+    },
+    {
+      "title": "Puntos pancreáticos y biliares",
+      "text": "Los pancreáticos y biliares también se saben todos. El punto cístico, o de Murphy, en el reborde costal derecho, en el borde externo del recto: duele en la colecistitis. La zona coledocopancreática de Chauffard y el punto de Desjardins, arriba y a la derecha del ombligo, proyectan la cabeza del páncreas. Y el dolor en hemicinturón, que empieza en el epigastrio, va al hipocondrio izquierdo y sigue a la espalda: pancreatitis."
+    },
+    {
+      "title": "Los demás puntos",
+      "text": "Los demás puntos. Los de paracentesis están donde el de McBurney, pero del lado izquierdo, y duelen en la diverticulitis. Los gastrointestinales casi nunca se preguntan; el más usado es el epigástrico, en la gastritis o la úlcera. Los mesentéricos no se preguntan. De los ureterales, el superior y el medio se palpan; el inferior solo por tacto rectal o vaginal. De los renales, para el parcial importan los posteriores: el costovertebral y el costomuscular. Y el vesical, que marca el sitio de una punción de la vejiga."
+    },
+    {
+      "title": "Hígado: monomanual y bimanual",
+      "text": "La palpación profunda se vio en la práctica, y en la pizarra quedaron las maniobras. Para el hígado, las monomanuales: la simple, que empieza en la fosa ilíaca derecha y sube hasta el reborde, y la mano en cuchara. Y las bimanuales: la de Chauffard, que pelotea el hígado desde atrás; la de Güemes, con una mano de sostén en la espalda; la de Mathieu, de enganche; y la de Gilbert. El borde normal no pasa más de un centímetro el reborde, y la hepatometría normal es de nueve a doce centímetros."
+    },
+    {
+      "title": "Cómo es el hígado que palpás",
+      "text": "Y lo que palpás también orienta. Un hígado firme, de borde filoso y micronodular, es el de la cirrosis. Grande, blando y doloroso, el de la hepatitis aguda. Pétreo y macronodular, el de las metástasis. Y al percutir, si desaparece la matidez hepática, hay aire interpuesto: el signo de Jobert de la perforación."
+    },
+    {
+      "title": "Bazo: a la derecha y a la izquierda del paciente",
+      "text": "Para el bazo, la pizarra separa las maniobras según dónde te ubicás. A la derecha del paciente: la monomanual simple, la bimanual propiamente dicha y la de Galambos. A la izquierda: la mano en cuchara, la de Naegeli, con el paciente en posición de Schuster, a cuarenta y cinco grados, y la de Merlo. El bazo normal no se palpa. A la percusión, su matidez está entre la novena y la undécima costilla, y el punto de Castell, en el último espacio intercostal, debe ser timpánico."
+    },
+    {
+      "title": "Vesícula: la maniobra de Murphy",
+      "text": "La vesícula se explora con la maniobra de Murphy: los pulgares debajo del reborde costal derecho, en el borde externo del recto, y se le pide al paciente que inspire profundo. Si el dolor le corta la inspiración, el signo es positivo: colecistitis. Y si la vesícula se palpa grande e indolora en un paciente ictérico, es el signo de Bard y Pick, y con pérdida de peso, la ley de Courvoisier-Terrier."
+    },
+    {
+      "title": "Hernias y eventraciones",
+      "text": "Y la pared. En la hernia, el contenido abdominal sale por un orificio anatómico que ya existía, como el inguinal o el umbilical. En la eventración, sale por un orificio patológico: una cicatriz que no cerró bien. La hernia es reductible si se puede volver a meter con el dedo. Coercible, si una vez reducida no vuelve a salir; incoercible, si vuelve a salir. Con esto, tenés todo el examen. Ahora a practicar, y mirá las maniobras en video."
+    }
+  ]
+}

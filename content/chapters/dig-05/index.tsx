@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-05 — Examen físico del aparato digestivo.
@@ -280,6 +281,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig05-d01',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -295,27 +297,30 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-d02',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
       ficha: 'palpacion',
       question: '¿Qué es el bazuqueo (chapoteo) gástrico y qué indica?',
-      quote: { text: '«…chapoteo o bazuqueo gástrico, pregunta de parcial»', refs: [E2('17:57')] },
+      quote: { text: '«…chapoteo o bazuqueo gástrico, pregunta de parcial»', refs: [E2('18:12')] },
       answer: [{ t: 'p', text: 'Chapoteo que se percibe al hundir el epigastrio con la punta de los dedos (durante la toma de la tensión abdominal), por **líquido retenido en el estómago**. Es el signo característico del **síndrome pilórico** (fase de atonía).' }],
       refs: [E2('17:14'), E2('17:57')],
     },
     {
       id: 'dig05-d03',
+      origen: 'clase',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'orden',
       question: '¿En qué orden se examina el abdomen y por qué difiere del tórax?',
-      quote: { text: '«…uno del examen físico más preguntado de todos junto con el respiratorio»', refs: [E1('00:44')] },
+      quote: { text: '«…uno del examen físico más preguntado de todos junto con el respiratorio»', refs: [E1('01:05')] },
       answer: [{ t: 'p', text: '**Inspección, auscultación, percusión y palpación.** Se ausculta **antes** de palpar porque la palpación modifica los ruidos hidroaéreos espontáneos. Paciente en decúbito dorsal, relajado, sin almohada.' }],
       refs: [E1('01:28'), E1('05:00'), E1('05:42')],
     },
     {
       id: 'dig05-d04',
+      origen: 'clase',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'inspeccion',
@@ -326,6 +331,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-d05',
+      origen: 'clase',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'puntos',
@@ -339,6 +345,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-d06',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'percusion',
@@ -348,6 +355,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-d07',
+      origen: 'practica',
       prio: 'P2',
       priority: 'muy-importante',
       ficha: 'hernias',
@@ -360,6 +368,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig05-q01',
+      origen: 'practica',
       topic: 'Orden',
       difficulty: 1,
       emphasis: true,
@@ -375,6 +384,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q02',
+      origen: 'practica',
       topic: 'Inspección',
       difficulty: 1,
       emphasis: true,
@@ -390,6 +400,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q03',
+      origen: 'practica',
       topic: 'Inspección',
       difficulty: 2,
       stem: 'Circulación colateral que parte del ombligo en **cabeza de medusa**:',
@@ -404,6 +415,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q04',
+      origen: 'practica',
       topic: 'Percusión',
       difficulty: 2,
       emphasis: true,
@@ -419,6 +431,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q05',
+      origen: 'practica',
       topic: 'Ascitis',
       difficulty: 2,
       stem: 'La maniobra de **mayor sensibilidad** para ascitis es:',
@@ -433,6 +446,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q06',
+      origen: 'practica',
       topic: 'Ascitis',
       difficulty: 2,
       stem: 'Líquido abdominal **encapsulado** que no se desplaza:',
@@ -447,6 +461,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q07',
+      origen: 'practica',
       topic: 'Percusión',
       difficulty: 2,
       stem: 'La matidez del espacio semilunar de **Traube** puede deberse a:',
@@ -461,6 +476,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q08',
+      origen: 'practica',
       topic: 'Palpación',
       difficulty: 1,
       emphasis: true,
@@ -476,6 +492,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q09',
+      origen: 'practica',
       topic: 'Puntos',
       difficulty: 1,
       stem: 'El punto de **McBurney** se ubica en:',
@@ -490,6 +507,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q10',
+      origen: 'practica',
       topic: 'Vesícula',
       difficulty: 2,
       stem: 'La maniobra de Murphy es positiva cuando:',
@@ -504,6 +522,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q11',
+      origen: 'practica',
       topic: 'Bazo',
       difficulty: 2,
       stem: '¿Por qué la palpación del bazo empieza en la **fosa ilíaca derecha**?',
@@ -518,6 +537,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig05-q12',
+      origen: 'practica',
       topic: 'Hernias',
       difficulty: 2,
       stem: 'Salida de contenido abdominal por una **cicatriz quirúrgica**:',
@@ -634,6 +654,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig05-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Paciente cirrótico con abdomen globoso: ¿qué maniobra confirma mejor la ascitis?',
@@ -648,6 +669,7 @@ const chapter: Chapter = {
       },
       {
         id: 'dig05-x02',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Silencio abdominal localizado junto a un órgano inflamado:',
@@ -664,6 +686,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

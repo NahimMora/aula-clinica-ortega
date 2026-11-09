@@ -1,0 +1,737 @@
+{
+ "fps": 24,
+ "total": 26833,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-sonidos",
+   "inicio": 96,
+   "frames": 744,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 294
+    },
+    {
+     "inicio": 390,
+     "frames": 450
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-orden",
+   "inicio": 840,
+   "frames": 481,
+   "beats": [
+    {
+     "inicio": 840,
+     "frames": 297
+    },
+    {
+     "inicio": 1137,
+     "frames": 184
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ascitis",
+   "inicio": 1321,
+   "frames": 717,
+   "beats": [
+    {
+     "inicio": 1321,
+     "frames": 471
+    },
+    {
+     "inicio": 1792,
+     "frames": 246
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-onda",
+   "inicio": 2038,
+   "frames": 526,
+   "beats": [
+    {
+     "inicio": 2038,
+     "frames": 271
+    },
+    {
+     "inicio": 2309,
+     "frames": 255
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ombligo",
+   "inicio": 2564,
+   "frames": 590,
+   "beats": [
+    {
+     "inicio": 2564,
+     "frames": 301
+    },
+    {
+     "inicio": 2865,
+     "frames": 289
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-colateral",
+   "inicio": 3154,
+   "frames": 622,
+   "beats": [
+    {
+     "inicio": 3154,
+     "frames": 375
+    },
+    {
+     "inicio": 3529,
+     "frames": 247
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-chvostek",
+   "inicio": 3776,
+   "frames": 551,
+   "beats": [
+    {
+     "inicio": 3776,
+     "frames": 144
+    },
+    {
+     "inicio": 3920,
+     "frames": 117
+    },
+    {
+     "inicio": 4037,
+     "frames": 290
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-chapoteo",
+   "inicio": 4327,
+   "frames": 484,
+   "beats": [
+    {
+     "inicio": 4327,
+     "frames": 174
+    },
+    {
+     "inicio": 4501,
+     "frames": 176
+    },
+    {
+     "inicio": 4677,
+     "frames": 134
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-inspiracion",
+   "inicio": 4811,
+   "frames": 498,
+   "beats": [
+    {
+     "inicio": 4811,
+     "frames": 222
+    },
+    {
+     "inicio": 5033,
+     "frames": 276
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-bazo",
+   "inicio": 5309,
+   "frames": 715,
+   "beats": [
+    {
+     "inicio": 5309,
+     "frames": 202
+    },
+    {
+     "inicio": 5511,
+     "frames": 233
+    },
+    {
+     "inicio": 5744,
+     "frames": 280
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-importancia",
+   "inicio": 6024,
+   "frames": 472,
+   "beats": [
+    {
+     "inicio": 6024,
+     "frames": 241
+    },
+    {
+     "inicio": 6265,
+     "frames": 231
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-topografia",
+   "inicio": 6496,
+   "frames": 712,
+   "beats": [
+    {
+     "inicio": 6496,
+     "frames": 229
+    },
+    {
+     "inicio": 6725,
+     "frames": 351
+    },
+    {
+     "inicio": 7076,
+     "frames": 132
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-orden",
+   "inicio": 7208,
+   "frames": 467,
+   "beats": [
+    {
+     "inicio": 7208,
+     "frames": 305
+    },
+    {
+     "inicio": 7513,
+     "frames": 162
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-forma",
+   "inicio": 7675,
+   "frames": 1238,
+   "beats": [
+    {
+     "inicio": 7675,
+     "frames": 281
+    },
+    {
+     "inicio": 7956,
+     "frames": 185
+    },
+    {
+     "inicio": 8141,
+     "frames": 206
+    },
+    {
+     "inicio": 8347,
+     "frames": 127
+    },
+    {
+     "inicio": 8474,
+     "frames": 147
+    },
+    {
+     "inicio": 8621,
+     "frames": 109
+    },
+    {
+     "inicio": 8730,
+     "frames": 183
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ombligo",
+   "inicio": 8913,
+   "frames": 664,
+   "beats": [
+    {
+     "inicio": 8913,
+     "frames": 251
+    },
+    {
+     "inicio": 9164,
+     "frames": 145
+    },
+    {
+     "inicio": 9309,
+     "frames": 268
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piel",
+   "inicio": 9577,
+   "frames": 603,
+   "beats": [
+    {
+     "inicio": 9577,
+     "frames": 240
+    },
+    {
+     "inicio": 9817,
+     "frames": 363
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cicatrices",
+   "inicio": 10180,
+   "frames": 572,
+   "beats": [
+    {
+     "inicio": 10180,
+     "frames": 285
+    },
+    {
+     "inicio": 10465,
+     "frames": 287
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-chvostek",
+   "inicio": 10752,
+   "frames": 621,
+   "beats": [
+    {
+     "inicio": 10752,
+     "frames": 185
+    },
+    {
+     "inicio": 10937,
+     "frames": 436
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cullen",
+   "inicio": 11373,
+   "frames": 586,
+   "beats": [
+    {
+     "inicio": 11373,
+     "frames": 136
+    },
+    {
+     "inicio": 11509,
+     "frames": 95
+    },
+    {
+     "inicio": 11604,
+     "frames": 355
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ombligo-latidos",
+   "inicio": 11959,
+   "frames": 703,
+   "beats": [
+    {
+     "inicio": 11959,
+     "frames": 240
+    },
+    {
+     "inicio": 12199,
+     "frames": 263
+    },
+    {
+     "inicio": 12462,
+     "frames": 200
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dinamica",
+   "inicio": 12662,
+   "frames": 699,
+   "beats": [
+    {
+     "inicio": 12662,
+     "frames": 255
+    },
+    {
+     "inicio": 12917,
+     "frames": 224
+    },
+    {
+     "inicio": 13141,
+     "frames": 220
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-auscultacion",
+   "inicio": 13361,
+   "frames": 1034,
+   "beats": [
+    {
+     "inicio": 13361,
+     "frames": 513
+    },
+    {
+     "inicio": 13874,
+     "frames": 215
+    },
+    {
+     "inicio": 14089,
+     "frames": 306
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-soplos",
+   "inicio": 14395,
+   "frames": 774,
+   "beats": [
+    {
+     "inicio": 14395,
+     "frames": 253
+    },
+    {
+     "inicio": 14648,
+     "frames": 139
+    },
+    {
+     "inicio": 14787,
+     "frames": 119
+    },
+    {
+     "inicio": 14906,
+     "frames": 129
+    },
+    {
+     "inicio": 15035,
+     "frames": 134
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-percusion",
+   "inicio": 15169,
+   "frames": 550,
+   "beats": [
+    {
+     "inicio": 15169,
+     "frames": 250
+    },
+    {
+     "inicio": 15419,
+     "frames": 300
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-traube",
+   "inicio": 15719,
+   "frames": 640,
+   "beats": [
+    {
+     "inicio": 15719,
+     "frames": 357
+    },
+    {
+     "inicio": 16076,
+     "frames": 283
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ascitis",
+   "inicio": 16359,
+   "frames": 633,
+   "beats": [
+    {
+     "inicio": 16359,
+     "frames": 442
+    },
+    {
+     "inicio": 16801,
+     "frames": 191
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-maniobras-ascitis",
+   "inicio": 16992,
+   "frames": 663,
+   "beats": [
+    {
+     "inicio": 16992,
+     "frames": 292
+    },
+    {
+     "inicio": 17284,
+     "frames": 371
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-palpacion",
+   "inicio": 17655,
+   "frames": 612,
+   "beats": [
+    {
+     "inicio": 17655,
+     "frames": 252
+    },
+    {
+     "inicio": 17907,
+     "frames": 360
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-superficial",
+   "inicio": 18267,
+   "frames": 865,
+   "beats": [
+    {
+     "inicio": 18267,
+     "frames": 282
+    },
+    {
+     "inicio": 18549,
+     "frames": 141
+    },
+    {
+     "inicio": 18690,
+     "frames": 337
+    },
+    {
+     "inicio": 19027,
+     "frames": 105
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tension",
+   "inicio": 19132,
+   "frames": 866,
+   "beats": [
+    {
+     "inicio": 19132,
+     "frames": 242
+    },
+    {
+     "inicio": 19374,
+     "frames": 129
+    },
+    {
+     "inicio": 19503,
+     "frames": 495
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-chapoteo",
+   "inicio": 19998,
+   "frames": 529,
+   "beats": [
+    {
+     "inicio": 19998,
+     "frames": 377
+    },
+    {
+     "inicio": 20375,
+     "frames": 152
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-apendiculares",
+   "inicio": 20527,
+   "frames": 729,
+   "beats": [
+    {
+     "inicio": 20527,
+     "frames": 729
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-pancreaticos",
+   "inicio": 21256,
+   "frames": 712,
+   "beats": [
+    {
+     "inicio": 21256,
+     "frames": 306
+    },
+    {
+     "inicio": 21562,
+     "frames": 406
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otros-puntos",
+   "inicio": 21968,
+   "frames": 991,
+   "beats": [
+    {
+     "inicio": 21968,
+     "frames": 231
+    },
+    {
+     "inicio": 22199,
+     "frames": 193
+    },
+    {
+     "inicio": 22392,
+     "frames": 95
+    },
+    {
+     "inicio": 22487,
+     "frames": 172
+    },
+    {
+     "inicio": 22659,
+     "frames": 170
+    },
+    {
+     "inicio": 22829,
+     "frames": 130
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-higado",
+   "inicio": 22959,
+   "frames": 815,
+   "beats": [
+    {
+     "inicio": 22959,
+     "frames": 356
+    },
+    {
+     "inicio": 23315,
+     "frames": 459
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-higado-como",
+   "inicio": 23774,
+   "frames": 628,
+   "beats": [
+    {
+     "inicio": 23774,
+     "frames": 210
+    },
+    {
+     "inicio": 23984,
+     "frames": 128
+    },
+    {
+     "inicio": 24112,
+     "frames": 290
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-bazo",
+   "inicio": 24402,
+   "frames": 842,
+   "beats": [
+    {
+     "inicio": 24402,
+     "frames": 299
+    },
+    {
+     "inicio": 24701,
+     "frames": 231
+    },
+    {
+     "inicio": 24932,
+     "frames": 312
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-vesicula",
+   "inicio": 25244,
+   "frames": 675,
+   "beats": [
+    {
+     "inicio": 25244,
+     "frames": 279
+    },
+    {
+     "inicio": 25523,
+     "frames": 155
+    },
+    {
+     "inicio": 25678,
+     "frames": 241
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hernias",
+   "inicio": 25919,
+   "frames": 794,
+   "beats": [
+    {
+     "inicio": 25919,
+     "frames": 372
+    },
+    {
+     "inicio": 26291,
+     "frames": 422
+    }
+   ]
+  }
+ ]
+}
