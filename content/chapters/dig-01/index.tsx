@@ -2,6 +2,7 @@ import type { Chapter, SourceRef } from '@/types';
 import { diagrams } from './diagrams';
 import video from './video.json';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * Reescrito el 2026-11-08 según el pedido de la usuaria:
@@ -76,7 +77,7 @@ const chapter: Chapter = {
       priority: 'imprescindible',
       summary: 'El contenido dice de dónde viene; el horario orienta la causa.',
       blocks: [
-        { t: 'callout', kind: 'prof', title: 'Se pregunta', text: '«Eso es importante, la clasificación… les pueden preguntar»: cómo era el vómito y en qué momento apareció.', refs: [M2('15:51')] },
+        { t: 'callout', kind: 'prof', title: 'Se pregunta', text: 'Cómo era el vómito y en qué momento apareció: «…les pueden preguntar».', refs: [M2('16:21')] },
         { t: 'diagram', id: 'vomito-nivel', caption: 'Elegí un tipo para ver de qué tramo viene.' },
         {
           t: 'cuadro',
@@ -128,7 +129,7 @@ const chapter: Chapter = {
               title: '¿Por qué? Fisiopatología (libro p. 75)',
               blocks: [
                 { t: 'list', items: ['**Oscura en la hematemesis:** el ácido del estómago transforma la hemoglobina en **hematina ácida** (borra de café).', '**Espumosa en la hemoptisis:** la sangre viene mezclada con **aire** de la vía aérea; reacción **alcalina**.', '**Melena después de una hematemesis:** la sangre que pasa al intestino se digiere y sale con la materia fecal.'] },
-                { t: 'callout', kind: 'note', text: 'En la grabación se escucha “la hematemesis tiene pH alcalino”; el cuadro del libro del profe (p. 75) asigna la reacción **alcalina a la hemoptisis**. Respondé con el cuadro del libro.', refs: [HD('08:00'), L('75')] },
+                { t: 'callout', kind: 'note', text: 'La reacción **alcalina** corresponde a la **hemoptisis** (sangre del pulmón, sin contacto con el ácido); la hematemesis es **ácida**. Respondé con el cuadro del libro (p. 75).', refs: [L('75')] },
               ],
             },
           ],
@@ -262,6 +263,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig01-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -286,6 +288,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig01-d02',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'tipos-vomito',
@@ -299,6 +302,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig01-d03',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'complicaciones',
@@ -312,11 +316,12 @@ const chapter: Chapter = {
     },
     {
       id: 'dig01-d04',
+      origen: 'clase',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'complicaciones',
       question: '¿Cuáles son las complicaciones del vómito y por qué se producen?',
-      quote: { text: 'Complicaciones del vómito: se preguntan en la cátedra', refs: [M2('23:15')] },
+      quote: { text: '«Fíjense que tenemos varias complicaciones…»', refs: [M2('23:17')] },
       answer: [
         { t: 'list', items: ['**Hipopotasemia y alcalosis metabólica:** se pierden potasio y ácido clorhídrico (predomina la pérdida de cloro).', '**Deshidratación:** taquicardia, hipotensión.', '**Neumonitis química → neumonía aspirativa** si aspira el vómito.', '**Mallory-Weiss** (desgarro mucoso, hematemesis) y **Boerhaave** (rotura transmural).'] },
       ],
@@ -324,6 +329,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig01-d05',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -338,11 +344,12 @@ const chapter: Chapter = {
     },
     {
       id: 'dig01-d06',
+      origen: 'clase',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'disfagia',
       question: 'Diferencie disfagia orofaríngea de esofágica.',
-      quote: { text: '“Estas características no pueden olvidarse”', refs: [M1('03:42')] },
+      quote: { text: '«…esta característica no la pueden… olvidarse, todo está aquí»', refs: [M1('04:03')] },
       answer: [
         { t: 'p', text: '**Orofaríngea (alta, de transferencia):** no puede iniciar la deglución, señala la garganta, regurgita por boca o nariz, tos y ahogo; más con líquidos; ACV n.º 1.' },
         { t: 'p', text: '**Esofágica (baja, de transporte):** traga y luego se traba detrás del esternón. **Mecánica:** solo sólidos, progresiva (estenosis péptica n.º 1). **Motora:** sólidos y líquidos, intermitente.' },
@@ -351,6 +358,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig01-d07',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'dispepsia',
@@ -367,7 +375,7 @@ const chapter: Chapter = {
   /* ───────── Choice (solo temas de examen) ───────── */
   mcq: [
     {
-      id: 'dig01-q01', topic: 'Hematemesis vs hemoptisis', difficulty: 1, emphasis: true,
+      id: 'dig01-q01', origen: 'practica', topic: 'Hematemesis vs hemoptisis', difficulty: 1, emphasis: true,
       stem: 'Sangre roja rutilante y espumosa expulsada con la tos, de reacción alcalina, corresponde a:',
       options: [
         { text: 'Hematemesis.', why: 'La hematemesis sale con el vómito, oscura y ácida.' },
@@ -378,7 +386,7 @@ const chapter: Chapter = {
       answer: 1, refs: [HD('08:08'), L('75')],
     },
     {
-      id: 'dig01-q02', topic: 'Hematemesis', difficulty: 1,
+      id: 'dig01-q02', origen: 'practica', topic: 'Hematemesis', difficulty: 1,
       stem: 'Un vómito en **borra de café** indica:',
       options: [
         { text: 'Sangrado activo arterial.', why: 'Eso es sangre roja.' },
@@ -389,7 +397,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M2('17:13'), L('75')],
     },
     {
-      id: 'dig01-q03', topic: 'Tipos de vómito', difficulty: 2, emphasis: true,
+      id: 'dig01-q03', origen: 'practica', topic: 'Tipos de vómito', difficulty: 2, emphasis: true,
       stem: 'Vómito de alimentos ingeridos varias horas antes, con chapoteo gástrico:',
       options: [
         { text: 'Gastroenteritis.', why: 'No explica la retención.' },
@@ -400,7 +408,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M2('19:53'), M2('29:19'), L('375')],
     },
     {
-      id: 'dig01-q04', topic: 'Horario del vómito', difficulty: 1,
+      id: 'dig01-q04', origen: 'practica', topic: 'Horario del vómito', difficulty: 1,
       stem: 'Vómito matinal en ayunas. Las tres causas que remarca el profe son:',
       options: [
         { text: 'Úlcera, gastritis y pancreatitis.', why: 'No son las del vómito matinal.' },
@@ -411,7 +419,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M2('19:13')],
     },
     {
-      id: 'dig01-q05', topic: 'Vómito en chorro', difficulty: 2,
+      id: 'dig01-q05', origen: 'practica', topic: 'Vómito en chorro', difficulty: 2,
       stem: 'Vómito en chorro, sin náuseas, con cefalea intensa: hay que pensar en',
       options: [
         { text: 'Síndrome pilórico.', why: 'Es de retención.' },
@@ -422,7 +430,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M2('21:54')],
     },
     {
-      id: 'dig01-q06', topic: 'Mallory-Weiss', difficulty: 1, emphasis: true,
+      id: 'dig01-q06', origen: 'practica', topic: 'Mallory-Weiss', difficulty: 1, emphasis: true,
       stem: 'La tríada de Mallory-Weiss es:',
       options: [
         { text: 'Dolor, vómitos y fiebre.', why: 'Es la tríada de Murphy (apendicitis).' },
@@ -433,7 +441,7 @@ const chapter: Chapter = {
       answer: 1, refs: [HD('16:48'), L('390')],
     },
     {
-      id: 'dig01-q07', topic: 'Complicaciones', difficulty: 2, emphasis: true,
+      id: 'dig01-q07', origen: 'practica', topic: 'Complicaciones', difficulty: 2, emphasis: true,
       stem: 'Alteración esperable en un paciente con vómitos profusos:',
       options: [
         { text: 'Acidosis metabólica con hiperpotasemia.', why: 'Se pierde ácido y potasio, no se ganan.' },
@@ -444,7 +452,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M2('23:15'), L('377')],
     },
     {
-      id: 'dig01-q08', topic: 'Mallory-Weiss vs Boerhaave', difficulty: 2,
+      id: 'dig01-q08', origen: 'practica', topic: 'Mallory-Weiss vs Boerhaave', difficulty: 2,
       stem: '¿Qué diferencia a Mallory-Weiss de Boerhaave?',
       options: [
         { text: 'Mallory-Weiss es transmural.', why: 'Es al revés.' },
@@ -455,7 +463,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M2('23:55'), M2('24:37')],
     },
     {
-      id: 'dig01-q09', topic: 'Disfagia', difficulty: 1,
+      id: 'dig01-q09', origen: 'practica', topic: 'Disfagia', difficulty: 1,
       stem: 'La disfagia orofaríngea también se llama:',
       options: [
         { text: 'Baja o de transporte.', why: 'Esa es la esofágica.' },
@@ -466,7 +474,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M1('03:00')],
     },
     {
-      id: 'dig01-q10', topic: 'Disfagia', difficulty: 2,
+      id: 'dig01-q10', origen: 'practica', topic: 'Disfagia', difficulty: 2,
       stem: 'Disfagia esofágica **solo para sólidos**, continua y progresiva: orienta a',
       options: [
         { text: 'Causa mecánica (obstructiva).', why: 'Correcto: un obstáculo deja pasar líquidos pero no sólidos.' },
@@ -477,7 +485,7 @@ const chapter: Chapter = {
       answer: 0, refs: [M1('12:48')],
     },
     {
-      id: 'dig01-q11', topic: 'Acalasia', difficulty: 2, emphasis: true,
+      id: 'dig01-q11', origen: 'practica', topic: 'Acalasia', difficulty: 2, emphasis: true,
       stem: 'Disfagia lentamente progresiva para sólidos y líquidos con regurgitación, en un paciente con Chagas:',
       options: [
         { text: 'Cáncer de esófago.', why: 'Es obstructivo: al principio solo sólidos.' },
@@ -488,7 +496,7 @@ const chapter: Chapter = {
       answer: 1, refs: [M1('21:30')],
     },
     {
-      id: 'dig01-q12', topic: 'Dispepsia', difficulty: 2,
+      id: 'dig01-q12', origen: 'practica', topic: 'Dispepsia', difficulty: 2,
       stem: '¿Cuál es un signo de alarma en dispepsia?',
       options: [
         { text: 'Eructos.', why: 'Forma parte de la clínica habitual.' },
@@ -497,6 +505,50 @@ const chapter: Chapter = {
         { text: 'Tener 30 años.', why: 'La edad es alarma por encima de 55.' },
       ],
       answer: 1, refs: [M2('08:14')],
+    },
+    {
+      id: 'dig01-q13', origen: 'practica', topic: 'Reflejo del vómito', difficulty: 2,
+      stem: 'La **zona quimiorreceptora gatillo** detecta fármacos y toxinas en la sangre porque:',
+      options: [
+        { text: 'Está en el área postrema, sin barrera hematoencefálica.', why: 'Correcto: sus capilares dejan pasar sustancias de la sangre.' },
+        { text: 'Está en la corteza cerebral.', why: 'La corteza manda aferencias, pero la zona gatillo está en el piso del IV ventrículo.' },
+        { text: 'Recibe fibras del vago desde el estómago.', why: 'Esa es otra aferencia del centro del vómito.' },
+        { text: 'Provoca el vómito por sí sola.', why: 'No: activa al centro del vómito, que es el que lo desencadena.' },
+      ],
+      answer: 0, refs: [r('argente-libro', undefined, '646')],
+    },
+    {
+      id: 'dig01-q14', origen: 'practica', topic: 'Reflejo del vómito', difficulty: 3,
+      stem: 'Un paciente vomita **bilis** con el estómago vacío. ¿Qué lo explica?',
+      options: [
+        { text: 'La onda antiperistáltica que lleva el contenido duodenal al estómago antes del vómito.', why: 'Correcto: por eso un estómago vacío no impide vomitar y el vómito trae bilis.' },
+        { text: 'Una obstrucción pilórica.', why: 'Con el píloro obstruido la bilis no llega al estómago.' },
+        { text: 'La relajación del píloro durante la arcada.', why: 'Durante el vómito el píloro está contraído.' },
+        { text: 'Una hemorragia digestiva alta.', why: 'No explica la bilis.' },
+      ],
+      answer: 0, refs: [r('argente-libro', undefined, '646')],
+    },
+    {
+      id: 'dig01-q15', origen: 'practica', topic: 'Acalasia', difficulty: 2,
+      stem: 'En la acalasia, el esófago se dilata porque:',
+      options: [
+        { text: 'Pierde el peristaltismo y el esfínter inferior no se relaja.', why: 'Correcto: alteración del plexo de Auerbach.' },
+        { text: 'Un tumor obstruye la luz.', why: 'Eso es una disfagia mecánica.' },
+        { text: 'El esfínter inferior queda abierto.', why: 'Es al revés: aumenta su tono.' },
+        { text: 'Falla la fase oral de la deglución.', why: 'Eso es orofaríngeo.' },
+      ],
+      answer: 0, refs: [L('369')],
+    },
+    {
+      id: 'dig01-q16', origen: 'practica', topic: 'Dispepsia', difficulty: 2,
+      stem: 'En la dispepsia funcional, la **secreción de ácido** suele estar:',
+      options: [
+        { text: 'Normal, con mayor sensibilidad de la mucosa.', why: 'Correcto: es la hipersensibilidad visceral.' },
+        { text: 'Muy aumentada siempre.', why: 'Lo característico no es el exceso de ácido.' },
+        { text: 'Ausente.', why: 'No.' },
+        { text: 'Aumentada por una úlcera.', why: 'Si hay úlcera, la dispepsia es orgánica.' },
+      ],
+      answer: 0, refs: [r('argente-libro', undefined, '643'), M2('02:45')],
     },
   ],
 
@@ -587,7 +639,7 @@ const chapter: Chapter = {
     ],
     miniExam: [
       {
-        id: 'dig01-x01', topic: 'Integración', difficulty: 2, integration: true,
+        id: 'dig01-x01', origen: 'practica', topic: 'Integración', difficulty: 2, integration: true,
         stem: 'Paciente alcohólico que tras vómitos repetidos presenta vómito con sangre. ¿Qué tríada cumple?',
         options: [
           { text: 'Murphy.', why: 'Dolor, vómitos y fiebre (apendicitis).' },
@@ -598,7 +650,7 @@ const chapter: Chapter = {
         answer: 1, refs: [HD('16:48')],
       },
       {
-        id: 'dig01-x02', topic: 'Integración', difficulty: 2, integration: true,
+        id: 'dig01-x02', origen: 'practica', topic: 'Integración', difficulty: 2, integration: true,
         stem: 'Sangre oscura con restos alimentarios, precedida de náuseas, y melena al día siguiente:',
         options: [
           { text: 'Hemoptisis.', why: 'Sería roja, espumosa, con tos.' },
@@ -609,7 +661,7 @@ const chapter: Chapter = {
         answer: 1, refs: [L('75')],
       },
       {
-        id: 'dig01-x03', topic: 'Integración', difficulty: 1,
+        id: 'dig01-x03', origen: 'practica', topic: 'Integración', difficulty: 1,
         stem: '“Las dos D y la P” de la dispepsia son:',
         options: [
           { text: 'Disfagia, diarrea, pirosis.', why: 'No.' },
@@ -626,6 +678,7 @@ const chapter: Chapter = {
   escenas,
   audioPasos: true,
   diagrams,
+  clase,
 };
 
 export default chapter;

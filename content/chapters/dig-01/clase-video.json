@@ -1,0 +1,266 @@
+{
+  "src": "media/dig-01/clase.mp4",
+  "poster": "media/dig-01/clase.jpg",
+  "vtt": "media/dig-01/clase.vtt",
+  "duration": "24:30",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · El reflejo del vómito"
+    },
+    {
+      "t": 138,
+      "label": "Fisiopatología · Qué dice el contenido"
+    },
+    {
+      "t": 194,
+      "label": "Fisiopatología · Por qué se complica"
+    },
+    {
+      "t": 275,
+      "label": "Fisiopatología · Deglución y disfagia"
+    },
+    {
+      "t": 380,
+      "label": "Fisiopatología · Dispepsia"
+    },
+    {
+      "t": 430,
+      "label": "Teoría · Vómito y náusea"
+    },
+    {
+      "t": 464,
+      "label": "Teoría · Tipos de vómito"
+    },
+    {
+      "t": 580,
+      "label": "Teoría · Hematemesis"
+    },
+    {
+      "t": 625,
+      "label": "Teoría · Lo que acompaña"
+    },
+    {
+      "t": 699,
+      "label": "Teoría · Complicaciones"
+    },
+    {
+      "t": 758,
+      "label": "Teoría · Cómo se estudia"
+    },
+    {
+      "t": 859,
+      "label": "Teoría · Disfagia"
+    },
+    {
+      "t": 1062,
+      "label": "Teoría · Diagnóstico de la disfagia"
+    },
+    {
+      "t": 1227,
+      "label": "Teoría · Dispepsia"
+    }
+  ],
+  "script": [
+    {
+      "title": "Dos centros en el bulbo",
+      "text": "Empecemos por el mecanismo. El vómito es un reflejo, y lo coordina un centro ubicado en el bulbo: el centro del vómito, en la formación reticular, al lado de los centros que regulan la presión y la respiración. Muy cerca, en el piso del cuarto ventrículo, está el área postrema, la zona quimiorreceptora gatillo. No tiene barrera hematoencefálica, así que detecta directamente lo que viaja en la sangre. Pero esa zona no hace vomitar por sí sola: lo que hace es activar al centro del vómito."
+    },
+    {
+      "title": "Quién activa el centro",
+      "text": "Al centro le llegan señales de cuatro lugares. Desde la corteza: un olor, una imagen o un dolor intenso pueden hacer vomitar. Desde el vestíbulo: el movimiento, o una enfermedad del laberinto. Desde el propio tubo digestivo, por el vago: la distensión, la inflamación del peritoneo, la isquemia intestinal. Y desde la sangre, a través de la zona gatillo: fármacos, uremia, cetoacidosis o toxinas. Por eso tantas enfermedades que no son digestivas se presentan con vómitos."
+    },
+    {
+      "title": "Qué ordena el centro",
+      "text": "Una vez activado, el centro manda órdenes por tres caminos. Por el frénico, contrae el diafragma. Por los nervios espinales, contrae los músculos intercostales y la pared abdominal. Y por el vago y los pares craneales relaja el esfínter esofágico inferior y el fondo del estómago, cierra el píloro, y coordina el paladar, la faringe y la laringe."
+    },
+    {
+      "title": "El acto del vómito",
+      "text": "Y así ocurre el acto. Antes de vomitar, una onda antiperistáltica que empieza en el íleon devuelve el contenido del duodeno, con bilis, al estómago. Después se contraen juntos el diafragma y los músculos abdominales. El estómago queda apretado, con el píloro cerrado. El esfínter esofágico inferior y el fondo se relajan, y el contenido sube por el esófago hasta la boca. Mientras tanto, el paladar blando se eleva y cierra la nasofaringe, y la glotis se cierra para que nada pase a la vía aérea."
+    },
+    {
+      "title": "Cuanto más procesado, más lejos",
+      "text": "El contenido del vómito funciona como una marca de nivel. Si viene del esófago, el alimento vuelve casi entero y casi sin ácido. Si estuvo en el estómago, vuelve parcialmente digerido y ácido. Si trae bilis, el contenido viene de más abajo de la ampolla de Vater, en el duodeno. Y si es fecaloide, hay una obstrucción baja: el contenido se estanca, las bacterias proliferan y aparece ese olor."
+    },
+    {
+      "title": "Por qué la sangre cambia de color",
+      "text": "La sangre también cuenta de dónde viene. En el estómago se encuentra con el ácido, que transforma la hemoglobina en hematina ácida. Por eso se vomita oscura, como borra de café. Solo es roja si se vomita enseguida. La sangre del pulmón, en cambio, sale mezclada con aire. Es roja, espumosa, y su reacción es alcalina."
+    },
+    {
+      "title": "Lo que se pierde al vomitar",
+      "text": "Ahora, por qué se complica. Cuando un paciente vomita una y otra vez contenido del estómago... pierde ácido clorhídrico, es decir hidrógeno y cloro, y pierde agua. Al faltar volumen, el riñón trata de retener sodio y, a cambio, elimina potasio. El resultado es una alcalosis metabólica con hipopotasemia, y un paciente deshidratado, taquicárdico e hipotenso."
+    },
+    {
+      "title": "El esfuerzo puede romper el esófago",
+      "text": "El otro problema es mecánico. Con cada arcada, la presión sube de golpe contra la unión entre el esófago y el estómago. Si se desgarra solo la mucosa, en forma lineal, sangra hacia la luz y el paciente vomita sangre. Es el síndrome de Mallory-Weiss. Si se rompe todo el espesor de la pared, el vómito pasa al mediastino. Es el síndrome de Boerhaave, mucho más grave."
+    },
+    {
+      "title": "Si el vómito va al pulmón",
+      "text": "Y la tercera complicación: el contenido del vómito puede ir hacia la vía aérea. El ácido inflama el pulmón: es una neumonitis química. Ese pulmón inflamado se coloniza con bacterias. Y termina en una neumonía aspirativa, que puede matar al paciente."
+    },
+    {
+      "title": "La deglución normal",
+      "text": "Pasemos a la deglución. La primera fase es voluntaria: masticamos, y la lengua forma el bolo y lo empuja hacia atrás. Desde la faringe todo es involuntario. El paladar blando sube y cierra la nariz, la epiglotis tapa la laringe, y se relaja el esfínter esofágico superior. En el esófago, el parasimpático genera la onda peristáltica que lleva el bolo hasta el estómago, y el esfínter inferior se abre para dejarlo pasar."
+    },
+    {
+      "title": "Cuando no se puede transferir",
+      "text": "Cuando falla la parte refleja, por ejemplo después de un accidente cerebrovascular que lesiona los pares craneales... el bolo no se transfiere al esófago. Queda en la faringe, y el paladar y la epiglotis no cierran bien. Entonces una parte vuelve por la nariz y otra cae a la laringe: el paciente tose, se ahoga y puede aspirar."
+    },
+    {
+      "title": "Obstáculo o motor que falla",
+      "text": "En el esófago hay dos maneras de trabarse. Si hay un obstáculo, el líquido pasa por el costado, pero el sólido no. Y como el obstáculo crece, la disfagia es progresiva. Si lo que falla es el motor, la onda peristáltica no empuja nada: cuesta tragar sólidos y líquidos, y los síntomas van y vienen."
+    },
+    {
+      "title": "Acalasia: el esófago que no vacía",
+      "text": "La acalasia junta los dos problemas. Se daña el plexo mientérico de Auerbach, en general sin causa conocida, o por la enfermedad de Chagas. El esófago pierde el peristaltismo, y el esfínter inferior aumenta su tono y no se relaja. El alimento se acumula, el esófago se dilata y se alarga. Por eso cuesta tragar sólidos y líquidos, y el paciente regurgita."
+    },
+    {
+      "title": "Dispepsia funcional: qué falla",
+      "text": "Y por último, qué falla en la dispepsia funcional. Primero, la acomodación: cuando llega la comida, el fondo del estómago debería relajarse. Si no lo hace, el paciente se llena enseguida. Segundo, el vaciamiento: el estómago tarda en vaciarse y el contenido queda retenido. Tercero, la hipersensibilidad visceral. El ácido es normal, pero el estómago lo percibe como dolor. Cuarto, el Helicobacter pylori: está en un tercio a la mitad de estos pacientes y produce inflamación, aunque también aparece en personas sin síntomas. Y por encima de todo, el sistema nervioso central: el estrés y la ansiedad modulan el movimiento y la sensibilidad del estómago."
+    },
+    {
+      "title": "Vómito, náusea y lo que no es vómito",
+      "text": "Vamos con la teoría. El vómito, o emesis, es la expulsión por la boca del contenido del estómago o del duodeno. La náusea es el deseo de vomitar: casi siempre lo precede. Las arcadas son las contracciones del abdomen y del tórax que vienen antes. Y hay dos cosas que no son vómito: la regurgitación, que sube sin esfuerzo, y la rumiación, cuando el paciente lo vuelve a tragar. Por eso un paciente que vomita sin haber tenido náuseas te tiene que llamar la atención."
+    },
+    {
+      "title": "Dos formas de clasificarlo",
+      "text": "Hay dos clasificaciones, y el profesor avisa que te las pueden preguntar. Por el contenido: alimenticio, parcialmente digerido, bilioso, hemático y fecaloide. Y por el horario: matinal, nocturno, o después de comer."
+    },
+    {
+      "title": "Alimenticio y parcialmente digerido",
+      "text": "Por el contenido. Si el paciente vomita la comida tal como la comió, con poco ácido y con opresión en el pecho, pensá en el esófago. Si viene con mucho líquido y mucho ácido, parcialmente digerido, el problema está en el estómago: una gastroparesia o una obstrucción del píloro."
+    },
+    {
+      "title": "Bilioso y fecaloide",
+      "text": "El bilioso es amarillo verdoso y deja un sabor amargo en la boca. Aparece en causas pancreáticas, hepáticas y biliares. Y el fecaloide es marrón, con olor a materia fecal. Indica una obstrucción baja del intestino, o una fístula entre el estómago y el colon."
+    },
+    {
+      "title": "Hemático: rojo o borra de café",
+      "text": "El hemático es el vómito con sangre. Si es roja clara, el sangrado está activo. Si es oscura, en borra de café, con coágulos o restos de comida, es sangre vieja, que ya estuvo en el estómago. Ante una hematemesis, lo primero que hay que descartar es una úlcera. Después, las várices esofágicas, con sangre venosa abundante, el síndrome de Mallory-Weiss y el cáncer."
+    },
+    {
+      "title": "Por el horario",
+      "text": "Por el horario. Si vomita por la mañana, en ayunas, pensá siempre en tres cosas: está embarazada, tomó alcohol la noche anterior, o tiene hipertensión endocraneana. El vómito nocturno casi siempre obedece a una causa orgánica. Si vomita una hora después de comer, el problema está en el estómago. Y si vomita varias horas después, en el píloro: es el síndrome pilórico."
+    },
+    {
+      "title": "Hematemesis frente a hemoptisis",
+      "text": "Y llegamos a una pregunta de parcial: el cuadro de hematemesis y hemoptisis, que el profesor pide de memoria. La hematemesis sale con el vómito, precedida de náuseas. La hemoptisis sale con la tos. La hematemesis es oscura, en borra de café, con coágulos o restos de comida. La hemoptisis es roja, rutilante y espumosa. La hematemesis es ácida. La hemoptisis, alcalina. Después de una hematemesis viene la melena. Después de una hemoptisis, no. Y los antecedentes: digestivos en una, respiratorios en la otra."
+    },
+    {
+      "title": "Lo que acompaña al vómito",
+      "text": "Rara vez el paciente consulta solo por vómitos: casi siempre viene con algo más, y eso orienta. Dolor en el hipocondrio derecho con vómito bilioso: pensá en la vía biliar o el hígado. Pérdida de peso: cáncer, o un síndrome pilórico. Vértigo y acúfenos: enfermedad de Ménière. Cefalea con vómitos en chorro, sin náuseas: hipertensión endocraneana. La fiebre sugiere infección, y la diarrea, el tubo digestivo bajo o un cuadro sistémico. Si al vomitar se le calma el dolor de estómago, pensá en una úlcera. Y si vomita más de un litro y medio en veinticuatro horas, la causa es orgánica."
+    },
+    {
+      "title": "El vómito no es solo digestivo",
+      "text": "Y recordá que el vómito aparece en muchísimas enfermedades. Del sistema nervioso, como la hipertensión endocraneana. Digestivas, como cualquier abdomen agudo. Infecciones, incluso fuera del abdomen, como una neumonía. Alteraciones metabólicas y fármacos. Enfermedades cardíacas y urinarias. Y el embarazo."
+    },
+    {
+      "title": "Complicaciones del vómito",
+      "text": "Las complicaciones del vómito se preguntan. La primera, metabólica: hipopotasemia y alcalosis metabólica. La segunda, la deshidratación. La tercera, respiratoria: si aspira el vómito, neumonitis química y después neumonía aspirativa. Y la cuarta, del esófago: el desgarro de Mallory-Weiss y la rotura de Boerhaave."
+    },
+    {
+      "title": "Síndrome de Mallory-Weiss",
+      "text": "El síndrome de Mallory-Weiss tiene una tríada que también es su cronología: un paciente alcohólico, que vomita una y otra vez, y que al final vomita sangre. La lesión es un desgarro lineal de la mucosa en la unión entre el esófago y el estómago."
+    },
+    {
+      "title": "No confundir: Mallory-Weiss y Boerhaave",
+      "text": "No los confundas. En el Mallory-Weiss se rompe solo la mucosa y el paciente vomita sangre. En el Boerhaave se rompe toda la pared del esófago, y el vómito cae al mediastino."
+    },
+    {
+      "title": "Anamnesis del paciente que vomita",
+      "text": "En la anamnesis, lo primero es confirmar que es un vómito: si el contenido llegó a la boca pero no lo expulsó, es regurgitación o rumiación. Después, el tiempo: agudo si dura menos de siete días, crónico si dura más. La cantidad. Si tuvo náuseas antes, y en qué momento del día vomita. Y el color, el sabor, cuántas veces, qué medicación toma y qué otros síntomas tiene."
+    },
+    {
+      "title": "Examen físico",
+      "text": "En el examen físico, empezá por los signos vitales. El paciente que vomita mucho se deshidrata: se pone taquicárdico para compensar, y después hipotenso. Buscá los signos de deshidratación en la piel y las mucosas. A la inspección, la distensión, el peristaltismo visible y la ictericia. A la palpación, el chapoteo gástrico es típico del síndrome pilórico. Y el examen neurológico, con fondo de ojo, para descartar hipertensión endocraneana."
+    },
+    {
+      "title": "Laboratorio: CEUCGO y algo más",
+      "text": "En el laboratorio, el profesor usa una regla: CEUCGO. Citológico completo, eritrosedimentación, urea, creatinina, glucemia y orina completa. Pero hay algo que no se olvida nunca: el ionograma, porque estos pacientes tienden a la hipopotasemia y a la alcalosis metabólica. Se suma el hepatograma, la amilasa, y en las mujeres un test de embarazo. Las imágenes y la endoscopia dependen de la causa que sospeches."
+    },
+    {
+      "title": "Disfagia: qué es",
+      "text": "Pasemos a la disfagia. Disfagia es la dificultad para pasar el alimento de la boca al estómago. Ese camino tiene dos tramos: de la boca a la parte alta del esófago, y del esófago al estómago. La masticación es voluntaria; lo demás, involuntario y comandado por el parasimpático."
+    },
+    {
+      "title": "Dos disfagias según dónde se traba",
+      "text": "Según dónde se traba, hay dos disfagias. La orofaríngea, también llamada alta o de transferencia, porque falla el pasaje de la boca a la faringe. Y la esofágica, baja o de transporte: el paciente traga bien, pero después siente que el alimento se detiene."
+    },
+    {
+      "title": "Orofaríngea: cómo se presenta",
+      "text": "Estas son las características que el profesor dice que no se pueden olvidar. El paciente no puede iniciar la deglución, y lo intenta una y otra vez. Regurgita enseguida, por la boca o por la nariz. Tose, se ahoga, y puede quedar disfónico porque restos de comida caen a la laringe. Y si llegan al pulmón, una neumonía aspirativa, que es una causa de muerte. Señala la garganta, y le cuestan más los líquidos."
+    },
+    {
+      "title": "Orofaríngea: causas",
+      "text": "Las causas. Las más frecuentes, casi tres de cada cuatro, son neuromusculares, y la número uno es el accidente cerebrovascular. Le siguen el Parkinson, la esclerosis múltiple, la esclerosis lateral amiotrófica, la miastenia y las miopatías inflamatorias. Entre las motoras, la disfunción del esfínter esofágico superior: la acalasia cricofaríngea. Y las estructurales: inflamaciones, tumores, radiación, cirugías o compresiones desde afuera."
+    },
+    {
+      "title": "Esofágica: cómo se presenta",
+      "text": "La disfagia esofágica es distinta. El paciente pudo tragar, y la molestia aparece después. Siente que la comida se atasca detrás del esternón, o a veces en la boca del estómago. No tiene tos ni aspiración, salvo que el esófago esté tan lleno que el contenido suba hasta la laringe. Y puede tener dolor torácico, regurgitación tardía y odinofagia, que es dolor al tragar."
+    },
+    {
+      "title": "Mecánica o motora",
+      "text": "La esofágica se divide según el mecanismo. La mecánica es solo para sólidos. La motora, para sólidos y líquidos. La mecánica es continua y progresiva. La motora es intermitente: hay momentos en que está bien y momentos en que no. En la mecánica, lo único que alivia es regurgitar. En la motora, el paciente levanta los brazos o se inclina para que el bolo pase. Y el mecanismo: un obstáculo en la luz, o un esófago que no se contrae."
+    },
+    {
+      "title": "Esofágica: causas",
+      "text": "Las causas motoras son la acalasia, el espasmo esofágico difuso y la esclerodermia. Las mecánicas pueden ser extrínsecas, algo que comprime desde afuera, como un tumor del mediastino o una aurícula izquierda dilatada. O intrínsecas, de la propia pared. La más frecuente es la estenosis péptica, por reflujo. Después, el cáncer de esófago, el anillo de Schatzki y la membrana de Plummer-Vinson."
+    },
+    {
+      "title": "Lo que no es disfagia",
+      "text": "Antes de seguir, el diagnóstico diferencial. La odinofagia es dolor al tragar, y casi siempre se debe a un proceso inflamatorio, como una faringoamigdalitis. El globo histérico es la sensación de tener algo en la garganta, que no tiene relación con la comida. Aparece en pacientes ansiosos."
+    },
+    {
+      "title": "El diagnóstico es clínico",
+      "text": "El diagnóstico es clínico, y sale de unas pocas preguntas. Primero, dónde siente la molestia: en la garganta, o detrás del esternón. Segundo, con qué alimento: solo sólidos, o también líquidos. Tercero, cómo evoluciona: intermitente o progresiva. Cuarto, si empezó de golpe, como en un accidente cerebrovascular. Y los síntomas asociados: la pirosis orienta a estenosis péptica, y la pérdida de peso, a cáncer."
+    },
+    {
+      "title": "La que siempre preguntan",
+      "text": "Y acá está lo que, según el profesor, siempre suelen preguntar: una disfagia intermitente y lentamente progresiva, para sólidos y líquidos, con regurgitación. Es un trastorno funcional: una acalasia."
+    },
+    {
+      "title": "Examen físico en la disfagia",
+      "text": "En el examen físico, buscá signos neurológicos de un accidente cerebrovascular, y signos extrapiramidales de Parkinson. Una debilidad muscular que se fatiga hace pensar en miastenia. El bocio y los reflejos lentos, en hipotiroidismo. Una adenopatía supraclavicular, el ganglio de Virchow, en un cáncer. La esclerodactilia y las telangiectasias, en esclerodermia. Y la candidiasis oral."
+    },
+    {
+      "title": "Qué estudio pedir",
+      "text": "Los estudios dependen de dónde está el problema. En la orofaríngea, primero mirar la garganta. Si no alcanza, una endoscopia alta. En la esofágica, la manometría mide el tono de los esfínteres, y el esofagograma con bario muestra en la acalasia un esófago dilatado que termina en pico de pájaro. Y si el paciente tiene más de cincuenta años y pierde peso, el esofagograma puede mostrar la imagen en manzana mordida. Ahí se hace una endoscopia con biopsia."
+    },
+    {
+      "title": "La disfagia esofágica en un árbol",
+      "text": "Todo junto, en un árbol. Si la disfagia es solo para sólidos, es obstructiva: intermitente, pensá en un anillo; progresiva, en un cáncer si tiene más de cincuenta años y pierde peso, o en una estenosis péptica si tiene pirosis. Si es para sólidos y líquidos, es neuromuscular: progresiva con regurgitación, acalasia; intermitente con dolor torácico, espasmo esofágico."
+    },
+    {
+      "title": "Dispepsia: el dolor de la boca del estómago",
+      "text": "Y llegamos a la dispepsia, el famoso dolor de la boca del estómago. Es un dolor o malestar del abdomen superior: siempre del ombligo para arriba. Puede ser agudo o crónico, intermitente o continuo, y se acompaña de distensión, gases, eructos, pirosis o náuseas. El profesor lo dice claro: te vas a topar con la dispepsia toda tu vida."
+    },
+    {
+      "title": "Los cuatro síntomas: dos síndromes",
+      "text": "Los criterios de Roma reconocen cuatro síntomas, agrupados en dos síndromes. El de distrés posprandial: plenitud después de comer, y saciedad precoz, cuando el paciente no puede seguir comiendo. Y el de dolor epigástrico: dolor o ardor intermitente, localizado en el epigastrio, al menos una vez por semana, que no se alivia al defecar y que no corresponde a la vesícula."
+    },
+    {
+      "title": "Criterios de Roma III",
+      "text": "Para hablar de dispepsia funcional se usan los criterios de Roma tres. Uno o más de esos cuatro síntomas. Durante los últimos tres meses, con un inicio de al menos seis meses antes. El profesor lo resume como noventa días de dolor en seis meses. Y sin ninguna lesión estructural que lo explique, con una endoscopia si hace falta."
+    },
+    {
+      "title": "Funcional u orgánica",
+      "text": "Por su causa, la dispepsia es funcional o orgánica. La más frecuente, la número uno, es la funcional, también llamada esencial o no ulcerosa: seis de cada diez. Es un diagnóstico por exclusión, y muchas veces se debe al estrés. La orgánica es el cuarenta por ciento, y la causa número uno, que no hay que olvidar, es la úlcera péptica. Le siguen el reflujo y el cáncer gástrico, y también los fármacos, la diabetes, la vía biliar y el páncreas."
+    },
+    {
+      "title": "Tres formas de dispepsia funcional",
+      "text": "La dispepsia funcional se presenta de tres maneras. Por reflujo, con acidez, regurgitación ácida y pirosis. De tipo ulceroso, con un dolor que calma con los antiácidos y a veces con la comida, y que puede despertar al paciente de noche. Y por trastorno de la motilidad, con retorcijones que empeoran al comer, porque la comida estimula el peristaltismo."
+    },
+    {
+      "title": "Clínica: las dos D y la P",
+      "text": "Para la clínica, el profesor usa una regla. La primera D es el dolor epigástrico, después de comer o sin haber comido. La segunda D, la distensión: el paciente está hinchado, con gases. Y la P, la pirosis, con regurgitación. Esto lo puede tener tanto una dispepsia funcional como una orgánica."
+    },
+    {
+      "title": "Signos de alarma: pensar en orgánica",
+      "text": "Pero ojo con los signos de alarma, porque orientan a una causa orgánica. Un paciente de más de cincuenta o cincuenta y cinco años que pierde peso: cáncer. Hematemesis: úlcera. Vómitos persistentes: síndrome pilórico. Disfagia u odinofagia progresiva: cáncer de esófago o de estómago. Ictericia: vía biliar, páncreas o hígado. Anemia: cáncer gástrico. Y el uso de antiinflamatorios, los tratamientos que fracasaron, el cáncer en la familia o una cirugía gástrica previa."
+    },
+    {
+      "title": "Qué hacer con una dispepsia",
+      "text": "Y la conducta. Si el paciente tiene más de cincuenta y cinco años o algún signo de alarma, se hace una endoscopia digestiva alta con biopsia. Si tiene menos y no hay alarma, se busca el Helicobacter pylori, por ejemplo con la prueba de la ureasa: si es positiva, se trata; si es negativa, inhibidores de la bomba de protones por cuatro a seis semanas. Y si el tratamiento fracasa, se revalúa el diagnóstico y se considera la endoscopia. Con esto tenés el capítulo completo. Ahora a practicar."
+    }
+  ]
+}

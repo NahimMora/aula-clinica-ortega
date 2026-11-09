@@ -7,6 +7,19 @@ import { join } from 'node:path';
 const CHROME = process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const [base, id, out, flag] = process.argv.slice(2);
 const FOTOS = flag === '--fotos';
+
+// Comprobaciones propias de cada capítulo: nodos que el mapa debe contener, un apartado al que saltar
+// (con un patrón que debe aparecer en el título de su primera diapositiva) y la maniobra esperada.
+const CONFIG = {
+  'dig-01': { mapa: ['Vómito', 'Disfagia', 'Dispepsia', 'Orofaríngea', 'Esofágica', 'Mecánica', 'Motora', 'Funcional', 'Orgánica', 'Mallory-Weiss'], apartado: 'Disfagia', titulo: /disfagia/i, maniobra: /Bazuqueo|chapoteo/i },
+  'dig-03': { mapa: ['Diarrea', 'Constipación', 'Anorrectal', 'Aguda', 'Persistente', 'Crónica', 'Acuosa', 'Disentérica', 'Bristol', 'Pujo y tenesmo'], apartado: 'Constipación', titulo: /constipación|roma/i, maniobra: /Tacto rectal/i },
+  'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
+};
+const cfg = CONFIG[id];
+if (!cfg) {
+  console.log(`Falta la configuración de ${id} en CONFIG`);
+  process.exit(1);
+}
 mkdirSync(out, { recursive: true });
 const browser = await puppeteer.launch({ executablePath: CHROME, headless: true, args: ['--autoplay-policy=no-user-gesture-required'] });
 let fallas = 0;
@@ -51,6 +64,8 @@ async function recorrerMazo(page, tab, etiqueta) {
     if (etiqueta !== 'vivo' && !r.altoMovil && r.txt && r.txt[0] > r.txt[1] + 2) mal(`${etiqueta} ${i + 1} «${r.h}» texto desborda: ${r.txt}`);
     if (r.ancho[0] > r.ancho[1] + 1) mal(`${etiqueta} ${i + 1} «${r.h}» scroll horizontal: ${r.ancho}`);
     if (FOTOS && etiqueta !== 'vivo') {
+      // Las barras fijas taparían la diapositiva en la captura.
+      if (i === 0) await page.addStyleTag({ content: '.topbar, .secnav { position: static !important; }' });
       const el = await page.$('.visor__escenario');
       await el.screenshot({ path: join(out, `${etiqueta}-${tab}-${String(i + 1).padStart(2, '0')}.jpg`), type: 'jpeg', quality: 72 });
     }
@@ -63,7 +78,10 @@ const page = await abrir(1440, 950);
 await ir(page, 'mapa');
 const pestanas = await page.$$eval('.secnav__item', (b) => b.map((x) => x.textContent.trim()));
 console.log('Pestañas:', pestanas.join(' | '));
-for (const n of ['Mapa', 'Fisiopatología', 'Diapositivas', 'Video', 'Choice', 'Desarrollo', 'Memoria', 'Maniobras', 'Cierre', 'Simulacro']) if (!pestanas.some((p) => p.includes(n))) mal('falta la pestaña ' + n);
+const esperadas = ['Mapa', 'Fisiopatología', 'Diapositivas', 'Video', 'Choice', 'Desarrollo', 'Memoria', ...(cfg.maniobra ? ['Maniobras'] : []), 'Cierre', 'Simulacro'];
+for (const n of esperadas) if (!pestanas.some((p) => p.includes(n))) mal('falta la pestaña ' + n);
+const orden = pestanas.map((p) => esperadas.find((n) => p.includes(n))).filter(Boolean);
+if (orden.join('|') !== esperadas.join('|')) mal('orden de pestañas: ' + orden.join(' | '));
 await recorrerMazo(page, 'fisio', 'pc');
 await recorrerMazo(page, 'teoria', 'pc');
 
@@ -71,11 +89,11 @@ await recorrerMazo(page, 'teoria', 'pc');
 await ir(page, 'teoria');
 const apartados = await page.$$eval('.visor__apartados button', (b) => b.map((x) => x.textContent));
 console.log('Apartados:', apartados.join(' | '));
-await page.evaluate(() => [...document.querySelectorAll('.visor__apartados button')].find((b) => b.textContent === 'Clasificación').click());
+await page.evaluate((a) => [...document.querySelectorAll('.visor__apartados button')].find((b) => b.textContent === a).click(), cfg.apartado);
 await dormir(150);
 let sel = await page.$eval('.visor__apartados .is-on', (e) => e.textContent);
 let tit = await page.$eval('.sl h3', (e) => e.textContent);
-if (sel !== 'Clasificación' || !/clasifica/i.test(tit)) mal(`salto a Clasificación: «${sel}» / «${tit}»`);
+if (sel !== cfg.apartado || !cfg.titulo.test(tit)) mal(`salto a ${cfg.apartado}: «${sel}» / «${tit}»`);
 await page.click('.visor__nav--sig');
 await dormir(100);
 const antes = await page.$eval('.visor__n', (e) => e.textContent);
@@ -97,8 +115,8 @@ await page.evaluate(() => document.querySelector('.visor__solo input').click());
 // Mapa: no es un índice
 await ir(page, 'mapa');
 const txtMapa = await page.$eval('.cmap', (e) => e.innerText);
-for (const n of ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular']) if (!txtMapa.includes(n)) mal('mapa sin ' + n);
-if (/Ir a la explicación|Primero veremos|Después estudiarás/.test(txtMapa)) mal('el mapa tiene texto de índice');
+for (const n of cfg.mapa) if (!txtMapa.includes(n)) mal('mapa sin ' + n);
+if (/Ir a la explicación|Primero veremos|Después estudiarás|Veremos|En esta clase/.test(txtMapa)) mal('el mapa tiene texto de índice');
 if (FOTOS) await (await page.$('.cmap')).screenshot({ path: join(out, 'mapa.png') });
 
 // Práctica
@@ -107,20 +125,24 @@ const op = await page.$('.mcq__opt');
 await op.click();
 await dormir(120);
 if (!(await page.$('.mcq.is-correct, .mcq.is-wrong'))) mal('choice sin corrección');
-const chip = await page.$eval('.mcq', (e) => e.innerText);
-if (!/Elaborada para practicar/.test(chip)) mal('choice sin identificar el origen');
+const chips = await page.$$eval('.mcq', (els) => els.map((e) => e.innerText));
+const sinOrigen = chips.filter((c) => !/Elaborada para practicar|Preguntero|Dicha en clase/.test(c)).length;
+if (sinOrigen) mal(`${sinOrigen} choice sin identificar el origen`);
 await ir(page, 'desarrollo');
 await page.evaluate(() => [...document.querySelectorAll('.dev .btn--primary')][0].click());
 await dormir(150);
 await page.evaluate(() => [...document.querySelectorAll('.btn--unknown')][0].click());
 await dormir(150);
-const devTxt = await page.$eval('.dev', (e) => e.innerText);
-if (!/Preguntero/.test(devTxt)) mal('desarrollo sin origen');
+const devs = await page.$$eval('.dev', (els) => els.map((e) => e.innerText));
+const devSin = devs.filter((d) => !/Elaborada para practicar|Preguntero|Dicha en clase/.test(d)).length;
+if (devSin) mal(`${devSin} desarrollo(s) sin origen`);
 await ir(page, 'memoria');
 if (!(await page.$('.mem-list > *'))) mal('memoria vacía');
-await ir(page, 'maniobras');
-const maniobras = await page.$eval('.clase__panel', (e) => e.innerText);
-if (!/Blumberg/.test(maniobras)) mal('maniobras sin Blumberg');
+if (cfg.maniobra) {
+  await ir(page, 'maniobras');
+  const maniobras = await page.$eval('.clase__panel', (e) => e.innerText);
+  if (!cfg.maniobra.test(maniobras)) mal('maniobras sin ' + cfg.maniobra);
+}
 await ir(page, 'cierre');
 const cierre = await page.$eval('.clase__panel', (e) => e.innerText);
 for (const n of ['Lo imprescindible', 'Errores', 'Conexiones', 'Lo que todavía necesito repasar']) if (!cierre.includes(n)) mal('cierre sin ' + n);

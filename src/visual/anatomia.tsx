@@ -236,7 +236,7 @@ const MARCA: Record<Organo, [number, number]> = {
 const ORDEN: Organo[] = ['higado', 'vesicula', 'bazo', 'pancreas', 'colon', 'apendice', 'yeyuno', 'ileon', 'duodeno', 'esofago', 'estomago', 'piloro', 'recto'];
 const BASE: Partial<Record<Organo, string>> = { higado: 'var(--v-liver)', vesicula: 'var(--v-bile)', bazo: 'var(--v-spleen)', pancreas: 'var(--v-pan)' };
 
-export function TractoFig({ luz = {}, marca, treitz, t }: { luz?: Partial<Record<Organo, VTone>>; marca?: { o: Organo; tone: VTone }; treitz?: boolean; t?: number }) {
+export function TractoFig({ luz = {}, marca, treitz, t, s = 15 }: { luz?: Partial<Record<Organo, VTone>>; marca?: { o: Organo; tone: VTone }; treitz?: boolean; t?: number; s?: number }) {
   const pu = pulso(t);
   // Los iluminados se dibujan al final para que queden encima.
   const orden = [...ORDEN.filter((o) => !luz[o]), ...ORDEN.filter((o) => luz[o])];
@@ -259,7 +259,7 @@ export function TractoFig({ luz = {}, marca, treitz, t }: { luz?: Partial<Record
         <g>
           <line x1={150} y1={304} x2={330} y2={304} stroke={col('gold')} strokeWidth={3} strokeDasharray="8 6" />
           <circle cx={250} cy={304} r={7} fill={col('gold')} />
-          <Label x={336} y={304} a="start" c={col('gold')} s={13}>
+          <Label x={336} y={304} a="start" c={col('gold')} s={s * 0.87}>
             Treitz
           </Label>
         </g>
@@ -267,7 +267,7 @@ export function TractoFig({ luz = {}, marca, treitz, t }: { luz?: Partial<Record
       {(Object.keys(luz) as Organo[]).map((o) => {
         const g = ORGANOS[o];
         return (
-          <Label key={o} x={g.lx} y={g.ly} a={g.la} c={col(luz[o])} s={15}>
+          <Label key={o} x={g.lx} y={g.ly} a={g.la} c={col(luz[o])} s={s}>
             {g.n}
           </Label>
         );
@@ -347,7 +347,7 @@ function Piedras({ x, y }: { x: number; y: number }) {
   );
 }
 
-export function BiliarFig({ luz = {}, calculo, tumor, dilata = [], t }: { luz?: Partial<Record<ViaBiliar, VTone>>; calculo?: ViaBiliar; tumor?: ViaBiliar; dilata?: ViaBiliar[]; t?: number }) {
+export function BiliarFig({ luz = {}, calculo, tumor, dilata = [], t, s = 15 }: { luz?: Partial<Record<ViaBiliar, VTone>>; calculo?: ViaBiliar; tumor?: ViaBiliar; dilata?: ViaBiliar[]; t?: number; s?: number }) {
   const pu = pulso(t);
   const orden = [...ORDEN_B.filter((o) => !luz[o]), ...ORDEN_B.filter((o) => luz[o])];
   return (
@@ -371,7 +371,7 @@ export function BiliarFig({ luz = {}, calculo, tumor, dilata = [], t }: { luz?: 
       {(Object.keys(luz) as ViaBiliar[]).map((o) => {
         const g = VIAS[o];
         return (
-          <Label key={o} x={g.lx} y={g.ly} a={g.la} c={col(luz[o])} s={15}>
+          <Label key={o} x={g.lx} y={g.ly} a={g.la} c={col(luz[o])} s={s}>
             {g.n}
           </Label>
         );

@@ -10,6 +10,8 @@ import { escenas as dig01 } from '../../content/chapters/dig-01/escenas';
 import tiempos01 from '../../content/chapters/dig-01/tiempos.json';
 import { clase as planDig02 } from '../../content/chapters/dig-02/clase';
 import tiemposDig02 from '../../content/chapters/dig-02/clase-tiempos.json';
+import { clase as planDig01 } from '../../content/chapters/dig-01/clase';
+import tiemposDig01 from '../../content/chapters/dig-01/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -170,7 +172,8 @@ interface CapClase {
   tiempos: TiemposClase;
 }
 
-const CLASES: CapClase[] = [{ id: 'dig-02-clase', titulo: 'Dolor abdominal y abdomen agudo', plan: planDig02, tiempos: tiemposDig02 as TiemposClase }];
+const CLASES: CapClase[] = [
+  { id: 'dig-01-clase', titulo: 'Vómitos, disfagia y dispepsia', plan: planDig01, tiempos: tiemposDig01 as TiemposClase },{ id: 'dig-02-clase', titulo: 'Dolor abdominal y abdomen agudo', plan: planDig02, tiempos: tiemposDig02 as TiemposClase }];
 
 const SEC_FADE = 7;
 

@@ -71,3 +71,47 @@ Origen: **Prof** = dicho en clase · **Libro** · **Bib** = bibliografía genera
 ## Pizarras
 
 Las fotos de pizarra disponibles corresponden a clases prácticas de examen físico (respiratorio, cardiovascular, hígado/bazo/vesícula, motilidad, pares craneales, soma y signos meníngeos); ninguna corresponde a los motivos de consulta de este capítulo. Se usarán en dig-05, en la biblioteca de maniobras y en neurología.
+
+## Clase visual (formato del piloto dig-02)
+
+### Jerarquía de fuentes
+1. **Clases de Ortega**: MC Digestivo 1 y 2 (00:00–32:03) y Hemorragias digestivas 1 (07:36–17:02, hematemesis vs hemoptisis y Mallory-Weiss). Deciden qué se estudia y qué se evalúa.
+2. **Libro de Clínica Médica de Ortega** (p. 75, 369, 375, 377, 390): aclaraciones (reacción de la hemoptisis, acalasia, vómito del síndrome pilórico, tríada de Mallory-Weiss).
+3. **Argente-Álvarez** (PDF escaneado; índice = página impresa + 7): solo mecanismos que la clase no explica.
+4. **Preguntero**: P1–P5 del bloque «MC náuseas, vómitos y dolor abdominal». No hay preguntas de disfagia ni dispepsia en el preguntero.
+
+### Lo que se tomó del Argente-Álvarez
+| Página | Dato | Dónde se usa |
+|---|---|---|
+| 646 | Centro del vómito (formación reticular lateral del bulbo) y zona quimiorreceptora gatillo (área postrema, sin barrera hematoencefálica; por sí sola no desencadena el vómito) | Fisiopatología: dos centros |
+| 646 | Aferencias (corteza, vestíbulo, vago, zona gatillo) y eferencias (frénico, espinales, vago y pares craneales) | Fisiopatología: quién activa / qué ordena |
+| 646 | Acto del vómito: onda antiperistáltica desde el íleon, prensa abdominal, EEI y fondo relajados, píloro contraído, paladar y glotis | Fisiopatología: el acto |
+| 646 | La bilis excluye la obstrucción proximal a la ampolla de Vater; color de la hematemesis según el contacto con el ácido | Fisiopatología: contenido |
+| 639 | Fases de la deglución; los líquidos cuestan más en la orofaríngea; mecánica vs motora | Fisiopatología: deglución |
+| 643–644 | Secreción ácida normal con mayor sensibilidad; H. pylori en 30–50 % (relación no establecida); subtipos; signos de alarma y algoritmo | Fisiopatología: dispepsia; Teoría: conducta |
+
+### Avisos de examen
+- **❗ Dr. Ortega**: clasificación del vómito («les pueden preguntar», MC2 16:21); hematemesis vs hemoptisis («pregunta de parcial… ese cuadrito tienen que sabérselo», hd-1 08:10); complicaciones del vómito (MC2 23:19: dice que se preguntan; el nombre del docente que menciona es ininteligible, por eso no se cita textual); ionograma («no hay que olvidar nunca», MC2 30:46); características de la disfagia orofaríngea (MC1 04:03); acalasia («lo que siempre suelen preguntar», MC1 21:38); úlcera péptica como causa n.º 1 de dispepsia orgánica («la que no deben olvidarse», MC1 31:46).
+- **❗ Preguntero**: definiciones de vómito y náusea, tipos y horario, tríada de Mallory-Weiss.
+
+### Discrepancias aclaradas sin atribuir errores
+- **Reacción de la hematemesis:** se enseña el cuadro del libro (hematemesis ácida, hemoptisis alcalina, p. 75).
+- **H. pylori en la dispepsia funcional:** se dice que 30–50 % de los pacientes lo tiene y que su papel no está establecido (Argente p. 643).
+- **Hipersensibilidad visceral:** la secreción ácida es normal; lo que aumenta es la sensibilidad (Argente p. 643).
+- **Hipopotasemia del vómito:** se aclara que la pérdida es sobre todo renal (fisiología general, marcada como tal).
+- **Anemia como signo de alarma:** se aclara que la del cáncer gástrico suele ser ferropénica y que la perniciosa se debe a gastritis atrófica autoinmune (fisiología general).
+- **Tratamiento de H. pylori (OCA):** amoxicilina (no amoxicilina-clavulánico); claritromicina.
+- **Ménière:** se lo menciona por vértigo y acúfenos, sin asociarlo a «vómito sin náuseas».
+- Fragmento omitido: el 3.er elemento de la tríada en MC2 24:37 es inaudible; se cita la tríada completa de hd-1 16:48.
+
+### Choice, desarrollos y simulacro
+- Desarrollos: d01–d03 del preguntero (P3, P1/P2/P4, P5); d04–d06 dichos en clase como evaluables; d07 elaborado para practicar.
+- Choice: todas elaboradas para practicar (así se identifican en pantalla).
+- Casos: c3 (Chagas, MC1 23:30–24:50) y c5 (el final de parasitología, MC2 00:01–00:42) contados en clase; c1, c2, c4 y c6 armados para practicar.
+
+### Ilustraciones
+Todas son dibujos propios (`src/clase/figuras-dig.tsx`): centros del vómito, acto del vómito, deglución, esófago (mecánica, motora, acalasia, esofagograma), tracto por niveles, hematemesis/hemoptisis, pérdidas del vómito, aspiración, Mallory-Weiss/Boerhaave, estómago dispéptico y horario. No se usan imágenes de terceros.
+
+### Video
+- Clase completa: `npm run tts:clase -- dig-01` (voz es-AR-TomasNeural), composición Remotion `dig-01-clase`, codificada a 1280×720 para el límite de espacio de GitHub Pages.
+- El video anterior (6:18) queda como repaso en la pestaña Video.

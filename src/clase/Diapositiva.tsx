@@ -247,7 +247,7 @@ export function Diapositiva({ d, reloj, video = false, seccion }: PropsDiapo) {
   const Fig = d.fig ? (FIGURAS[d.fig.f] as ComponentType<Record<string, unknown>>) : null;
   const bloques = d.bloques.filter((b) => !(video && b.soloWeb));
   return (
-    <section className={`sl ${Fig ? `sl--fig sl--${d.anchoFig ?? 'media'}` : 'sl--solo'} ${video ? 'sl--video' : ''}`} aria-label={d.titulo}>
+    <section className={`sl ${Fig ? `sl--fig sl--${d.anchoFig ?? 'media'}` : 'sl--solo'} ${d.amplio ? 'sl--amplio' : ''} ${video ? 'sl--video' : ''}`} aria-label={d.titulo}>
       <header className="sl__cab">
         {seccion && <span className="sl__kicker">{seccion}</span>}
         <h3>{d.titulo}</h3>

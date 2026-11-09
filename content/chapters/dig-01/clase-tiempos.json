@@ -1,0 +1,1049 @@
+{
+ "fps": 24,
+ "total": 35287,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-centros",
+   "inicio": 96,
+   "frames": 837,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 345
+    },
+    {
+     "inicio": 441,
+     "frames": 334
+    },
+    {
+     "inicio": 775,
+     "frames": 158
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-aferencias",
+   "inicio": 933,
+   "frames": 885,
+   "beats": [
+    {
+     "inicio": 933,
+     "frames": 232
+    },
+    {
+     "inicio": 1165,
+     "frames": 139
+    },
+    {
+     "inicio": 1304,
+     "frames": 207
+    },
+    {
+     "inicio": 1511,
+     "frames": 307
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-eferencias",
+   "inicio": 1818,
+   "frames": 627,
+   "beats": [
+    {
+     "inicio": 1818,
+     "frames": 205
+    },
+    {
+     "inicio": 2023,
+     "frames": 158
+    },
+    {
+     "inicio": 2181,
+     "frames": 264
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-acto",
+   "inicio": 2445,
+   "frames": 877,
+   "beats": [
+    {
+     "inicio": 2445,
+     "frames": 266
+    },
+    {
+     "inicio": 2711,
+     "frames": 225
+    },
+    {
+     "inicio": 2936,
+     "frames": 179
+    },
+    {
+     "inicio": 3115,
+     "frames": 207
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-nivel",
+   "inicio": 3322,
+   "frames": 741,
+   "beats": [
+    {
+     "inicio": 3322,
+     "frames": 248
+    },
+    {
+     "inicio": 3570,
+     "frames": 132
+    },
+    {
+     "inicio": 3702,
+     "frames": 158
+    },
+    {
+     "inicio": 3860,
+     "frames": 203
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sangre",
+   "inicio": 4063,
+   "frames": 616,
+   "beats": [
+    {
+     "inicio": 4063,
+     "frames": 384
+    },
+    {
+     "inicio": 4447,
+     "frames": 232
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-perdidas",
+   "inicio": 4679,
+   "frames": 711,
+   "beats": [
+    {
+     "inicio": 4679,
+     "frames": 187
+    },
+    {
+     "inicio": 4866,
+     "frames": 146
+    },
+    {
+     "inicio": 5012,
+     "frames": 168
+    },
+    {
+     "inicio": 5180,
+     "frames": 210
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-desgarro",
+   "inicio": 5390,
+   "frames": 697,
+   "beats": [
+    {
+     "inicio": 5390,
+     "frames": 225
+    },
+    {
+     "inicio": 5615,
+     "frames": 252
+    },
+    {
+     "inicio": 5867,
+     "frames": 220
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-aspiracion",
+   "inicio": 6087,
+   "frames": 516,
+   "beats": [
+    {
+     "inicio": 6087,
+     "frames": 151
+    },
+    {
+     "inicio": 6238,
+     "frames": 123
+    },
+    {
+     "inicio": 6361,
+     "frames": 111
+    },
+    {
+     "inicio": 6472,
+     "frames": 131
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-deglucion",
+   "inicio": 6603,
+   "frames": 744,
+   "beats": [
+    {
+     "inicio": 6603,
+     "frames": 230
+    },
+    {
+     "inicio": 6833,
+     "frames": 276
+    },
+    {
+     "inicio": 7109,
+     "frames": 238
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-orofaringea",
+   "inicio": 7347,
+   "frames": 586,
+   "beats": [
+    {
+     "inicio": 7347,
+     "frames": 188
+    },
+    {
+     "inicio": 7535,
+     "frames": 199
+    },
+    {
+     "inicio": 7734,
+     "frames": 199
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-muro-motor",
+   "inicio": 7933,
+   "frames": 521,
+   "beats": [
+    {
+     "inicio": 7933,
+     "frames": 302
+    },
+    {
+     "inicio": 8235,
+     "frames": 219
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-acalasia",
+   "inicio": 8454,
+   "frames": 668,
+   "beats": [
+    {
+     "inicio": 8454,
+     "frames": 260
+    },
+    {
+     "inicio": 8714,
+     "frames": 169
+    },
+    {
+     "inicio": 8883,
+     "frames": 239
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-dispepsia",
+   "inicio": 9122,
+   "frames": 1209,
+   "beats": [
+    {
+     "inicio": 9122,
+     "frames": 355
+    },
+    {
+     "inicio": 9477,
+     "frames": 173
+    },
+    {
+     "inicio": 9650,
+     "frames": 207
+    },
+    {
+     "inicio": 9857,
+     "frames": 252
+    },
+    {
+     "inicio": 10109,
+     "frames": 222
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-definiciones",
+   "inicio": 10331,
+   "frames": 826,
+   "beats": [
+    {
+     "inicio": 10331,
+     "frames": 332
+    },
+    {
+     "inicio": 10663,
+     "frames": 347
+    },
+    {
+     "inicio": 11010,
+     "frames": 147
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasificacion",
+   "inicio": 11157,
+   "frames": 401,
+   "beats": [
+    {
+     "inicio": 11157,
+     "frames": 401
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alimenticio",
+   "inicio": 11558,
+   "frames": 490,
+   "beats": [
+    {
+     "inicio": 11558,
+     "frames": 248
+    },
+    {
+     "inicio": 11806,
+     "frames": 242
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-bilioso",
+   "inicio": 12048,
+   "frames": 490,
+   "beats": [
+    {
+     "inicio": 12048,
+     "frames": 242
+    },
+    {
+     "inicio": 12290,
+     "frames": 248
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hematico",
+   "inicio": 12538,
+   "frames": 695,
+   "beats": [
+    {
+     "inicio": 12538,
+     "frames": 374
+    },
+    {
+     "inicio": 12912,
+     "frames": 321
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-horario",
+   "inicio": 13233,
+   "frames": 700,
+   "beats": [
+    {
+     "inicio": 13233,
+     "frames": 293
+    },
+    {
+     "inicio": 13526,
+     "frames": 129
+    },
+    {
+     "inicio": 13655,
+     "frames": 130
+    },
+    {
+     "inicio": 13785,
+     "frames": 148
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hemat-hemop",
+   "inicio": 13933,
+   "frames": 1069,
+   "beats": [
+    {
+     "inicio": 13933,
+     "frames": 359
+    },
+    {
+     "inicio": 14292,
+     "frames": 250
+    },
+    {
+     "inicio": 14542,
+     "frames": 148
+    },
+    {
+     "inicio": 14690,
+     "frames": 170
+    },
+    {
+     "inicio": 14860,
+     "frames": 142
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-acompanantes",
+   "inicio": 15002,
+   "frames": 1168,
+   "beats": [
+    {
+     "inicio": 15002,
+     "frames": 317
+    },
+    {
+     "inicio": 15319,
+     "frames": 124
+    },
+    {
+     "inicio": 15443,
+     "frames": 111
+    },
+    {
+     "inicio": 15554,
+     "frames": 153
+    },
+    {
+     "inicio": 15707,
+     "frames": 176
+    },
+    {
+     "inicio": 15883,
+     "frames": 136
+    },
+    {
+     "inicio": 16019,
+     "frames": 151
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas",
+   "inicio": 16170,
+   "frames": 619,
+   "beats": [
+    {
+     "inicio": 16170,
+     "frames": 619
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-complicaciones",
+   "inicio": 16789,
+   "frames": 672,
+   "beats": [
+    {
+     "inicio": 16789,
+     "frames": 218
+    },
+    {
+     "inicio": 17007,
+     "frames": 94
+    },
+    {
+     "inicio": 17101,
+     "frames": 198
+    },
+    {
+     "inicio": 17299,
+     "frames": 162
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mallory",
+   "inicio": 17461,
+   "frames": 401,
+   "beats": [
+    {
+     "inicio": 17461,
+     "frames": 248
+    },
+    {
+     "inicio": 17709,
+     "frames": 153
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-boerhaave",
+   "inicio": 17862,
+   "frames": 347,
+   "beats": [
+    {
+     "inicio": 17862,
+     "frames": 189
+    },
+    {
+     "inicio": 18051,
+     "frames": 158
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anamnesis",
+   "inicio": 18209,
+   "frames": 758,
+   "beats": [
+    {
+     "inicio": 18209,
+     "frames": 240
+    },
+    {
+     "inicio": 18449,
+     "frames": 167
+    },
+    {
+     "inicio": 18616,
+     "frames": 64
+    },
+    {
+     "inicio": 18680,
+     "frames": 124
+    },
+    {
+     "inicio": 18804,
+     "frames": 163
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen-fisico",
+   "inicio": 18967,
+   "frames": 858,
+   "beats": [
+    {
+     "inicio": 18967,
+     "frames": 280
+    },
+    {
+     "inicio": 19247,
+     "frames": 123
+    },
+    {
+     "inicio": 19370,
+     "frames": 148
+    },
+    {
+     "inicio": 19518,
+     "frames": 144
+    },
+    {
+     "inicio": 19662,
+     "frames": 163
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-laboratorio",
+   "inicio": 19825,
+   "frames": 797,
+   "beats": [
+    {
+     "inicio": 19825,
+     "frames": 339
+    },
+    {
+     "inicio": 20164,
+     "frames": 206
+    },
+    {
+     "inicio": 20370,
+     "frames": 252
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-disfagia",
+   "inicio": 20622,
+   "frames": 520,
+   "beats": [
+    {
+     "inicio": 20622,
+     "frames": 192
+    },
+    {
+     "inicio": 20814,
+     "frames": 328
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dos-disfagias",
+   "inicio": 21142,
+   "frames": 463,
+   "beats": [
+    {
+     "inicio": 21142,
+     "frames": 266
+    },
+    {
+     "inicio": 21408,
+     "frames": 197
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-orofaringea",
+   "inicio": 21605,
+   "frames": 791,
+   "beats": [
+    {
+     "inicio": 21605,
+     "frames": 250
+    },
+    {
+     "inicio": 21855,
+     "frames": 112
+    },
+    {
+     "inicio": 21967,
+     "frames": 163
+    },
+    {
+     "inicio": 22130,
+     "frames": 147
+    },
+    {
+     "inicio": 22277,
+     "frames": 119
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-orofaringea-causas",
+   "inicio": 22396,
+   "frames": 822,
+   "beats": [
+    {
+     "inicio": 22396,
+     "frames": 456
+    },
+    {
+     "inicio": 22852,
+     "frames": 169
+    },
+    {
+     "inicio": 23021,
+     "frames": 197
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-esofagica",
+   "inicio": 23218,
+   "frames": 700,
+   "beats": [
+    {
+     "inicio": 23218,
+     "frames": 193
+    },
+    {
+     "inicio": 23411,
+     "frames": 156
+    },
+    {
+     "inicio": 23567,
+     "frames": 177
+    },
+    {
+     "inicio": 23744,
+     "frames": 174
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mecanica-motora",
+   "inicio": 23918,
+   "frames": 871,
+   "beats": [
+    {
+     "inicio": 23918,
+     "frames": 257
+    },
+    {
+     "inicio": 24175,
+     "frames": 216
+    },
+    {
+     "inicio": 24391,
+     "frames": 252
+    },
+    {
+     "inicio": 24643,
+     "frames": 146
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas-esofagicas",
+   "inicio": 24789,
+   "frames": 720,
+   "beats": [
+    {
+     "inicio": 24789,
+     "frames": 163
+    },
+    {
+     "inicio": 24952,
+     "frames": 221
+    },
+    {
+     "inicio": 25173,
+     "frames": 336
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diferencial",
+   "inicio": 25509,
+   "frames": 521,
+   "beats": [
+    {
+     "inicio": 25509,
+     "frames": 281
+    },
+    {
+     "inicio": 25790,
+     "frames": 240
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-preguntas",
+   "inicio": 26030,
+   "frames": 835,
+   "beats": [
+    {
+     "inicio": 26030,
+     "frames": 258
+    },
+    {
+     "inicio": 26288,
+     "frames": 143
+    },
+    {
+     "inicio": 26431,
+     "frames": 123
+    },
+    {
+     "inicio": 26554,
+     "frames": 311
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-acalasia",
+   "inicio": 26865,
+   "frames": 368,
+   "beats": [
+    {
+     "inicio": 26865,
+     "frames": 267
+    },
+    {
+     "inicio": 27132,
+     "frames": 101
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen-disfagia",
+   "inicio": 27233,
+   "frames": 797,
+   "beats": [
+    {
+     "inicio": 27233,
+     "frames": 207
+    },
+    {
+     "inicio": 27440,
+     "frames": 128
+    },
+    {
+     "inicio": 27568,
+     "frames": 118
+    },
+    {
+     "inicio": 27686,
+     "frames": 139
+    },
+    {
+     "inicio": 27825,
+     "frames": 131
+    },
+    {
+     "inicio": 27956,
+     "frames": 74
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-estudios-disfagia",
+   "inicio": 28030,
+   "frames": 804,
+   "beats": [
+    {
+     "inicio": 28030,
+     "frames": 264
+    },
+    {
+     "inicio": 28294,
+     "frames": 260
+    },
+    {
+     "inicio": 28554,
+     "frames": 280
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-algoritmo",
+   "inicio": 28834,
+   "frames": 635,
+   "beats": [
+    {
+     "inicio": 28834,
+     "frames": 635
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dispepsia",
+   "inicio": 29469,
+   "frames": 603,
+   "beats": [
+    {
+     "inicio": 29469,
+     "frames": 253
+    },
+    {
+     "inicio": 29722,
+     "frames": 350
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-roma-sindromes",
+   "inicio": 30072,
+   "frames": 620,
+   "beats": [
+    {
+     "inicio": 30072,
+     "frames": 328
+    },
+    {
+     "inicio": 30400,
+     "frames": 292
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-roma",
+   "inicio": 30692,
+   "frames": 608,
+   "beats": [
+    {
+     "inicio": 30692,
+     "frames": 204
+    },
+    {
+     "inicio": 30896,
+     "frames": 250
+    },
+    {
+     "inicio": 31146,
+     "frames": 154
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-funcional-organica",
+   "inicio": 31300,
+   "frames": 791,
+   "beats": [
+    {
+     "inicio": 31300,
+     "frames": 415
+    },
+    {
+     "inicio": 31715,
+     "frames": 376
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-funcional-tipos",
+   "inicio": 32091,
+   "frames": 635,
+   "beats": [
+    {
+     "inicio": 32091,
+     "frames": 227
+    },
+    {
+     "inicio": 32318,
+     "frames": 213
+    },
+    {
+     "inicio": 32531,
+     "frames": 195
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clinica",
+   "inicio": 32726,
+   "frames": 592,
+   "beats": [
+    {
+     "inicio": 32726,
+     "frames": 230
+    },
+    {
+     "inicio": 32956,
+     "frames": 144
+    },
+    {
+     "inicio": 33100,
+     "frames": 218
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alarma",
+   "inicio": 33318,
+   "frames": 1007,
+   "beats": [
+    {
+     "inicio": 33318,
+     "frames": 262
+    },
+    {
+     "inicio": 33580,
+     "frames": 83
+    },
+    {
+     "inicio": 33663,
+     "frames": 112
+    },
+    {
+     "inicio": 33775,
+     "frames": 143
+    },
+    {
+     "inicio": 33918,
+     "frames": 115
+    },
+    {
+     "inicio": 34033,
+     "frames": 89
+    },
+    {
+     "inicio": 34122,
+     "frames": 203
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-conducta",
+   "inicio": 34325,
+   "frames": 842,
+   "beats": [
+    {
+     "inicio": 34325,
+     "frames": 564
+    },
+    {
+     "inicio": 34889,
+     "frames": 278
+    }
+   ]
+  }
+ ]
+}

@@ -77,7 +77,24 @@ export type FiguraId =
   | 'colecistitis'
   | 'ecg'
   | 'rha'
-  | 'perfil-liquido';
+  | 'perfil-liquido'
+  // Digestivo (figuras-dig.tsx)
+  | 'deglucion'
+  | 'esofago'
+  | 'centros-vomito'
+  | 'acto-vomito'
+  | 'tracto'
+  | 'hematemesis'
+  | 'estomago'
+  | 'desgarro'
+  | 'perdidas'
+  | 'aspiracion'
+  | 'horario'
+  | 'mucosa'
+  | 'defecacion'
+  | 'bristol'
+  | 'bilirrubina'
+  | 'biliar';
 
 export type FiguraSpec = { f: FiguraId } & Record<string, unknown>;
 
@@ -98,6 +115,8 @@ export interface Diapositiva {
   voz: string[];
   /** Solo para estudiar: no entra en el video. */
   soloDiapo?: boolean;
+  /** Poco contenido: el texto se agranda para ocupar la diapositiva sin dejar vacíos. */
+  amplio?: boolean;
   refs: SourceRef[];
 }
 

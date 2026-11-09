@@ -73,6 +73,15 @@
 .sl__txt { display: flex; flex-direction: column; justify-content: center; gap: calc(var(--u) * 1); min-height: 0; }
 .sl--solo .sl__txt { max-width: calc(var(--u) * 86); margin: 0 auto; width: 100%; }
 .sl-texto { color: var(--v-ink); }
+/* Diapositivas con poco contenido: en 16:9 todo un poco más grande, para que no queden vacíos (en el celular no cambia). */
+@container (min-width: 621px) {
+  .sl--amplio .sl__txt { font-size: 1.16em; gap: calc(var(--u) * 1.3); }
+  .sl--amplio .sl-cuadro { font-size: calc(var(--u) * 2.05); }
+  .sl--amplio .sl-cuadro.is-compacto { font-size: calc(var(--u) * 1.8); }
+  .sl--amplio .sl-comparar__c ul { font-size: calc(var(--u) * 2.2); }
+  .sl--amplio .sl-comparar__c h4 { font-size: calc(var(--u) * 2.55); }
+  .sl--amplio .sl-clave { font-size: calc(var(--u) * 2.8); }
+}
 .sl-texto strong, .sl-lista strong { color: var(--accent-700, var(--v-rose)); font-weight: 680; }
 .sl mark { background: var(--v-rose-f); color: var(--v-ink); padding: 0 0.2em; border-radius: 0.2em; }
 .sl-clave { font-family: var(--font-display); font-size: calc(var(--u) * 2.5); font-weight: 600; line-height: 1.22; color: var(--accent-700); }
