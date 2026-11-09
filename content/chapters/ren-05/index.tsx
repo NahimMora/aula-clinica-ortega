@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * ren-05 — Insuficiencia renal (aguda y crónica). Fuente: clases «Insuficiencia renal» 1–3 (Ortega) + libro p. 429–439.
@@ -68,7 +69,7 @@ const chapter: Chapter = {
     },
     {
       id: 'aguda',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Insuficiencia renal aguda: criterios y causas',
       priority: 'imprescindible',
       summary: 'Creatinina que sube (≥ 50 %) y diuresis < 0,5 ml/kg/h. Prerrenal 60–70 %, renal 20–25 % (NTA), posrenal (HPB).',
@@ -150,7 +151,7 @@ const chapter: Chapter = {
     },
     {
       id: 'cronica',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Insuficiencia renal crónica',
       priority: 'imprescindible',
       summary: 'Más de 3 meses, irreversible. Causas: diabetes, HTA, glomerulopatías. Se estadifica por el filtrado glomerular.',
@@ -216,6 +217,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'ren05-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -230,6 +232,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -245,6 +248,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-d03',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -256,6 +260,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-d04',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -267,6 +272,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-d05',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -282,6 +288,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-d06',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'clinica-irc',
@@ -295,6 +302,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'ren05-q01',
+      origen: 'practica',
       topic: 'Causas IRA',
       difficulty: 1,
       emphasis: true,
@@ -310,6 +318,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q02',
+      origen: 'practica',
       topic: 'Causas IRA',
       difficulty: 2,
       emphasis: true,
@@ -325,6 +334,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q03',
+      origen: 'practica',
       topic: 'Índices',
       difficulty: 2,
       emphasis: true,
@@ -340,6 +350,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q04',
+      origen: 'practica',
       topic: 'Índices',
       difficulty: 3,
       stem: 'En la necrosis tubular aguda esperás:',
@@ -354,6 +365,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q05',
+      origen: 'practica',
       topic: 'RIFLE',
       difficulty: 2,
       stem: 'Según RIFLE, una creatinina que se triplica respecto de la basal corresponde a:',
@@ -368,6 +380,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q06',
+      origen: 'practica',
       topic: 'Aguda vs crónica',
       difficulty: 2,
       emphasis: true,
@@ -383,6 +396,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q07',
+      origen: 'practica',
       topic: 'Ecografía',
       difficulty: 1,
       emphasis: true,
@@ -398,6 +412,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q08',
+      origen: 'practica',
       topic: 'Causas IRC',
       difficulty: 1,
       emphasis: true,
@@ -413,6 +428,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q09',
+      origen: 'practica',
       topic: 'Estadios',
       difficulty: 2,
       stem: 'Un paciente con FG de 27 ml/min/1,73 m² está en estadio:',
@@ -427,6 +443,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q10',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       stem: 'La «escarcha urémica» se debe a:',
@@ -441,6 +458,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q11',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       stem: 'La alteración electrolítica de la IRA que puede producir arritmias es:',
@@ -455,6 +473,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren05-q12',
+      origen: 'practica',
       topic: 'Causas IRA',
       difficulty: 2,
       stem: 'Un politraumatizado con rabdomiólisis puede hacer una IRA por:',
@@ -542,6 +561,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'ren05-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 3,
         stem: 'Hombre con hemorragia digestiva y shock; 24 h después orina 200 ml, creatinina pasó de 1 a 2,2, Na urinario 12 mEq/l, sin anemia previa. Pensás en:',
@@ -556,6 +576,7 @@ const chapter: Chapter = {
       },
       {
         id: 'ren05-x02',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Diabético de 20 años de evolución con anemia normocítica, prurito, FG 12 ml/min y riñones chicos en la ecografía. Diagnóstico:',
@@ -572,6 +593,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

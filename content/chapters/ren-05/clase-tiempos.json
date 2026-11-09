@@ -1,0 +1,313 @@
+{
+ "fps": 24,
+ "total": 15056,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-donde",
+   "inicio": 96,
+   "frames": 888,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 424
+    },
+    {
+     "inicio": 520,
+     "frames": 268
+    },
+    {
+     "inicio": 788,
+     "frames": 196
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sodio",
+   "inicio": 984,
+   "frames": 851,
+   "beats": [
+    {
+     "inicio": 984,
+     "frames": 490
+    },
+    {
+     "inicio": 1474,
+     "frames": 361
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-consecuencias",
+   "inicio": 1835,
+   "frames": 896,
+   "beats": [
+    {
+     "inicio": 1835,
+     "frames": 608
+    },
+    {
+     "inicio": 2443,
+     "frames": 288
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-anemia",
+   "inicio": 2731,
+   "frames": 934,
+   "beats": [
+    {
+     "inicio": 2731,
+     "frames": 292
+    },
+    {
+     "inicio": 3023,
+     "frames": 303
+    },
+    {
+     "inicio": 3326,
+     "frames": 339
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hueso",
+   "inicio": 3665,
+   "frames": 855,
+   "beats": [
+    {
+     "inicio": 3665,
+     "frames": 216
+    },
+    {
+     "inicio": 3881,
+     "frames": 368
+    },
+    {
+     "inicio": 4249,
+     "frames": 271
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 4520,
+   "frames": 673,
+   "beats": [
+    {
+     "inicio": 4520,
+     "frames": 310
+    },
+    {
+     "inicio": 4830,
+     "frames": 363
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-rifle",
+   "inicio": 5193,
+   "frames": 1011,
+   "beats": [
+    {
+     "inicio": 5193,
+     "frames": 288
+    },
+    {
+     "inicio": 5481,
+     "frames": 723
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-akin",
+   "inicio": 6204,
+   "frames": 889,
+   "beats": [
+    {
+     "inicio": 6204,
+     "frames": 673
+    },
+    {
+     "inicio": 6877,
+     "frames": 216
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas",
+   "inicio": 7093,
+   "frames": 953,
+   "beats": [
+    {
+     "inicio": 7093,
+     "frames": 439
+    },
+    {
+     "inicio": 7532,
+     "frames": 330
+    },
+    {
+     "inicio": 7862,
+     "frames": 184
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sodio",
+   "inicio": 8046,
+   "frames": 791,
+   "beats": [
+    {
+     "inicio": 8046,
+     "frames": 502
+    },
+    {
+     "inicio": 8548,
+     "frames": 289
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-episodio",
+   "inicio": 8837,
+   "frames": 625,
+   "beats": [
+    {
+     "inicio": 8837,
+     "frames": 295
+    },
+    {
+     "inicio": 9132,
+     "frames": 330
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ira-clinica",
+   "inicio": 9462,
+   "frames": 885,
+   "beats": [
+    {
+     "inicio": 9462,
+     "frames": 524
+    },
+    {
+     "inicio": 9986,
+     "frames": 361
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-calcio",
+   "inicio": 10347,
+   "frames": 629,
+   "beats": [
+    {
+     "inicio": 10347,
+     "frames": 275
+    },
+    {
+     "inicio": 10622,
+     "frames": 354
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anemia",
+   "inicio": 10976,
+   "frames": 658,
+   "beats": [
+    {
+     "inicio": 10976,
+     "frames": 321
+    },
+    {
+     "inicio": 11297,
+     "frames": 337
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-irc",
+   "inicio": 11634,
+   "frames": 576,
+   "beats": [
+    {
+     "inicio": 11634,
+     "frames": 197
+    },
+    {
+     "inicio": 11831,
+     "frames": 379
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-estadios",
+   "inicio": 12210,
+   "frames": 1105,
+   "beats": [
+    {
+     "inicio": 12210,
+     "frames": 853
+    },
+    {
+     "inicio": 13063,
+     "frames": 252
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-irc-clinica",
+   "inicio": 13315,
+   "frames": 930,
+   "beats": [
+    {
+     "inicio": 13315,
+     "frames": 549
+    },
+    {
+     "inicio": 13864,
+     "frames": 381
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-aguda-cronica",
+   "inicio": 14245,
+   "frames": 691,
+   "beats": [
+    {
+     "inicio": 14245,
+     "frames": 393
+    },
+    {
+     "inicio": 14638,
+     "frames": 298
+    }
+   ]
+  }
+ ]
+}

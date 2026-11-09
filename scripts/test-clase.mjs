@@ -30,6 +30,8 @@ const CONFIG = {
   'ren-03': { mapa: ['Síndrome nefrítico', 'Las tres H', 'Causa', 'Laboratorio', 'Complicaciones'], apartado: 'Clínica', titulo: /tres h/i, maniobra: null },
   'ren-04': { mapa: ['Síndrome nefrótico', 'Definición', 'Causas', 'Clínica', 'Complicaciones'], apartado: 'Causas', titulo: /causa más frecuente/i, maniobra: null },
   'ren-05': { mapa: ['Insuficiencia aguda', 'Insuficiencia crónica', 'RIFLE y AKIN', 'Causas', 'Sodio urinario', 'Anemia', 'Ecografía'], apartado: 'Aguda', titulo: /rifle/i, maniobra: null },
+  'ren-06': { mapa: ['Infección urinaria', 'Vía y germen', 'Baja: cistitis', 'Alta: pielonefritis', 'Complicada', 'Diagnóstico'], apartado: 'Baja o alta', titulo: /cistitis/i, maniobra: /Puñopercusión|puntos/i },
+  'ren-07': { mapa: ['Litiasis renoureteral', 'Tipos', 'Factores', 'Cólico', 'Diagnóstico'], apartado: 'Tipos', titulo: /tipos de cálculos/i, maniobra: /Puñopercusión|puntos/i },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

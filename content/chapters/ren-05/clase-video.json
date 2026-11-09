@@ -1,0 +1,114 @@
+{
+  "src": "media/ren-05/clase.mp4",
+  "poster": "media/ren-05/clase.jpg",
+  "vtt": "media/ren-05/clase.vtt",
+  "duration": "10:27",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Aguda: dónde falla"
+    },
+    {
+      "t": 76,
+      "label": "Fisiopatología · Consecuencias"
+    },
+    {
+      "t": 152,
+      "label": "Fisiopatología · Crónica: el hueso"
+    },
+    {
+      "t": 188,
+      "label": "Teoría · Qué es"
+    },
+    {
+      "t": 216,
+      "label": "Teoría · Aguda"
+    },
+    {
+      "t": 394,
+      "label": "Teoría · Clínica de la aguda"
+    },
+    {
+      "t": 484,
+      "label": "Teoría · Crónica"
+    },
+    {
+      "t": 554,
+      "label": "Teoría · Clínica de la crónica"
+    }
+  ],
+  "script": [
+    {
+      "title": "Dónde falla: antes, dentro o después del riñón",
+      "text": "La insuficiencia renal aguda se entiende preguntando dónde está el problema. Prerrenal, la más frecuente: al riñón le llega poca sangre, por una hipovolemia, una hemorragia, una deshidratación o una insuficiencia cardíaca. El riñón en sí está sano. Renal o parenquimatosa: se daña el propio tejido. La causa principal es la necrosis tubular aguda, por una isquemia que se prolongó o por tóxicos. Y posrenal: el riñón filtra, pero la orina no puede salir, por una próstata grande, cálculos o tumores."
+    },
+    {
+      "title": "Por qué la prerrenal retiene sodio",
+      "text": "Y la forma de separarlas, que es pregunta de parcial: el sodio en la orina. En la prerrenal, los túbulos están sanos. Como el cuerpo está defendiendo un volumen bajo, reabsorben todo el sodio que pueden, y en la orina aparece poco: menos de veinte, con una fracción excretada menor del uno por ciento. En la necrosis tubular aguda, los túbulos están dañados y ya no pueden reabsorber. El sodio se pierde por la orina, más de cuarenta, aunque el paciente orine poco; y en el sedimento aparecen cilindros granulosos."
+    },
+    {
+      "title": "Lo que el riñón deja de hacer",
+      "text": "Para entender la clínica, el profesor parte de las funciones del riñón. Si ya no elimina la urea y la creatinina, se acumulan: el síndrome urémico. Si no elimina agua y sal, aparecen edema, hipertensión e insuficiencia cardíaca. Si no elimina potasio, hiperpotasemia y arritmias. Si no elimina hidrogeniones, acidosis metabólica. Si no elimina el fósforo ni activa la vitamina D, baja el calcio y sube la parathormona. Y si deja de fabricar eritropoyetina, aparece la anemia, pero eso tarda."
+    },
+    {
+      "title": "Por qué la anemia llega tarde",
+      "text": "Y la anemia, que sirve para diferenciar la aguda de la crónica. El riñón fabrica eritropoyetina, la hormona que le dice a la médula ósea que produzca glóbulos rojos. Si el riñón falla, cae la eritropoyetina y la médula produce menos. Pero los glóbulos rojos que ya están circulando viven unos cuatro meses, así que la caída tarda en notarse. Por eso, en la insuficiencia aguda no hay anemia al comienzo: aparece si el cuadro dura más de siete a diez días. En la crónica, en cambio, hay anemia, normocítica y normocrómica."
+    },
+    {
+      "title": "El hueso del renal crónico",
+      "text": "El hueso del paciente renal crónico. El riñón enfermo no elimina el fósforo, y tampoco activa la vitamina D. Sin vitamina D activa, el intestino absorbe poco calcio, y el calcio baja. El fósforo alto y el calcio bajo estimulan a la paratiroides: es el hiperparatiroidismo secundario, y eso es otra pregunta de los parciales. La parathormona saca calcio del hueso, y el hueso se deteriora: la osteodistrofia renal, con el cráneo en sal y pimienta y las falanges reabsorbidas en la radiografía."
+    },
+    {
+      "title": "Insuficiencia renal",
+      "text": "La insuficiencia renal es uno de los temas más preguntados del parcial. Es la pérdida de la función del riñón: retiene los productos nitrogenados, y falla en todo lo demás que el riñón hace. Según el tiempo: aguda, de horas o días, reversible en más del ochenta por ciento; rápidamente progresiva, la aguda que no se recuperó en uno a tres meses; y crónica, de más de tres meses, irreversible."
+    },
+    {
+      "title": "Criterios RIFLE",
+      "text": "Para diagnosticar y graduar la insuficiencia aguda hay dos criterios que el profesor pide para toda la vida: RIFLE y AKIN. Los dos usan la creatinina y la diuresis. RIFLE: riesgo, cuando la creatinina sube una vez y media o la diuresis cae por debajo de medio mililitro por kilo por hora durante seis horas. Injuria, cuando la creatinina se duplica o esa diuresis dura doce horas. Fallo, cuando se triplica, o la diuresis es menor de cero coma tres por veinticuatro horas, o hay anuria. Y después, pérdida de la función si dura más de cuatro semanas, y enfermedad terminal si pasa los tres meses."
+    },
+    {
+      "title": "Criterios AKIN",
+      "text": "AKIN es casi igual, en tres estadios. Estadio uno: la creatinina sube cero coma tres o más, o una vez y media a dos veces, o la diuresis cae por debajo de cero coma cinco durante más de seis horas. Estadio dos: se duplica o triplica, o esa diuresis dura más de doce horas. Estadio tres: se triplica o más, o la diuresis es menor de cero coma tres por veinticuatro horas, o hay anuria. El ejemplo de la clase: una mujer con una creatinina basal de cero coma nueve está en fallo si pasa de dos coma siete, el triple."
+    },
+    {
+      "title": "Causas de insuficiencia renal aguda",
+      "text": "Las causas son lo que más se pregunta. Prerrenal, la más frecuente: todo lo que baje la sangre que llega al riñón, como una hemorragia, vómitos y diarreas, quemaduras, diuréticos, un shock, una insuficiencia cardíaca, una sepsis, o antiinflamatorios. Renal: sobre todo la necrosis tubular aguda, por una isquemia que se prolongó o por tóxicos como los aminoglucósidos, los contrastes o la mioglobina; también las glomerulonefritis y las nefritis intersticiales. Y posrenal: la hiperplasia de próstata, los cálculos, los tumores, la vejiga neurogénica."
+    },
+    {
+      "title": "Prerrenal o necrosis tubular",
+      "text": "Y el cuadro que las separa. La prerrenal tiene sodio urinario menor de veinte y fracción excretada menor del uno por ciento: el túbulo sano lo reabsorbe. Concentra bien la orina: el cociente urinario y plasmático de urea es mayor de ocho, y el de creatinina mayor de cuarenta. Y el sedimento es normal. La necrosis tubular tiene sodio urinario mayor de cuarenta, fracción mayor del dos por ciento, cocientes bajos porque el túbulo ya no concentra, y cilindros granulosos en el sedimento."
+    },
+    {
+      "title": "La aguda es un episodio",
+      "text": "Algo que el profesor quiere que se entienda: la insuficiencia aguda es un episodio, siempre secundario a una enfermedad de base. Si se corrige esa causa, se revierte. Por ejemplo, un paciente con una hemorragia que pierde más del cuarenta por ciento de la volemia entra en shock y hace una insuficiencia renal prerrenal. Si se repone el volumen a tiempo, el riñón vuelve a filtrar."
+    },
+    {
+      "title": "Clínica de la insuficiencia aguda",
+      "text": "La clínica de la insuficiencia aguda. El paciente orina poco, menos de quinientos mililitros por día, o nada. La urea sube: normal es de diez a cincuenta; por encima de cien aparecen náuseas, vómitos, aliento urémico, sangrados y encefalopatía; por encima de doscientos, derrames y pericarditis. La sobrecarga de volumen da hipertensión, edema e insuficiencia cardíaca. El potasio sube, y por encima de cinco y medio aparecen las alteraciones del electro y las arritmias. Y hay acidosis metabólica."
+    },
+    {
+      "title": "Calcio y fósforo",
+      "text": "Y una pregunta de los parciales: ¿por qué hay hipocalcemia? Porque el riñón es el que activa la vitamina D, y sin vitamina D activa el intestino no absorbe calcio. Además el riñón no elimina el fósforo, que sube. El calcio bajo y el fósforo alto activan la paratiroides: un hiperparatiroidismo secundario. Y el calcio bajo puede dar calambres y tetania."
+    },
+    {
+      "title": "La anemia: aguda o crónica",
+      "text": "Y la otra pregunta de parcial: la anemia. Los pacientes con insuficiencia renal aguda no tienen anemia al comienzo, porque tienen que pasar más de siete a diez días para que caiga la eritropoyetina. Ojo con el matiz: no es que la aguda nunca tenga anemia. Si el cuadro no se resuelve, el paciente puede empezar a anemizarse. Pero al comienzo, no; y la crónica sí tiene anemia."
+    },
+    {
+      "title": "Insuficiencia renal crónica",
+      "text": "La insuficiencia renal crónica es la pérdida progresiva e irreversible de la función, durante más de tres meses. Y la pregunta de parcial: ¿cuál es la causa más frecuente? La nefropatía diabética. El que no lo dice, lo bochan. Le sigue la nefropatía hipertensiva, y después las glomerulopatías primarias."
+    },
+    {
+      "title": "Estadios por filtrado",
+      "text": "La crónica se clasifica por el filtrado glomerular. G uno, filtrado normal o alto, con algún daño: no da síntomas. G dos, entre sesenta y noventa: hipertensión, proteinuria. G tres, entre treinta y sesenta: ya es una insuficiencia, y aparecen la anemia y las alteraciones del calcio y el fósforo. G cuatro, entre quince y treinta: acidosis, náuseas, vómitos, edemas. Y G cinco, menos de quince: el síndrome urémico, con diálisis o trasplante. El filtrado normal ronda los ciento veinte mililitros por minuto, se pierde alrededor de uno por año desde los treinta, y se estima con la fórmula de Cockcroft-Gault."
+    },
+    {
+      "title": "El paciente renal crónico",
+      "text": "El paciente renal crónico. En la sangre, anemia normocítica normocrómica, lo que más lo caracteriza, y tendencia a sangrar porque la urea altera las plaquetas. En el hueso, la osteodistrofia. En la piel, palidez terrosa, y hasta la escarcha urémica, urea que se cristaliza con el sudor, prurito y aliento urémico. En los nervios, una polineuropatía: si la causa es la diabetes, casi seguro la tiene, y el profesor avisa que en el parcial pueden combinar los temas. Y en el corazón, hipertensión, y con la urea muy alta, pericarditis."
+    },
+    {
+      "title": "Aguda o crónica",
+      "text": "Y cómo se diferencian. La aguda dura horas o días y suele revertir; la crónica dura más de tres meses y no revierte. La aguda no tiene anemia al comienzo; la crónica sí. La crónica tiene osteodistrofia. Y lo que el profesor marca como pregunta de parcial: la ecografía. En la crónica, los riñones están chicos y de aspecto granular; en la aguda, de tamaño normal o aumentados."
+    }
+  ]
+}
