@@ -1,0 +1,126 @@
+{
+  "src": "media/dig-07/clase.mp4",
+  "poster": "media/dig-07/clase.jpg",
+  "vtt": "media/dig-07/clase.vtt",
+  "duration": "10:09",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Barrera y agresores"
+    },
+    {
+      "t": 115,
+      "label": "Fisiopatología · Exceso y falta de ácido"
+    },
+    {
+      "t": 174,
+      "label": "Teoría · Úlcera"
+    },
+    {
+      "t": 254,
+      "label": "Teoría · Causas"
+    },
+    {
+      "t": 311,
+      "label": "Teoría · Clínica"
+    },
+    {
+      "t": 376,
+      "label": "Teoría · Diagnóstico"
+    },
+    {
+      "t": 465,
+      "label": "Teoría · Complicaciones"
+    },
+    {
+      "t": 502,
+      "label": "Teoría · Gastritis"
+    }
+  ],
+  "script": [
+    {
+      "title": "Cómo se defiende el estómago",
+      "text": "Empecemos por la defensa. El estómago tiene un pH de uno a dos, y su mucosa sobrevive gracias a tres cosas. La barrera mucosa: una capa de moco con bicarbonato sobre el epitelio. El flujo sanguíneo local, que trae el bicarbonato. Y las prostaglandinas, que mantienen dilatados esos vasos y estimulan el moco y el bicarbonato. Si alguna falla, el ácido lesiona la mucosa."
+    },
+    {
+      "title": "AINE: se pierden las prostaglandinas",
+      "text": "El primer gran agresor son los antiinflamatorios. La aspirina y los AINE inhiben la ciclooxigenasa. Sin ciclooxigenasa no hay prostaglandinas: los vasos de la mucosa se contraen, llega menos bicarbonato y se produce menos moco. Entonces el ácido toca el epitelio, y aparecen erosiones y úlceras."
+    },
+    {
+      "title": "Helicobacter pylori: la nube alcalina",
+      "text": "El segundo agresor es el Helicobacter pylori, que coloniza sobre todo el antro, aprovechando una mucosa ya dañada. La bacteria fabrica ureasa, una enzima que desdobla la urea en amoníaco y dióxido de carbono. Así crea a su alrededor una nube alcalina que la protege del ácido. Pero el amoníaco es tóxico para la mucosa, la bacteria genera inflamación, y aumentan la gastrina y la secreción de ácido. El resultado es la gastritis y la úlcera."
+    },
+    {
+      "title": "Erosión o úlcera: la profundidad",
+      "text": "Y la diferencia entre una erosión y una úlcera es la profundidad. Si la pérdida de sustancia no atraviesa la muscular de la mucosa, es una erosión, también llamada exulceración: son las lesiones agudas. La úlcera verdadera atraviesa la muscular de la mucosa y queda expuesta al ácido. Es crónica, y por eso tiene fibrosis."
+    },
+    {
+      "title": "Zollinger-Ellison: demasiada gastrina",
+      "text": "Un caso extremo es el síndrome de Zollinger-Ellison. Un tumor del páncreas, el gastrinoma, produce gastrina sin control. La gastrina estimula las células parietales, y el estómago produce ácido en exceso: el pH baja de uno. El paciente tiene dolor epigástrico y úlceras múltiples y graves."
+    },
+    {
+      "title": "Gastritis autoinmune: sin células parietales",
+      "text": "Y el opuesto: la gastritis autoinmune. El organismo fabrica anticuerpos contra las células parietales del fondo y el cuerpo del estómago. Esas células producen el ácido y el factor intrínseco. Sin ellas no hay ácido, y sin factor intrínseco la vitamina B12 no se absorbe en el íleon terminal. Como no hay ácido que la frene, las células G del antro liberan más gastrina. El resultado es una anemia perniciosa, macrocítica, y una mucosa que se atrofia, con mayor riesgo de cáncer."
+    },
+    {
+      "title": "Úlcera y gastritis: lo más preguntado",
+      "text": "Empezamos con lo que el profesor marca como lo más importante: úlcera y gastritis son pregunta de parcial, en el oral y en el choice. El síndrome ulceroso es el conjunto de signos y síntomas que produce una úlcera: una pérdida de sustancia de la mucosa que atraviesa la muscular de la mucosa y la deja expuesta al ácido."
+    },
+    {
+      "title": "Aguda o crónica",
+      "text": "Se clasifican en agudas y crónicas. La aguda no es una verdadera úlcera: es una exulceración, que no atraviesa la muscular de la mucosa. La crónica sí, y es la más frecuente. La aguda aparece en cualquier lugar; la crónica, en el antro y en la primera y segunda porción del duodeno. Las agudas suelen ser múltiples; las crónicas, únicas. Las agudas son pequeñas; las crónicas miden de dos a cuatro centímetros. Y la crónica tiene fibrosis: todo lo crónico tiende a la fibrosis."
+    },
+    {
+      "title": "Dónde se ubican",
+      "text": "La localización sí hay que saberla sí o sí: el antro gástrico y la primera y segunda porción del duodeno. Por eso se llaman úlceras gastroduodenales. Son más frecuentes en el duodeno que en el estómago; después vienen el esófago, los bordes de una anastomosis y el yeyuno."
+    },
+    {
+      "title": "Las dos causas más frecuentes",
+      "text": "Las causas. Las dos más frecuentes, que se preguntan, son el Helicobacter pylori, que coloniza el antro y con su ureasa produce amoníaco, alcaliniza su entorno y lesiona la mucosa. Y la aspirina y los antiinflamatorios, que inhiben la ciclooxigenasa y dejan a la mucosa sin prostaglandinas. El profesor avisa que el mecanismo puede tomarse en el oral."
+    },
+    {
+      "title": "Otros factores",
+      "text": "Otros factores. El estrés prolongado y las cirugías mayores: el estrés crónico eleva la ACTH y el cortisol, y disminuye el flujo a la mucosa. Los corticoides, que impiden la formación de prostaglandinas. El tabaco, el alcohol, el café y el mate. Y el síndrome de Zollinger-Ellison: un gastrinoma del páncreas que produce hiperclorhidria y úlceras múltiples. Se trata quitando el tumor."
+    },
+    {
+      "title": "El dolor de la úlcera",
+      "text": "La manifestación más característica es el dolor epigástrico: la dispepsia de la úlcera. Está en el epigastrio, sin irradiación, es quemante, y su intensidad varía. Lo calman los antiácidos; en la úlcera duodenal, a veces también la comida. Y lo empeora todo lo que aumenta el ácido; en la gástrica, la comida, porque al comer se secreta ácido."
+    },
+    {
+      "title": "Lo que acompaña",
+      "text": "Puede acompañarse de acidez, con reflujo, pirosis y eructos; de náuseas y vómitos; y de sangrado por las erosiones, que se manifiesta como hematemesis o melena. Y la pérdida de peso es muy importante: las úlceras benignas en general no adelgazan, pero un cáncer ulcerado sí."
+    },
+    {
+      "title": "Gástrica o duodenal",
+      "text": "La úlcera duodenal es la más frecuente, aparece en adultos jóvenes, puede calmar con la comida, y rara vez es maligna. La gástrica es más de personas mayores, empeora con la comida, y siempre se le hace endoscopia con biopsia, porque puede ser un cáncer ulcerado."
+    },
+    {
+      "title": "Diagnóstico: endoscopia",
+      "text": "En el diagnóstico, lo más importante es la anamnesis: estrés, antiinflamatorios, automedicación, infusiones, tabaco, alcohol y la edad. El examen físico no aporta casi nada, salvo que la úlcera se haya complicado. Y el estándar, que se pregunta en los choices, es la endoscopia digestiva alta: muestra dónde está la úlcera, cuántas son, su tamaño, y permite la biopsia. La radiografía cayó en desuso."
+    },
+    {
+      "title": "Cómo se busca el Helicobacter pylori",
+      "text": "Para buscar el Helicobacter, el estándar sigue siendo la endoscopia con biopsia, con una especificidad cercana al cien por ciento. Sobre la biopsia se puede hacer la prueba rápida de la ureasa: si la urea se desdobla, hay bacteria. La serología es poco específica. La PCR es muy específica, pero cara. Y la prueba del aliento se usa para comprobar que el tratamiento erradicó la bacteria: se ingiere urea marcada, y si aparece dióxido de carbono marcado en el aliento, la bacteria sigue ahí."
+    },
+    {
+      "title": "Tratamiento del H. pylori",
+      "text": "El tratamiento combina un inhibidor de la bomba de protones con dos antibióticos. El OCA: omeprazol, claritromicina y amoxicilina. O el OMA: omeprazol, metronidazol y amoxicilina. Y después, la prueba del aliento confirma la erradicación."
+    },
+    {
+      "title": "Complicaciones de la úlcera",
+      "text": "Las complicaciones son pregunta de parcial. La más frecuente es la hemorragia digestiva alta: el paciente vomita sangre o tiene melena, hipotensión ortostática, taquicardia y anemia ferropénica. La segunda, la perforación: un abdomen agudo perforativo, con abdomen en tabla, signo de Gueneau de Mussy, el signo de Jobert a la percusión y el de Popper en la radiografía. Y la tercera, el síndrome pilórico: una úlcera crónica cerca del píloro se fibrosa, se endurece y lo tapa. El paciente vomita y pierde peso."
+    },
+    {
+      "title": "Gastritis: definición y clasificación",
+      "text": "La gastritis es la inflamación de la mucosa gástrica, por una causa infecciosa o no: autoinmune, fármacos, tabaco o alcohol. Se clasifica por su evolución en aguda, con neutrófilos, o crónica, con fibrosis, metaplasia y atrofia, que se relaciona con el cáncer. Por su localización. Y por la lesión: erosiva, que es hemorrágica, o no erosiva, que se divide en tipo A, tipo B y tipo AB."
+    },
+    {
+      "title": "Gastritis tipo A y tipo B",
+      "text": "Y lo que van a preguntar: la gastritis no erosiva, tipo A y tipo B. La tipo A es autoinmune: anticuerpos contra las células parietales. La tipo B es bacteriana, por Helicobacter pylori. La A está en el fondo y el cuerpo, donde están las células parietales; la B, en el antro. En la A no hay ácido: aclorhidria. En la B el ácido es normal o está aumentado. En la A, la gastrina está alta. Y la A lleva a la anemia perniciosa y a la atrofia, con riesgo de cáncer; la B se asocia a úlcera."
+    },
+    {
+      "title": "Clínica y diagnóstico de la gastritis",
+      "text": "En la clínica, la gastritis erosiva puede pasar inadvertida, dar dolor epigástrico, o vómitos de sangre si la erosión es grande. El estándar es la endoscopia con biopsia, donde también se busca el Helicobacter. Y en el laboratorio de la tipo A, lo que más le interesa al profesor: hipergastrinemia con aclorhidria, y una anemia macrocítica, perniciosa. Con esto, tenés todo el capítulo. Ahora a practicar."
+    }
+  ]
+}

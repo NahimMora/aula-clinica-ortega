@@ -1,0 +1,429 @@
+{
+ "fps": 24,
+ "total": 14610,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-defensa",
+   "inicio": 96,
+   "frames": 723,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 344
+    },
+    {
+     "inicio": 440,
+     "frames": 117
+    },
+    {
+     "inicio": 557,
+     "frames": 262
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-aine",
+   "inicio": 819,
+   "frames": 565,
+   "beats": [
+    {
+     "inicio": 819,
+     "frames": 198
+    },
+    {
+     "inicio": 1017,
+     "frames": 219
+    },
+    {
+     "inicio": 1236,
+     "frames": 148
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hp",
+   "inicio": 1384,
+   "frames": 803,
+   "beats": [
+    {
+     "inicio": 1384,
+     "frames": 206
+    },
+    {
+     "inicio": 1590,
+     "frames": 281
+    },
+    {
+     "inicio": 1871,
+     "frames": 210
+    },
+    {
+     "inicio": 2081,
+     "frames": 106
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ulcera",
+   "inicio": 2187,
+   "frames": 573,
+   "beats": [
+    {
+     "inicio": 2187,
+     "frames": 344
+    },
+    {
+     "inicio": 2531,
+     "frames": 229
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-zollinger",
+   "inicio": 2760,
+   "frames": 565,
+   "beats": [
+    {
+     "inicio": 2760,
+     "frames": 231
+    },
+    {
+     "inicio": 2991,
+     "frames": 198
+    },
+    {
+     "inicio": 3189,
+     "frames": 136
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-autoinmune",
+   "inicio": 3325,
+   "frames": 867,
+   "beats": [
+    {
+     "inicio": 3325,
+     "frames": 244
+    },
+    {
+     "inicio": 3569,
+     "frames": 276
+    },
+    {
+     "inicio": 3845,
+     "frames": 147
+    },
+    {
+     "inicio": 3992,
+     "frames": 200
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-aviso",
+   "inicio": 4192,
+   "frames": 496,
+   "beats": [
+    {
+     "inicio": 4192,
+     "frames": 215
+    },
+    {
+     "inicio": 4407,
+     "frames": 281
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasificacion",
+   "inicio": 4688,
+   "frames": 944,
+   "beats": [
+    {
+     "inicio": 4688,
+     "frames": 339
+    },
+    {
+     "inicio": 5027,
+     "frames": 180
+    },
+    {
+     "inicio": 5207,
+     "frames": 132
+    },
+    {
+     "inicio": 5339,
+     "frames": 153
+    },
+    {
+     "inicio": 5492,
+     "frames": 140
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-localizacion",
+   "inicio": 5632,
+   "frames": 473,
+   "beats": [
+    {
+     "inicio": 5632,
+     "frames": 262
+    },
+    {
+     "inicio": 5894,
+     "frames": 211
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-etiologia",
+   "inicio": 6105,
+   "frames": 615,
+   "beats": [
+    {
+     "inicio": 6105,
+     "frames": 328
+    },
+    {
+     "inicio": 6433,
+     "frames": 287
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otras-causas",
+   "inicio": 6720,
+   "frames": 756,
+   "beats": [
+    {
+     "inicio": 6720,
+     "frames": 276
+    },
+    {
+     "inicio": 6996,
+     "frames": 130
+    },
+    {
+     "inicio": 7126,
+     "frames": 108
+    },
+    {
+     "inicio": 7234,
+     "frames": 242
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clinica",
+   "inicio": 7476,
+   "frames": 618,
+   "beats": [
+    {
+     "inicio": 7476,
+     "frames": 167
+    },
+    {
+     "inicio": 7643,
+     "frames": 451
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-acompanan",
+   "inicio": 8094,
+   "frames": 489,
+   "beats": [
+    {
+     "inicio": 8094,
+     "frames": 280
+    },
+    {
+     "inicio": 8374,
+     "frames": 209
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-gastrica-duodenal",
+   "inicio": 8583,
+   "frames": 463,
+   "beats": [
+    {
+     "inicio": 8583,
+     "frames": 215
+    },
+    {
+     "inicio": 8798,
+     "frames": 248
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diagnostico",
+   "inicio": 9046,
+   "frames": 745,
+   "beats": [
+    {
+     "inicio": 9046,
+     "frames": 262
+    },
+    {
+     "inicio": 9308,
+     "frames": 153
+    },
+    {
+     "inicio": 9461,
+     "frames": 330
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hp-pruebas",
+   "inicio": 9791,
+   "frames": 889,
+   "beats": [
+    {
+     "inicio": 9791,
+     "frames": 214
+    },
+    {
+     "inicio": 10005,
+     "frames": 181
+    },
+    {
+     "inicio": 10186,
+     "frames": 93
+    },
+    {
+     "inicio": 10279,
+     "frames": 111
+    },
+    {
+     "inicio": 10390,
+     "frames": 290
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tratamiento",
+   "inicio": 10680,
+   "frames": 483,
+   "beats": [
+    {
+     "inicio": 10680,
+     "frames": 255
+    },
+    {
+     "inicio": 10935,
+     "frames": 228
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-complicaciones",
+   "inicio": 11163,
+   "frames": 899,
+   "beats": [
+    {
+     "inicio": 11163,
+     "frames": 333
+    },
+    {
+     "inicio": 11496,
+     "frames": 291
+    },
+    {
+     "inicio": 11787,
+     "frames": 275
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-gastritis",
+   "inicio": 12062,
+   "frames": 717,
+   "beats": [
+    {
+     "inicio": 12062,
+     "frames": 229
+    },
+    {
+     "inicio": 12291,
+     "frames": 488
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ab",
+   "inicio": 12779,
+   "frames": 972,
+   "beats": [
+    {
+     "inicio": 12779,
+     "frames": 351
+    },
+    {
+     "inicio": 13130,
+     "frames": 168
+    },
+    {
+     "inicio": 13298,
+     "frames": 181
+    },
+    {
+     "inicio": 13479,
+     "frames": 94
+    },
+    {
+     "inicio": 13573,
+     "frames": 178
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-gastritis-clinica",
+   "inicio": 13751,
+   "frames": 739,
+   "beats": [
+    {
+     "inicio": 13751,
+     "frames": 231
+    },
+    {
+     "inicio": 13982,
+     "frames": 152
+    },
+    {
+     "inicio": 14134,
+     "frames": 356
+    }
+   ]
+  }
+ ]
+}

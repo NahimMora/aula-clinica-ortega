@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-07 — Síndrome ulceroso y gastritis. Fuente: clases Sd. ulceroso–gastritis 1, 2 y 3 (Ortega) + libro p. 370–372.
@@ -232,6 +233,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig07-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -247,6 +249,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -261,6 +264,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-d03',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -275,6 +279,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-d04',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -286,6 +291,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-d05',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       emphasis: true,
@@ -303,6 +309,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig07-q01',
+      origen: 'practica',
       topic: 'Localización',
       difficulty: 1,
       emphasis: true,
@@ -318,6 +325,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q02',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 1,
       emphasis: true,
@@ -333,6 +341,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q03',
+      origen: 'practica',
       topic: 'AINE',
       difficulty: 2,
       stem: 'Los AINE producen úlcera porque:',
@@ -347,6 +356,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q04',
+      origen: 'practica',
       topic: 'H. pylori',
       difficulty: 3,
       stem: 'La **ureasa** del H. pylori daña la mucosa porque genera:',
@@ -361,6 +371,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q05',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       emphasis: true,
@@ -376,6 +387,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q06',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 1,
       emphasis: true,
@@ -391,6 +403,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q07',
+      origen: 'practica',
       topic: 'H. pylori',
       difficulty: 2,
       stem: 'Para **controlar la erradicación** del H. pylori después del tratamiento se usa:',
@@ -405,6 +418,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q08',
+      origen: 'practica',
       topic: 'Complicaciones',
       difficulty: 1,
       emphasis: true,
@@ -420,6 +434,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q09',
+      origen: 'practica',
       topic: 'Complicaciones',
       difficulty: 2,
       stem: 'Paciente ulceroso con vómitos de alimentos ingeridos horas antes y pérdida de peso:',
@@ -434,6 +449,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q10',
+      origen: 'practica',
       topic: 'Gastritis',
       difficulty: 2,
       emphasis: true,
@@ -449,6 +465,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q11',
+      origen: 'practica',
       topic: 'Gastritis',
       difficulty: 3,
       stem: 'Hipergastrinemia con **aclorhidria**. ¿Qué diagnóstico corresponde?',
@@ -463,6 +480,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig07-q12',
+      origen: 'practica',
       topic: 'Zollinger',
       difficulty: 2,
       stem: 'Úlceras múltiples con pH gástrico menor a 1: pensás en:',
@@ -548,6 +566,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig07-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Paciente que toma ibuprofeno a diario, con melena e hipotensión ortostática. La causa más probable es:',
@@ -564,6 +583,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

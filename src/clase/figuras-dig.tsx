@@ -1981,80 +1981,126 @@ type FaseAbs = 'normal' | 'intraluminal' | 'mucosa' | 'transporte';
 function Absorcion({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: FaseAbs[] }) {
   const m = vistas[Math.min(paso, vistas.length - 1)];
   const u = vistas.length > 1 ? apf(paso, dt, paso) : apf(paso, dt, 0);
-  const VX = 470; // centro de la vellosidad
-  const alto = m === 'mucosa' ? 70 : 230;
-  const base = 420;
-  const vello = `M${VX - 70},${base} L${VX - 70},${base - alto + 60} C${VX - 70},${base - alto - 10} ${VX + 70},${base - alto - 10} ${VX + 70},${base - alto + 60} L${VX + 70},${base} Z`;
-  const gotas = Array.from({ length: 6 }, (_, i) => {
-    const v = (t * 0.18 + i / 6) % 1;
+  const base = 380; // límite mucosa / submucosa
+  const LY = base + 70; // vaso linfático
+  const atrofia = m === 'mucosa';
+  const XS = [330, 490, 650]; // vellosidades
+  const alto = atrofia ? 46 : 200;
+  const ancho = atrofia ? 150 : 104;
+  const vello = (x: number, inset = 0) => {
+    const w = ancho / 2 - inset;
+    const top = base - alto + inset;
+    const c = atrofia ? 18 : 56;
+    return `M${x - w},${base} L${x - w},${top + c} C${x - w},${top - c * 0.3} ${x + w},${top - c * 0.3} ${x + w},${top + c} L${x + w},${base}`;
+  };
+  // gotas de grasa: en la luz, arriba de las vellosidades
+  const gotas = Array.from({ length: 7 }, (_, i) => {
+    const v = (t * 0.16 + i / 7) % 1;
     const sinDigerir = m === 'intraluminal';
-    const x = 40 + v * (sinDigerir ? 760 : 300);
-    const y = 90 + ((i * 37) % 80);
-    const r = sinDigerir ? 16 : Math.max(5, 16 - v * 30);
-    return <circle key={i} cx={x} cy={y} r={r} fill={ACIDO} stroke="#b9a640" strokeWidth={2} opacity={0.9} />;
+    const x = 40 + v * (sinDigerir ? 740 : 200);
+    const y = 112 + ((i * 41) % 56);
+    const r = sinDigerir ? 15 : Math.max(4, 15 - v * 13);
+    return <circle key={i} cx={x} cy={y} r={r} fill={ACIDO} stroke="#b9a640" strokeWidth={2} opacity={sinDigerir ? 0.9 : 1 - v * 0.6} />;
   });
+  // micelas: entran por la punta de cada vellosidad (salvo con atrofia)
   const micelas =
     m === 'intraluminal'
       ? []
-      : Array.from({ length: 6 }, (_, i) => {
-          const v = (t * 0.25 + i / 6) % 1;
-          const entra = m !== 'mucosa';
-          const x = 300 + v * (entra ? VX - 300 : 480);
-          const y = 150 + v * (entra ? 90 : 0) + Math.sin(i + t) * 6;
+      : Array.from({ length: 9 }, (_, i) => {
+          const v = (t * 0.22 + i / 9) % 1;
+          const dest = XS[i % 3];
+          const entra = !atrofia;
+          const x0 = 230;
+          const y0 = 110 + (i % 3) * 22;
+          const x = entra ? x0 + v * (dest - x0) : x0 + v * 560;
+          const y = entra ? y0 + v * (base - alto + 14 - y0) : y0 + Math.sin(v * 9 + i) * 8;
+          const o = entra ? 1 - Math.max(0, v - 0.85) * 6 : 1 - Math.max(0, v - 0.85) * 6;
           return (
-            <g key={i} opacity={entra ? 1 - Math.max(0, v - 0.85) * 6 : 1}>
+            <g key={i} opacity={o}>
               <circle cx={x} cy={y} r={9} fill="none" stroke={MENTA} strokeWidth={3} />
-              <circle cx={x} cy={y} r={4} fill={ACIDO} />
+              <circle cx={x} cy={y} r={3.5} fill={ACIDO} />
             </g>
           );
         });
-  const quilo = Array.from({ length: 6 }, (_, i) => {
-    const v = (t * 0.22 + i / 6) % 1;
-    const tapado = m === 'transporte';
-    const x = tapado ? VX - 20 + (i % 3) * 20 : VX + v * 330;
-    const y = tapado ? base + 20 + Math.floor(i / 3) * 16 : base + 48;
-    return <circle key={i} cx={x} cy={y} r={6} fill="#f3eef6" opacity={0.9} />;
-  });
-  const fallo = { intraluminal: 'Sin lipasa ni sales biliares: la grasa no se digiere', mucosa: 'Vellosidades atróficas: no se absorbe', transporte: 'Linfa obstruida: se pierden grasas y proteínas' } as const;
+  const tapado = m === 'transporte';
+  const XT = 760; // obstrucción
+  const quilo = atrofia
+    ? []
+    : Array.from({ length: 12 }, (_, i) => {
+        const v = (t * 0.2 + i / 12) % 1;
+        const xv = XS[i % 3];
+        if (tapado && i >= 6) {
+          const k = i - 6;
+          return <circle key={i} cx={XT - 26 - (k % 3) * 18} cy={LY - 8 + Math.floor(k / 3) * 16} r={6} fill="#f3eef6" opacity={0.95} />;
+        }
+        // baja por el quilífero y sigue por el linfático
+        const bajada = base - alto + 40;
+        const tramo1 = LY - bajada;
+        const tramo2 = (tapado ? XT - 40 : 800) - xv;
+        const d = v * (tramo1 + tramo2);
+        const x = d < tramo1 ? xv : xv + (d - tramo1);
+        const y = d < tramo1 ? bajada + d : LY;
+        return <circle key={i} cx={x} cy={y} r={5.5} fill="#f3eef6" opacity={0.9} />;
+      });
+  const nota: Record<FaseAbs, [string, string]> = {
+    normal: ['Micelas → enterocito → quilomicrones por la linfa', MENTA],
+    intraluminal: ['Sin lipasa ni sales biliares: la grasa no se digiere', ROJO],
+    mucosa: ['Vellosidades atróficas: no se absorbe', ROJO],
+    transporte: ['Linfa obstruida: se pierden grasas y proteínas', ROJO],
+  };
   return (
-    <svg viewBox="0 0 800 520" role="img" aria-label="Fases intraluminal, mucosa y de transporte de la absorción">
-      <rect x={0} y={40} width={800} height={base - 40} fill="#241d2b" />
+    <svg viewBox="0 0 800 520" role="img" aria-label="Fases intraluminal, mucosa y de transporte de la absorción de las grasas">
+      {/* luz */}
+      <rect x={0} y={50} width={800} height={base - 50} fill="#241d2b" />
+      {/* submucosa con el linfático */}
+      <rect x={0} y={base} width={800} height={520 - base} fill="#4a2f38" />
+      {/* criptas entre vellosidades */}
+      {[XS[0] - 80, XS[0] + 80, XS[1] + 80, XS[2] + 80].map((x, i) => (
+        <path key={i} d={`M${x - 14},${base} q14,40 28,0`} fill="#241d2b" stroke="#a0605c" strokeWidth={2} />
+      ))}
+      {/* vellosidades: epitelio, lámina propia y quilífero central */}
+      {XS.map((x) => (
+        <g key={x}>
+          <path d={`${vello(x)} Z`} fill={MUCOSA} stroke="#a0605c" strokeWidth={3} />
+          <path d={`${vello(x, 16)} Z`} fill="#a9625f" />
+          {!atrofia &&
+            Array.from({ length: 7 }, (_, k) => {
+              const yy = base - 20 - k * 24;
+              return <path key={k} d={`M${x - ancho / 2},${yy} l16,0 M${x + ancho / 2},${yy} l-16,0`} stroke="#a0605c" strokeWidth={1.5} />;
+            })}
+          {!atrofia && <path d={`M${x},${base - alto + 40} L${x},${LY}`} stroke="#efe6d6" strokeWidth={9} strokeLinecap="round" opacity={0.8} />}
+          {atrofia && <path d={`M${x},${base - alto + 22} L${x},${LY}`} stroke="#efe6d6" strokeWidth={6} strokeLinecap="round" opacity={0.6} />}
+        </g>
+      ))}
+      {/* vaso linfático colector */}
+      <path d={`M${XS[0]},${LY} L800,${LY}`} stroke="#efe6d6" strokeWidth={tapado ? 8 : 14} strokeLinecap="round" opacity={0.7} />
+      {tapado && <path d={`M${XT - 14},${LY - 20} l28,40 M${XT + 14},${LY - 20} l-28,40`} stroke={ROJO} strokeWidth={6} strokeLinecap="round" opacity={u} />}
+      {/* lipasa y sales biliares */}
+      {m !== 'intraluminal' &&
+        Array.from({ length: 5 }, (_, i) => (
+          <path key={i} d={`M${60 + i * 34},${200 + (i % 2) * 18} l18,0`} stroke={MENTA} strokeWidth={5} strokeLinecap="round" opacity={0.85} />
+        ))}
+      {m === 'intraluminal' && (
+        <path d={`M70,186 l120,46 M190,186 l-120,46`} stroke={ROJO} strokeWidth={5} strokeLinecap="round" opacity={0.5 * u} />
+      )}
       {gotas}
       {micelas}
-      {m !== 'intraluminal' &&
-        Array.from({ length: 4 }, (_, i) => (
-          <path key={i} d={`M${140 + i * 30},${70 + (i % 2) * 20} l18,0`} stroke={MENTA} strokeWidth={5} strokeLinecap="round" opacity={0.8} />
-        ))}
-      <path d={vello} fill={MUCOSA} stroke="#a0605c" strokeWidth={3} />
-      {m !== 'mucosa' && <path d={`M${VX},${base} L${VX},${base - alto + 70}`} stroke="#efe6d6" strokeWidth={10} strokeLinecap="round" />}
-      <rect x={0} y={base} width={800} height={100} fill="#5b3a44" opacity={0.7} />
-      <path d={`M${VX},${base + 48} L800,${base + 48}`} stroke="#efe6d6" strokeWidth={m === 'transporte' ? 6 : 14} strokeLinecap="round" opacity={0.75} />
-      {m === 'transporte' && <path d={`M${VX + 60},${base + 30} L${VX + 80},${base + 66} M${VX + 80},${base + 30} L${VX + 60},${base + 66}`} stroke={ROJO} strokeWidth={5} />}
       {quilo}
-      <L x={120} y={22} c={ACIDO} s={21}>
-        1 · Luz: grasa
+      <L x={24} y={74} a="start" c={ACIDO} s={20}>
+        1 · Luz del duodeno
       </L>
-      <L x={VX} y={22} c={MUCOSA} s={21}>
+      <L x={24} y={256} a="start" c={m === 'intraluminal' ? ROJO : MENTA} s={20}>
+        {m === 'intraluminal' ? 'Sin lipasa ni bilis' : 'Lipasa y sales biliares'}
+      </L>
+      <L x={24} y={base - 24} a="start" c={MUCOSA} s={20}>
         2 · Mucosa
       </L>
-      <L x={700} y={base + 84} c={INK2} s={20} w={550}>
+      <L x={24} y={LY} a="start" c="#efe6d6" s={20}>
         3 · Linfa
       </L>
-      <L x={140} y={base + 84} c={MENTA} s={20} w={550}>
-        Lipasa y sales biliares
+      <L x={400} y={24} c={nota[m][1]} s={22} o={m === 'normal' ? u : 1}>
+        {nota[m][0]}
       </L>
-      {m !== 'normal' && (
-        <g opacity={u}>
-          <L x={400} y={66} c={ROJO} s={22}>
-            {fallo[m]}
-          </L>
-        </g>
-      )}
-      {m === 'normal' && (
-        <L x={400} y={66} c={MENTA} s={22} o={u}>
-          Se forman micelas, entran al enterocito y salen por la linfa
-        </L>
-      )}
     </svg>
   );
 }
