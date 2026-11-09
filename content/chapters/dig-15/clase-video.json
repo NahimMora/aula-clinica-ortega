@@ -1,0 +1,110 @@
+{
+  "src": "media/dig-15/clase.mp4",
+  "poster": "media/dig-15/clase.jpg",
+  "vtt": "media/dig-15/clase.vtt",
+  "duration": "9:59",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Autodigestión"
+    },
+    {
+      "t": 67,
+      "label": "Fisiopatología · Los signos"
+    },
+    {
+      "t": 106,
+      "label": "Fisiopatología · Todo el cuerpo"
+    },
+    {
+      "t": 171,
+      "label": "Teoría · Qué es y causas"
+    },
+    {
+      "t": 260,
+      "label": "Teoría · Clínica"
+    },
+    {
+      "t": 372,
+      "label": "Teoría · Sistémica"
+    },
+    {
+      "t": 412,
+      "label": "Teoría · Diagnóstico"
+    },
+    {
+      "t": 507,
+      "label": "Teoría · Ranson y Balthazar"
+    }
+  ],
+  "script": [
+    {
+      "title": "El páncreas que se digiere a sí mismo",
+      "text": "El páncreas fabrica enzimas muy potentes, capaces de digerir proteínas y grasas. Para no digerirse a sí mismo, las manda inactivas, como tripsinógeno, y se activan recién en el duodeno. En la pancreatitis aguda, esas enzimas se activan adentro de la propia glándula. La tripsina activa a las demás, en cadena. Y el páncreas empieza a comerse a sí mismo: edema, necrosis, hemorragia, y una inflamación que puede pasar a los órganos vecinos y a todo el cuerpo."
+    },
+    {
+      "title": "Cálculo y alcohol: cómo la desencadenan",
+      "text": "Las dos causas más frecuentes actúan sobre la salida del páncreas. La primera, la litiasis: un cálculo que se enclava en la ampolla de Vater. La bilis no puede salir, refluye, y la presión en el conducto de Wirsung sube. La segunda, el alcohol, contrae el esfínter de Oddi, con el mismo resultado: la secreción no sale. En los dos casos las enzimas terminan activándose adentro de la glándula."
+    },
+    {
+      "title": "El exudado se difunde",
+      "text": "El páncreas está detrás del peritoneo. Cuando se inflama, su exudado se difunde por el retroperitoneo, y eso explica los signos. El asa de intestino más cercana se paraliza: es el asa centinela, un íleo paralítico localizado. La cola del páncreas toca el diafragma izquierdo; al irritarlo, irrita la pleura de arriba y aparece un derrame pleural izquierdo. Y si la pancreatitis es necrohemorrágica, la sangre del retroperitoneo aflora en la piel: alrededor del ombligo, el signo de Cullen, y en los flancos, el de Grey Turner."
+    },
+    {
+      "title": "Hipovolemia con hemoconcentración",
+      "text": "El cuadro sistémico empieza por el líquido. La inflamación vuelve permeables los vasos, y el plasma se escapa al retroperitoneo y al abdomen, a un tercer espacio; a eso se suman los vómitos. Se pierde agua, pero los glóbulos rojos se quedan: la sangre se concentra, y el hematocrito sube. Es la hemoconcentración, que el profesor marca para el parcial y el oral. El paciente está hipovolémico: hipotenso, taquicárdico, orina poco porque el riñón recibe poca sangre, y puede llegar al shock. Y con la sangre concentrada, tiende a trombosis."
+    },
+    {
+      "title": "Calcio bajo y glucosa alta",
+      "text": "Dos alteraciones del laboratorio con su porqué. El calcio baja porque la lipasa libera ácidos grasos en la grasa que se necrosa alrededor del páncreas, y esos ácidos grasos atrapan el calcio, como cuando se forma un jabón. Y la glucosa sube porque la inflamación daña los islotes de Langerhans, que fabrican la insulina. Una hiperglucemia indica una necrosis extensa."
+    },
+    {
+      "title": "Pancreatitis aguda",
+      "text": "La pancreatitis aguda, que el profesor pide como la palma de la mano: se pregunta en el choice, en el oral y en el final. Es una inflamación aguda del páncreas por la activación de sus enzimas dentro de la propia glándula, que puede comprometer a los órganos vecinos e incluso a órganos a distancia. Solo se toma la aguda. La crónica es parecida, pero en vez de edema y necrosis tiene calcificaciones."
+    },
+    {
+      "title": "Causas",
+      "text": "Las causas, pregunta de parcial. Las dos más frecuentes: la litiasis biliar, la primera, sobre todo en mujeres, y el alcoholismo crónico, la segunda, sobre todo en hombres. Entre las dos explican el ochenta por ciento. Se dividen en directas, como un traumatismo del abdomen, una cirugía o una endoscopía sobre la papila; e indirectas: la litiasis y el alcohol, y además la hipertrigliceridemia, la hipercalcemia, algunos fármacos, infecciones como la parotiditis, y enfermedades autoinmunes."
+    },
+    {
+      "title": "Edematosa y necrohemorrágica",
+      "text": "Por su anatomía patológica hay dos formas. La edematosa, la más frecuente, en el noventa a noventa y cinco por ciento: hay edema, un exudado leve, y las células pancreáticas se conservan. Y la necrohemorrágica, una evolución grave: hemorragia dentro del páncreas y necrosis que pasa los límites de la glándula, con un cuadro peritoneal y manifestaciones sistémicas muy fuertes."
+    },
+    {
+      "title": "El dolor",
+      "text": "Las manifestaciones clínicas son pregunta de parcial, y la principal es el dolor. Agudo, de comienzo brusco, en el epigastrio o el hipocondrio izquierdo, que se irradia en cinturón hacia la espalda. Es transfixiante: el paciente lo describe como una puñalada que lo atraviesa. Es muy intenso, no cede con los analgésicos comunes, y el paciente busca la posición de plegaria, sentado e inclinado hacia adelante, o acostado de costado con las piernas flexionadas, para aliviar la presión sobre la glándula. Empeora después de comidas copiosas, grasas o alcohol."
+    },
+    {
+      "title": "Vómitos y examen del abdomen",
+      "text": "El segundo síntoma son las náuseas y los vómitos: de contenido gástrico o bilioso, abundantes, y que, a diferencia de los de una gastritis o una colecistitis, no alivian el dolor. En el abdomen: distensión a la inspección, y en las formas graves, los signos de Cullen y Grey Turner. A la auscultación, el asa centinela, un silencio localizado. Timpanismo a la percusión. Y a la palpación, un abdomen doloroso y tenso, con una defensa discreta para lo intenso del dolor; puede haber signos de irritación peritoneal. El profesor lo resume así: la pancreatitis aguda es un abdomen agudo inflamatorio, el tercero en frecuencia después de la apendicitis y la colecistitis."
+    },
+    {
+      "title": "Cullen y Grey Turner",
+      "text": "Y lo que el profesor marca como pregunta de parcial: el signo de Cullen, una equimosis alrededor del ombligo, y el de Grey Turner, equimosis en los flancos. Son sangre del retroperitoneo que aflora en la piel, y aparecen en la pancreatitis necrohemorrágica, no en la edematosa. Ojo: no son patognomónicos. Cualquier sangrado retroperitoneal puede darlos, como un embarazo ectópico roto."
+    },
+    {
+      "title": "Falla multiorgánica",
+      "text": "En los casos graves, la pancreatitis da falla multiorgánica. En el pulmón, el derrame pleural izquierdo, atelectasias o un distrés. En la circulación, hipotensión, taquicardia y shock hipovolémico. En el riñón, oliguria por insuficiencia prerrenal. En el hígado, ictericia, en alrededor del quince por ciento. En el cerebro, confusión. Y en lo metabólico, hiperglucemia e hipocalcemia; en la sangre, trombosis y coagulación intravascular. Todo arranca en la hipovolemia con hemoconcentración, que el profesor marca para el parcial y el oral."
+    },
+    {
+      "title": "Anamnesis y examen general",
+      "text": "En la anamnesis se buscan los antecedentes: litiasis, alcohol, una comida copiosa, fármacos, cirugías, y pancreatitis en la familia. Salvo las formas leves, es un paciente gravemente enfermo, angustiado, inquieto, a veces con fiebre, con las extremidades frías, hipotenso y taquicárdico, deshidratado y orinando poco. Si tiene fiebre, hay que pensar en una infección; y siempre buscar el derrame pleural izquierdo."
+    },
+    {
+      "title": "Laboratorio",
+      "text": "En el laboratorio, lo que se pide en todos lados es la amilasa: si está tres veces o más por encima de lo normal, con la clínica, es una pancreatitis. Sube en la primera hora y baja desde el tercer día, cuando empieza a aparecer en la orina. Pero no es exclusiva: también sube en una úlcera perforada o un embarazo ectópico. La lipasa es más específica y dura más, pero es cara: se pide cuando hay dudas. Además, leucocitosis de más de quince mil, calcio bajo, glucosa alta, LDH alta, la bilirrubina y las enzimas hepáticas por si el origen es biliar, y la urea y la creatinina por el riñón."
+    },
+    {
+      "title": "Imágenes",
+      "text": "En imágenes, la radiografía de abdomen puede mostrar el asa centinela, y la de tórax, el derrame pleural o atelectasias. La ecografía sirve para buscar los cálculos, pero ve mal el páncreas. Y la tomografía con contraste es la que gradúa la inflamación y la necrosis, con los criterios de Balthazar."
+    },
+    {
+      "title": "Criterios de Ranson",
+      "text": "Los criterios de Ranson, que el profesor pide sin excusas: el que no los sabe, lo bochan. Miden la gravedad y la mortalidad. Al ingreso son cinco: la edad, los leucocitos, la glucemia, la GOT y la LDH, con cortes algo más altos si la pancreatitis es biliar. Por ejemplo, la edad: más de cincuenta y cinco si no es biliar, más de setenta si es biliar. A las cuarenta y ocho horas son seis, iguales para las dos: que el hematocrito baje más de un diez por ciento, que la urea suba más de cinco, una PaO dos menor de sesenta, un déficit de bases mayor de cuatro, calcio menor de ocho, y un secuestro de líquido de más de seis litros. De uno a tres criterios, leve; cuatro o más, severa. Con más de seis, la mortalidad ronda el cuarenta por ciento."
+    },
+    {
+      "title": "Criterios de Balthazar",
+      "text": "Y los criterios de Balthazar, que gradúan la tomografía. A, páncreas normal. B, agrandamiento difuso. C, inflamación alrededor del páncreas. D, una colección líquida. Y E, dos o más colecciones, o gas. A eso se le suma cuánto del páncreas está necrosado: cuanta más necrosis, mayor la mortalidad. Ranson mira el laboratorio; Balthazar, la imagen."
+    }
+  ]
+}

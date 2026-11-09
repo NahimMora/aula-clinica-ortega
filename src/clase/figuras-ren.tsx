@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react';
 import { NEF_H, NEF_W, NefronaFig, URI_H, URI_W, UrinarioFig } from '../visual/anatomia';
 import type { NefronaVista, UrinarioVista, VTone } from '../visual/tipos';
-import { type BaseFig, CIELO, DURAZNO, INK, INK2, INK3, L, LILA, LINE, MENTA, ROJO, SANGRE, apf } from './figuras-base';
+import { type BaseFig, CIELO, DURAZNO, INK, INK2, INK3, L, LILA, MENTA, ROJO, SANGRE, apf } from './figuras-base';
 
 const ALBUMINA = '#e8d36a';
 
@@ -106,7 +106,7 @@ function Glomerulo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vi
       <rect x={40} y={70} width={ENDO - 40} height={400} fill="#3a1f2a" />
       <rect x={POD + 30} y={70} width={720 - POD} height={400} fill="#1f2a33" />
       {/* endotelio fenestrado */}
-      {Array.from({ length: 6 }, (_, i) => (
+      {Array.from({ length: 5 }, (_, i) => (
         <rect key={i} x={ENDO - 10} y={70 + i * 80 + 12} width={14} height={56} rx={6} fill="#d79aa6" />
       ))}
       {/* membrana basal (carga negativa) */}
@@ -146,13 +146,13 @@ function Glomerulo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vi
       <L x={600} y={50} c={CIELO} s={20}>
         Espacio de Bowman
       </L>
-      <L x={ENDO - 2} y={496} c="#d79aa6" s={18}>
+      <L x={ENDO - 16} y={492} a="end" c="#d79aa6" s={19}>
         Endotelio
       </L>
-      <L x={MB + 6} y={496} c={INK2} s={18}>
+      <L x={MB} y={512} c={INK2} s={19}>
         Membrana basal
       </L>
-      <L x={POD + 10} y={496} c="#c9a7e8" s={18}>
+      <L x={POD + 34} y={492} a="start" c="#c9a7e8" s={19}>
         Podocitos
       </L>
       <L x={400} y={22} c={nota[v][1]} s={21} o={v === 'normal' ? 1 : u}>
@@ -171,6 +171,3 @@ export const FIGURAS_REN = {
   glomerulo: Glomerulo,
 } satisfies Record<string, (p: never) => ReactNode>;
 
-// Colores usados solo en algunas vistas (evita que el linter los marque sin uso).
-void LINE;
-void ROJO;

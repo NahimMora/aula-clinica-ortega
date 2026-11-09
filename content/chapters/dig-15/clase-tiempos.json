@@ -1,0 +1,301 @@
+{
+ "fps": 24,
+ "total": 14384,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-acino",
+   "inicio": 96,
+   "frames": 838,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 337
+    },
+    {
+     "inicio": 433,
+     "frames": 240
+    },
+    {
+     "inicio": 673,
+     "frames": 261
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-causas",
+   "inicio": 934,
+   "frames": 694,
+   "beats": [
+    {
+     "inicio": 934,
+     "frames": 388
+    },
+    {
+     "inicio": 1322,
+     "frames": 306
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-difusion",
+   "inicio": 1628,
+   "frames": 939,
+   "beats": [
+    {
+     "inicio": 1628,
+     "frames": 245
+    },
+    {
+     "inicio": 1873,
+     "frames": 184
+    },
+    {
+     "inicio": 2057,
+     "frames": 224
+    },
+    {
+     "inicio": 2281,
+     "frames": 286
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hemoconcentracion",
+   "inicio": 2567,
+   "frames": 942,
+   "beats": [
+    {
+     "inicio": 2567,
+     "frames": 324
+    },
+    {
+     "inicio": 2891,
+     "frames": 298
+    },
+    {
+     "inicio": 3189,
+     "frames": 320
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-calcio",
+   "inicio": 3509,
+   "frames": 615,
+   "beats": [
+    {
+     "inicio": 3509,
+     "frames": 360
+    },
+    {
+     "inicio": 3869,
+     "frames": 255
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 4124,
+   "frames": 653,
+   "beats": [
+    {
+     "inicio": 4124,
+     "frames": 446
+    },
+    {
+     "inicio": 4570,
+     "frames": 207
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas",
+   "inicio": 4777,
+   "frames": 843,
+   "beats": [
+    {
+     "inicio": 4777,
+     "frames": 405
+    },
+    {
+     "inicio": 5182,
+     "frames": 438
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-formas",
+   "inicio": 5620,
+   "frames": 640,
+   "beats": [
+    {
+     "inicio": 5620,
+     "frames": 339
+    },
+    {
+     "inicio": 5959,
+     "frames": 301
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dolor",
+   "inicio": 6260,
+   "frames": 914,
+   "beats": [
+    {
+     "inicio": 6260,
+     "frames": 454
+    },
+    {
+     "inicio": 6714,
+     "frames": 460
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-vomitos-abdomen",
+   "inicio": 7174,
+   "frames": 1098,
+   "beats": [
+    {
+     "inicio": 7174,
+     "frames": 312
+    },
+    {
+     "inicio": 7486,
+     "frames": 786
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cullen",
+   "inicio": 8272,
+   "frames": 663,
+   "beats": [
+    {
+     "inicio": 8272,
+     "frames": 254
+    },
+    {
+     "inicio": 8526,
+     "frames": 409
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sistemicas",
+   "inicio": 8935,
+   "frames": 973,
+   "beats": [
+    {
+     "inicio": 8935,
+     "frames": 628
+    },
+    {
+     "inicio": 9563,
+     "frames": 345
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anamnesis",
+   "inicio": 9908,
+   "frames": 741,
+   "beats": [
+    {
+     "inicio": 9908,
+     "frames": 262
+    },
+    {
+     "inicio": 10170,
+     "frames": 479
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-lab",
+   "inicio": 10649,
+   "frames": 1011,
+   "beats": [
+    {
+     "inicio": 10649,
+     "frames": 526
+    },
+    {
+     "inicio": 11175,
+     "frames": 485
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-imagenes",
+   "inicio": 11660,
+   "frames": 529,
+   "beats": [
+    {
+     "inicio": 11660,
+     "frames": 344
+    },
+    {
+     "inicio": 12004,
+     "frames": 185
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ranson",
+   "inicio": 12189,
+   "frames": 1321,
+   "beats": [
+    {
+     "inicio": 12189,
+     "frames": 635
+    },
+    {
+     "inicio": 12824,
+     "frames": 438
+    },
+    {
+     "inicio": 13262,
+     "frames": 248
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-balthazar",
+   "inicio": 13510,
+   "frames": 754,
+   "beats": [
+    {
+     "inicio": 13510,
+     "frames": 475
+    },
+    {
+     "inicio": 13985,
+     "frames": 279
+    }
+   ]
+  }
+ ]
+}

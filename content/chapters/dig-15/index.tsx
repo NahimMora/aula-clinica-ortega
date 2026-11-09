@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-15 — Pancreatitis aguda. Fuente: clases «Pancreatitis aguda» partes 1 y 2 (Ortega) + libro p. 409–410 (Ranson).
@@ -45,7 +46,7 @@ const chapter: Chapter = {
   theory: [
     {
       id: 'mecanismo',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Causas y mecanismo: la bilis que vuelve',
       priority: 'imprescindible',
       summary: 'Las enzimas se activan dentro del páncreas porque les llega bilis. Cálculos (mujer) y alcohol (hombre): el 80 %.',
@@ -83,7 +84,7 @@ const chapter: Chapter = {
     },
     {
       id: 'clinica',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Clínica: el dolor y lo que se ve en el abdomen',
       priority: 'imprescindible',
       summary: 'Dolor epigástrico brusco, intensísimo, en hemicinturón hacia el dorso, que no calma con analgésicos comunes.',
@@ -190,7 +191,7 @@ const chapter: Chapter = {
     },
     {
       id: 'gravedad',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Gravedad: Ranson y Balthazar',
       priority: 'imprescindible',
       summary: 'Ranson: 5 criterios al ingreso + 6 a las 48 h. ≥ 4 = severa. Balthazar: lo que muestra la TAC.',
@@ -286,6 +287,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig15-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -301,6 +303,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -316,6 +319,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-d03',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -331,6 +335,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-d04',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'diagnostico',
@@ -347,6 +352,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig15-q01',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 1,
       emphasis: true,
@@ -362,6 +368,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q02',
+      origen: 'practica',
       topic: 'Mecanismo',
       difficulty: 2,
       stem: 'Según la clase, lo que activa las enzimas dentro del páncreas es:',
@@ -376,6 +383,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q03',
+      origen: 'practica',
       topic: 'Mecanismo',
       difficulty: 2,
       stem: 'El alcohol produce pancreatitis porque:',
@@ -390,6 +398,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q04',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 1,
       emphasis: true,
@@ -405,6 +414,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q05',
+      origen: 'practica',
       topic: 'Signos',
       difficulty: 2,
       emphasis: true,
@@ -420,6 +430,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q06',
+      origen: 'practica',
       topic: 'Sistémica',
       difficulty: 2,
       emphasis: true,
@@ -435,6 +446,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q07',
+      origen: 'practica',
       topic: 'Sistémica',
       difficulty: 2,
       stem: 'El derrame pleural de la pancreatitis aguda es típicamente:',
@@ -449,6 +461,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q08',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 2,
       stem: 'Sobre amilasa y lipasa:',
@@ -463,6 +476,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q09',
+      origen: 'practica',
       topic: 'Ranson',
       difficulty: 3,
       emphasis: true,
@@ -478,6 +492,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q10',
+      origen: 'practica',
       topic: 'Ranson',
       difficulty: 2,
       emphasis: true,
@@ -493,6 +508,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig15-q11',
+      origen: 'practica',
       topic: 'Imágenes',
       difficulty: 1,
       stem: 'El estudio por imagen más usado, que permite aplicar los criterios de Balthazar, es:',
@@ -584,6 +600,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig15-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Mujer de 45 años con litiasis conocida: dolor epigástrico brusco en cinturón hacia el dorso, vómitos, equimosis periumbilical y amilasa 4 veces lo normal. Pensás en:',
@@ -598,6 +615,7 @@ const chapter: Chapter = {
       },
       {
         id: 'dig15-x02',
+        origen: 'practica',
         topic: 'Ranson',
         difficulty: 3,
         stem: 'Pancreatitis alcohólica: 60 años, 18.000 leucocitos, glucemia 150, LDH 400; a las 48 h, calcio 7,5. ¿Cuántos criterios de Ranson suma?',
@@ -614,6 +632,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

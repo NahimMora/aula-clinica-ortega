@@ -25,6 +25,7 @@ const CONFIG = {
   'dig-13': { mapa: ['Cirrosis', 'Hipertensión portal', 'Causas', 'Child-Pugh', 'Colaterales', 'Ascitis', 'Esplenomegalia'], apartado: 'Child-Pugh', titulo: /child/i, maniobra: /ascitis|Ascitis|bazo|Bazo/ },
   'dig-14': { mapa: ['Aguda', 'Encefalopatía hepática', 'Crónica', 'O’Grady', 'Bernuau', 'Grados', 'Lo distintivo'], apartado: 'Encefalopatía', titulo: /camino del amonio|encefalopat/i, maniobra: null },
   'dig-15': { mapa: ['Autodigestión', 'Clínica', 'Diagnóstico y gravedad', 'Causas', 'Dolor', 'Signos', 'Ranson y Balthazar'], apartado: 'Ranson y Balthazar', titulo: /ranson/i, maniobra: /puntos|Blumberg/i },
+  'ren-01': { mapa: ['Edema y dolor', 'Obstrucción', 'La orina', 'Edemas', 'Globo vesical', 'Poliuria', 'Hematuria'], apartado: 'Orina y hematuria', titulo: /aspecto/i, maniobra: /Puñopercusión|puntos/i },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

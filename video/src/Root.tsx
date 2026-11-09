@@ -36,6 +36,8 @@ import { clase as planDig13 } from '../../content/chapters/dig-13/clase';
 import tiemposDig13 from '../../content/chapters/dig-13/clase-tiempos.json';
 import { clase as planDig14 } from '../../content/chapters/dig-14/clase';
 import tiemposDig14 from '../../content/chapters/dig-14/clase-tiempos.json';
+import { clase as planDig15 } from '../../content/chapters/dig-15/clase';
+import tiemposDig15 from '../../content/chapters/dig-15/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -197,6 +199,7 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'dig-15-clase', titulo: 'Pancreatitis aguda', plan: planDig15, tiempos: tiemposDig15 as TiemposClase },
   { id: 'dig-14-clase', titulo: 'Insuficiencia hepática', plan: planDig14, tiempos: tiemposDig14 as TiemposClase },
   { id: 'dig-13-clase', titulo: 'Cirrosis e hipertensión portal', plan: planDig13, tiempos: tiemposDig13 as TiemposClase },
   { id: 'dig-12-clase', titulo: 'Hemorragias digestivas', plan: planDig12, tiempos: tiemposDig12 as TiemposClase },
