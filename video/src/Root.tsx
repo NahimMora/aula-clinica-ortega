@@ -58,6 +58,8 @@ import { clase as planNeu02 } from '../../content/chapters/neu-02/clase';
 import tiemposNeu02 from '../../content/chapters/neu-02/clase-tiempos.json';
 import { clase as planNeu03 } from '../../content/chapters/neu-03/clase';
 import tiemposNeu03 from '../../content/chapters/neu-03/clase-tiempos.json';
+import { clase as planNeu04 } from '../../content/chapters/neu-04/clase';
+import tiemposNeu04 from '../../content/chapters/neu-04/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -219,6 +221,7 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'neu-04-clase', titulo: 'Pares craneales II', plan: planNeu04, tiempos: tiemposNeu04 as TiemposClase },
   { id: 'neu-03-clase', titulo: 'Pares craneales I', plan: planNeu03, tiempos: tiemposNeu03 as TiemposClase },
   { id: 'neu-02-clase', titulo: 'Motivos de consulta neurológicos II', plan: planNeu02, tiempos: tiemposNeu02 as TiemposClase },
   { id: 'neu-01-clase', titulo: 'Motivos de consulta neurológicos I', plan: planNeu01, tiempos: tiemposNeu01 as TiemposClase },

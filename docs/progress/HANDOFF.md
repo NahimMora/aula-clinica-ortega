@@ -23,10 +23,13 @@ Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase 
 | dig-13 | ✅ | ✅ | ✅ 15:48 | ✅ 13,6 MB | ✅ | figura nueva `portal` |
 | dig-14 | ✅ | ✅ | ✅ 9:00 | ✅ 7,6 MB | ✅ | figura nueva `amonio` |
 | dig-15 | ✅ | ✅ | ✅ 9:59 | ✅ 8,1 MB | ✅ | figura nueva `pancreatitis` |
-| ren-01 | ✅ | ✅ | ✅ 10:07 | ⏳ render | ⏳ | figuras en `src/clase/figuras-ren.tsx` (`glomerulo`, `urinario`, `nefrona`) |
-| ren-02 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | |
-| ren-03 … ren-07 | ⏳ | | | | | método: partir de la teoría del index.tsx (ya con minutos) + grep de avisos en local_whisper + libro |
-| neu-01 … neu-06 | ⏳ (crear capítulos) | | | | | |
+| ren-01 … ren-07 | ✅ | ✅ | ✅ | ✅ (5–8 MB c/u) | ✅ verificados en URL pública | figuras en `src/clase/figuras-ren.tsx` |
+| neu-01 | ✅ (capítulo nuevo) | ✅ | ✅ 14:51 | ✅ 12,9 MB | ✅ | figuras en `src/clase/figuras-neu.tsx` (`encefalo`, `cabeza`) |
+| neu-02 | ✅ (nuevo) | ✅ | ✅ 14:09 | ✅ 14,9 MB | ✅ | `nucleos`, `motora`, `temblor`, `crisis`, `sueno` |
+| neu-03 | ✅ (nuevo) | ✅ | ✅ 11:47 | ✅ 10,5 MB | ✅ | `via-optica`, `oculomotores`, `tronco-pares` |
+| neu-04 | ✅ (nuevo) | ✅ | ✅ 7:58 | ⏳ render | ⏳ | `boca`; `cabeza` con parálisis facial y Weber |
+| neu-05 | ✅ (nuevo) | ✅ | ⏳ | ⏳ | ⏳ | fuentes: SN 1–4 + Meet 24/10 (`neu-meet-1024`) |
+| neu-06 | ⏳ | | | | | fuentes: SN 5–7 + REC 26/10 (`neu-rec-1026`) + «Meningeo y osteo»; excluir «Clase Pato repaso» (Patología) y decirlo en la trazabilidad |
 | Maniobras neuro / soma | ⏳ | | | | | grupos en `soon` |
 | PDF + repaso final | ⏳ | | | | | |
 
@@ -155,3 +158,4 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 - 2026-11-08 (noche) — dig-02 a dig-15 publicados de a uno (cada uno con su commit y deploy). Digestivo completo. Siguiente: nefrourológico.
 - 2026-11-08 (corrección) — dig-02: se abandona Aula Clínica 2.0; vuelve la estructura original con mapa jerárquico, fisiopatología, diapositivas navegables y clase completa con Tomás.
 - 2026-11-08 (madrugada) — Kit `urinario` + `nefrona`; ren-01 a ren-07 publicados de a uno; 6 maniobras renales. Renal completo. Siguiente: nervioso.
+- 2026-11-09 — Clase visual de ren-01…ren-07 (verificadas en la URL pública). Neurología: capítulos nuevos neu-01…neu-03 publicados con video; neu-04 y neu-05 en curso. Preguntero neuro = «construidas desde las clases»: nunca origen «preguntero»; los desarrollos son «de clase» solo con aviso verificado. Hay una carpeta `C:/c/Users/...` creada por error (rutas `/c/...` con MSYS_NO_PATHCONV): se puede borrar a mano; en los tests usar rutas `C:/...`.

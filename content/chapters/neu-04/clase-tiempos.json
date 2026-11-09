@@ -1,0 +1,217 @@
+{
+ "fps": 24,
+ "total": 11476,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-facial",
+   "inicio": 96,
+   "frames": 1016,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 340
+    },
+    {
+     "inicio": 436,
+     "frames": 300
+    },
+    {
+     "inicio": 736,
+     "frames": 376
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-weber",
+   "inicio": 1112,
+   "frames": 979,
+   "beats": [
+    {
+     "inicio": 1112,
+     "frames": 336
+    },
+    {
+     "inicio": 1448,
+     "frames": 386
+    },
+    {
+     "inicio": 1834,
+     "frames": 257
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-lengua",
+   "inicio": 2091,
+   "frames": 717,
+   "beats": [
+    {
+     "inicio": 2091,
+     "frames": 318
+    },
+    {
+     "inicio": 2409,
+     "frames": 154
+    },
+    {
+     "inicio": 2563,
+     "frames": 245
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-trigemino",
+   "inicio": 2808,
+   "frames": 998,
+   "beats": [
+    {
+     "inicio": 2808,
+     "frames": 379
+    },
+    {
+     "inicio": 3187,
+     "frames": 407
+    },
+    {
+     "inicio": 3594,
+     "frames": 212
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-trigemino-nucleos",
+   "inicio": 3806,
+   "frames": 983,
+   "beats": [
+    {
+     "inicio": 3806,
+     "frames": 411
+    },
+    {
+     "inicio": 4217,
+     "frames": 572
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-facial",
+   "inicio": 4789,
+   "frames": 875,
+   "beats": [
+    {
+     "inicio": 4789,
+     "frames": 388
+    },
+    {
+     "inicio": 5177,
+     "frames": 487
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-paralisis-facial",
+   "inicio": 5664,
+   "frames": 1107,
+   "beats": [
+    {
+     "inicio": 5664,
+     "frames": 528
+    },
+    {
+     "inicio": 6192,
+     "frames": 579
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-viii",
+   "inicio": 6771,
+   "frames": 836,
+   "beats": [
+    {
+     "inicio": 6771,
+     "frames": 493
+    },
+    {
+     "inicio": 7264,
+     "frames": 343
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hipoacusia",
+   "inicio": 7607,
+   "frames": 968,
+   "beats": [
+    {
+     "inicio": 7607,
+     "frames": 499
+    },
+    {
+     "inicio": 8106,
+     "frames": 469
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-vestibular",
+   "inicio": 8575,
+   "frames": 1001,
+   "beats": [
+    {
+     "inicio": 8575,
+     "frames": 452
+    },
+    {
+     "inicio": 9027,
+     "frames": 549
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ix-x",
+   "inicio": 9576,
+   "frames": 994,
+   "beats": [
+    {
+     "inicio": 9576,
+     "frames": 382
+    },
+    {
+     "inicio": 9958,
+     "frames": 612
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-xi-xii",
+   "inicio": 10570,
+   "frames": 786,
+   "beats": [
+    {
+     "inicio": 10570,
+     "frames": 393
+    },
+    {
+     "inicio": 10963,
+     "frames": 393
+    }
+   ]
+  }
+ ]
+}

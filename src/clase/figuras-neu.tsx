@@ -1331,6 +1331,232 @@ function Boca({ t, paso, dt, vistas = ['inervacion'] }: BaseFig & { vistas?: Vis
   );
 }
 
+/* ─────────── Cráneo en corte coronal: componentes, hipertensión y hernias ─────────── */
+
+export type VistaCraneo = 'normal' | 'componentes' | 'hte' | 'subfalcina' | 'uncal' | 'amigdalina' | 'puncion';
+
+function Craneo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: VistaCraneo[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const lat = 0.5 + 0.5 * Math.sin(t * 3);
+  const comp = v === 'componentes';
+  const hte = v !== 'normal' && v !== 'componentes';
+  const vent = hte ? 1 + 0.25 * u : 1;
+  const R = 'var(--v-red)';
+  return (
+    <svg viewBox="60 0 680 560" role="img" aria-label="Corte coronal del cráneo: parénquima, sangre y líquido cefalorraquídeo">
+      {/* hueso */}
+      <path d="M400,24 C560,24 664,120 664,250 C664,350 620,420 560,450 L440,470 L360,470 L240,450 C180,420 136,350 136,250 C136,120 240,24 400,24 Z" fill="#e8dcc8" stroke="#a89878" strokeWidth={6} />
+      {/* espacio subaracnoideo (LCR) */}
+      <path d="M400,44 C548,44 644,132 644,250 C644,340 604,404 548,432 L440,452 L360,452 L252,432 C196,404 156,340 156,250 C156,132 252,44 400,44 Z" fill={comp ? 'color-mix(in srgb, var(--v-sky) 55%, #cfe6f2)' : '#cfe6f2'} />
+      {/* seno sagital superior (sangre venosa) */}
+      <path d="M384,44 L416,44 L400,66 Z" fill={comp ? R : '#5a3a6a'} />
+      {/* hemisferios */}
+      <path d="M394,60 C300,58 196,118 180,230 C172,300 214,340 270,342 C320,344 360,330 394,316 Z" fill={comp ? 'color-mix(in srgb, var(--v-gold) 45%, #d9b3ad)' : '#d9b3ad'} stroke="#9a7a76" strokeWidth={3} />
+      <path d="M406,60 C500,58 604,118 620,230 C628,300 586,340 530,342 C480,344 440,330 406,316 Z" fill={comp ? 'color-mix(in srgb, var(--v-gold) 45%, #d9b3ad)' : '#d9b3ad'} stroke="#9a7a76" strokeWidth={3} />
+      {/* hoz y tienda */}
+      <path d="M400,48 L400,250" stroke="#8a7c6a" strokeWidth={5} />
+      <path d="M210,352 C280,330 340,328 376,338 M424,338 C460,328 520,330 590,352" stroke="#8a7c6a" strokeWidth={5} fill="none" />
+      {/* ventrículos */}
+      <g fill={comp ? 'var(--v-sky)' : '#7fb0d0'}>
+        <path d={`M392,${160 - 20 * (vent - 1)} C${360 - 40 * (vent - 1)},${150 - 20 * (vent - 1)} ${330 - 30 * (vent - 1)},170 340,200 C350,215 380,215 392,210 Z`} />
+        <path d={`M408,${160 - 20 * (vent - 1)} C${440 + 40 * (vent - 1)},${150 - 20 * (vent - 1)} ${470 + 30 * (vent - 1)},170 460,200 C450,215 420,215 408,210 Z`} />
+        <rect x={396} y={226} width={8} height={56} rx={4} />
+      </g>
+      {/* cerebelo y tronco */}
+      <ellipse cx={330} cy={392} rx={70} ry={42} fill="#c9a0a0" stroke="#9a7a76" strokeWidth={3} />
+      <ellipse cx={470} cy={392} rx={70} ry={42} fill="#c9a0a0" stroke="#9a7a76" strokeWidth={3} />
+      <path d="M380,300 L420,300 L424,360 L418,470 L382,470 L376,360 Z" fill="#b8948f" stroke="#7d5f5a" strokeWidth={3} />
+      <rect x={384} y={470} width={32} height={80} rx={12} fill="#c4a59f" stroke="#7d5f5a" strokeWidth={3} />
+      {/* presión */}
+      {hte &&
+        [0, 1, 2, 3, 4, 5].map((i) => {
+          const a = Math.PI * (0.15 + (i / 5) * 0.7);
+          const r0 = 250 + 14 * lat;
+          const x = 400 - Math.cos(a) * r0;
+          const y = 250 - Math.sin(a) * r0 * 0.85;
+          const x2 = 400 - Math.cos(a) * (r0 - 50);
+          const y2 = 250 - Math.sin(a) * (r0 - 50) * 0.85;
+          return <line key={i} x1={x} y1={y} x2={x2} y2={y2} stroke={R} strokeWidth={6} markerEnd="url(#neu-flecha)" opacity={0.8 * u} />;
+        })}
+      {/* hernias */}
+      {v === 'subfalcina' && <path d={`M394,170 C${400 + 30 * u},180 ${400 + 34 * u},230 394,250 Z`} fill={R} opacity={0.75} />}
+      {v === 'uncal' && <path d={`M340,330 C360,${330 + 10 * u} ${372},${336 + 14 * u} ${380 + 6 * u},${330 + 22 * u} C360,${352 + 10 * u} 340,346 330,338 Z`} fill={R} opacity={0.85} />}
+      {(v === 'amigdalina' || v === 'puncion') && (
+        <g opacity={0.85}>
+          <ellipse cx={372} cy={444 + 24 * u} rx={14} ry={22} fill={R} />
+          <ellipse cx={428} cy={444 + 24 * u} rx={14} ry={22} fill={R} />
+        </g>
+      )}
+      {v === 'puncion' && <path d={`M400,${300} L400,${330 + 30 * u}`} stroke={R} strokeWidth={6} markerEnd="url(#neu-flecha)" />}
+      {/* rótulos */}
+      {(v === 'normal' || comp) && (
+        <>
+          <L x={240} y={150} c={comp ? 'var(--v-gold)' : INK2} s={20}>
+            Parénquima
+          </L>
+          <L x={600} y={70} a="start" c={comp ? R : INK2} s={20}>
+            Sangre (senos venosos)
+          </L>
+          <L x={560} y={150} c={comp ? 'var(--v-sky)' : INK2} s={20}>
+            LCR
+          </L>
+          <L x={400} y={292} c={INK2} s={18}>
+            ventrículos
+          </L>
+        </>
+      )}
+      {v === 'subfalcina' && (
+        <L x={540} y={210} c={R} s={20} o={u}>
+          Bajo la hoz
+        </L>
+      )}
+      {v === 'uncal' && (
+        <>
+          <L x={250} y={300} c={R} s={20} o={u}>
+            Uncus → mesencéfalo
+          </L>
+          <L x={250} y={326} c={R} s={20} o={u}>
+            (III: midriasis)
+          </L>
+        </>
+      )}
+      {(v === 'amigdalina' || v === 'puncion') && (
+        <L x={560} y={500} c={R} s={20} o={u}>
+          Amígdalas → agujero occipital
+        </L>
+      )}
+      <L x={400} y={540} c={hte ? R : INK} s={21}>
+        {v === 'normal'
+          ? 'Tres componentes dentro de una caja rígida'
+          : comp
+            ? 'Si uno aumenta, los otros dos tienen que bajar'
+            : v === 'hte'
+              ? 'Más de 15 mmHg (20 cm de agua): hipertensión endocraneana'
+              : v === 'subfalcina'
+                ? 'Hernia subfalcina'
+                : v === 'uncal'
+                  ? 'Hernia transtentorial (uncal): la más frecuente'
+                  : v === 'amigdalina'
+                    ? 'Hernia amigdalina: comprime el bulbo (mortal)'
+                    : 'Punción con HTE: el bulbo se enclava'}
+      </L>
+    </svg>
+  );
+}
+
+/* ─────────── Fondo de ojo: las fases del edema de papila ─────────── */
+
+export type FasePapila = 'normal' | 'hiperemica' | 'edematosa' | 'atrofica';
+
+function Papila({ t, paso, dt, vistas = [['normal', 'hiperemica', 'edematosa', 'atrofica']] }: BaseFig & { vistas?: FasePapila[][] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const fases: { k: FasePapila; n: string }[] = [
+    { k: 'normal', n: 'Normal' },
+    { k: 'hiperemica', n: 'Hiperémica' },
+    { k: 'edematosa', n: 'Edematosa' },
+    { k: 'atrofica', n: 'Atrófica' },
+  ];
+  return (
+    <svg viewBox="0 30 800 330" role="img" aria-label="Fondo de ojo: papila normal y fases del edema de papila">
+      {fases.map((f, i) => {
+        const cx = 100 + i * 200;
+        const cy = 170;
+        const on = v.includes(f.k);
+        const disco = f.k === 'normal' ? '#f0b070' : f.k === 'hiperemica' ? '#e8806a' : f.k === 'edematosa' ? '#f0a888' : '#f4eee4';
+        const rd = f.k === 'edematosa' ? 34 : 26;
+        const venaW = f.k === 'normal' ? 4 : f.k === 'atrofica' ? 3 : 7;
+        const artW = f.k === 'normal' ? 3 : f.k === 'atrofica' ? 1.5 : 2;
+        const borroso = f.k === 'edematosa' || f.k === 'hiperemica';
+        return (
+          <g key={f.k} opacity={on ? 0.4 + 0.6 * u : 0.3}>
+            <circle cx={cx} cy={cy} r={86} fill="#b8402e" stroke={on ? 'var(--v-gold)' : INK3} strokeWidth={on ? 4 : 2} />
+            {/* vasos */}
+            {[-1, 1].map((s) => (
+              <g key={s} fill="none" strokeLinecap="round">
+                <path d={`M${cx},${cy} C${cx + s * 20},${cy - 40} ${cx + s * 50},${cy - 60} ${cx + s * 70},${cy - 46}`} stroke="#5a1418" strokeWidth={venaW} />
+                <path d={`M${cx},${cy} C${cx + s * 24},${cy + 40} ${cx + s * 50},${cy + 60} ${cx + s * 70},${cy + 48}`} stroke="#5a1418" strokeWidth={venaW} />
+                <path d={`M${cx},${cy} C${cx + s * 30},${cy - 24} ${cx + s * 56},${cy - 30} ${cx + s * 78},${cy - 16}`} stroke="#e85a48" strokeWidth={artW} />
+                <path d={`M${cx},${cy} C${cx + s * 30},${cy + 24} ${cx + s * 56},${cy + 30} ${cx + s * 78},${cy + 18}`} stroke="#e85a48" strokeWidth={artW} />
+              </g>
+            ))}
+            {borroso && <circle cx={cx} cy={cy} r={rd + 12} fill={disco} opacity={0.35} />}
+            <circle cx={cx} cy={cy} r={rd} fill={disco} stroke={borroso ? 'none' : '#c08050'} strokeWidth={2} />
+            {f.k === 'edematosa' &&
+              [0, 1, 2].map((j) => <path key={j} d={`M${cx - 40 + j * 36},${cy + 50 - j * 70} l10,4 l-6,6 z`} fill="#7a0e14" opacity={0.6 + 0.4 * Math.sin(t * 2 + j)} />)}
+            {f.k === 'atrofica' && [0, 1, 2, 3].map((j) => <circle key={j} cx={cx - 8 + j * 6} cy={cy - 4 + (j % 2) * 8} r={2.5} fill="#fff" />)}
+            <L x={cx} y={290} c={on ? 'var(--v-gold)' : INK3} s={20}>
+              {f.n}
+            </L>
+          </g>
+        );
+      })}
+      <L x={400} y={340} c={INK2} s={19}>
+        Debe ser bilateral para pensar en hipertensión endocraneana
+      </L>
+    </svg>
+  );
+}
+
+/* ─────────── Signos de irritación meníngea ─────────── */
+
+export type VistaMeningeo = 'nuca' | 'brudzinski' | 'kernig' | 'reposo';
+
+function Meningeos({ t, paso, dt, vistas = ['reposo'] }: BaseFig & { vistas?: VistaMeningeo[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const P = '#d9b7a0';
+  const PB = '#8a6a58';
+  const lat = 0.5 + 0.5 * Math.sin(t * 3);
+  // Paciente acostado boca arriba: cabeza a la izquierda.
+  const cabezaAlta = v === 'nuca' || v === 'brudzinski';
+  const ang = cabezaAlta ? 32 * u : 0;
+  const rad = (ang * Math.PI) / 180;
+  const cuello = { x: 230, y: 300 };
+  const cab = { x: cuello.x - Math.cos(rad) * 60, y: cuello.y - Math.sin(rad) * 60 - 6 };
+  const cadera = { x: 470, y: 300 };
+  let rodilla = { x: 600, y: 300 };
+  let pie = { x: 730, y: 300 };
+  if (v === 'brudzinski') {
+    rodilla = { x: 470 + 130 * Math.cos((-55 * u * Math.PI) / 180), y: 300 + 130 * Math.sin((-55 * u * Math.PI) / 180) };
+    pie = { x: rodilla.x + 120 * Math.cos((40 * u * Math.PI) / 180), y: rodilla.y + 120 * Math.sin((40 * u * Math.PI) / 180) };
+  }
+  if (v === 'kernig') {
+    const th = (-(10 + 25 * lat) * Math.PI) / 180;
+    rodilla = { x: 600 - 130 * u, y: 300 - 130 * u };
+    const pf = { x: rodilla.x + 120 * Math.cos(th), y: rodilla.y + 120 * Math.sin(th) };
+    pie = { x: 730 + (pf.x - 730) * u, y: 300 + (pf.y - 300) * u };
+  }
+  return (
+    <svg viewBox="80 60 720 360" role="img" aria-label="Signos de irritación meníngea">
+      <rect x={120} y={318} width={660} height={18} rx={6} fill="#5a5560" />
+      {/* tronco, brazos */}
+      <path d={`M${cuello.x},${cuello.y} L${cadera.x},${cadera.y}`} stroke={P} strokeWidth={44} strokeLinecap="round" />
+      <path d={`M${cuello.x},${cuello.y} L${cadera.x},${cadera.y}`} stroke={PB} strokeWidth={2} opacity={0.4} />
+      {/* pierna */}
+      <path d={`M${cadera.x},${cadera.y} L${rodilla.x},${rodilla.y} L${pie.x},${pie.y}`} stroke={P} strokeWidth={30} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      {/* cuello y cabeza */}
+      <path d={`M${cuello.x},${cuello.y} L${cab.x + 20},${cab.y + 6}`} stroke={P} strokeWidth={22} strokeLinecap="round" />
+      <circle cx={cab.x} cy={cab.y} r={34} fill={P} stroke={PB} strokeWidth={2.5} />
+      {/* manos del examinador */}
+      {cabezaAlta && <path d={`M${cab.x - 30},${cab.y + 40} q20,-10 40,0`} stroke="var(--v-sky)" strokeWidth={10} fill="none" strokeLinecap="round" opacity={u} />}
+      {v === 'kernig' && <path d={`M${pie.x + 20},${pie.y - 10} l30,-20`} stroke="var(--v-sky)" strokeWidth={10} strokeLinecap="round" opacity={u} />}
+      {/* dolor y respuesta */}
+      {v !== 'reposo' && <circle cx={v === 'kernig' ? rodilla.x : cuello.x} cy={v === 'kernig' ? rodilla.y : cuello.y - 10} r={18 + 8 * lat} fill="none" stroke="var(--v-red)" strokeWidth={4} opacity={u} />}
+      <L x={440} y={390} c={v === 'reposo' ? INK2 : 'var(--v-red)'} s={21}>
+        {v === 'nuca'
+          ? 'Rigidez de nuca: el mentón no llega al pecho'
+          : v === 'brudzinski'
+            ? 'Brudzinski: al flexionar la nuca, flexiona las rodillas'
+            : v === 'kernig'
+              ? 'Kernig: con el muslo flexionado no puede extender la rodilla'
+              : 'Paciente en decúbito dorsal'}
+      </L>
+    </svg>
+  );
+}
+
 export const FIGURAS_NEU = {
   encefalo: Encefalo,
   cabeza: Cabeza,
@@ -1343,5 +1569,8 @@ export const FIGURAS_NEU = {
   oculomotores: Oculomotores,
   'tronco-pares': TroncoPares,
   boca: Boca,
+  craneo: Craneo,
+  papila: Papila,
+  meningeos: Meningeos,
 } satisfies Record<string, (p: never) => ReactNode>;
 

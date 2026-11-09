@@ -36,6 +36,7 @@ const CONFIG = {
   'neu-02': { mapa: ['Motivos de consulta II', 'Movimientos', 'Debilidad', 'Periférico', 'Convulsiones', 'Sueño'], apartado: 'Convulsiones', titulo: /convulsión/i, maniobra: null },
   'neu-03': { mapa: ['Pares craneales I', 'I olfatorio', 'II óptico', 'III, IV y VI', 'Pupila'], apartado: 'II óptico', titulo: /óptico/i, maniobra: null },
   'neu-04': { mapa: ['Pares craneales II', 'V trigémino', 'VII facial', 'VIII', 'La lengua', 'IX a XII'], apartado: 'VII facial', titulo: /facial/i, maniobra: null },
+  'neu-05': { mapa: ['Síndromes motores', 'Piramidal', 'Alternas', '2.ª motoneurona', 'Extrapiramidal', 'Cerebeloso'], apartado: 'Extrapiramidal', titulo: /extrapiramidal/i, maniobra: null },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];
@@ -76,6 +77,7 @@ async function recorrerMazo(page, tab, etiqueta) {
   for (let i = 0; i < total; i++) {
     // Con la CPU ocupada (render en paralelo) el estado final de la diapositiva tarda en aplicarse.
     await dormir(etiqueta === 'vivo' ? 220 : 260);
+    await page.waitForSelector('.sl h3', { timeout: 8000 });
     const r = await page.evaluate(() => {
       const sl = document.querySelector('.sl');
       const cuerpo = document.querySelector('.sl__cuerpo');
@@ -93,7 +95,8 @@ async function recorrerMazo(page, tab, etiqueta) {
       const el = await page.$('.visor__escenario');
       await el.screenshot({ path: join(out, `${etiqueta}-${tab}-${String(i + 1).padStart(2, '0')}.jpg`), type: 'jpeg', quality: 72 });
     }
-    if (i < total - 1) await page.click('.visor__nav--sig');
+    // Clic directo sobre el botón: en el celular una barra fija puede taparlo y el clic del mouse caería en otra pestaña.
+    if (i < total - 1) await page.$eval('.visor__nav--sig', (b) => b.click());
   }
 }
 

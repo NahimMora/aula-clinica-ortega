@@ -120,7 +120,10 @@ export type FiguraId =
   | 'via-optica'
   | 'oculomotores'
   | 'tronco-pares'
-  | 'boca';
+  | 'boca'
+  | 'craneo'
+  | 'papila'
+  | 'meningeos';
 
 export type FiguraSpec = { f: FiguraId } & Record<string, unknown>;
 

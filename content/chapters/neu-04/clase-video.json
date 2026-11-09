@@ -1,0 +1,86 @@
+{
+  "src": "media/neu-04/clase.mp4",
+  "poster": "media/neu-04/clase.jpg",
+  "vtt": "media/neu-04/clase.vtt",
+  "duration": "7:58",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · El facial"
+    },
+    {
+      "t": 46,
+      "label": "Fisiopatología · La audición"
+    },
+    {
+      "t": 87,
+      "label": "Fisiopatología · La lengua"
+    },
+    {
+      "t": 117,
+      "label": "Teoría · V trigémino"
+    },
+    {
+      "t": 199,
+      "label": "Teoría · VII facial"
+    },
+    {
+      "t": 282,
+      "label": "Teoría · VIII"
+    },
+    {
+      "t": 399,
+      "label": "Teoría · IX a XII"
+    }
+  ],
+  "script": [
+    {
+      "title": "Por qué la parálisis central respeta la frente",
+      "text": "El séptimo par mueve los músculos de la cara. Su núcleo tiene dos partes: la que mueve la frente recibe órdenes de las dos cortezas, y la que mueve la mitad inferior de la cara, solo de la corteza del lado opuesto. Si la lesión es central, en la corteza o en la vía que baja, la frente sigue recibiendo órdenes de la otra corteza: se paraliza solamente la mitad inferior de la cara, del lado opuesto a la lesión. Si la lesión es periférica, en el núcleo o en el nervio, se pierde todo: se paraliza toda la hemicara del mismo lado, frente incluida, y el ojo no cierra. Al intentarlo, el globo gira hacia arriba: el signo de Bell."
+    },
+    {
+      "title": "Weber: hacia dónde se va el sonido",
+      "text": "La prueba de Weber. El diapasón apoyado en el vértice del cráneo hace vibrar el hueso, y esa vía ósea llega directamente al oído interno de los dos lados. Normalmente se oye en el medio. En la hipoacusia de conducción, el problema está en el oído externo o medio, pero el oído interno está sano: capta la vibración del hueso, y como no le entra el ruido ambiente, la oye más fuerte. El sonido se lateraliza hacia el oído enfermo. En la hipoacusia de percepción, el oído interno o el nervio están dañados: ese lado no capta la vibración, y el sonido se lateraliza hacia el oído sano."
+    },
+    {
+      "title": "Cómo está inervada la lengua",
+      "text": "Una pregunta que se hace siempre en el parcial: cómo está inervada la lengua. En los dos tercios anteriores, el tacto lo lleva el quinto par, por la rama maxilar inferior, y el gusto, el séptimo. En el tercio posterior, el tacto y el gusto los lleva el noveno par, el glosofaríngeo. Y la parte motora es del duodécimo, el hipogloso, que mueve todos los músculos de la lengua menos uno, el palatogloso, que depende del vago."
+    },
+    {
+      "title": "V par: trigémino",
+      "text": "El quinto par, el trigémino, es mixto. Su parte motora mueve los músculos de la masticación: el temporal, el masetero y los pterigoideos. Su parte sensitiva lleva la sensibilidad de toda la cara, por tres ramas. La oftálmica, para la frente, el cuero cabelludo, la órbita y la nariz; la maxilar superior, para la mejilla, el ala de la nariz y el labio superior; y la maxilar inferior, para la mandíbula, el labio inferior y el tacto de los dos tercios anteriores de la lengua. Las tres ramas forman el ganglio de Gasser, la primera neurona; la segunda está en la protuberancia, y la tercera en el tálamo."
+    },
+    {
+      "title": "Los núcleos del trigémino y cómo se explora",
+      "text": "El trigémino tiene cuatro núcleos. El mesencefálico, para la sensibilidad profunda; en la protuberancia, el núcleo motor de la masticación y el sensitivo principal, del tacto; y en el bulbo, el núcleo espinal, del dolor y la temperatura. Se explora la sensibilidad con el pincel para el tacto, la aguja y un tubo frío o caliente para el dolor y la temperatura, y el diapasón para la vibración, siempre comparando las tres ramas de los dos lados. La fuerza, pidiendo abrir la boca contra resistencia. Y los reflejos: el corneano, útil en el coma, el superciliar, el nasopalpebral y el maseterino."
+    },
+    {
+      "title": "VII par: facial",
+      "text": "El séptimo par, el facial, uno de los que más se pregunta. Es mixto: mueve los músculos de la cara, porque la sensibilidad de la cara es del quinto; lleva el gusto de los dos tercios anteriores de la lengua; y estimula la secreción lagrimal y salival. Nace en la protuberancia y sale por el surco entre la protuberancia y el bulbo. Se explora con mímicas: arrugar la frente, cerrar los ojos, inflar las mejillas, mostrar los dientes. Y el gusto puede perderse, la ageusia, disminuir, la hipogeusia, o alterarse, la parageusia."
+    },
+    {
+      "title": "Parálisis facial central y periférica",
+      "text": "Lo que no se puede no saber: la parálisis facial central y la periférica. En la central, la lesión está en la corteza o en la vía que baja: se paraliza solo la mitad inferior de la cara, del lado opuesto, y el paciente puede arrugar la frente. Al respirar, la mejilla se infla pasivamente: el signo del fumador de pipa. En la periférica, la lesión está en el núcleo o en el nervio: se paraliza toda la hemicara del mismo lado. La frente queda lisa, el ojo no cierra, y al intentarlo el globo gira hacia arriba: el signo de Bell. Al mirar hacia arriba, el ojo del lado paralizado sube más: el signo de Negro. Esos signos también son preguntas de parcial."
+    },
+    {
+      "title": "VIII par: vestibulococlear",
+      "text": "El octavo par, que el profesor define como un par para bochar al alumno: hay que estudiarlo bien. Tiene dos ramas: la coclear, de la audición, que nace en el órgano de Corti, y la vestibular, del equilibrio, que nace en los conductos semicirculares, el utrículo y el sáculo, a través del ganglio de Scarpa. Sale del tronco por el surco bulboprotuberancial, al lado del séptimo. Sus síntomas son la sordera o anacusia, la hipoacusia, la hiperacusia, la paracusia, los acúfenos y el vértigo."
+    },
+    {
+      "title": "Hipoacusia: Weber, Rinne y Schwabach",
+      "text": "Si hay hipoacusia, hay que definir si es de conducción o de percepción, y la prueba que más hay que conocer es la de Weber. En la de conducción, el problema está en el oído externo o medio, en la vía aérea: el Weber se lateraliza hacia el oído enfermo, y el Rinne es negativo: se oye mejor por el hueso que por el aire. En la de percepción, el problema está en el oído interno o en el nervio: el Weber se lateraliza hacia el oído sano, y el Rinne sigue positivo, aire mejor que hueso, aunque los dos estén disminuidos. Se completan con el Schwabach, la audiometría, los potenciales evocados y la otoscopia."
+    },
+    {
+      "title": "Cómo se explora la rama vestibular",
+      "text": "La rama vestibular se explora con los ojos de muñeca, o reflejo oculocefálico: al girar la cabeza, los ojos se desvían al lado contrario y siguen mirando al frente. Ese reflejo integra el octavo, el tercero y el sexto par, y es muy útil en el coma para saber si el tronco está sano. También con el Romberg, positivo en el síndrome vestibular y en el cordonal posterior y negativo en el cerebeloso; la marcha en estrella de Babinski; la prueba de los índices; y el nistagmo, espontáneo o provocado con la prueba rotatoria. Y cuando los ojos de muñeca no responden, la prueba calórica: se coloca agua en el conducto auditivo para estimular el vestíbulo."
+    },
+    {
+      "title": "IX glosofaríngeo y X vago",
+      "text": "El noveno y el décimo se exploran juntos. El glosofaríngeo mueve el constrictor superior de la faringe y lleva la sensibilidad de la faringe y del tercio posterior de la lengua, el tacto y el gusto; también inerva el seno carotídeo y la parótida. El vago mueve los constrictores medio e inferior, el velo del paladar y la laringe, de donde sale la voz, y es el gran nervio parasimpático del tórax y del abdomen. Se explora pidiendo que diga «ah»: si un lado está paralizado, no sube, y la úvula se va hacia el lado sano. Es el signo de la cortina. Se completa con el reflejo nauseoso y la prueba del vaso de agua."
+    },
+    {
+      "title": "XI espinal y XII hipogloso",
+      "text": "El undécimo, el espinal, y el duodécimo, el hipogloso, son puramente motores. El espinal mueve el esternocleidomastoideo, para girar y flexionar la cabeza, y el trapecio, para elevar los hombros; se explora contra resistencia. El hipogloso mueve la lengua. Si se paraliza, ese lado se atrofia y fascicula, y al sacar la lengua la punta se desvía hacia el lado paralizado, porque el lado sano la empuja. El paciente tiene dificultad para articular y para tragar."
+    }
+  ]
+}
