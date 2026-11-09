@@ -17,12 +17,15 @@ Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase 
 | dig-07 | ✅ | ✅ | ✅ 10:09 | ✅ 9,0 MB | ✅ verificado | |
 | dig-08 | ✅ | ✅ | ✅ 8:37 | ✅ 7,5 MB | ✅ verificado | |
 | dig-09 | ✅ | ✅ | ✅ 15:03 | ✅ 13,2 MB | ✅ verificado | figura nueva `absorcion` |
-| dig-10 | ✅ | ✅ | ✅ 10:43 | ✅ 10,0 MB | ✅ (falta test en URL pública) | figura nueva `peritoneo` |
-| dig-11 | ✅ | ✅ | ✅ 13:08 | ✅ 11,5 MB | ✅ (falta test en URL pública) | reutiliza `biliar` |
-| dig-12 | ✅ | ✅ | ✅ 13:19 | ⏳ render mudo lanzado (video/out/dig-12-clase-muda.mp4); falta codificar, test, commit | ⏳ | figura nueva `hipovolemia`; ya registrado en Root.tsx |
-| dig-13 | ✅ escrito (sin revisar capturas) | ⏳ | ⏳ | ⏳ | ⏳ | figura nueva `portal`; index.tsx integrado y CONFIG agregado; falta traceability/dig-13.md, capturas, TTS (agregar PRONUNCIA: Child-Pugh, Laennec, Dupuytren, Budd-Chiari, GASA), Root, render |
-| dig-14, dig-15 | ⏳ | | | | | |
-| ren-01 … ren-07 | ⏳ | | | | | |
+| dig-10 | ✅ | ✅ | ✅ 10:43 | ✅ 10,0 MB | ✅ verificado | figura nueva `peritoneo` |
+| dig-11 | ✅ | ✅ | ✅ 13:08 | ✅ 11,5 MB | ✅ verificado | reutiliza `biliar` |
+| dig-12 | ✅ | ✅ | ✅ 13:19 | ✅ 10,9 MB | ✅ verificado | figura nueva `hipovolemia` |
+| dig-13 | ✅ | ✅ | ✅ 15:48 | ✅ 13,6 MB | ✅ | figura nueva `portal` |
+| dig-14 | ✅ | ✅ | ✅ 9:00 | ✅ 7,6 MB | ✅ | figura nueva `amonio` |
+| dig-15 | ✅ | ✅ | ✅ 9:59 | ✅ 8,1 MB | ✅ | figura nueva `pancreatitis` |
+| ren-01 | ✅ | ✅ | ✅ 10:07 | ⏳ render | ⏳ | figuras en `src/clase/figuras-ren.tsx` (`glomerulo`, `urinario`, `nefrona`) |
+| ren-02 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | |
+| ren-03 … ren-07 | ⏳ | | | | | método: partir de la teoría del index.tsx (ya con minutos) + grep de avisos en local_whisper + libro |
 | neu-01 … neu-06 | ⏳ (crear capítulos) | | | | | |
 | Maniobras neuro / soma | ⏳ | | | | | grupos en `soon` |
 | PDF + repaso final | ⏳ | | | | | |
