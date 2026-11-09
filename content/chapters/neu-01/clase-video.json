@@ -1,0 +1,142 @@
+{
+  "src": "media/neu-01/clase.mp4",
+  "poster": "media/neu-01/clase.jpg",
+  "vtt": "media/neu-01/clase.vtt",
+  "duration": "14:51",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · La vía del dolor"
+    },
+    {
+      "t": 79,
+      "label": "Fisiopatología · Migraña y racimos"
+    },
+    {
+      "t": 147,
+      "label": "Fisiopatología · El equilibrio"
+    },
+    {
+      "t": 230,
+      "label": "Teoría · Cognición y conciencia"
+    },
+    {
+      "t": 345,
+      "label": "Teoría · Cefalea"
+    },
+    {
+      "t": 431,
+      "label": "Teoría · Las primarias"
+    },
+    {
+      "t": 701,
+      "label": "Teoría · Mareo y vértigo"
+    }
+  ],
+  "script": [
+    {
+      "title": "Por dónde viaja el dolor de cabeza",
+      "text": "Empecemos por el dolor. Cuando algo irrita los vasos, las meninges o los músculos de la cabeza, las terminaciones nerviosas liberan neurotransmisores: la sustancia P, el péptido relacionado con el gen de la calcitonina, y la neuroquinina A. Ese estímulo viaja por las tres ramas del quinto par, el trigémino: la oftálmica, la maxilar superior y la maxilar inferior. Las tres se juntan en el ganglio de Gasser, la primera neurona, y de ahí pasan a la protuberancia, la segunda. La tercera neurona está en el tálamo, que manda el estímulo a la corteza: ahí se interpreta como dolor, sea pulsátil, opresivo o lancinante."
+    },
+    {
+      "title": "El tálamo: la estación de todas las sensaciones",
+      "text": "El tálamo es la gran estación sensitiva. Le llegan las vías espinotalámicas, la del dolor y la temperatura, los cordones posteriores de Goll y Burdach, con la sensibilidad profunda, y el trigémino. Y también las sensoriales: la vista, la audición y el gusto. El tálamo reconoce qué tipo de estímulo es y lo manda a su área de la corteza. Hay una sola excepción: el olfato. La vía olfatoria llega a la corteza sin hacer escala en el tálamo."
+    },
+    {
+      "title": "Migraña: del aura al dolor",
+      "text": "La migraña. Su causa no está demostrada; la teoría más aceptada empieza con una descarga en ciertas regiones del sistema nervioso, que libera neurotransmisores como la serotonina y la histamina. Esa despolarización eléctrica, que avanza por la corteza, explica el aura: el paciente ve destellos o manchas, o siente hormigueos, minutos antes del dolor. Después se activa el sistema trigeminovascular: el trigémino libera sustancias vasodilatadoras, los vasos del cerebro se dilatan, y aparece el dolor, pulsátil y de media cabeza."
+    },
+    {
+      "title": "Cefalea en racimos: un ojo que se llena de parasimpático",
+      "text": "La cefalea en racimos, o de Horton, tiene otro mecanismo. Se activa el hipotálamo posterior, que estimula el sistema trigeminal. Eso provoca una descarga parasimpática, con el simpático disminuido: los vasos alrededor del ojo se dilatan y las glándulas secretan de más. Por eso el dolor es de un solo lado, alrededor del ojo, y viene con el ojo rojo, lagrimeo, congestión nasal y rinorrea, el párpado caído y la pupila chica."
+    },
+    {
+      "title": "Qué nos mantiene en equilibrio",
+      "text": "Para entender el vértigo hay que saber qué mantiene el equilibrio. Primero, la vista: para mantener el equilibrio hay que poder ver dónde estamos respecto del camino. Segundo, el vestíbulo, en el oído interno, que informa la posición y los giros de la cabeza. Tercero, la sensibilidad profunda, que sube por los cordones posteriores de Goll y Burdach y nos dice dónde están las articulaciones sin mirarlas. Y cuarto, el cerebelo, que coordina. Todos se comunican con la corteza cerebral, que mantiene constante el equilibrio del cuerpo."
+    },
+    {
+      "title": "Por qué el Romberg separa al cerebeloso",
+      "text": "El Romberg: paciente de pie, con los pies juntos, y le pedimos que cierre los ojos. Si falla el vestíbulo, mientras tiene los ojos abiertos la vista compensa; al cerrarlos pierde esa ayuda y cae. Romberg positivo. Lo mismo en la lesión de los cordones posteriores: sin sensibilidad profunda, solo la vista le dice dónde están sus pies. Al cerrar los ojos, cae. También positivo. En el cerebeloso, en cambio, la inestabilidad ya está con los ojos abiertos: el que coordina es el cerebelo, y la vista no lo reemplaza. Cerrar los ojos no lo empeora: el Romberg es negativo."
+    },
+    {
+      "title": "Deterioro cognitivo",
+      "text": "El primer motivo de consulta es el deterioro cognitivo. El profesor aclara que, salvo lo fundamental, no se pregunta en el parcial. La demencia es el deterioro de la memoria y de otras funciones cognitivas: el lenguaje, las praxias, el reconocimiento, las funciones ejecutivas. La causa más frecuente es el Alzheimer, una enfermedad degenerativa, senil e irreversible. Las demencias primarias son las degenerativas, corticales o subcorticales, de causa desconocida; las secundarias tienen causa conocida, vascular, tóxico-metabólica, infecciosa o traumática, y pueden revertir. El diagnóstico es por anamnesis, muchas veces con un familiar porque el paciente olvida, un examen físico completo y las imágenes, que en el Alzheimer muestran atrofia frontotemporal."
+    },
+    {
+      "title": "Tríada de Hakim-Adams",
+      "text": "Una tríada que les va a servir: demencia, incontinencia de esfínteres y trastorno de la marcha. Es la tríada de Hakim-Adams. Orienta a una hidrocefalia normotensiva: hay un exceso de líquido cefalorraquídeo, pero la presión dentro del cráneo es normal."
+    },
+    {
+      "title": "Pérdida del conocimiento",
+      "text": "Pérdida del conocimiento es pérdida del estado de conciencia, y hay que repasar lo del primer parcial. El nivel de conciencia dice si el paciente está vigil, obnubilado, estuporoso o en coma, y se mide con la escala de Glasgow. El contenido es lo psíquico: si está orientado en tiempo, espacio y persona. La pérdida puede ser brusca, y eso es el síncope, que se pregunta muchísimo: hay que repasarlo de cardiología. O progresiva: confusión, somnolencia, obnubilación, estupor y coma. Un ejemplo es la hipoglucemia: sin glucosa la neurona no tiene energía, y el paciente se vuelve lento, se apaga."
+    },
+    {
+      "title": "Cefalea",
+      "text": "La cefalea es el motivo de consulta neurológico más frecuente: un dolor o una molestia en cualquier parte de la cabeza. Duele lo que rodea al cerebro: los vasos, los músculos, el cuero cabelludo y los pares craneales. La vía es la del trigémino: ganglio de Gasser, protuberancia, tálamo y corteza. Y los neurotransmisores son la sustancia P, el péptido relacionado con el gen de la calcitonina y la neuroquinina A."
+    },
+    {
+      "title": "El tálamo tiene muchas funciones",
+      "text": "Lo que sí hay que saber, porque fue pregunta de parcial: el tálamo tiene muchas funciones. Es el núcleo donde hacen escala todas las vías sensitivas y sensoriales antes de llegar a la corteza, menos la olfatoria. Le llegan las espinotalámicas, los cordones posteriores, el trigémino, y las vías óptica, auditiva y gustativa. Y además participa del movimiento, del ciclo de sueño y vigilia, y de la vida emocional."
+    },
+    {
+      "title": "Primarias y secundarias",
+      "text": "La clasificación es grande, pero lo que se pregunta en el parcial son las cefaleas primarias. Primarias son las que no tienen una causa conocida; secundarias, las que sí. Entre las primarias, las más frecuentes en la guardia son dos: la migraña y la cefalea tensional; y además está la cefalea en racimos. Fuera de las primarias, la que el profesor quiere que conozcan es la neuralgia del trigémino."
+    },
+    {
+      "title": "Migraña",
+      "text": "La migraña es un dolor hemicraneal, de media cabeza, que puede irradiar a la cara; pulsátil, de intensidad moderada a severa, y que empeora con la actividad física. El paciente no lo soporta. Se acompaña de náuseas o vómitos, o de fotofobia y sonofobia. Empieza gradual, a veces en las primeras horas de la mañana, y dura hasta dos o tres días; si pasa de tres días, es un estado migrañoso. Lo desencadenan el chocolate, el alcohol, los cambios del ritmo de sueño, los cambios hormonales, como la menstruación, y el estrés. Y suele haber antecedentes familiares: si los padres tuvieron migraña, el hijo tiene predisposición."
+    },
+    {
+      "title": "Más frecuente en mujeres",
+      "text": "Un dato que es pregunta de parcial y que se confunde mucho: la migraña es más frecuente en las mujeres, sobre todo adolescentes y jóvenes. En los niños, en cambio, es más frecuente en los varones. Y puede aparecer a cualquier edad, desde la infancia hasta la vejez."
+    },
+    {
+      "title": "Sin aura y con aura",
+      "text": "La migraña puede ser sin aura, la común y la más frecuente, o con aura, la clásica. Sin aura: al menos cinco crisis de cuatro a setenta y dos horas, con las características que vimos. Con aura: el cuerpo avisa. Antes del dolor aparecen síntomas reversibles: escotomas, destellos de luz, hormigueos, dificultad para hablar, visión doble, debilidad o confusión. Y lo que el profesor remarca sí o sí: el aura dura más de cinco minutos. Cada síntoma dura de cinco a sesenta minutos, y la cefalea aparece dentro de los sesenta minutos."
+    },
+    {
+      "title": "Cefalea tensional",
+      "text": "La cefalea tensional, junto con la migraña, la más frecuente. Su forma es la de una vincha: frontal, temporal y occipital, de los dos lados, opresiva, y de intensidad leve a moderada. No empeora con la actividad física. No tiene náuseas ni vómitos; puede tener fotofobia o sonofobia, pero una sola. Dura de treinta minutos a siete días, y calma con el reposo, el sueño y los antiinflamatorios. No es hereditaria, como la migraña, y se la relaciona con la tensión de los músculos del cuello y del cráneo."
+    },
+    {
+      "title": "Formas de la tensional",
+      "text": "Según cuántas veces aparece, la tensional es episódica infrecuente, menos de un día por mes; episódica frecuente, de uno a catorce días por mes durante más de tres meses; o crónica, quince días o más por mes durante más de tres meses."
+    },
+    {
+      "title": "Cefalea en racimos (Horton)",
+      "text": "La cefalea en racimos, o de Horton, es típica del hombre. El dolor es de un solo lado, alrededor del ojo o en la sien, dura hasta tres horas, y aparece de noche, durante el sueño, en racimos de crisis. El ojo se pone rojo y lagrimea, la nariz se congestiona y gotea, el párpado se hincha, la cara transpira; y aparecen la ptosis y la miosis, un Horner parcial. No tiene náuseas, vómitos, fotofobia ni sonofobia. Se asocia al tabaco y al alcohol. La hemicránea paroxística se parece, pero es de mujeres, y sus crisis son cortas: duran minutos."
+    },
+    {
+      "title": "Neuralgia del trigémino",
+      "text": "La neuralgia del trigémino es un dolor intensísimo, que aparece y desaparece de golpe, como una descarga eléctrica o un flechazo, de un solo lado de la cara, y dura de segundos a minutos. La rama más afectada es la segunda, la maxilar superior; le siguen la tercera y, por último, la primera. Lo dispara cualquier estímulo de la cara: hablar, masticar, cepillarse los dientes, afeitarse, el viento. Puede deberse a una compresión o un tumor, o a una enfermedad desmielinizante del quinto par."
+    },
+    {
+      "title": "Las tres primarias, lado a lado",
+      "text": "Las tres, lado a lado. La migraña: hemicraneal, pulsátil, moderada a severa, empeora con la actividad, con náuseas, vómitos, fotofobia y sonofobia, en mujeres jóvenes con antecedentes familiares. La tensional: bilateral, en vincha, opresiva, leve a moderada, no empeora con la actividad, y a lo sumo fotofobia o sonofobia. Y el racimo: periorbitario, de un lado, intenso, con lagrimeo, rinorrea, ptosis y miosis, en el hombre."
+    },
+    {
+      "title": "Mareo y vértigo",
+      "text": "Mareo y vértigo, que hay que conocer para el parcial. El mareo es la sensación de cabeza liviana, que flota, como a punto de caerse, pero sin ilusión de movimiento. Se ve en la ansiedad, la depresión, con fármacos, en la anemia, la hipotensión o los problemas cervicales, y el examen neurológico y vestibular es normal. El vértigo, en cambio, es una ilusión de movimiento. Es subjetivo si el paciente siente que él se mueve respecto de los objetos, y objetivo si ve que los objetos se mueven a su alrededor. Es brusco e intermitente, tiene desencadenantes, y se acompaña de náuseas, vómitos, nistagmo y desequilibrio."
+    },
+    {
+      "title": "Los elementos del equilibrio",
+      "text": "Si en la evaluación les preguntan cuáles son los elementos anatomofuncionales que mantienen el equilibrio, la respuesta es: la vista, el vestíbulo del oído interno, la sensibilidad profunda por los cordones posteriores de Goll y Burdach, y el cerebelo, todos comunicados con la corteza cerebral."
+    },
+    {
+      "title": "Vértigo periférico y central",
+      "text": "Hay dos tipos de vértigo. En el periférico se afecta la vía vestibular: la laberintitis aguda, la neuronitis vestibular, el vértigo posicional paroxístico benigno, la enfermedad de Ménière, que es un aumento de la presión de la endolinfa, el colesteatoma, la otosclerosis o la fístula perilinfática. En el central se afectan el tronco encefálico y el cerebelo: un tumor del ángulo pontocerebeloso, la insuficiencia vertebrobasilar, la migraña basilar o la esclerosis múltiple."
+    },
+    {
+      "title": "Cómo distinguirlos",
+      "text": "Para distinguirlos, el cuadro comparativo. El periférico es intenso y brusco, con náuseas y vómitos intensos, a veces con hipoacusia, y su nistagmo es horizontal, aparece con latencia y se agota; no hay otros signos neurológicos. El central es menos intenso pero persistente, con náuseas leves y la audición conservada; el nistagmo puede ser vertical y no se agota, y aparecen otros signos neurológicos, de los pares craneales o del cerebelo."
+    },
+    {
+      "title": "Marchas y Romberg",
+      "text": "Pregunta de parcial: las marchas y el Romberg. En la lesión vestibular, la marcha es en estrella de Babinski y el Romberg es positivo. En la lesión cordonal posterior, la marcha es taloneante, tabética, y el Romberg también es positivo. En la lesión cerebelosa, la marcha es zigzagueante, de ebrio, y el Romberg es negativo."
+    },
+    {
+      "title": "Examen del paciente con vértigo",
+      "text": "Al examinar al paciente con vértigo: la tensión arterial, por el corazón y las carótidas; la estabilidad, con la marcha y el Romberg; los pares craneales, el octavo, y también el quinto y el séptimo, porque la protuberancia y el cerebelo comparten la irrigación. Y el nistagmo, que es pregunta de parcial: hay que conocerlo. Se completa con la audición y los oídos, la prueba rotatoria en el sillón de Bárány, y las imágenes. El vértigo posicional benigno aparece al cambiar de posición, y se busca con la maniobra de Dix-Hallpike, que no se pregunta."
+    }
+  ]
+}

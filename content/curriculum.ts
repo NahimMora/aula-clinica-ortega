@@ -70,7 +70,7 @@ export const SYSTEMS: SystemMeta[] = [
     description: 'Motivos de consulta neurológicos, examen de los pares craneales y los grandes síndromes: piramidal, segunda motoneurona, extrapiramidal, cerebeloso, meníngeo e hipertensión endocraneana.',
     pdf: 'pdf/manual-neuro.pdf',
     chapters: [
-      ch('neuro', 'neu-01', 'Motivos de consulta neurológicos I', 'Motivos de consulta', 'Primer bloque de motivos de consulta neurológicos (orden provisional, se ajusta al analizar las clases).', 'MC Neurología 1–2'),
+      ch('neuro', 'neu-01', 'Motivos de consulta neurológicos I', 'Motivos de consulta', 'Deterioro cognitivo, pérdida del conocimiento, cefaleas (vía del trigémino, tálamo, primarias y neuralgia) y mareo, vértigo y equilibrio.', 'Clases MC Neurología 1–2', 'published'),
       ch('neuro', 'neu-02', 'Motivos de consulta neurológicos II', 'Motivos de consulta', 'Segundo bloque de motivos de consulta neurológicos.', 'MC Neurología 3–4'),
       ch('neuro', 'neu-03', 'Pares craneales I', 'Pares craneales', 'Nombre, función, origen aparente, examen y alteraciones (primeros pares).', 'Pares craneales 1–3 · Pizarras'),
       ch('neuro', 'neu-04', 'Pares craneales II', 'Pares craneales', 'Facial, vestibulococlear, glosofaríngeo, vago, espinal e hipogloso.', 'Pares craneales 4–6 · Pizarras'),

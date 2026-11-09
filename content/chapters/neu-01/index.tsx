@@ -1,0 +1,545 @@
+import type { Chapter, SourceRef } from '@/types';
+import { clase } from './clase';
+
+/*
+ * neu-01 — Motivos de consulta neurológicos I. Fuente: clases «MC Neurología» parte 1 (00:02–31:37) y parte 2
+ * (00:00–35:29) de Ortega. Lo que marca como pregunta de parcial: el síncope, las funciones del tálamo, las cefaleas
+ * primarias, la migraña más frecuente en mujeres, los elementos del equilibrio, el Romberg y el nistagmo.
+ * El deterioro cognitivo lo aclara como «no se pregunta, salvo lo fundamental». Ver content/traceability/neu-01.md.
+ */
+const r = (src: string, t?: string, p?: string): SourceRef => ({ src, t, p });
+const M1 = (t: string) => r('mc-neu-1', t);
+const M2 = (t: string) => r('mc-neu-2', t);
+
+const chapter: Chapter = {
+  id: 'neu-01',
+  systemId: 'neuro',
+  title: 'Motivos de consulta neurológicos I',
+  subtitle: 'Deterioro cognitivo y pérdida del conocimiento, la cefalea (la vía del trigémino, el tálamo, las primarias y la neuralgia del trigémino) y el mareo, el vértigo y el equilibrio.',
+  estimatedMinutes: 40,
+  sources: [M1('00:02–31:37'), M2('00:00–35:29')],
+
+  map: {
+    center: 'Motivos de consulta neurológicos I',
+    why: 'Lo que se pregunta: las **cefaleas primarias** («le van a preguntar eso en el parcial»), que la migraña es **más frecuente en mujeres**, las **funciones del tálamo**, el **síncope**, los **elementos del equilibrio**, el **Romberg** y el **nistagmo**.',
+    prereqs: [
+      { label: 'Estado de conciencia (primer parcial)', detail: 'Nivel y contenido, Glasgow, coma.' },
+      { label: 'Síncope (cardiología)', detail: '«Síncope pregunta muchísimo»: repasarlo.' },
+      { label: 'La vía del dolor (dig-02)', detail: 'Terminal nerviosa → médula → tálamo → corteza.', chapterId: 'dig-02' },
+    ],
+    branches: [
+      { id: 'mc', label: 'Cognición y conciencia', tone: 'lilac', items: ['Alzheimer', 'Hakim-Adams', 'Síncope'] },
+      { id: 'cefalea', label: 'Cefalea', tone: 'gold', items: ['Vía del trigémino', 'Tálamo ★', 'Primarias ★'] },
+      { id: 'primarias', label: 'Las primarias', tone: 'red', items: ['Migraña', 'Tensional', 'Racimos', 'Neuralgia del V'] },
+      { id: 'vertigo', label: 'Mareo y vértigo', tone: 'sky', items: ['Equilibrio ★', 'Periférico y central', 'Romberg ★'] },
+    ],
+    outcomes: [
+      'Recorrer la **vía del dolor** de la cabeza y decir qué hace el **tálamo** (y qué vía no pasa por él).',
+      'Distinguir **migraña**, **tensional** y **racimos**, y reconocer la **neuralgia del trigémino**.',
+      'Diferenciar **mareo** de **vértigo**, y vértigo **periférico** de **central**.',
+      'Nombrar los **elementos del equilibrio** y predecir el **Romberg** y la marcha de cada lesión.',
+    ],
+  },
+
+  theory: [
+    {
+      id: 'mc',
+      kicker: 'Motivos de consulta',
+      title: 'Deterioro cognitivo y pérdida del conocimiento',
+      priority: 'muy-importante',
+      summary: 'Demencia: el Alzheimer es la causa más frecuente. Pérdida del conocimiento: repasar el estado de conciencia y el síncope.',
+      blocks: [
+        {
+          t: 'cards',
+          cols: 3,
+          items: [
+            { tag: 'Demencia', title: 'Alzheimer', text: 'Deterioro de la **memoria** y de otras funciones cognitivas. La causa más frecuente es el **Alzheimer** (degenerativo, senil, irreversible).', tone: 'lilac' },
+            { tag: 'Clasificación', title: 'Primarias y secundarias', text: '**Primarias**: degenerativas, corticales o subcorticales. **Secundarias**: vascular, tóxico-metabólica, infecciosa, traumática; pueden **revertir**.', tone: 'sky' },
+            { tag: 'Tríada', title: 'Hakim-Adams', text: '**Demencia + incontinencia + trastorno de la marcha** → hidrocefalia **normotensiva**.', tone: 'gold' },
+          ],
+        },
+        { t: 'callout', kind: 'note', title: 'Lo que no se pregunta', text: 'El deterioro cognitivo «no es necesario que lo sepan para el parcial… salvo algunas cosas fundamentales»; tampoco el puntaje del mini-mental.', refs: [M1('01:27'), M1('09:47')] },
+        {
+          t: 'compare',
+          title: 'Pérdida del conocimiento: repasar el estado de conciencia',
+          cols: [
+            { title: 'Nivel', tone: 'sky', items: ['Vigil, obnubilado, estupor, coma', 'Escala de **Glasgow**'] },
+            { title: 'Contenido', tone: 'lilac', items: ['Orientación en **tiempo, espacio y persona**'] },
+            { title: 'Cómo se pierde', tone: 'red', items: ['**Brusca**: síncope', '**Progresiva**: confusión → somnolencia → obnubilación → estupor → coma (p. ej., hipoglucemia)'] },
+          ],
+        },
+        { t: 'callout', kind: 'prof', title: 'Síncope', text: '«El síncope lo tienen que conocer… pregunta de parcial… síncope pregunta muchísimo». Repasarlo de los motivos de consulta de cardiología.', refs: [M1('12:08'), M1('12:21')] },
+      ],
+      refs: [M1('02:09'), M1('03:34'), M1('04:58'), M1('06:22'), M1('07:03'), M1('10:29'), M1('11:11'), M1('12:32'), M1('13:13')],
+    },
+    {
+      id: 'cefalea',
+      kicker: 'Clave',
+      title: 'Cefalea: la vía y el tálamo',
+      priority: 'imprescindible',
+      summary: 'El motivo de consulta neurológico más frecuente. La sensación viaja por el trigémino hasta el tálamo, donde hacen escala todas las vías sensitivas menos la olfatoria.',
+      blocks: [
+        {
+          t: 'steps',
+          title: 'La vía del dolor de cabeza',
+          items: [
+            { title: 'Estímulo', text: 'Se irritan vasos, músculos, cuero cabelludo o pares craneales: **sustancia P**, **CGRP**, **neuroquinina A**.' },
+            { title: '1.ª neurona', text: 'Las tres ramas del **trigémino** (oftálmica, maxilar superior, maxilar inferior) → **ganglio de Gasser**.' },
+            { title: '2.ª neurona', text: '**Protuberancia**.' },
+            { title: '3.ª neurona', text: '**Tálamo** → corteza, que lo interpreta como dolor.' },
+          ],
+        },
+        { t: 'callout', kind: 'prof', title: 'Pregunta de parcial', text: '«El tálamo tiene muchas funciones, y esto fue la pregunta de parcial de algunos doctores.» Es el núcleo donde hacen escala **todas las vías sensitivas y sensoriales, menos la olfatoria**.', refs: [M1('20:18'), M1('21:21')] },
+        {
+          t: 'cards',
+          cols: 2,
+          items: [
+            { tag: 'Sensitivas y sensoriales', title: 'Llegan al tálamo', text: 'Espinotalámicas anterior y lateral, cordones posteriores (Goll y Burdach), trigémino; vía óptica, auditiva y gustativa.', tone: 'sky' },
+            { tag: 'Otras funciones', title: 'No sensitivas', text: 'Regula el **movimiento**, el ciclo **sueño-vigilia** y la **vida emocional**.', tone: 'lilac' },
+          ],
+        },
+        { t: 'callout', kind: 'key', title: 'La excepción', text: 'La vía **olfatoria** no hace escala en el tálamo.' },
+      ],
+      refs: [M1('13:54'), M1('14:34'), M1('15:56'), M1('16:37'), M1('17:17'), M1('17:58'), M1('18:38'), M1('20:40')],
+    },
+    {
+      id: 'primarias',
+      kicker: 'Clave',
+      title: 'Las cefaleas primarias y la neuralgia del trigémino',
+      priority: 'imprescindible',
+      summary: 'Primarias: sin causa conocida (migraña, tensional, racimos). La neuralgia del trigémino tiene causa y hay que conocerla.',
+      blocks: [
+        { t: 'callout', kind: 'prof', title: 'Para el parcial', text: '«Las cefaleas primarias son las cefaleas que deben conocer para el parcial… porque le van a preguntar eso en el parcial.» Y de la migraña: «es más frecuente en mujeres. Y esto es pregunta de parcial».', refs: [M1('22:39'), M1('23:29'), M2('03:37')] },
+        {
+          t: 'table',
+          head: ['', 'Migraña', 'Tensional', 'Racimos (Horton)'],
+          rows: [
+            ['Dónde', 'Hemicraneal', 'Bilateral, **en vincha** (fronto-temporo-occipital)', 'Periorbitaria o temporal, unilateral'],
+            ['Carácter', '**Pulsátil**', '**Opresiva**', 'Muy intensa'],
+            ['Intensidad', 'Moderada a severa', 'Leve a moderada', 'Severa'],
+            ['Con la actividad', 'Empeora', 'No empeora', '—'],
+            ['Acompañantes', 'Náuseas o vómitos; foto y sonofobia', 'Sin vegetativos; fotofobia **o** sonofobia', 'Ojo rojo, lagrimeo, rinorrea, ptosis y miosis'],
+            ['Duración', 'Hasta 2–3 días (4–72 h)', '30 min a 7 días', 'Hasta 3 horas, de noche'],
+            ['Quién', '**Mujer** joven; antecedente familiar', 'Cualquiera; no hereditaria', '**Hombre**; tabaco, alcohol'],
+          ],
+        },
+        {
+          t: 'cards',
+          cols: 2,
+          items: [
+            { tag: 'Migraña sin aura (común)', title: 'La más frecuente', text: 'Al menos **5 crisis** de **4 a 72 horas**, con 2 de: unilateral, pulsátil, moderada-severa, empeora con la actividad; y náuseas/vómitos o foto y sonofobia.', tone: 'red' },
+            { tag: 'Migraña con aura (clásica)', title: 'El cuerpo avisa', text: 'Al menos 2 crisis. **Aura reversible** (escotomas, destellos, parestesias, disfasia, diplopía): cada síntoma de **5 a 60 minutos**; la cefalea sigue dentro de los 60 minutos.', tone: 'gold' },
+          ],
+        },
+        { t: 'callout', kind: 'prof', title: 'Sí o sí', text: '«El aura tiene que durar más de 5 minutos, sí o sí… el aura tiene que estar presente por más de 5 minutos.»', refs: [M2('02:45')] },
+        {
+          t: 'cards',
+          cols: 3,
+          items: [
+            { tag: 'Tensional', title: 'Episódica o crónica', text: 'Infrecuente: < 1 día/mes. Frecuente: 1–14 días/mes. **Crónica: ≥ 15 días/mes** durante más de 3 meses.', tone: 'peach' },
+            { tag: 'Racimos', title: 'Descarga parasimpática', text: 'Se activa el **hipotálamo posterior** → trigémino → **vasodilatación**, lagrimeo, rinorrea; **ptosis y miosis** (Horner parcial). Sin náuseas ni fotofobia.', tone: 'red' },
+            { tag: 'Hemicránea paroxística', title: 'Como el racimo, en mujeres', text: 'Crisis **cortas**, de minutos.', tone: 'lilac' },
+          ],
+        },
+        {
+          t: 'cards',
+          cols: 2,
+          items: [
+            { tag: 'Neuralgia del trigémino', title: 'Descarga eléctrica', text: 'Dolor **lancinante**, unilateral, de **segundos a minutos**, que aparece y desaparece de golpe. Lo dispara tocar la cara, hablar, masticar, afeitarse.', tone: 'gold' },
+            { tag: 'Qué rama', title: 'V2 > V3 > V1', text: 'La más afectada es la **segunda** (maxilar superior). Causas: compresión, tumores, desmielinización del V par.', tone: 'sky' },
+          ],
+        },
+      ],
+      refs: [M1('22:42'), M1('23:23'), M1('25:27'), M1('26:51'), M1('27:31'), M2('00:00'), M2('04:49'), M2('06:55'), M2('07:35'), M2('09:00'), M2('11:00'), M2('13:05'), M2('13:46'), M2('15:08')],
+    },
+    {
+      id: 'vertigo',
+      kicker: 'Clave',
+      title: 'Mareo, vértigo y equilibrio',
+      priority: 'imprescindible',
+      summary: 'Mareo: cabeza liviana sin ilusión de movimiento. Vértigo: ilusión de movimiento; periférico (vestíbulo) o central (tronco y cerebelo).',
+      blocks: [
+        {
+          t: 'compare',
+          title: 'Mareo y vértigo',
+          cols: [
+            { title: 'Mareo', tone: 'sky', items: ['Cabeza liviana, que flota; **sin ilusión de movimiento**', 'Ansiedad, depresión, fármacos, anemia, hipotensión, cervical', 'Examen neurológico y vestibular normal'] },
+            { title: 'Vértigo', tone: 'red', items: ['**Ilusión de movimiento**: subjetivo (me muevo yo) u objetivo (se mueven las cosas)', 'Náuseas, vómitos, **nistagmo**, desequilibrio', 'Brusco, intermitente, con desencadenantes'] },
+          ],
+        },
+        { t: 'callout', kind: 'prof', title: 'En la evaluación', text: '«Yo les pregunto a ustedes cuáles son los elementos anatomofuncionales que mantienen el equilibrio de la persona»: la **vista**, el **vestíbulo**, la **sensibilidad profunda** (cordones posteriores de Goll y Burdach) y el **cerebelo**, comunicados con la **corteza cerebral**.', refs: [M2('21:16'), M2('21:57'), M2('22:14')] },
+        {
+          t: 'compare',
+          title: 'Vértigo periférico y central',
+          cols: [
+            { title: 'Periférico: vestíbulo', tone: 'sky', items: ['Laberintitis, neuronitis vestibular', '**Vértigo posicional paroxístico benigno**', '**Ménière** (más presión de la endolinfa), colesteatoma, otosclerosis, fístula perilinfática', 'Intenso, vómitos, hipoacusia; nistagmo horizontal que se agota'] },
+            { title: 'Central: tronco y cerebelo', tone: 'red', items: ['Tumor del ángulo pontocerebeloso', 'Insuficiencia vertebrobasilar, migraña basilar', '**Esclerosis múltiple**', 'Menos intenso; nistagmo que puede ser vertical; otros signos neurológicos'] },
+          ],
+        },
+        {
+          t: 'table',
+          head: ['Lesión', 'Marcha', 'Romberg'],
+          rows: [
+            ['Vestibular', 'En **estrella** (Babinski)', '**Positivo**'],
+            ['Cordonal posterior', '**Taloneante** (tabética)', '**Positivo**'],
+            ['Cerebelosa', '**Zigzagueante** (de ebrio)', '**Negativo**'],
+          ],
+        },
+        { t: 'callout', kind: 'prof', title: 'Pregunta de parcial', text: '«La prueba de Romberg es positiva en vestibular y cordonal posterior, y es negativa en el cerebeloso. Eso no se olviden, porque es pregunta de parcial.» Y el **nistagmo**: «es pregunta de parcial… lo tienen que conocer».', refs: [M2('29:56'), M2('30:04'), M2('30:52')] },
+        { t: 'callout', kind: 'tip', title: 'El examen del paciente con vértigo', text: 'Tensión arterial; marcha y Romberg; pares **VIII**, **V** y **VII** (protuberancia y cerebelo comparten irrigación); **nistagmo**; audición; sillón de Bárány; imágenes. El vértigo posicional benigno se busca con la maniobra de Dix-Hallpike (no se pregunta).', refs: [M2('28:46'), M2('30:06'), M2('32:06'), M2('33:29')] },
+      ],
+      refs: [M2('16:30'), M2('17:12'), M2('18:35'), M2('19:56'), M2('20:36'), M2('23:19'), M2('24:42'), M2('25:23'), M2('26:03'), M2('34:49')],
+    },
+  ],
+
+  developments: [
+    {
+      id: 'neu01-d01',
+      origen: 'clase',
+      prio: 'P0',
+      priority: 'imprescindible',
+      emphasis: true,
+      ficha: 'primarias',
+      question: 'Clasifique las cefaleas y describa las cefaleas primarias.',
+      quote: { text: '«…las cefaleas primarias son las cefaleas que deben conocer para el parcial… porque le van a preguntar eso en el parcial»', refs: [M1('22:39')] },
+      answer: [
+        { t: 'p', text: '**Primarias**: no se conoce la causa. **Secundarias**: se conoce la causa; la que hay que conocer es la **neuralgia del trigémino**.' },
+        { t: 'p', text: '**Migraña**: hemicraneal, pulsátil, moderada a severa, empeora con la actividad, con náuseas o vómitos o foto y sonofobia; hasta 2–3 días; **más en mujeres**, antecedente familiar; sin aura (común) o con aura (clásica, el aura dura de 5 a 60 minutos).' },
+        { t: 'p', text: '**Tensional**: bilateral **en vincha**, opresiva, leve a moderada, no empeora con la actividad, sin vegetativos (a lo sumo fotofobia o sonofobia), de 30 minutos a 7 días; episódica o crónica (≥ 15 días por mes).' },
+        { t: 'p', text: '**Racimos (Horton)**: hombre, periorbitaria unilateral, de noche, hasta 3 horas; hipotálamo posterior → descarga parasimpática: ojo rojo, lagrimeo, rinorrea, ptosis y miosis.' },
+      ],
+      refs: [M1('22:42'), M1('23:23'), M2('04:49'), M2('09:00'), M2('11:00')],
+    },
+    {
+      id: 'neu01-d02',
+      origen: 'clase',
+      prio: 'P0',
+      priority: 'imprescindible',
+      emphasis: true,
+      ficha: 'vertigo',
+      question: '¿Cuáles son los elementos anatomofuncionales que mantienen el equilibrio? ¿Qué diferencia hay entre mareo y vértigo, y entre vértigo periférico y central?',
+      quote: { text: '«…yo les pregunto a ustedes cuáles son los elementos anatomofuncionales que mantienen el equilibrio de la persona»', refs: [M2('22:14')] },
+      answer: [
+        { t: 'p', text: '**Elementos**: la **vista**, el **vestíbulo** (oído interno), la **sensibilidad profunda** (cordones posteriores de Goll y Burdach) y el **cerebelo**, comunicados con la **corteza cerebral**.' },
+        { t: 'p', text: '**Mareo**: cabeza liviana, sin ilusión de movimiento; examen normal. **Vértigo**: ilusión de movimiento (subjetivo u objetivo), con náuseas, vómitos, nistagmo y desequilibrio.' },
+        { t: 'p', text: '**Periférico**: vía vestibular (laberintitis, neuronitis, VPPB, Ménière). **Central**: tronco y cerebelo (tumor del ángulo pontocerebeloso, vertebrobasilar, esclerosis múltiple).' },
+      ],
+      refs: [M2('16:57'), M2('17:54'), M2('21:57'), M2('24:42'), M2('25:23')],
+    },
+    {
+      id: 'neu01-d03',
+      origen: 'clase',
+      prio: 'P0',
+      priority: 'imprescindible',
+      emphasis: true,
+      ficha: 'vertigo',
+      question: '¿En qué lesiones el Romberg es positivo y en cuál es negativo? ¿Qué marcha tiene cada una?',
+      quote: { text: '«…prueba de Romberg es positiva en vestibular y cordonal posterior, y es negativa en el cerebeloso. Eso no se olviden, porque es pregunta de parcial»', refs: [M2('29:56')] },
+      answer: [
+        { t: 'p', text: '**Vestibular**: Romberg **positivo**; marcha en **estrella** de Babinski.' },
+        { t: 'p', text: '**Cordonal posterior**: Romberg **positivo**; marcha **taloneante** (tabética).' },
+        { t: 'p', text: '**Cerebelosa**: Romberg **negativo** (ya es inestable con los ojos abiertos); marcha **zigzagueante**, de ebrio.' },
+      ],
+      refs: [M2('29:26'), M2('30:06')],
+    },
+    {
+      id: 'neu01-d04',
+      origen: 'clase',
+      prio: 'P0',
+      priority: 'imprescindible',
+      emphasis: true,
+      ficha: 'cefalea',
+      question: '¿Cuáles son las funciones del tálamo? ¿Qué vía sensorial no hace escala en él?',
+      quote: { text: '«…el tálamo tiene muchas funciones, y esto fue la pregunta de parcial de algunos doctores»', refs: [M1('20:18')] },
+      answer: [
+        { t: 'p', text: 'Es el núcleo donde hacen escala **todas las vías sensitivas y sensoriales** antes de la corteza: espinotalámicas, cordones posteriores, trigémino, vía óptica, auditiva y gustativa. **La olfatoria no** hace escala en el tálamo.' },
+        { t: 'p', text: 'Funciones no sensitivas: regula el **movimiento**, el **sueño-vigilia** y la **vida emocional**.' },
+        { t: 'p', text: 'En la cefalea es la **3.ª neurona**: trigémino → ganglio de Gasser (1.ª) → protuberancia (2.ª) → tálamo (3.ª) → corteza.' },
+      ],
+      refs: [M1('17:17'), M1('17:58'), M1('20:40'), M1('21:21')],
+    },
+    {
+      id: 'neu01-d05',
+      origen: 'clase',
+      prio: 'P1',
+      priority: 'muy-importante',
+      ficha: 'mc',
+      question: 'Pérdida del conocimiento: nivel y contenido de la conciencia; pérdida brusca y progresiva.',
+      quote: { text: '«…el síncope lo tienen que conocer… síncope pregunta muchísimo»', refs: [M1('12:08')] },
+      answer: [
+        { t: 'p', text: '**Nivel**: vigil, obnubilado, estupor, coma; se mide con la escala de **Glasgow**. **Contenido**: lo psíquico, la orientación en tiempo, espacio y persona.' },
+        { t: 'p', text: '**Brusca**: el **síncope**. **Progresiva**: confusión → somnolencia → obnubilación → estupor → coma; por ejemplo, la hipoglucemia (sin glucosa, la neurona no tiene energía).' },
+      ],
+      refs: [M1('10:29'), M1('11:11'), M1('12:32'), M1('13:13')],
+    },
+    {
+      id: 'neu01-d06',
+      origen: 'practica',
+      prio: 'P1',
+      priority: 'muy-importante',
+      ficha: 'primarias',
+      question: 'Describa la neuralgia del trigémino.',
+      answer: [
+        { t: 'p', text: 'Dolor **lancinante**, como una descarga eléctrica, **unilateral**, que aparece y desaparece bruscamente y dura de segundos a minutos.' },
+        { t: 'p', text: 'Rama más afectada: **V2** (maxilar superior), luego V3 y V1. Lo desencadenan los estímulos de la cara (hablar, masticar, cepillarse, afeitarse). Causas: compresión, tumores, desmielinización del V par.' },
+      ],
+      refs: [M2('13:05'), M2('13:46'), M2('14:26'), M2('15:08')],
+    },
+  ],
+
+  mcq: [
+    {
+      id: 'neu01-q01',
+      origen: 'practica',
+      topic: 'Tálamo',
+      difficulty: 1,
+      emphasis: true,
+      stem: 'La única vía sensorial que **no** hace escala en el tálamo es la:',
+      options: [
+        { text: 'Olfatoria.', why: 'Correcto.' },
+        { text: 'Óptica.', why: 'Hace escala en el tálamo.' },
+        { text: 'Auditiva.', why: 'Hace escala en el tálamo.' },
+        { text: 'Espinotalámica.', why: 'Llega al tálamo.' },
+      ],
+      answer: 0,
+      refs: [M1('20:40'), M1('21:21')],
+    },
+    {
+      id: 'neu01-q02',
+      origen: 'practica',
+      topic: 'Migraña',
+      difficulty: 1,
+      emphasis: true,
+      stem: 'La migraña es más frecuente en:',
+      options: [
+        { text: 'Mujeres adolescentes y jóvenes.', why: 'Correcto (en los niños, en varones).' },
+        { text: 'Hombres adultos.', why: 'Ese es el racimo.' },
+        { text: 'Ancianos de ambos sexos.', why: 'No.' },
+        { text: 'No hay diferencia por sexo.', why: 'Sí la hay.' },
+      ],
+      answer: 0,
+      refs: [M1('24:45'), M2('03:37')],
+    },
+    {
+      id: 'neu01-q03',
+      origen: 'practica',
+      topic: 'Tensional',
+      difficulty: 1,
+      stem: 'Una cefalea bilateral, opresiva, «en vincha», leve, que no empeora al caminar y sin náuseas es:',
+      options: [
+        { text: 'Cefalea tensional.', why: 'Correcto.' },
+        { text: 'Migraña.', why: 'Es hemicraneal y pulsátil.' },
+        { text: 'Cefalea en racimos.', why: 'Es periorbitaria y unilateral.' },
+        { text: 'Neuralgia del trigémino.', why: 'Es lancinante, de segundos.' },
+      ],
+      answer: 0,
+      refs: [M2('04:49'), M2('06:55')],
+    },
+    {
+      id: 'neu01-q04',
+      origen: 'practica',
+      topic: 'Racimos',
+      difficulty: 2,
+      stem: 'El lagrimeo, la rinorrea y la vasodilatación de la cefalea en racimos se deben a:',
+      options: [
+        { text: 'Una descarga parasimpática por activación del hipotálamo posterior.', why: 'Correcto.' },
+        { text: 'Una descarga simpática.', why: 'Al revés: el simpático está disminuido.' },
+        { text: 'La hipertensión endocraneana.', why: 'No.' },
+        { text: 'La contractura de los músculos cervicales.', why: 'Eso se asocia a la tensional.' },
+      ],
+      answer: 0,
+      refs: [M2('09:00'), M2('09:40'), M2('11:42')],
+    },
+    {
+      id: 'neu01-q05',
+      origen: 'practica',
+      topic: 'Neuralgia',
+      difficulty: 2,
+      stem: 'En la neuralgia del trigémino, la rama afectada con más frecuencia es la:',
+      options: [
+        { text: 'Segunda (maxilar superior).', why: 'Correcto.' },
+        { text: 'Primera (oftálmica).', why: 'Es la menos afectada.' },
+        { text: 'Tercera (maxilar inferior).', why: 'Es la segunda en frecuencia.' },
+        { text: 'Las tres por igual.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [M2('13:46')],
+    },
+    {
+      id: 'neu01-q06',
+      origen: 'practica',
+      topic: 'Aura',
+      difficulty: 2,
+      stem: 'En la migraña con aura, cada síntoma del aura dura:',
+      options: [
+        { text: 'Entre 5 y 60 minutos.', why: 'Correcto: más de 5 minutos, sí o sí.' },
+        { text: 'Menos de 1 minuto.', why: 'No.' },
+        { text: 'Entre 4 y 72 horas.', why: 'Esa es la duración de la crisis sin aura.' },
+        { text: 'Más de 3 días.', why: 'Eso es el estado migrañoso (de la cefalea).' },
+      ],
+      answer: 0,
+      refs: [M2('02:03'), M2('02:45')],
+    },
+    {
+      id: 'neu01-q07',
+      origen: 'practica',
+      topic: 'Romberg',
+      difficulty: 2,
+      emphasis: true,
+      stem: 'El Romberg es **negativo** en la lesión:',
+      options: [
+        { text: 'Cerebelosa.', why: 'Correcto: inestable aun con los ojos abiertos.' },
+        { text: 'Vestibular.', why: 'Es positivo.' },
+        { text: 'Cordonal posterior.', why: 'Es positivo.' },
+        { text: 'Vestibular y cordonal posterior.', why: 'En ambas es positivo.' },
+      ],
+      answer: 0,
+      refs: [M2('29:56')],
+    },
+    {
+      id: 'neu01-q08',
+      origen: 'practica',
+      topic: 'Vértigo',
+      difficulty: 1,
+      stem: 'Lo que define al vértigo y lo separa del mareo es:',
+      options: [
+        { text: 'La ilusión de movimiento.', why: 'Correcto.' },
+        { text: 'La sensación de cabeza liviana.', why: 'Eso es el mareo.' },
+        { text: 'La pérdida del conocimiento.', why: 'Eso es el síncope.' },
+        { text: 'La cefalea.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [M2('17:12'), M2('17:54')],
+    },
+    {
+      id: 'neu01-q09',
+      origen: 'practica',
+      topic: 'Vértigo',
+      difficulty: 2,
+      stem: 'Es una causa de vértigo **central**:',
+      options: [
+        { text: 'Esclerosis múltiple.', why: 'Correcto.' },
+        { text: 'Enfermedad de Ménière.', why: 'Es periférica.' },
+        { text: 'Neuronitis vestibular.', why: 'Es periférica.' },
+        { text: 'Vértigo posicional paroxístico benigno.', why: 'Es periférico.' },
+      ],
+      answer: 0,
+      refs: [M2('25:23'), M2('26:03')],
+    },
+    {
+      id: 'neu01-q10',
+      origen: 'practica',
+      topic: 'Cognición',
+      difficulty: 2,
+      stem: 'Demencia, incontinencia de esfínteres y trastorno de la marcha orientan a:',
+      options: [
+        { text: 'Hidrocefalia normotensiva (Hakim-Adams).', why: 'Correcto.' },
+        { text: 'Alzheimer.', why: 'No da la tríada.' },
+        { text: 'Hipertensión endocraneana.', why: 'En la de Hakim-Adams la presión es normal.' },
+        { text: 'Síncope.', why: 'No.' },
+      ],
+      answer: 0,
+      refs: [M1('06:22'), M1('07:03')],
+    },
+  ],
+
+  memory: [
+    {
+      id: 'neu01-m01',
+      title: 'Las tres primarias',
+      purpose: '«Le van a preguntar eso en el parcial».',
+      evaluates: [{ t: 'list', items: ['Migraña: hemicraneal, pulsátil, mujer', 'Tensional: vincha, opresiva', 'Racimos: periorbitaria, hombre, lagrimeo'] }],
+      interpret: 'Dónde + cómo + quién alcanzan para separarlas.',
+      mnemonic: { hook: 'La migraña late de un lado, la tensional aprieta como vincha, el racimo llora por un ojo.', explain: 'Pulsátil hemicraneal, opresiva bilateral, periorbitaria con lagrimeo.' },
+      recall: { q: '¿Cómo es el dolor de la migraña, de la tensional y del racimo?', a: 'Migraña: hemicraneal y pulsátil (mujer). Tensional: bilateral en vincha y opresiva. Racimo: periorbitario unilateral con lagrimeo y rinorrea (hombre).' },
+    },
+    {
+      id: 'neu01-m02',
+      title: 'Equilibrio y Romberg',
+      purpose: 'Pregunta de la evaluación y del parcial.',
+      evaluates: [{ t: 'list', items: ['Vista', 'Vestíbulo', 'Cordones posteriores', 'Cerebelo → corteza'] }],
+      interpret: 'Si la vista compensaba (vestíbulo, cordones), cerrar los ojos lo tira: Romberg +. El cerebelo no se compensa: Romberg −.',
+      mnemonic: { hook: 'Vi Ve Co Ce: Vista, Vestíbulo, Cordones, Cerebelo.', explain: 'Los cuatro elementos del equilibrio; los dos del medio dan Romberg positivo.' },
+      recall: { q: '¿En qué lesiones el Romberg es positivo?', a: 'En la vestibular y en la cordonal posterior; en la cerebelosa es negativo.' },
+    },
+    {
+      id: 'neu01-m03',
+      title: 'El tálamo',
+      purpose: 'Fue pregunta de parcial.',
+      evaluates: [{ t: 'list', items: ['Escala de todas las vías sensitivas y sensoriales', 'Menos la olfatoria', 'Movimiento, sueño-vigilia, emociones'] }],
+      interpret: 'Todo lo que se siente pasa por el tálamo antes de la corteza, salvo el olfato.',
+      mnemonic: { hook: 'Al tálamo entra todo, menos el olor.', explain: 'La vía olfatoria va directo a la corteza.' },
+      recall: { q: '¿Qué vía no hace escala en el tálamo?', a: 'La olfatoria.' },
+    },
+  ],
+
+  closing: {
+    map: {
+      center: 'Motivos de consulta neurológicos I',
+      nodes: [
+        { label: 'Cognición y conciencia', tone: 'lilac', items: ['Alzheimer', 'Hakim-Adams', 'Síncope'] },
+        { label: 'Cefalea', tone: 'gold', items: ['Trigémino → tálamo', 'Primarias ★'] },
+        { label: 'Primarias', tone: 'red', items: ['Migraña', 'Tensional', 'Racimos', 'Neuralgia V2'] },
+        { label: 'Vértigo', tone: 'sky', items: ['Equilibrio ★', 'Periférico y central', 'Romberg ★'] },
+      ],
+    },
+    essentials: [
+      'Demencia: la causa más frecuente es el **Alzheimer**. **Hakim-Adams**: demencia + incontinencia + marcha = hidrocefalia normotensiva.',
+      'Pérdida del conocimiento: **nivel** (Glasgow) y **contenido**; brusca = **síncope** («pregunta muchísimo»).',
+      'Vía de la cefalea: **trigémino → Gasser → protuberancia → tálamo → corteza**. El **tálamo** recibe todas las vías sensitivas **menos la olfatoria**.',
+      '**Migraña**: hemicraneal, pulsátil, moderada-severa, vegetativos; **mujer**; aura de 5–60 minutos. **Tensional**: en vincha, opresiva. **Racimos**: hombre, periorbitaria, parasimpático.',
+      '**Neuralgia del trigémino**: descarga eléctrica de segundos; **V2** la más afectada.',
+      'Equilibrio: **vista, vestíbulo, cordones posteriores, cerebelo** → corteza. **Romberg +** vestibular y cordonal posterior; **−** cerebeloso.',
+    ],
+    links: [
+      { chapterId: 'neu-02', text: '[[neu-02|Motivos de consulta II]]: el resto de los motivos de consulta neurológicos.' },
+      { chapterId: 'neu-04', text: '[[neu-04|Pares craneales II]]: el VIII par y el nistagmo.' },
+      { chapterId: 'neu-05', text: '[[neu-05|Síndromes motores]]: el síndrome cerebeloso.' },
+      { chapterId: 'neu-06', text: '[[neu-06|Otros síndromes]]: la cefalea de la hipertensión endocraneana y el síndrome cordonal posterior.' },
+    ],
+    pitfalls: [
+      'Decir que la migraña es más frecuente en hombres (eso es el racimo).',
+      'Olvidar que el olfato no pasa por el tálamo.',
+      'Decir que el Romberg es positivo en el cerebeloso.',
+      'Confundir mareo (sin ilusión de movimiento) con vértigo.',
+      'Darle a la tensional náuseas y vómitos, o decir que empeora con la actividad.',
+    ],
+    miniExam: [
+      {
+        id: 'neu01-x01',
+        origen: 'practica',
+        topic: 'Integración',
+        difficulty: 2,
+        stem: 'Mujer de 25 años con cefalea hemicraneal pulsátil desde hace 4 días, con vómitos y fotofobia; antes vio destellos durante 20 minutos. Lo correcto es:',
+        options: [
+          { text: 'Migraña con aura, en estado migrañoso (más de 3 días).', why: 'Correcto.' },
+          { text: 'Cefalea tensional crónica.', why: 'No es en vincha ni opresiva.' },
+          { text: 'Cefalea en racimos.', why: 'Es de hombres y dura horas.' },
+          { text: 'Migraña sin aura.', why: 'Tuvo aura visual de 20 minutos.' },
+        ],
+        answer: 0,
+        refs: [M1('28:53'), M2('02:03')],
+      },
+      {
+        id: 'neu01-x02',
+        origen: 'practica',
+        topic: 'Integración',
+        difficulty: 2,
+        stem: 'Paciente con marcha zigzagueante, inestable con los ojos abiertos, que no empeora al cerrarlos. La lesión está en:',
+        options: [
+          { text: 'El cerebelo.', why: 'Correcto: Romberg negativo, marcha de ebrio.' },
+          { text: 'El vestíbulo.', why: 'Daría Romberg positivo y marcha en estrella.' },
+          { text: 'Los cordones posteriores.', why: 'Daría Romberg positivo y marcha taloneante.' },
+          { text: 'El tálamo.', why: 'No.' },
+        ],
+        answer: 0,
+        refs: [M2('29:26'), M2('29:56')],
+      },
+    ],
+  },
+
+  clase,
+  diagrams: {},
+};
+
+export default chapter;

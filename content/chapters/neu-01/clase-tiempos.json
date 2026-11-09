@@ -1,0 +1,465 @@
+{
+ "fps": 24,
+ "total": 21394,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-via",
+   "inicio": 96,
+   "frames": 1025,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 390
+    },
+    {
+     "inicio": 486,
+     "frames": 390
+    },
+    {
+     "inicio": 876,
+     "frames": 245
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-talamo",
+   "inicio": 1121,
+   "frames": 794,
+   "beats": [
+    {
+     "inicio": 1121,
+     "frames": 332
+    },
+    {
+     "inicio": 1453,
+     "frames": 261
+    },
+    {
+     "inicio": 1714,
+     "frames": 201
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-migrana",
+   "inicio": 1915,
+   "frames": 868,
+   "beats": [
+    {
+     "inicio": 1915,
+     "frames": 318
+    },
+    {
+     "inicio": 2233,
+     "frames": 270
+    },
+    {
+     "inicio": 2503,
+     "frames": 280
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-cluster",
+   "inicio": 2783,
+   "frames": 760,
+   "beats": [
+    {
+     "inicio": 2783,
+     "frames": 245
+    },
+    {
+     "inicio": 3028,
+     "frames": 242
+    },
+    {
+     "inicio": 3270,
+     "frames": 273
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-equilibrio",
+   "inicio": 3543,
+   "frames": 928,
+   "beats": [
+    {
+     "inicio": 3543,
+     "frames": 273
+    },
+    {
+     "inicio": 3816,
+     "frames": 180
+    },
+    {
+     "inicio": 3996,
+     "frames": 232
+    },
+    {
+     "inicio": 4228,
+     "frames": 243
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-romberg",
+   "inicio": 4471,
+   "frames": 1053,
+   "beats": [
+    {
+     "inicio": 4471,
+     "frames": 386
+    },
+    {
+     "inicio": 4857,
+     "frames": 317
+    },
+    {
+     "inicio": 5174,
+     "frames": 350
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-deterioro",
+   "inicio": 5524,
+   "frames": 1283,
+   "beats": [
+    {
+     "inicio": 5524,
+     "frames": 482
+    },
+    {
+     "inicio": 6006,
+     "frames": 506
+    },
+    {
+     "inicio": 6512,
+     "frames": 295
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hakim",
+   "inicio": 6807,
+   "frames": 455,
+   "beats": [
+    {
+     "inicio": 6807,
+     "frames": 241
+    },
+    {
+     "inicio": 7048,
+     "frames": 214
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-conciencia",
+   "inicio": 7262,
+   "frames": 1029,
+   "beats": [
+    {
+     "inicio": 7262,
+     "frames": 504
+    },
+    {
+     "inicio": 7766,
+     "frames": 525
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cefalea",
+   "inicio": 8291,
+   "frames": 708,
+   "beats": [
+    {
+     "inicio": 8291,
+     "frames": 197
+    },
+    {
+     "inicio": 8488,
+     "frames": 511
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-talamo",
+   "inicio": 8999,
+   "frames": 695,
+   "beats": [
+    {
+     "inicio": 8999,
+     "frames": 339
+    },
+    {
+     "inicio": 9338,
+     "frames": 356
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasif",
+   "inicio": 9694,
+   "frames": 660,
+   "beats": [
+    {
+     "inicio": 9694,
+     "frames": 293
+    },
+    {
+     "inicio": 9987,
+     "frames": 367
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-migrana",
+   "inicio": 10354,
+   "frames": 1076,
+   "beats": [
+    {
+     "inicio": 10354,
+     "frames": 335
+    },
+    {
+     "inicio": 10689,
+     "frames": 348
+    },
+    {
+     "inicio": 11037,
+     "frames": 393
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-migrana-mujer",
+   "inicio": 11430,
+   "frames": 446,
+   "beats": [
+    {
+     "inicio": 11430,
+     "frames": 446
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-aura",
+   "inicio": 11876,
+   "frames": 976,
+   "beats": [
+    {
+     "inicio": 11876,
+     "frames": 338
+    },
+    {
+     "inicio": 12214,
+     "frames": 336
+    },
+    {
+     "inicio": 12550,
+     "frames": 302
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tensional",
+   "inicio": 12852,
+   "frames": 924,
+   "beats": [
+    {
+     "inicio": 12852,
+     "frames": 346
+    },
+    {
+     "inicio": 13198,
+     "frames": 394
+    },
+    {
+     "inicio": 13592,
+     "frames": 184
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tensional-formas",
+   "inicio": 13776,
+   "frames": 376,
+   "beats": [
+    {
+     "inicio": 13776,
+     "frames": 376
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-racimos",
+   "inicio": 14152,
+   "frames": 1010,
+   "beats": [
+    {
+     "inicio": 14152,
+     "frames": 363
+    },
+    {
+     "inicio": 14515,
+     "frames": 458
+    },
+    {
+     "inicio": 14973,
+     "frames": 189
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-neuralgia",
+   "inicio": 15162,
+   "frames": 843,
+   "beats": [
+    {
+     "inicio": 15162,
+     "frames": 305
+    },
+    {
+     "inicio": 15467,
+     "frames": 370
+    },
+    {
+     "inicio": 15837,
+     "frames": 168
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-comparar",
+   "inicio": 16005,
+   "frames": 842,
+   "beats": [
+    {
+     "inicio": 16005,
+     "frames": 396
+    },
+    {
+     "inicio": 16401,
+     "frames": 446
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mareo",
+   "inicio": 16847,
+   "frames": 1048,
+   "beats": [
+    {
+     "inicio": 16847,
+     "frames": 537
+    },
+    {
+     "inicio": 17384,
+     "frames": 511
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-equilibrio",
+   "inicio": 17895,
+   "frames": 431,
+   "beats": [
+    {
+     "inicio": 17895,
+     "frames": 431
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-perif-central",
+   "inicio": 18326,
+   "frames": 752,
+   "beats": [
+    {
+     "inicio": 18326,
+     "frames": 471
+    },
+    {
+     "inicio": 18797,
+     "frames": 281
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-perif-cuadro",
+   "inicio": 19078,
+   "frames": 730,
+   "beats": [
+    {
+     "inicio": 19078,
+     "frames": 397
+    },
+    {
+     "inicio": 19475,
+     "frames": 333
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-romberg",
+   "inicio": 19808,
+   "frames": 592,
+   "beats": [
+    {
+     "inicio": 19808,
+     "frames": 411
+    },
+    {
+     "inicio": 20219,
+     "frames": 181
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen-vertigo",
+   "inicio": 20400,
+   "frames": 874,
+   "beats": [
+    {
+     "inicio": 20400,
+     "frames": 402
+    },
+    {
+     "inicio": 20802,
+     "frames": 472
+    }
+   ]
+  }
+ ]
+}

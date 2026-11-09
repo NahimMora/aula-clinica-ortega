@@ -108,7 +108,15 @@ export type FiguraId =
   | 'pancreatitis'
   | 'urinario'
   | 'nefrona'
-  | 'glomerulo';
+  | 'glomerulo'
+  // Neurología (figuras-neu.tsx)
+  | 'encefalo'
+  | 'cabeza'
+  | 'nucleos'
+  | 'motora'
+  | 'temblor'
+  | 'crisis'
+  | 'sueno';
 
 export type FiguraSpec = { f: FiguraId } & Record<string, unknown>;
 

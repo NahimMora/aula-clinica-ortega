@@ -52,6 +52,8 @@ import { clase as planRen06 } from '../../content/chapters/ren-06/clase';
 import tiemposRen06 from '../../content/chapters/ren-06/clase-tiempos.json';
 import { clase as planRen07 } from '../../content/chapters/ren-07/clase';
 import tiemposRen07 from '../../content/chapters/ren-07/clase-tiempos.json';
+import { clase as planNeu01 } from '../../content/chapters/neu-01/clase';
+import tiemposNeu01 from '../../content/chapters/neu-01/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -213,6 +215,7 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'neu-01-clase', titulo: 'Motivos de consulta neurológicos I', plan: planNeu01, tiempos: tiemposNeu01 as TiemposClase },
   { id: 'ren-07-clase', titulo: 'Litiasis renoureteral', plan: planRen07, tiempos: tiemposRen07 as TiemposClase },
   { id: 'ren-06-clase', titulo: 'Infección urinaria', plan: planRen06, tiempos: tiemposRen06 as TiemposClase },
   { id: 'ren-05-clase', titulo: 'Insuficiencia renal', plan: planRen05, tiempos: tiemposRen05 as TiemposClase },

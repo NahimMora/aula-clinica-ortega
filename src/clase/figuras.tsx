@@ -7,6 +7,7 @@ import type { Punto, Region, VTone } from '../visual/tipos';
 import { type BaseFig, CIELO, CorteMedula, DIAFRAGMA, DURAZNO, ESTOMAGO, ESTOMAGO_D, HIGADO, HIGADO_D, INK, INK2, INK3, INTESTINO, L, LILA, LINE, MENTA, ManoFrente, Pulso, ROJO, ROSA, SANGRE, Tronco, Via, Visceras, apf, ease } from './figuras-base';
 import { FIGURAS_DIG } from './figuras-dig';
 import { FIGURAS_REN } from './figuras-ren';
+import { FIGURAS_NEU } from './figuras-neu';
 
 /* ─────────── 1. Vía del dolor ─────────── */
 
@@ -785,4 +786,5 @@ export const FIGURAS: Record<string, ComponentType<never>> = {
   'perfil-liquido': PerfilLiquido as ComponentType<never>,
   ...(FIGURAS_DIG as Record<string, ComponentType<never>>),
   ...(FIGURAS_REN as Record<string, ComponentType<never>>),
+  ...(FIGURAS_NEU as Record<string, ComponentType<never>>),
 };
