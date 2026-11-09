@@ -704,7 +704,8 @@ const FILAS_RHA = [
   { n: 'Ausentes', d: 'íleo generalizado', c: ROJO, a: 0, g: 80, f: 0 },
 ];
 
-function Rha({ t, paso, dt }: BaseFig) {
+/** `todas`: muestra los cuatro patrones aunque la diapositiva tenga menos pasos. */
+function Rha({ t, paso, dt, todas = false }: BaseFig & { todas?: boolean }) {
   return (
     <svg viewBox="0 0 800 480" role="img" aria-label="Cuatro patrones de ruidos hidroaéreos">
       {FILAS_RHA.map((f, i) => {
@@ -717,7 +718,7 @@ function Rha({ t, paso, dt }: BaseFig) {
           puntos.push(`${x + 250},${(y + v).toFixed(1)}`);
         }
         return (
-          <g key={f.n} opacity={apf(paso, dt, i)}>
+          <g key={f.n} opacity={todas ? 1 : apf(paso, dt, i)}>
             <L x={16} y={y - 12} a="start" c={f.c} s={24}>{f.n}</L>
             <L x={16} y={y + 18} a="start" c={INK2} s={18} w={500}>{f.d}</L>
             <path d={`M${puntos.join(' L')}`} fill="none" stroke={f.c} strokeWidth={3.5} strokeLinejoin="round" />

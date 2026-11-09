@@ -1861,7 +1861,7 @@ function Barrera({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Modo
     const x = 50 + i * 74 + Math.sin(t + i) * 8;
     const baja = m === 'aine' || m === 'ulcera' ? ((t * 40 + i * 37) % 120) : 0;
     return (
-      <text key={i} x={x} y={90 + (i % 3) * 30 + baja} fill={ACIDO} fontSize={22} fontWeight={700} fontFamily="Inter Variable, sans-serif">
+      <text key={i} x={x} y={50 + (i % 3) * 26 + baja} fill={ACIDO} fontSize={22} fontWeight={700} fontFamily="Inter Variable, sans-serif">
         H⁺
       </text>
     );
@@ -1898,7 +1898,7 @@ function Barrera({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Modo
           <L x={hueco[1] + 20} y={Y + 118} a="start" c={INK2} s={19} w={550}>
             muscular de la mucosa
           </L>
-          <L x={420} y={Y + 175} c={ROJO} s={23}>
+          <L x={420} y={Y + 235} c={ROJO} s={23}>
             Úlcera: pasa la muscular de la mucosa
           </L>
         </g>
@@ -1910,20 +1910,22 @@ function Barrera({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Modo
         Array.from({ length: 6 }, (_, i) => {
           const v = (t * 0.35 + i / 6) % 1;
           return (
-            <text key={i} x={80 + i * 120} y={Y + 180 - v * 160} fill="#cfe3ef" fontSize={17} fontWeight={700} fontFamily="Inter Variable, sans-serif" opacity={1 - v * 0.5}>
+            <text key={i} x={80 + i * 120} y={Y + 175 - v * 55} fill="#cfe3ef" fontSize={17} fontWeight={700} fontFamily="Inter Variable, sans-serif" opacity={1 - v * 0.5}>
               HCO₃⁻
             </text>
           );
         })}
-      <L x={680} y={Y + 230} c={INK2} s={19} w={550}>
-        Flujo sanguíneo · prostaglandinas
-      </L>
+      {m !== 'aine' && m !== 'ulcera' && (
+        <L x={400} y={Y + 235} c={INK2} s={19} w={550}>
+          Flujo sanguíneo · prostaglandinas
+        </L>
+      )}
       {m === 'aine' && (
         <g opacity={u}>
-          <L x={400} y={Y + 230} c={DURAZNO} s={23}>
+          <L x={400} y={168} c={DURAZNO} s={23}>
             AINE: sin prostaglandinas, vasoconstricción
           </L>
-          <L x={400} y={Y + 258} c={DURAZNO} s={21} w={550}>
+          <L x={400} y={198} c={DURAZNO} s={21} w={550}>
             no llega bicarbonato: el ácido daña
           </L>
         </g>
@@ -1940,10 +1942,10 @@ function Barrera({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Modo
               </g>
             );
           })}
-          <L x={400} y={150} c={MENTA} s={22}>
+          <L x={400} y={160} c={MENTA} s={22}>
             Ureasa: urea → amoníaco + CO₂
           </L>
-          <L x={400} y={180} c={INK2} s={20} w={550}>
+          <L x={400} y={190} c={INK2} s={20} w={550}>
             nube alcalina que protege a la bacteria · el amoníaco lesiona
           </L>
         </g>
@@ -1955,17 +1957,102 @@ function Barrera({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Modo
             const y = Y + 140 + Math.sin(t * 2 + i) * 6;
             return <path key={i} d={`M${x},${y + 14} L${x},${y} M${x},${y} L${x - 10},${y - 12} M${x},${y} L${x + 10},${y - 12}`} stroke={LILA} strokeWidth={4} strokeLinecap="round" fill="none" />;
           })}
-          <L x={400} y={150} c={LILA} s={22}>
+          <L x={400} y={160} c={LILA} s={22}>
             Anticuerpos contra las células parietales
           </L>
-          <L x={400} y={180} c={INK2} s={20} w={550}>
+          <L x={400} y={190} c={INK2} s={20} w={550}>
             sin ácido (aclorhidria) · sin factor intrínseco: falta B12
           </L>
         </g>
       )}
       {m === 'normal' && (
-        <L x={400} y={150} c={MENTA} s={22} o={u}>
+        <L x={400} y={170} c={MENTA} s={22} o={u}>
           Moco, bicarbonato, flujo y prostaglandinas defienden la mucosa
+        </L>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── Las tres fases de la absorción de las grasas ─────────── */
+
+type FaseAbs = 'normal' | 'intraluminal' | 'mucosa' | 'transporte';
+
+function Absorcion({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: FaseAbs[] }) {
+  const m = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : apf(paso, dt, 0);
+  const VX = 470; // centro de la vellosidad
+  const alto = m === 'mucosa' ? 70 : 230;
+  const base = 420;
+  const vello = `M${VX - 70},${base} L${VX - 70},${base - alto + 60} C${VX - 70},${base - alto - 10} ${VX + 70},${base - alto - 10} ${VX + 70},${base - alto + 60} L${VX + 70},${base} Z`;
+  const gotas = Array.from({ length: 6 }, (_, i) => {
+    const v = (t * 0.18 + i / 6) % 1;
+    const sinDigerir = m === 'intraluminal';
+    const x = 40 + v * (sinDigerir ? 760 : 300);
+    const y = 90 + ((i * 37) % 80);
+    const r = sinDigerir ? 16 : Math.max(5, 16 - v * 30);
+    return <circle key={i} cx={x} cy={y} r={r} fill={ACIDO} stroke="#b9a640" strokeWidth={2} opacity={0.9} />;
+  });
+  const micelas =
+    m === 'intraluminal'
+      ? []
+      : Array.from({ length: 6 }, (_, i) => {
+          const v = (t * 0.25 + i / 6) % 1;
+          const entra = m !== 'mucosa';
+          const x = 300 + v * (entra ? VX - 300 : 480);
+          const y = 150 + v * (entra ? 90 : 0) + Math.sin(i + t) * 6;
+          return (
+            <g key={i} opacity={entra ? 1 - Math.max(0, v - 0.85) * 6 : 1}>
+              <circle cx={x} cy={y} r={9} fill="none" stroke={MENTA} strokeWidth={3} />
+              <circle cx={x} cy={y} r={4} fill={ACIDO} />
+            </g>
+          );
+        });
+  const quilo = Array.from({ length: 6 }, (_, i) => {
+    const v = (t * 0.22 + i / 6) % 1;
+    const tapado = m === 'transporte';
+    const x = tapado ? VX - 20 + (i % 3) * 20 : VX + v * 330;
+    const y = tapado ? base + 20 + Math.floor(i / 3) * 16 : base + 48;
+    return <circle key={i} cx={x} cy={y} r={6} fill="#f3eef6" opacity={0.9} />;
+  });
+  const fallo = { intraluminal: 'Sin lipasa ni sales biliares: la grasa no se digiere', mucosa: 'Vellosidades atróficas: no se absorbe', transporte: 'Linfa obstruida: se pierden grasas y proteínas' } as const;
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label="Fases intraluminal, mucosa y de transporte de la absorción">
+      <rect x={0} y={40} width={800} height={base - 40} fill="#241d2b" />
+      {gotas}
+      {micelas}
+      {m !== 'intraluminal' &&
+        Array.from({ length: 4 }, (_, i) => (
+          <path key={i} d={`M${140 + i * 30},${70 + (i % 2) * 20} l18,0`} stroke={MENTA} strokeWidth={5} strokeLinecap="round" opacity={0.8} />
+        ))}
+      <path d={vello} fill={MUCOSA} stroke="#a0605c" strokeWidth={3} />
+      {m !== 'mucosa' && <path d={`M${VX},${base} L${VX},${base - alto + 70}`} stroke="#efe6d6" strokeWidth={10} strokeLinecap="round" />}
+      <rect x={0} y={base} width={800} height={100} fill="#5b3a44" opacity={0.7} />
+      <path d={`M${VX},${base + 48} L800,${base + 48}`} stroke="#efe6d6" strokeWidth={m === 'transporte' ? 6 : 14} strokeLinecap="round" opacity={0.75} />
+      {m === 'transporte' && <path d={`M${VX + 60},${base + 30} L${VX + 80},${base + 66} M${VX + 80},${base + 30} L${VX + 60},${base + 66}`} stroke={ROJO} strokeWidth={5} />}
+      {quilo}
+      <L x={120} y={22} c={ACIDO} s={21}>
+        1 · Luz: grasa
+      </L>
+      <L x={VX} y={22} c={MUCOSA} s={21}>
+        2 · Mucosa
+      </L>
+      <L x={700} y={base + 84} c={INK2} s={20} w={550}>
+        3 · Linfa
+      </L>
+      <L x={140} y={base + 84} c={MENTA} s={20} w={550}>
+        Lipasa y sales biliares
+      </L>
+      {m !== 'normal' && (
+        <g opacity={u}>
+          <L x={400} y={66} c={ROJO} s={22}>
+            {fallo[m]}
+          </L>
+        </g>
+      )}
+      {m === 'normal' && (
+        <L x={400} y={66} c={MENTA} s={22} o={u}>
+          Se forman micelas, entran al enterocito y salen por la linfa
         </L>
       )}
     </svg>
@@ -1994,4 +2081,5 @@ export const FIGURAS_DIG = {
   inspiracion: Inspiracion,
   reflujo: Reflujo,
   barrera: Barrera,
+  absorcion: Absorcion,
 } satisfies Record<string, (p: never) => ReactNode>;

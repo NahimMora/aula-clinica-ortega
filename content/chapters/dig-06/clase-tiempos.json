@@ -1,0 +1,349 @@
+{
+ "fps": 24,
+ "total": 11936,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-barrera",
+   "inicio": 96,
+   "frames": 451,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 307
+    },
+    {
+     "inicio": 403,
+     "frames": 144
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-erge",
+   "inicio": 547,
+   "frames": 660,
+   "beats": [
+    {
+     "inicio": 547,
+     "frames": 249
+    },
+    {
+     "inicio": 796,
+     "frames": 112
+    },
+    {
+     "inicio": 908,
+     "frames": 299
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-barrett",
+   "inicio": 1207,
+   "frames": 707,
+   "beats": [
+    {
+     "inicio": 1207,
+     "frames": 224
+    },
+    {
+     "inicio": 1431,
+     "frames": 287
+    },
+    {
+     "inicio": 1718,
+     "frames": 196
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-acalasia",
+   "inicio": 1914,
+   "frames": 728,
+   "beats": [
+    {
+     "inicio": 1914,
+     "frames": 265
+    },
+    {
+     "inicio": 2179,
+     "frames": 244
+    },
+    {
+     "inicio": 2423,
+     "frames": 219
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-mecanica",
+   "inicio": 2642,
+   "frames": 467,
+   "beats": [
+    {
+     "inicio": 2642,
+     "frames": 287
+    },
+    {
+     "inicio": 2929,
+     "frames": 180
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-odinofagia",
+   "inicio": 3109,
+   "frames": 565,
+   "beats": [
+    {
+     "inicio": 3109,
+     "frames": 256
+    },
+    {
+     "inicio": 3365,
+     "frames": 108
+    },
+    {
+     "inicio": 3473,
+     "frames": 201
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-intro",
+   "inicio": 3674,
+   "frames": 709,
+   "beats": [
+    {
+     "inicio": 3674,
+     "frames": 323
+    },
+    {
+     "inicio": 3997,
+     "frames": 244
+    },
+    {
+     "inicio": 4241,
+     "frames": 142
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-definicion",
+   "inicio": 4383,
+   "frames": 426,
+   "beats": [
+    {
+     "inicio": 4383,
+     "frames": 181
+    },
+    {
+     "inicio": 4564,
+     "frames": 245
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-pirosis",
+   "inicio": 4809,
+   "frames": 741,
+   "beats": [
+    {
+     "inicio": 4809,
+     "frames": 209
+    },
+    {
+     "inicio": 5018,
+     "frames": 367
+    },
+    {
+     "inicio": 5385,
+     "frames": 165
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dolor",
+   "inicio": 5550,
+   "frames": 503,
+   "beats": [
+    {
+     "inicio": 5550,
+     "frames": 365
+    },
+    {
+     "inicio": 5915,
+     "frames": 138
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-regurgitacion",
+   "inicio": 6053,
+   "frames": 528,
+   "beats": [
+    {
+     "inicio": 6053,
+     "frames": 295
+    },
+    {
+     "inicio": 6348,
+     "frames": 233
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-odinofagia",
+   "inicio": 6581,
+   "frames": 764,
+   "beats": [
+    {
+     "inicio": 6581,
+     "frames": 428
+    },
+    {
+     "inicio": 7009,
+     "frames": 336
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-etiologias",
+   "inicio": 7345,
+   "frames": 832,
+   "beats": [
+    {
+     "inicio": 7345,
+     "frames": 193
+    },
+    {
+     "inicio": 7538,
+     "frames": 239
+    },
+    {
+     "inicio": 7777,
+     "frames": 173
+    },
+    {
+     "inicio": 7950,
+     "frames": 227
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cancer",
+   "inicio": 8177,
+   "frames": 519,
+   "beats": [
+    {
+     "inicio": 8177,
+     "frames": 324
+    },
+    {
+     "inicio": 8501,
+     "frames": 195
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-barrett",
+   "inicio": 8696,
+   "frames": 512,
+   "beats": [
+    {
+     "inicio": 8696,
+     "frames": 222
+    },
+    {
+     "inicio": 8918,
+     "frames": 290
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-erge",
+   "inicio": 9208,
+   "frames": 687,
+   "beats": [
+    {
+     "inicio": 9208,
+     "frames": 200
+    },
+    {
+     "inicio": 9408,
+     "frames": 487
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-acalasia",
+   "inicio": 9895,
+   "frames": 691,
+   "beats": [
+    {
+     "inicio": 9895,
+     "frames": 192
+    },
+    {
+     "inicio": 10087,
+     "frames": 254
+    },
+    {
+     "inicio": 10341,
+     "frames": 245
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otras",
+   "inicio": 10586,
+   "frames": 402,
+   "beats": [
+    {
+     "inicio": 10586,
+     "frames": 402
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-estudios",
+   "inicio": 10988,
+   "frames": 828,
+   "beats": [
+    {
+     "inicio": 10988,
+     "frames": 309
+    },
+    {
+     "inicio": 11297,
+     "frames": 143
+    },
+    {
+     "inicio": 11440,
+     "frames": 376
+    }
+   ]
+  }
+ ]
+}

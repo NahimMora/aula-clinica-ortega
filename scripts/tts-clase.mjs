@@ -80,6 +80,8 @@ const PRONUNCIA = [
   [/Chilaiditi/g, 'Quilaidíti'],
   [/Zenker/g, 'Sénker'],
   [/Barrett/g, 'Bárret'],
+  [/\bACTH\b/g, 'a ce te hache'],
+  [/\bPCR\b/g, 'pe ce erre'],
 ];
 const pronunciar = (s) => PRONUNCIA.reduce((a, [re, r]) => a.replace(re, r), s);
 

@@ -17,6 +17,7 @@ const CONFIG = {
   'dig-05': { mapa: ['Inspección', 'Auscultación', 'Percusión', 'Palpación', 'Ascitis', 'Soplos', 'Traube', 'Puntos', 'Profunda'], apartado: 'Palpación', titulo: /palpación/i, maniobra: /Blumberg|Murphy/ },
   'dig-06': { mapa: ['Síntomas', 'Etiologías', 'Estudios', 'Regurgitación', 'Odinofagia', 'Reflujo', 'Cáncer', 'Acalasia', 'Manometría'], apartado: 'Etiologías', titulo: /etiolog/i, maniobra: null },
   'dig-07': { mapa: ['Úlcera péptica', 'Gastritis', 'Causas', 'Clínica', 'Diagnóstico', 'Complicaciones', 'Tipo A', 'Tipo B'], apartado: 'Gastritis', titulo: /gastritis/i, maniobra: null },
+  'dig-08': { mapa: ['Síndrome pilórico', 'Íleo', 'Causas', 'Clínica', 'Diagnóstico', 'Paralítico', 'Mecánico'], apartado: 'Íleo', titulo: /íleo/i, maniobra: /chapoteo|Bazuqueo/i },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

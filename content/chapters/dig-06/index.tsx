@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-06 — Síndrome esofágico. Fuente: clase «Sd. esofágico» (Ortega) + libro p. 368–369 (porqué).
@@ -185,6 +186,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig06-d01',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       emphasis: true,
@@ -199,6 +201,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-d02',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'etiologias',
@@ -220,6 +223,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-d03',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'erge',
@@ -229,6 +233,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-d04',
+      origen: 'practica',
       prio: 'P2',
       priority: 'muy-importante',
       ficha: 'diagnostico',
@@ -238,6 +243,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-d05',
+      origen: 'practica',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'sintomas',
@@ -250,6 +256,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig06-q01',
+      origen: 'practica',
       topic: 'Síntomas',
       difficulty: 1,
       emphasis: true,
@@ -265,6 +272,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q02',
+      origen: 'practica',
       topic: 'Síntomas',
       difficulty: 1,
       stem: 'La causa más frecuente de **odinofagia** es:',
@@ -279,6 +287,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q03',
+      origen: 'practica',
       topic: 'Etiologías',
       difficulty: 1,
       stem: 'La causa más frecuente de **esofagitis** es:',
@@ -293,6 +302,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q04',
+      origen: 'practica',
       topic: 'Cáncer',
       difficulty: 2,
       emphasis: true,
@@ -308,6 +318,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q05',
+      origen: 'practica',
       topic: 'Barrett',
       difficulty: 2,
       emphasis: true,
@@ -323,6 +334,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q06',
+      origen: 'practica',
       topic: 'ERGE',
       difficulty: 2,
       stem: 'Paciente con pirosis de años que comienza con **disfagia**. Esto es:',
@@ -337,6 +349,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q07',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 1,
       stem: '¿Qué estudio se pide **primero** ante un síndrome esofágico?',
@@ -351,6 +364,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q08',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 2,
       stem: 'El **gold standard** para diagnosticar acalasia es:',
@@ -365,6 +379,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q09',
+      origen: 'practica',
       topic: 'Acalasia',
       difficulty: 2,
       stem: 'En Argentina, una causa **secundaria** frecuente de acalasia es:',
@@ -379,6 +394,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig06-q10',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 2,
       stem: 'Esofagograma con imagen en **manzana mordida**. El paso siguiente es:',
@@ -454,6 +470,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig06-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Hombre de 60 años, «acidez toda la vida», ahora disfagia progresiva y pérdida de peso. Pensás en:',
@@ -470,6 +487,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 
