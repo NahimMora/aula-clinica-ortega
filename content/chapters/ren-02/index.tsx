@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * ren-02 — Examen físico nefrourológico y el paciente con proteinuria. Fuente: clase «MC Renal» parte 3 (Ortega)
@@ -44,7 +45,7 @@ const chapter: Chapter = {
   theory: [
     {
       id: 'proteinuria',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'El paciente con proteinuria',
       priority: 'imprescindible',
       summary: 'Normal: menos de 150 mg en 24 horas. Proteinuria: más de 300 mg. Más de 3,5 g: rango nefrótico.',
@@ -144,7 +145,7 @@ const chapter: Chapter = {
     },
     {
       id: 'region',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Examen de la región renal',
       priority: 'imprescindible',
       summary: 'Inspección casi muda, palpación con Guyon (la más preguntada), puñopercusión y puntos ureterales; auscultar si hay HTA refractaria.',
@@ -194,6 +195,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'ren02-d01',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -210,6 +212,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-d02',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -225,6 +228,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-d03',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'region',
@@ -235,6 +239,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-d04',
+      origen: 'practica',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'proteinuria',
@@ -248,6 +253,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'ren02-q01',
+      origen: 'practica',
       topic: 'Proteinuria',
       difficulty: 1,
       emphasis: true,
@@ -263,6 +269,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q02',
+      origen: 'practica',
       topic: 'Proteinuria',
       difficulty: 2,
       stem: 'La microalbuminuria corresponde a:',
@@ -277,6 +284,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q03',
+      origen: 'practica',
       topic: 'Proteinuria',
       difficulty: 2,
       emphasis: true,
@@ -292,6 +300,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q04',
+      origen: 'practica',
       topic: 'Proteinuria',
       difficulty: 3,
       stem: 'La proteína de Bence Jones del mieloma múltiple se detecta mejor con:',
@@ -306,6 +315,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q05',
+      origen: 'practica',
       topic: 'Proteinuria',
       difficulty: 2,
       stem: 'La proteinuria glomerular de **alta selectividad** se caracteriza por:',
@@ -320,6 +330,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q06',
+      origen: 'practica',
       topic: 'Orina',
       difficulty: 2,
       stem: 'Orina de aspecto normal que, expuesta al sol, se vuelve rojo parduzca. Pensás en:',
@@ -334,6 +345,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q07',
+      origen: 'practica',
       topic: 'Palpación',
       difficulty: 1,
       emphasis: true,
@@ -349,6 +361,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q08',
+      origen: 'practica',
       topic: 'Palpación',
       difficulty: 2,
       stem: 'En la maniobra de Guyon, la mano posterior se apoya en:',
@@ -363,6 +376,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q09',
+      origen: 'practica',
       topic: 'Palpación',
       difficulty: 2,
       stem: 'La maniobra de Glenard sirve para diagnosticar:',
@@ -377,6 +391,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q10',
+      origen: 'practica',
       topic: 'Percusión',
       difficulty: 1,
       stem: 'La puñopercusión lumbar con el **borde cubital** de la mano se llama de:',
@@ -391,6 +406,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren02-q11',
+      origen: 'practica',
       topic: 'Auscultación',
       difficulty: 2,
       stem: 'Un soplo periumbilical en un paciente con HTA que no baja con 4 antihipertensivos sugiere:',
@@ -473,6 +489,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'ren02-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Mujer con fiebre, escalofríos y disuria; la puñopercusión lumbar derecha es muy dolorosa. Pensás en:',
@@ -489,6 +506,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

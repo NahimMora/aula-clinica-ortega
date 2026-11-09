@@ -1,0 +1,94 @@
+{
+  "src": "media/ren-02/clase.mp4",
+  "poster": "media/ren-02/clase.jpg",
+  "vtt": "media/ren-02/clase.vtt",
+  "duration": "6:53",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Proteinuria"
+    },
+    {
+      "t": 36,
+      "label": "Fisiopatología · Examen general"
+    },
+    {
+      "t": 68,
+      "label": "Fisiopatología · Palpación"
+    },
+    {
+      "t": 101,
+      "label": "Fisiopatología · Examen general"
+    },
+    {
+      "t": 132,
+      "label": "Teoría · Proteinuria"
+    },
+    {
+      "t": 247,
+      "label": "Teoría · Colores de la orina"
+    },
+    {
+      "t": 282,
+      "label": "Teoría · Examen general"
+    },
+    {
+      "t": 312,
+      "label": "Teoría · Región renal"
+    }
+  ],
+  "script": [
+    {
+      "title": "Por qué la proteinuria es del glomérulo",
+      "text": "El profesor lo resume en una frase: hay proteinuria, el problema es el glomérulo. ¿Por qué? Porque la barrera del glomérulo deja pasar el agua y las sustancias chicas, pero no la albúmina, que es grande y tiene carga negativa, igual que la membrana basal. Si esa barrera se daña, la albúmina pasa a la orina. Y aparece la proteinuria: la orina hace espuma que no se va. Si se pierden más de tres gramos y medio por día, es el rango nefrótico."
+    },
+    {
+      "title": "Lo que el riñón enfermo deja ver en la piel",
+      "text": "En el examen general, la piel cuenta lo que el riñón ya no hace. Sin eritropoyetina, no se fabrican glóbulos rojos: anemia y palidez. Los pigmentos y las toxinas que se retienen le dan un tinte amarillento, y producen prurito, con lesiones de rascado. La urea acumulada hace que las plaquetas funcionen mal: aparecen petequias y moretones. Y como el riñón ya no regula bien la sal, el agua y la renina, hay edema e hipertensión."
+    },
+    {
+      "title": "Por qué se palpa el riñón en la inspiración",
+      "text": "Y la base de las maniobras de palpación. El riñón está detrás del peritoneo, apoyado contra la pared posterior, justo debajo del diafragma. Cuando el paciente inspira, el diafragma baja y empuja al riñón hacia abajo. Por eso se lo busca con las dos manos, una en la región lumbar y otra adelante: en la inspiración baja hacia los dedos, y si está agrandado, rebota entre las manos. En una persona delgada, normalmente solo se llega a palpar el polo inferior del riñón derecho."
+    },
+    {
+      "title": "Hipertensión de origen renal",
+      "text": "Por último, la presión arterial, que siempre se toma. Una arteria renal estrechada manda poca sangre al riñón. El riñón interpreta que falta presión y libera renina, que activa la angiotensina y la aldosterona: vasoconstricción y retención de sal. El resultado es una hipertensión que no baja ni con tres o cuatro antihipertensivos. Ahí hay que auscultar el abdomen y la región lumbar: el soplo de la estenosis de la arteria renal."
+    },
+    {
+      "title": "El paciente con proteinuria",
+      "text": "El paciente con proteinuria, que se pregunta en los parciales y en el final. Lo normal es perder menos de ciento cincuenta miligramos de proteínas por día; más de trescientos ya es proteinuria, y más de tres gramos y medio, rango nefrótico. Y lo que el profesor pide tener siempre en la cabeza: si hay proteinuria, el problema es el glomérulo."
+    },
+    {
+      "title": "Cuánta proteína",
+      "text": "La proteinuria se gradúa por cantidad. Entre treinta y trescientos miligramos es la microalbuminuria, típica del diabético con más de cinco años de evolución, la primera señal de daño renal. De trescientos miligramos a un gramo, leve; de uno a tres y medio, moderada; y más de tres gramos y medio, severa, el rango del síndrome nefrótico."
+    },
+    {
+      "title": "Cómo se mide",
+      "text": "Los métodos, que se preguntan en el parcial. Las tiras reactivas son semicuantitativas: rápidas y aproximadas, en cruces; cuatro cruces son más de tres gramos. Es lo primero que se hace en la guardia. La proteinuria de veinticuatro horas es cuantitativa y la más fidedigna: se junta toda la orina del día y se mide cuánto se pierde. Y la electroforesis es cualitativa: dice qué proteína es. La inmunoelectroforesis encuentra la proteína de Bence Jones del mieloma."
+    },
+    {
+      "title": "Qué acompaña a la proteinuria",
+      "text": "Lo que acompaña a la proteinuria orienta. Si hay hematíes y cilindros hemáticos, la lesión glomerular está activa, como en el síndrome nefrítico. Los cilindros grasos, en cambio, son del nefrótico. Una proteinuria persistente indica enfermedad glomerular; una intermitente puede aparecer con el ejercicio, la fiebre o la insuficiencia cardíaca. Y existe la proteinuria por sobrecarga: cuando sobran proteínas chicas en la sangre, como en el mieloma, que se filtran aunque el glomérulo esté sano."
+    },
+    {
+      "title": "Los colores de la orina",
+      "text": "Los colores de la orina. Rojo vivo es sangre fresca; un rojo más oscuro, hemoglobina libre. Pardo, como gaseosa cola, es la coluria: bilirrubina directa, un problema biliar. Un caso de la clase: un hombre llega a la guardia con dolor abdominal sin causa, fiebre y vómitos. La orina parece normal, pero al dejarla al sol vira a rojo parduzco: es una porfiria. Y la orina turbia y con olor hace pensar en una infección; la espuma que no se va, en proteinuria."
+    },
+    {
+      "title": "Examen general: el edema",
+      "text": "En el examen general, el edema distingue los síndromes. El del nefrítico es leve, alrededor de los ojos, matinal y blando. El del nefrótico es mayor, en las piernas y las zonas declives, pálido, blando y con fóvea, y puede llegar a la anasarca; con más de tres gramos y medio de proteinuria. Y siempre se toma la presión arterial, y se mira la piel: pálida y amarillenta, con petequias, en la insuficiencia renal."
+    },
+    {
+      "title": "Maniobra de Guyon",
+      "text": "De las maniobras de palpación renal, la que siempre se pregunta es la de Guyon. El paciente está boca arriba. Una mano va atrás, en el ángulo costomuscular, entre la última costilla y los músculos lumbares; la otra adelante, por fuera de los rectos. Se le pide una inspiración profunda, y la mano de atrás da golpes cortos hacia adelante: si el riñón está agrandado, rebota contra la mano anterior. Eso es el peloteo renal."
+    },
+    {
+      "title": "Montenegro, Israel y Glenard",
+      "text": "Las otras maniobras. Montenegro es la misma que Guyon, pero con el paciente boca abajo: se siente el choque del riñón contra la mano lumbar. Israel se hace con el paciente de costado, apoyado sobre el lado contrario, para que el riñón caiga hacia la mano de adelante. Y Glenard, una pinza con la mano debajo del reborde costal, busca la ptosis renal: el riñón descendido que no vuelve a subir en la espiración."
+    },
+    {
+      "title": "Puñopercusión, puntos y auscultación",
+      "text": "La puñopercusión se hace con el puño cerrado, o con el borde de la mano, sobre la fosa lumbar. Normalmente no duele; si duele, la vía urinaria está distendida o inflamada, como en una litiasis o una pielonefritis. Los puntos ureterales: el superior, a la altura del ombligo en el borde externo del recto; el medio, sobre la línea entre las dos espinas ilíacas; y los posteriores, costovertebral y costomuscular. Y en un hipertenso que no responde al tratamiento, se ausculta: un soplo periumbilical o lumbar sugiere una estenosis de la arteria renal."
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+ "fps": 24,
+ "total": 9917,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-proteinuria",
+   "inicio": 96,
+   "frames": 791,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 418
+    },
+    {
+     "inicio": 514,
+     "frames": 120
+    },
+    {
+     "inicio": 634,
+     "frames": 253
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-irc-piel",
+   "inicio": 887,
+   "frames": 760,
+   "beats": [
+    {
+     "inicio": 887,
+     "frames": 440
+    },
+    {
+     "inicio": 1327,
+     "frames": 320
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-guyon",
+   "inicio": 1647,
+   "frames": 790,
+   "beats": [
+    {
+     "inicio": 1647,
+     "frames": 382
+    },
+    {
+     "inicio": 2029,
+     "frames": 408
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-estenosis",
+   "inicio": 2437,
+   "frames": 739,
+   "beats": [
+    {
+     "inicio": 2437,
+     "frames": 216
+    },
+    {
+     "inicio": 2653,
+     "frames": 229
+    },
+    {
+     "inicio": 2882,
+     "frames": 294
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-proteinuria",
+   "inicio": 3176,
+   "frames": 557,
+   "beats": [
+    {
+     "inicio": 3176,
+     "frames": 377
+    },
+    {
+     "inicio": 3553,
+     "frames": 180
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-grados",
+   "inicio": 3733,
+   "frames": 564,
+   "beats": [
+    {
+     "inicio": 3733,
+     "frames": 564
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-metodos",
+   "inicio": 4297,
+   "frames": 832,
+   "beats": [
+    {
+     "inicio": 4297,
+     "frames": 378
+    },
+    {
+     "inicio": 4675,
+     "frames": 214
+    },
+    {
+     "inicio": 4889,
+     "frames": 240
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sedimento",
+   "inicio": 5129,
+   "frames": 804,
+   "beats": [
+    {
+     "inicio": 5129,
+     "frames": 362
+    },
+    {
+     "inicio": 5491,
+     "frames": 442
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colores",
+   "inicio": 5933,
+   "frames": 846,
+   "beats": [
+    {
+     "inicio": 5933,
+     "frames": 351
+    },
+    {
+     "inicio": 6284,
+     "frames": 327
+    },
+    {
+     "inicio": 6611,
+     "frames": 168
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-general",
+   "inicio": 6779,
+   "frames": 712,
+   "beats": [
+    {
+     "inicio": 6779,
+     "frames": 502
+    },
+    {
+     "inicio": 7281,
+     "frames": 210
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-guyon",
+   "inicio": 7491,
+   "frames": 724,
+   "beats": [
+    {
+     "inicio": 7491,
+     "frames": 422
+    },
+    {
+     "inicio": 7913,
+     "frames": 302
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otras",
+   "inicio": 8215,
+   "frames": 678,
+   "beats": [
+    {
+     "inicio": 8215,
+     "frames": 448
+    },
+    {
+     "inicio": 8663,
+     "frames": 230
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-percusion",
+   "inicio": 8893,
+   "frames": 904,
+   "beats": [
+    {
+     "inicio": 8893,
+     "frames": 368
+    },
+    {
+     "inicio": 9261,
+     "frames": 312
+    },
+    {
+     "inicio": 9573,
+     "frames": 224
+    }
+   ]
+  }
+ ]
+}
