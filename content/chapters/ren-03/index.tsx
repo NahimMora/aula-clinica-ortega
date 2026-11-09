@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * ren-03 — Síndrome nefrítico. Fuente: clase «Síndrome nefrítico» (Ortega) + libro p. 442–444.
@@ -73,7 +74,7 @@ const chapter: Chapter = {
     },
     {
       id: 'clinica',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'La clínica: las 3 H',
       priority: 'imprescindible',
       summary: 'Hematuria, hipertensión e hiperazoemia; más oliguria, edema leve y proteinuria < 3,5 g.',
@@ -105,7 +106,7 @@ const chapter: Chapter = {
     },
     {
       id: 'causa',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'La causa más frecuente: postestreptocócica',
       priority: 'imprescindible',
       summary: 'Glomerulopatía primaria postinfecciosa (endocapilar, proliferativa) por estreptococo beta hemolítico del grupo A.',
@@ -184,6 +185,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'ren03-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -198,6 +200,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -212,6 +215,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-d03',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'mecanismo',
@@ -222,6 +226,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-d04',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'diagnostico',
@@ -238,6 +243,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'ren03-q01',
+      origen: 'practica',
       topic: 'Tríada',
       difficulty: 1,
       emphasis: true,
@@ -253,6 +259,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q02',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 1,
       emphasis: true,
@@ -268,6 +275,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q03',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 2,
       emphasis: true,
@@ -283,6 +291,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q04',
+      origen: 'practica',
       topic: 'Mecanismo',
       difficulty: 2,
       stem: 'La lesión glomerular del síndrome nefrítico se diferencia de la del nefrótico porque hay:',
@@ -297,6 +306,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q05',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 2,
       stem: 'El hallazgo del sedimento más característico del síndrome nefrítico es:',
@@ -311,6 +321,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q06',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 2,
       stem: 'En la glomerulonefritis postestreptocócica esperás encontrar:',
@@ -325,6 +336,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q07',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 3,
       stem: 'La excreción fraccional de sodio en el síndrome nefrítico es:',
@@ -339,6 +351,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q08',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       stem: 'La hipertensión arterial del síndrome nefrítico se debe principalmente a:',
@@ -353,6 +366,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q09',
+      origen: 'practica',
       topic: 'Complicaciones',
       difficulty: 2,
       stem: '¿Cuál **no** es una complicación típica del síndrome nefrítico?',
@@ -367,6 +381,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren03-q10',
+      origen: 'practica',
       topic: 'Evolución',
       difficulty: 2,
       stem: 'El síndrome nefrítico tiende a evolucionar hacia:',
@@ -443,6 +458,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'ren03-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Niño de 8 años con párpados hinchados, orina color Coca-Cola y TA 150/95; tuvo una angina hace 2 semanas. Pensás en:',
@@ -459,6 +475,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

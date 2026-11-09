@@ -28,6 +28,8 @@ const CONFIG = {
   'ren-01': { mapa: ['Edema y dolor', 'Obstrucción', 'La orina', 'Edemas', 'Globo vesical', 'Poliuria', 'Hematuria'], apartado: 'Orina y hematuria', titulo: /aspecto/i, maniobra: /Puñopercusión|puntos/i },
   'ren-02': { mapa: ['Proteinuria', 'Examen físico', 'Cuánta', 'Métodos', 'General', 'Guyon', 'Puñopercusión y puntos'], apartado: 'Región renal', titulo: /guyon/i, maniobra: /Guyon/i },
   'ren-03': { mapa: ['Síndrome nefrítico', 'Las tres H', 'Causa', 'Laboratorio', 'Complicaciones'], apartado: 'Clínica', titulo: /tres h/i, maniobra: null },
+  'ren-04': { mapa: ['Síndrome nefrótico', 'Definición', 'Causas', 'Clínica', 'Complicaciones'], apartado: 'Causas', titulo: /causa más frecuente/i, maniobra: null },
+  'ren-05': { mapa: ['Insuficiencia aguda', 'Insuficiencia crónica', 'RIFLE y AKIN', 'Causas', 'Sodio urinario', 'Anemia', 'Ecografía'], apartado: 'Aguda', titulo: /rifle/i, maniobra: null },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

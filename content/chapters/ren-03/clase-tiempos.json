@@ -1,0 +1,213 @@
+{
+ "fps": 24,
+ "total": 8431,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-inmuno",
+   "inicio": 96,
+   "frames": 849,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 238
+    },
+    {
+     "inicio": 334,
+     "frames": 287
+    },
+    {
+     "inicio": 621,
+     "frames": 208
+    },
+    {
+     "inicio": 829,
+     "frames": 116
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-pared",
+   "inicio": 945,
+   "frames": 791,
+   "beats": [
+    {
+     "inicio": 945,
+     "frames": 161
+    },
+    {
+     "inicio": 1106,
+     "frames": 335
+    },
+    {
+     "inicio": 1441,
+     "frames": 295
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-cascada",
+   "inicio": 1736,
+   "frames": 639,
+   "beats": [
+    {
+     "inicio": 1736,
+     "frames": 221
+    },
+    {
+     "inicio": 1957,
+     "frames": 168
+    },
+    {
+     "inicio": 2125,
+     "frames": 250
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 2375,
+   "frames": 498,
+   "beats": [
+    {
+     "inicio": 2375,
+     "frames": 382
+    },
+    {
+     "inicio": 2757,
+     "frames": 116
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tres-h",
+   "inicio": 2873,
+   "frames": 606,
+   "beats": [
+    {
+     "inicio": 2873,
+     "frames": 228
+    },
+    {
+     "inicio": 3101,
+     "frames": 378
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clinica",
+   "inicio": 3479,
+   "frames": 603,
+   "beats": [
+    {
+     "inicio": 3479,
+     "frames": 335
+    },
+    {
+     "inicio": 3814,
+     "frames": 268
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-vs-nefrotico",
+   "inicio": 4082,
+   "frames": 852,
+   "beats": [
+    {
+     "inicio": 4082,
+     "frames": 445
+    },
+    {
+     "inicio": 4527,
+     "frames": 407
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-postestreptococica",
+   "inicio": 4934,
+   "frames": 562,
+   "beats": [
+    {
+     "inicio": 4934,
+     "frames": 263
+    },
+    {
+     "inicio": 5197,
+     "frames": 299
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas",
+   "inicio": 5496,
+   "frames": 566,
+   "beats": [
+    {
+     "inicio": 5496,
+     "frames": 337
+    },
+    {
+     "inicio": 5833,
+     "frames": 229
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-lab",
+   "inicio": 6062,
+   "frames": 815,
+   "beats": [
+    {
+     "inicio": 6062,
+     "frames": 462
+    },
+    {
+     "inicio": 6524,
+     "frames": 353
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-biopsia",
+   "inicio": 6877,
+   "frames": 846,
+   "beats": [
+    {
+     "inicio": 6877,
+     "frames": 575
+    },
+    {
+     "inicio": 7452,
+     "frames": 271
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-complicaciones",
+   "inicio": 7723,
+   "frames": 588,
+   "beats": [
+    {
+     "inicio": 7723,
+     "frames": 588
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+  "src": "media/ren-03/clase.mp4",
+  "poster": "media/ren-03/clase.jpg",
+  "vtt": "media/ren-03/clase.vtt",
+  "duration": "5:51",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · La causa"
+    },
+    {
+      "t": 39,
+      "label": "Fisiopatología · El glomérulo"
+    },
+    {
+      "t": 72,
+      "label": "Fisiopatología · Las tres H"
+    },
+    {
+      "t": 98,
+      "label": "Teoría · Qué es"
+    },
+    {
+      "t": 119,
+      "label": "Teoría · Clínica"
+    },
+    {
+      "t": 170,
+      "label": "Teoría · Qué es"
+    },
+    {
+      "t": 205,
+      "label": "Teoría · Causas"
+    },
+    {
+      "t": 252,
+      "label": "Teoría · Diagnóstico"
+    }
+  ],
+  "script": [
+    {
+      "title": "De la garganta al riñón",
+      "text": "El síndrome nefrítico más frecuente empieza lejos del riñón: una faringitis o una infección de piel por estreptococo beta hemolítico del grupo A. El cuerpo arma anticuerpos contra el estreptococo, y en una o dos semanas se forman inmunocomplejos, antígeno más anticuerpo, que circulan y se depositan en los capilares del glomérulo. Ahí activan el complemento, que se consume, por eso el C3 en sangre baja, y atraen células inflamatorias. El glomérulo se inflama: es el síndrome nefrítico."
+    },
+    {
+      "title": "El capilar que se rompe",
+      "text": "Normalmente, la pared del capilar glomerular retiene los glóbulos rojos y la albúmina. En el nefrítico, la inflamación rompe los capilares, y las células inflamatorias engrosan el glomérulo. El profesor lo diferencia del nefrótico: acá los capilares se rompen; allá aumenta la permeabilidad. Por las roturas pasan glóbulos rojos, que salen deformados y moldeados en cilindros hemáticos. Y como el glomérulo inflamado tiene menos superficie útil, se filtra menos."
+    },
+    {
+      "title": "Del filtrado bajo a las tres H",
+      "text": "Con el filtrado bajo empieza la cascada. El riñón deja de eliminar sal y agua, y también la urea y la creatinina. El paciente orina poco, y suben la urea y la creatinina en la sangre: la hiperazoemia. Y el agua y la sal retenidas aumentan el volumen en los vasos: suben la presión arterial y aparece un edema leve. Así se arman las tres H."
+    },
+    {
+      "title": "Síndrome nefrítico",
+      "text": "El síndrome nefrítico es una inflamación aguda del glomérulo. Se manifiesta con hematuria, hipertensión, hiperazoemia, oliguria, un edema leve, y una proteinuria que no llega al rango nefrótico: menos de tres gramos y medio. Y su evolución temida es la insuficiencia renal aguda."
+    },
+    {
+      "title": "La tríada: las tres H",
+      "text": "La tríada del síndrome nefrítico, pregunta de los parciales, son las tres H: hematuria, hipertensión arterial e hiperazoemia. La hiperazoemia es la retención de productos nitrogenados: suben la urea y la creatinina. Antes la tríada se decía con el edema; el profesor la pide con la hiperazoemia, porque es la que marca la evolución hacia la insuficiencia renal aguda."
+    },
+    {
+      "title": "Cómo se ve",
+      "text": "Cómo se ve el paciente. Orina poco, y la orina es oscura, rojizo amarronada, como gaseosa cola. La hematuria es microscópica en el setenta por ciento y visible en el treinta. Tiene un edema leve, en los párpados por la mañana y en los tobillos. Y una hipertensión que depende del volumen retenido, y que es la complicación más temida."
+    },
+    {
+      "title": "Nefrítico o nefrótico",
+      "text": "Y el cuadro que los diferencia. En el nefrítico se rompen los capilares por inflamación; en el nefrótico aumenta la permeabilidad de la barrera. El nefrítico da hematuria con cilindros hemáticos; el nefrótico, proteinuria masiva y espuma, de más de tres gramos y medio. El edema del nefrítico es leve y por retención; el del nefrótico, importante y por baja presión oncótica. El nefrítico tiene la presión alta; el nefrótico, normal o baja. Y el nefrítico evoluciona hacia la insuficiencia aguda."
+    },
+    {
+      "title": "La causa más frecuente: postestreptocócica",
+      "text": "La causa más frecuente es la glomerulonefritis postinfecciosa, también llamada endocapilar o proliferativa, en general por estreptococo beta hemolítico del grupo A. Por eso, y es pregunta de parcial, ante todo síndrome nefrítico hay que preguntar si hace una o dos semanas tuvo una infección: una faringoamigdalitis, o una infección de piel como un impétigo."
+    },
+    {
+      "title": "Otras causas",
+      "text": "Las causas se dividen en primarias, del propio riñón: la postinfecciosa, la más frecuente, la nefropatía por IgA, la mesangiocapilar y las glomerulonefritis con semilunas, que progresan rápido. Y secundarias, de enfermedades sistémicas: el lupus, las vasculitis, el síndrome de Goodpasture y la púrpura de Schönlein-Henoch."
+    },
+    {
+      "title": "Laboratorio",
+      "text": "En el laboratorio, el sedimento es nefrítico: hematuria dismórfica, acantocitos y cilindros hemáticos. La proteinuria de veinticuatro horas no llega a tres gramos y medio. La urea y la creatinina están altas, desde un deterioro leve hasta una insuficiencia renal aguda. La fracción excretada de sodio es menor del uno por ciento, porque el riñón lo está reteniendo. Y para la causa: las antiestreptolisinas, el ASTO, altas, y el C3 bajo, por el consumo del complemento."
+    },
+    {
+      "title": "Biopsia: inmunofluorescencia",
+      "text": "Si hace falta biopsia, la inmunofluorescencia da tres patrones. Granular, el setenta por ciento: depósitos de inmunocomplejos, como en la postinfecciosa o el lupus. Lineal, uno por ciento: anticuerpos contra la membrana basal, el Goodpasture. Y pauciinmune, sin depósitos, el treinta por ciento: las vasculitis. La biopsia se indica si el C3 sigue bajo, si la función renal cae rápido, si se sospecha una enfermedad sistémica, o si el cuadro dura más de cuatro semanas."
+    },
+    {
+      "title": "Complicaciones",
+      "text": "Las complicaciones salen de lo mismo. El volumen retenido sobrecarga al corazón: insuficiencia cardíaca, con ingurgitación yugular, y en los casos graves, edema agudo de pulmón. La hipertensión severa puede dar una encefalopatía hipertensiva. Y el riñón que no filtra lleva a la insuficiencia renal aguda, con hiperpotasemia, porque no puede eliminar el potasio."
+    }
+  ]
+}
