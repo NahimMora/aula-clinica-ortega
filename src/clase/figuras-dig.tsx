@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react';
 import { BIL_H, BIL_W, BiliarFig, BristolGlyph, TR_H, TR_W, TractoFig } from '../visual/anatomia';
 import type { Organo, ViaBiliar, VTone } from '../visual/tipos';
-import { type BaseFig, CIELO, DURAZNO, ESTOMAGO, HIGADO, ManoFrente, INK, INK2, INK3, INTESTINO, L, LILA, LINE, MENTA, Pulso, ROJO, ROSA, SANGRE, apf, clamp, ease } from './figuras-base';
+import { type BaseFig, CIELO, DELGADO, DURAZNO, ESTOMAGO, HIGADO, ManoFrente, INK, INK2, INK3, INTESTINO, L, LILA, LINE, MENTA, Pulso, ROJO, ROSA, SANGRE, Via, apf, clamp, ease } from './figuras-base';
 
 const PIEL = 'var(--v-skin)';
 const HUESO = '#d8cdbd';
@@ -2292,6 +2292,223 @@ function Peritoneo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vi
   );
 }
 
+/* ─────────── Hipovolemia: clases I a IV ─────────── */
+
+type ClaseHemo = 'I' | 'II' | 'III' | 'IV';
+
+const HEMO: Record<ClaseHemo, { nom: string; perd: string; vol: number; fc: number; fcT: string; pa: string; vaso: number; diu: string; gotas: number; mente: string; c: string }> = {
+  I: { nom: 'Clase I · leve', perd: '< 750 ml · < 15 %', vol: 0.9, fc: 85, fcT: '< 100 lpm', pa: 'Normal', vaso: 1, diu: '> 30 ml/h', gotas: 1, mente: 'Normal', c: MENTA },
+  II: { nom: 'Clase II · moderada', perd: '750–1500 ml · 15–30 %', vol: 0.77, fc: 110, fcT: '100–119 lpm', pa: 'Normal o baja', vaso: 0.8, diu: '20–30 ml/h', gotas: 0.6, mente: 'Ansioso', c: '#e8d36a' },
+  III: { nom: 'Clase III · grave', perd: '1500–2000 ml · 30–40 %', vol: 0.65, fc: 130, fcT: '120–139 lpm', pa: 'TAS < 100', vaso: 0.6, diu: '5–20 ml/h', gotas: 0.25, mente: 'Ansioso y confuso', c: DURAZNO },
+  IV: { nom: 'Clase IV · masiva', perd: '> 2000 ml · > 40 %', vol: 0.55, fc: 150, fcT: '> 140 lpm', pa: 'Muy baja: shock', vaso: 0.42, diu: 'Imperceptible', gotas: 0, mente: 'Confuso', c: ROJO },
+};
+
+const CORAZON_D = 'M0,-30 C-8,-52 -46,-50 -46,-18 C-46,10 -14,30 0,48 C14,30 46,10 46,-18 C46,-50 8,-52 0,-30 Z';
+const RINON_D = 'M-6,-46 C-40,-50 -52,-14 -46,12 C-40,40 -10,52 6,40 C16,32 6,18 10,6 C14,-6 24,-12 18,-28 C14,-40 6,-44 -6,-46 Z';
+const CEREBRO_D = 'M-52,10 C-60,-20 -40,-48 -8,-50 C20,-56 52,-38 54,-8 C58,16 40,30 18,30 C10,40 -6,42 -14,32 C-34,36 -50,28 -52,10 Z';
+
+function Hipovolemia({ t, paso, dt, vistas = ['I', 'II', 'III', 'IV'] }: BaseFig & { vistas?: ClaseHemo[] }) {
+  const k = vistas[Math.min(paso, vistas.length - 1)];
+  const d = HEMO[k];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  // nivel de la volemia (cápsula de 5 L)
+  const TOP = 92;
+  const BOT = 470;
+  const nivel = BOT - (BOT - TOP) * d.vol;
+  const fase = (t * d.fc) / 60;
+  const latido = 1 + 0.09 * Math.max(0, Math.sin(fase * Math.PI * 2)) ** 6;
+  const celda = (x: number, y: number, titulo: string, valor: string, dibujo: ReactNode) => (
+    <g transform={`translate(${x} ${y})`}>
+      <rect x={0} y={0} width={290} height={200} rx={16} fill="#241d2b" stroke={LINE} strokeWidth={1.5} />
+      <g transform="translate(145 74) scale(0.78)">{dibujo}</g>
+      <L x={145} y={146} c={INK2} s={20}>
+        {titulo}
+      </L>
+      <L x={145} y={178} c={d.c} s={24} w={750}>
+        {valor}
+      </L>
+    </g>
+  );
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label="Clases de hemorragia: volemia, frecuencia cardíaca, presión, diuresis y estado mental">
+      {/* volemia */}
+      <L x={24} y={30} a="start" c={d.c} s={22} o={u}>
+        {d.nom}
+      </L>
+      <rect x={45} y={TOP - 30} width={100} height={BOT - TOP + 50} rx={40} fill="none" stroke={INK3} strokeWidth={3} />
+      <clipPath id="cl-volemia">
+        <rect x={48} y={TOP - 27} width={94} height={BOT - TOP + 44} rx={37} />
+      </clipPath>
+      <g clipPath="url(#cl-volemia)">
+        <rect x={40} y={nivel + Math.sin(t * 2) * 2} width={110} height={BOT} fill={SANGRE} opacity={0.85} />
+      </g>
+      <L x={95} y={496} c={INK} s={20}>
+        {d.perd.split(' · ')[1]}
+      </L>
+      <L x={95} y={nivel - 16} c={INK} s={18}>
+        {k === 'I' ? '5 L' : ''}
+      </L>
+      {/* órganos */}
+      {celda(180, 50, 'Frecuencia cardíaca', d.fcT,
+        <path d={CORAZON_D} transform={`scale(${latido})`} fill={SANGRE} stroke="#5d2a2a" strokeWidth={3} />,
+      )}
+      {celda(490, 50, 'Presión arterial', d.pa,
+        <g>
+          <circle r={50} fill="#5b3a44" stroke={LINE} strokeWidth={2} />
+          <circle r={18 + 28 * d.vaso} fill="#7a3b46" />
+          <circle r={10 + 26 * d.vaso} fill={SANGRE} />
+        </g>,
+      )}
+      {celda(180, 280, 'Diuresis', d.diu,
+        <g>
+          <path d={RINON_D} fill="#8f4b4b" stroke="#5d2a2a" strokeWidth={3} />
+          <path d="M8,38 C14,56 10,70 12,84" fill="none" stroke="#d8c46a" strokeWidth={5} strokeLinecap="round" />
+          {d.gotas > 0 &&
+            Array.from({ length: 3 }, (_, i) => {
+              const v = (t * (0.4 + d.gotas) + i / 3) % 1;
+              return <circle key={i} cx={12} cy={86 + v * 30} r={4} fill="#d8c46a" opacity={(1 - v) * Math.min(1, d.gotas * 1.6)} />;
+            })}
+        </g>,
+      )}
+      {celda(490, 280, 'Estado mental', d.mente,
+        <g>
+          <path d={CEREBRO_D} fill={k === 'I' ? '#d9a3ad' : k === 'II' ? '#cf96a0' : k === 'III' ? '#b88290' : '#9a7480'} stroke="#7a4d5a" strokeWidth={3} />
+          <path d="M-30,-20 C-20,-30 -6,-24 -2,-12 M8,-34 C18,-22 30,-26 36,-12 M-36,8 C-22,0 -8,10 4,4 M14,10 C26,2 38,8 44,0" fill="none" stroke="#7a4d5a" strokeWidth={2.5} />
+        </g>,
+      )}
+      <L x={485} y={498} c={INK3} s={18}>
+        {d.perd.split(' · ')[0]} perdidos de unos 5 L de volemia
+      </L>
+    </svg>
+  );
+}
+
+/* ─────────── Sistema porta: cirrosis, colaterales, ascitis y bazo ─────────── */
+
+type VistaPortal = 'normal' | 'cirrosis' | 'colaterales' | 'ascitis' | 'bazo';
+
+const VP = {
+  smv: 'M420,452 C424,400 432,345 440,302',
+  esplenica: 'M664,268 C610,276 520,294 440,302',
+  porta: 'M440,302 C420,272 388,242 362,216',
+  suprahep: 'M392,132 L430,120',
+  cava: 'M430,478 L430,26',
+  coronaria: 'M458,298 C500,252 552,206 572,146 L566,84',
+  paraumb: 'M342,216 C337,282 333,340 330,396',
+  mesInf: 'M560,290 C566,360 556,430 470,494',
+};
+const HIGADO_P = 'M140,170 C132,112 210,74 320,72 C420,70 520,86 548,120 C566,146 540,176 500,190 C440,212 380,222 330,222 C250,224 150,214 140,170 Z';
+
+function Portal({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: VistaPortal[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const cirro = v !== 'normal';
+  const col = v === 'colaterales' || v === 'ascitis' || v === 'bazo';
+  const bazoGrande = v === 'bazo' || v === 'ascitis';
+  const AZUL = '#6f8fd8';
+  const PORTA_C = '#9a7be0';
+  const nota: Record<VistaPortal, [string, string]> = {
+    normal: ['La porta lleva la sangre del intestino y el bazo al hígado', MENTA],
+    cirrosis: ['Hígado fibrótico: la sangre no pasa, la presión sube > 12 mmHg', ROJO],
+    colaterales: ['La sangre vuelve atrás y busca la cava por colaterales', DURAZNO],
+    ascitis: ['Presión alta + poca albúmina: líquido al peritoneo', CIELO],
+    bazo: ['Bazo congestivo y grande: hiperesplenismo', LILA],
+  };
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label="Sistema porta, hígado, cava y circulación colateral">
+      {/* contexto: asas y ascitis */}
+      {v === 'ascitis' && <path d={`M150,${420 + Math.sin(t * 2) * 3} C300,${412 - Math.sin(t * 2) * 3} 560,${426 + Math.sin(t * 2) * 3} 720,418 L720,512 L150,512 Z`} fill="#4b6f8f" opacity={0.55 * u} />}
+      <g opacity={0.45} transform="translate(90 -8)">
+        <path d={DELGADO} fill="none" stroke={INTESTINO} strokeWidth={15} strokeLinecap="round" />
+      </g>
+      {/* esófago, estómago y recto */}
+      <path d="M560,20 L566,130" stroke={ESTOMAGO} strokeWidth={20} strokeLinecap="round" opacity={0.7} />
+      <path d="M560,128 C600,120 650,150 646,200 C642,244 590,252 560,228 C544,214 548,190 566,180" fill={ESTOMAGO} opacity={0.75} />
+      <path d="M440,470 C440,490 442,505 446,516" stroke={INTESTINO} strokeWidth={26} strokeLinecap="round" opacity={0.7} />
+      {/* bazo */}
+      <ellipse cx={690} cy={262} rx={bazoGrande ? 62 : 32} ry={bazoGrande ? 86 : 50} fill="#8a4b63" stroke="#5d2a3f" strokeWidth={3} opacity={0.95} />
+      {/* hígado */}
+      <path d={HIGADO_P} fill={cirro ? '#9a7a4e' : HIGADO} stroke="#5d2a2a" strokeWidth={3} transform={cirro ? 'translate(340 150) scale(0.9) translate(-340 -150)' : undefined} />
+      {cirro &&
+        Array.from({ length: 16 }, (_, i) => (
+          <circle key={i} cx={190 + (i % 8) * 44 + (i > 7 ? 20 : 0)} cy={i > 7 ? 172 : 128} r={13} fill="#b2915f" stroke="#6e5333" strokeWidth={2} opacity={u} />
+        ))}
+      {/* cava y suprahepáticas */}
+      <Via d={VP.cava} c={AZUL} w={18} o={0.85} />
+      <Via d={VP.suprahep} c={AZUL} w={10} o={0.85} />
+      {!cirro && <Pulso d={VP.cava} t={t} v={30} c="#cfe0ff" w={6} />}
+      {/* sistema porta */}
+      <Via d={VP.smv} c={PORTA_C} w={cirro ? 16 : 12} />
+      <Via d={VP.esplenica} c={PORTA_C} w={cirro ? 16 : 12} />
+      <Via d={VP.porta} c={PORTA_C} w={cirro ? 24 : 16} />
+      {!cirro && (
+        <>
+          <Pulso d={VP.smv} t={t} v={40} c="#e7dcff" w={5} />
+          <Pulso d={VP.esplenica} t={t} v={40} c="#e7dcff" w={5} />
+          <Pulso d={VP.porta} t={t} v={40} c="#e7dcff" w={6} />
+        </>
+      )}
+      {cirro && <path d="M372,226 l22,-22 M394,226 l-22,-22" stroke={ROJO} strokeWidth={5} strokeLinecap="round" opacity={u} />}
+      {/* colaterales */}
+      <Via d={VP.coronaria} c={PORTA_C} w={col ? 8 : 4} o={col ? 1 : 0.5} />
+      <Via d={VP.paraumb} c={PORTA_C} w={col ? 8 : 3} o={col ? 1 : 0.35} dash={col ? undefined : '6 6'} />
+      <Via d={VP.mesInf} c={PORTA_C} w={col ? 8 : 6} o={col ? 1 : 0.6} />
+      {col && (
+        <g opacity={u}>
+          <Pulso d={VP.coronaria} t={t} v={45} c={DURAZNO} w={5} />
+          <Pulso d={VP.paraumb} t={t} v={45} c={DURAZNO} w={5} />
+          <Pulso d={VP.mesInf} t={t} v={45} c={DURAZNO} w={5} />
+          {[92, 110, 126].map((y, i) => (
+            <circle key={i} cx={566 + (i % 2 ? 9 : -9)} cy={y} r={9} fill={PORTA_C} stroke="#4a3a7a" strokeWidth={2} />
+          ))}
+          {Array.from({ length: 7 }, (_, i) => {
+            const a = (i / 7) * Math.PI * 2;
+            return <path key={i} d={`M${330 + Math.cos(a) * 12},${404 + Math.sin(a) * 12} q${Math.cos(a + 0.6) * 22},${Math.sin(a + 0.6) * 22} ${Math.cos(a) * 46},${Math.sin(a) * 46}`} fill="none" stroke={PORTA_C} strokeWidth={5} strokeLinecap="round" />;
+          })}
+          {[-14, 0, 14].map((dx, i) => (
+            <circle key={i} cx={456 + dx} cy={500} r={8} fill={PORTA_C} stroke="#4a3a7a" strokeWidth={2} />
+          ))}
+        </g>
+      )}
+      <circle cx={330} cy={404} r={10} fill="none" stroke={LINE} strokeWidth={3} />
+      {/* rótulos */}
+      <L x={400} y={24} c={nota[v][1]} s={22} o={v === 'normal' ? 1 : u}>
+        {nota[v][0]}
+      </L>
+      <L x={250} y={146} c="#f3d9cf" s={20}>
+        {cirro ? 'Hígado cirrótico' : 'Hígado'}
+      </L>
+      <L x={500} y={330} a="start" c="#d9ccff" s={20}>
+        Vena porta
+      </L>
+      <L x={470} y={60} a="end" c="#cfe0ff" s={20}>
+        Cava inferior
+      </L>
+      <L x={720} y={bazoGrande ? 372 : 336} c="#e8b8c8" s={20}>
+        Bazo
+      </L>
+      {col && (
+        <g opacity={u}>
+          <L x={600} y={98} a="start" c={DURAZNO} s={20}>
+            Várices esofágicas
+          </L>
+          <L x={262} y={458} a="middle" c={DURAZNO} s={20}>
+            Cabeza de medusa
+          </L>
+          <L x={560} y={500} a="start" c={DURAZNO} s={20}>
+            Hemorroides
+          </L>
+        </g>
+      )}
+      {cirro && !col && (
+        <L x={330} y={270} a="end" c={ROJO} s={22} o={u}>
+          {'> 12 mmHg'}
+        </L>
+      )}
+    </svg>
+  );
+}
+
 export const FIGURAS_DIG = {
   deglucion: Deglucion,
   esofago: Esofago,
@@ -2316,4 +2533,6 @@ export const FIGURAS_DIG = {
   barrera: Barrera,
   absorcion: Absorcion,
   peritoneo: Peritoneo,
+  hipovolemia: Hipovolemia,
+  portal: Portal,
 } satisfies Record<string, (p: never) => ReactNode>;

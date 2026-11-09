@@ -1,0 +1,154 @@
+{
+  "src": "media/dig-11/clase.mp4",
+  "poster": "media/dig-11/clase.jpg",
+  "vtt": "media/dig-11/clase.vtt",
+  "duration": "13:08",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · La bilis"
+    },
+    {
+      "t": 34,
+      "label": "Fisiopatología · Cólico y colecistitis"
+    },
+    {
+      "t": 96,
+      "label": "Fisiopatología · ¿Ictericia?"
+    },
+    {
+      "t": 157,
+      "label": "Fisiopatología · Vía biliar principal"
+    },
+    {
+      "t": 221,
+      "label": "Fisiopatología · ¿Ictericia?"
+    },
+    {
+      "t": 250,
+      "label": "Teoría · El cálculo"
+    },
+    {
+      "t": 360,
+      "label": "Teoría · Cólico y colecistitis"
+    },
+    {
+      "t": 493,
+      "label": "Teoría · ¿Ictericia?"
+    },
+    {
+      "t": 557,
+      "label": "Teoría · Vía biliar"
+    },
+    {
+      "t": 678,
+      "label": "Teoría · Estudios"
+    },
+    {
+      "t": 738,
+      "label": "Teoría · Otras formas"
+    }
+  ],
+  "script": [
+    {
+      "title": "El camino de la bilis",
+      "text": "Primero, el camino normal de la bilis, como lo dibuja el profesor. La fabrica el hígado, sale por los hepáticos derecho e izquierdo, que se unen en el hepático común. La vesícula no fabrica bilis: la almacena. Cuando comemos algo graso, se contrae y la manda por el conducto cístico. El cístico se une al hepático común y forman el colédoco, que baja hasta la ampolla de Vater y desemboca en la segunda porción del duodeno."
+    },
+    {
+      "title": "Cólico biliar: se traba un momento",
+      "text": "El cólico biliar. Hay cálculos en la vesícula, y mientras no se mueven, no duelen: es la litiasis asintomática. Después de una comida grasa, la vesícula se contrae, y un cálculo tapa por un momento la salida, el cístico. La presión adentro sube. Eso es el dolor cólico, en el hipocondrio derecho o el epigastrio. Cuando el cálculo se libera, o cuando un antiespasmódico relaja la vesícula, el dolor se va. No hay fiebre."
+    },
+    {
+      "title": "Colecistitis: queda impactado",
+      "text": "Si el cálculo no se libera y queda impactado en el cístico, empieza la colecistitis aguda. La vesícula no puede vaciarse, la presión adentro sigue subiendo, se compromete la irrigación de su pared, y se inflama. Ahora el dolor es intenso y no cede, aparece la fiebre, el signo de Murphy positivo y la leucocitosis. Y como el colédoco sigue libre, no hay ictericia, salvo que se complique."
+    },
+    {
+      "title": "Por qué la litiasis no da ictericia",
+      "text": "Y la pregunta clave: ¿por qué los cálculos en la vesícula no dan ictericia? Porque la vesícula solo almacena. Aunque esté llena de cálculos, la bilis que fabrica el hígado sigue bajando por el hepático común y el colédoco hasta el duodeno. Distinto es si el cálculo se escapa y obstruye el colédoco: la bilis no puede pasar, se estanca, y la bilirrubina directa vuelve a la sangre. Ahí sí hay ictericia. Cálculos en la vesícula, no; obstrucción de la vía biliar, sí."
+    },
+    {
+      "title": "Mirizzi: ictericia sin cálculo en el colédoco",
+      "text": "Hay una excepción: el síndrome de Mirizzi, una complicación de la colecistitis. El cálculo está impactado en el cístico. La vesícula inflamada y agrandada crece tanto que comprime desde afuera el conducto hepático común, justo donde se le une el cístico. Entonces la bilis no puede bajar, y aparece la ictericia, sin que haya ningún cálculo dentro del colédoco."
+    },
+    {
+      "title": "Síndrome coledociano: la tríada",
+      "text": "El síndrome coledociano aparece cuando se obstruye la vía biliar principal: un cálculo, un tumor, un parásito. La bilirrubina directa, que ya pasó por el hígado y es soluble en agua, no puede salir: vuelve a la sangre y se filtra por el riñón. Por eso la tríada: ictericia; coluria, la orina oscura; y heces claras, hipocólicas o acólicas, porque no llega bilis al intestino. Las sales biliares en la piel dan prurito."
+    },
+    {
+      "title": "Colangitis y pancreatitis biliar",
+      "text": "Y las dos complicaciones de la coledocolitiasis. La bilis normalmente es estéril; pero estancada detrás de un cálculo, bacterias que ascienden desde el duodeno la infectan, con mucha presión. Es la colangitis: dolor, fiebre e ictericia, la tríada de Charcot. Es una emergencia. Si el cálculo baja hasta enclavarse en la ampolla de Vater, tapa también la salida del conducto de Wirsung: el jugo del páncreas no puede salir, y aparece una pancreatitis biliar."
+    },
+    {
+      "title": "Ictericia sin dolor",
+      "text": "Por último, la ictericia que no duele. Un tumor de la cabeza del páncreas va cerrando el colédoco de a poco, sin inflamación. La vesícula, que está sana, se va llenando de bilis retenida y se distiende. Resultado: ictericia progresiva e indolora, con una vesícula palpable que no duele. Es la ley de Courvoisier-Terrier. Ictericia sin dolor: pensar en cáncer."
+    },
+    {
+      "title": "Síndromes vesiculares",
+      "text": "Los síndromes vesiculares son los signos y síntomas que aparecen por una enfermedad de la vesícula y de toda la vía biliar. El profesor aclara que, más que en el parcial, se pregunta en el final y en los trabajos prácticos. Para el parcial, lo que no se puede no saber es ictericia: y para entender este tema hay que saberla."
+    },
+    {
+      "title": "Colelitiasis no es colecistitis",
+      "text": "Dos palabras que muchos confunden. Colelitiasis es tener cálculos en la vesícula: puede no doler nunca, o dar un dolor cólico leve que pasa rápido. Colecistitis es la inflamación de la vesícula, porque un cálculo quedó impactado en el cístico. Duele mucho más, da fiebre, y estos pacientes suelen terminar operados."
+    },
+    {
+      "title": "Las 4 F y los factores de riesgo",
+      "text": "La epidemiología se resume en las cuatro F, que el profesor pide saber: female, mujer; forty, más de cuarenta años; fat, obesa; y fertile, en edad fértil. La patología biliar es más frecuente en mujeres. Otros factores: una dieta rica en colesterol y grasas, la hipertrigliceridemia, algunos fármacos, la genética, y el embarazo, porque los estrógenos cargan la bilis de colesterol y la progesterona enlentece la vesícula. También la pérdida brusca de peso y el ayuno prolongado."
+    },
+    {
+      "title": "El viaje del cálculo",
+      "text": "Todo se entiende siguiendo al cálculo. Si se queda en la vesícula, es una colelitiasis: no duele, o da un cólico. Si se impacta en el cístico, colecistitis, que puede complicarse con un Mirizzi, una perforación o una fístula. Si se escapa al colédoco, coledocolitiasis: síndrome coledociano y, si se infecta, colangitis. Y si baja hasta la ampolla de Vater, puede dar una pancreatitis."
+    },
+    {
+      "title": "Litiasis asintomática",
+      "text": "La litiasis asintomática: hay cálculos en la vesícula, pero no se impactan en el cístico, así que no duelen. El profesor lo dice así: uno puede tener cálculos en la vesícula y estar perfecto. Se descubre en una ecografía pedida por otra cosa. Es el ochenta y cinco por ciento de los diagnósticos, y se complica poco: dos o tres por ciento por año hacen un cólico, menos del uno por ciento una colecistitis, y alrededor de un veinte por ciento se vuelve sintomática en quince años."
+    },
+    {
+      "title": "Cólico biliar",
+      "text": "El cólico biliar es el síntoma cardinal de la litiasis vesicular y su primera manifestación. Hay que saber su semiología: un dolor agudo en el epigastrio o el hipocondrio derecho, que se irradia al dorso y al hombro derecho, de tipo cólico, que empeora con las comidas grasas, que hacen contraer la vesícula, y mejora con el ayuno o con un antiespasmódico, que la relaja. Se acompaña de meteorismo, náuseas y vómitos biliosos. Y, sin complicaciones, no hay fiebre ni ictericia."
+    },
+    {
+      "title": "Colecistitis aguda y signo de Murphy",
+      "text": "La colecistitis aguda es la obstrucción del cístico por un cálculo, que aumenta la presión y termina inflamando la vesícula. Casi siempre es litiásica. La clínica: dolor en el hipocondrio derecho, fiebre, y el signo de Murphy positivo. Puede haber anorexia, náuseas y vómitos, y en el laboratorio, leucocitosis. Sin complicaciones, no hay ictericia. Y la maniobra de Murphy, que el profesor pide saber: se presiona el punto cístico y se le pide al paciente que inspire hondo. Al bajar el hígado, la vesícula inflamada choca contra los dedos, y el dolor corta la inspiración."
+    },
+    {
+      "title": "Complicaciones de la colecistitis",
+      "text": "La colecistitis puede complicarse con una perforación, una gangrena y una peritonitis, o con fístulas hacia el intestino, que pueden dar un íleo biliar, y abscesos. Y el síndrome de Mirizzi: la vesícula inflamada, con el cálculo impactado en el cístico, comprime desde afuera el conducto hepático común, y aparece una ictericia obstructiva."
+    },
+    {
+      "title": "¿Por qué la litiasis vesicular no da ictericia?",
+      "text": "La pregunta de examen: ¿por qué la litiasis vesicular no da ictericia? Porque la vesícula solo almacena la bilis, no la produce. Aunque tenga cálculos, la bilis del hígado sigue bajando por el colédoco al duodeno. Hay ictericia cuando se obstruye la vía biliar principal: el colédoco o el hepático común. Las excepciones son las complicaciones de la colecistitis: el Mirizzi, o una vesícula muy inflamada que compromete las vías biliares del hígado vecino."
+    },
+    {
+      "title": "Ictericia con o sin dolor",
+      "text": "Otro dato importante. La ictericia con dolor apunta a la patología calculosa de la vía biliar: una coledocolitiasis, una colangitis, un Mirizzi. La ictericia sin dolor hace pensar en cáncer, sobre todo de la cabeza del páncreas. Y acá entran dos clásicos de parcial: la ley de Courvoisier-Terrier, ictericia progresiva con vesícula palpable no dolorosa y pérdida de peso, y el signo de Bard y Pick, esa vesícula palpable e indolora en un paciente ictérico."
+    },
+    {
+      "title": "Síndrome coledociano",
+      "text": "El síndrome coledociano, que el profesor pide como el Padre Nuestro: ictericia, coluria, e hipocolia o acolia. Puede sumar prurito, por las sales biliares, y fiebre, si hay infección. Ojo: no es una enfermedad del colédoco. Es la tríada que da cualquier obstrucción de la vía biliar principal. Las causas: un cálculo en el colédoco, parásitos como el áscaris, una disfunción del esfínter de Oddi, un cáncer de páncreas, de vesícula o de vía biliar, o adenopatías que comprimen."
+    },
+    {
+      "title": "Coledocolitiasis",
+      "text": "La coledocolitiasis es el cálculo que se escapó de la vesícula por el cístico y se impactó en el colédoco. Es la complicación más frecuente de la litiasis vesicular: alrededor del quince por ciento. Produce un síndrome coledociano. En la ecografía, el cálculo a veces no se ve, pero el colédoco está dilatado: más de diez milímetros, cuando lo normal es menos de siete u ocho. Y si el cálculo se enclava en la parte baja, en la ampolla de Vater o el esfínter de Oddi, puede dar sus dos complicaciones: la colangitis y la pancreatitis."
+    },
+    {
+      "title": "Colangitis: tríada de Charcot",
+      "text": "La colangitis tiene una tríada característica, la de Charcot: dolor en el hipocondrio derecho, fiebre e ictericia. La bilis normalmente es estéril; pero cuando queda estancada detrás de una obstrucción, bacterias que suben desde el duodeno la infectan. Es una emergencia médica, que necesita resolución inmediata."
+    },
+    {
+      "title": "Pancreatitis biliar y cáncer de la ampolla",
+      "text": "La pancreatitis biliar aparece cuando el cálculo se enclava en la ampolla de Vater y obstruye el conducto de Wirsung. La litiasis biliar es la causa más frecuente de pancreatitis. Y el cáncer de la ampolla de Vater tiene una tríada que da el profesor: ictericia, dolor abdominal y hemorragia digestiva alta, con vómitos con sangre y melena. Como todo cáncer, con pérdida de peso."
+    },
+    {
+      "title": "Laboratorio",
+      "text": "En el laboratorio, los marcadores de colestasis, que hay que saber: la fosfatasa alcalina, la gamma glutamil transpeptidasa y la cinco prima nucleotidasa. En la colecistitis y la colangitis hay leucocitosis con desviación a la izquierda. Y ante un dolor abdominal nunca se piden solo los marcadores de colestasis: también el hepatograma y la amilasa, para no pasar por alto una pancreatitis."
+    },
+    {
+      "title": "Ecografía",
+      "text": "La ecografía es el método de elección: no es invasiva y hace el diagnóstico en el noventa y cinco por ciento. El cálculo se ve como una imagen brillante que deja detrás una sombra acústica. Si hay una imagen sin sombra, hay que pensar en un pólipo o en un adenocarcinoma. En la colecistitis, la pared está engrosada, con doble contorno y líquido alrededor. Si el problema está en la vía biliar, se mide el colédoco; y el segundo estudio es la colangiorresonancia."
+    },
+    {
+      "title": "Otras formas",
+      "text": "Y otras formas, que el profesor menciona para que existan. La colecistitis crónica: la vesícula se fibrosa y se engrosa; una de sus formas es la vesícula en porcelana, con riesgo de adenocarcinoma, por eso se opera. La colecistitis alitiásica es una inflamación sin cálculo, alrededor del diez por ciento, que aparece en pacientes críticos: quemados, sépticos, con respirador o nutrición parenteral. Tiene una mortalidad alta. Los pólipos son hallazgos de la ecografía, sin sombra acústica, y pueden malignizarse. Y el cáncer de vesícula es en general un adenocarcinoma del fondo, asociado a la litiasis."
+    }
+  ]
+}

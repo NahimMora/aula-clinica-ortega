@@ -1,0 +1,473 @@
+{
+ "fps": 24,
+ "total": 18901,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-normal",
+   "inicio": 96,
+   "frames": 742,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 289
+    },
+    {
+     "inicio": 385,
+     "frames": 230
+    },
+    {
+     "inicio": 615,
+     "frames": 223
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-colico",
+   "inicio": 838,
+   "frames": 796,
+   "beats": [
+    {
+     "inicio": 838,
+     "frames": 220
+    },
+    {
+     "inicio": 1058,
+     "frames": 254
+    },
+    {
+     "inicio": 1312,
+     "frames": 322
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-colecistitis",
+   "inicio": 1634,
+   "frames": 691,
+   "beats": [
+    {
+     "inicio": 1634,
+     "frames": 172
+    },
+    {
+     "inicio": 1806,
+     "frames": 206
+    },
+    {
+     "inicio": 2012,
+     "frames": 313
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sin-ictericia",
+   "inicio": 2325,
+   "frames": 824,
+   "beats": [
+    {
+     "inicio": 2325,
+     "frames": 395
+    },
+    {
+     "inicio": 2720,
+     "frames": 240
+    },
+    {
+     "inicio": 2960,
+     "frames": 189
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-mirizzi",
+   "inicio": 3149,
+   "frames": 635,
+   "beats": [
+    {
+     "inicio": 3149,
+     "frames": 232
+    },
+    {
+     "inicio": 3381,
+     "frames": 215
+    },
+    {
+     "inicio": 3596,
+     "frames": 188
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-coledociano",
+   "inicio": 3784,
+   "frames": 743,
+   "beats": [
+    {
+     "inicio": 3784,
+     "frames": 202
+    },
+    {
+     "inicio": 3986,
+     "frames": 223
+    },
+    {
+     "inicio": 4209,
+     "frames": 318
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-colangitis",
+   "inicio": 4527,
+   "frames": 778,
+   "beats": [
+    {
+     "inicio": 4527,
+     "frames": 496
+    },
+    {
+     "inicio": 5023,
+     "frames": 282
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-courvoisier",
+   "inicio": 5305,
+   "frames": 697,
+   "beats": [
+    {
+     "inicio": 5305,
+     "frames": 233
+    },
+    {
+     "inicio": 5538,
+     "frames": 154
+    },
+    {
+     "inicio": 5692,
+     "frames": 310
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-intro",
+   "inicio": 6002,
+   "frames": 511,
+   "beats": [
+    {
+     "inicio": 6002,
+     "frames": 190
+    },
+    {
+     "inicio": 6192,
+     "frames": 321
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colelitiasis",
+   "inicio": 6513,
+   "frames": 561,
+   "beats": [
+    {
+     "inicio": 6513,
+     "frames": 264
+    },
+    {
+     "inicio": 6777,
+     "frames": 297
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-4f",
+   "inicio": 7074,
+   "frames": 835,
+   "beats": [
+    {
+     "inicio": 7074,
+     "frames": 385
+    },
+    {
+     "inicio": 7459,
+     "frames": 450
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-viaje",
+   "inicio": 7909,
+   "frames": 754,
+   "beats": [
+    {
+     "inicio": 7909,
+     "frames": 229
+    },
+    {
+     "inicio": 8138,
+     "frames": 200
+    },
+    {
+     "inicio": 8338,
+     "frames": 194
+    },
+    {
+     "inicio": 8532,
+     "frames": 131
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-asintomatica",
+   "inicio": 8663,
+   "frames": 779,
+   "beats": [
+    {
+     "inicio": 8663,
+     "frames": 422
+    },
+    {
+     "inicio": 9085,
+     "frames": 357
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colico",
+   "inicio": 9442,
+   "frames": 823,
+   "beats": [
+    {
+     "inicio": 9442,
+     "frames": 160
+    },
+    {
+     "inicio": 9602,
+     "frames": 427
+    },
+    {
+     "inicio": 10029,
+     "frames": 236
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colecistitis",
+   "inicio": 10265,
+   "frames": 1028,
+   "beats": [
+    {
+     "inicio": 10265,
+     "frames": 267
+    },
+    {
+     "inicio": 10532,
+     "frames": 397
+    },
+    {
+     "inicio": 10929,
+     "frames": 364
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-complicaciones",
+   "inicio": 11293,
+   "frames": 546,
+   "beats": [
+    {
+     "inicio": 11293,
+     "frames": 265
+    },
+    {
+     "inicio": 11558,
+     "frames": 281
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sin-ictericia",
+   "inicio": 11839,
+   "frames": 778,
+   "beats": [
+    {
+     "inicio": 11839,
+     "frames": 375
+    },
+    {
+     "inicio": 12214,
+     "frames": 167
+    },
+    {
+     "inicio": 12381,
+     "frames": 236
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ictericia-dolor",
+   "inicio": 12617,
+   "frames": 761,
+   "beats": [
+    {
+     "inicio": 12617,
+     "frames": 269
+    },
+    {
+     "inicio": 12886,
+     "frames": 492
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-coledociano",
+   "inicio": 13378,
+   "frames": 848,
+   "beats": [
+    {
+     "inicio": 13378,
+     "frames": 332
+    },
+    {
+     "inicio": 13710,
+     "frames": 211
+    },
+    {
+     "inicio": 13921,
+     "frames": 305
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-coledocolitiasis",
+   "inicio": 14226,
+   "frames": 902,
+   "beats": [
+    {
+     "inicio": 14226,
+     "frames": 325
+    },
+    {
+     "inicio": 14551,
+     "frames": 318
+    },
+    {
+     "inicio": 14869,
+     "frames": 259
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colangitis",
+   "inicio": 15128,
+   "frames": 524,
+   "beats": [
+    {
+     "inicio": 15128,
+     "frames": 203
+    },
+    {
+     "inicio": 15331,
+     "frames": 321
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-pancreatitis-ampolla",
+   "inicio": 15652,
+   "frames": 633,
+   "beats": [
+    {
+     "inicio": 15652,
+     "frames": 291
+    },
+    {
+     "inicio": 15943,
+     "frames": 342
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-lab",
+   "inicio": 16285,
+   "frames": 643,
+   "beats": [
+    {
+     "inicio": 16285,
+     "frames": 266
+    },
+    {
+     "inicio": 16551,
+     "frames": 377
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-eco",
+   "inicio": 16928,
+   "frames": 801,
+   "beats": [
+    {
+     "inicio": 16928,
+     "frames": 190
+    },
+    {
+     "inicio": 17118,
+     "frames": 423
+    },
+    {
+     "inicio": 17541,
+     "frames": 188
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otros",
+   "inicio": 17729,
+   "frames": 1052,
+   "beats": [
+    {
+     "inicio": 17729,
+     "frames": 367
+    },
+    {
+     "inicio": 18096,
+     "frames": 365
+    },
+    {
+     "inicio": 18461,
+     "frames": 320
+    }
+   ]
+  }
+ ]
+}

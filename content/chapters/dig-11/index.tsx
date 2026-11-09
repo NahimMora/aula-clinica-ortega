@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-11 — Síndromes vesiculares. Fuente: clase «Síndromes vesiculares» (Ortega) + libro p. 385–387.
@@ -110,7 +111,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ictericia',
-      kicker: 'Lo que toma ★',
+      kicker: 'Ictericia',
       title: '¿Por qué la litiasis vesicular no da ictericia?',
       priority: 'imprescindible',
       summary: 'La vesícula almacena bilis, no la produce: con el cálculo ahí, la bilis sigue bajando por el colédoco.',
@@ -149,7 +150,7 @@ const chapter: Chapter = {
     },
     {
       id: 'coledociano',
-      kicker: 'Lo que toma ★',
+      kicker: 'Vía biliar',
       title: 'Coledocolitiasis, síndrome coledociano y colangitis',
       priority: 'imprescindible',
       summary: 'Síndrome coledociano = ictericia + coluria + hipocolia/acolia. Colangitis = Charcot.',
@@ -213,6 +214,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig11-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -227,6 +229,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-d02',
+      origen: 'clase',
       prio: 'P1',
       priority: 'imprescindible',
       emphasis: true,
@@ -238,6 +241,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-d03',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'colecistitis',
@@ -251,6 +255,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-d04',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'coledociano',
@@ -260,6 +265,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-d05',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'conceptos',
@@ -272,6 +278,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig11-q01',
+      origen: 'practica',
       topic: 'Conceptos',
       difficulty: 1,
       stem: 'La colecistitis aguda litiásica se produce por:',
@@ -286,6 +293,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q02',
+      origen: 'practica',
       topic: 'Ictericia',
       difficulty: 2,
       emphasis: true,
@@ -301,6 +309,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q03',
+      origen: 'practica',
       topic: 'Coledociano',
       difficulty: 1,
       emphasis: true,
@@ -316,6 +325,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q04',
+      origen: 'practica',
       topic: 'Coledociano',
       difficulty: 2,
       stem: 'La complicación **más frecuente** de la litiasis vesicular es:',
@@ -330,6 +340,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q05',
+      origen: 'practica',
       topic: 'Colangitis',
       difficulty: 1,
       stem: 'La tríada de **Charcot** corresponde a:',
@@ -344,6 +355,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q06',
+      origen: 'practica',
       topic: 'Murphy',
       difficulty: 2,
       stem: 'El signo de Murphy positivo indica:',
@@ -358,6 +370,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q07',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       stem: 'Dolor en HD tras una comida grasa que cede en 2 horas con un antiespasmódico, **sin fiebre**:',
@@ -372,6 +385,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q08',
+      origen: 'practica',
       topic: 'Ecografía',
       difficulty: 2,
       stem: 'En la ecografía, una imagen en la vesícula **sin sombra acústica** sugiere:',
@@ -386,6 +400,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig11-q09',
+      origen: 'practica',
       topic: 'Ictericia',
       difficulty: 2,
       stem: 'Ictericia **progresiva e indolora** con vesícula palpable no dolorosa:',
@@ -430,6 +445,11 @@ const chapter: Chapter = {
     },
   ],
 
+  maneuvers: {
+    ids: ['vesicula-murphy', 'puntos-dolorosos-abdomen', 'higado-bimanual'],
+    note: 'Murphy, punto cístico y palpación del hígado.',
+  },
+
   closing: {
     map: {
       center: 'Síndromes vesiculares en una mirada',
@@ -462,6 +482,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig11-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Mujer de 45 años con dolor en HD, fiebre con escalofríos e ictericia. Pensás en:',
@@ -478,6 +499,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

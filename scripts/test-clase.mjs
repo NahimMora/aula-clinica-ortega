@@ -20,6 +20,8 @@ const CONFIG = {
   'dig-08': { mapa: ['Síndrome pilórico', 'Íleo', 'Causas', 'Clínica', 'Diagnóstico', 'Paralítico', 'Mecánico'], apartado: 'Íleo', titulo: /íleo/i, maniobra: /chapoteo|Bazuqueo/i },
   'dig-09': { mapa: ['Síndrome de malabsorción', 'Intestino irritable', 'Fases', 'Clínica', 'Diagnóstico', 'Roma', 'Alarma'], apartado: 'Diagnóstico', titulo: /van de kamer|xilosa|sospechar/i, maniobra: null },
   'dig-10': { mapa: ['Por localización', 'Séptica', 'Generalizada', 'Plastrón', 'Primaria (PBE)', 'Secundaria', 'Terciaria'], apartado: 'Clínica y examen', titulo: /clínica/i, maniobra: /Blumberg/ },
+  'dig-11': { mapa: ['Vesícula', 'Vía biliar principal', 'Colelitiasis', 'Colecistitis aguda', 'Síndrome coledociano', 'Coledocolitiasis', 'Colangitis'], apartado: 'Vía biliar', titulo: /coledociano/i, maniobra: /Murphy/ },
+  'dig-12': { mapa: ['Cuánto perdió', 'Alta', 'Baja', 'Clases I a IV', 'Ortostatismo', 'Causas', 'Formas'], apartado: 'Alta o baja', titulo: /treitz/i, maniobra: /Tacto rectal/i },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];
