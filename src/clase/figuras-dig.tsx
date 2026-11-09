@@ -2695,7 +2695,7 @@ function Pancreatitis({ t, paso, dt, vistas = ['difusion'] }: BaseFig & { vistas
       {/* páncreas inflamado y su exudado */}
       <path d={PANCREAS_D} fill={ROJO} opacity={0.18 + 0.12 * latido} transform="translate(340 300) scale(1.25) translate(-340 -300)" />
       <path d={PANCREAS_D} fill="#d58a6a" stroke="#8f4b3a" strokeWidth={3} />
-      <L x={340} y={300} c="#3a1f1a" s={20} w={750}>
+      <L x={340} y={300} c={INK} s={20}>
         Páncreas
       </L>
       <L x={320} y={24} c={ROJO} s={22}>

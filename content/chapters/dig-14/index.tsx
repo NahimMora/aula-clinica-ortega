@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-14 — Insuficiencia hepática. Fuente: clase «Insuficiencia hepática» (Ortega).
@@ -53,7 +54,7 @@ const chapter: Chapter = {
     },
     {
       id: 'aguda',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Insuficiencia hepática aguda: O’Grady y Bernuau',
       priority: 'imprescindible',
       summary: 'Lo que define el tipo es cuándo aparece la encefalopatía.',
@@ -90,7 +91,7 @@ const chapter: Chapter = {
     },
     {
       id: 'encefalopatia',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Encefalopatía hepática',
       priority: 'imprescindible',
       summary: 'El amoníaco que el hígado no convierte en urea llega al cerebro: edema cerebral, alteración de la conciencia y asterixis.',
@@ -137,7 +138,7 @@ const chapter: Chapter = {
     },
     {
       id: 'cronica',
-      kicker: 'Lo que toma',
+      kicker: 'Diferencial',
       title: 'Aguda vs crónica',
       priority: 'imprescindible',
       summary: 'La crónica es el estadio final de la cirrosis: predomina la encefalopatía crónica, con síndrome extrapiramidal.',
@@ -160,7 +161,7 @@ const chapter: Chapter = {
           ],
           refs: [I('38:19'), I('39:01'), I('44:32'), I('49:16'), I('49:58')],
         },
-        { t: 'callout', kind: 'tip', title: 'Por qué el extrapiramidal', text: 'El amoníaco (y la bilirrubina) se acumulan en los **núcleos de la base** (sustancia negra, putamen, caudado): baja la **dopamina** y aparece un cuadro tipo Parkinson. Además: cambios de personalidad, deterioro intelectual, asterixis.', refs: [I('42:30'), I('43:11'), I('44:32'), I('45:12')] },
+        { t: 'callout', kind: 'tip', title: 'Por qué el extrapiramidal', text: 'El amoníaco (y el manganeso) se acumulan en los **núcleos de la base** (sustancia negra, putamen, caudado): baja la **dopamina** y aparece un cuadro tipo Parkinson. Además: cambios de personalidad, deterioro intelectual, asterixis.', refs: [I('42:30'), I('43:11'), I('44:32'), I('45:12')] },
       ],
       refs: [I('38:19'), I('47:55')],
     },
@@ -169,6 +170,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig14-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -183,6 +185,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -197,6 +200,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-d03',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'cronica',
@@ -210,6 +214,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig14-q01',
+      origen: 'practica',
       topic: 'O’Grady',
       difficulty: 2,
       emphasis: true,
@@ -225,6 +230,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-q02',
+      origen: 'practica',
       topic: 'Encefalopatía',
       difficulty: 1,
       emphasis: true,
@@ -240,6 +246,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-q03',
+      origen: 'practica',
       topic: 'Encefalopatía',
       difficulty: 2,
       stem: 'El signo motor más característico de la encefalopatía hepática es:',
@@ -254,6 +261,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-q04',
+      origen: 'practica',
       topic: 'Encefalopatía',
       difficulty: 3,
       stem: 'La causa de muerte más frecuente en la falla hepática fulminante es:',
@@ -268,6 +276,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-q05',
+      origen: 'practica',
       topic: 'Fisiopatología',
       difficulty: 1,
       stem: 'El paciente con insuficiencia hepática sangra porque:',
@@ -282,6 +291,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-q06',
+      origen: 'practica',
       topic: 'Etiología',
       difficulty: 2,
       stem: '¿Qué fármaco advierte el profe que puede producir una falla hepática fulminante por automedicación?',
@@ -296,6 +306,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-q07',
+      origen: 'practica',
       topic: 'Aguda vs crónica',
       difficulty: 2,
       emphasis: true,
@@ -311,6 +322,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig14-q08',
+      origen: 'practica',
       topic: 'Metabólicas',
       difficulty: 2,
       stem: 'El trastorno ácido-base típico de la insuficiencia hepática es:',
@@ -385,6 +397,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig14-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Cirrótico conocido que, tras una hemorragia digestiva, está ictérico, somnoliento y con asterixis. Pensás en:',
@@ -401,6 +414,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

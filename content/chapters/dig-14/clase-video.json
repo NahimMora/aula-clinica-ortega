@@ -1,0 +1,106 @@
+{
+  "src": "media/dig-14/clase.mp4",
+  "poster": "media/dig-14/clase.jpg",
+  "vtt": "media/dig-14/clase.vtt",
+  "duration": "9:00",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Amonio y cerebro"
+    },
+    {
+      "t": 71,
+      "label": "Fisiopatología · Todo el cuerpo"
+    },
+    {
+      "t": 107,
+      "label": "Teoría · Qué es"
+    },
+    {
+      "t": 138,
+      "label": "Teoría · Aguda"
+    },
+    {
+      "t": 209,
+      "label": "Teoría · Clínica y diagnóstico"
+    },
+    {
+      "t": 234,
+      "label": "Teoría · Encefalopatía"
+    },
+    {
+      "t": 342,
+      "label": "Teoría · Clínica y diagnóstico"
+    },
+    {
+      "t": 455,
+      "label": "Teoría · Crónica"
+    }
+  ],
+  "script": [
+    {
+      "title": "El camino del amonio",
+      "text": "Empecemos por el amonio, que el profesor señala como el gran culpable. Las bacterias del intestino lo producen al digerir proteínas; la porta lo lleva al hígado, que lo transforma en urea, una sustancia que el riñón elimina sin problema. Si el hígado está insuficiente, ya no puede transformarlo. Y si además hay colaterales, la sangre del intestino directamente se saltea el hígado. Entonces el amonio, que es tóxico, se acumula en la sangre y llega al cerebro. Eso es la encefalopatía hepática."
+    },
+    {
+      "title": "Por qué se hincha el cerebro",
+      "text": "Y por qué ese amonio hincha el cerebro. En el cerebro no hay ciclo de la urea: lo que hace el astrocito, una célula de sostén de las neuronas, es unir el amonio al glutamato y formar glutamina. La glutamina se acumula dentro del astrocito, y como atrae agua por ósmosis, el astrocito se hincha. Con millones de astrocitos hinchados aparece el edema cerebral y la hipertensión endocraneana, que es la causa más frecuente de muerte en la falla hepática fulminante."
+    },
+    {
+      "title": "Lo que falla en todo el cuerpo",
+      "text": "Y el resto se entiende con la misma lógica: lo que el hígado ya no hace. Sin factores de coagulación, el paciente sangra, sobre todo del tubo digestivo alto, y puede hacer un cuadro parecido a una coagulación intravascular diseminada. Sin proteínas, anticuerpos ni complemento, queda inmunocomprometido y se infecta. Sin glucógeno ni gluconeogénesis, hace hipoglucemia. Sin albúmina, edemas y menos volumen en los vasos. Y sin degradar estrógenos, aparecen la ginecomastia y la atrofia testicular."
+    },
+    {
+      "title": "Insuficiencia hepática",
+      "text": "La insuficiencia hepática es la pérdida grave de todas las funciones del hígado: se perdió más del ochenta o noventa por ciento. Para entenderla, el profesor propone pensar al revés: todo lo que hace un hígado normal, el insuficiente deja de hacerlo. Es infrecuente, pero muy grave: la mortalidad va del cuarenta al ochenta por ciento, y si el hígado no se recupera, la única salida es el trasplante. Se divide en aguda y crónica, según el tiempo."
+    },
+    {
+      "title": "Insuficiencia aguda: O’Grady",
+      "text": "La insuficiencia hepática aguda tiene varias clasificaciones, y el profesor pide una sí o sí: la de O’Grady. Lo que la define es cuándo aparece la encefalopatía. Si aparece en menos de ocho días, es hiperaguda. Entre ocho y veintiocho días, aguda. Y entre cuatro y veinticuatro semanas, subaguda."
+    },
+    {
+      "title": "Bernuau y Trey-Davidson",
+      "text": "La otra que hay que entender es la de Bernuau, que cuenta desde la ictericia. Si la encefalopatía aparece dentro de las dos semanas de empezada la ictericia, es una falla hepática fulminante. Si aparece entre las dos y las doce semanas, subfulminante."
+    },
+    {
+      "title": "Causas",
+      "text": "Las causas son casi las mismas que las de la cirrosis, y alcanza con nombrarlas: virales, fármacos y tóxicos, metabólicas como el Wilson, las del embarazo como el síndrome HELLP, neoplasias y otras. Y el profesor advierte especialmente sobre el paracetamol, que muchos toman como si fuera un caramelo. La dosis máxima es de cuatro gramos por día; superarla, sobre todo varios días seguidos, puede producir una falla hepática fulminante."
+    },
+    {
+      "title": "Manifestaciones de lesión hepática",
+      "text": "Las manifestaciones de la lesión del hígado. Ictericia temprana, de predominio directo. Un hígado que se achica. Transaminasas muy altas al principio, que caen al final porque ya no queda hígado que las libere. La seudocolinesterasa muy baja, un marcador fiel de insuficiencia. Y bajan los factores de coagulación y la albúmina."
+    },
+    {
+      "title": "Encefalopatía hepática",
+      "text": "La encefalopatía hepática es pregunta de parcial, de choice, del oral y del final: el que no la sabe, lo bochan. Se produce porque el amonio que el hígado ya no transforma en urea llega al cerebro. Y hay una combinación que la delata: un paciente con ictericia, que tiene alterada la conciencia, confuso, somnoliento o estuporoso, y con alteraciones motoras. Hay que pensar en una encefalopatía hepática hasta que se demuestre lo contrario. La alteración motora más característica es el asterixis, o flapping: con los brazos extendidos y las manos hacia atrás, las manos aletean."
+    },
+    {
+      "title": "Grados de encefalopatía (West Haven)",
+      "text": "La encefalopatía se gradúa de cero a cuatro. El grado cero, subclínico, no da síntomas: solo se detecta con pruebas. En el grado uno aparecen euforia o ansiedad, poca atención, y el paciente invierte el sueño: duerme de día y está despierto de noche. En el dos, letargo, desorientación, y el asterixis se hace evidente. En el tres, somnolencia, estupor y confusión marcada. Y en el cuatro, coma. Sirve para el pronóstico: los grados uno y dos pueden evolucionar bien; el tres y el cuatro tienen un pronóstico muy malo a corto plazo."
+    },
+    {
+      "title": "Hipertensión endocraneana",
+      "text": "La complicación más temida es la hipertensión endocraneana por edema cerebral, que se debe al edema de los astrocitos. Es la causa más frecuente de muerte en la falla hepática fulminante: la mayoría de los que llegan a ese punto se mueren. Se anuncia con cambios en las pupilas, bradicardia, hipertensión arterial e hiperventilación; después rigidez, convulsiones, y puede terminar en paro respiratorio."
+    },
+    {
+      "title": "Infecciones, coagulación y circulación",
+      "text": "Las manifestaciones sistémicas. Las infecciones: el paciente no fabrica bien el complemento ni las proteínas de defensa, y pasan más bacterias desde el intestino: es un inmunocomprometido, y las infecciones son una causa importante de muerte. La coagulopatía: sin factores de coagulación, sangra, sobre todo del tubo digestivo alto. La circulación se vuelve hiperdinámica, con vasodilatación e hipotensión; y más de la mitad hace una insuficiencia renal, por hipoperfusión o por síndrome hepatorrenal. Ojo, la urea no sube tanto, porque el hígado enfermo fabrica poca."
+    },
+    {
+      "title": "Alteraciones metabólicas",
+      "text": "Y las alteraciones metabólicas. Hipoglucemia, porque se agotó el glucógeno y no hay gluconeogénesis. Hipopotasemia, por los diuréticos. Hiponatremia, porque la hormona antidiurética y la aldosterona retienen agua. En el equilibrio ácido base, al principio el paciente hiperventila y hace una alcalosis respiratoria; a medida que avanza aparece una acidosis metabólica por ácido láctico, que es de muy mal pronóstico. El aliento hepático, un olor característico, se debe a los mercaptanos. Y el exceso de estrógenos da ginecomastia y atrofia testicular en el hombre."
+    },
+    {
+      "title": "Diagnóstico",
+      "text": "Para el diagnóstico, la anamnesis casi siempre es indirecta: el paciente llega confuso o en coma, y es la familia la que cuenta qué tomó o qué tenía. El examen físico tiene que ser completo, porque la enfermedad afecta todo el cuerpo. En el laboratorio: la glucemia, por la hipoglucemia; la bilirrubina, sobre todo directa; el tiempo de protrombina, que se prolonga antes que nada; el pH, porque la acidosis es de mal pronóstico; la albúmina, que baja más tarde; y las transaminasas."
+    },
+    {
+      "title": "Insuficiencia hepática crónica",
+      "text": "La insuficiencia hepática crónica es el estadio final de la cirrosis. Tiene lo mismo que la aguda, pero lo que predomina es la encefalopatía hepática crónica, un síndrome neuropsiquiátrico. El paciente altera su conciencia, empezando por el sueño, cambia su personalidad, como si fuera bipolar, y se deteriora intelectualmente. En lo motor, el asterixis y signos extrapiramidales, como la rigidez en rueda dentada. Y suele empeorar por un precipitante: una hemorragia digestiva, que aporta proteínas al intestino; una infección; los diuréticos; la constipación; los sedantes."
+    },
+    {
+      "title": "Aguda o crónica: el cuadro",
+      "text": "Y el diagnóstico diferencial, que puede ser pregunta de examen. La aguda aparece de golpe y progresa; la crónica es gradual y fluctúa. La aguda hace edema cerebral; la crónica, no. En la aguda hay necrosis masiva; en la crónica, una cirrosis con shunts portosistémicos. La falla multiorgánica es común en la aguda e inusual en la crónica, que en cambio suele tener un precipitante. Y el pronóstico es peor en la aguda. Y un dato del examen físico que las separa: los signos extrapiramidales, parecidos a un Parkinson, son de la crónica."
+    }
+  ]
+}

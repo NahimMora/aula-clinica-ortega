@@ -1,0 +1,277 @@
+{
+ "fps": 24,
+ "total": 12971,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-amonio",
+   "inicio": 96,
+   "frames": 870,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 374
+    },
+    {
+     "inicio": 470,
+     "frames": 266
+    },
+    {
+     "inicio": 736,
+     "frames": 230
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-edema",
+   "inicio": 966,
+   "frames": 744,
+   "beats": [
+    {
+     "inicio": 966,
+     "frames": 320
+    },
+    {
+     "inicio": 1286,
+     "frames": 180
+    },
+    {
+     "inicio": 1466,
+     "frames": 244
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sistemicas",
+   "inicio": 1710,
+   "frames": 869,
+   "beats": [
+    {
+     "inicio": 1710,
+     "frames": 379
+    },
+    {
+     "inicio": 2089,
+     "frames": 490
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 2579,
+   "frames": 739,
+   "beats": [
+    {
+     "inicio": 2579,
+     "frames": 388
+    },
+    {
+     "inicio": 2967,
+     "frames": 351
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ogrady",
+   "inicio": 3318,
+   "frames": 581,
+   "beats": [
+    {
+     "inicio": 3318,
+     "frames": 286
+    },
+    {
+     "inicio": 3604,
+     "frames": 295
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-bernuau",
+   "inicio": 3899,
+   "frames": 416,
+   "beats": [
+    {
+     "inicio": 3899,
+     "frames": 416
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas",
+   "inicio": 4315,
+   "frames": 723,
+   "beats": [
+    {
+     "inicio": 4315,
+     "frames": 341
+    },
+    {
+     "inicio": 4656,
+     "frames": 382
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hepaticas",
+   "inicio": 5038,
+   "frames": 581,
+   "beats": [
+    {
+     "inicio": 5038,
+     "frames": 581
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-encefalopatia",
+   "inicio": 5619,
+   "frames": 964,
+   "beats": [
+    {
+     "inicio": 5619,
+     "frames": 328
+    },
+    {
+     "inicio": 5947,
+     "frames": 403
+    },
+    {
+     "inicio": 6350,
+     "frames": 233
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-grados",
+   "inicio": 6583,
+   "frames": 974,
+   "beats": [
+    {
+     "inicio": 6583,
+     "frames": 744
+    },
+    {
+     "inicio": 7327,
+     "frames": 230
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-edema",
+   "inicio": 7557,
+   "frames": 651,
+   "beats": [
+    {
+     "inicio": 7557,
+     "frames": 375
+    },
+    {
+     "inicio": 7932,
+     "frames": 276
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sistemicas",
+   "inicio": 8208,
+   "frames": 960,
+   "beats": [
+    {
+     "inicio": 8208,
+     "frames": 388
+    },
+    {
+     "inicio": 8596,
+     "frames": 183
+    },
+    {
+     "inicio": 8779,
+     "frames": 389
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-metabolicas",
+   "inicio": 9168,
+   "frames": 959,
+   "beats": [
+    {
+     "inicio": 9168,
+     "frames": 399
+    },
+    {
+     "inicio": 9567,
+     "frames": 560
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dx",
+   "inicio": 10127,
+   "frames": 796,
+   "beats": [
+    {
+     "inicio": 10127,
+     "frames": 381
+    },
+    {
+     "inicio": 10508,
+     "frames": 415
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cronica",
+   "inicio": 10923,
+   "frames": 968,
+   "beats": [
+    {
+     "inicio": 10923,
+     "frames": 316
+    },
+    {
+     "inicio": 11239,
+     "frames": 382
+    },
+    {
+     "inicio": 11621,
+     "frames": 270
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-aguda-cronica",
+   "inicio": 11891,
+   "frames": 960,
+   "beats": [
+    {
+     "inicio": 11891,
+     "frames": 745
+    },
+    {
+     "inicio": 12636,
+     "frames": 215
+    }
+   ]
+  }
+ ]
+}

@@ -32,6 +32,10 @@ import { clase as planDig11 } from '../../content/chapters/dig-11/clase';
 import tiemposDig11 from '../../content/chapters/dig-11/clase-tiempos.json';
 import { clase as planDig12 } from '../../content/chapters/dig-12/clase';
 import tiemposDig12 from '../../content/chapters/dig-12/clase-tiempos.json';
+import { clase as planDig13 } from '../../content/chapters/dig-13/clase';
+import tiemposDig13 from '../../content/chapters/dig-13/clase-tiempos.json';
+import { clase as planDig14 } from '../../content/chapters/dig-14/clase';
+import tiemposDig14 from '../../content/chapters/dig-14/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -193,6 +197,8 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'dig-14-clase', titulo: 'Insuficiencia hepática', plan: planDig14, tiempos: tiemposDig14 as TiemposClase },
+  { id: 'dig-13-clase', titulo: 'Cirrosis e hipertensión portal', plan: planDig13, tiempos: tiemposDig13 as TiemposClase },
   { id: 'dig-12-clase', titulo: 'Hemorragias digestivas', plan: planDig12, tiempos: tiemposDig12 as TiemposClase },
   { id: 'dig-11-clase', titulo: 'Síndromes vesiculares', plan: planDig11, tiempos: tiemposDig11 as TiemposClase },
   { id: 'dig-10-clase', titulo: 'Peritonitis', plan: planDig10, tiempos: tiemposDig10 as TiemposClase },
