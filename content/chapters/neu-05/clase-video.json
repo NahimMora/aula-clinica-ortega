@@ -1,0 +1,126 @@
+{
+  "src": "media/neu-05/clase.mp4",
+  "poster": "media/neu-05/clase.jpg",
+  "vtt": "media/neu-05/clase.vtt",
+  "duration": "10:32",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · La vía piramidal"
+    },
+    {
+      "t": 69,
+      "label": "Fisiopatología · Hemiplejía alterna"
+    },
+    {
+      "t": 103,
+      "label": "Fisiopatología · Parkinson"
+    },
+    {
+      "t": 133,
+      "label": "Fisiopatología · El cerebelo"
+    },
+    {
+      "t": 169,
+      "label": "Teoría · Equilibrio"
+    },
+    {
+      "t": 207,
+      "label": "Teoría · Piramidal"
+    },
+    {
+      "t": 336,
+      "label": "Teoría · Topografía"
+    },
+    {
+      "t": 394,
+      "label": "Teoría · 2.ª motoneurona"
+    },
+    {
+      "t": 454,
+      "label": "Teoría · Extrapiramidal"
+    },
+    {
+      "t": 561,
+      "label": "Teoría · Cerebeloso y cordonal"
+    }
+  ],
+  "script": [
+    {
+      "title": "El camino de la vía piramidal",
+      "text": "La vía piramidal es la vía motora. Nace en la corteza motora, en la célula de Betz, y baja por la cápsula interna, el pedúnculo cerebral, la protuberancia y el bulbo. En el bulbo, la mayoría de sus fibras, un ochenta a noventa por ciento, se cruzan al otro lado: es la decusación piramidal. Por eso el hemisferio izquierdo maneja el lado derecho del cuerpo. Las fibras bajan por la médula y hacen sinapsis con la segunda motoneurona, en el asta anterior, que llega al músculo a través del nervio periférico."
+    },
+    {
+      "title": "Fláccida primero, espástica después",
+      "text": "Si la vía piramidal se corta, por ejemplo en la cápsula interna, el síntoma principal es la debilidad, del lado opuesto. Al principio, en el primer mes, el lado paralizado está flojo, hipotónico: es una hemiplejía fláccida. Después el arco reflejo queda sin el control de arriba y aparece la espasticidad, con el signo de la navaja, los reflejos exaltados, el Babinski y el clonus: la hemiplejía espástica."
+    },
+    {
+      "title": "Hemiplejía alterna: el par de un lado, el cuerpo del otro",
+      "text": "La hemiplejía alterna se entiende con el dibujo. La lesión está en el tronco encefálico, donde la vía piramidal todavía no se cruzó: por eso el brazo y la pierna se paralizan del lado opuesto. Pero en el mismo lugar del tronco está el núcleo de un par craneal, que no se cruza: ese par se paraliza del mismo lado de la lesión. Si la lesión es en el mesencéfalo, con el tercer par, es el síndrome de Weber. Si es en la protuberancia, con el séptimo, es el de Millard-Gubler."
+    },
+    {
+      "title": "Parkinson: se apaga la sustancia negra",
+      "text": "La enfermedad de Parkinson es neurodegenerativa y de causa desconocida. En las neuronas de la sustancia negra se acumulan la alfa-sinucleína y los cuerpos de Lewy. Esas neuronas mueren, y el cuerpo estriado se queda sin dopamina; la acetilcolina queda en exceso. La dopamina es la que facilita iniciar el movimiento voluntario: sin ella aparecen la lentitud, la bradicinesia; la rigidez en rueda dentada; y el temblor de reposo."
+    },
+    {
+      "title": "Qué hace el cerebelo, y qué pasa sin él",
+      "text": "El cerebelo coordina. Sus funciones normales: la eumetría, medir exactamente el movimiento; la isostenia, usar la fuerza justa; la sinergia, que agonistas y antagonistas trabajen juntos; la diadococinesia, hacer movimientos alternantes rápidos; y regular el tono. Cuando se lesiona, aparece lo contrario: la dismetría, el paciente se pasa o no llega; la asinergia; la adiadococinesia; y la hipotonía. Una docente preguntó exactamente eso: cuáles son las funciones normales del cerebelo."
+    },
+    {
+      "title": "Trastorno del equilibrio: tres síndromes",
+      "text": "Ante un paciente con trastorno del equilibrio, la palabra que tiene que aparecer es ataxia, y hay que pensar en tres síndromes: el vestibular, el cerebeloso y el cordonal posterior de Goll y Burdach. El vestibular camina en estrella, tiene vértigo periférico, nistagmo horizontal y Romberg positivo. El cerebeloso camina como un ebrio, tiene vértigo central, nistagmo vertical o rotatorio, Romberg negativo e hipotonía. El cordonal posterior camina taloneando y mirándose los pies, no tiene vértigo ni nistagmo, su Romberg es positivo, y pierde la sensibilidad profunda."
+    },
+    {
+      "title": "Síndrome piramidal",
+      "text": "El síndrome piramidal es el conjunto de signos y síntomas que aparecen por una lesión de la vía piramidal, y el síntoma cardinal es la debilidad muscular. Puede ser de la primera motoneurona, el síndrome piramidal propiamente dicho, o de la segunda. Sus causas pueden ser congénitas, como la parálisis cerebral infantil, o adquiridas, sobre todo vasculares, como el accidente cerebrovascular, los traumatismos o los tumores. Paresia es menos fuerza; plejía, ninguna; y según dónde, monoplejía, hemiplejía, paraplejía o cuadriplejía."
+    },
+    {
+      "title": "Qué se encuentra al examen",
+      "text": "Al examen: la fuerza está disminuida o ausente, del lado opuesto si la lesión está por arriba del bulbo. El tono está aumentado, con espasticidad y el signo de la navaja, aunque el primer mes hay hipotonía. No hay atrofia, salvo por desuso. Los reflejos profundos están exaltados, y los superficiales, los cutaneoabdominales y el cremasteriano, abolidos. Aparecen el signo de Babinski y sus sucedáneos, Oppenheim, Gordon y Schaeffer, el clonus, y las sincinesias."
+    },
+    {
+      "title": "Navaja o rueda dentada",
+      "text": "Hay dos síndromes con hipertonía, y se distinguen al estirar el codo. En el piramidal, la espasticidad tiene el signo de la navaja: el brazo resiste y de golpe cede, como una navaja que se cierra. En el extrapiramidal, el Parkinson, la rigidez tiene el signo de la rueda dentada: cede a saltos, tac, tac, tac, como un engranaje. Y en el Parkinson los reflejos son normales."
+    },
+    {
+      "title": "Hemiplejía fláccida y espástica",
+      "text": "La hemiplejía puede ser fláccida, el primer mes, con hipotonía. La que se pregunta en los exámenes es la espástica: el brazo pegado al cuerpo, la marcha en guadaña, o del segador, la hiperreflexia, el Babinski, el clonus, las sincinesias y la parálisis facial central del mismo lado del cuerpo. Y el paciente en coma con una hemiplejía tiene la cabeza y los ojos desviados, mirando hacia el lado de la lesión, y el signo del fumador de pipa."
+    },
+    {
+      "title": "Dónde está la lesión",
+      "text": "La topografía, pregunta de final. La hemiplejía directa toma el brazo, la pierna y la cara del mismo lado, opuesto a la lesión, y la lesión puede ser cortical, capsular o talámica. La más frecuente es la de la cápsula interna. La hemiplejía alterna es la de la lesión del tronco: un par craneal del lado de la lesión y el cuerpo del lado opuesto. Y la lesión medular da cuadriplejía si es alta, cervical, o paraplejía si es por debajo de la segunda dorsal."
+    },
+    {
+      "title": "Weber y Millard-Gubler",
+      "text": "Las dos hemiplejías alternas que se preguntan. El síndrome de Weber: lesión del mesencéfalo, con parálisis del tercer par del mismo lado, ojo afuera y abajo con ptosis, y hemiplejía del lado opuesto. Y el de Millard-Gubler: lesión de la protuberancia, con parálisis facial periférica, y también del sexto par, del mismo lado, y hemiplejía del lado opuesto."
+    },
+    {
+      "title": "Segunda motoneurona: la triple A",
+      "text": "La pregunta de siempre en los finales: la diferencia entre la primera y la segunda motoneurona. La segunda motoneurona tiene la triple A: atonía, arreflexia y atrofia, y además fasciculaciones. La lesión está en el asta anterior de la médula o en el nervio, y la parálisis es fláccida, sin Babinski."
+    },
+    {
+      "title": "Las manos y el pie caído",
+      "text": "Las mononeuropatías que preguntan los profesores. La lesión del radial da la mano caída, porque no puede extender la muñeca. La del mediano, la mano del predicador, porque no flexiona el índice ni el pulgar. La del cubital, la mano en garra. Y la del ciático poplíteo externo, el pie caído, con la marcha en steppage, típica de la neuropatía diabética, alcohólica y del Guillain-Barré. Y una facies que el profesor sí pregunta: la de Claude Bernard-Horner, con ptosis, miosis y enoftalmos, por lesión de la vía simpática cervical."
+    },
+    {
+      "title": "Síndrome extrapiramidal",
+      "text": "El síndrome extrapiramidal es la lesión de los núcleos de la base: el caudado, el núcleo lenticular, formado por el putamen y el pálido, el subtalámico de Luys y la sustancia negra. Lo que se pregunta siempre en el final es su clínica. Tiene hipertonía, una rigidez, y movimientos involuntarios; y el paciente pierde los movimientos automáticos y asociados, como la mímica y el balanceo de los brazos al caminar. El más frecuente es el Parkinson."
+    },
+    {
+      "title": "La tríada del Parkinson",
+      "text": "Lo que el profesor pregunta siempre: la tríada del Parkinson. Bradicinesia, la lentitud y la dificultad para iniciar el movimiento; rigidez, con el signo de la rueda dentada; y temblor de reposo, lento y grosero. No saberla es para bochazo. Y la otra pregunta: qué núcleo está lesionado. La sustancia negra, en su porción compacta, por la acumulación de cuerpos de Lewy."
+    },
+    {
+      "title": "Cómo se ve un parkinsoniano",
+      "text": "El paciente parkinsoniano tiene la cara inexpresiva, de jugador de póker. Camina a pequeños pasos, gira en bloque, y si se lo empuja levemente tiende a caerse hacia atrás. Escribe cada vez más chico, la micrografía, y el espiral le sale temblado. El reflejo glabelar no se agota: parpadea una y otra vez. Los reflejos osteotendinosos son normales. Tiene seborrea, sialorrea, sudoración, y suele perder el olfato. El parkinsonismo es el mismo cuadro, pero con una causa conocida, sobre todo fármacos, como los antipsicóticos, o intoxicaciones, como el manganeso o el monóxido de carbono. A diferencia del Parkinson, puede revertir."
+    },
+    {
+      "title": "Síndrome cerebeloso",
+      "text": "El síndrome cerebeloso. Su tríada, pregunta de examen: vértigo central, cefalea holocraneana y vómitos en chorro. Las causas más frecuentes son las hemorragias y los tumores. En la posición, el paciente es atáxico, con la base de sustentación amplia, pero no se cae al cerrar los ojos: Romberg negativo. Tiene temblor de actitud, desviaciones al caminar e hipotonía. En el movimiento: dismetría en la prueba índice-nariz y talón-rodilla, asinergia, adiadococinesia, temblor intencional, marcha de ebrio, letra grande o megalografía, palabra escandida y nistagmo."
+    },
+    {
+      "title": "Síndrome cordonal posterior",
+      "text": "El síndrome cordonal posterior es la lesión de los cordones posteriores de Goll y Burdach: el paciente pierde la sensibilidad profunda, la vibración, la posición y la presión. Por eso es atáxico, pero la vista lo compensa: con los ojos cerrados se cae, Romberg positivo. Camina taloneando y mirándose los pies, y no tiene vértigo."
+    }
+  ]
+}

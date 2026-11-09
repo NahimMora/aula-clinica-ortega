@@ -37,6 +37,7 @@ const CONFIG = {
   'neu-03': { mapa: ['Pares craneales I', 'I olfatorio', 'II óptico', 'III, IV y VI', 'Pupila'], apartado: 'II óptico', titulo: /óptico/i, maniobra: null },
   'neu-04': { mapa: ['Pares craneales II', 'V trigémino', 'VII facial', 'VIII', 'La lengua', 'IX a XII'], apartado: 'VII facial', titulo: /facial/i, maniobra: null },
   'neu-05': { mapa: ['Síndromes motores', 'Piramidal', 'Alternas', '2.ª motoneurona', 'Extrapiramidal', 'Cerebeloso'], apartado: 'Extrapiramidal', titulo: /extrapiramidal/i, maniobra: null },
+  'neu-06': { mapa: ['Otros síndromes', 'Sensibilidad', 'Hipertensión endocraneana', 'Punción lumbar', 'Síndrome meníngeo'], apartado: 'Síndrome meníngeo', titulo: /meningismo/i, maniobra: null },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

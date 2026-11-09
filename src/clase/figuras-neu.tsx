@@ -1367,7 +1367,7 @@ function Craneo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
       <ellipse cx={330} cy={392} rx={70} ry={42} fill="#c9a0a0" stroke="#9a7a76" strokeWidth={3} />
       <ellipse cx={470} cy={392} rx={70} ry={42} fill="#c9a0a0" stroke="#9a7a76" strokeWidth={3} />
       <path d="M380,300 L420,300 L424,360 L418,470 L382,470 L376,360 Z" fill="#b8948f" stroke="#7d5f5a" strokeWidth={3} />
-      <rect x={384} y={470} width={32} height={80} rx={12} fill="#c4a59f" stroke="#7d5f5a" strokeWidth={3} />
+      <rect x={384} y={470} width={32} height={46} rx={12} fill="#c4a59f" stroke="#7d5f5a" strokeWidth={3} />
       {/* presión */}
       {hte &&
         [0, 1, 2, 3, 4, 5].map((i) => {
@@ -1395,7 +1395,7 @@ function Craneo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
           <L x={240} y={150} c={comp ? 'var(--v-gold)' : INK2} s={20}>
             Parénquima
           </L>
-          <L x={600} y={70} a="start" c={comp ? R : INK2} s={20}>
+          <L x={384} y={84} a="end" c={comp ? R : INK2} s={20}>
             Sangre (senos venosos)
           </L>
           <L x={560} y={150} c={comp ? 'var(--v-sky)' : INK2} s={20}>
@@ -1426,7 +1426,7 @@ function Craneo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
           Amígdalas → agujero occipital
         </L>
       )}
-      <L x={400} y={540} c={hte ? R : INK} s={21}>
+      <L x={400} y={544} c={hte ? R : INK} s={21}>
         {v === 'normal'
           ? 'Tres componentes dentro de una caja rígida'
           : comp
@@ -1511,7 +1511,7 @@ function Meningeos({ t, paso, dt, vistas = ['reposo'] }: BaseFig & { vistas?: Vi
   const lat = 0.5 + 0.5 * Math.sin(t * 3);
   // Paciente acostado boca arriba: cabeza a la izquierda.
   const cabezaAlta = v === 'nuca' || v === 'brudzinski';
-  const ang = cabezaAlta ? 32 * u : 0;
+  const ang = cabezaAlta ? 42 * u : 0;
   const rad = (ang * Math.PI) / 180;
   const cuello = { x: 230, y: 300 };
   const cab = { x: cuello.x - Math.cos(rad) * 60, y: cuello.y - Math.sin(rad) * 60 - 6 };

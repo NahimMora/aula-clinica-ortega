@@ -1,0 +1,337 @@
+{
+ "fps": 24,
+ "total": 15166,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-via-piramidal",
+   "inicio": 96,
+   "frames": 865,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 305
+    },
+    {
+     "inicio": 401,
+     "frames": 322
+    },
+    {
+     "inicio": 723,
+     "frames": 238
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-espasticidad",
+   "inicio": 961,
+   "frames": 714,
+   "beats": [
+    {
+     "inicio": 961,
+     "frames": 210
+    },
+    {
+     "inicio": 1171,
+     "frames": 205
+    },
+    {
+     "inicio": 1376,
+     "frames": 299
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-alterna",
+   "inicio": 1675,
+   "frames": 804,
+   "beats": [
+    {
+     "inicio": 1675,
+     "frames": 325
+    },
+    {
+     "inicio": 2000,
+     "frames": 218
+    },
+    {
+     "inicio": 2218,
+     "frames": 261
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-parkinson",
+   "inicio": 2479,
+   "frames": 732,
+   "beats": [
+    {
+     "inicio": 2479,
+     "frames": 273
+    },
+    {
+     "inicio": 2752,
+     "frames": 180
+    },
+    {
+     "inicio": 2932,
+     "frames": 279
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-cerebelo",
+   "inicio": 3211,
+   "frames": 846,
+   "beats": [
+    {
+     "inicio": 3211,
+     "frames": 465
+    },
+    {
+     "inicio": 3676,
+     "frames": 381
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ataxia",
+   "inicio": 4057,
+   "frames": 922,
+   "beats": [
+    {
+     "inicio": 4057,
+     "frames": 301
+    },
+    {
+     "inicio": 4358,
+     "frames": 621
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piramidal",
+   "inicio": 4979,
+   "frames": 891,
+   "beats": [
+    {
+     "inicio": 4979,
+     "frames": 391
+    },
+    {
+     "inicio": 5370,
+     "frames": 500
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piramidal-signos",
+   "inicio": 5870,
+   "frames": 821,
+   "beats": [
+    {
+     "inicio": 5870,
+     "frames": 430
+    },
+    {
+     "inicio": 6300,
+     "frames": 391
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-navaja",
+   "inicio": 6691,
+   "frames": 662,
+   "beats": [
+    {
+     "inicio": 6691,
+     "frames": 333
+    },
+    {
+     "inicio": 7024,
+     "frames": 329
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hemiplejias",
+   "inicio": 7353,
+   "frames": 726,
+   "beats": [
+    {
+     "inicio": 7353,
+     "frames": 485
+    },
+    {
+     "inicio": 7838,
+     "frames": 241
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-topografia",
+   "inicio": 8079,
+   "frames": 790,
+   "beats": [
+    {
+     "inicio": 8079,
+     "frames": 410
+    },
+    {
+     "inicio": 8489,
+     "frames": 380
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-weber",
+   "inicio": 8869,
+   "frames": 607,
+   "beats": [
+    {
+     "inicio": 8869,
+     "frames": 344
+    },
+    {
+     "inicio": 9213,
+     "frames": 263
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-segunda",
+   "inicio": 9476,
+   "frames": 524,
+   "beats": [
+    {
+     "inicio": 9476,
+     "frames": 335
+    },
+    {
+     "inicio": 9811,
+     "frames": 189
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mononeuropatias",
+   "inicio": 10000,
+   "frames": 904,
+   "beats": [
+    {
+     "inicio": 10000,
+     "frames": 657
+    },
+    {
+     "inicio": 10657,
+     "frames": 247
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-extrapiramidal",
+   "inicio": 10904,
+   "frames": 742,
+   "beats": [
+    {
+     "inicio": 10904,
+     "frames": 384
+    },
+    {
+     "inicio": 11288,
+     "frames": 358
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-triada-parkinson",
+   "inicio": 11646,
+   "frames": 674,
+   "beats": [
+    {
+     "inicio": 11646,
+     "frames": 435
+    },
+    {
+     "inicio": 12081,
+     "frames": 239
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-parkinson-clinica",
+   "inicio": 12320,
+   "frames": 1153,
+   "beats": [
+    {
+     "inicio": 12320,
+     "frames": 435
+    },
+    {
+     "inicio": 12755,
+     "frames": 334
+    },
+    {
+     "inicio": 13089,
+     "frames": 384
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cerebeloso",
+   "inicio": 13473,
+   "frames": 1007,
+   "beats": [
+    {
+     "inicio": 13473,
+     "frames": 339
+    },
+    {
+     "inicio": 13812,
+     "frames": 333
+    },
+    {
+     "inicio": 14145,
+     "frames": 335
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cordonal",
+   "inicio": 14480,
+   "frames": 566,
+   "beats": [
+    {
+     "inicio": 14480,
+     "frames": 276
+    },
+    {
+     "inicio": 14756,
+     "frames": 290
+    }
+   ]
+  }
+ ]
+}

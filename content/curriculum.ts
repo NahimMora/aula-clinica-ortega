@@ -74,7 +74,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('neuro', 'neu-02', 'Motivos de consulta neurológicos II', 'Motivos de consulta', 'Movimientos involuntarios (temblor, corea, fasciculaciones), debilidad (motoneuronas, neuropatías, Guillain-Barré, miopatías), convulsiones y sueño.', 'Clases MC Neurología 3–4', 'published'),
       ch('neuro', 'neu-03', 'Pares craneales I', 'Pares craneales', 'Clasificación y origen; olfatorio; óptico (vía óptica, hemianopsias); oculomotores III, IV y VI, pupila y nistagmo.', 'Clases Pares craneales 1–3', 'published'),
       ch('neuro', 'neu-04', 'Pares craneales II', 'Pares craneales', 'Trigémino, facial (central y periférica), vestibulococlear (Weber y Rinne), IX a XII y la inervación de la lengua.', 'Clases Pares craneales 4–6', 'published'),
-      ch('neuro', 'neu-05', 'Motilidad y síndromes motores', 'Síndromes', 'Piramidal, segunda motoneurona, extrapiramidal y cerebeloso: la tabla comparativa de la pizarra.', 'Síndromes del SN · Libro p461–509 · Pizarras'),
+      ch('neuro', 'neu-05', 'Motilidad y síndromes motores', 'Síndromes', 'Ataxia vestibular, cerebelosa y cordonal; piramidal (1.ª y 2.ª motoneurona, alternas); Parkinson y cerebeloso con sus tríadas.', 'Clases Síndromes del SN 1–4 · Meet 24/10 · Libro p493–505', 'published'),
       ch('neuro', 'neu-06', 'Otros síndromes neurológicos', 'Síndromes', 'Sensibilidad, síndrome meníngeo e hipertensión endocraneana.', 'Síndromes del SN · Libro p481–506'),
     ],
   },
