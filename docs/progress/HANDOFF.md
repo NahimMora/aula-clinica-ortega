@@ -15,10 +15,13 @@ Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase 
 | dig-05 | ✅ | ✅ | ✅ 18:38 | ✅ 16,4 MB | ✅ verificado | figura `rha` con `todas` |
 | dig-06 | ✅ | ✅ | ✅ 8:17 | ✅ 6,7 MB | ✅ verificado | síndrome esofágico (el mensaje del commit da0c378 dice «hemorragia» por error) |
 | dig-07 | ✅ | ✅ | ✅ 10:09 | ✅ 9,0 MB | ✅ verificado | |
-| dig-08 | ✅ | ✅ | ✅ 8:37 | ✅ 7,5 MB | ✅ | |
-| dig-09 | ✅ | ✅ | ✅ 15:03 | ✅ 13,2 MB | ✅ | figura nueva `absorcion` |
-| dig-10 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | figura nueva `peritoneo`; falta registrar en Root.tsx |
-| dig-11 … dig-15 | ⏳ | | | | | |
+| dig-08 | ✅ | ✅ | ✅ 8:37 | ✅ 7,5 MB | ✅ verificado | |
+| dig-09 | ✅ | ✅ | ✅ 15:03 | ✅ 13,2 MB | ✅ verificado | figura nueva `absorcion` |
+| dig-10 | ✅ | ✅ | ✅ 10:43 | ✅ 10,0 MB | ✅ (falta test en URL pública) | figura nueva `peritoneo` |
+| dig-11 | ✅ | ✅ | ✅ 13:08 | ✅ 11,5 MB | ✅ (falta test en URL pública) | reutiliza `biliar` |
+| dig-12 | ✅ | ✅ | ✅ 13:19 | ⏳ render mudo lanzado (video/out/dig-12-clase-muda.mp4); falta codificar, test, commit | ⏳ | figura nueva `hipovolemia`; ya registrado en Root.tsx |
+| dig-13 | ✅ escrito (sin revisar capturas) | ⏳ | ⏳ | ⏳ | ⏳ | figura nueva `portal`; index.tsx integrado y CONFIG agregado; falta traceability/dig-13.md, capturas, TTS (agregar PRONUNCIA: Child-Pugh, Laennec, Dupuytren, Budd-Chiari, GASA), Root, render |
+| dig-14, dig-15 | ⏳ | | | | | |
 | ren-01 … ren-07 | ⏳ | | | | | |
 | neu-01 … neu-06 | ⏳ (crear capítulos) | | | | | |
 | Maniobras neuro / soma | ⏳ | | | | | grupos en `soon` |
