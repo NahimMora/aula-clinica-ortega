@@ -1,0 +1,102 @@
+{
+  "src": "media/dig-08/clase.mp4",
+  "poster": "media/dig-08/clase.jpg",
+  "vtt": "media/dig-08/clase.vtt",
+  "duration": "8:37",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Síndrome pilórico"
+    },
+    {
+      "t": 84,
+      "label": "Fisiopatología · Íleo"
+    },
+    {
+      "t": 168,
+      "label": "Teoría · Síndrome pilórico"
+    },
+    {
+      "t": 312,
+      "label": "Teoría · Íleo"
+    }
+  ],
+  "script": [
+    {
+      "title": "El estómago que no se vacía",
+      "text": "Empecemos por el síndrome pilórico. El píloro, la puerta de salida del estómago, se obstruye: por una úlcera que se fibrosó, un tumor, o una hipertrofia congénita. El estómago no puede vaciarse, y el contenido se acumula durante horas. El estómago busca otra salida: el paciente vomita alimentos que comió horas antes, y sin bilis, porque el duodeno queda del otro lado de la obstrucción. Y como no pasan nutrientes ni líquido al intestino, pierde peso, se deshidrata y se constipa."
+    },
+    {
+      "title": "Reversible o irreversible",
+      "text": "Y por qué algunos se resuelven y otros no. En los reversibles, lo que estrecha el píloro es la inflamación, el edema y el espasmo alrededor de una úlcera activa: se resuelve solo o con tratamiento médico. En los irreversibles hay fibrosis, una cicatriz que deforma el píloro, o un estómago que perdió su tono después de luchar mucho tiempo. Esos van a cirugía."
+    },
+    {
+      "title": "Del peristaltismo visible al chapoteo",
+      "text": "En el examen se ve la misma historia. Al principio el estómago lucha contra el obstáculo, y a veces se ven sus contracciones a través de la pared. Cuando se agota, queda distendido y flácido, lleno de líquido y aire: es el momento del chapoteo gástrico."
+    },
+    {
+      "title": "Íleo: dos maneras de detenerse",
+      "text": "Pasemos al íleo, que es la parálisis del tránsito intestinal. Puede ser paralítico: todo el intestino deja de moverse, y el abdomen queda en silencio. O mecánico: hay un obstáculo. Por debajo, el intestino se paraliza; por arriba, lucha con contracciones fuertes para vencerlo."
+    },
+    {
+      "title": "Lucha y agotamiento",
+      "text": "En el íleo mecánico, por arriba del obstáculo el intestino se contrae con violencia: cada contracción es un cólico, y se auscultan ruidos de lucha. Si la presión supera la resistencia elástica de la pared, el asa se relaja y se dilata, y el dolor pasa a ser continuo. Y si la distensión o un estrangulamiento comprometen la irrigación, aparecen signos peritoneales y el riesgo de isquemia."
+    },
+    {
+      "title": "Vómitos que cambian",
+      "text": "Y el vómito del íleo cambia con el tiempo, porque el contenido refluye desde el nivel de la obstrucción. Primero es alimentario, después bilioso, y al final fecaloide, cuando las bacterias proliferan en el contenido estancado."
+    },
+    {
+      "title": "Lo que se pierde",
+      "text": "El paciente que vomita pierde agua, potasio y cloro: se deshidrata, hace hipopotasemia y, si predomina la pérdida de cloro, alcalosis metabólica. Además, la pared del asa distendida deja escapar proteínas y líquido hacia la luz, y eso empeora la hipovolemia."
+    },
+    {
+      "title": "Síndrome pilórico: qué es",
+      "text": "El síndrome pilórico es el conjunto de signos y síntomas que produce una obstrucción del píloro, que impide que el estómago se vacíe por más de cuatro horas. El profesor avisa que en el choice casi no se pregunta, pero en el oral sí: la definición, las causas, y sobre todo la clínica y el diagnóstico."
+    },
+    {
+      "title": "Causas",
+      "text": "Las causas pueden ser obstructivas, las más frecuentes: una úlcera cerca del píloro, un tumor, una inflamación vecina como una pancreatitis, y la estenosis pilórica congénita del recién nacido, que el profesor destaca: el bebé nace con el músculo del píloro hipertrofiado. O no obstructivas: un trastorno de la inervación, en el que el esfínter no se relaja, como en la neuropatía diabética o con algunos fármacos."
+    },
+    {
+      "title": "Clínica: el vómito",
+      "text": "Y la clínica, que el profesor pide saber sí o sí. El síntoma cardinal es el vómito, que no se olvida nunca: de alimentos, cuatro a seis horas después de comer. Le sigue la pérdida de peso. Puede haber saciedad precoz, dolor epigástrico en los adultos con úlcera, y constipación. Y muchas veces el vómito llega sin náuseas."
+    },
+    {
+      "title": "En el recién nacido",
+      "text": "En el recién nacido, el cuadro es muy típico. Un bebé de menos de un mes que vomita todo, llora sin parar y no aumenta de peso. Y a veces se palpa el píloro hipertrofiado, como una aceituna en el epigastrio: la oliva pilórica."
+    },
+    {
+      "title": "Examen físico",
+      "text": "En el examen físico, el abdomen está distendido arriba. Se busca el chapoteo gástrico, con golpes rápidos en el epigastrio: suena como palmadas sobre el agua. Al principio pueden verse las contracciones del estómago. El paciente está deshidratado y desnutrido, y en el lactante puede palparse la oliva pilórica."
+    },
+    {
+      "title": "Diagnóstico",
+      "text": "Para el diagnóstico, primero la sonda nasogástrica: si a las cuatro horas de comer se extraen más de trescientos mililitros, o más de doscientos en ayunas, el diagnóstico es muy probable. Lo normal en ayunas es menos de cincuenta. El estándar es la endoscopia: el píloro normal mide quince a veinte milímetros; si el endoscopio no pasa, hay estenosis. Y la radiografía con contraste muestra un estómago muy distendido, con el bario retenido."
+    },
+    {
+      "title": "Íleo: qué es",
+      "text": "El íleo es muy preguntado, en el choice y en el oral. Es la parálisis del tránsito intestinal. Puede ser paralítico o adinámico, con ausencia total de la motilidad y silencio abdominal. O mecánico u obstructivo, con un obstáculo: por debajo, parálisis; por arriba, lucha y ruidos de lucha."
+    },
+    {
+      "title": "Causas del íleo paralítico",
+      "text": "Pregunta de parcial: la causa más frecuente de íleo paralítico es el posoperatorio, que no se olvida nunca. Después de una cirugía abdominal, el intestino se paraliza, y recupera la motilidad en cuarenta y ocho a setenta y dos horas. Otras causas: la perforación con peritonitis, que da un íleo generalizado; el abdomen inflamatorio y la pancreatitis, que dan un íleo regional, el asa centinela; la isquemia mesentérica; causas tóxicas como la uremia o los opiáceos; la hipopotasemia; y reflejos, como un cólico. El espástico es raro: intoxicación por plomo."
+    },
+    {
+      "title": "Causas del íleo mecánico",
+      "text": "El íleo mecánico puede ser por una obstrucción simple: en la luz, como el íleo biliar, un cálculo que llega al intestino y se impacta en la válvula ileocecal, un bolo fecal o parásitos. En la pared, una neoplasia. Desde afuera, un tumor o una brida. O por estrangulamiento: una hernia incarcerada, una brida, un vólvulo, casi siempre del sigmoides, o una invaginación, muy frecuente en los niños. El estrangulamiento compromete la irrigación: hay riesgo de isquemia, y se opera."
+    },
+    {
+      "title": "Clínica del íleo",
+      "text": "Y la clínica, que el profesor pide como el Padre Nuestro. El paciente no elimina gases ni materia fecal. Tiene meteorismo y distensión, poca si la obstrucción es alta, mucha si es en el colon. Vomita: primero alimentos, después bilis, y al final material fecaloide. El dolor es cólico en el mecánico; en el paralítico, es el dolor de la causa, como el de una peritonitis. Y tiene trastornos hidroelectrolíticos: deshidratación, hipopotasemia y alcalosis."
+    },
+    {
+      "title": "Examen físico: paralítico o mecánico",
+      "text": "En el examen, lo más preguntado: un abdomen distendido, timpánico y sin ruidos hidroaéreos es un íleo paralítico. Si la causa es una peritonitis, además vas a encontrar abdomen en tabla, rebote y contractura. En el mecánico, el abdomen está distendido, el dolor es cólico, y se escuchan ruidos de lucha por arriba de la obstrucción."
+    },
+    {
+      "title": "Estudios: buscar la causa",
+      "text": "Y algo clave: todo íleo es secundario a otra enfermedad, así que hay que buscar la causa. Si es un íleo regional por pancreatitis, se estudia la pancreatitis; si es por una brida, la brida. Se pide un laboratorio completo, con amilasa, ionograma, función renal y estado ácido-base. La radiografía de pie muestra niveles hidroaéreos, el aire libre de una perforación o el asa centinela. Y la tomografía, la más usada, confirma la causa. Con esto, tenés el capítulo. Ahora a practicar."
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+ "fps": 24,
+ "total": 12411,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-retencion",
+   "inicio": 96,
+   "frames": 876,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 307
+    },
+    {
+     "inicio": 403,
+     "frames": 142
+    },
+    {
+     "inicio": 545,
+     "frames": 249
+    },
+    {
+     "inicio": 794,
+     "frames": 178
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-reversible",
+   "inicio": 972,
+   "frames": 608,
+   "beats": [
+    {
+     "inicio": 972,
+     "frames": 337
+    },
+    {
+     "inicio": 1309,
+     "frames": 271
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-chapoteo",
+   "inicio": 1580,
+   "frames": 443,
+   "beats": [
+    {
+     "inicio": 1580,
+     "frames": 244
+    },
+    {
+     "inicio": 1824,
+     "frames": 199
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ileo",
+   "inicio": 2023,
+   "frames": 512,
+   "beats": [
+    {
+     "inicio": 2023,
+     "frames": 266
+    },
+    {
+     "inicio": 2289,
+     "frames": 246
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-lucha",
+   "inicio": 2535,
+   "frames": 640,
+   "beats": [
+    {
+     "inicio": 2535,
+     "frames": 242
+    },
+    {
+     "inicio": 2777,
+     "frames": 198
+    },
+    {
+     "inicio": 2975,
+     "frames": 200
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-vomitos-nivel",
+   "inicio": 3175,
+   "frames": 387,
+   "beats": [
+    {
+     "inicio": 3175,
+     "frames": 176
+    },
+    {
+     "inicio": 3351,
+     "frames": 211
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-perdidas",
+   "inicio": 3562,
+   "frames": 472,
+   "beats": [
+    {
+     "inicio": 3562,
+     "frames": 266
+    },
+    {
+     "inicio": 3828,
+     "frames": 206
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piloro-def",
+   "inicio": 4034,
+   "frames": 495,
+   "beats": [
+    {
+     "inicio": 4034,
+     "frames": 249
+    },
+    {
+     "inicio": 4283,
+     "frames": 246
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piloro-causas",
+   "inicio": 4529,
+   "frames": 658,
+   "beats": [
+    {
+     "inicio": 4529,
+     "frames": 421
+    },
+    {
+     "inicio": 4950,
+     "frames": 237
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piloro-clinica",
+   "inicio": 5187,
+   "frames": 597,
+   "beats": [
+    {
+     "inicio": 5187,
+     "frames": 283
+    },
+    {
+     "inicio": 5470,
+     "frames": 314
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piloro-nino",
+   "inicio": 5784,
+   "frames": 428,
+   "beats": [
+    {
+     "inicio": 5784,
+     "frames": 249
+    },
+    {
+     "inicio": 6033,
+     "frames": 179
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piloro-examen",
+   "inicio": 6212,
+   "frames": 530,
+   "beats": [
+    {
+     "inicio": 6212,
+     "frames": 530
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piloro-estudios",
+   "inicio": 6742,
+   "frames": 765,
+   "beats": [
+    {
+     "inicio": 6742,
+     "frames": 374
+    },
+    {
+     "inicio": 7116,
+     "frames": 228
+    },
+    {
+     "inicio": 7344,
+     "frames": 163
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ileo-def",
+   "inicio": 7507,
+   "frames": 555,
+   "beats": [
+    {
+     "inicio": 7507,
+     "frames": 200
+    },
+    {
+     "inicio": 7707,
+     "frames": 355
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-paralitico",
+   "inicio": 8062,
+   "frames": 939,
+   "beats": [
+    {
+     "inicio": 8062,
+     "frames": 383
+    },
+    {
+     "inicio": 8445,
+     "frames": 556
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mecanico",
+   "inicio": 9001,
+   "frames": 884,
+   "beats": [
+    {
+     "inicio": 9001,
+     "frames": 294
+    },
+    {
+     "inicio": 9295,
+     "frames": 84
+    },
+    {
+     "inicio": 9379,
+     "frames": 95
+    },
+    {
+     "inicio": 9474,
+     "frames": 257
+    },
+    {
+     "inicio": 9731,
+     "frames": 154
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ileo-clinica",
+   "inicio": 9885,
+   "frames": 890,
+   "beats": [
+    {
+     "inicio": 9885,
+     "frames": 211
+    },
+    {
+     "inicio": 10096,
+     "frames": 167
+    },
+    {
+     "inicio": 10263,
+     "frames": 158
+    },
+    {
+     "inicio": 10421,
+     "frames": 189
+    },
+    {
+     "inicio": 10610,
+     "frames": 165
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ileo-examen",
+   "inicio": 10775,
+   "frames": 589,
+   "beats": [
+    {
+     "inicio": 10775,
+     "frames": 374
+    },
+    {
+     "inicio": 11149,
+     "frames": 215
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ileo-estudios",
+   "inicio": 11364,
+   "frames": 927,
+   "beats": [
+    {
+     "inicio": 11364,
+     "frames": 339
+    },
+    {
+     "inicio": 11703,
+     "frames": 346
+    },
+    {
+     "inicio": 12049,
+     "frames": 242
+    }
+   ]
+  }
+ ]
+}

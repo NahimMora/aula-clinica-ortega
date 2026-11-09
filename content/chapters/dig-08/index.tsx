@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-08 — Síndrome pilórico e íleo. Fuente: clases «Síndrome pilórico» e «Íleo» (Ortega) + libro p. 375–377.
@@ -178,6 +179,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig08-d01',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       emphasis: true,
@@ -192,6 +194,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-d02',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'clinica-pilorica',
@@ -204,6 +207,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-d03',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -218,6 +222,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-d04',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -235,6 +240,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig08-q01',
+      origen: 'practica',
       topic: 'Pilórico',
       difficulty: 1,
       stem: 'El síntoma **cardinal** del síndrome pilórico es:',
@@ -249,6 +255,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q02',
+      origen: 'practica',
       topic: 'Pilórico',
       difficulty: 2,
       stem: 'El vómito del síndrome pilórico es típicamente:',
@@ -263,6 +270,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q03',
+      origen: 'practica',
       topic: 'Pilórico',
       difficulty: 1,
       stem: 'La causa más frecuente de síndrome pilórico en el adulto es:',
@@ -277,6 +285,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q04',
+      origen: 'practica',
       topic: 'Pilórico',
       difficulty: 2,
       emphasis: true,
@@ -292,6 +301,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q05',
+      origen: 'practica',
       topic: 'Pilórico',
       difficulty: 2,
       stem: 'Lactante de 3 semanas con vómitos en chorro, llanto y que no sube de peso. Al palpar el epigastrio encontrás:',
@@ -306,6 +316,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q06',
+      origen: 'practica',
       topic: 'Íleo',
       difficulty: 1,
       emphasis: true,
@@ -321,6 +332,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q07',
+      origen: 'practica',
       topic: 'Íleo',
       difficulty: 1,
       emphasis: true,
@@ -336,6 +348,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q08',
+      origen: 'practica',
       topic: 'Íleo',
       difficulty: 2,
       stem: 'En el íleo **mecánico**, los ruidos hidroaéreos:',
@@ -350,6 +363,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q09',
+      origen: 'practica',
       topic: 'Íleo',
       difficulty: 2,
       stem: 'El íleo paralítico localizado que acompaña a una pancreatitis o apendicitis se llama:',
@@ -364,6 +378,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig08-q10',
+      origen: 'practica',
       topic: 'Íleo',
       difficulty: 3,
       stem: 'El **íleo biliar** es:',
@@ -439,6 +454,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig08-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Paciente operado de apendicitis hace 24 h: abdomen distendido, sin ruidos hidroaéreos, no elimina gases. Lo más probable es:',
@@ -454,7 +470,13 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['bazuqueo-gastrico', 'abd-auscultacion-rha', 'abd-inspeccion-estatica-dinamica'],
+    note: 'Chapoteo gástrico, ruidos hidroaéreos e inspección del abdomen distendido.',
+  },
+
   escenas,
+  clase,
   diagrams: {},
 };
 
