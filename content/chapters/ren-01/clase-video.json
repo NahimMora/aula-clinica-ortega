@@ -1,0 +1,118 @@
+{
+  "src": "media/ren-01/clase.mp4",
+  "poster": "media/ren-01/clase.jpg",
+  "vtt": "media/ren-01/clase.vtt",
+  "duration": "10:07",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Edema y dolor"
+    },
+    {
+      "t": 70,
+      "label": "Fisiopatología · Obstrucción"
+    },
+    {
+      "t": 109,
+      "label": "Fisiopatología · Poliuria"
+    },
+    {
+      "t": 142,
+      "label": "Fisiopatología · Hematuria"
+    },
+    {
+      "t": 181,
+      "label": "Teoría · Edema y dolor"
+    },
+    {
+      "t": 262,
+      "label": "Teoría · Obstrucción"
+    },
+    {
+      "t": 353,
+      "label": "Teoría · Volumen"
+    },
+    {
+      "t": 432,
+      "label": "Teoría · Orina y hematuria"
+    },
+    {
+      "t": 563,
+      "label": "Teoría · Micción"
+    }
+  ],
+  "script": [
+    {
+      "title": "Tres maneras de hacer edema",
+      "text": "El profesor quiere que se sepa que el edema renal se produce por tres cosas diferentes. En el síndrome nefrótico, el glomérulo deja pasar la albúmina, que se pierde por la orina; baja la presión oncótica, y el líquido se va a los tejidos. En el síndrome nefrítico, el glomérulo está inflamado: filtra menos, y los capilares se vuelven más permeables. El cuerpo retiene sal y agua. Y en la insuficiencia renal, cae el filtrado: el líquido que no se elimina se queda en los vasos, sube la presión hidrostática, y sale a los tejidos."
+    },
+    {
+      "title": "Por qué duele el riñón",
+      "text": "El riñón en sí no duele. Lo que duele es su cápsula, cuando el riñón aumenta de tamaño y la estira, igual que pasa con el hígado. Por eso una pielonefritis o un tumor dan dolor lumbar. En el cólico renoureteral, un cálculo frena la orina: el uréter se contrae con fuerza contra el obstáculo, y la vía de arriba se distiende. El dolor va y viene, y baja por el flanco hacia la fosa ilíaca y los genitales."
+    },
+    {
+      "title": "Obstrucción: la orina vuelve atrás",
+      "text": "Cualquier obstrucción, desde los túbulos colectores hasta la uretra, tiene la misma consecuencia. Si la obstrucción está debajo de la vejiga, como en la hiperplasia de próstata, la vejiga se llena y no se vacía: el globo vesical. Si está arriba, en los uréteres, la orina se acumula en la pelvis y los cálices: la hidronefrosis. En los dos casos la presión sube hacia atrás, hasta el túbulo. Y con el túbulo a presión, el glomérulo ya no puede filtrar: cae el filtrado, el paciente orina poco o nada, y aparece una insuficiencia renal aguda posrenal."
+    },
+    {
+      "title": "Poliuria osmótica o acuosa",
+      "text": "La poliuria, más de tres litros por día, tiene dos mecanismos. En la osmótica, sobra algún soluto en el túbulo, como la glucosa del diabético, y ese soluto arrastra agua con él. La orina sale concentrada: más de trescientos miliosmoles. En la acuosa, lo que sobra es agua: porque falta la hormona antidiurética, o el riñón no le responde, la diabetes insípida; o porque la persona toma muchísima agua. La orina sale diluida: menos de doscientos."
+    },
+    {
+      "title": "Dos orígenes de la hematuria",
+      "text": "La hematuria tiene dos orígenes, y la orina lo delata. Si la sangre viene del glomérulo, el glóbulo rojo tiene que atravesar la pared dañada y después recorrer todo el túbulo, con sus cambios de concentración: se deforma, y sale dismórfico, como el acantocito. Y como entró antes del túbulo, queda atrapado en moldes de proteína: los cilindros hemáticos. Si la sangre viene de la vía urinaria, del colector hacia abajo, por un cálculo, una infección o un tumor, el glóbulo no pasó por ese recorrido: sale con su forma normal, isomórfico, y puede formar coágulos."
+    },
+    {
+      "title": "Los tres edemas renales",
+      "text": "Los tres edemas renales, en un cuadro. El nefrótico, por baja presión oncótica: blando, en los párpados y los genitales, y puede llegar a la anasarca. El nefrítico, por retención y permeabilidad: matinal y alrededor de los ojos. Y el de la insuficiencia renal, por caída del filtrado: generalizado, con una piel amarillenta y lesiones de rascado por el prurito."
+    },
+    {
+      "title": "Dolor lumbar",
+      "text": "El dolor lumbar es un motivo de consulta frecuente, y su antigüedad orienta. Si es agudo, se piensa en tres cosas: un cálculo, una pielonefritis, que viene con fiebre, náuseas y disuria, o un infarto renal. Si es crónico, gravativo y pesado, en un tumor que agrandó el riñón. Moverse lo agrava, y a veces el psoas se contractura: es el signo del psoas."
+    },
+    {
+      "title": "Cólico renoureteral",
+      "text": "El cólico renoureteral es agudo y de tipo cólico: sube y baja, siete sobre diez, después tres, después ocho. Empieza en la fosa lumbar y baja por el flanco hacia la fosa ilíaca, el hipogastrio y los genitales, siguiendo el recorrido del uréter. Se acompaña de hematuria, y el paciente está inquieto: no encuentra ninguna posición que lo alivie, a diferencia del abdomen agudo peritoneal."
+    },
+    {
+      "title": "El paciente con obstrucción urinaria",
+      "text": "El paciente con obstrucción urinaria es pregunta de parcial. Cualquier obstrucción que afecte cualquier sector de la vía urinaria, desde los túbulos colectores hasta la uretra, puede llevar a una insuficiencia renal aguda posrenal. Se sospecha en un paciente que orina poco o nada, y que tiene dificultad para orinar."
+    },
+    {
+      "title": "Dónde está la obstrucción",
+      "text": "Las causas, según el sitio. Debajo de la vejiga, la más frecuente en el hombre es la hiperplasia de próstata, alrededor del setenta y siete por ciento; también un cálculo o un coágulo en la uretra. En la vejiga, la vejiga neurogénica: hipotónica en el diabético con neuropatía, o espástica después de un ACV. Arriba de la vejiga tiene que ser bilateral para dar insuficiencia, como un tumor pelviano o una fibrosis retroperitoneal; ahí no hay globo vesical. Y dentro del riñón, en el túbulo colector, el mieloma múltiple o los cristales de ácido úrico."
+    },
+    {
+      "title": "Qué hacer: el globo vesical",
+      "text": "La conducta arranca por el examen: se palpa y se percute arriba del pubis. Si hay globo vesical, la obstrucción está debajo de la vejiga, y se coloca una sonda vesical: si la función renal mejora, se confirma. Si no hay globo, la obstrucción está arriba, y se pide una ecografía renal. Si muestra hidronefrosis, se sigue estudiando la vía con tomografía y urología; si no la muestra, la obstrucción es improbable, y hay que buscar otra causa."
+    },
+    {
+      "title": "Cuánto orina",
+      "text": "El volumen. Lo normal es uno a dos litros por día. Menos de quinientos mililitros es oliguria, que puede ser prerrenal, por deshidratación, renal, o posrenal, por obstrucción. Menos de cincuenta a cien es anuria. Y más de tres litros, poliuria. Y de noche: la nicturia es levantarse varias veces a orinar; la nocturia, orinar más volumen de noche que de día; y la enuresis, orinarse dormido, típica de los chicos."
+    },
+    {
+      "title": "Cómo se estudia la poliuria",
+      "text": "Y cómo se estudia, un cuadro que se pregunta. Se arranca por la osmolaridad urinaria. Si es mayor de trescientos, la diuresis es osmótica: si hay glucosa en la orina y la glucemia está alta, es una diabetes; si la glucemia es normal, un defecto del túbulo. Sin glucosuria, si la urea está alta, una insuficiencia renal o una poliuria posobstructiva; si es normal, los diuréticos. Si la osmolaridad es menor de doscientos, la diuresis es acuosa. Con el sodio normal, la persona toma demasiada agua: potomanía. Con el sodio alto, una diabetes insípida; se da hormona antidiurética: si responde, es central; si no responde, nefrogénica."
+    },
+    {
+      "title": "Aspecto de la orina",
+      "text": "Interpretar la orina es pregunta de parcial, y sirve para toda la vida. La orina normal es amarillo ámbar por los urocromos, límpida, y la poca espuma que hace se va enseguida. Si hace mucha espuma que no se va, hay que pensar en proteínas: el problema viene del glomérulo. Y no todo lo rojo es sangre: la remolacha, algunos fármacos como la rifampicina, o la hemoglobina libre colorean la orina. Si el sedimento no muestra glóbulos rojos, es una seudohematuria."
+    },
+    {
+      "title": "Hematuria",
+      "text": "La hematuria es pregunta de parcial, de final, pregunta para todos. Es la presencia de sangre en la orina: macroscópica, cuando se ve, o microscópica, cuando el sedimento muestra más de tres eritrocitos por campo. Puede ser persistente o transitoria, después del ejercicio, la fiebre, la actividad sexual o un traumatismo. Se estudia con un sedimento de orina fresco: cuántos glóbulos hay, qué forma tienen, y si hay cilindros."
+    },
+    {
+      "title": "Glomerular o de la vía urinaria",
+      "text": "Lo que se pide sí o sí es la clasificación por el origen. La hematuria glomerular, o tipo uno, tiene eritrocitos dismórficos, sobre todo acantocitos; si más del ochenta por ciento están deformados, es glomerular. Se acompaña de cilindros hemáticos y proteinuria, y la causa son las glomerulonefritis. La no glomerular, o tipo dos, viene de la vía urinaria: eritrocitos isomórficos, a veces coágulos, y las causas más frecuentes son las infecciones y la litiasis; también tumores y quistes."
+    },
+    {
+      "title": "Prueba de los tres vasos",
+      "text": "Y la prueba de los tres vasos, pregunta de parcial. El paciente orina en tres vasos seguidos, de principio a fin. Si solo el primero tiene sangre y después se aclara, la sangre viene de la uretra o la próstata: la arrastra el primer chorro. Si los dos primeros salen limpios y el último con sangre, viene de la vejiga, que se exprime al final de la micción. Y si los tres tienen sangre de principio a fin, la sangre viene de arriba, del riñón, y está mezclada con toda la orina."
+    },
+    {
+      "title": "Trastornos de la micción",
+      "text": "Y los trastornos de la micción. La disuria es el dolor o ardor al orinar: en el noventa por ciento, una infección urinaria baja. La estranguria, una micción lenta, difícil y dolorosa, gota a gota, típica de la hiperplasia de próstata. La polaquiuria, orinar muchas veces y poco. El tenesmo vesical, quedar con ganas después de vaciar. Y la retención, no poder vaciar la vejiga, con un globo vesical. Y una confusión clásica: la polaquiuria es frecuencia, muchas veces poco; la poliuria es volumen, mucho en total."
+    }
+  ]
+}

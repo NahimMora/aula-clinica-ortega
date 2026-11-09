@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * ren-01 — Motivos de consulta nefrourológicos. Fuente: clases «MC Renal» partes 1 y 2 (Ortega) + libro p. 445–454.
@@ -84,7 +85,7 @@ const chapter: Chapter = {
     },
     {
       id: 'obstruccion',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'El paciente con obstrucción urinaria',
       priority: 'imprescindible',
       summary: 'Cualquier obstrucción desde los túbulos colectores hasta la uretra puede llevar a una IRA posrenal.',
@@ -193,7 +194,7 @@ const chapter: Chapter = {
     },
     {
       id: 'hematuria',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Aspecto de la orina y hematuria',
       priority: 'imprescindible',
       summary: 'Si no estudian todo, «aunque sea la clasificación»: macro o micro, glomerular o de la vía urinaria, y los tres vasos.',
@@ -279,6 +280,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'ren01-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -294,6 +296,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-d02',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -305,6 +308,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-d03',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -320,6 +324,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-d04',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'volumen',
@@ -333,6 +338,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-d05',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'edema',
@@ -345,6 +351,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-d06',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'edema',
@@ -361,6 +368,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'ren01-q01',
+      origen: 'practica',
       topic: 'Hematuria',
       difficulty: 1,
       emphasis: true,
@@ -376,6 +384,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q02',
+      origen: 'practica',
       topic: 'Hematuria',
       difficulty: 2,
       emphasis: true,
@@ -391,6 +400,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q03',
+      origen: 'practica',
       topic: 'Tres vasos',
       difficulty: 2,
       emphasis: true,
@@ -406,6 +416,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q04',
+      origen: 'practica',
       topic: 'Hematuria',
       difficulty: 1,
       stem: 'Se habla de hematuria microscópica con más de:',
@@ -420,6 +431,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q05',
+      origen: 'practica',
       topic: 'Obstrucción',
       difficulty: 2,
       emphasis: true,
@@ -435,6 +447,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q06',
+      origen: 'practica',
       topic: 'Obstrucción',
       difficulty: 2,
       stem: 'Paciente anúrico con globo vesical palpable. El primer paso es:',
@@ -449,6 +462,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q07',
+      origen: 'practica',
       topic: 'Obstrucción',
       difficulty: 3,
       stem: 'Un cálculo que obstruye **un solo** uréter con el otro riñón sano puede dar:',
@@ -463,6 +477,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q08',
+      origen: 'practica',
       topic: 'Poliuria',
       difficulty: 2,
       stem: 'Poliuria con osmolaridad urinaria > 300 mOsm/l y glucosuria con glucemia alta. Pensás en:',
@@ -477,6 +492,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q09',
+      origen: 'practica',
       topic: 'Poliuria',
       difficulty: 3,
       stem: 'Orina diluida, sodio alto, y **no** mejora con la antidiurética. Diagnóstico:',
@@ -491,6 +507,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q10',
+      origen: 'practica',
       topic: 'Edema',
       difficulty: 2,
       stem: 'El edema del síndrome **nefrótico** se debe principalmente a:',
@@ -505,6 +522,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q11',
+      origen: 'practica',
       topic: 'Micción',
       difficulty: 1,
       stem: 'Orinar **muchas veces y poca cantidad** se llama:',
@@ -519,6 +537,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren01-q12',
+      origen: 'practica',
       topic: 'Orina',
       difficulty: 1,
       stem: 'Una orina con **mucha espuma que no desaparece** sugiere:',
@@ -572,6 +591,11 @@ const chapter: Chapter = {
     },
   ],
 
+  maneuvers: {
+    ids: ['punopercusion-lumbar', 'puntos-renoureterales'],
+    note: 'Puñopercusión lumbar y puntos renoureterales para el dolor de origen renal.',
+  },
+
   closing: {
     map: {
       center: 'Motivos de consulta renales en una mirada',
@@ -605,6 +629,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'ren01-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Hombre de 70 años con chorro débil y goteo desde hace meses; hoy no orina y tiene una masa suprapúbica mate y dolorosa. Pensás en:',
@@ -619,6 +644,7 @@ const chapter: Chapter = {
       },
       {
         id: 'ren01-x02',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Orina roja con eritrocitos isomórficos y coágulos; la sangre aparece solo al final de la micción. El origen es:',
@@ -635,6 +661,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

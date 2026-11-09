@@ -26,6 +26,8 @@ const CONFIG = {
   'dig-14': { mapa: ['Aguda', 'Encefalopatía hepática', 'Crónica', 'O’Grady', 'Bernuau', 'Grados', 'Lo distintivo'], apartado: 'Encefalopatía', titulo: /camino del amonio|encefalopat/i, maniobra: null },
   'dig-15': { mapa: ['Autodigestión', 'Clínica', 'Diagnóstico y gravedad', 'Causas', 'Dolor', 'Signos', 'Ranson y Balthazar'], apartado: 'Ranson y Balthazar', titulo: /ranson/i, maniobra: /puntos|Blumberg/i },
   'ren-01': { mapa: ['Edema y dolor', 'Obstrucción', 'La orina', 'Edemas', 'Globo vesical', 'Poliuria', 'Hematuria'], apartado: 'Orina y hematuria', titulo: /aspecto/i, maniobra: /Puñopercusión|puntos/i },
+  'ren-02': { mapa: ['Proteinuria', 'Examen físico', 'Cuánta', 'Métodos', 'General', 'Guyon', 'Puñopercusión y puntos'], apartado: 'Región renal', titulo: /guyon/i, maniobra: /Guyon/i },
+  'ren-03': { mapa: ['Síndrome nefrítico', 'Las tres H', 'Causa', 'Laboratorio', 'Complicaciones'], apartado: 'Clínica', titulo: /tres h/i, maniobra: null },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

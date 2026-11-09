@@ -1,0 +1,309 @@
+{
+ "fps": 24,
+ "total": 14579,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-edemas",
+   "inicio": 96,
+   "frames": 895,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 380
+    },
+    {
+     "inicio": 476,
+     "frames": 267
+    },
+    {
+     "inicio": 743,
+     "frames": 248
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-capsula",
+   "inicio": 991,
+   "frames": 694,
+   "beats": [
+    {
+     "inicio": 991,
+     "frames": 327
+    },
+    {
+     "inicio": 1318,
+     "frames": 367
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-obstruccion",
+   "inicio": 1685,
+   "frames": 934,
+   "beats": [
+    {
+     "inicio": 1685,
+     "frames": 376
+    },
+    {
+     "inicio": 2061,
+     "frames": 294
+    },
+    {
+     "inicio": 2355,
+     "frames": 264
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-poliuria",
+   "inicio": 2619,
+   "frames": 807,
+   "beats": [
+    {
+     "inicio": 2619,
+     "frames": 437
+    },
+    {
+     "inicio": 3056,
+     "frames": 370
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hematuria",
+   "inicio": 3426,
+   "frames": 919,
+   "beats": [
+    {
+     "inicio": 3426,
+     "frames": 579
+    },
+    {
+     "inicio": 4005,
+     "frames": 340
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-edema",
+   "inicio": 4345,
+   "frames": 623,
+   "beats": [
+    {
+     "inicio": 4345,
+     "frames": 623
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dolor",
+   "inicio": 4968,
+   "frames": 662,
+   "beats": [
+    {
+     "inicio": 4968,
+     "frames": 503
+    },
+    {
+     "inicio": 5471,
+     "frames": 159
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colico",
+   "inicio": 5630,
+   "frames": 666,
+   "beats": [
+    {
+     "inicio": 5630,
+     "frames": 426
+    },
+    {
+     "inicio": 6056,
+     "frames": 240
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-obstruccion",
+   "inicio": 6296,
+   "frames": 500,
+   "beats": [
+    {
+     "inicio": 6296,
+     "frames": 351
+    },
+    {
+     "inicio": 6647,
+     "frames": 149
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-obstruccion-causas",
+   "inicio": 6796,
+   "frames": 920,
+   "beats": [
+    {
+     "inicio": 6796,
+     "frames": 530
+    },
+    {
+     "inicio": 7326,
+     "frames": 390
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-obstruccion-conducta",
+   "inicio": 7716,
+   "frames": 764,
+   "beats": [
+    {
+     "inicio": 7716,
+     "frames": 370
+    },
+    {
+     "inicio": 8086,
+     "frames": 394
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-volumen",
+   "inicio": 8480,
+   "frames": 771,
+   "beats": [
+    {
+     "inicio": 8480,
+     "frames": 480
+    },
+    {
+     "inicio": 8960,
+     "frames": 291
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-poliuria",
+   "inicio": 9251,
+   "frames": 1125,
+   "beats": [
+    {
+     "inicio": 9251,
+     "frames": 650
+    },
+    {
+     "inicio": 9901,
+     "frames": 475
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-aspecto",
+   "inicio": 10376,
+   "frames": 806,
+   "beats": [
+    {
+     "inicio": 10376,
+     "frames": 306
+    },
+    {
+     "inicio": 10682,
+     "frames": 172
+    },
+    {
+     "inicio": 10854,
+     "frames": 328
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hematuria",
+   "inicio": 11182,
+   "frames": 725,
+   "beats": [
+    {
+     "inicio": 11182,
+     "frames": 366
+    },
+    {
+     "inicio": 11548,
+     "frames": 359
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hematuria-origen",
+   "inicio": 11907,
+   "frames": 819,
+   "beats": [
+    {
+     "inicio": 11907,
+     "frames": 496
+    },
+    {
+     "inicio": 12403,
+     "frames": 323
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tres-vasos",
+   "inicio": 12726,
+   "frames": 802,
+   "beats": [
+    {
+     "inicio": 12726,
+     "frames": 401
+    },
+    {
+     "inicio": 13127,
+     "frames": 196
+    },
+    {
+     "inicio": 13323,
+     "frames": 205
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-miccion",
+   "inicio": 13528,
+   "frames": 931,
+   "beats": [
+    {
+     "inicio": 13528,
+     "frames": 711
+    },
+    {
+     "inicio": 14239,
+     "frames": 220
+    }
+   ]
+  }
+ ]
+}
