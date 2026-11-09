@@ -27,11 +27,11 @@ Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase 
 | neu-01 | ✅ (capítulo nuevo) | ✅ | ✅ 14:51 | ✅ 12,9 MB | ✅ | figuras en `src/clase/figuras-neu.tsx` (`encefalo`, `cabeza`) |
 | neu-02 | ✅ (nuevo) | ✅ | ✅ 14:09 | ✅ 14,9 MB | ✅ | `nucleos`, `motora`, `temblor`, `crisis`, `sueno` |
 | neu-03 | ✅ (nuevo) | ✅ | ✅ 11:47 | ✅ 10,5 MB | ✅ | `via-optica`, `oculomotores`, `tronco-pares` |
-| neu-04 | ✅ (nuevo) | ✅ | ✅ 7:58 | ⏳ render | ⏳ | `boca`; `cabeza` con parálisis facial y Weber |
-| neu-05 | ✅ (nuevo) | ✅ | ⏳ | ⏳ | ⏳ | fuentes: SN 1–4 + Meet 24/10 (`neu-meet-1024`) |
-| neu-06 | ⏳ | | | | | fuentes: SN 5–7 + REC 26/10 (`neu-rec-1026`) + «Meningeo y osteo»; excluir «Clase Pato repaso» (Patología) y decirlo en la trazabilidad |
-| Maniobras neuro / soma | ⏳ | | | | | grupos en `soon` |
-| PDF + repaso final | ⏳ | | | | | |
+| neu-04 | ✅ (nuevo) | ✅ | ✅ 7:58 | ✅ 6,9 MB | ✅ | `boca`; `cabeza` con parálisis facial y Weber |
+| neu-05 | ✅ (nuevo) | ✅ | ✅ 10:32 | ✅ 9,5 MB | ✅ | `motora` con alternas; fuentes SN 1–4 + Meet 24/10 |
+| neu-06 | ✅ (nuevo) | ✅ | ✅ 10:20 | ✅ 9,2 MB | ✅ | `craneo`, `papila`, `meningeos`; «Clase Pato repaso» excluida (Patología) |
+| Maniobras neuro / soma | ✅ 25 neuro + 12 soma | ✅ fotogramas | | | ✅ | todos los grupos en `ready`; `man-neu` y `soma-01` siguen como entradas del currículo que remiten a la biblioteca (igual que `man-dig`/`man-ren`) |
+| PDF + repaso final | ✅ manuales digestivo, renal y neuro | | | | ✅ | test de los 28 capítulos contra la URL pública |
 
 ### Receta por capítulo (lo que funciona)
 1. Leer transcripciones (`sources/drive/transcripts/condensed/…`), minutos exactos en `local_whisper` (grep), preguntero (`C:/Claude/semiologia-ortega/output/oral-study/PREGUNTERO_RESUELTO.md`), libro (`book_text_drive.txt`), Argente solo mecanismos (render con PyMuPDF; índice = impresa + 7).
@@ -142,10 +142,11 @@ Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i 
 - Videos: solo dig-01 tiene video y audio por paso (`audioPasos`). Para los demás falta `npm run tts -- <id>` + render; antes hay que agregar las variables `--v-*` nuevas en `VARS` de `video/src/Root.tsx` y el capítulo en `CAPS`.
 
 ## 7. Próximos pasos (en orden)
-1. **Sistema nervioso** (capítulos en `content/curriculum.ts`; transcripciones en `sources/drive/transcripts/condensed/4 SISTEMA NERVIOSO`). Probablemente haga falta una figura propia (encéfalo/médula/vía motora) siguiendo el patrón de `urinario`/`nefrona`: figura en `anatomia.tsx` + tipo en `visual/tipos.ts` + bloque en `Visual.tsx` + escena en `escenas/tipos.ts` y `Lienzo.tsx` + casos en `text.ts` y `Blocks.tsx`.
-2. Examen físico neurológico (maniobras con fragmentos de Argente verificados por fotogramas) y soma.
-3. Audio por paso y video para dig-02…dig-15 (ver sección 6).
-4. Regenerar PDF (`npm run pdf`, con preview en 4791).
+Migración completa (digestivo, renal, neurología, maniobras neuro y soma, PDF). Pendientes menores:
+1. dig-02 (piloto) conserva su video de 44 MB (crf viejo), por encima del límite de 25–28 MB: re-encodearlo con la receta actual si se acepta un commit más del video.
+2. `man-dig`, `man-ren`, `man-neu` y `soma-01` figuran en el currículo como «Próximamente»: su contenido real es la biblioteca `/maniobras`. Si se quiere, convertirlos en capítulos que remitan a la biblioteca.
+3. Maniobras de soma: solo las del video Argente 4 (columna, túnel carpiano, cadera, rodilla); hombro, codo y tobillo no tienen fragmento.
+4. Borrar a mano la carpeta `C:/c/Users/...` creada por error.
 
 ## 8. Pedido original (resumen)
 Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cada capítulo: mapa inicial, bases, teoría visual, consulta/PDF, video Remotion con voz es-AR-TomasNeural, choice, desarrollos resueltos con «Lo sabía/No lo sabía» y repaso espaciado, mnemotecnias, integración. Un capítulo completo, probado y desplegado a la vez. No publicar material privado. Nunca atribuir al profesor frases que no dijo.
@@ -158,4 +159,4 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 - 2026-11-08 (noche) — dig-02 a dig-15 publicados de a uno (cada uno con su commit y deploy). Digestivo completo. Siguiente: nefrourológico.
 - 2026-11-08 (corrección) — dig-02: se abandona Aula Clínica 2.0; vuelve la estructura original con mapa jerárquico, fisiopatología, diapositivas navegables y clase completa con Tomás.
 - 2026-11-08 (madrugada) — Kit `urinario` + `nefrona`; ren-01 a ren-07 publicados de a uno; 6 maniobras renales. Renal completo. Siguiente: nervioso.
-- 2026-11-09 — Clase visual de ren-01…ren-07 (verificadas en la URL pública). Neurología: capítulos nuevos neu-01…neu-03 publicados con video; neu-04 y neu-05 en curso. Preguntero neuro = «construidas desde las clases»: nunca origen «preguntero»; los desarrollos son «de clase» solo con aviso verificado. Hay una carpeta `C:/c/Users/...` creada por error (rutas `/c/...` con MSYS_NO_PATHCONV): se puede borrar a mano; en los tests usar rutas `C:/...`.
+- 2026-11-09 — Clase visual de ren-01…ren-07 (verificadas en la URL pública). Neurología completa: neu-01…neu-06 creados y publicados con video. Biblioteca de maniobras neurológicas (25) y osteoarticulares (12). PDF regenerados. Ojo: en el info.json del video Argente los capítulos 33 y 34 tienen los títulos invertidos (taxia ≈ 13 656–13 894 s; sensibilidad ≈ 13 903–14 322 s). El test del visor en celular ahora hace clic directo en el botón (una barra fija lo tapaba). Preguntero neuro = «construidas desde las clases»: nunca origen «preguntero»; los desarrollos son «de clase» solo con aviso verificado. Hay una carpeta `C:/c/Users/...` creada por error (rutas `/c/...` con MSYS_NO_PATHCONV): se puede borrar a mano; en los tests usar rutas `C:/...`.
