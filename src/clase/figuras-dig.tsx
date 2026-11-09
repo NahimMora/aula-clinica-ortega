@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react';
 import { BIL_H, BIL_W, BiliarFig, BristolGlyph, TR_H, TR_W, TractoFig } from '../visual/anatomia';
 import type { Organo, ViaBiliar, VTone } from '../visual/tipos';
-import { type BaseFig, CIELO, DELGADO, DURAZNO, ESTOMAGO, HIGADO, ManoFrente, INK, INK2, INK3, INTESTINO, L, LILA, LINE, MENTA, Pulso, ROJO, ROSA, SANGRE, Via, apf, clamp, ease } from './figuras-base';
+import { type BaseFig, CIELO, DELGADO, DURAZNO, ESTOMAGO, HIGADO, ManoFrente, INK, INK2, INK3, INTESTINO, L, LILA, LINE, MENTA, Pulso, ROJO, ROSA, SANGRE, Tronco, Via, Visceras, apf, clamp, ease } from './figuras-base';
 
 const PIEL = 'var(--v-skin)';
 const HUESO = '#d8cdbd';
@@ -2417,7 +2417,7 @@ function Portal({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
   return (
     <svg viewBox="0 0 800 520" role="img" aria-label="Sistema porta, hígado, cava y circulación colateral">
       {/* contexto: asas y ascitis */}
-      {v === 'ascitis' && <path d={`M150,${420 + Math.sin(t * 2) * 3} C300,${412 - Math.sin(t * 2) * 3} 560,${426 + Math.sin(t * 2) * 3} 720,418 L720,512 L150,512 Z`} fill="#4b6f8f" opacity={0.55 * u} />}
+      {v === 'ascitis' && <path d={`M168,${424 + Math.sin(t * 2) * 3} C300,${416 - Math.sin(t * 2) * 3} 560,${430 + Math.sin(t * 2) * 3} 712,422 C722,470 690,508 620,512 L260,512 C200,508 160,476 168,424 Z`} fill="#4b6f8f" opacity={0.55 * u} />}
       <g opacity={0.45} transform="translate(90 -8)">
         <path d={DELGADO} fill="none" stroke={INTESTINO} strokeWidth={15} strokeLinecap="round" />
       </g>
@@ -2509,6 +2509,216 @@ function Portal({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
   );
 }
 
+/* ─────────── Amonio: del intestino al cerebro ─────────── */
+
+type VistaAmonio = 'normal' | 'falla' | 'cerebro';
+
+const AM = {
+  intHig: 'M190,380 C200,320 240,270 290,232',
+  higRin: 'M360,232 C430,280 500,330 556,372',
+  higCer: 'M360,190 C440,150 520,128 586,122',
+  shunt: 'M214,372 C320,330 480,200 590,140',
+};
+
+function Amonio({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: VistaAmonio[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const VERDE = '#8fd36a';
+  if (v === 'cerebro') {
+    const hincha = 1 + 0.18 * u + 0.02 * Math.sin(t * 2);
+    return (
+      <svg viewBox="0 0 800 520" role="img" aria-label="El astrocito transforma el amonio en glutamina y se hincha">
+        <path d="M60,40 C50,200 50,330 60,480" stroke={SANGRE} strokeWidth={46} strokeLinecap="round" opacity={0.85} />
+        <L x={60} y={500} c="#e8a0a0" s={20}>
+          Capilar
+        </L>
+        {Array.from({ length: 6 }, (_, i) => {
+          const k = (t * 0.3 + i / 6) % 1;
+          return (
+            <g key={i} opacity={1 - Math.max(0, k - 0.8) * 5}>
+              <circle cx={90 + k * 250} cy={160 + i * 40} r={9} fill={VERDE} />
+            </g>
+          );
+        })}
+        <g transform={`translate(470 270) scale(${hincha})`}>
+          {Array.from({ length: 8 }, (_, i) => {
+            const a = (i / 8) * Math.PI * 2 + 0.3;
+            return <path key={i} d={`M${Math.cos(a) * 90},${Math.sin(a) * 90} Q${Math.cos(a + 0.2) * 150},${Math.sin(a + 0.2) * 150} ${Math.cos(a) * 190},${Math.sin(a) * 175}`} stroke="#b49ad8" strokeWidth={14} strokeLinecap="round" fill="none" />;
+          })}
+          <circle r={110} fill="#6d5a8f" stroke="#b49ad8" strokeWidth={4} />
+          <circle r={34} fill="#4a3a6a" />
+        </g>
+        {Array.from({ length: 8 }, (_, i) => {
+          const a = (i / 8) * Math.PI * 2;
+          const k = (t * 0.4 + i / 8) % 1;
+          const R = 230 - k * 90;
+          return <path key={i} d={`M${470 + Math.cos(a) * R},${270 + Math.sin(a) * R * 0.9} q-6,10 0,16 q6,-6 0,-16`} fill={CIELO} opacity={u * (1 - k)} />;
+        })}
+        <L x={470} y={262} c={INK} s={22} w={750}>
+          Glutamina
+        </L>
+        <L x={250} y={110} c={VERDE} s={20}>
+          Amonio
+        </L>
+        <L x={470} y={24} c={MENTA} s={22}>
+          Amonio + glutamato → glutamina
+        </L>
+        <L x={470} y={500} c={CIELO} s={22} o={u}>
+          La glutamina atrae agua: el astrocito se hincha
+        </L>
+      </svg>
+    );
+  }
+  const falla = v === 'falla';
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label="El amonio del intestino se transforma en urea en el hígado; si el hígado falla, llega al cerebro">
+      {/* intestino */}
+      <g transform="translate(-60 -6)">
+        <path d={DELGADO} fill="none" stroke={INTESTINO} strokeWidth={16} strokeLinecap="round" opacity={0.85} />
+      </g>
+      {/* hígado */}
+      <path d={HIGADO_P} transform="translate(30 100) scale(0.8)" fill={falla ? '#7d6a5a' : HIGADO} stroke="#5d2a2a" strokeWidth={4} opacity={falla ? 0.75 : 1} />
+      {/* riñón y cerebro */}
+      <path d={RINON_D} transform="translate(590 410) scale(0.9)" fill="#8f4b4b" stroke="#5d2a2a" strokeWidth={3} />
+      <path d={CEREBRO_D} transform="translate(650 110) scale(1.15)" fill={falla ? '#d98a9a' : '#d9a3ad'} stroke={falla ? ROJO : '#7a4d5a'} strokeWidth={falla ? 5 : 3} />
+      <Via d={AM.intHig} c={LINE} w={4} />
+      <Via d={AM.higRin} c={LINE} w={4} o={falla ? 0.3 : 1} />
+      <Via d={AM.higCer} c={falla ? ROJO : LINE} w={4} o={falla ? 1 : 0.25} dash={falla ? undefined : '6 8'} />
+      {falla && <Via d={AM.shunt} c={ROJO} w={3} o={0.7 * u} dash="10 8" />}
+      <Pulso d={AM.intHig} t={t} v={35} c={VERDE} w={10} largo={6} />
+      {!falla && <Pulso d={AM.higRin} t={t} v={35} c={ACIDO} w={10} largo={6} />}
+      {falla && (
+        <g opacity={u}>
+          <Pulso d={AM.higCer} t={t} v={35} c={VERDE} w={10} largo={6} />
+          <Pulso d={AM.shunt} t={t} v={30} c={VERDE} w={8} largo={6} desfase={40} />
+        </g>
+      )}
+      <L x={400} y={24} c={falla ? ROJO : MENTA} s={22} o={falla ? u : 1}>
+        {falla ? 'El amonio no se depura y llega al cerebro' : 'El hígado transforma el amonio en urea'}
+      </L>
+      <L x={110} y={506} a="start" c={VERDE} s={20}>
+        Intestino: bacterias → amonio
+      </L>
+      <L x={300} y={136} c="#f3d9cf" s={20}>
+        {falla ? 'Hígado insuficiente' : 'Hígado: ciclo de la urea'}
+      </L>
+      <L x={600} y={500} c={falla ? INK3 : ACIDO} s={20}>
+        Urea → orina
+      </L>
+      <L x={650} y={196} c={falla ? ROJO : INK2} s={20}>
+        Cerebro
+      </L>
+      {falla && (
+        <L x={470} y={300} a="middle" c={ROJO} s={18} o={u}>
+          Colaterales portosistémicas
+        </L>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── Pancreatitis: ácino y difusión retroperitoneal ─────────── */
+
+type VistaPancreas = 'acino-normal' | 'acino' | 'difusion';
+
+const PANCREAS_D = 'M222,300 C240,276 290,282 330,286 C380,290 420,272 452,262 C470,256 482,268 472,280 C450,302 400,312 350,314 C300,318 262,324 236,322 C218,320 210,310 222,300 Z';
+
+function Pancreatitis({ t, paso, dt, vistas = ['difusion'] }: BaseFig & { vistas?: VistaPancreas[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  if (v !== 'difusion') {
+    const mal = v === 'acino';
+    const celdas = Array.from({ length: 8 }, (_, i) => {
+      const a0 = (i / 8) * Math.PI * 2;
+      const a1 = ((i + 1) / 8) * Math.PI * 2;
+      const r0 = 46;
+      const r1 = 170;
+      const p = (r: number, a: number) => `${400 + Math.cos(a) * r},${270 + Math.sin(a) * r * 0.85}`;
+      const roto = mal && i % 3 === 0;
+      return (
+        <g key={i} opacity={roto ? 1 - 0.55 * u : 1}>
+          <path d={`M${p(r0, a0 + 0.04)} L${p(r1, a0 + 0.04)} A${r1},${r1 * 0.85} 0 0 1 ${p(r1, a1 - 0.04)} L${p(r0, a1 - 0.04)} Z`} fill="#c9a07a" stroke="#7a5a3a" strokeWidth={3} strokeDasharray={roto ? '10 8' : undefined} />
+          {Array.from({ length: 5 }, (_, k) => {
+            const am = a0 + ((k % 3) + 1) * ((a1 - a0) / 4);
+            const rr = 70 + (k * 19) % 70;
+            const activa = mal && (k + i) % 2 === 0;
+            return <circle key={k} cx={400 + Math.cos(am) * rr} cy={270 + Math.sin(am) * rr * 0.85} r={8} fill={activa ? ROJO : ACIDO} opacity={activa ? 0.6 + 0.4 * u : 1} />;
+          })}
+        </g>
+      );
+    });
+    const fuga = mal
+      ? Array.from({ length: 10 }, (_, i) => {
+          const k = (t * 0.25 + i / 10) % 1;
+          const a = (i / 10) * Math.PI * 2 + 0.2;
+          const r = 170 + k * 130;
+          return <circle key={i} cx={400 + Math.cos(a) * r} cy={270 + Math.sin(a) * r * 0.85} r={6} fill={ROJO} opacity={u * (1 - k)} />;
+        })
+      : [];
+    return (
+      <svg viewBox="0 0 800 520" role="img" aria-label="Ácino pancreático: activación de las enzimas dentro de la glándula">
+        {celdas}
+        {fuga}
+        <ellipse cx={400} cy={270} rx={40} ry={34} fill="#3a2f45" stroke="#7a5a3a" strokeWidth={3} />
+        <L x={400} y={272} c={INK2} s={18}>
+          Conducto
+        </L>
+        <L x={400} y={24} c={mal ? ROJO : MENTA} s={22} o={mal ? u : 1}>
+          {mal ? 'La tripsina se activa adentro: el páncreas se digiere' : 'Las enzimas viajan inactivas (gránulos) hacia el conducto'}
+        </L>
+        <L x={120} y={490} a="start" c={ACIDO} s={20}>
+          Tripsinógeno (inactivo)
+        </L>
+        {mal && (
+          <L x={680} y={490} a="end" c={ROJO} s={20} o={u}>
+            Tripsina (activa)
+          </L>
+        )}
+      </svg>
+    );
+  }
+  const latido = 0.5 + 0.5 * Math.sin(t * 2);
+  return (
+    <svg viewBox="0 0 640 600" role="img" aria-label="Pancreatitis: el líquido se difunde por el retroperitoneo">
+      <Tronco id="cl-pancr" />
+      <g clipPath="url(#cl-pancr)">
+        <Visceras apagar={0.55} />
+        {/* asa centinela */}
+        <ellipse cx={330} cy={352} rx={58} ry={22} fill="none" stroke={DURAZNO} strokeWidth={5} strokeDasharray="8 6" opacity={u} />
+        {/* derrame pleural izquierdo (lado derecho del dibujo) */}
+        <path d="M420,250 C440,238 470,240 486,262 L486,272 C460,268 440,262 420,262 Z" fill={CIELO} opacity={0.75 * u} />
+        {/* Cullen y Grey Turner */}
+        <circle cx={320} cy={420} r={24} fill="none" stroke="#7a4fa0" strokeWidth={10} opacity={0.75 * u} />
+        <ellipse cx={168} cy={410} rx={20} ry={44} fill="#7a4fa0" opacity={0.6 * u} />
+        <ellipse cx={472} cy={410} rx={20} ry={44} fill="#7a4fa0" opacity={0.6 * u} />
+      </g>
+      {/* páncreas inflamado y su exudado */}
+      <path d={PANCREAS_D} fill={ROJO} opacity={0.18 + 0.12 * latido} transform="translate(340 300) scale(1.25) translate(-340 -300)" />
+      <path d={PANCREAS_D} fill="#d58a6a" stroke="#8f4b3a" strokeWidth={3} />
+      <L x={340} y={300} c="#3a1f1a" s={20} w={750}>
+        Páncreas
+      </L>
+      <L x={320} y={24} c={ROJO} s={22}>
+        El exudado se difunde por el retroperitoneo
+      </L>
+      <g opacity={u}>
+        <L x={600} y={232} a="end" c={CIELO} s={20}>
+          Derrame pleural izq.
+        </L>
+        <L x={330} y={390} c={DURAZNO} s={20}>
+          Asa centinela
+        </L>
+        <L x={320} y={470} c="#c7a0e8" s={20}>
+          Cullen (ombligo)
+        </L>
+        <L x={20} y={480} a="start" c="#c7a0e8" s={20}>
+          Grey Turner (flancos)
+        </L>
+      </g>
+    </svg>
+  );
+}
+
 export const FIGURAS_DIG = {
   deglucion: Deglucion,
   esofago: Esofago,
@@ -2535,4 +2745,6 @@ export const FIGURAS_DIG = {
   peritoneo: Peritoneo,
   hipovolemia: Hipovolemia,
   portal: Portal,
+  amonio: Amonio,
+  pancreatitis: Pancreatitis,
 } satisfies Record<string, (p: never) => ReactNode>;

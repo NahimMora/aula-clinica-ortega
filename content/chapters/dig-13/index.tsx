@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-13 — Cirrosis e hipertensión portal. Fuente: clases Cirrosis 1–2 y HTP 1–2 (Ortega).
@@ -107,7 +108,7 @@ const chapter: Chapter = {
     },
     {
       id: 'child',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Child-Pugh (BATEA)',
       priority: 'imprescindible',
       summary: 'Pronóstico: A 5–6 compensada · B 7–9 descompensada reversible · C 10–15 irreversible (trasplante).',
@@ -148,7 +149,7 @@ const chapter: Chapter = {
     },
     {
       id: 'htp',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Hipertensión portal: definición, causas y colaterales',
       priority: 'imprescindible',
       summary: 'Presión portal > 12 mmHg. Causa n.º 1: cirrosis. La sangre vuelve y abre colaterales portocava.',
@@ -198,7 +199,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ascitis',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Ascitis, paracentesis y GASA',
       priority: 'imprescindible',
       summary: 'Causa n.º 1: hipertensión portal. Paracentesis: recuento (> 250 PMN = PBE) y GASA (≥ 1,1 = HTP).',
@@ -256,6 +257,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig13-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -281,6 +283,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -292,6 +295,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-d03',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -306,6 +310,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-d04',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'cirrosis',
@@ -320,6 +325,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-d05',
+      origen: 'clase',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'htp',
@@ -336,6 +342,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig13-q01',
+      origen: 'practica',
       topic: 'Cirrosis',
       difficulty: 1,
       stem: 'La causa más frecuente de cirrosis es:',
@@ -350,6 +357,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q02',
+      origen: 'practica',
       topic: 'Child-Pugh',
       difficulty: 1,
       emphasis: true,
@@ -365,6 +373,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q03',
+      origen: 'practica',
       topic: 'Child-Pugh',
       difficulty: 2,
       emphasis: true,
@@ -380,6 +389,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q04',
+      origen: 'practica',
       topic: 'HTP',
       difficulty: 1,
       emphasis: true,
@@ -395,6 +405,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q05',
+      origen: 'practica',
       topic: 'HTP',
       difficulty: 2,
       stem: 'El síndrome de Budd-Chiari produce hipertensión portal:',
@@ -409,6 +420,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q06',
+      origen: 'practica',
       topic: 'HTP',
       difficulty: 2,
       stem: 'La colateral portocava **profunda** más importante, causa frecuente de muerte, es:',
@@ -423,6 +435,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q07',
+      origen: 'practica',
       topic: 'HTP',
       difficulty: 3,
       stem: 'Comprimís una vena colateral del abdomen y se ingurgita **por debajo** del dedo. El flujo es:',
@@ -437,6 +450,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q08',
+      origen: 'practica',
       topic: 'Ascitis',
       difficulty: 2,
       emphasis: true,
@@ -452,6 +466,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q09',
+      origen: 'practica',
       topic: 'Ascitis',
       difficulty: 2,
       stem: 'En la ascitis del cirrótico, el riñón retiene sodio y agua porque:',
@@ -466,6 +481,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q10',
+      origen: 'practica',
       topic: 'Estigmas',
       difficulty: 2,
       stem: 'La ginecomastia y la atrofia testicular del cirrótico se deben a:',
@@ -480,6 +496,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig13-q11',
+      origen: 'practica',
       topic: 'HTP',
       difficulty: 2,
       stem: 'La causa más frecuente de esplenomegalia es:',
@@ -524,6 +541,11 @@ const chapter: Chapter = {
     },
   ],
 
+  maneuvers: {
+    ids: ['abd-inspeccion-estatica-dinamica', 'ascitis-maniobras', 'bazo-decubito-dorsal', 'bazo-schuster', 'higado-bimanual'],
+    note: 'Circulación colateral, ascitis, bazo e hígado.',
+  },
+
   closing: {
     map: {
       center: 'Cirrosis e HTP en una mirada',
@@ -556,6 +578,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig13-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Cirrótico con bilirrubina 2,5, albúmina 3,0, RIN 1,5, sin encefalopatía y ascitis leve. Child-Pugh:',
@@ -572,6 +595,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

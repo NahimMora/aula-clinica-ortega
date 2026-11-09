@@ -1,0 +1,162 @@
+{
+  "src": "media/dig-13/clase.mp4",
+  "poster": "media/dig-13/clase.jpg",
+  "vtt": "media/dig-13/clase.vtt",
+  "duration": "15:48",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · La cirrosis"
+    },
+    {
+      "t": 71,
+      "label": "Fisiopatología · Lo que falla"
+    },
+    {
+      "t": 109,
+      "label": "Fisiopatología · Hipertensión portal"
+    },
+    {
+      "t": 144,
+      "label": "Fisiopatología · Ascitis"
+    },
+    {
+      "t": 181,
+      "label": "Fisiopatología · Hipertensión portal"
+    },
+    {
+      "t": 248,
+      "label": "Teoría · Cirrosis"
+    },
+    {
+      "t": 395,
+      "label": "Teoría · Clínica"
+    },
+    {
+      "t": 505,
+      "label": "Teoría · Child-Pugh"
+    },
+    {
+      "t": 578,
+      "label": "Teoría · Hipertensión portal"
+    },
+    {
+      "t": 744,
+      "label": "Teoría · Ascitis"
+    },
+    {
+      "t": 892,
+      "label": "Teoría · Diagnóstico"
+    }
+  ],
+  "script": [
+    {
+      "title": "El sistema porta normal",
+      "text": "Para entender la cirrosis y la hipertensión portal, primero el circuito normal. La vena porta junta la sangre que viene del intestino, por la mesentérica, y del bazo, por la esplénica. La lleva al hígado, que procesa lo que absorbimos, fabrica proteínas y limpia sustancias tóxicas. Y la sangre sale por las venas suprahepáticas a la cava inferior y al corazón. La presión normal en la porta es de ocho a diez milímetros de mercurio."
+    },
+    {
+      "title": "Qué hace la cirrosis",
+      "text": "En la cirrosis se van destruyendo hepatocitos, y el hígado los reemplaza por fibrosis y nódulos de regeneración que desarman su arquitectura. Eso trae dos problemas. Primero, quedan menos hepatocitos, y el hígado funciona cada vez menos: el profesor la piensa como una pre insuficiencia hepática. Segundo, el hígado duro frena el paso de la sangre que llega por la porta. Así aparecen las dos caras de la cirrosis: la insuficiencia hepática progresiva, y la hipertensión portal, con más de doce milímetros de mercurio."
+    },
+    {
+      "title": "Lo que el hígado deja de hacer",
+      "text": "El profesor insiste: para entender la clínica, hay que saber qué hace el hígado normal. Si deja de fabricar albúmina, baja la presión oncótica y aparecen edemas y ascitis. Si deja de fabricar factores de coagulación, el paciente sangra: moretones, sangrado de nariz. Si no puede eliminar la bilirrubina, ictericia y prurito. Si no degrada los estrógenos, aparecen la ginecomastia, las arañas vasculares y el eritema palmar. Y si no depura el amonio, ese tóxico llega al cerebro: temblor, confusión, la encefalopatía."
+    },
+    {
+      "title": "La sangre busca otro camino",
+      "text": "Con el hígado bloqueado, la sangre de la porta no puede seguir. Y como el sistema porta no tiene válvulas, la sangre vuelve hacia atrás. Busca llegar a la cava por otros caminos: se abren comunicaciones entre la porta y la cava que normalmente estaban casi cerradas. Hacia el esófago, por la vena coronaria estomáquica, aparecen las várices esofágicas. Hacia el ombligo, por la vena paraumbilical, la cabeza de medusa. Y hacia el recto, por la mesentérica inferior, las hemorroides."
+    },
+    {
+      "title": "Cómo se forma la ascitis",
+      "text": "La ascitis tiene tres causas que se suman. La presión portal alta empuja líquido fuera de los vasos; la albúmina baja ya no lo retiene adentro; y la linfa del hígado desborda lo que los linfáticos pueden drenar. Ese líquido que se va al peritoneo deja menos volumen en los vasos. El riñón lo detecta y activa el sistema renina angiotensina aldosterona, el simpático y la hormona antidiurética. Entonces retiene agua y sodio; pero ese líquido vuelve a escaparse al peritoneo, y la ascitis sigue creciendo. Es un círculo."
+    },
+    {
+      "title": "Esplenomegalia e hiperesplenismo",
+      "text": "El bazo también drena a la porta. Con la presión alta, su sangre no puede salir, y el bazo se congestiona y crece: es la esplenomegalia, que casi siempre acompaña a la hipertensión portal. Un bazo grande trabaja de más, y destruye más células de la sangre: es el hiperesplenismo. El resultado es una pancitopenia: anemia, pocos glóbulos blancos y pocas plaquetas, que se suman a la falta de factores de coagulación y hacen sangrar más al paciente."
+    },
+    {
+      "title": "Hacia dónde va la sangre",
+      "text": "Y una pregunta clásica: ¿cómo sé hacia dónde va la sangre en una vena dilatada del abdomen? Se la comprime con el dedo. El tramo que está río abajo se vacía, y el que está río arriba queda lleno. Si debajo del dedo queda ingurgitada y arriba se vacía, la sangre sube. En la circulación porto cava, la sangre sale del ombligo hacia afuera: en el abdomen superior sube, y en el inferior baja. En cambio, si está obstruida la cava inferior, la circulación es cava cava, y toda la sangre sube desde abajo."
+    },
+    {
+      "title": "Cirrosis",
+      "text": "La cirrosis es un tema importantísimo, que el profesor pide saber como la palma de la mano. Es una hepatopatía crónica, progresiva e irreversible, con fibrosis y nódulos de regeneración, micro o macronodulares, que distorsionan la arquitectura del hígado. Al principio el hígado puede estar agrandado; después, a medida que se pierden hepatocitos y avanza la fibrosis, se achica. Y durante mucho tiempo puede no dar síntomas."
+    },
+    {
+      "title": "Las tres manifestaciones",
+      "text": "La cirrosis se manifiesta de tres formas. La hipertensión portal, el aumento de la presión en la porta, con ascitis y várices. La encefalopatía hepática, por sustancias que el hígado no metabolizó y que llegan al cerebro por las colaterales; aparece tarde, y algunos la consideran ya el comienzo de la insuficiencia. Y la insuficiencia hepática, el estadio final, cuando el hígado ya no puede metabolizar, sintetizar ni desintoxicar."
+    },
+    {
+      "title": "Causas",
+      "text": "Las causas. La más frecuente es el alcohol; le siguen el hígado graso no alcohólico, por la obesidad, y las hepatitis virales B y C. Hay causas autoinmunes, como la cirrosis biliar primaria, de mujeres, con anticuerpos antimitocondriales, y la hepatitis autoinmune. Genéticas, como la hemocromatosis, que deposita hierro, la enfermedad de Wilson, que deposita cobre, y el déficit de alfa uno antitripsina. Las que obstruyen el retorno venoso, como la insuficiencia cardíaca o el Budd-Chiari. Y en un diez a quince por ciento no se encuentra la causa: la cirrosis criptogénica."
+    },
+    {
+      "title": "Cirrosis alcohólica",
+      "text": "La cirrosis alcohólica, o de Laennec, pasa por etapas: primero hígado graso, después hepatitis alcohólica, y finalmente cirrosis. Importan la cantidad y los años de consumo: cuanto más se toma, más rápido. También el sexo, las hepatitis B o C previas, y la nutrición. El ejemplo de la clase: un bebedor que de joven tuvo una hepatitis B puede llegar a la cirrosis años antes que otro. Al cuadro hepático se suman los signos del alcoholismo: desnutrición con neuritis y glositis, hipertrofia de las parótidas, ginecomastia, náuseas por la mañana, la contractura de Dupuytren en la palma, la pancreatitis crónica, de la que el alcohol es la causa más frecuente, la falta de memoria y el insomnio."
+    },
+    {
+      "title": "Compensada y descompensada",
+      "text": "La cirrosis compensada puede quedar latente por años: el paciente está asintomático o tiene síntomas inespecíficos, y el diagnóstico de certeza lo da la biopsia. El laboratorio va cambiando: pancitopenia por el bazo, tiempo de protrombina prolongado, transaminasas y gammaglobulinas altas, y albúmina y colesterol bajos. La descompensada tiene todo eso acentuado, y algo que el profesor pide no olvidar: se le agrega la hipertensión portal. Además, febrícula, desnutrición, ictericia y prurito. Alrededor del sesenta por ciento se descompensa a los diez años del diagnóstico."
+    },
+    {
+      "title": "Estigmas en la piel",
+      "text": "Los estigmas en la piel. Las arañas vasculares, pequeños capilares dilatados en el territorio de la cava superior, que no hay que confundir con estrías. El eritema palmar, en las eminencias tenar e hipotenar, que no es patognomónico: aparece también en el embarazo o el hipertiroidismo. Las uñas de Terry, blancas en la parte proximal y rojas en la distal, por la albúmina baja. Moretones y sangrado de nariz, por falta de factores de coagulación y de plaquetas. La hiperpigmentación y los xantelasmas, por la colestasis. Y la ictericia."
+    },
+    {
+      "title": "Hábito de Chvostek y otras alteraciones",
+      "text": "En el hombre cirrótico, el hígado deja de degradar los estrógenos y bajan los andrógenos: es el hábito de Chvostek, con ginecomastia bilateral, atrofia testicular y vello de distribución femenina. En los estadios avanzados aparecen las alteraciones neurológicas: cambios en la conciencia, temblor, y el asterixis, ese aleteo de las manos, que anuncian la encefalopatía. Y alteraciones circulatorias: una vasodilatación generalizada, con taquicardia e hipotensión."
+    },
+    {
+      "title": "Clasificación de Child-Pugh",
+      "text": "La clasificación de Child-Pugh, que el profesor pide como el Padre Nuestro: el que no la sabe, lo bochan. Mide el pronóstico y la sobrevida. Se recuerda con la palabra BATEA: bilirrubina, albúmina, tiempo de Quick, encefalopatía y ascitis. Cada uno suma de uno a tres puntos. Bilirrubina: menos de dos, uno; de dos a tres, dos; más de tres, tres. Albúmina: más de tres y medio, uno; de dos ocho a tres y medio, dos; menos de dos ocho, tres. Quick: más de setenta, uno; de cuarenta a setenta, dos; menos de cuarenta, tres. Encefalopatía y ascitis: ausentes, uno; leves, dos; graves, tres."
+    },
+    {
+      "title": "Child A, B y C",
+      "text": "Y la suma da el grado. Child A, de cinco a seis puntos: una cirrosis compensada. Child B, de siete a nueve: descompensada, pero todavía puede revertirse a compensada. Y Child C, de diez a quince: descompensada, y lo que le salva la vida es el trasplante de hígado."
+    },
+    {
+      "title": "Hipertensión portal",
+      "text": "La hipertensión portal, pregunta de parcial, es el aumento de la presión en el sistema porta por encima de doce milímetros de mercurio, cuando lo normal es de ocho a diez. La causa más frecuente es la cirrosis, y aparece cuando ya está descompensada. Y la caracterizan cuatro cosas, que el profesor también marcó como pregunta de examen: las várices esofágicas, la ascitis, la esplenomegalia y la circulación colateral."
+    },
+    {
+      "title": "Causas según el sitio",
+      "text": "Según dónde está el obstáculo, la hipertensión portal es prehepática, por una trombosis de la porta o de la esplénica; hepática, y la más frecuente de todas es la cirrosis, a nivel sinusoidal; o suprahepática: el síndrome de Budd-Chiari, que obstruye las suprahepáticas, una obstrucción de la cava inferior, o un problema del corazón, como la insuficiencia cardíaca derecha o la pericarditis constrictiva, que aumenta la presión hacia atrás."
+    },
+    {
+      "title": "Circulación colateral",
+      "text": "La circulación colateral, pregunta de parcial, puede ser profunda o superficial. La profunda: las várices esofágicas, la más importante, por la vena coronaria estomáquica hacia las ácigos; las hemorroides, por la mesentérica inferior hacia las venas rectales; y las retroperitoneales, poco frecuentes. La superficial es la porto cava, por la vena paraumbilical: venas dilatadas que salen del ombligo hacia la base del tórax, y que cuando son muy marcadas forman la cabeza de medusa."
+    },
+    {
+      "title": "Várices esofágicas",
+      "text": "De la circulación profunda, lo que el profesor pide sí o sí son las várices esofágicas. Están en el treinta por ciento de las cirrosis compensadas y en el sesenta por ciento de las descompensadas, y su sangrado es una emergencia, una causa muy frecuente de muerte en estos pacientes. Se diagnostican con una endoscopía digestiva alta. Sangran más cuando miden más de cinco milímetros, tienen signo rojo, o la función del hígado es peor."
+    },
+    {
+      "title": "¿Ascendente o descendente?",
+      "text": "Y la maniobra que se pregunta en el parcial, en el oral y en el final: ¿cómo sé si la circulación es ascendente o descendente? Se busca la vena dilatada y se la comprime con un dedo. Las venas son blandas y se cierran fácil. Antes del dedo la sangre se acumula, y después del dedo la vena se vacía. Si queda llena por debajo del dedo y se vacía por arriba, la sangre estaba subiendo. Si queda llena por arriba y se vacía por debajo, estaba bajando."
+    },
+    {
+      "title": "Esplenomegalia",
+      "text": "La esplenomegalia casi siempre acompaña a la hipertensión portal, así que es un signo muy importante para pensarla. Y el bazo grande produce hiperesplenismo: destruye glóbulos rojos, glóbulos blancos y plaquetas, y aparece una pancitopenia."
+    },
+    {
+      "title": "Ascitis",
+      "text": "La ascitis, que el profesor marca como muy preguntada: a él mismo se la tomaron en el final de clínica médica. Es la acumulación de líquido en la cavidad peritoneal, y en el ochenta por ciento la causa es la hipertensión portal. El paciente consulta porque le aumentó el diámetro del abdomen y el peso, tiene digestiones pesadas, hernias o le falta el aire. Si además tiene edemas, es un síndrome ascítico edematoso."
+    },
+    {
+      "title": "Examen físico de la ascitis",
+      "text": "En el examen físico de la ascitis: a la inspección, un abdomen globoso, con el ombligo hacia afuera, los flancos abombados como un batracio, y a veces circulación colateral y estigmas de cirrosis. A la auscultación, no hay ruidos donde está el líquido. La percusión es lo que el profesor pide saber hacer sí o sí: matidez de concavidad superior con el paciente boca arriba, matidez que se desplaza al girarlo, que indica más de un litro, y con más líquido, la onda ascítica y el signo del témpano. A la palpación se busca el hígado y el bazo."
+    },
+    {
+      "title": "Paracentesis y GASA",
+      "text": "Ante toda ascitis, el primer estudio es la paracentesis, que diagnostica y a la vez drena. Lo que no puede faltar en el líquido es el recuento celular, la albúmina y las proteínas totales. Con la albúmina se calcula el gradiente de albúmina sero ascítico, el GASA, pregunta de parcial: la albúmina de la sangre menos la del líquido. Si es mayor o igual a uno coma uno gramos por decilitro, hay hipertensión portal: cirrosis, insuficiencia cardíaca, Budd-Chiari. Si es menor, la ascitis tiene otra causa, que no afecta a la porta: una carcinomatosis, una tuberculosis, una pancreatitis o un síndrome nefrótico."
+    },
+    {
+      "title": "El líquido ascítico",
+      "text": "Y el aspecto y las células del líquido. Transparente es lo normal. Opalescente o lechoso, con triglicéridos por encima de doscientos, indica una obstrucción linfática: la ascitis quilosa. Rosado o con sangre, una cirrosis, una neoplasia, una tuberculosis o un traumatismo. Y la pregunta de parcial: ¿cómo sé si el líquido está infectado? Con doscientos cincuenta neutrófilos o más por milímetro cúbico: es una peritonitis bacteriana espontánea, por traslocación, en general por Escherichia coli. Si predominan los linfocitos, hay que pensar en tuberculosis o carcinomatosis."
+    },
+    {
+      "title": "Diagnóstico",
+      "text": "Para el diagnóstico, la anamnesis busca el alcohol, los fármacos tóxicos para el hígado, las vías de contagio de las hepatitis y los antecedentes familiares. El laboratorio separa tres cosas: la necrosis, con las transaminasas; la colestasis, con la bilirrubina directa, la fosfatasa alcalina, la gamma GT y la cinco prima nucleotidasa; y la función, con el tiempo de Quick prolongado, la albúmina baja y la seudocolinesterasa baja. El hemograma puede mostrar anemia o pancitopenia, y hay pruebas para cada causa. En imágenes, la ecografía con Doppler muestra el hígado, el bazo, la ascitis y la porta; la endoscopía busca las várices. Y la biopsia da el diagnóstico de certeza y, muchas veces, la causa."
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+{
+ "fps": 24,
+ "total": 22744,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-porta",
+   "inicio": 96,
+   "frames": 748,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 312
+    },
+    {
+     "inicio": 408,
+     "frames": 179
+    },
+    {
+     "inicio": 587,
+     "frames": 257
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-cirrosis",
+   "inicio": 844,
+   "frames": 876,
+   "beats": [
+    {
+     "inicio": 844,
+     "frames": 223
+    },
+    {
+     "inicio": 1067,
+     "frames": 407
+    },
+    {
+     "inicio": 1474,
+     "frames": 246
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-funcion",
+   "inicio": 1720,
+   "frames": 917,
+   "beats": [
+    {
+     "inicio": 1720,
+     "frames": 466
+    },
+    {
+     "inicio": 2186,
+     "frames": 451
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-colaterales",
+   "inicio": 2637,
+   "frames": 839,
+   "beats": [
+    {
+     "inicio": 2637,
+     "frames": 245
+    },
+    {
+     "inicio": 2882,
+     "frames": 208
+    },
+    {
+     "inicio": 3090,
+     "frames": 386
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ascitis",
+   "inicio": 3476,
+   "frames": 881,
+   "beats": [
+    {
+     "inicio": 3476,
+     "frames": 339
+    },
+    {
+     "inicio": 3815,
+     "frames": 304
+    },
+    {
+     "inicio": 4119,
+     "frames": 238
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-bazo",
+   "inicio": 4357,
+   "frames": 757,
+   "beats": [
+    {
+     "inicio": 4357,
+     "frames": 315
+    },
+    {
+     "inicio": 4672,
+     "frames": 167
+    },
+    {
+     "inicio": 4839,
+     "frames": 275
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-direccion",
+   "inicio": 5114,
+   "frames": 861,
+   "beats": [
+    {
+     "inicio": 5114,
+     "frames": 662
+    },
+    {
+     "inicio": 5776,
+     "frames": 199
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 5975,
+   "frames": 715,
+   "beats": [
+    {
+     "inicio": 5975,
+     "frames": 417
+    },
+    {
+     "inicio": 6392,
+     "frames": 298
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tres",
+   "inicio": 6690,
+   "frames": 696,
+   "beats": [
+    {
+     "inicio": 6690,
+     "frames": 696
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-etiologia",
+   "inicio": 7386,
+   "frames": 949,
+   "beats": [
+    {
+     "inicio": 7386,
+     "frames": 430
+    },
+    {
+     "inicio": 7816,
+     "frames": 519
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alcoholica",
+   "inicio": 8335,
+   "frames": 1157,
+   "beats": [
+    {
+     "inicio": 8335,
+     "frames": 240
+    },
+    {
+     "inicio": 8575,
+     "frames": 443
+    },
+    {
+     "inicio": 9018,
+     "frames": 474
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-compensada",
+   "inicio": 9492,
+   "frames": 958,
+   "beats": [
+    {
+     "inicio": 9492,
+     "frames": 515
+    },
+    {
+     "inicio": 10007,
+     "frames": 443
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-piel",
+   "inicio": 10450,
+   "frames": 923,
+   "beats": [
+    {
+     "inicio": 10450,
+     "frames": 466
+    },
+    {
+     "inicio": 10916,
+     "frames": 457
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-chvostek",
+   "inicio": 11373,
+   "frames": 757,
+   "beats": [
+    {
+     "inicio": 11373,
+     "frames": 319
+    },
+    {
+     "inicio": 11692,
+     "frames": 438
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-child",
+   "inicio": 12130,
+   "frames": 1195,
+   "beats": [
+    {
+     "inicio": 12130,
+     "frames": 445
+    },
+    {
+     "inicio": 12575,
+     "frames": 750
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-child-grados",
+   "inicio": 13325,
+   "frames": 558,
+   "beats": [
+    {
+     "inicio": 13325,
+     "frames": 187
+    },
+    {
+     "inicio": 13512,
+     "frames": 184
+    },
+    {
+     "inicio": 13696,
+     "frames": 187
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-htp-def",
+   "inicio": 13883,
+   "frames": 682,
+   "beats": [
+    {
+     "inicio": 13883,
+     "frames": 396
+    },
+    {
+     "inicio": 14279,
+     "frames": 286
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-htp-causas",
+   "inicio": 14565,
+   "frames": 634,
+   "beats": [
+    {
+     "inicio": 14565,
+     "frames": 634
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colaterales",
+   "inicio": 15199,
+   "frames": 773,
+   "beats": [
+    {
+     "inicio": 15199,
+     "frames": 498
+    },
+    {
+     "inicio": 15697,
+     "frames": 275
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-varices",
+   "inicio": 15972,
+   "frames": 715,
+   "beats": [
+    {
+     "inicio": 15972,
+     "frames": 435
+    },
+    {
+     "inicio": 16407,
+     "frames": 280
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-direccion",
+   "inicio": 16687,
+   "frames": 767,
+   "beats": [
+    {
+     "inicio": 16687,
+     "frames": 498
+    },
+    {
+     "inicio": 17185,
+     "frames": 269
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-bazo",
+   "inicio": 17454,
+   "frames": 416,
+   "beats": [
+    {
+     "inicio": 17454,
+     "frames": 191
+    },
+    {
+     "inicio": 17645,
+     "frames": 225
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ascitis",
+   "inicio": 17870,
+   "frames": 689,
+   "beats": [
+    {
+     "inicio": 17870,
+     "frames": 364
+    },
+    {
+     "inicio": 18234,
+     "frames": 325
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ascitis-examen",
+   "inicio": 18559,
+   "frames": 869,
+   "beats": [
+    {
+     "inicio": 18559,
+     "frames": 413
+    },
+    {
+     "inicio": 18972,
+     "frames": 456
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-paracentesis",
+   "inicio": 19428,
+   "frames": 1010,
+   "beats": [
+    {
+     "inicio": 19428,
+     "frames": 318
+    },
+    {
+     "inicio": 19746,
+     "frames": 692
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-liquido",
+   "inicio": 20438,
+   "frames": 984,
+   "beats": [
+    {
+     "inicio": 20438,
+     "frames": 499
+    },
+    {
+     "inicio": 20937,
+     "frames": 485
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dx",
+   "inicio": 21422,
+   "frames": 1202,
+   "beats": [
+    {
+     "inicio": 21422,
+     "frames": 261
+    },
+    {
+     "inicio": 21683,
+     "frames": 585
+    },
+    {
+     "inicio": 22268,
+     "frames": 356
+    }
+   ]
+  }
+ ]
+}

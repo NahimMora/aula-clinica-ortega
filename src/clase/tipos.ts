@@ -103,7 +103,9 @@ export type FiguraId =
   | 'absorcion'
   | 'peritoneo'
   | 'hipovolemia'
-  | 'portal';
+  | 'portal'
+  | 'amonio'
+  | 'pancreatitis';
 
 export type FiguraSpec = { f: FiguraId } & Record<string, unknown>;
 

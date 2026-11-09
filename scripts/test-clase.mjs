@@ -23,6 +23,7 @@ const CONFIG = {
   'dig-11': { mapa: ['Vesícula', 'Vía biliar principal', 'Colelitiasis', 'Colecistitis aguda', 'Síndrome coledociano', 'Coledocolitiasis', 'Colangitis'], apartado: 'Vía biliar', titulo: /coledociano/i, maniobra: /Murphy/ },
   'dig-12': { mapa: ['Cuánto perdió', 'Alta', 'Baja', 'Clases I a IV', 'Ortostatismo', 'Causas', 'Formas'], apartado: 'Alta o baja', titulo: /treitz/i, maniobra: /Tacto rectal/i },
   'dig-13': { mapa: ['Cirrosis', 'Hipertensión portal', 'Causas', 'Child-Pugh', 'Colaterales', 'Ascitis', 'Esplenomegalia'], apartado: 'Child-Pugh', titulo: /child/i, maniobra: /ascitis|Ascitis|bazo|Bazo/ },
+  'dig-14': { mapa: ['Aguda', 'Encefalopatía hepática', 'Crónica', 'O’Grady', 'Bernuau', 'Grados', 'Lo distintivo'], apartado: 'Encefalopatía', titulo: /camino del amonio|encefalopat/i, maniobra: null },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];
