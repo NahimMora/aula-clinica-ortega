@@ -46,6 +46,12 @@ import { clase as planRen03 } from '../../content/chapters/ren-03/clase';
 import tiemposRen03 from '../../content/chapters/ren-03/clase-tiempos.json';
 import { clase as planRen04 } from '../../content/chapters/ren-04/clase';
 import tiemposRen04 from '../../content/chapters/ren-04/clase-tiempos.json';
+import { clase as planRen05 } from '../../content/chapters/ren-05/clase';
+import tiemposRen05 from '../../content/chapters/ren-05/clase-tiempos.json';
+import { clase as planRen06 } from '../../content/chapters/ren-06/clase';
+import tiemposRen06 from '../../content/chapters/ren-06/clase-tiempos.json';
+import { clase as planRen07 } from '../../content/chapters/ren-07/clase';
+import tiemposRen07 from '../../content/chapters/ren-07/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -207,6 +213,9 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'ren-07-clase', titulo: 'Litiasis renoureteral', plan: planRen07, tiempos: tiemposRen07 as TiemposClase },
+  { id: 'ren-06-clase', titulo: 'Infección urinaria', plan: planRen06, tiempos: tiemposRen06 as TiemposClase },
+  { id: 'ren-05-clase', titulo: 'Insuficiencia renal', plan: planRen05, tiempos: tiemposRen05 as TiemposClase },
   { id: 'ren-04-clase', titulo: 'Síndrome nefrótico', plan: planRen04, tiempos: tiemposRen04 as TiemposClase },
   { id: 'ren-03-clase', titulo: 'Síndrome nefrítico', plan: planRen03, tiempos: tiemposRen03 as TiemposClase },
   { id: 'ren-02-clase', titulo: 'Examen físico nefrourológico', plan: planRen02, tiempos: tiemposRen02 as TiemposClase },

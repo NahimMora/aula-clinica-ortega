@@ -1,0 +1,106 @@
+{
+  "src": "media/ren-06/clase.mp4",
+  "poster": "media/ren-06/clase.jpg",
+  "vtt": "media/ren-06/clase.vtt",
+  "duration": "7:42",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Cómo llega"
+    },
+    {
+      "t": 68,
+      "label": "Fisiopatología · Baja o alta"
+    },
+    {
+      "t": 101,
+      "label": "Fisiopatología · El germen"
+    },
+    {
+      "t": 127,
+      "label": "Teoría · Qué es y cómo llega"
+    },
+    {
+      "t": 214,
+      "label": "Teoría · Gérmenes"
+    },
+    {
+      "t": 239,
+      "label": "Teoría · Baja o alta"
+    },
+    {
+      "t": 334,
+      "label": "Teoría · Complicada y recaída"
+    },
+    {
+      "t": 392,
+      "label": "Teoría · Diagnóstico"
+    }
+  ],
+  "script": [
+    {
+      "title": "La bacteria sube",
+      "text": "La infección urinaria casi siempre sube desde abajo: es la vía ascendente, alrededor del ochenta por ciento. Las bacterias del intestino, sobre todo Escherichia coli, colonizan el periné y el meato de la uretra. Suben por la uretra y se multiplican en la vejiga: eso es la cistitis, la infección urinaria baja. Por eso es tanto más frecuente en la mujer, que tiene la uretra corta. Si siguen subiendo por el uréter, porque hay reflujo o una obstrucción, llegan al riñón: la pielonefritis, la infección alta."
+    },
+    {
+      "title": "Por qué la orina suele estar estéril",
+      "text": "La orina normalmente está estéril porque el chorro arrastra las bacterias que entran, y la vejiga se vacía por completo varias veces al día. Si la orina se estanca, por una obstrucción, una vejiga que no se vacía, o el hábito de aguantarse, o si refluye hacia el uréter, o si hay una sonda que les da un camino, las bacterias tienen tiempo de multiplicarse. Por eso el reflujo y la obstrucción son las dos grandes puertas de entrada."
+    },
+    {
+      "title": "Por qué la cistitis no da fiebre",
+      "text": "La diferencia entre la infección baja y la alta está en cuánto invade la bacteria. En la cistitis, la infección queda en la mucosa de la vejiga: la orina ácida pasando por una mucosa inflamada arde, la disuria, y la vejiga irritada pide orinar a cada rato. Pero no hay fiebre. En la pielonefritis, las bacterias invaden el tejido del riñón: aparecen la fiebre, los escalofríos y el mal estado general, y el riñón inflamado se hincha y estira su cápsula, que duele a la puñopercusión."
+    },
+    {
+      "title": "La orina alcalina del Proteus",
+      "text": "Un detalle de los gérmenes que tiene su porqué. Proteus y Klebsiella desdoblan la urea de la orina y liberan amoníaco. Eso vuelve la orina alcalina, con un pH cercano a siete; con Escherichia coli, en cambio, la orina sigue ácida. Y en una orina alcalina precipitan cristales que forman cálculos de estruvita: infección y litiasis se alimentan una a la otra."
+    },
+    {
+      "title": "Infección urinaria",
+      "text": "La infección urinaria, que se pregunta en el parcial y en el final, es la colonización y multiplicación de microorganismos en la vía urinaria. Se habla de bacteriuria significativa cuando el urocultivo tiene diez a la quinta unidades formadoras de colonias por mililitro o más; en la mujer con síntomas puede alcanzar con menos, y en el hombre, desde diez a la tercera. Y de leucocituria, cuando hay más de cinco leucocitos por campo. Ocho o nueve de cada diez pacientes son mujeres; en los recién nacidos, en cambio, predomina el varón."
+    },
+    {
+      "title": "Vías de infección",
+      "text": "Las vías de infección. La ascendente, desde el meato hacia arriba, es la más frecuente, alrededor del ochenta por ciento. Le siguen la hematógena, por contigüidad, y la linfática, muy rara. Y el profesor marca dos respuestas que no pueden fallar: la vía más frecuente es la ascendente, y el germen más frecuente es Escherichia coli. El que no las sabe, está bochado."
+    },
+    {
+      "title": "Factores predisponentes",
+      "text": "Los factores que la favorecen. Los dos grandes son el reflujo vesicoureteral, sobre todo en los chicos, y la obstrucción. En la mujer, la uretra corta, las relaciones sexuales, los espermicidas y el diafragma, y en la menopausia el déficit de estrógenos. Y un hábito: aguantarse las ganas de orinar, que deja orina estancada."
+    },
+    {
+      "title": "Los gérmenes",
+      "text": "Los gérmenes, que se preguntan en el parcial. El más frecuente, por lejos, es Escherichia coli, noventa a noventa y cinco por ciento, con una orina ácida. Proteus y Klebsiella desdoblan la urea y alcalinizan la orina. El estafilococo saprófito aparece en mujeres jóvenes, y Pseudomonas y Enterobacter en las infecciones intrahospitalarias, con sondas."
+    },
+    {
+      "title": "ITU baja: cistitis",
+      "text": "Cómo se presenta en la guardia, pregunta de parcial. La infección baja, la cistitis, es la más frecuente, alrededor del setenta por ciento. Su síntoma cardinal es la disuria, y el profesor pide no olvidarlo. Se acompaña de polaquiuria, tenesmo, urgencia, dolor arriba del pubis y a veces sangre en la orina. El paciente está bien, y no tiene fiebre."
+    },
+    {
+      "title": "ITU alta: pielonefritis aguda",
+      "text": "De la infección alta, lo que se pregunta es la pielonefritis aguda. El paciente llega con mal estado general, fiebre con escalofríos, náuseas, vómitos y dolor lumbar, además de los síntomas de la baja. La puñopercusión es positiva. Y se considera una infección complicada, porque puede pasar a la sangre y dar una sepsis."
+    },
+    {
+      "title": "Baja o alta: el cuadro",
+      "text": "En un cuadro: la baja es el setenta por ciento, con buen estado general, sin fiebre, dolor arriba del pubis y síntomas urinarios. La alta es el treinta por ciento, con mal estado general, fiebre con escalofríos, dolor lumbar, los mismos síntomas urinarios, y la puñopercusión positiva."
+    },
+    {
+      "title": "Bacteriuria asintomática",
+      "text": "Y la bacteriuria asintomática: el urocultivo es positivo, pero el paciente no tiene síntomas ni leucocitos en la orina. El profesor lo explica así: los síntomas los producen los leucocitos, la respuesta inflamatoria. Se repite la muestra, porque puede ser una contaminación, y se trata solo en los pacientes de alto riesgo, como la embarazada."
+    },
+    {
+      "title": "ITU complicada: factores de riesgo",
+      "text": "Los factores de riesgo de una infección urinaria complicada, que el profesor pide como el Padre Nuestro. De la vía urinaria: una obstrucción, como la litiasis, el reflujo, o una anomalía. Instrumentos: una sonda, un catéter, una cirugía urológica, o una infección intrahospitalaria. Del huésped: el embarazo, la diabetes, la inmunosupresión. Y del paciente: ser varón, lactante o mayor de sesenta y cinco, tener infecciones a repetición, síntomas de más de siete días, o haber recibido antibióticos hace poco."
+    },
+    {
+      "title": "Recaída o reinfección",
+      "text": "Y otra pregunta de parcial: recaída o reinfección. La recaída es la infección que vuelve poco después de terminar el tratamiento, dos o tres semanas, con el mismo germen: no se terminó de curar. La reinfección es una infección nueva: el paciente se había curado y se vuelve a infectar, con otro germen."
+    },
+    {
+      "title": "Cómo se diagnostica",
+      "text": "El diagnóstico se apoya en la clínica y dos estudios. La orina completa está en unas tres horas: leucocitos, nitritos, el pH. Si es positiva, se empieza un tratamiento empírico. El urocultivo tarda uno o dos días, confirma la infección con diez a la quinta o más, y dice qué germen es, para ajustar el antibiótico. Ojo con los leucocitos: pueden faltar si hay una obstrucción, una neutropenia o una orina alcalina que los destruye. Y si hay leucocitos sin germen, hay que pensar en una tuberculosis o una litiasis. En imágenes, la primera es la ecografía renal; y en los chicos, la cistouretrografía miccional busca el reflujo."
+    },
+    {
+      "title": "Prevención",
+      "text": "Y la prevención, que sale directo del mecanismo: orinar después de cada relación sexual, para arrastrar las bacterias; tomar mucho líquido; no aguantarse las ganas; evitar el diafragma y los espermicidas; y la higiene perineal de adelante hacia atrás, para no llevar bacterias del intestino al meato."
+    }
+  ]
+}

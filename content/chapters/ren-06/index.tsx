@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * ren-06 — Infección urinaria. Fuente: clases «Infección urinaria» 1–2 (Ortega) + resumen al final de la clase
@@ -84,7 +85,7 @@ const chapter: Chapter = {
     },
     {
       id: 'germenes',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Los gérmenes',
       priority: 'imprescindible',
       summary: 'E. coli (90–95 %); Proteus y Klebsiella (orina alcalina); Pseudomonas (intrahospitalaria).',
@@ -104,7 +105,7 @@ const chapter: Chapter = {
     },
     {
       id: 'clinica',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Cómo llega a la guardia: baja vs alta',
       priority: 'imprescindible',
       summary: 'Baja (70 %): disuria, sin fiebre. Alta (30 %): mal estado general, fiebre, dolor lumbar + todo lo de la baja.',
@@ -144,7 +145,7 @@ const chapter: Chapter = {
     },
     {
       id: 'complicada',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'ITU complicada, recaída y reinfección',
       priority: 'imprescindible',
       summary: 'Complicada: con factores de riesgo o clínica de pielonefritis. Recaída: mismo germen. Reinfección: otro germen.',
@@ -209,6 +210,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'ren06-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -223,6 +225,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-d02',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -237,6 +240,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-d03',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -251,6 +255,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-d04',
+      origen: 'clase',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'complicada',
@@ -261,6 +266,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-d05',
+      origen: 'practica',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'diagnostico',
@@ -274,6 +280,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'ren06-q01',
+      origen: 'practica',
       topic: 'Gérmenes',
       difficulty: 1,
       emphasis: true,
@@ -289,6 +296,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q02',
+      origen: 'practica',
       topic: 'Vías',
       difficulty: 1,
       emphasis: true,
@@ -304,6 +312,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q03',
+      origen: 'practica',
       topic: 'Gérmenes',
       difficulty: 2,
       emphasis: true,
@@ -319,6 +328,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q04',
+      origen: 'practica',
       topic: 'Gérmenes',
       difficulty: 2,
       stem: 'Paciente internado con sonda vesical desde hace 6 días y fiebre: el germen más probable es:',
@@ -333,6 +343,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q05',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 1,
       emphasis: true,
@@ -348,6 +359,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q06',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       emphasis: true,
@@ -363,6 +375,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q07',
+      origen: 'practica',
       topic: 'Definición',
       difficulty: 1,
       stem: 'Se habla de bacteriuria significativa con un urocultivo de:',
@@ -377,6 +390,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q08',
+      origen: 'practica',
       topic: 'Complicada',
       difficulty: 2,
       stem: 'Una infección urinaria que vuelve a las 2 semanas de terminar el tratamiento, con el **mismo** germen, es una:',
@@ -391,6 +405,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q09',
+      origen: 'practica',
       topic: 'Complicada',
       difficulty: 2,
       stem: '¿Cuál de estos **no** es un factor de ITU complicada?',
@@ -405,6 +420,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q10',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 2,
       stem: 'El estudio que confirma la infección urinaria e identifica el germen es:',
@@ -419,6 +435,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren06-q11',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 3,
       stem: 'La leucocituria puede **faltar** en una infección urinaria cuando hay:',
@@ -501,6 +518,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'ren06-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Mujer de 25 años, sin antecedentes, con ardor al orinar, polaquiuria y dolor suprapúbico desde ayer; afebril. Orina completa: 20 leucocitos por campo. Conducta:',
@@ -517,6 +535,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

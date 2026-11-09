@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * ren-07 — Litiasis renoureteral. Fuente: clases «Litiasis renoureteral» 1–2 (Ortega) + resumen al final de la clase
@@ -68,7 +69,7 @@ const chapter: Chapter = {
     },
     {
       id: 'tipos',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Los tipos de cálculos',
       priority: 'imprescindible',
       summary: 'Cálcicos (oxalato, el más frecuente; fosfato), ácido úrico (radiolúcido), estruvita (infección), cistina (hereditaria).',
@@ -180,6 +181,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'ren07-d01',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -194,6 +196,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-d02',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -209,6 +212,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-d03',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'clinica',
@@ -225,6 +229,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'ren07-q01',
+      origen: 'practica',
       topic: 'Tipos',
       difficulty: 1,
       emphasis: true,
@@ -240,6 +245,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q02',
+      origen: 'practica',
       topic: 'Tipos',
       difficulty: 2,
       emphasis: true,
@@ -255,6 +261,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q03',
+      origen: 'practica',
       topic: 'Tipos',
       difficulty: 2,
       stem: 'Un cálculo coraliforme («asta de ciervo») con orina alcalina y urocultivo con Proteus es de:',
@@ -269,6 +276,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q04',
+      origen: 'practica',
       topic: 'Formación',
       difficulty: 2,
       emphasis: true,
@@ -284,6 +292,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q05',
+      origen: 'practica',
       topic: 'Epidemiología',
       difficulty: 1,
       stem: 'La litiasis urinaria es más frecuente en:',
@@ -298,6 +307,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q06',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       stem: 'La hematuria de un cólico renoureteral es típicamente:',
@@ -312,6 +322,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q07',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 2,
       stem: 'En la ecografía, el cálculo se reconoce por:',
@@ -326,6 +337,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q08',
+      origen: 'practica',
       topic: 'Conducta',
       difficulty: 2,
       stem: 'Un cálculo ureteral de 3 mm:',
@@ -340,6 +352,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ren07-q09',
+      origen: 'practica',
       topic: 'Tipos',
       difficulty: 3,
       stem: 'Ante un cálculo de calcio con calcemia muy alta, la causa que buscás primero es:',
@@ -412,6 +425,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'ren07-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Hombre de 40 años con dolor lumbar izquierdo brusco que va a la ingle, inquieto, con hematuria; la Rx de abdomen no muestra nada y la ecografía muestra una imagen con sombra acústica e hidronefrosis. El cálculo probable es de:',
@@ -428,6 +442,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

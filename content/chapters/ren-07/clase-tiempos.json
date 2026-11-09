@@ -1,0 +1,229 @@
+{
+ "fps": 24,
+ "total": 10015,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-formacion",
+   "inicio": 96,
+   "frames": 820,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 212
+    },
+    {
+     "inicio": 308,
+     "frames": 189
+    },
+    {
+     "inicio": 497,
+     "frames": 419
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-colico",
+   "inicio": 916,
+   "frames": 747,
+   "beats": [
+    {
+     "inicio": 916,
+     "frames": 144
+    },
+    {
+     "inicio": 1060,
+     "frames": 314
+    },
+    {
+     "inicio": 1374,
+     "frames": 289
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ph",
+   "inicio": 1663,
+   "frames": 761,
+   "beats": [
+    {
+     "inicio": 1663,
+     "frames": 330
+    },
+    {
+     "inicio": 1993,
+     "frames": 183
+    },
+    {
+     "inicio": 2176,
+     "frames": 248
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 2424,
+   "frames": 623,
+   "beats": [
+    {
+     "inicio": 2424,
+     "frames": 199
+    },
+    {
+     "inicio": 2623,
+     "frames": 424
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-factores",
+   "inicio": 3047,
+   "frames": 726,
+   "beats": [
+    {
+     "inicio": 3047,
+     "frames": 726
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-inhibidores",
+   "inicio": 3773,
+   "frames": 512,
+   "beats": [
+    {
+     "inicio": 3773,
+     "frames": 234
+    },
+    {
+     "inicio": 4007,
+     "frames": 278
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tipos",
+   "inicio": 4285,
+   "frames": 735,
+   "beats": [
+    {
+     "inicio": 4285,
+     "frames": 469
+    },
+    {
+     "inicio": 4754,
+     "frames": 266
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-calcicos",
+   "inicio": 5020,
+   "frames": 806,
+   "beats": [
+    {
+     "inicio": 5020,
+     "frames": 492
+    },
+    {
+     "inicio": 5512,
+     "frames": 314
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otros",
+   "inicio": 5826,
+   "frames": 946,
+   "beats": [
+    {
+     "inicio": 5826,
+     "frames": 507
+    },
+    {
+     "inicio": 6333,
+     "frames": 439
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-colico",
+   "inicio": 6772,
+   "frames": 622,
+   "beats": [
+    {
+     "inicio": 6772,
+     "frames": 328
+    },
+    {
+     "inicio": 7100,
+     "frames": 294
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-donde",
+   "inicio": 7394,
+   "frames": 551,
+   "beats": [
+    {
+     "inicio": 7394,
+     "frames": 551
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diferenciales",
+   "inicio": 7945,
+   "frames": 515,
+   "beats": [
+    {
+     "inicio": 7945,
+     "frames": 515
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-imagenes",
+   "inicio": 8460,
+   "frames": 638,
+   "beats": [
+    {
+     "inicio": 8460,
+     "frames": 638
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tamano",
+   "inicio": 9098,
+   "frames": 797,
+   "beats": [
+    {
+     "inicio": 9098,
+     "frames": 420
+    },
+    {
+     "inicio": 9518,
+     "frames": 377
+    }
+   ]
+  }
+ ]
+}

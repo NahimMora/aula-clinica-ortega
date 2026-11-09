@@ -1,0 +1,277 @@
+{
+ "fps": 24,
+ "total": 11093,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-ascendente",
+   "inicio": 96,
+   "frames": 867,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 352
+    },
+    {
+     "inicio": 448,
+     "frames": 295
+    },
+    {
+     "inicio": 743,
+     "frames": 220
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-defensas",
+   "inicio": 963,
+   "frames": 682,
+   "beats": [
+    {
+     "inicio": 963,
+     "frames": 219
+    },
+    {
+     "inicio": 1182,
+     "frames": 331
+    },
+    {
+     "inicio": 1513,
+     "frames": 132
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sintomas",
+   "inicio": 1645,
+   "frames": 794,
+   "beats": [
+    {
+     "inicio": 1645,
+     "frames": 464
+    },
+    {
+     "inicio": 2109,
+     "frames": 330
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ph",
+   "inicio": 2439,
+   "frames": 630,
+   "beats": [
+    {
+     "inicio": 2439,
+     "frames": 211
+    },
+    {
+     "inicio": 2650,
+     "frames": 212
+    },
+    {
+     "inicio": 2862,
+     "frames": 207
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 3069,
+   "frames": 846,
+   "beats": [
+    {
+     "inicio": 3069,
+     "frames": 219
+    },
+    {
+     "inicio": 3288,
+     "frames": 443
+    },
+    {
+     "inicio": 3731,
+     "frames": 184
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-vias",
+   "inicio": 3915,
+   "frames": 649,
+   "beats": [
+    {
+     "inicio": 3915,
+     "frames": 352
+    },
+    {
+     "inicio": 4267,
+     "frames": 297
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-factores",
+   "inicio": 4564,
+   "frames": 583,
+   "beats": [
+    {
+     "inicio": 4564,
+     "frames": 225
+    },
+    {
+     "inicio": 4789,
+     "frames": 358
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-germenes",
+   "inicio": 5147,
+   "frames": 612,
+   "beats": [
+    {
+     "inicio": 5147,
+     "frames": 389
+    },
+    {
+     "inicio": 5536,
+     "frames": 223
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-baja",
+   "inicio": 5759,
+   "frames": 643,
+   "beats": [
+    {
+     "inicio": 5759,
+     "frames": 380
+    },
+    {
+     "inicio": 6139,
+     "frames": 263
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alta",
+   "inicio": 6402,
+   "frames": 575,
+   "beats": [
+    {
+     "inicio": 6402,
+     "frames": 356
+    },
+    {
+     "inicio": 6758,
+     "frames": 219
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-baja-alta",
+   "inicio": 6977,
+   "frames": 481,
+   "beats": [
+    {
+     "inicio": 6977,
+     "frames": 481
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-asintomatica",
+   "inicio": 7458,
+   "frames": 565,
+   "beats": [
+    {
+     "inicio": 7458,
+     "frames": 359
+    },
+    {
+     "inicio": 7817,
+     "frames": 206
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-complicada",
+   "inicio": 8023,
+   "frames": 887,
+   "beats": [
+    {
+     "inicio": 8023,
+     "frames": 484
+    },
+    {
+     "inicio": 8507,
+     "frames": 403
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-recaida",
+   "inicio": 8910,
+   "frames": 518,
+   "beats": [
+    {
+     "inicio": 8910,
+     "frames": 331
+    },
+    {
+     "inicio": 9241,
+     "frames": 187
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dx",
+   "inicio": 9428,
+   "frames": 1099,
+   "beats": [
+    {
+     "inicio": 9428,
+     "frames": 567
+    },
+    {
+     "inicio": 9995,
+     "frames": 328
+    },
+    {
+     "inicio": 10323,
+     "frames": 204
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-prevencion",
+   "inicio": 10527,
+   "frames": 446,
+   "beats": [
+    {
+     "inicio": 10527,
+     "frames": 446
+    }
+   ]
+  }
+ ]
+}

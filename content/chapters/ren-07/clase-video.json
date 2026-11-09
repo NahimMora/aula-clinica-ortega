@@ -1,0 +1,94 @@
+{
+  "src": "media/ren-07/clase.mp4",
+  "poster": "media/ren-07/clase.jpg",
+  "vtt": "media/ren-07/clase.vtt",
+  "duration": "6:57",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Formación"
+    },
+    {
+      "t": 38,
+      "label": "Fisiopatología · El cólico"
+    },
+    {
+      "t": 69,
+      "label": "Fisiopatología · El pH"
+    },
+    {
+      "t": 101,
+      "label": "Teoría · Qué es y cómo se forma"
+    },
+    {
+      "t": 178,
+      "label": "Teoría · Tipos"
+    },
+    {
+      "t": 282,
+      "label": "Teoría · El cólico"
+    },
+    {
+      "t": 352,
+      "label": "Teoría · Diagnóstico"
+    }
+  ],
+  "script": [
+    {
+      "title": "Cómo nace un cálculo",
+      "text": "Un cálculo nace en una orina sobresaturada: poca agua, o demasiado calcio, oxalato o ácido úrico disueltos. Los cristales se forman alrededor de un núcleo, la nucleación, y después crecen y se agregan unos con otros. Así aparece el cálculo. Lo que el profesor pide sí o sí: la orina tiene inhibidores, el citrato y el magnesio, que frenan la nucleación. Si faltan en la orina, hay más tendencia a formar cálculos; por eso se miden y se pueden reponer."
+    },
+    {
+      "title": "Por qué duele así el cólico",
+      "text": "El cólico renoureteral aparece cuando el cálculo baja y se traba en el uréter. La orina se acumula detrás, la vía de arriba se distiende de golpe, y el uréter se contrae con fuerza contra el obstáculo, en ondas: por eso el dolor va y viene, y el paciente no encuentra posición. A medida que el cálculo baja, el dolor se corre hacia la fosa ilíaca y los genitales. Y el cálculo, al rozar la mucosa, la hace sangrar: hematuria."
+    },
+    {
+      "title": "El pH decide qué cristal se forma",
+      "text": "El pH de la orina decide qué cristal se forma. En una orina ácida precipita el ácido úrico, como en la gota o en una dieta con mucha proteína; por eso esos cálculos se tratan alcalinizando la orina. En una orina alcalina, la que producen gérmenes como Proteus al desdoblar la urea, precipita la estruvita. Y en la radiografía, el calcio es radiopaco: se ve. El ácido úrico es radiolúcido: no se ve en la placa simple."
+    },
+    {
+      "title": "Litiasis renoureteral",
+      "text": "La litiasis renoureteral es la presencia de cálculos en la vía urinaria, y es la tercera consulta urinaria en frecuencia. Afecta al cinco a doce por ciento de la población, más a los hombres, con un pico entre los treinta y los sesenta años, aunque cada vez aparece en gente más joven, y vuelve con frecuencia. Su consecuencia es la obstrucción, que trae dolor, infección e insuficiencia renal."
+    },
+    {
+      "title": "Factores predisponentes",
+      "text": "Los factores predisponentes, que pueden ser pregunta de parcial. Tomar poca agua, o vivir en un clima caluroso, concentra la orina. La dieta y las gaseosas aportan soluto. Las alteraciones metabólicas suben el calcio, el fósforo o el ácido úrico. Las infecciones por gérmenes que desdoblan la urea alcalinizan la orina. Y además pesan el sexo masculino, la edad, y la falta de inhibidores como el citrato y el magnesio."
+    },
+    {
+      "title": "Citrato y magnesio",
+      "text": "Lo que el profesor pide sí o sí: la orina tiene inhibidores naturales, el magnesio y el citrato, que destruyen el proceso de nucleación. Si el paciente tiene poco magnesio o poco citrato en la orina, forma cálculos con más facilidad. Por eso se miden en la orina, y se pueden reponer para prevenir."
+    },
+    {
+      "title": "Los tipos de cálculos",
+      "text": "Los tipos de cálculos, pregunta de examen y de cajón: cuáles son y cuál es el más frecuente. Los cálcicos, de oxalato o de fosfato de calcio, son la gran mayoría, setenta a ochenta por ciento; el profesor cuenta que de diez pacientes que vio en la guardia, ocho o nueve tenían cálculos de calcio. Le siguen la estruvita, el ácido úrico y, muy rara, la cistina. Los cálcicos y la estruvita se ven en la radiografía; el ácido úrico no."
+    },
+    {
+      "title": "Los cálcicos",
+      "text": "Los cálculos de calcio. El de oxalato de calcio es el más frecuente: chico y duro. El oxalato sube por causas intestinales o por alimentos como la espinaca, el chocolate o el café. El de fosfato de calcio es más grande y más blando. Y los dos son radiopacos. Detrás suele haber una hipercalciuria: absortiva, porque el intestino absorbe calcio de más; renal, porque el riñón lo pierde; o resortiva, porque una paratiroides hiperactiva saca calcio del hueso."
+    },
+    {
+      "title": "Estruvita, ácido úrico y cistina",
+      "text": "Y los otros, también pregunta de examen. La estruvita, o fosfato amónico magnésico, es el cálculo de la infección: Proteus desdobla la urea, alcaliniza la orina, y el cálculo crece hasta ocupar la pelvis y los cálices como un molde, el coraliforme en asta de ciervo. Casi siempre requiere cirugía. El de ácido úrico se forma en orina ácida: la gota, una dieta rica en proteínas, algunas enfermedades de la sangre, los diuréticos. No se ve en la radiografía y se trata alcalinizando la orina. Y el de cistina es hereditario, de chicos y jóvenes."
+    },
+    {
+      "title": "El cólico renoureteral",
+      "text": "El cólico renoureteral empieza de golpe, es cólico y fluctuante, y va de la fosa lumbar al flanco, la fosa ilíaca y los genitales. El paciente está inquieto: se mueve todo el tiempo. Se acompaña de hematuria con glóbulos de forma normal, náuseas, vómitos y disuria. Al examen, la puñopercusión es positiva y duelen los puntos ureterales."
+    },
+    {
+      "title": "Dónde está el cálculo",
+      "text": "Dónde está el cálculo cambia el cuadro. En la pelvis renal puede no dar síntomas, o dar una hidronefrosis si tapa la salida. En el uréter se traba en sus tres estrecheces: la unión con la pelvis, el cruce con los vasos ilíacos y la entrada a la vejiga. Y cuando llega a la vejiga, el dolor lumbar se alivia y quedan la disuria y la hematuria."
+    },
+    {
+      "title": "Dolor lumbar: en qué más pensar",
+      "text": "Ante un dolor en la fosa lumbar, lo primero es pensar en una infección urinaria alta o en un cálculo. Pero hay otros diagnósticos: el infarto renal, muy doloroso; la torsión del cordón espermático; causas digestivas, vasculares como un aneurisma de aorta, traumáticas; y el herpes zóster, antes de que aparezcan las vesículas."
+    },
+    {
+      "title": "Imágenes",
+      "text": "Las imágenes. La radiografía simple de abdomen muestra los cálculos radiopacos, los de calcio y estruvita, pero no los de ácido úrico. La ecografía muestra la sombra acústica del cálculo y la dilatación de la vía. El urograma excretor, con contraste, delinea hasta los radiolúcidos. Y la tomografía sin contraste es el estándar de oro, aunque es cara y da radiación."
+    },
+    {
+      "title": "Tamaño y laboratorio",
+      "text": "El tamaño decide la conducta. Un cálculo de menos de cinco milímetros suele eliminarse solo. Uno de más de cinco sale solo apenas en el veinte por ciento: se intenta el tratamiento médico, después la litotricia extracorpórea, y si no, la cirugía. Y el laboratorio busca la causa: la función renal, el calcio, el fósforo y el ácido úrico en sangre; y en la orina, el pH, el sedimento, el urocultivo, el calcio de veinticuatro horas, y el citrato y el magnesio."
+    }
+  ]
+}
