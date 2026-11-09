@@ -1,6 +1,6 @@
 # HANDOFF — Cómo continuar este proyecto (para otra IA o persona)
 
-> Leé esto primero. Se actualiza a medida que avanza el trabajo. Última actualización: 2026-11-08.
+> Leé esto primero. Se actualiza a medida que avanza el trabajo. Última actualización: 2026-11-09.
 
 ## 0. ESTADO ACTUAL — migración de todos los capítulos al formato dig-02 (pedido del 2026-11-08, manda sobre las secciones 2 y 4)
 
@@ -10,9 +10,15 @@ Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase 
 |---|---|---|---|---|---|---|
 | dig-01 | ✅ | ✅ | ✅ 24:30 | ✅ 19,7 MB | ✅ verificado en URL pública | video viejo 6:18 = repaso |
 | dig-02 | ✅ (piloto) | ✅ | ✅ | ✅ 44 MB (crf viejo) | ✅ | no tocar |
-| dig-03 | ✅ | ✅ | ✅ 18:24 | ⏳ render | ⏳ | maniobra nueva «tacto-rectal» (sin video) |
-| dig-04 | ✅ borrador | ⏳ | ⏳ | ⏳ | ⏳ | sin clase grabada: apunte p. 10–15 |
-| dig-05 … dig-15 | ⏳ | | | | | |
+| dig-03 | ✅ | ✅ | ✅ 18:24 | ✅ 14,9 MB | ✅ verificado | maniobra nueva «tacto-rectal» (sin video) |
+| dig-04 | ✅ | ✅ | ✅ 14:13 | ✅ 11,5 MB | ✅ verificado | |
+| dig-05 | ✅ | ✅ | ✅ 18:38 | ✅ 16,4 MB | ✅ verificado | figura `rha` con `todas` |
+| dig-06 | ✅ | ✅ | ✅ 8:17 | ✅ 6,7 MB | ✅ verificado | síndrome esofágico (el mensaje del commit da0c378 dice «hemorragia» por error) |
+| dig-07 | ✅ | ✅ | ✅ 10:09 | ✅ 9,0 MB | ✅ verificado | |
+| dig-08 | ✅ | ✅ | ✅ 8:37 | ✅ 7,5 MB | ✅ | |
+| dig-09 | ✅ | ✅ | ✅ 15:03 | ✅ 13,2 MB | ✅ | figura nueva `absorcion` |
+| dig-10 | ✅ | ✅ | ⏳ | ⏳ | ⏳ | figura nueva `peritoneo`; falta registrar en Root.tsx |
+| dig-11 … dig-15 | ⏳ | | | | | |
 | ren-01 … ren-07 | ⏳ | | | | | |
 | neu-01 … neu-06 | ⏳ (crear capítulos) | | | | | |
 | Maniobras neuro / soma | ⏳ | | | | | grupos en `soon` |
