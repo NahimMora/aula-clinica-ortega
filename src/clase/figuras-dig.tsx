@@ -1845,6 +1845,133 @@ function Reflujo({ t, paso, dt, vistas = ['normal', 'erge'] }: BaseFig & { vista
   );
 }
 
+/* ─────────── Barrera mucosa gástrica: normal, AINE, H. pylori, úlcera, gastritis autoinmune ─────────── */
+
+type ModoBarrera = 'normal' | 'aine' | 'hp' | 'ulcera' | 'autoinmune';
+
+function Barrera({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: ModoBarrera[] }) {
+  const m = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : apf(paso, dt, 0);
+  const Y = 250; // superficie del epitelio
+  const celdas = Array.from({ length: 14 }, (_, i) => 30 + i * 53);
+  const hueco = m === 'ulcera' ? [320, 520] : null;
+  const vasoAncho = m === 'aine' ? 8 : 22;
+  const moco = m === 'aine' || m === 'ulcera' ? 0.25 : 1;
+  const acido = Array.from({ length: 10 }, (_, i) => {
+    const x = 50 + i * 74 + Math.sin(t + i) * 8;
+    const baja = m === 'aine' || m === 'ulcera' ? ((t * 40 + i * 37) % 120) : 0;
+    return (
+      <text key={i} x={x} y={90 + (i % 3) * 30 + baja} fill={ACIDO} fontSize={22} fontWeight={700} fontFamily="Inter Variable, sans-serif">
+        H⁺
+      </text>
+    );
+  });
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label="Barrera mucosa gástrica">
+      <rect x={0} y={0} width={800} height={Y - 30} fill="#2a2030" />
+      {acido}
+      <L x={700} y={40} c={ACIDO} s={21}>
+        Luz: pH 1–2
+      </L>
+      {/* Moco y bicarbonato */}
+      <rect x={0} y={Y - 34} width={800} height={34} fill="#cfe3ef" opacity={0.35 * moco} />
+      <L x={110} y={Y - 50} c={CIELO} s={20} o={moco}>
+        Moco + bicarbonato
+      </L>
+      {/* Epitelio */}
+      {celdas.map((x, i) => {
+        if (hueco && x > hueco[0] && x < hueco[1]) return null;
+        const parietal = i % 3 === 1;
+        const destruida = m === 'autoinmune' && parietal;
+        return (
+          <g key={x} opacity={destruida ? 0.25 + 0.75 * (1 - u) : 1}>
+            <rect x={x - 24} y={Y} width={48} height={110} rx={8} fill={parietal ? '#d9a0a8' : MUCOSA} stroke="#a0605c" strokeWidth={2} />
+            <circle cx={x} cy={Y + 80} r={9} fill="#7a3f4c" />
+            {parietal && <text x={x} y={Y + 40} textAnchor="middle" fill="#3a1f26" fontSize={16} fontWeight={800} fontFamily="Inter Variable, sans-serif">P</text>}
+          </g>
+        );
+      })}
+      {hueco && (
+        <g opacity={u}>
+          <path d={`M${hueco[0]},${Y} C${hueco[0] + 30},${Y + 150} ${hueco[1] - 30},${Y + 150} ${hueco[1]},${Y}`} fill="#3a1f26" stroke={ROJO} strokeWidth={4} />
+          <path d={`M${hueco[0] - 10},${Y + 118} L${hueco[1] + 10},${Y + 118}`} stroke={INK3} strokeWidth={2} strokeDasharray="6 5" />
+          <L x={hueco[1] + 20} y={Y + 118} a="start" c={INK2} s={19} w={550}>
+            muscular de la mucosa
+          </L>
+          <L x={420} y={Y + 175} c={ROJO} s={23}>
+            Úlcera: pasa la muscular de la mucosa
+          </L>
+        </g>
+      )}
+      {/* Submucosa y capilar */}
+      <rect x={0} y={Y + 110} width={800} height={150} fill="#5b3a44" opacity={0.7} />
+      <path d={`M0,${Y + 190} L800,${Y + 190}`} stroke={SANGRE} strokeWidth={vasoAncho} strokeLinecap="round" />
+      {m !== 'aine' &&
+        Array.from({ length: 6 }, (_, i) => {
+          const v = (t * 0.35 + i / 6) % 1;
+          return (
+            <text key={i} x={80 + i * 120} y={Y + 180 - v * 160} fill="#cfe3ef" fontSize={17} fontWeight={700} fontFamily="Inter Variable, sans-serif" opacity={1 - v * 0.5}>
+              HCO₃⁻
+            </text>
+          );
+        })}
+      <L x={680} y={Y + 230} c={INK2} s={19} w={550}>
+        Flujo sanguíneo · prostaglandinas
+      </L>
+      {m === 'aine' && (
+        <g opacity={u}>
+          <L x={400} y={Y + 230} c={DURAZNO} s={23}>
+            AINE: sin prostaglandinas, vasoconstricción
+          </L>
+          <L x={400} y={Y + 258} c={DURAZNO} s={21} w={550}>
+            no llega bicarbonato: el ácido daña
+          </L>
+        </g>
+      )}
+      {m === 'hp' && (
+        <g opacity={u}>
+          {Array.from({ length: 6 }, (_, i) => {
+            const x = 140 + i * 95;
+            const y = Y - 18 + Math.sin(t * 2 + i) * 4;
+            return (
+              <g key={i}>
+                <ellipse cx={x} cy={y} rx={60} ry={30} fill={MENTA} opacity={0.12 + 0.06 * Math.sin(t * 2 + i)} />
+                <path d={`M${x - 16},${y} c6,-8 12,8 18,0 c6,-8 12,8 18,0`} fill="none" stroke={MENTA} strokeWidth={5} strokeLinecap="round" />
+              </g>
+            );
+          })}
+          <L x={400} y={150} c={MENTA} s={22}>
+            Ureasa: urea → amoníaco + CO₂
+          </L>
+          <L x={400} y={180} c={INK2} s={20} w={550}>
+            nube alcalina que protege a la bacteria · el amoníaco lesiona
+          </L>
+        </g>
+      )}
+      {m === 'autoinmune' && (
+        <g opacity={u}>
+          {Array.from({ length: 8 }, (_, i) => {
+            const x = 60 + i * 95;
+            const y = Y + 140 + Math.sin(t * 2 + i) * 6;
+            return <path key={i} d={`M${x},${y + 14} L${x},${y} M${x},${y} L${x - 10},${y - 12} M${x},${y} L${x + 10},${y - 12}`} stroke={LILA} strokeWidth={4} strokeLinecap="round" fill="none" />;
+          })}
+          <L x={400} y={150} c={LILA} s={22}>
+            Anticuerpos contra las células parietales
+          </L>
+          <L x={400} y={180} c={INK2} s={20} w={550}>
+            sin ácido (aclorhidria) · sin factor intrínseco: falta B12
+          </L>
+        </g>
+      )}
+      {m === 'normal' && (
+        <L x={400} y={150} c={MENTA} s={22} o={u}>
+          Moco, bicarbonato, flujo y prostaglandinas defienden la mucosa
+        </L>
+      )}
+    </svg>
+  );
+}
+
 export const FIGURAS_DIG = {
   deglucion: Deglucion,
   esofago: Esofago,
@@ -1866,4 +1993,5 @@ export const FIGURAS_DIG = {
   colateral: Colateral,
   inspiracion: Inspiracion,
   reflujo: Reflujo,
+  barrera: Barrera,
 } satisfies Record<string, (p: never) => ReactNode>;

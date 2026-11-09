@@ -98,7 +98,8 @@ export type FiguraId =
   | 'ascitis'
   | 'colateral'
   | 'inspiracion'
-  | 'reflujo';
+  | 'reflujo'
+  | 'barrera';
 
 export type FiguraSpec = { f: FiguraId } & Record<string, unknown>;
 

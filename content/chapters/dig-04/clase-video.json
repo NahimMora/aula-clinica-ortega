@@ -1,0 +1,154 @@
+{
+  "src": "media/dig-04/clase.mp4",
+  "poster": "media/dig-04/clase.jpg",
+  "vtt": "media/dig-04/clase.vtt",
+  "duration": "14:14",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · El circuito"
+    },
+    {
+      "t": 89,
+      "label": "Fisiopatología · Dónde se rompe"
+    },
+    {
+      "t": 236,
+      "label": "Teoría · Definición"
+    },
+    {
+      "t": 306,
+      "label": "Teoría · Las bilirrubinas"
+    },
+    {
+      "t": 363,
+      "label": "Teoría · Clasificación"
+    },
+    {
+      "t": 459,
+      "label": "Teoría · Semiología"
+    },
+    {
+      "t": 669,
+      "label": "Teoría · Obstructiva"
+    },
+    {
+      "t": 725,
+      "label": "Teoría · Laboratorio"
+    }
+  ],
+  "script": [
+    {
+      "title": "El circuito de la bilirrubina",
+      "text": "Para entender la ictericia hay que seguir a la bilirrubina. Cuando se destruyen los glóbulos rojos, la hemoglobina se transforma en bilirrubina indirecta, que viaja en la sangre pegada a la albúmina. El hepatocito la capta, la conjuga con ácido glucurónico y la excreta a la bilis. Ahora es bilirrubina directa. En el intestino, las bacterias la transforman, y lo que resulta, la estercobilina, le da el color a la materia fecal. Una parte se reabsorbe y vuelve al hígado, y una pequeña parte, el urobilinógeno, se elimina por la orina."
+    },
+    {
+      "title": "Por qué solo la directa da coluria",
+      "text": "Por qué la orina oscura es un dato tan importante. La bilirrubina indirecta viaja pegada a la albúmina, que es una proteína grande: no pasa por el glomérulo. Por más alta que esté, la orina no se oscurece. La directa, en cambio, es hidrosoluble y se filtra libremente. Cuando sube en la sangre, aparece en la orina, que se pone color caoba. Eso es la coluria."
+    },
+    {
+      "title": "Dónde se ve primero",
+      "text": "La bilirrubina se deposita primero en los tejidos más perfundidos y con más fibras elásticas. Por eso se busca en la esclerótica, la conjuntiva, el paladar blando y el frenillo de la lengua. Y siempre con luz natural, porque la luz artificial lo disimula."
+    },
+    {
+      "title": "Prehepática: sobra bilirrubina",
+      "text": "Ahora, dónde se rompe el circuito. En la prehepática, el problema es que se destruyen demasiados glóbulos rojos. Llega al hígado más bilirrubina indirecta de la que puede conjugar. Pero lo que conjuga, lo excreta sin problema. Entonces sube la indirecta, no hay coluria, las heces son más oscuras porque llega más bilirrubina al intestino, el tinte es amarillo pálido, y el paciente está anémico."
+    },
+    {
+      "title": "Hepática: falla el hepatocito",
+      "text": "En la hepática, el que falla es el hepatocito: por una hepatitis, una cirrosis, un fármaco, o por un defecto en alguno de sus tres pasos. Si falla la captación o la conjugación, sube la indirecta. Si falla la excreción, la directa que ya se formó vuelve a la sangre. Por eso puede subir cualquiera de las dos. Si sube la directa hay coluria, y el tinte es amarillo rojizo."
+    },
+    {
+      "title": "Poshepática: la bilis no sale",
+      "text": "En la poshepática, el hígado funciona, pero la vía biliar está tapada: por un cálculo, un cáncer de la cabeza del páncreas o un ampuloma. La bilirrubina directa no puede llegar al intestino, y refluye a la sangre junto con las sales biliares. Entonces hay coluria, porque es directa; las heces salen sin color, acólicas, porque no llega estercobilina; y las sales biliares en la piel dan prurito."
+    },
+    {
+      "title": "Por qué una vesícula se distiende y la otra no",
+      "text": "Y un mecanismo que explica una ley clásica. El cáncer de la cabeza del páncreas obstruye el colédoco lentamente, y la vesícula, que estaba sana, se va distendiendo hasta que se palpa, y no duele. En la litiasis, en cambio, la vesícula ya está fibrosada por la inflamación crónica, y aunque el colédoco se tape, no puede dilatarse."
+    },
+    {
+      "title": "La vitamina K y la prueba de Koller",
+      "text": "El último mecanismo explica una prueba. Los factores de coagulación dos, siete, nueve y diez se fabrican en el hígado y necesitan vitamina K. Y la vitamina K es liposoluble: para absorberse necesita la bilis. En una colestasis no llega bilis al intestino, la vitamina K no se absorbe, y el tiempo de protrombina se alarga. Si se le da vitamina K por vía intramuscular, se corrige. En una lesión hepatocelular el problema es que el hígado no fabrica los factores. Aunque le des vitamina K, no corrige."
+    },
+    {
+      "title": "Ictericia: el aviso del profesor",
+      "text": "Empezamos con un aviso. El profesor es tajante: ictericia se pregunta muchísimo, y todo sale de su primer apunte, el de motivos de consulta. En sus palabras: si no saben ictericia para el tercer parcial, los van a bochar."
+    },
+    {
+      "title": "Qué es y valores normales",
+      "text": "La ictericia es la coloración amarilla de la piel y las mucosas, que aparece cuando la bilirrubina en sangre supera los dos miligramos por decilitro. Los valores normales: bilirrubina total de cero coma tres a uno; directa de cero coma uno a cero coma cuatro; indirecta de cero coma dos a cero coma nueve. Entre uno y dos está la hiperbilirrubinemia subclínica: la bilirrubina está alta, pero todavía no se ve."
+    },
+    {
+      "title": "No confundir: pseudoictericia",
+      "text": "No la confundas con la pseudoictericia. En la ictericia la bilirrubina está alta y se tiñe la esclerótica. En la pseudoictericia la bilirrubina es normal: se colorean sobre todo las palmas, y la esclerótica queda blanca. Aparece con los carotenos de la zanahoria, el zapallo o los cítricos, en la insuficiencia renal crónica, o con algunos fármacos."
+    },
+    {
+      "title": "Indirecta y directa",
+      "text": "La diferencia entre las dos bilirrubinas. La indirecta todavía no llegó al hepatocito. La directa ya está conjugada con ácido glucurónico. La indirecta viaja unida a la albúmina; la directa, libre e hidrosoluble. Por eso la indirecta no aparece en la orina, y la directa sí: da coluria. Y la indirecta, en el recién nacido, puede dañar el cerebro: es el kernicterus."
+    },
+    {
+      "title": "Kernicterus",
+      "text": "El kernicterus es la acumulación de bilirrubina indirecta en los núcleos de la base del cerebro del recién nacido. Ocurre porque la barrera hematoencefálica todavía no está formada, o está alterada. Y deja un daño cerebral irreversible. Ojo: la ictericia del recién nacido es fisiológica si dura dos o tres días; si se prolonga, aparece el riesgo."
+    },
+    {
+      "title": "Pre, intra y poshepática",
+      "text": "Y el cuadro que resume todo. El mecanismo: hemólisis, falla del hepatocito u obstrucción biliar. La bilirrubina: indirecta en la prehepática, cualquiera de las dos en la hepática, directa en la poshepática. La orina: sin coluria en la prehepática; con coluria en las otras dos. Las heces: hipercólicas, normocólicas y acólicas. El tinte: flavínico, rubínico y verdínico. Los marcadores: de hemólisis, de necrosis y de colestasis. Y la prueba de Koller: no corrige en la hepática, corrige en la obstructiva."
+    },
+    {
+      "title": "Causas prehepáticas y hepáticas",
+      "text": "Las causas. Prehepáticas: la hemólisis, la eritroblastosis fetal, el paludismo o la reabsorción de un hematoma. Hepáticas con indirecta: cuando falla la captación, como en el síndrome de Gilbert, que es la forma más común; o la conjugación, como en el Crigler-Najjar. Hepáticas con directa: cuando falla la excreción, como en el Dubin-Johnson o el Rotor, y en las hepatitis, la cirrosis, los fármacos o la colestasis intrahepática."
+    },
+    {
+      "title": "Causas poshepáticas",
+      "text": "Las poshepáticas son obstrucciones de la vía biliar. La más frecuente, el cálculo en el colédoco. Después, el cáncer de la cabeza del páncreas, que comprime el colédoco desde afuera. Y el ampuloma, el cáncer de la ampolla de Vater."
+    },
+    {
+      "title": "La edad orienta",
+      "text": "En la anamnesis, la edad orienta mucho. En el recién nacido es fisiológica, pero si se prolonga hay riesgo de kernicterus. En el niño pensá en hepatitis A, y en el adolescente, en hepatitis B. En el adulto joven, colecistitis, alcohol o hepatitis B. A partir de los cuarenta y cinco, litiasis, cirrosis alcohólica y cáncer de páncreas. Y después de los sesenta, tres de cada cuatro son cáncer. Y a cualquier edad, los fármacos."
+    },
+    {
+      "title": "Sexo, hábitos y forma de comienzo",
+      "text": "El sexo: en la mujer, la litiasis biliar y la cirrosis biliar primaria; en el hombre, la cirrosis alcohólica y las neoplasias. Los hábitos: las conductas sexuales de riesgo orientan a hepatitis B y C, y los tóxicos, a fármacos como la isoniacida o la rifampicina, el alcohol o las drogas. Y la forma de comienzo: brusco en las hepatitis, las drogas y la litiasis; lento e insidioso en la cirrosis y el cáncer de páncreas."
+    },
+    {
+      "title": "Síntomas que acompañan",
+      "text": "Lo que acompaña. Fiebre y escalofríos: hepatitis, colelitiasis o un absceso hepático. Un dolor cólico en el hipocondrio derecho, que irradia al dorso y al hombro después de comer grasas: colelitiasis, la causa más frecuente. El prurito habla de colestasis. La pérdida de peso hace pensar en cáncer de páncreas. La orina caoba es coluria; la orina parda, hemólisis. Y las heces: hipercólicas en la prehepática, normales en la hepática y acólicas en la poshepática."
+    },
+    {
+      "title": "El tinte y el estado general",
+      "text": "El tinte también orienta. Flavínico, amarillo pálido, en la hemólisis. Rubínico, amarillo rojizo, en la lesión hepatocelular. Verdínico, verde aceituna, en la colestasis. Y melánico, negruzco, en las obstructivas crónicas. Y el estado general: el paciente con una obstructiva está más ictérico que enfermo; el hepatocelular, al revés."
+    },
+    {
+      "title": "Examen físico",
+      "text": "En el examen físico, las lesiones de rascado indican colestasis. Los xantelasmas en los párpados, cirrosis biliar primaria. Las adenopatías generalizadas, hepatitis viral; el ganglio de Virchow, metástasis. Ictericia con ascitis: pensá en cirrosis. Y el hábito de Chvostek, que el profesor dice que se pregunta: distribución ginecoide del vello, ginecomastia, ascitis y circulación colateral. A la palpación, el hígado de la cirrosis es firme y de borde filoso; el de la hepatitis aguda, blando y doloroso; el de las metástasis, pétreo y nodular. Y la esplenomegalia, en la hipertensión portal o en la hemólisis."
+    },
+    {
+      "title": "Dos síndromes con ictericia",
+      "text": "Con la esplenomegalia hay dos síndromes posibles. El hemolítico: bilirrubina indirecta, ictericia flavínica, anemia y esplenomegalia. Y el de hipertensión portal: bilirrubina directa, cirrosis, ascitis, esplenomegalia y várices esofágicas."
+    },
+    {
+      "title": "Síndrome coledociano",
+      "text": "El síndrome coledociano es la traducción clínica de una obstrucción del colédoco, y el profesor avisa que es pregunta de parcial: hay que saberlo como el Padre Nuestro. Tiene una tríada: ictericia obstructiva. Coluria. Y acolia o hipocolia. Puede acompañarse de prurito, por la congestión biliar, y de fiebre si hay infección."
+    },
+    {
+      "title": "Ley de Courvoisier-Terrier",
+      "text": "Y una ley que hay que saber textual. La ley de Courvoisier-Terrier: toda ictericia progresiva de varios meses de evolución, con vesícula palpable no dolorosa y pérdida de peso importante, es cáncer de la cabeza del páncreas hasta que se demuestre lo contrario. Si la obstrucción es por un cálculo, la vesícula no se distiende, porque su pared está fibrosada. Y el signo de Bard y Pick es justamente esa vesícula palpable e indolora en un paciente ictérico."
+    },
+    {
+      "title": "Tres grupos de marcadores",
+      "text": "En el laboratorio hay tres grupos de marcadores. De hemólisis: la LDH y la indirecta suben, los reticulocitos suben porque la médula compensa, y la haptoglobina baja. De necrosis: las transaminasas. La GPT es la más específica. Si la GPT supera a la GOT, pensá en hepatitis viral; si es al revés, en hepatitis alcohólica. De colestasis: la fosfatasa alcalina, la GGT y la cinco nucleotidasa. Y de función: la albúmina baja y el tiempo de protrombina se alarga."
+    },
+    {
+      "title": "Hemograma y eritrosedimentación",
+      "text": "El hemograma también ayuda. La anemia aparece en la hemólisis y en los cirróticos. La leucocitosis con neutrofilia, en la hepatitis alcohólica y la coledocolitiasis. La leucopenia con linfocitosis, en la hepatitis viral. La eosinofilia, en los fármacos y la esquistosomiasis. Y la eritrosedimentación es normal en la hepatitis viral y aumenta en la necrosis hepatocelular."
+    },
+    {
+      "title": "Prueba de Koller",
+      "text": "Y la prueba de Koller. A un paciente ictérico con el tiempo de protrombina prolongado se le da vitamina K, diez miligramos por día por vía intramuscular, durante tres días. Si corrige, es una colestasis: lo que faltaba era la vitamina K. Si no corrige, es una lesión hepatocelular: el hígado no puede fabricar los factores."
+    },
+    {
+      "title": "Imágenes y otros estudios",
+      "text": "En las imágenes, lo primero es la ecografía: es accesible, barata y tiene alto rédito. Después, la tomografía y la colangiorresonancia. Y la colangiopancreatografía retrógrada endoscópica o la colangiografía percutánea. Si se sospecha hepatitis, se piden los marcadores virales, y si hace falta, una biopsia hepática. Con esto, tenés todo el apunte. Ahora a practicar."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-04 — Ictericia.
@@ -252,6 +253,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig04-d01',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       emphasis: true,
@@ -274,6 +276,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-d02',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'metabolismo',
@@ -286,6 +289,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-d03',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'muy-importante',
       ficha: 'definicion',
@@ -298,6 +302,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-d04',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'muy-importante',
       ficha: 'semiologia',
@@ -310,6 +315,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-d05',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'muy-importante',
       ficha: 'laboratorio',
@@ -325,6 +331,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig04-q01',
+      origen: 'practica',
       topic: 'Metabolismo',
       difficulty: 1,
       emphasis: true,
@@ -340,6 +347,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q02',
+      origen: 'practica',
       topic: 'Clasificación',
       difficulty: 2,
       emphasis: true,
@@ -355,6 +363,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q03',
+      origen: 'practica',
       topic: 'Clasificación',
       difficulty: 1,
       stem: 'Coluria + acolia + prurito orientan a ictericia:',
@@ -369,6 +378,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q04',
+      origen: 'practica',
       topic: 'Clasificación',
       difficulty: 2,
       stem: 'El síndrome de **Gilbert** altera:',
@@ -383,6 +393,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q05',
+      origen: 'practica',
       topic: 'Courvoisier',
       difficulty: 2,
       emphasis: true,
@@ -398,6 +409,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q06',
+      origen: 'practica',
       topic: 'Courvoisier',
       difficulty: 3,
       stem: '¿Por qué la obstrucción **litiásica** no distiende la vesícula?',
@@ -412,6 +424,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q07',
+      origen: 'practica',
       topic: 'Semiología',
       difficulty: 1,
       stem: 'La **pseudoictericia** se diferencia porque:',
@@ -426,6 +439,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q08',
+      origen: 'practica',
       topic: 'Semiología',
       difficulty: 2,
       stem: 'Tinte **verdínico** (verde aceituna) orienta a:',
@@ -440,6 +454,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q09',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 2,
       stem: 'Transaminasas con **GOT > GPT** sugieren:',
@@ -454,6 +469,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q10',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 3,
       stem: 'Paciente ictérico con tiempo de protrombina prolongado que **corrige** con vitamina K (Koller). Indica:',
@@ -468,6 +484,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q11',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 2,
       stem: 'Son marcadores de **colestasis**:',
@@ -482,6 +499,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig04-q12',
+      origen: 'practica',
       topic: 'Metabolismo',
       difficulty: 2,
       stem: 'El **kernicterus** se produce por:',
@@ -576,6 +594,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig04-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Ictericia con coluria, heces normales y GPT de 1800 (GPT > GOT):',
@@ -590,6 +609,7 @@ const chapter: Chapter = {
       },
       {
         id: 'dig04-x02',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'El síndrome coledociano está formado por:',
@@ -605,7 +625,13 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['higado-bimanual', 'hepatometria', 'bazo-decubito-dorsal', 'vesicula-murphy'],
+    note: 'Palpación del hígado, el bazo y la vesícula en el paciente ictérico.',
+  },
+
   escenas,
+  clase,
   diagrams: {},
 };
 

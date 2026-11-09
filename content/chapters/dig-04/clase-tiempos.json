@@ -1,0 +1,613 @@
+{
+ "fps": 24,
+ "total": 20486,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-circuito",
+   "inicio": 96,
+   "frames": 942,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 310
+    },
+    {
+     "inicio": 406,
+     "frames": 229
+    },
+    {
+     "inicio": 635,
+     "frames": 211
+    },
+    {
+     "inicio": 846,
+     "frames": 192
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-coluria",
+   "inicio": 1038,
+   "frames": 662,
+   "beats": [
+    {
+     "inicio": 1038,
+     "frames": 360
+    },
+    {
+     "inicio": 1398,
+     "frames": 302
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-escleras",
+   "inicio": 1700,
+   "frames": 443,
+   "beats": [
+    {
+     "inicio": 1700,
+     "frames": 163
+    },
+    {
+     "inicio": 1863,
+     "frames": 280
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-pre",
+   "inicio": 2143,
+   "frames": 710,
+   "beats": [
+    {
+     "inicio": 2143,
+     "frames": 222
+    },
+    {
+     "inicio": 2365,
+     "frames": 211
+    },
+    {
+     "inicio": 2576,
+     "frames": 277
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hepatica",
+   "inicio": 2853,
+   "frames": 684,
+   "beats": [
+    {
+     "inicio": 2853,
+     "frames": 240
+    },
+    {
+     "inicio": 3093,
+     "frames": 238
+    },
+    {
+     "inicio": 3331,
+     "frames": 206
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-post",
+   "inicio": 3537,
+   "frames": 666,
+   "beats": [
+    {
+     "inicio": 3537,
+     "frames": 238
+    },
+    {
+     "inicio": 3775,
+     "frames": 179
+    },
+    {
+     "inicio": 3954,
+     "frames": 249
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-courvoisier",
+   "inicio": 4203,
+   "frames": 577,
+   "beats": [
+    {
+     "inicio": 4203,
+     "frames": 337
+    },
+    {
+     "inicio": 4540,
+     "frames": 240
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-koller",
+   "inicio": 4780,
+   "frames": 901,
+   "beats": [
+    {
+     "inicio": 4780,
+     "frames": 378
+    },
+    {
+     "inicio": 5158,
+     "frames": 297
+    },
+    {
+     "inicio": 5455,
+     "frames": 226
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-aviso",
+   "inicio": 5681,
+   "frames": 415,
+   "beats": [
+    {
+     "inicio": 5681,
+     "frames": 264
+    },
+    {
+     "inicio": 5945,
+     "frames": 151
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-definicion",
+   "inicio": 6096,
+   "frames": 683,
+   "beats": [
+    {
+     "inicio": 6096,
+     "frames": 232
+    },
+    {
+     "inicio": 6328,
+     "frames": 264
+    },
+    {
+     "inicio": 6592,
+     "frames": 187
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-pseudo",
+   "inicio": 6779,
+   "frames": 588,
+   "beats": [
+    {
+     "inicio": 6779,
+     "frames": 203
+    },
+    {
+     "inicio": 6982,
+     "frames": 385
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-indirecta-directa",
+   "inicio": 7367,
+   "frames": 726,
+   "beats": [
+    {
+     "inicio": 7367,
+     "frames": 269
+    },
+    {
+     "inicio": 7636,
+     "frames": 152
+    },
+    {
+     "inicio": 7788,
+     "frames": 144
+    },
+    {
+     "inicio": 7932,
+     "frames": 161
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-kernicterus",
+   "inicio": 8093,
+   "frames": 621,
+   "beats": [
+    {
+     "inicio": 8093,
+     "frames": 181
+    },
+    {
+     "inicio": 8274,
+     "frames": 153
+    },
+    {
+     "inicio": 8427,
+     "frames": 287
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasificacion",
+   "inicio": 8714,
+   "frames": 1080,
+   "beats": [
+    {
+     "inicio": 8714,
+     "frames": 207
+    },
+    {
+     "inicio": 8921,
+     "frames": 191
+    },
+    {
+     "inicio": 9112,
+     "frames": 143
+    },
+    {
+     "inicio": 9255,
+     "frames": 132
+    },
+    {
+     "inicio": 9387,
+     "frames": 123
+    },
+    {
+     "inicio": 9510,
+     "frames": 139
+    },
+    {
+     "inicio": 9649,
+     "frames": 145
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas-pre",
+   "inicio": 9794,
+   "frames": 763,
+   "beats": [
+    {
+     "inicio": 9794,
+     "frames": 232
+    },
+    {
+     "inicio": 10026,
+     "frames": 259
+    },
+    {
+     "inicio": 10285,
+     "frames": 272
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas-post",
+   "inicio": 10557,
+   "frames": 470,
+   "beats": [
+    {
+     "inicio": 10557,
+     "frames": 194
+    },
+    {
+     "inicio": 10751,
+     "frames": 164
+    },
+    {
+     "inicio": 10915,
+     "frames": 112
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anamnesis-edad",
+   "inicio": 11027,
+   "frames": 914,
+   "beats": [
+    {
+     "inicio": 11027,
+     "frames": 243
+    },
+    {
+     "inicio": 11270,
+     "frames": 150
+    },
+    {
+     "inicio": 11420,
+     "frames": 132
+    },
+    {
+     "inicio": 11552,
+     "frames": 174
+    },
+    {
+     "inicio": 11726,
+     "frames": 122
+    },
+    {
+     "inicio": 11848,
+     "frames": 93
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anamnesis-otros",
+   "inicio": 11941,
+   "frames": 735,
+   "beats": [
+    {
+     "inicio": 11941,
+     "frames": 225
+    },
+    {
+     "inicio": 12166,
+     "frames": 274
+    },
+    {
+     "inicio": 12440,
+     "frames": 236
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-acompanantes",
+   "inicio": 12676,
+   "frames": 952,
+   "beats": [
+    {
+     "inicio": 12676,
+     "frames": 198
+    },
+    {
+     "inicio": 12874,
+     "frames": 232
+    },
+    {
+     "inicio": 13106,
+     "frames": 91
+    },
+    {
+     "inicio": 13197,
+     "frames": 119
+    },
+    {
+     "inicio": 13316,
+     "frames": 131
+    },
+    {
+     "inicio": 13447,
+     "frames": 181
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tinte",
+   "inicio": 13628,
+   "frames": 738,
+   "beats": [
+    {
+     "inicio": 13628,
+     "frames": 174
+    },
+    {
+     "inicio": 13802,
+     "frames": 135
+    },
+    {
+     "inicio": 13937,
+     "frames": 124
+    },
+    {
+     "inicio": 14061,
+     "frames": 305
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen",
+   "inicio": 14366,
+   "frames": 1223,
+   "beats": [
+    {
+     "inicio": 14366,
+     "frames": 142
+    },
+    {
+     "inicio": 14508,
+     "frames": 126
+    },
+    {
+     "inicio": 14634,
+     "frames": 176
+    },
+    {
+     "inicio": 14810,
+     "frames": 112
+    },
+    {
+     "inicio": 14922,
+     "frames": 258
+    },
+    {
+     "inicio": 15180,
+     "frames": 274
+    },
+    {
+     "inicio": 15454,
+     "frames": 135
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sindromes",
+   "inicio": 15589,
+   "frames": 476,
+   "beats": [
+    {
+     "inicio": 15589,
+     "frames": 261
+    },
+    {
+     "inicio": 15850,
+     "frames": 215
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-coledociano",
+   "inicio": 16065,
+   "frames": 607,
+   "beats": [
+    {
+     "inicio": 16065,
+     "frames": 335
+    },
+    {
+     "inicio": 16400,
+     "frames": 64
+    },
+    {
+     "inicio": 16464,
+     "frames": 208
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-courvoisier",
+   "inicio": 16672,
+   "frames": 733,
+   "beats": [
+    {
+     "inicio": 16672,
+     "frames": 407
+    },
+    {
+     "inicio": 17079,
+     "frames": 326
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-marcadores",
+   "inicio": 17405,
+   "frames": 944,
+   "beats": [
+    {
+     "inicio": 17405,
+     "frames": 309
+    },
+    {
+     "inicio": 17714,
+     "frames": 337
+    },
+    {
+     "inicio": 18051,
+     "frames": 159
+    },
+    {
+     "inicio": 18210,
+     "frames": 139
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hemograma",
+   "inicio": 18349,
+   "frames": 745,
+   "beats": [
+    {
+     "inicio": 18349,
+     "frames": 172
+    },
+    {
+     "inicio": 18521,
+     "frames": 163
+    },
+    {
+     "inicio": 18684,
+     "frames": 122
+    },
+    {
+     "inicio": 18806,
+     "frames": 126
+    },
+    {
+     "inicio": 18932,
+     "frames": 162
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-koller",
+   "inicio": 19094,
+   "frames": 540,
+   "beats": [
+    {
+     "inicio": 19094,
+     "frames": 540
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-imagenes",
+   "inicio": 19634,
+   "frames": 732,
+   "beats": [
+    {
+     "inicio": 19634,
+     "frames": 180
+    },
+    {
+     "inicio": 19814,
+     "frames": 116
+    },
+    {
+     "inicio": 19930,
+     "frames": 436
+    }
+   ]
+  }
+ ]
+}

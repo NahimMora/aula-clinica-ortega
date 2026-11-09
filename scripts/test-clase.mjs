@@ -15,6 +15,8 @@ const CONFIG = {
   'dig-03': { mapa: ['Diarrea', 'Constipación', 'Anorrectal', 'Aguda', 'Persistente', 'Crónica', 'Acuosa', 'Disentérica', 'Bristol', 'Pujo y tenesmo'], apartado: 'Constipación', titulo: /constipación|roma/i, maniobra: /Tacto rectal/i },
   'dig-04': { mapa: ['Bilirrubina', 'Indirecta', 'Directa', 'Prehepática', 'Hepática', 'Poshepática', 'Síndrome coledociano', 'Courvoisier', 'Hemólisis', 'Colestasis'], apartado: 'Clasificación', titulo: /hepática/i, maniobra: /hígado|Hígado/ },
   'dig-05': { mapa: ['Inspección', 'Auscultación', 'Percusión', 'Palpación', 'Ascitis', 'Soplos', 'Traube', 'Puntos', 'Profunda'], apartado: 'Palpación', titulo: /palpación/i, maniobra: /Blumberg|Murphy/ },
+  'dig-06': { mapa: ['Síntomas', 'Etiologías', 'Estudios', 'Regurgitación', 'Odinofagia', 'Reflujo', 'Cáncer', 'Acalasia', 'Manometría'], apartado: 'Etiologías', titulo: /etiolog/i, maniobra: null },
+  'dig-07': { mapa: ['Úlcera péptica', 'Gastritis', 'Causas', 'Clínica', 'Diagnóstico', 'Complicaciones', 'Tipo A', 'Tipo B'], apartado: 'Gastritis', titulo: /gastritis/i, maniobra: null },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];
