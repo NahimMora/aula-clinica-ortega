@@ -2,6 +2,33 @@
 
 > Leé esto primero. Se actualiza a medida que avanza el trabajo. Última actualización: 2026-11-08.
 
+## 0. ESTADO ACTUAL — migración de todos los capítulos al formato dig-02 (pedido del 2026-11-08, manda sobre las secciones 2 y 4)
+
+Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase visual: Mapa · Fisiopatología · Diapositivas · Video · Choice · Desarrollo · Memoria · Maniobras · Cierre · Simulacro), un capítulo por vez, probado, commiteado y desplegado. Orden: dig-01, dig-03…dig-15, ren-01…ren-07, neu-01…neu-06 (crear capítulos), maniobras neuro y soma, PDF y repaso final. Si se corta: «seguí con el prompt anterior y docs/progress/HANDOFF.md».
+
+| Capítulo | clase.ts | Capturas revisadas | Voz | Video | Desplegado | Notas |
+|---|---|---|---|---|---|---|
+| dig-01 | ✅ | ✅ | ✅ 24:30 | ✅ 19,7 MB | ✅ verificado en URL pública | video viejo 6:18 = repaso |
+| dig-02 | ✅ (piloto) | ✅ | ✅ | ✅ 44 MB (crf viejo) | ✅ | no tocar |
+| dig-03 | ✅ | ✅ | ✅ 18:24 | ⏳ render | ⏳ | maniobra nueva «tacto-rectal» (sin video) |
+| dig-04 | ✅ borrador | ⏳ | ⏳ | ⏳ | ⏳ | sin clase grabada: apunte p. 10–15 |
+| dig-05 … dig-15 | ⏳ | | | | | |
+| ren-01 … ren-07 | ⏳ | | | | | |
+| neu-01 … neu-06 | ⏳ (crear capítulos) | | | | | |
+| Maniobras neuro / soma | ⏳ | | | | | grupos en `soon` |
+| PDF + repaso final | ⏳ | | | | | |
+
+### Receta por capítulo (lo que funciona)
+1. Leer transcripciones (`sources/drive/transcripts/condensed/…`), minutos exactos en `local_whisper` (grep), preguntero (`C:/Claude/semiologia-ortega/output/oral-study/PREGUNTERO_RESUELTO.md`), libro (`book_text_drive.txt`), Argente solo mecanismos (render con PyMuPDF; índice = impresa + 7).
+2. `content/chapters/<id>/clase.ts` (modelo: dig-01/dig-03) + `clase-video.json` vacío; en `index.tsx`: `import { clase }`, `clase`, `origen` en mcq/desarrollos/miniExam. Traceability en `content/traceability/<id>.md`.
+3. Figuras nuevas en `src/clase/figuras-dig.tsx` (digestivo; ayudantes en `figuras-base.tsx`), registrar en `FIGURAS_DIG` y en `FiguraId` (`tipos.ts`). Para renal/neuro crear `figuras-ren.tsx` / `figuras-neu.tsx` igual. Wrappers disponibles: `tracto`, `biliar` (vistas por paso).
+4. `amplio: true` en diapositivas con poco contenido (solo agranda en 16:9).
+5. Agregar el capítulo a `CONFIG` en `scripts/test-clase.mjs`; `npm run build`; `npx vite preview --port 4791`; `node scripts/test-clase.mjs http://localhost:4791/aula-clinica-ortega/ <id> <dir> --fotos`; hojas de contacto con un script PIL (16:9, 3×3).
+6. `npm run tts:clase -- <id>` (nombres raros → `PRONUNCIA` en `scripts/tts-clase.mjs`; si se agregan después, re-correr: usa caché).
+7. Registrar en `video/src/Root.tsx` (`CLASES`), `npx remotion still …`, render mudo, luego:
+   `ffmpeg -i video/out/<id>-clase-muda.mp4 -i sources/tts-cache/<id>/clase/narracion.wav -vf scale=1280:-2 -c:v libx264 -preset slow -crf 30 -tune animation -r 24 -c:a aac -b:a 64k -ac 1 -movflags +faststart -shortest public/media/<id>/clase.mp4` + póster jpg.
+8. build, `npm run check:content`, test; commit con rutas explícitas; push; `gh run watch`; test contra la URL pública.
+
 ## 1. Qué es
 **Aula Clínica — Semiología I**: web de estudio de Semiología y Clínica Médica I basada en las clases del Dr. Ortega.
 - Sitio publicado: https://nahimmora.github.io/aula-clinica-ortega/

@@ -51,7 +51,8 @@ async function recorrerMazo(page, tab, etiqueta) {
   const total = Number(totalTxt.split('/')[1]);
   console.log(`· ${tab} (${etiqueta}): ${total} diapositivas`);
   for (let i = 0; i < total; i++) {
-    await dormir(etiqueta === 'vivo' ? 220 : 70);
+    // Con la CPU ocupada (render en paralelo) el estado final de la diapositiva tarda en aplicarse.
+    await dormir(etiqueta === 'vivo' ? 220 : 260);
     const r = await page.evaluate(() => {
       const sl = document.querySelector('.sl');
       const cuerpo = document.querySelector('.sl__cuerpo');
