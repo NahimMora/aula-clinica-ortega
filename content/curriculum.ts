@@ -87,9 +87,9 @@ export const SYSTEMS: SystemMeta[] = [
     description: 'Maniobras organizadas por aparato, región y objetivo, con el fragmento exacto del video de referencia, técnica, hallazgos e interpretación.',
     pdf: 'pdf/guia-maniobras.pdf',
     chapters: [
-      ch('maniobras', 'man-dig', 'Maniobras del examen digestivo', 'Digestivo', 'Inspección, auscultación, percusión y palpación del abdomen; hígado, bazo y vesícula.', 'Video Argente 19–27 · EF Digestivo · Pizarras'),
-      ch('maniobras', 'man-ren', 'Maniobras del examen renal', 'Renal', 'Palpación renal y puntos dolorosos.', 'Video Argente 28 · MC Renal 3'),
-      ch('maniobras', 'man-neu', 'Maniobras del examen neurológico', 'Neurología', 'En la biblioteca: 25 maniobras con su fragmento del video (pares craneales, motilidad, reflejos, sensibilidad, taxia y signos meníngeos).', 'Video Argente 30–35 · Clases de Ortega'),
+      { ...ch('maniobras', 'man-dig', 'Maniobras del examen digestivo', 'Digestivo', 'En la biblioteca: inspección, auscultación, percusión y palpación del abdomen; hígado, bazo y vesícula.', 'Video Argente 19–27 · EF Digestivo'), link: '/maniobras?sistema=digestivo' },
+      { ...ch('maniobras', 'man-ren', 'Maniobras del examen renal', 'Renal', 'En la biblioteca: palpación renal (Guyon, Montenegro, Israel, Glenard), puñopercusión y puntos renoureterales.', 'Video Argente 28 · MC Renal 3'), link: '/maniobras?sistema=renal' },
+      { ...ch('maniobras', 'man-neu', 'Maniobras del examen neurológico', 'Neurología', 'En la biblioteca: 25 maniobras con su fragmento del video (pares craneales, motilidad, reflejos, sensibilidad, taxia y signos meníngeos).', 'Video Argente 30–35 · Clases de Ortega'), link: '/maniobras?sistema=neuro' },
     ],
   },
   {
@@ -100,7 +100,7 @@ export const SYSTEMS: SystemMeta[] = [
     icon: 'bone',
     description: 'Enfoque esencialmente práctico: técnica, ejecución e interpretación de las maniobras osteoarticulares.',
     chapters: [
-      ch('soma', 'soma-01', 'Maniobras osteoarticulares', 'Soma', 'En la biblioteca: 12 maniobras con su fragmento del video (columna, túnel carpiano, cadera y rodilla).', 'Video Argente 4'),
+      { ...ch('soma', 'soma-01', 'Maniobras osteoarticulares', 'Soma', 'En la biblioteca: 18 maniobras de columna, hombro, codo, muñeca, cadera, rodilla y tobillo (12 con su fragmento del video).', 'Video Argente 4 · Clase meníngeo y osteo · Libro p60–63'), link: '/maniobras?sistema=soma' },
     ],
   },
 ];

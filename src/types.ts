@@ -166,6 +166,8 @@ export interface ChapterMeta {
   status: 'published' | 'soon';
   blurb: string;
   sourcesLabel: string;
+  /** Entrada que no es un capítulo: lleva a otra página (p. ej., la biblioteca de maniobras de un sistema). */
+  link?: string;
 }
 
 export interface SystemMeta {

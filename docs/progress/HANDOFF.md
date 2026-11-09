@@ -142,11 +142,11 @@ Verificar un fragmento de maniobra: extraer fotogramas con `ffmpeg -ss <seg> -i 
 - Videos: solo dig-01 tiene video y audio por paso (`audioPasos`). Para los demás falta `npm run tts -- <id>` + render; antes hay que agregar las variables `--v-*` nuevas en `VARS` de `video/src/Root.tsx` y el capítulo en `CAPS`.
 
 ## 7. Próximos pasos (en orden)
-Migración completa (digestivo, renal, neurología, maniobras neuro y soma, PDF). Pendientes menores:
+Migración completa (digestivo, renal, neurología, maniobras neuro y soma, PDF). Pendiente menor:
 1. dig-02 (piloto) conserva su video de 44 MB (crf viejo), por encima del límite de 25–28 MB: re-encodearlo con la receta actual si se acepta un commit más del video.
-2. `man-dig`, `man-ren`, `man-neu` y `soma-01` figuran en el currículo como «Próximamente»: su contenido real es la biblioteca `/maniobras`. Si se quiere, convertirlos en capítulos que remitan a la biblioteca.
-3. Maniobras de soma: solo las del video Argente 4 (columna, túnel carpiano, cadera, rodilla); hombro, codo y tobillo no tienen fragmento.
-4. Borrar a mano la carpeta `C:/c/Users/...` creada por error.
+2. Los videos de neu-06 tienen la versión anterior del dibujo de la rigidez de nuca (en la web ya está corregido); no se re-renderizó para no commitear el video otra vez.
+
+Hecho el 2026-11-09 (tarde): `man-dig`, `man-ren`, `man-neu` y `soma-01` llevan a la biblioteca (campo `link` en `ChapterMeta`); soma con 18 maniobras (6 nuevas sin fragmento, del libro p60–63 y la clase «Meningeo y osteo»: caída del brazo, codo de tenista y de golfista, McMurray, Apley, Thompson); el visor tiene `scroll-margin` para que las barras fijas no tapen sus botones (el test volvió al clic real); workflow con acciones en Node 24; borrada la carpeta `C:/c/...` de esta sesión (quedan 2 PNG de otra sesión del 4/11).
 
 ## 8. Pedido original (resumen)
 Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cada capítulo: mapa inicial, bases, teoría visual, consulta/PDF, video Remotion con voz es-AR-TomasNeural, choice, desarrollos resueltos con «Lo sabía/No lo sabía» y repaso espaciado, mnemotecnias, integración. Un capítulo completo, probado y desplegado a la vez. No publicar material privado. Nunca atribuir al profesor frases que no dijo.

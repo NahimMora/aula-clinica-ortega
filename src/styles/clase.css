@@ -39,6 +39,8 @@
 .visor__nav { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
 .visor__nav--sig { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
 .visor__nav:disabled { opacity: 0.35; cursor: default; }
+/* Que al desplazarse hasta el visor (teclado, foco o scrollIntoView) las barras fijas no tapen sus botones. */
+.visor__nav, .visor__escenario { scroll-margin-top: calc(var(--topbar-h) + 70px); scroll-margin-bottom: 16px; }
 .visor__n { font-size: 0.86rem; color: var(--ink-2); font-variant-numeric: tabular-nums; min-width: 66px; text-align: center; }
 .visor__sp { flex: 1; }
 .visor__mini { display: inline-flex; align-items: center; gap: 5px; background: none; border: 0; color: var(--ink-3); font-size: 0.8rem; cursor: pointer; padding: 4px 6px; }

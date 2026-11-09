@@ -1511,10 +1511,10 @@ function Meningeos({ t, paso, dt, vistas = ['reposo'] }: BaseFig & { vistas?: Vi
   const lat = 0.5 + 0.5 * Math.sin(t * 3);
   // Paciente acostado boca arriba: cabeza a la izquierda.
   const cabezaAlta = v === 'nuca' || v === 'brudzinski';
-  const ang = cabezaAlta ? 42 * u : 0;
+  const ang = cabezaAlta ? 58 * u : 0;
   const rad = (ang * Math.PI) / 180;
   const cuello = { x: 230, y: 300 };
-  const cab = { x: cuello.x - Math.cos(rad) * 60, y: cuello.y - Math.sin(rad) * 60 - 6 };
+  const cab = { x: cuello.x - Math.cos(rad) * 78, y: cuello.y - Math.sin(rad) * 78 - 6 };
   const cadera = { x: 470, y: 300 };
   let rodilla = { x: 600, y: 300 };
   let pie = { x: 730, y: 300 };
@@ -1539,6 +1539,11 @@ function Meningeos({ t, paso, dt, vistas = ['reposo'] }: BaseFig & { vistas?: Vi
       {/* cuello y cabeza */}
       <path d={`M${cuello.x},${cuello.y} L${cab.x + 20},${cab.y + 6}`} stroke={P} strokeWidth={22} strokeLinecap="round" />
       <circle cx={cab.x} cy={cab.y} r={34} fill={P} stroke={PB} strokeWidth={2.5} />
+      {v === 'nuca' && (
+        <g opacity={u}>
+          <path d={`M${cab.x + 22},${cab.y + 26} Q${cuello.x + 30},${cab.y + 10} ${cuello.x + 46},${cuello.y - 26}`} stroke="var(--v-red)" strokeWidth={3} strokeDasharray="7 6" fill="none" />
+        </g>
+      )}
       {/* manos del examinador */}
       {cabezaAlta && <path d={`M${cab.x - 30},${cab.y + 40} q20,-10 40,0`} stroke="var(--v-sky)" strokeWidth={10} fill="none" strokeLinecap="round" opacity={u} />}
       {v === 'kernig' && <path d={`M${pie.x + 20},${pie.y - 10} l30,-20`} stroke="var(--v-sky)" strokeWidth={10} strokeLinecap="round" opacity={u} />}

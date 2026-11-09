@@ -96,8 +96,8 @@ async function recorrerMazo(page, tab, etiqueta) {
       const el = await page.$('.visor__escenario');
       await el.screenshot({ path: join(out, `${etiqueta}-${tab}-${String(i + 1).padStart(2, '0')}.jpg`), type: 'jpeg', quality: 72 });
     }
-    // Clic directo sobre el botón: en el celular una barra fija puede taparlo y el clic del mouse caería en otra pestaña.
-    if (i < total - 1) await page.$eval('.visor__nav--sig', (b) => b.click());
+    // Clic real del mouse, como un usuario (el CSS del visor evita que las barras fijas tapen el botón).
+    if (i < total - 1) await page.click('.visor__nav--sig');
   }
 }
 

@@ -108,7 +108,12 @@ function Sidebar() {
               const pc = progress.chapters[c.id];
               return (
                 <li key={c.id}>
-                  {avail ? (
+                  {c.link ? (
+                    <NavLink to={c.link} className="sidebar__ch">
+                      <span className="dot" aria-hidden="true" />
+                      <span>{c.title}</span>
+                    </NavLink>
+                  ) : avail ? (
                     <NavLink to={`/capitulo/${c.id}`} className="sidebar__ch">
                       <span className={`dot ${pc?.completed ? 'dot--done' : pc ? 'dot--started' : ''}`} aria-hidden="true" />
                       <span>{c.title}</span>

@@ -44,14 +44,14 @@ export function SystemPage() {
           const avail = isAvailable(c);
           const pc = progress.chapters[c.id];
           return (
-            <li key={c.id} className={`route__item ${avail ? '' : 'is-soon'} ${pc?.completed ? 'is-done' : ''}`}>
+            <li key={c.id} className={`route__item ${avail || c.link ? '' : 'is-soon'} ${pc?.completed ? 'is-done' : ''}`}>
               <span className="route__n">{pc?.completed ? <Icon name="check" size={16} /> : i + 1}</span>
               <div className="route__card">
                 <div className="route__top">
                   <span className="route__short">{c.short}</span>
-                  {avail ? <span className="badge badge--ok">Disponible</span> : <span className="badge badge--soon">Próximamente</span>}
+                  {c.link ? <span className="badge badge--ok">En la biblioteca</span> : avail ? <span className="badge badge--ok">Disponible</span> : <span className="badge badge--soon">Próximamente</span>}
                 </div>
-                <h3>{avail ? <Link to={`/capitulo/${c.id}`}>{c.title}</Link> : c.title}</h3>
+                <h3>{c.link ? <Link to={c.link}>{c.title}</Link> : avail ? <Link to={`/capitulo/${c.id}`}>{c.title}</Link> : c.title}</h3>
                 <p>{c.blurb}</p>
                 <div className="route__src">Fuentes: {c.sourcesLabel}</div>
               </div>
