@@ -1,0 +1,537 @@
+{
+ "fps": 24,
+ "total": 21682,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-normal",
+   "inicio": 96,
+   "frames": 789,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 322
+    },
+    {
+     "inicio": 418,
+     "frames": 154
+    },
+    {
+     "inicio": 572,
+     "frames": 313
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-intraluminal",
+   "inicio": 885,
+   "frames": 666,
+   "beats": [
+    {
+     "inicio": 885,
+     "frames": 261
+    },
+    {
+     "inicio": 1146,
+     "frames": 237
+    },
+    {
+     "inicio": 1383,
+     "frames": 168
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-mucosa",
+   "inicio": 1551,
+   "frames": 754,
+   "beats": [
+    {
+     "inicio": 1551,
+     "frames": 267
+    },
+    {
+     "inicio": 1818,
+     "frames": 211
+    },
+    {
+     "inicio": 2029,
+     "frames": 276
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-transporte",
+   "inicio": 2305,
+   "frames": 552,
+   "beats": [
+    {
+     "inicio": 2305,
+     "frames": 215
+    },
+    {
+     "inicio": 2520,
+     "frames": 157
+    },
+    {
+     "inicio": 2677,
+     "frames": 180
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-calcio",
+   "inicio": 2857,
+   "frames": 904,
+   "beats": [
+    {
+     "inicio": 2857,
+     "frames": 307
+    },
+    {
+     "inicio": 3164,
+     "frames": 165
+    },
+    {
+     "inicio": 3329,
+     "frames": 180
+    },
+    {
+     "inicio": 3509,
+     "frames": 252
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-proteinas",
+   "inicio": 3761,
+   "frames": 734,
+   "beats": [
+    {
+     "inicio": 3761,
+     "frames": 340
+    },
+    {
+     "inicio": 4101,
+     "frames": 199
+    },
+    {
+     "inicio": 4300,
+     "frames": 195
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-xilosa",
+   "inicio": 4495,
+   "frames": 757,
+   "beats": [
+    {
+     "inicio": 4495,
+     "frames": 533
+    },
+    {
+     "inicio": 5028,
+     "frames": 224
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sii",
+   "inicio": 5252,
+   "frames": 739,
+   "beats": [
+    {
+     "inicio": 5252,
+     "frames": 229
+    },
+    {
+     "inicio": 5481,
+     "frames": 365
+    },
+    {
+     "inicio": 5846,
+     "frames": 145
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-definicion",
+   "inicio": 5991,
+   "frames": 809,
+   "beats": [
+    {
+     "inicio": 5991,
+     "frames": 324
+    },
+    {
+     "inicio": 6315,
+     "frames": 246
+    },
+    {
+     "inicio": 6561,
+     "frames": 239
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-fases",
+   "inicio": 6800,
+   "frames": 648,
+   "beats": [
+    {
+     "inicio": 6800,
+     "frames": 648
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-intraluminal",
+   "inicio": 7448,
+   "frames": 865,
+   "beats": [
+    {
+     "inicio": 7448,
+     "frames": 506
+    },
+    {
+     "inicio": 7954,
+     "frames": 248
+    },
+    {
+     "inicio": 8202,
+     "frames": 111
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mucosa",
+   "inicio": 8313,
+   "frames": 596,
+   "beats": [
+    {
+     "inicio": 8313,
+     "frames": 422
+    },
+    {
+     "inicio": 8735,
+     "frames": 174
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-celiaca",
+   "inicio": 8909,
+   "frames": 1096,
+   "beats": [
+    {
+     "inicio": 8909,
+     "frames": 308
+    },
+    {
+     "inicio": 9217,
+     "frames": 530
+    },
+    {
+     "inicio": 9747,
+     "frames": 258
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-transporte",
+   "inicio": 10005,
+   "frames": 670,
+   "beats": [
+    {
+     "inicio": 10005,
+     "frames": 382
+    },
+    {
+     "inicio": 10387,
+     "frames": 288
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diarrea",
+   "inicio": 10675,
+   "frames": 444,
+   "beats": [
+    {
+     "inicio": 10675,
+     "frames": 321
+    },
+    {
+     "inicio": 10996,
+     "frames": 123
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-esteatorrea",
+   "inicio": 11119,
+   "frames": 790,
+   "beats": [
+    {
+     "inicio": 11119,
+     "frames": 547
+    },
+    {
+     "inicio": 11666,
+     "frames": 243
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-triada",
+   "inicio": 11909,
+   "frames": 644,
+   "beats": [
+    {
+     "inicio": 11909,
+     "frames": 157
+    },
+    {
+     "inicio": 12066,
+     "frames": 209
+    },
+    {
+     "inicio": 12275,
+     "frames": 278
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-macro",
+   "inicio": 12553,
+   "frames": 640,
+   "beats": [
+    {
+     "inicio": 12553,
+     "frames": 640
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anemias",
+   "inicio": 13193,
+   "frames": 797,
+   "beats": [
+    {
+     "inicio": 13193,
+     "frames": 307
+    },
+    {
+     "inicio": 13500,
+     "frames": 265
+    },
+    {
+     "inicio": 13765,
+     "frames": 225
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-calcio",
+   "inicio": 13990,
+   "frames": 648,
+   "beats": [
+    {
+     "inicio": 13990,
+     "frames": 246
+    },
+    {
+     "inicio": 14236,
+     "frames": 402
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otros-deficits",
+   "inicio": 14638,
+   "frames": 772,
+   "beats": [
+    {
+     "inicio": 14638,
+     "frames": 772
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anamnesis",
+   "inicio": 15410,
+   "frames": 599,
+   "beats": [
+    {
+     "inicio": 15410,
+     "frames": 268
+    },
+    {
+     "inicio": 15678,
+     "frames": 331
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-vandekamer",
+   "inicio": 16009,
+   "frames": 850,
+   "beats": [
+    {
+     "inicio": 16009,
+     "frames": 515
+    },
+    {
+     "inicio": 16524,
+     "frames": 173
+    },
+    {
+     "inicio": 16697,
+     "frames": 162
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-xilosa",
+   "inicio": 16859,
+   "frames": 639,
+   "beats": [
+    {
+     "inicio": 16859,
+     "frames": 340
+    },
+    {
+     "inicio": 17199,
+     "frames": 299
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-celiaca-dx",
+   "inicio": 17498,
+   "frames": 466,
+   "beats": [
+    {
+     "inicio": 17498,
+     "frames": 210
+    },
+    {
+     "inicio": 17708,
+     "frames": 256
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sii-def",
+   "inicio": 17964,
+   "frames": 610,
+   "beats": [
+    {
+     "inicio": 17964,
+     "frames": 353
+    },
+    {
+     "inicio": 18317,
+     "frames": 257
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-roma",
+   "inicio": 18574,
+   "frames": 676,
+   "beats": [
+    {
+     "inicio": 18574,
+     "frames": 310
+    },
+    {
+     "inicio": 18884,
+     "frames": 366
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sii-clinica",
+   "inicio": 19250,
+   "frames": 632,
+   "beats": [
+    {
+     "inicio": 19250,
+     "frames": 348
+    },
+    {
+     "inicio": 19598,
+     "frames": 284
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alarma",
+   "inicio": 19882,
+   "frames": 865,
+   "beats": [
+    {
+     "inicio": 19882,
+     "frames": 314
+    },
+    {
+     "inicio": 20196,
+     "frames": 551
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sii-estudios",
+   "inicio": 20747,
+   "frames": 815,
+   "beats": [
+    {
+     "inicio": 20747,
+     "frames": 250
+    },
+    {
+     "inicio": 20997,
+     "frames": 228
+    },
+    {
+     "inicio": 21225,
+     "frames": 337
+    }
+   ]
+  }
+ ]
+}

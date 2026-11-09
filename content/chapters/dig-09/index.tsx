@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-09 — Malabsorción e intestino irritable. Fuente: clases Malabsorción 1–2 y SII (Ortega) + libro p. 378–382 (porqué).
@@ -71,7 +72,7 @@ const chapter: Chapter = {
     },
     {
       id: 'clinica',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clínica',
       title: 'Diarrea crónica, esteatorrea y déficits',
       priority: 'imprescindible',
       summary: 'Diarrea crónica (cardinal) con esteatorrea + distensión + flatulencia ± pérdida de peso.',
@@ -100,7 +101,7 @@ const chapter: Chapter = {
     },
     {
       id: 'diagnostico',
-      kicker: 'Lo que toma ★',
+      kicker: 'Diagnóstico',
       title: 'Van de Kamer, Sudán, D-xilosa y celíaca',
       priority: 'imprescindible',
       summary: 'Primero confirmar la esteatorrea; después ubicar la fase.',
@@ -166,6 +167,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig09-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -180,6 +182,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -194,6 +197,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-d03',
+      origen: 'clase',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'sii',
@@ -210,6 +214,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig09-q01',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 1,
       emphasis: true,
@@ -225,6 +230,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q02',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 1,
       stem: 'Heces voluminosas, pastosas, grasosas, espumosas, que **flotan**:',
@@ -239,6 +245,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q03',
+      origen: 'practica',
       topic: 'Fases',
       difficulty: 2,
       stem: 'La enfermedad celíaca altera la fase:',
@@ -253,6 +260,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q04',
+      origen: 'practica',
       topic: 'Fases',
       difficulty: 2,
       stem: 'Una pancreatitis crónica produce malabsorción en la fase:',
@@ -267,6 +275,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q05',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 2,
       emphasis: true,
@@ -282,6 +291,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q06',
+      origen: 'practica',
       topic: 'Diagnóstico',
       difficulty: 3,
       stem: 'Test de D-xilosa con **menos de 5 g** en la orina de 5 horas. El problema está en:',
@@ -296,6 +306,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q07',
+      origen: 'practica',
       topic: 'Déficits',
       difficulty: 2,
       stem: 'Un paciente con malabsorción y **tetania** (Trousseau positivo) tiene déficit de:',
@@ -310,6 +321,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q08',
+      origen: 'practica',
       topic: 'Déficits',
       difficulty: 2,
       stem: 'La malabsorción de **vitamina K** produce:',
@@ -324,6 +336,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q09',
+      origen: 'practica',
       topic: 'SII',
       difficulty: 1,
       emphasis: true,
@@ -339,6 +352,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q10',
+      origen: 'practica',
       topic: 'SII',
       difficulty: 2,
       stem: 'Según Roma, el dolor del intestino irritable debe asociarse a **dos** de:',
@@ -353,6 +367,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig09-q11',
+      origen: 'practica',
       topic: 'SII',
       difficulty: 2,
       stem: 'Paciente de 58 años con dolor abdominal crónico, constipación nueva y **pérdida de peso**. La conducta es:',
@@ -438,6 +453,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig09-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Niño con diarrea crónica, distensión, pérdida de peso y anticuerpos antitransglutaminasa positivos. La fase alterada y el tratamiento:',
@@ -454,6 +470,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

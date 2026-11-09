@@ -1,0 +1,162 @@
+{
+  "src": "media/dig-09/clase.mp4",
+  "poster": "media/dig-09/clase.jpg",
+  "vtt": "media/dig-09/clase.vtt",
+  "duration": "15:03",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Las tres fases"
+    },
+    {
+      "t": 119,
+      "label": "Fisiopatología · De la falta al signo"
+    },
+    {
+      "t": 187,
+      "label": "Fisiopatología · D-xilosa"
+    },
+    {
+      "t": 218,
+      "label": "Fisiopatología · Intestino irritable"
+    },
+    {
+      "t": 249,
+      "label": "Teoría · Qué es y sus fases"
+    },
+    {
+      "t": 444,
+      "label": "Teoría · Clínica"
+    },
+    {
+      "t": 642,
+      "label": "Teoría · Diagnóstico"
+    },
+    {
+      "t": 748,
+      "label": "Teoría · Intestino irritable"
+    }
+  ],
+  "script": [
+    {
+      "title": "Cómo se absorbe la grasa",
+      "text": "Para entender la malabsorción hay que seguir a la grasa del almuerzo. En la luz del duodeno, la lipasa del páncreas la corta, y las sales biliares la envuelven en pequeñas gotas que el agua puede llevar. Esas gotas llegan a la mucosa del yeyuno y del íleon, y las vellosidades las absorben. Por último, la grasa sale del enterocito y viaja por la linfa. Tres fases: luz, mucosa y transporte. Si falla cualquiera, aparece la malabsorción."
+    },
+    {
+      "title": "Falla la luz: no se digiere",
+      "text": "Primera falla: la fase intraluminal. En el duodeno falta el jugo del páncreas, o faltan las sales biliares que vienen del hígado y la vesícula. Entonces la grasa y las proteínas no se degradan, y sin bilis tampoco se absorben las vitaminas liposolubles: la A, la D, la E y la K. Esa grasa sigue de largo y sale con la materia fecal. Eso es la esteatorrea."
+    },
+    {
+      "title": "Falla la mucosa: no se absorbe",
+      "text": "Segunda falla: la mucosa. El ejemplo es la enfermedad celíaca: el gluten activa anticuerpos que destruyen las vellosidades del intestino delgado. Ahora el páncreas y la bilis hicieron su trabajo, los nutrientes llegan digeridos, pero la superficie para absorberlos se achicó. Y como el problema está en la pared, se pierde de todo: grasas, proteínas, hidratos de carbono, vitaminas y minerales. El paciente adelgaza."
+    },
+    {
+      "title": "Falla la linfa: no sale",
+      "text": "Tercera falla, la menos frecuente: el transporte. El drenaje linfático del intestino está obstruido. Por la linfa viajan los lípidos unidos a proteínas, así que se pierden las dos cosas. El paciente tiene esteatorrea y además pierde proteínas: es la enteropatía perdedora de proteínas."
+    },
+    {
+      "title": "El calcio que falta",
+      "text": "Ahora, de cada falta sale un signo. El calcio: sin vitamina D, que es liposoluble y se pierde con la grasa, el intestino no absorbe calcio y aparece la hipocalcemia. El cuerpo responde subiendo la parathormona, que saca calcio del hueso para mantener la sangre. El precio lo paga el hueso: raquitismo en el niño, osteomalacia en el adulto, y osteoporosis. Y con poco calcio, el nervio y el músculo se excitan de más: parestesias y tetania, que se ponen en evidencia con las maniobras de Trousseau y Chvostek."
+    },
+    {
+      "title": "Proteínas, vitamina K y hierro",
+      "text": "Con las proteínas pasa lo mismo, paso por paso: si se pierden, baja la albúmina, baja la presión oncótica, y el líquido se va a los tejidos: edema. Y el cuerpo empieza a consumir su propio músculo. La vitamina K hace falta para fabricar los factores de coagulación. Si falta, el paciente sangra. Y sin hierro, vitamina B doce o ácido fólico, no hay materia prima para el glóbulo rojo: anemia."
+    },
+    {
+      "title": "Por qué la xilosa separa páncreas de mucosa",
+      "text": "Y una vez confirmada la esteatorrea, ¿cómo sé si el problema está en el páncreas o en la mucosa? Con la D-xilosa, un azúcar que se absorbe sin necesitar las enzimas del páncreas. Si el páncreas está enfermo pero la mucosa sana, la xilosa se absorbe igual, pasa a la sangre y se elimina por la orina: más de cinco gramos en cinco horas. Si la mucosa está dañada, la xilosa no se absorbe, se queda en la luz, y en la orina aparece poca: menos de cinco gramos."
+    },
+    {
+      "title": "Intestino irritable: sin lesión",
+      "text": "Y el intestino irritable es lo opuesto: el intestino no tiene ninguna lesión. Es un trastorno funcional, de la motilidad. El estrés y la ansiedad alteran la comunicación entre el cerebro y el intestino: aparecen contracciones anormales y el intestino se vuelve más sensible a la distensión. Es el dolor de panza antes de rendir un final, pero crónico. Por eso el dolor mejora al evacuar, y se acompaña de constipación o de diarrea."
+    },
+    {
+      "title": "Síndrome de malabsorción",
+      "text": "El síndrome de malabsorción es una alteración de la digestión, de la absorción, o de las dos, de los nutrientes que el cuerpo necesita. No lo produce una sola enfermedad: lo producen muchísimas. Lo que no se absorbe son macronutrientes, es decir hidratos de carbono, proteínas y lípidos, y micronutrientes, que son vitaminas y minerales. Por eso el profesor insiste en estudiarlo razonando: si no absorbo tal nutriente, ¿qué me va a faltar? Ahí está toda la clínica."
+    },
+    {
+      "title": "Las tres fases",
+      "text": "Se ordena en tres fases. La intraluminal, en la luz del duodeno, donde falla la digestión porque faltan los jugos del páncreas o las sales biliares. La mucosa, en el yeyuno y el íleon, donde los nutrientes llegan digeridos pero la pared no los absorbe. Y la de transporte, por la linfa, que es rara. El profesor pide sí o sí las dos primeras, que son las más frecuentes y las que se preguntan."
+    },
+    {
+      "title": "Fase intraluminal: causas",
+      "text": "En la fase intraluminal, la falla está en el páncreas, la vía biliar, el hígado o, rara vez, el estómago. La insuficiencia pancreática, por una pancreatitis crónica, una fibrosis quística o un cáncer de páncreas, deja sin enzimas al duodeno: no se degradan las proteínas, las grasas ni los hidratos. Si faltan las sales biliares, por una obstrucción de la vía biliar o una enfermedad del hígado, lo que no se absorbe son las grasas y las vitaminas liposolubles. El estómago es causa en menos del cinco por ciento."
+    },
+    {
+      "title": "Fase mucosa: causas",
+      "text": "En la fase mucosa, el problema está en la pared del delgado, desde la cuarta porción del duodeno hacia el yeyuno y el íleon. Las causas estructurales son la enfermedad celíaca o esprue no tropical, el esprue tropical, la enteritis por radiación y la agammaglobulinemia. Y puede ser parcial, como el déficit de disacaridasas: los pacientes intolerantes a la lactosa."
+    },
+    {
+      "title": "Enfermedad celíaca",
+      "text": "La enfermedad celíaca es autoinmune. El gluten, presente en el trigo, la avena, la cebada y el centeno, activa anticuerpos que destruyen las vellosidades del intestino. Al perder vellosidades se pierde superficie de absorción, y con ella nutrientes y peso. Es muy frecuente en los chicos. Tiene fases: una aguda, y después silente o latente. Con una dieta sin gluten los anticuerpos se quedan inactivos; si el paciente vuelve a comer gluten, se reactivan y vuelven a dañar la mucosa. Y un detalle que salió en clase: la celíaca no es lo mismo que el síndrome de malabsorción. Es una de sus causas, dentro de la fase mucosa."
+    },
+    {
+      "title": "Fase de transporte y otras causas",
+      "text": "La fase de transporte es la menos frecuente: un mal drenaje linfático, por ejemplo por una linfangiectasia, un linfoma o la enfermedad de Whipple. Se pierden lípidos y proteínas, y aparece la enteropatía perdedora de proteínas. Y hay otras causas, secundarias y poco frecuentes: enfermedades de la pared, como el Crohn, vasculares, metabólicas, y las iatrogénicas, como una gastrectomía."
+    },
+    {
+      "title": "Lo cardinal: la diarrea crónica",
+      "text": "Vamos a la clínica. Hay algo que siempre es cardinal: la diarrea crónica. El profesor es tajante: si en un síndrome de malabsorción no dicen diarrea crónica, los bochan. Y la forma más frecuente de esa diarrea es la esteatorrea."
+    },
+    {
+      "title": "Esteatorrea",
+      "text": "La esteatorrea es grasa en la materia fecal. Son heces malolientes, pastosas, amarillentas o color arcilla, muy grasosas y espumosas, que flotan en el agua. A diferencia de una diarrea acuosa, son menos frecuentes pero más abundantes. El profesor la pide en el parcial, en el choice, en el final y en el oral. Si lo que se pierde son proteínas, se llama creatorrea, y aparece en cuadros más crónicos, como la pancreatitis crónica o una celíaca avanzada."
+    },
+    {
+      "title": "La tríada y la pérdida de peso",
+      "text": "La tríada característica: esteatorrea, distensión abdominal y flatulencia. Si a eso se suma la pérdida de peso, la consigna del profesor es pensar en malabsorción hasta que se demuestre lo contrario. El paciente adelgaza porque primero pierde la grasa y después las proteínas: se funde el músculo, y entra en emaciación. Es la manifestación más constante."
+    },
+    {
+      "title": "No absorbe… entonces",
+      "text": "Y ahora el razonamiento que pide el profesor. Si no absorbe hidratos de carbono, falta la principal fuente de energía: el paciente está cansado. Si no absorbe lípidos, esteatorrea. Si no absorbe proteínas, pierde masa muscular y aparece el edema por la albúmina baja. Y con el tiempo se instalan los déficits de vitaminas y minerales, que son los datos más específicos."
+    },
+    {
+      "title": "Las anemias",
+      "text": "Entre los déficits, las anemias. Si no absorbe hierro, anemia ferropénica, que es hipocrómica y microcítica; puede verse la uña en cuchara, la coiloniquia. Si no absorbe vitamina B doce o ácido fólico, anemia megaloblástica, que es macrocítica. Es más frecuente que falte el ácido fólico. Y la falta de B doce agrega algo propio: el síndrome neuroanémico, que es la anemia más un síndrome del cordón posterior de la médula."
+    },
+    {
+      "title": "Calcio y vitamina D",
+      "text": "El calcio y la vitamina D. Su falta da parestesias, crisis de tetania, raquitismo en los chicos, osteomalacia en el adulto, y osteoporosis. La hipocalcemia se pone en evidencia con dos maniobras. Trousseau: se infla el manguito del tensiómetro y la mano se contrae en mano de partero. Chvostek: se percute el nervio facial por delante de la oreja y se contrae ese lado de la cara."
+    },
+    {
+      "title": "Sangrado, edema, piel y ojos",
+      "text": "El resto de los déficits. Sin vitamina K, fenómenos hemorrágicos: moretones, sangrado de nariz, y en el laboratorio el tiempo de protrombina prolongado. Sin proteínas, edema generalizado. Sin vitaminas del complejo B y C, lesiones de piel y mucosas: glositis, queilitis, estomatitis, y en los casos graves pelagra, beriberi o escorbuto. Y sin vitamina A, los ojos: ceguera nocturna, sequedad ocular y queratomalacia."
+    },
+    {
+      "title": "Cuándo sospecharla",
+      "text": "Para el diagnóstico, primero una buena anamnesis. La presentación típica es la esteatorrea con pérdida de peso, en un paciente que conserva el apetito. Pero muchos tienen síntomas leves: distensión, flatulencias, ruidos intestinales. Y otros están asintomáticos durante mucho tiempo, porque las fases silente y latente no dan síntomas."
+    },
+    {
+      "title": "Van de Kamer y Sudán",
+      "text": "La esteatorrea se confirma en la materia fecal, con dos pruebas. La cuantitativa es la de Van de Kamer, que el profesor pide saber como el Padre Nuestro: se recogen las heces durante setenta y dos horas, mientras el paciente come cien gramos de grasa por día. Si elimina más de seis gramos de grasa por día, tiene esteatorrea. La cualitativa es la tinción con Sudán: se colorea la grasa de las heces y se mira al microscopio. Las dos confirman la esteatorrea. El paso siguiente es saber de dónde viene."
+    },
+    {
+      "title": "D-xilosa: ¿páncreas o mucosa?",
+      "text": "Para separar la fase intraluminal de la mucosa está la prueba de la D-xilosa. Se dan veinticinco gramos disueltos en agua, y se mide cuánto aparece en la orina de cinco horas, o en sangre a la hora y a las dos horas. Si elimina más de cinco gramos, la mucosa absorbe bien: la malabsorción viene del páncreas. Si elimina menos de cinco, el problema está en el intestino delgado."
+    },
+    {
+      "title": "Si se sospecha celíaca",
+      "text": "Si se sospecha una celíaca, se piden los anticuerpos antitransglutaminasa y antiendomisio, que son pruebas serológicas. Y si el paciente acepta, la biopsia del intestino, que confirma el diagnóstico y muestra en qué grado está. Después, dieta sin gluten."
+    },
+    {
+      "title": "Síndrome de intestino irritable",
+      "text": "Pasamos al síndrome de intestino irritable. Es una alteración funcional, motora, del intestino: dolor o malestar abdominal crónico, con alteración del ritmo evacuatorio, sin una causa orgánica que lo explique. No hay una infección, ni una lesión, ni una alteración bioquímica. Por eso se diagnostica por exclusión: cuando se descartó todo lo orgánico."
+    },
+    {
+      "title": "Criterios de Roma",
+      "text": "Para definirlo se usan los criterios de Roma, que el profesor marca como pregunta de parcial. Dolor o malestar abdominal recurrente, al menos tres días por mes, en los últimos tres meses. Asociado a dos o más de estos: que mejore con la defecación, que haya empezado con un cambio en la frecuencia de las deposiciones, o con un cambio en su forma. Para recordarlo: tres días, tres meses, dos de tres."
+    },
+    {
+      "title": "Clínica",
+      "text": "La clínica: dolor en la parte baja del abdomen, con alteración del hábito evacuatorio. Lo más frecuente es la constipación, en el setenta a ochenta por ciento; el resto tiene diarrea, y pueden alternar. Ayudan al diagnóstico: el dolor que desaparece al evacuar, el cambio en la consistencia de las heces, el moco, la sensación de no haber evacuado del todo, y la distensión."
+    },
+    {
+      "title": "¿Funcional o hay algo orgánico?",
+      "text": "Lo más importante es no confundirlo con algo orgánico. El intestino irritable es un dolor crónico con trastorno evacuatorio, en general en gente joven, con examen y estudios normales. Hay datos que no le corresponden y obligan a buscar otra cosa: la pérdida de peso, la fiebre, la sangre en la materia fecal, la grasa, o el dolor que despierta de noche. Y la edad: en un mayor de cincuenta años, o de cuarenta con antecedentes de cáncer de colon, ese mismo cuadro puede ser el comienzo de un adenocarcinoma, y se pide una colonoscopía."
+    },
+    {
+      "title": "Estudios y tratamiento",
+      "text": "Los estudios son normales. Si hay diarrea, se piden un coproparasitológico y un coprocultivo, para descartar una diarrea orgánica. Los diagnósticos diferenciales dependen de la edad: una intolerancia a la lactosa, una colitis ulcerosa, o en el mayor, un cáncer de colon. Y el tratamiento: relajación, dieta y ejercicio. Evitar la lactosa, las grasas y el alcohol, y el gluten si se sospecha una celíaca. Los fármacos, solo si hacen falta."
+    }
+  ]
+}

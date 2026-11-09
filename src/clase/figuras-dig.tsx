@@ -2105,6 +2105,193 @@ function Absorcion({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Fa
   );
 }
 
+/* ─────────── Peritoneo: corte transversal del abdomen ─────────── */
+
+type VistaPeritoneo = 'normal' | 'plastron' | 'generalizada' | 'pbe' | 'perforacion' | 'jobert';
+
+const PC = { x: 400, y: 288 }; // centro del corte
+const P_OUT = { rx: 320, ry: 196 }; // piel
+const P_IN = { rx: 288, ry: 166 }; // peritoneo parietal
+const ep = (rx: number, ry: number, grados: number) => {
+  const a = (grados * Math.PI) / 180;
+  return [PC.x + rx * Math.cos(a), PC.y + ry * Math.sin(a)] as const;
+};
+const arco = (rx: number, ry: number, de: number, a: number, n = 24) =>
+  Array.from({ length: n + 1 }, (_, i) => {
+    const [x, y] = ep(rx, ry, de + ((a - de) * i) / n);
+    return `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+const ASAS: [number, number][] = [
+  [330, 300],
+  [412, 262],
+  [486, 326],
+  [392, 360],
+  [566, 352],
+  [270, 372],
+  [486, 404],
+];
+const MEDIALUNA = (() => {
+  const n = 24;
+  const ida = Array.from({ length: n + 1 }, (_, i) => ep(P_IN.rx, P_IN.ry, -165 + (73 * i) / n));
+  const vuelta = Array.from({ length: n + 1 }, (_, i) => {
+    const k = 1 - i / n;
+    const g = Math.sin(Math.PI * k) * 24;
+    return ep(P_IN.rx - g, P_IN.ry - g, -165 + 73 * k);
+  });
+  return [...ida, ...vuelta].map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`).join(' ') + ' Z';
+})();
+const HIGADO_CORTE = 'M120,262 C118,190 196,138 300,126 C352,124 372,150 350,186 C322,232 250,276 176,306 C148,316 122,300 120,262 Z';
+
+function Peritoneo({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: VistaPeritoneo[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : apf(paso, dt, 0);
+  const inflamado = v === 'generalizada' || v === 'perforacion';
+  const ileo = inflamado;
+  const ascitis = v === 'pbe';
+  const aire = v === 'perforacion' || v === 'jobert';
+  const nivel = 338; // superficie de la ascitis (lo declive es atrás, abajo en el dibujo)
+  const PERF = ASAS[2];
+  const nota: Record<VistaPeritoneo, [string, string]> = {
+    normal: ['Una cavidad virtual y estéril entre dos hojas', MENTA],
+    plastron: ['Plastrón: inflamación localizada contra la pared anterior', DURAZNO],
+    generalizada: ['Generalizada: se inflama todo el peritoneo', ROJO],
+    pbe: ['PBE: bacterias del intestino infectan la ascitis', CIELO],
+    perforacion: ['Perforación: salen muchos gérmenes y aire', ROJO],
+    jobert: ['Jobert: el aire tapa el hígado y desaparece la matidez', DURAZNO],
+  };
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label="Corte transversal del abdomen: peritoneo parietal, visceral y cavidad peritoneal">
+      <defs>
+        <clipPath id="cl-perit">
+          <ellipse cx={PC.x} cy={PC.y} rx={P_IN.rx} ry={P_IN.ry} />
+        </clipPath>
+      </defs>
+      {/* pared: piel y músculo */}
+      <ellipse cx={PC.x} cy={PC.y} rx={P_OUT.rx} ry={P_OUT.ry} fill={PIEL} stroke={LINE} strokeWidth={3} />
+      <ellipse cx={PC.x} cy={PC.y} rx={P_OUT.rx - 12} ry={P_OUT.ry - 12} fill={MUSCULO} />
+      {/* cavidad */}
+      <ellipse cx={PC.x} cy={PC.y} rx={P_IN.rx} ry={P_IN.ry} fill="#241d2b" />
+      <g clipPath="url(#cl-perit)">
+        {inflamado && <ellipse cx={PC.x} cy={PC.y} rx={P_IN.rx} ry={P_IN.ry} fill="#8a7a3a" opacity={0.28 * u} />}
+        {ascitis && <rect x={0} y={nivel + Math.sin(t * 2) * 2} width={800} height={200} fill="#4b6f8f" opacity={0.7} />}
+        {ascitis && <rect x={0} y={nivel} width={800} height={200} fill="#c9c08a" opacity={0.35 * u} />}
+        {/* hígado y estómago */}
+        <path d={HIGADO_CORTE} fill={HIGADO} stroke={v === 'generalizada' ? ROJO : ROSA} strokeWidth={3} />
+        <ellipse cx={574} cy={214} rx={84} ry={52} fill={ESTOMAGO} stroke={v === 'generalizada' ? ROJO : ROSA} strokeWidth={3} />
+        {/* asas: cada una cubierta por peritoneo visceral */}
+        {ASAS.map(([x, y], i) => {
+          const r = 33 + (ileo ? 2 : Math.sin(t * 2.2 + i) * 1.6);
+          const flota = ascitis ? -Math.max(0, y + r - nivel) * 0.25 : 0;
+          const roja = v === 'generalizada' || (v === 'plastron' && i === 1);
+          return (
+            <g key={i}>
+              <circle cx={x} cy={y + flota} r={r} fill={INTESTINO} stroke={roja ? ROJO : ROSA} strokeWidth={roja ? 6 : 3} />
+              <circle cx={x} cy={y + flota} r={r - 13} fill="none" stroke="#8f5f56" strokeWidth={2} opacity={0.6} />
+            </g>
+          );
+        })}
+        {/* PBE: un solo germen, del asa a la ascitis */}
+        {ascitis &&
+          Array.from({ length: 14 }, (_, i) => {
+            const k = (t * 0.25 + i / 14) % 1;
+            const [x0, y0] = ASAS[i % 2 ? 3 : 0];
+            const x = x0 + Math.sin(i * 2.3) * (20 + k * 120);
+            const y = y0 + 20 + k * 110;
+            return <circle key={i} cx={x} cy={y} r={5} fill="#9fd36a" opacity={u * (k < 0.1 ? k * 10 : 1)} />;
+          })}
+        {/* perforación: varios gérmenes y aire */}
+        {v === 'perforacion' && (
+          <>
+            <path d={`M${PERF[0] + 22},${PERF[1] - 26} l14,-8 l-4,14 Z`} fill="#241d2b" stroke={ROJO} strokeWidth={3} />
+            {Array.from({ length: 18 }, (_, i) => {
+              const k = (t * 0.3 + i / 18) % 1;
+              const ang = -1.4 + (i % 6) * 0.5;
+              const x = PERF[0] + 30 + Math.cos(ang) * k * 150;
+              const y = PERF[1] - 28 + Math.sin(ang) * k * 90 + k * 40;
+              const c = ['#9fd36a', '#e6a35c', '#c79be0'][i % 3];
+              return <circle key={i} cx={x} cy={y} r={4.5} fill={c} opacity={u * (1 - k * 0.6)} />;
+            })}
+            {Array.from({ length: 6 }, (_, i) => {
+              const k = (t * 0.2 + i / 6) % 1;
+              const x = PERF[0] + 30 + (300 - PERF[0] - 30) * k;
+              const y = PERF[1] - 30 + (130 - PERF[1] + 30) * k;
+              return <circle key={i} cx={x} cy={y} r={7} fill="none" stroke="#e8eef6" strokeWidth={2.5} opacity={u} />;
+            })}
+          </>
+        )}
+        {/* aire libre entre la pared y el hígado */}
+        {aire && <path d={MEDIALUNA} fill="#e8eef6" opacity={(v === 'jobert' ? 0.75 : 0.55) * (v === 'jobert' ? 1 : u)} />}
+      </g>
+      {/* retroperitoneo: columna y aorta por detrás del peritoneo parietal */}
+      <path d="M328,456 C338,404 368,384 400,384 C432,384 462,404 472,456 Z" fill={MUSCULO} />
+      <circle cx={400} cy={428} r={24} fill={HUESO} stroke="#9a8f80" strokeWidth={2} />
+      <circle cx={433} cy={398} r={9} fill={SANGRE} />
+      {/* peritoneo parietal */}
+      <ellipse cx={PC.x} cy={PC.y} rx={P_IN.rx} ry={P_IN.ry} fill="none" stroke={v === 'generalizada' || v === 'perforacion' ? ROJO : ROSA} strokeWidth={v === 'generalizada' || v === 'perforacion' ? 6 : 3.5} />
+      <path d="M328,456 C338,404 368,384 400,384 C432,384 462,404 472,456" fill="none" stroke={inflamado ? ROJO : ROSA} strokeWidth={inflamado ? 6 : 3.5} />
+      {v === 'plastron' && <path d={arco(P_IN.rx, P_IN.ry, -100, -62)} fill="none" stroke={ROJO} strokeWidth={9} strokeLinecap="round" opacity={u} />}
+      {v === 'plastron' && <ellipse cx={ASAS[1][0]} cy={ASAS[1][1] - 40} rx={70} ry={58} fill={ROJO} opacity={0.18 * u} />}
+      {/* percusión sobre el hígado */}
+      {v === 'jobert' && (
+        <g opacity={u}>
+          <rect x={226} y={70} width={70} height={22} rx={11} fill="#d6b49d" stroke="#6f5a4e" strokeWidth={2} transform="rotate(-18 261 81)" />
+          {[0, 1, 2].map((k) => (
+            <path key={k} d={`M${300 + k * 16},${66 - k * 4} q10,10 0,22`} fill="none" stroke={CIELO} strokeWidth={3} opacity={((t * 2 + k / 3) % 1) * 0.9} />
+          ))}
+          <L x={150} y={64} c={CIELO} s={20}>
+            Timpanismo
+          </L>
+        </g>
+      )}
+      {/* rótulos */}
+      <L x={400} y={26} c={nota[v][1]} s={22} o={v === 'normal' ? 1 : u}>
+        {nota[v][0]}
+      </L>
+      {v === 'normal' && (
+        <>
+          <L x={640} y={92} c={ROSA} s={20}>
+            Peritoneo parietal
+          </L>
+          <L x={640} y={462} c={ROSA} s={20} o={apf(paso, dt, 0)}>
+            Peritoneo visceral
+          </L>
+          <L x={214} y={218} c="#f3d9cf" s={20}>
+            Hígado
+          </L>
+          <L x={574} y={214} c="#f3d9cf" s={20}>
+            Estómago
+          </L>
+        </>
+      )}
+      {v === 'pbe' && (
+        <L x={650} y={404} c={CIELO} s={20}>
+          Ascitis
+        </L>
+      )}
+      {v === 'generalizada' && (
+        <L x={400} y={500} c={ROJO} s={20} o={u}>
+          Asas quietas: íleo paralítico
+        </L>
+      )}
+      {v === 'pbe' && (
+        <L x={400} y={500} c="#9fd36a" s={20} o={u}>
+          Un solo germen (E. coli)
+        </L>
+      )}
+      {v === 'perforacion' && (
+        <L x={400} y={500} c={DURAZNO} s={20} o={u}>
+          Muchos gérmenes: polimicrobiana
+        </L>
+      )}
+      {v === 'jobert' && (
+        <L x={300} y={160} c={INK} s={20}>
+          Aire
+        </L>
+      )}
+    </svg>
+  );
+}
+
 export const FIGURAS_DIG = {
   deglucion: Deglucion,
   esofago: Esofago,
@@ -2128,4 +2315,5 @@ export const FIGURAS_DIG = {
   reflujo: Reflujo,
   barrera: Barrera,
   absorcion: Absorcion,
+  peritoneo: Peritoneo,
 } satisfies Record<string, (p: never) => ReactNode>;

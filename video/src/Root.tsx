@@ -12,6 +12,20 @@ import { clase as planDig02 } from '../../content/chapters/dig-02/clase';
 import tiemposDig02 from '../../content/chapters/dig-02/clase-tiempos.json';
 import { clase as planDig01 } from '../../content/chapters/dig-01/clase';
 import tiemposDig01 from '../../content/chapters/dig-01/clase-tiempos.json';
+import { clase as planDig03 } from '../../content/chapters/dig-03/clase';
+import tiemposDig03 from '../../content/chapters/dig-03/clase-tiempos.json';
+import { clase as planDig04 } from '../../content/chapters/dig-04/clase';
+import tiemposDig04 from '../../content/chapters/dig-04/clase-tiempos.json';
+import { clase as planDig05 } from '../../content/chapters/dig-05/clase';
+import tiemposDig05 from '../../content/chapters/dig-05/clase-tiempos.json';
+import { clase as planDig06 } from '../../content/chapters/dig-06/clase';
+import tiemposDig06 from '../../content/chapters/dig-06/clase-tiempos.json';
+import { clase as planDig07 } from '../../content/chapters/dig-07/clase';
+import tiemposDig07 from '../../content/chapters/dig-07/clase-tiempos.json';
+import { clase as planDig08 } from '../../content/chapters/dig-08/clase';
+import tiemposDig08 from '../../content/chapters/dig-08/clase-tiempos.json';
+import { clase as planDig09 } from '../../content/chapters/dig-09/clase';
+import tiemposDig09 from '../../content/chapters/dig-09/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -173,6 +187,13 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'dig-09-clase', titulo: 'Malabsorción e intestino irritable', plan: planDig09, tiempos: tiemposDig09 as TiemposClase },
+  { id: 'dig-08-clase', titulo: 'Síndrome pilórico e íleo', plan: planDig08, tiempos: tiemposDig08 as TiemposClase },
+  { id: 'dig-07-clase', titulo: 'Síndrome ulceroso y gastritis', plan: planDig07, tiempos: tiemposDig07 as TiemposClase },
+  { id: 'dig-06-clase', titulo: 'Síndrome esofágico', plan: planDig06, tiempos: tiemposDig06 as TiemposClase },
+  { id: 'dig-05-clase', titulo: 'Examen físico del aparato digestivo', plan: planDig05, tiempos: tiemposDig05 as TiemposClase },
+  { id: 'dig-04-clase', titulo: 'Ictericia', plan: planDig04, tiempos: tiemposDig04 as TiemposClase },
+  { id: 'dig-03-clase', titulo: 'Diarrea, constipación y trastornos anorrectales', plan: planDig03, tiempos: tiemposDig03 as TiemposClase },
   { id: 'dig-01-clase', titulo: 'Vómitos, disfagia y dispepsia', plan: planDig01, tiempos: tiemposDig01 as TiemposClase },{ id: 'dig-02-clase', titulo: 'Dolor abdominal y abdomen agudo', plan: planDig02, tiempos: tiemposDig02 as TiemposClase }];
 
 const SEC_FADE = 7;
