@@ -225,7 +225,7 @@ function Encefalo({ t, paso, dt, vistas = [{}] }: BaseFig & { vistas?: VistaEnc[
 
 /* ─────────── Cabeza de frente: dónde duele cada cefalea ─────────── */
 
-export type VistaCabeza = 'normal' | 'hemicraneal' | 'aura' | 'vincha' | 'periorbitario' | 'trigemino' | 'holocraneana';
+export type VistaCabeza = 'normal' | 'hemicraneal' | 'aura' | 'vincha' | 'periorbitario' | 'trigemino' | 'holocraneana' | 'facial-periferica' | 'facial-central' | 'weber-conduccion' | 'weber-percepcion';
 
 const PIEL = '#d9b7a0';
 const PIEL_B = '#8a6a58';
@@ -236,12 +236,14 @@ const V_ZONAS = {
   v3: 'M262,404 C290,420 330,428 366,426 C376,452 386,470 400,478 L400,536 C330,532 282,494 262,450 Z',
 };
 
-function Ojo({ x, y, rojo = 0, ptosis = 0, miosis = 0 }: { x: number; y: number; rojo?: number; ptosis?: number; miosis?: number }) {
+function Ojo({ x, y, rojo = 0, ptosis = 0, miosis = 0, cerrado = false, arriba = 0 }: { x: number; y: number; rojo?: number; ptosis?: number; miosis?: number; cerrado?: boolean; arriba?: number }) {
+  if (cerrado)
+    return <path d={`M${x - 42},${y} C${x - 20},${y + 14} ${x + 20},${y + 14} ${x + 42},${y}`} fill="none" stroke={PIEL_B} strokeWidth={4} strokeLinecap="round" />;
   return (
     <g>
       <path d={`M${x - 42},${y} C${x - 20},${y - 24} ${x + 20},${y - 24} ${x + 42},${y} C${x + 20},${y + 22} ${x - 20},${y + 22} ${x - 42},${y} Z`} fill={rojo ? `rgba(220,90,90,${0.25 + 0.45 * rojo})` : '#f4efe8'} stroke={PIEL_B} strokeWidth={2.5} />
-      <circle cx={x} cy={y} r={14} fill="#5a7a9a" />
-      <circle cx={x} cy={y} r={6 - 3 * miosis} fill="#151a22" />
+      <circle cx={x} cy={y - 10 * arriba} r={14} fill="#5a7a9a" />
+      <circle cx={x} cy={y - 10 * arriba} r={6 - 3 * miosis} fill="#151a22" />
       {ptosis > 0 && <path d={`M${x - 44},${y - 2} C${x - 20},${y - 26} ${x + 20},${y - 26} ${x + 44},${y - 2} C${x + 20},${y - 26 + 22 * ptosis} ${x - 20},${y - 26 + 22 * ptosis} ${x - 44},${y - 2} Z`} fill={PIEL} stroke={PIEL_B} strokeWidth={2.5} />}
     </g>
   );
@@ -253,6 +255,9 @@ function Cabeza({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
   const late = 0.55 + 0.45 * Math.abs(Math.sin(t * 3.2));
   const opr = 0.6 + 0.25 * Math.sin(t * 1.4);
   const cluster = v === 'periorbitario';
+  const fp = v === 'facial-periferica';
+  const fc = v === 'facial-central';
+  const weber = v === 'weber-conduccion' || v === 'weber-percepcion';
   return (
     <svg viewBox="-24 0 856 600" role="img" aria-label="Cabeza de frente: localización de las cefaleas">
       <defs>
@@ -295,10 +300,33 @@ function Cabeza({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
       <path d="M290,232 C312,218 352,216 378,226" stroke="#4a3a32" strokeWidth={6} fill="none" strokeLinecap="round" />
       <path d="M422,226 C448,216 488,218 510,232" stroke="#4a3a32" strokeWidth={6} fill="none" strokeLinecap="round" />
       {cluster && <ellipse cx={335} cy={270} rx={74} ry={56} fill="var(--v-red)" opacity={(0.15 + 0.3 * late) * u} />}
-      <Ojo x={335} y={272} rojo={cluster ? u : 0} ptosis={cluster ? 0.45 * u : 0} miosis={cluster ? u : 0} />
-      <Ojo x={465} y={272} />
+      <Ojo x={335} y={272} rojo={cluster ? u : 0} ptosis={cluster ? 0.45 * u : 0} miosis={cluster ? u : 0} cerrado={fc} arriba={fp ? u : 0} />
+      <Ojo x={465} y={272} cerrado={fp || fc} />
+      {(fp || fc) && (
+        <g stroke={PIEL_B} strokeWidth={2.5} fill="none" strokeLinecap="round" opacity={0.85}>
+          {[150, 166, 182].map((y) => (
+            <g key={y}>
+              {fc && <path d={`M300,${y + 8} C330,${y} 360,${y} 390,${y + 4}`} />}
+              <path d={`M410,${y + 4} C440,${y} 470,${y} 500,${y + 8}`} />
+            </g>
+          ))}
+        </g>
+      )}
       <path d="M400,286 C396,330 386,360 378,374 C392,386 408,386 422,374 C414,360 404,330 400,286" fill="none" stroke={PIEL_B} strokeWidth={2.5} />
-      <path d="M352,444 C380,458 420,458 448,444" fill="none" stroke="#8a4a4a" strokeWidth={4} strokeLinecap="round" />
+      <path d={fp || fc ? `M352,${444 + 22 * u} C372,${448 + 12 * u} 410,${452} 456,${436 - 6 * u}` : 'M352,444 C380,458 420,458 448,444'} fill="none" stroke="#8a4a4a" strokeWidth={4} strokeLinecap="round" />
+      {fp && <path d="M366,380 C350,400 345,420 350,436" stroke={PIEL_B} strokeWidth={2} fill="none" opacity={0.3} />}
+      {(fp || fc) && <path d="M434,380 C452,400 458,420 456,434" stroke={PIEL_B} strokeWidth={2.5} fill="none" opacity={0.8} />}
+      {weber && (
+        <g opacity={u}>
+          <path d="M392,6 L392,40 M408,6 L408,40 M392,40 C392,50 408,50 408,40 M400,50 L400,62" stroke="#b8b8c0" strokeWidth={6} fill="none" strokeLinecap="round" />
+          {[0, 1, 2].map((i) => {
+            const k = (t * 0.8 + i / 3) % 1;
+            const dest = v === 'weber-conduccion' ? 208 : 592;
+            return <circle key={i} cx={400 + (dest - 400) * k} cy={70 + 230 * k} r={9} fill="var(--v-gold)" opacity={1 - k * 0.6} />;
+          })}
+          <ellipse cx={v === 'weber-conduccion' ? 208 : 592} cy={300} rx={34} ry={56} fill="none" stroke="var(--v-gold)" strokeWidth={4} opacity={0.5 + 0.5 * late} />
+        </g>
+      )}
       {cluster &&
         [0, 1, 2].map((i) => {
           const k = (t * 0.6 + i / 3) % 1;
@@ -385,6 +413,28 @@ function Cabeza({ t, paso, dt, vistas = ['normal'] }: BaseFig & { vistas?: Vista
         <L x={400} y={572} c="var(--v-red)" s={22} o={u}>
           Holocraneana
         </L>
+      )}
+      {fp && (
+        <>
+          <L x={186} y={160} a="end" c="var(--v-red)" s={20} o={u}>Frente lisa</L>
+          <L x={186} y={272} a="end" c="var(--v-red)" s={20} o={u}>No cierra: Bell</L>
+          <L x={400} y={572} c="var(--v-red)" s={22} o={u}>Periférica: toda la hemicara (frente incluida)</L>
+        </>
+      )}
+      {fc && (
+        <>
+          <L x={186} y={160} a="end" c="var(--v-mint)" s={20} o={u}>Frente sana</L>
+          <L x={186} y={460} a="end" c="var(--v-red)" s={20} o={u}>Boca caída</L>
+          <L x={400} y={572} c="var(--v-red)" s={22} o={u}>Central: solo la mitad inferior de la cara</L>
+        </>
+      )}
+      {weber && (
+        <>
+          <L x={186} y={380} a="end" c="var(--v-red)" s={20} o={u}>Oído enfermo</L>
+          <L x={400} y={572} c="var(--v-gold)" s={22} o={u}>
+            {v === 'weber-conduccion' ? 'Conducción: se oye más en el oído enfermo' : 'Percepción: se oye más en el oído sano'}
+          </L>
+        </>
       )}
       {v === 'normal' && (
         <L x={400} y={572} c={INK3} s={20}>
@@ -499,7 +549,7 @@ function Nucleos({ t, paso, dt, vistas = [{}] }: BaseFig & { vistas?: VistaNuc[]
         );
       })}
       {v.unLado && (
-        <L x={590} y={460} c={INK2} s={20}>
+        <L x={400} y={496} c={INK2} s={20}>
           Lesión izquierda → síntomas a la derecha
         </L>
       )}
@@ -515,7 +565,7 @@ function Nucleos({ t, paso, dt, vistas = [{}] }: BaseFig & { vistas?: VistaNuc[]
 /* ─────────── Vía motora: de la corteza al músculo ─────────── */
 
 export type NivelMotor = 'corteza' | 'capsula' | 'tronco' | 'medula' | 'asta' | 'nervio' | 'placa' | 'musculo';
-export type PatronCuerpo = 'hemi' | 'distal' | 'proximal' | 'ascendente' | 'ocular' | 'ninguno';
+export type PatronCuerpo = 'hemi' | 'distal' | 'proximal' | 'ascendente' | 'ocular' | 'alterna-iii' | 'alterna-vii' | 'paraplejia' | 'ninguno';
 
 export interface VistaMotora {
   lesion?: NivelMotor;
@@ -549,6 +599,14 @@ function Cuerpo({ patron, u, lat, t }: { patron: PatronCuerpo; u: number; lat: n
       <circle cx={100} cy={30} r={26} fill="#d9b7a0" stroke="#8a6a58" strokeWidth={2.5} />
       <path d="M70,62 L130,62 L142,170 L120,170 L118,220 L132,330 L110,330 L100,232 L90,330 L68,330 L82,220 L80,170 L58,170 Z" fill="#d9b7a0" stroke="#8a6a58" strokeWidth={2.5} />
       <path d="M70,62 L40,90 L24,180 L40,182 L56,104 Z M130,62 L160,90 L176,180 L160,182 L144,104 Z" fill="#d9b7a0" stroke="#8a6a58" strokeWidth={2.5} />
+      {(patron === 'alterna-iii' || patron === 'alterna-vii' || patron === 'paraplejia') && (
+        <g opacity={op} fill={R}>
+          {patron !== 'paraplejia' && <path d="M100,62 L70,62 L40,90 L24,180 L40,182 L56,104 L58,170 L80,170 L82,220 L68,330 L90,330 L100,232 Z" />}
+          {patron === 'alterna-iii' && <circle cx={111} cy={26} r={9} />}
+          {patron === 'alterna-vii' && <path d="M100,4 C116,4 126,16 126,30 C126,46 114,56 100,56 Z" />}
+          {patron === 'paraplejia' && <path d="M82,220 L68,330 L90,330 L100,232 L110,330 L132,330 L118,220 Z" />}
+        </g>
+      )}
       {patron === 'hemi' && (
         <g opacity={op} fill={R}>
           <path d="M100,4 C84,4 74,16 74,30 C74,46 86,56 100,56 Z" />
@@ -629,7 +687,7 @@ function Motora({ t, paso, dt, vistas = [{}] }: BaseFig & { vistas?: VistaMotora
       <Pulso d={VM.primera} t={t} v={25} c={col(tone)} w={10} largo={6} o={primeraLes ? 0.2 : 1} />
       <Pulso d={VM.segunda} t={t} v={25} c="var(--v-mint)" w={10} largo={14} o={primeraLes || segundaLes ? 0.2 : 1} />
       <circle cx={312} cy={520} r={9} fill="var(--v-mint)" />
-      <L x={440} y={130} a="start" c={col(tone)} s={20}>
+      <L x={384} y={250} a="start" c={col(tone)} s={20}>
         1.ª motoneurona
       </L>
       <L x={210} y={496} c="var(--v-mint)" s={20}>
@@ -809,6 +867,470 @@ function Sueno({ t, paso, dt, vistas = [['rem', 'n34']] }: BaseFig & { vistas?: 
   );
 }
 
+/* ─────────── Vía óptica vista desde arriba, con los campos visuales ─────────── */
+
+export type LesionOptica = 'nervio' | 'quiasma' | 'cintilla' | 'radiacion-inf' | 'radiacion-sup' | 'corteza';
+
+export interface VistaOptica {
+  lesion?: LesionOptica;
+  fibras?: boolean;
+  fotomotor?: boolean;
+  nota?: string;
+  notaTone?: VTone;
+}
+
+// Desde arriba con la cara hacia arriba: el ojo izquierdo del paciente queda a la izquierda del dibujo.
+const VO = {
+  izqTemp: 'M250,206 C260,240 300,282 368,304 C340,332 312,370 300,400',
+  izqNas: 'M290,210 C302,250 340,286 400,300 C450,316 482,360 500,400',
+  derTemp: 'M550,206 C540,240 500,282 432,304 C460,332 488,370 500,400',
+  derNas: 'M510,210 C498,250 460,286 400,300 C350,316 318,360 300,400',
+  izqSup: 'M300,400 C312,450 322,500 334,552',
+  izqInf: 'M300,400 C232,430 244,510 316,560',
+  derSup: 'M500,400 C488,450 478,500 466,552',
+  derInf: 'M500,400 C568,430 556,510 484,560',
+  aferente: 'M478,362 C450,392 420,410 400,432',
+  eferenteI: 'M400,432 C370,400 320,330 292,226',
+  eferenteD: 'M400,432 C430,400 480,330 508,226',
+};
+const VO_MARCA: Record<LesionOptica, [number, number, number]> = {
+  nervio: [279, 258, 30],
+  quiasma: [400, 300, 0],
+  cintilla: [326, 352, 60],
+  'radiacion-inf': [254, 478, 10],
+  'radiacion-sup': [318, 478, -10],
+  corteza: [320, 566, 0],
+};
+
+function Campo({ cx, cy, ojo, lesion, u }: { cx: number; cy: number; ojo: 'izq' | 'der'; lesion?: LesionOptica; u: number }) {
+  const r = 38;
+  // Mitades del campo visual de cada ojo vistas por el paciente: la izquierda del dibujo es su izquierda.
+  const negro: string[] = [];
+  const izq = `M${cx},${cy - r} A${r},${r} 0 0 0 ${cx},${cy + r} Z`;
+  const der = `M${cx},${cy - r} A${r},${r} 0 0 1 ${cx},${cy + r} Z`;
+  const derSup = `M${cx},${cy} L${cx},${cy - r} A${r},${r} 0 0 1 ${cx + r},${cy} Z`;
+  const derInf = `M${cx},${cy} L${cx + r},${cy} A${r},${r} 0 0 1 ${cx},${cy + r} Z`;
+  if (lesion === 'nervio' && ojo === 'izq') negro.push(izq, der);
+  if (lesion === 'quiasma') negro.push(ojo === 'izq' ? izq : der);
+  if (lesion === 'cintilla' || lesion === 'corteza') negro.push(der);
+  if (lesion === 'radiacion-inf') negro.push(derSup);
+  if (lesion === 'radiacion-sup') negro.push(derInf);
+  return (
+    <g>
+      <circle cx={cx} cy={cy} r={r} fill="#f3eee6" stroke={INK2} strokeWidth={2.5} />
+      {negro.map((d, i) => (
+        <path key={i} d={d} fill="#15121a" opacity={u} />
+      ))}
+      <path d={`M${cx},${cy - r} L${cx},${cy + r} M${cx - r},${cy} L${cx + r},${cy}`} stroke={INK3} strokeWidth={1.2} opacity={0.6} />
+    </g>
+  );
+}
+
+function ViaOptica({ t, paso, dt, vistas = [{ fibras: true }] }: BaseFig & { vistas?: VistaOptica[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const TEMP = 'var(--v-sky)';
+  const NAS = 'var(--v-red)';
+  const fibras = v.fibras ?? true;
+  const m = v.lesion ? VO_MARCA[v.lesion] : undefined;
+  return (
+    <svg viewBox="70 0 730 630" role="img" aria-label="Vía óptica vista desde arriba con los campos visuales de cada ojo">
+      <Campo cx={270} cy={56} ojo="izq" lesion={v.lesion} u={u} />
+      <Campo cx={530} cy={56} ojo="der" lesion={v.lesion} u={u} />
+      <L x={222} y={56} a="end" c={INK2} s={18}>
+        Campo OI
+      </L>
+      <L x={578} y={56} a="start" c={INK2} s={18}>
+        Campo OD
+      </L>
+      {/* ojos */}
+      {[270, 530].map((x) => (
+        <g key={x}>
+          <circle cx={x} cy={166} r={44} fill="#f2ede4" stroke="#8a7f72" strokeWidth={2.5} />
+          <ellipse cx={x} cy={124} rx={18} ry={6} fill="#5a7a9a" />
+        </g>
+      ))}
+      {/* corteza occipital */}
+      <path d="M230,548 C260,600 340,606 392,566" fill="none" stroke="#a8919c" strokeWidth={18} strokeLinecap="round" />
+      <path d="M570,548 C540,600 460,606 408,566" fill="none" stroke="#a8919c" strokeWidth={18} strokeLinecap="round" />
+      {/* cuerpos geniculados y mesencéfalo */}
+      <ellipse cx={300} cy={400} rx={16} ry={11} fill="#9a8090" />
+      <ellipse cx={500} cy={400} rx={16} ry={11} fill="#9a8090" />
+      {/* fibras */}
+      <g fill="none" strokeLinecap="round" strokeWidth={5} opacity={fibras ? 0.95 : 0.35}>
+        <path d={VO.izqTemp} stroke={TEMP} />
+        <path d={VO.derTemp} stroke={TEMP} />
+        <path d={VO.izqNas} stroke={NAS} />
+        <path d={VO.derNas} stroke={NAS} />
+        {[VO.izqSup, VO.izqInf, VO.derSup, VO.derInf].map((d) => (
+          <path key={d} d={d} stroke={INK2} strokeWidth={4} />
+        ))}
+      </g>
+      {fibras && (
+        <g>
+          {[VO.izqTemp, VO.derTemp].map((d, i) => (
+            <Pulso key={d} d={d} t={t} v={22} c={TEMP} w={9} largo={6} desfase={i * 30} />
+          ))}
+          {[VO.izqNas, VO.derNas].map((d, i) => (
+            <Pulso key={d} d={d} t={t} v={22} c={NAS} w={9} largo={6} desfase={15 + i * 30} />
+          ))}
+        </g>
+      )}
+      {v.fotomotor && (
+        <g opacity={u}>
+          <circle cx={400} cy={436} r={14} fill="var(--v-mint)" />
+          <Via d={VO.aferente} c="var(--v-gold)" w={4} dash="7 6" />
+          <Via d={VO.eferenteI} c="var(--v-mint)" w={4} dash="7 6" />
+          <Via d={VO.eferenteD} c="var(--v-mint)" w={4} dash="7 6" />
+          <Pulso d={VO.aferente} t={t} v={30} c="var(--v-gold)" w={9} largo={10} />
+          <Pulso d={VO.eferenteI} t={t} v={30} c="var(--v-mint)" w={9} largo={8} desfase={40} />
+          <Pulso d={VO.eferenteD} t={t} v={30} c="var(--v-mint)" w={9} largo={8} desfase={40} />
+          <L x={400} y={470} c="var(--v-mint)" s={18}>
+            Edinger-Westphal
+          </L>
+          <L x={96} y={300} a="start" c="var(--v-mint)" s={18}>
+            III par: miosis
+          </L>
+        </g>
+      )}
+      {m && (
+        <g opacity={u} transform={`translate(${m[0]} ${m[1]}) rotate(${m[2]})`}>
+          <rect x={-24} y={-7} width={48} height={14} rx={5} fill={ROJO} />
+        </g>
+      )}
+      {/* rótulos */}
+      <L x={590} y={250} a="start" c={INK2} s={18}>
+        Nervio óptico
+      </L>
+      <L x={590} y={300} a="start" c={INK2} s={18}>
+        Quiasma
+      </L>
+      <L x={590} y={350} a="start" c={INK2} s={18}>
+        Cintilla
+      </L>
+      <L x={590} y={400} a="start" c={INK2} s={18}>
+        Geniculado (tálamo)
+      </L>
+      <L x={590} y={470} a="start" c={INK2} s={18}>
+        Radiaciones
+      </L>
+      <L x={590} y={570} a="start" c={INK2} s={18}>
+        Occipital (calcarina)
+      </L>
+      <L x={120} y={186} a="start" c={TEMP} s={18}>
+        temporal
+      </L>
+      <L x={120} y={210} a="start" c={NAS} s={18}>
+        nasal (cruza)
+      </L>
+      {v.nota && (
+        <L x={400} y={618} c={v.notaTone ? col(v.notaTone) : INK} s={21}>
+          {v.nota}
+        </L>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── Músculos del ojo y parálisis de los oculomotores ─────────── */
+
+export type VistaOjos = 'musculos' | 'iii' | 'iii-parcial' | 'iv' | 'vi' | 'nistagmo' | 'normal';
+
+function OjoFrente({ cx, cy, dx, dy, pr, ptosis }: { cx: number; cy: number; dx: number; dy: number; pr: number; ptosis: number }) {
+  return (
+    <g>
+      <path d={`M${cx - 80},${cy} C${cx - 40},${cy - 52} ${cx + 40},${cy - 52} ${cx + 80},${cy} C${cx + 40},${cy + 48} ${cx - 40},${cy + 48} ${cx - 80},${cy} Z`} fill="#f4efe8" stroke="#8a6a58" strokeWidth={3} />
+      <clipPath id={`ojo-${cx}`}>
+        <path d={`M${cx - 80},${cy} C${cx - 40},${cy - 52} ${cx + 40},${cy - 52} ${cx + 80},${cy} C${cx + 40},${cy + 48} ${cx - 40},${cy + 48} ${cx - 80},${cy} Z`} />
+      </clipPath>
+      <g clipPath={`url(#ojo-${cx})`}>
+        <circle cx={cx + dx} cy={cy + dy} r={28} fill="#5a7a9a" />
+        <circle cx={cx + dx} cy={cy + dy} r={pr} fill="#151a22" />
+        {ptosis > 0 && <rect x={cx - 90} y={cy - 60} width={180} height={20 + 70 * ptosis} fill="#d9b7a0" stroke="#8a6a58" strokeWidth={2} />}
+      </g>
+      <path d={`M${cx - 86},${cy - 64 + 70 * ptosis} C${cx - 40},${cy - 84 + 70 * ptosis} ${cx + 40},${cy - 84 + 70 * ptosis} ${cx + 86},${cy - 64 + 70 * ptosis}`} stroke="#4a3a32" strokeWidth={7} fill="none" strokeLinecap="round" opacity={ptosis ? 0 : 1} />
+    </g>
+  );
+}
+
+function Oculomotores({ t, paso, dt, vistas = ['musculos'] }: BaseFig & { vistas?: VistaOjos[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  // Paciente de frente: su ojo derecho queda a la izquierda del dibujo (x 250); la nariz, hacia el centro.
+  const D = 250;
+  const I = 550;
+  const Y = 200;
+  let d = { dx: 0, dy: 0, pr: 10, ptosis: 0 };
+  if (v === 'iii') d = { dx: -34 * u, dy: 16 * u, pr: 10 + 8 * u, ptosis: 0.5 * u };
+  if (v === 'iii-parcial') d = { dx: -34 * u, dy: 16 * u, pr: 10, ptosis: 0.5 * u };
+  if (v === 'iv') d = { dx: 6 * u, dy: -14 * u, pr: 10, ptosis: 0 };
+  if (v === 'vi') d = { dx: 36 * u, dy: 0, pr: 10, ptosis: 0 };
+  const ny = v === 'nistagmo' ? ((t * 2.2) % 1 < 0.8 ? -18 + 36 * (((t * 2.2) % 1) / 0.8) : 18 - 36 * ((((t * 2.2) % 1) - 0.8) / 0.2)) : 0;
+  const C = 400;
+  const flechas: { a: number; n: string; par: string; x: number; y: number; anc: 'start' | 'middle' | 'end' }[] = [
+    { a: -90, n: 'Recto superior', par: 'III', x: C, y: 72, anc: 'middle' },
+    { a: 90, n: 'Recto inferior', par: 'III', x: C, y: 330, anc: 'middle' },
+    { a: 0, n: 'Recto interno', par: 'III', x: C + 140, y: Y, anc: 'start' },
+    { a: 180, n: 'Recto externo', par: 'VI', x: C - 140, y: Y, anc: 'end' },
+    { a: 45, n: 'Oblicuo superior', par: 'IV', x: C + 84, y: 292, anc: 'start' },
+    { a: -45, n: 'Oblicuo inferior', par: 'III', x: C + 84, y: 110, anc: 'start' },
+  ];
+  const tone: Record<string, string> = { III: 'var(--v-sky)', IV: 'var(--v-gold)', VI: 'var(--v-peach)' };
+  const nota: Partial<Record<VistaOjos, string>> = {
+    iii: 'III: abajo y afuera, ptosis y midriasis',
+    'iii-parcial': 'III parcial: igual, pero la pupila responde',
+    iv: 'IV: el ojo queda alto; diplopía al mirar abajo',
+    vi: 'VI: el ojo se desvía hacia adentro',
+    nistagmo: 'Nistagmo: oscilación con fase lenta y fase rápida',
+    musculos: 'Ojo derecho del paciente: cada músculo y su par',
+  };
+  return (
+    <svg viewBox="0 20 800 380" role="img" aria-label="Músculos extraoculares y parálisis de los pares oculomotores">
+      {v === 'musculos' ? (
+        <OjoFrente cx={C} cy={Y} dx={0} dy={0} pr={10} ptosis={0} />
+      ) : (
+        <>
+          <OjoFrente cx={D} cy={Y} dx={d.dx + ny} dy={d.dy} pr={d.pr} ptosis={d.ptosis} />
+          <OjoFrente cx={I} cy={Y} dx={ny} dy={0} pr={10} ptosis={0} />
+          <path d={`M${400},${Y - 30} C${392},${Y + 20} ${384},${Y + 60} ${380},${Y + 80}`} stroke="#8a6a58" strokeWidth={3} fill="none" opacity={0.6} />
+        </>
+      )}
+      {v === 'musculos' &&
+        flechas.map((f) => {
+          const rad = (f.a * Math.PI) / 180;
+          const x1 = C + Math.cos(rad) * 40;
+          const y1 = Y + Math.sin(rad) * 40;
+          const x2 = C + Math.cos(rad) * (f.a === 0 || f.a === 180 ? 128 : 100);
+          const y2 = Y + Math.sin(rad) * 100;
+          return (
+            <g key={f.n}>
+              <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={tone[f.par]} strokeWidth={5} markerEnd="url(#neu-flecha)" />
+              <L x={f.x} y={f.y} a={f.anc} c={tone[f.par]} s={19}>
+                {`${f.n} (${f.par})`}
+              </L>
+            </g>
+          );
+        })}
+      <defs>
+        <marker id="neu-flecha" viewBox="0 0 10 10" refX={8} refY={5} markerWidth={5} markerHeight={5} orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill={INK2} />
+        </marker>
+      </defs>
+      {v !== 'musculos' && (
+        <>
+          <L x={D} y={Y + 92} c={INK3} s={18}>
+            Ojo derecho
+          </L>
+          <L x={I} y={Y + 92} c={INK3} s={18}>
+            Ojo izquierdo
+          </L>
+        </>
+      )}
+      {nota[v] && (
+        <L x={400} y={380} c={v === 'musculos' ? INK : 'var(--v-red)'} s={21}>
+          {nota[v]}
+        </L>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── Tronco encefálico de frente: dónde nace cada par ─────────── */
+
+export interface VistaTronco {
+  luz?: number[];
+  nivel?: ('mesencefalo' | 'protuberancia' | 'bulbo')[];
+  nota?: string;
+  notaTone?: VTone;
+  tone?: VTone;
+}
+
+// Cada par: trazo del lado izquierdo del dibujo (se espeja) y posición del rótulo.
+const PARES: Record<number, { d: string; lx: number; ly: number; n: string }> = {
+  2: { d: 'M388,62 C360,46 330,36 300,30', lx: 290, ly: 30, n: 'II óptico' },
+  3: { d: 'M388,170 C360,166 320,160 280,150', lx: 270, ly: 148, n: 'III motor ocular común' },
+  4: { d: 'M332,186 C310,190 290,194 262,192', lx: 252, ly: 196, n: 'IV patético' },
+  5: { d: 'M290,262 C270,258 250,254 226,248', lx: 216, ly: 248, n: 'V trigémino' },
+  6: { d: 'M386,336 C372,300 350,260 330,226', lx: 316, ly: 222, n: 'VI motor ocular ext.' },
+  7: { d: 'M318,338 C300,336 270,334 240,330', lx: 230, ly: 318, n: 'VII facial' },
+  8: { d: 'M308,346 C290,350 262,356 236,360', lx: 226, ly: 360, n: 'VIII vestibulococlear' },
+  9: { d: 'M318,384 C296,386 270,390 246,394', lx: 236, ly: 396, n: 'IX glosofaríngeo' },
+  10: { d: 'M318,404 C296,410 270,418 246,426', lx: 236, ly: 428, n: 'X vago' },
+  11: { d: 'M330,520 C318,486 312,462 300,452 C286,450 266,452 246,456', lx: 236, ly: 460, n: 'XI espinal' },
+  12: { d: 'M356,404 C340,420 320,440 300,490', lx: 290, ly: 500, n: 'XII hipogloso' },
+};
+
+function TroncoPares({ t, paso, dt, vistas = [{ luz: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12] }] }: BaseFig & { vistas?: VistaTronco[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const tone = v.tone ?? 'gold';
+  const luz = new Set(v.luz ?? []);
+  const niv = new Set(v.nivel ?? []);
+  const lat = 0.6 + 0.4 * Math.sin(t * 3);
+  const fillNivel = (n: 'mesencefalo' | 'protuberancia' | 'bulbo', base: string) => (niv.has(n) ? `color-mix(in srgb, ${col(tone)} ${Math.round(30 + 25 * lat * u)}%, ${base})` : base);
+  return (
+    <svg viewBox="0 10 800 600" role="img" aria-label="Tronco encefálico visto de frente con el origen aparente de los pares craneales">
+      {/* quiasma */}
+      <path d="M370,60 L430,60 L420,78 L380,78 Z" fill="#c9b3ad" stroke="#8d6f6b" strokeWidth={2} />
+      {/* mesencéfalo: pedúnculos */}
+      <path d="M360,80 C340,110 330,150 340,196 L392,196 L392,90 Z M440,80 C460,110 470,150 460,196 L408,196 L408,90 Z" fill={fillNivel('mesencefalo', '#b8948f')} stroke="#7d5f5a" strokeWidth={2.5} />
+      {/* protuberancia */}
+      <path d="M300,196 C270,230 270,300 310,336 L490,336 C530,300 530,230 500,196 Z" fill={fillNivel('protuberancia', '#c49f99')} stroke="#7d5f5a" strokeWidth={2.5} />
+      <g stroke="#7d5f5a" strokeWidth={1.5} opacity={0.5} fill="none">
+        {[230, 260, 290, 316].map((y) => (
+          <path key={y} d={`M${300},${y} C${360},${y + 8} ${440},${y + 8} ${500},${y}`} />
+        ))}
+      </g>
+      {/* bulbo: pirámides y olivas */}
+      <path d="M318,336 C320,380 336,440 360,500 L440,500 C464,440 480,380 482,336 Z" fill={fillNivel('bulbo', '#b8948f')} stroke="#7d5f5a" strokeWidth={2.5} />
+      <path d="M400,340 L400,500" stroke="#7d5f5a" strokeWidth={2} />
+      <ellipse cx={340} cy={398} rx={14} ry={30} fill="#a8847f" stroke="#7d5f5a" strokeWidth={2} />
+      <ellipse cx={460} cy={398} rx={14} ry={30} fill="#a8847f" stroke="#7d5f5a" strokeWidth={2} />
+      {/* médula */}
+      <rect x={364} y={500} width={72} height={100} rx={24} fill="#c4a59f" stroke="#7d5f5a" strokeWidth={2.5} />
+      {/* pares */}
+      {Object.entries(PARES).map(([k, p]) => {
+        const n = Number(k);
+        const on = luz.has(n);
+        const c = on ? col(tone) : '#a5862e';
+        return (
+          <g key={k} opacity={on ? 1 : 0.45}>
+            <path d={p.d} stroke={c} strokeWidth={on ? 6 : 4} fill="none" strokeLinecap="round" />
+            <path d={p.d} transform="translate(800 0) scale(-1 1)" stroke={c} strokeWidth={on ? 6 : 4} fill="none" strokeLinecap="round" />
+            {on && (
+              <L x={p.lx} y={p.ly} a="end" c={c} s={19}>
+                {p.n}
+              </L>
+            )}
+          </g>
+        );
+      })}
+      <L x={560} y={130} a="start" c={INK3} s={19}>
+        Mesencéfalo
+      </L>
+      <L x={560} y={270} a="start" c={INK3} s={19}>
+        Protuberancia
+      </L>
+      <L x={560} y={420} a="start" c={INK3} s={19}>
+        Bulbo
+      </L>
+      {v.nota && (
+        <L x={400} y={590} c={v.notaTone ? col(v.notaTone) : INK} s={21}>
+          {v.nota}
+        </L>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── La lengua y el velo: IX, X y XII ─────────── */
+
+export type VistaBoca = 'inervacion' | 'xii' | 'cortina' | 'velo';
+
+const LENGUA = 'M300,110 C300,70 500,70 500,110 L516,330 C518,430 462,500 400,502 C338,500 282,430 284,330 Z';
+
+function Boca({ t, paso, dt, vistas = ['inervacion'] }: BaseFig & { vistas?: VistaBoca[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const LEN = '#d98a8a';
+  const LEN_B = '#9a4a4a';
+  if (v === 'cortina' || v === 'velo') {
+    // Boca abierta de frente diciendo «ah»: la derecha del paciente queda a la izquierda del dibujo.
+    const enf = v === 'cortina' ? u : 0;
+    const ux = 400 + 34 * enf;
+    return (
+      <svg viewBox="80 20 640 520" role="img" aria-label="Velo del paladar y úvula al decir ah">
+        <ellipse cx={400} cy={270} rx={250} ry={210} fill="#7a3a3a" stroke="#5a2a2a" strokeWidth={4} />
+        <path d={`M170,250 C220,${120 + 30 * enf} 330,${110 + 20 * enf} 400,110 C470,110 580,120 630,250`} fill="#c9787a" stroke="#8a4a4a" strokeWidth={3} />
+        <path d={`M210,260 C250,${180 + 40 * enf} 330,${150 + 30 * enf} ${ux - 18},170 L${ux + 18},170 C470,150 550,180 590,260`} fill="#3a1a1e" />
+        <path d={`M${ux - 14},168 C${ux - 16},200 ${ux - 10},226 ${ux},232 C${ux + 10},226 ${ux + 16},200 ${ux + 14},168 Z`} fill="#d98a8a" stroke={LEN_B} strokeWidth={2.5} />
+        <path d="M200,370 C260,330 540,330 600,370 C600,440 520,470 400,470 C280,470 200,440 200,370 Z" fill={LEN} stroke={LEN_B} strokeWidth={3} />
+        {v === 'cortina' && (
+          <g opacity={u}>
+            <L x={238} y={110} c={ROJO} s={20}>
+              Lado paralizado
+            </L>
+            <L x={560} y={110} c="var(--v-mint)" s={20}>
+              Lado sano
+            </L>
+          </g>
+        )}
+        <L x={400} y={520} c={v === 'cortina' ? ROJO : INK} s={21}>
+          {v === 'cortina' ? 'Signo de la cortina: la úvula se va hacia el lado sano' : 'Al decir «ah», el velo sube parejo y la úvula queda al medio'}
+        </L>
+      </svg>
+    );
+  }
+  const xii = v === 'xii';
+  // Lengua vista desde arriba, con la base (posterior) arriba y la punta abajo.
+  return (
+    <svg viewBox="40 20 780 530" role="img" aria-label="Inervación de la lengua y parálisis del hipogloso">
+      <g transform={xii ? `rotate(${-14 * u} 400 110)` : undefined}>
+        <path d={LENGUA} fill={LEN} stroke={LEN_B} strokeWidth={3} />
+        {!xii && (
+          <g>
+            <clipPath id="len-clip">
+              <path d={LENGUA} />
+            </clipPath>
+            <g clipPath="url(#len-clip)">
+              <path d="M260,60 L540,60 L540,252 L400,200 L260,252 Z" fill="var(--v-gold)" opacity={0.45} />
+              <path d="M260,252 L400,200 L540,252 L540,520 L260,520 Z" fill="var(--v-sky)" opacity={0.35} />
+            </g>
+            <path d="M292,252 L400,200 L508,252" stroke={LEN_B} strokeWidth={3} fill="none" strokeDasharray="8 6" />
+          </g>
+        )}
+        {xii && (
+          <g opacity={u}>
+            <path d="M400,110 L400,500 L460,480 C500,440 512,380 510,330 L500,110 Z" fill="#b97070" opacity={0.6} />
+            {[0, 1, 2, 3, 4].map((i) => (
+              <circle key={i} cx={440 + (i % 2) * 30} cy={200 + i * 50 + 6 * Math.sin(t * 9 + i)} r={4} fill={LEN_B} />
+            ))}
+          </g>
+        )}
+        <path d="M400,90 L400,480" stroke={LEN_B} strokeWidth={2} opacity={0.5} />
+      </g>
+      {!xii && (
+        <>
+          <L x={540} y={150} a="start" c="var(--v-gold)" s={20}>
+            Tercio posterior
+          </L>
+          <L x={540} y={176} a="start" c={INK} s={19} w={500}>
+            tacto y gusto: IX
+          </L>
+          <L x={540} y={340} a="start" c="var(--v-sky)" s={20}>
+            Dos tercios anteriores
+          </L>
+          <L x={540} y={366} a="start" c={INK} s={19} w={500}>
+            tacto: V (maxilar inferior)
+          </L>
+          <L x={540} y={392} a="start" c={INK} s={19} w={500}>
+            gusto: VII
+          </L>
+          <L x={240} y={300} a="end" c="var(--v-mint)" s={20}>
+            Motora: XII
+          </L>
+          <L x={240} y={326} a="end" c={INK2} s={18} w={500}>
+            (el palatogloso, X)
+          </L>
+        </>
+      )}
+      {xii && (
+        <>
+          <L x={580} y={250} a="start" c={ROJO} s={20}>
+            Lado del XII lesionado:
+          </L>
+          <L x={580} y={276} a="start" c={ROJO} s={20}>
+            atrofia, fasciculaciones
+          </L>
+          <L x={400} y={540} c={ROJO} s={21}>
+            La punta se desvía hacia el lado paralizado
+          </L>
+        </>
+      )}
+    </svg>
+  );
+}
+
 export const FIGURAS_NEU = {
   encefalo: Encefalo,
   cabeza: Cabeza,
@@ -817,5 +1339,9 @@ export const FIGURAS_NEU = {
   temblor: Temblor,
   crisis: Crisis,
   sueno: Sueno,
+  'via-optica': ViaOptica,
+  oculomotores: Oculomotores,
+  'tronco-pares': TroncoPares,
+  boca: Boca,
 } satisfies Record<string, (p: never) => ReactNode>;
 

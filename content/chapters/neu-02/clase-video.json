@@ -1,0 +1,146 @@
+{
+  "src": "media/neu-02/clase.mp4",
+  "poster": "media/neu-02/clase.jpg",
+  "vtt": "media/neu-02/clase.vtt",
+  "duration": "14:09",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Núcleos de la base"
+    },
+    {
+      "t": 48,
+      "label": "Fisiopatología · Las motoneuronas"
+    },
+    {
+      "t": 85,
+      "label": "Fisiopatología · Nervio y placa"
+    },
+    {
+      "t": 149,
+      "label": "Fisiopatología · La convulsión"
+    },
+    {
+      "t": 190,
+      "label": "Teoría · Movimientos involuntarios"
+    },
+    {
+      "t": 414,
+      "label": "Teoría · Debilidad"
+    },
+    {
+      "t": 469,
+      "label": "Teoría · Nervio, placa y músculo"
+    },
+    {
+      "t": 615,
+      "label": "Teoría · Convulsiones"
+    },
+    {
+      "t": 779,
+      "label": "Teoría · Sueño"
+    }
+  ],
+  "script": [
+    {
+      "title": "Dopamina contra acetilcolina",
+      "text": "Los movimientos involuntarios anormales salen de una alteración de los núcleos de la base, en la profundidad del cerebro. Estos núcleos regulan el tono y los movimientos con un equilibrio de neurotransmisores: la dopamina, la acetilcolina y el GABA. En el Parkinson, la sustancia negra deja de mandar dopamina al cuerpo estriado, y la acetilcolina queda en exceso. El resultado son pocos movimientos, y lentos: la hipocinesia. En la corea pasa lo contrario: en el cuerpo estriado bajan la acetilcolina y el GABA, la dopamina queda en exceso, y aparecen movimientos de más. Por eso un paciente que toma mucha levodopa puede hacer una corea."
+    },
+    {
+      "title": "Primera o segunda motoneurona",
+      "text": "La debilidad depende de dónde está la lesión. Si se lesiona la primera motoneurona, la de la vía piramidal, la segunda motoneurona sigue viva pero pierde el control de arriba: el reflejo queda suelto. Hay hipertonía, los reflejos están exaltados, aparece el Babinski, y la parálisis es espástica. Si se lesiona la segunda motoneurona, en el asta anterior o en el nervio, el músculo se queda sin nervio. Hay hipotonía, los reflejos desaparecen, el músculo se atrofia y aparecen fasciculaciones. La parálisis es fláccida."
+    },
+    {
+      "title": "Guillain-Barré: el sistema inmune ataca la mielina",
+      "text": "El síndrome de Guillain-Barré es una polirradiculoneuropatía. Pocos días después de una infección respiratoria o una gastroenteritis, el propio sistema inmune ataca la vaina de mielina de los nervios periféricos. Sin mielina el impulso no conduce bien. Empiezan parestesias, dolor y pérdida de fuerza en las piernas, que va subiendo, hasta poder afectar los cuatro miembros: es una parálisis ascendente. Los reflejos desaparecen, hay hipotonía, pueden afectarse los pares craneales, sobre todo el facial, y si llega a los músculos respiratorios, el paciente puede hacer una insuficiencia respiratoria."
+    },
+    {
+      "title": "Miastenia gravis: la placa no recibe el mensaje",
+      "text": "La miastenia gravis es una enfermedad de la placa neuromuscular. Hay anticuerpos que destruyen el receptor nicotínico donde se une la acetilcolina. El nervio libera la acetilcolina, pero no encuentra dónde unirse, y el mensaje no pasa bien al músculo. El músculo se fatiga: el ejemplo típico es la caída de los dos párpados."
+    },
+    {
+      "title": "Qué pasa en una convulsión",
+      "text": "En una convulsión hay una descarga neuronal excesiva: espontánea, que activa en sincronía a muchísimas neuronas. Eso se manifiesta como movimientos involuntarios, casi siempre generalizados, y después la pérdida de la conciencia. Durante la crisis, las neuronas consumen sus reservas de oxígeno y glucosa. Si la convulsión se prolonga unos minutos, esas reservas se vacían. Por eso, ante una convulsión, lo primero es oxigenar. Y si la crisis dura más de treinta minutos, o se repite una y otra vez sin que el paciente se recupere entre ellas, es un estado de mal epiléptico."
+    },
+    {
+      "title": "Movimientos involuntarios anormales",
+      "text": "Los movimientos involuntarios anormales son muy preguntados en los parciales. Son disfunciones de los núcleos de la base: un exceso de movimientos, la hipercinesia, o una falta, la hipocinesia. Cuando se alteran los núcleos de la base, se altera el tono muscular, y se alteran los movimientos voluntarios, los automáticos y los asociados."
+    },
+    {
+      "title": "El temblor",
+      "text": "El temblor se lo van a preguntar: hay que conocerlo bien. Es el movimiento involuntario más frecuente: oscilaciones rítmicas de un segmento o de varias partes del cuerpo, casi siempre las manos. Y desaparece con el sueño. Se clasifica por su velocidad, rápido, mediano o lento; por su amplitud, fino o grosero; y sobre todo por el momento en que aparece: en reposo, al mantener una postura, o al hacer un movimiento intencional."
+    },
+    {
+      "title": "Cada temblor y su enfermedad",
+      "text": "Cada temblor tiene su pista. El del Parkinson es de reposo, lento y grosero, empieza de un lado y después se hace bilateral: el famoso temblor en cuenta monedas. El fisiológico es postural, fino y rápido, y aparece con la ansiedad o el frío, por la adrenalina. El cerebeloso es intencional: aumenta cuando el paciente se acerca al objetivo. El esencial es postural, hereditario, afecta las manos, la cabeza y la voz, y se relaciona con el alcohol y el estrés. Y el de la enfermedad de Wilson, por depósito de cobre en los núcleos de la base, es grueso y proximal."
+    },
+    {
+      "title": "Corea",
+      "text": "La corea, la que le sigue en frecuencia al temblor: movimientos rápidos, desordenados, irregulares y arrítmicos, que fluyen de una parte del cuerpo a otra, como la marcha del payaso. También desaparece con el sueño. La lesión está en el cuerpo estriado: bajan la acetilcolina y el GABA, y la dopamina queda en exceso, lo contrario del Parkinson. La de Huntington es hereditaria, del adulto, con deterioro cognitivo, e irreversible. La de Sydenham es de los niños, después de una faringitis por estreptococo, en la fiebre reumática, y es reversible. Y está la corea farmacológica, por exceso de levodopa."
+    },
+    {
+      "title": "Hemibalismo",
+      "text": "El balismo es casi lo mismo que una corea, pero afecta la mitad del cuerpo, por eso se lo llama hemibalismo: el paciente hace movimientos amplios del brazo, como si quisiera lanzar algo. Se debe casi siempre a una lesión vascular de un núcleo de la base: el núcleo subtalámico de Luys, del lado opuesto."
+    },
+    {
+      "title": "Atetosis, mioclonías, distonías y tics",
+      "text": "Lo más preguntado: el temblor, la corea, el hemibalismo, la atetosis y los tics. La atetosis son movimientos lentos y distónicos de las manos. Las mioclonías son contracciones bruscas; una mioclonía negativa es el flapping, o asterixis, de la encefalopatía hepática o urémica. Las distonías son contracciones sostenidas, como la tortícolis o el blefaroespasmo. Y los tics son movimientos cortos, bruscos y repetitivos, que el paciente puede contener por un rato pero no controlar del todo; son de los niños, y el ejemplo es el síndrome de Gilles de la Tourette."
+    },
+    {
+      "title": "Fasciculaciones e hipocinesia",
+      "text": "La fasciculación, pregunta de parcial: son contracciones espontáneas de un grupo de fibras musculares, que se ven bajo la piel, en reposo. Es típica de los pacientes con hipotonía, sobre todo en el síndrome de la segunda motoneurona. Y del otro lado, la hipocinesia, o bradicinesia: pocos movimientos, y lentos. Es lo más característico del Parkinson."
+    },
+    {
+      "title": "Debilidad: primera y segunda motoneurona",
+      "text": "La debilidad muscular: paresia es la disminución de la fuerza, y plejía es la ausencia. Lo que hay que saber es si la lesión es de la primera o de la segunda motoneurona. La primera motoneurona es el síndrome piramidal: parálisis espástica, hipertonía en navaja, hiperreflexia y Babinski, sin atrofia salvo por desuso. La segunda motoneurona da una parálisis fláccida: hipotonía, arreflexia, atrofia y fasciculaciones."
+    },
+    {
+      "title": "Arriba o abajo de la decusación",
+      "text": "La vía piramidal se cruza en el bulbo, en la decusación. Si la lesión está por arriba, por ejemplo en la cápsula interna del hemisferio izquierdo, la vía todavía no cruzó, y la debilidad aparece del lado opuesto, el derecho. Si la lesión está por debajo del bulbo, en la médula, la vía ya cruzó: la debilidad aparece del mismo lado de la lesión."
+    },
+    {
+      "title": "Neuropatías",
+      "text": "La lesión del sistema nervioso periférico. La mononeuropatía afecta un solo nervio: el radial da la mano caída, el mediano la mano del predicador, el cubital la mano en garra. Si hay varios nervios afectados por separado, por ejemplo el cubital izquierdo y el radial derecho, es una mononeuropatía múltiple. La polineuropatía afecta muchos nervios a la vez: es distal, casi siempre simétrica, y predomina en los miembros inferiores. Sus características son pregunta de parcial."
+    },
+    {
+      "title": "La polineuropatía",
+      "text": "La polineuropatía es distal: los antebrazos y las manos, las piernas y los pies. Hay paresia o parálisis, hipotonía o atonía, reflejos disminuidos o abolidos, atrofia y fasciculaciones. La piel se vuelve atrófica, y aparece la alodinia: duele un estímulo que no debería doler. El líquido cefalorraquídeo, los esfínteres y los pares craneales son normales, salvo en la neuropatía diabética, que puede tocar los pares. Las tres que hay que conocer: la diabética, la alcohólica, y el síndrome de Guillain-Barré."
+    },
+    {
+      "title": "Síndrome de Guillain-Barré",
+      "text": "El síndrome de Guillain-Barré es una polirradiculoneuropatía desmielinizante, autoinmune, que aparece días después de una infección respiratoria o intestinal. La parálisis es ascendente, la de Landry: empieza en las piernas y sube hasta los cuatro miembros. Hay arreflexia e hipotonía, puede afectar los pares craneales, sobre todo el facial, y el riesgo es la insuficiencia respiratoria. En la punción lumbar se encuentra la disociación albúmino-citológica: las proteínas están altas, y las células, normales."
+    },
+    {
+      "title": "Miopatías y miastenia",
+      "text": "Las miopatías son al revés de la neuropatía: afectan la parte proximal, las cinturas escapular y pelviana, y de forma simétrica. No hay compromiso sensitivo, los reflejos casi no se alteran y no hay fasciculaciones, porque no es un trastorno del nervio. Puede haber seudohipertrofia, un músculo grande pero lleno de grasa, escápulas aladas, hiperlordosis, y la marcha de pato. Y la enzima que se pide es la CPK, que está elevada. La miastenia gravis, en cambio, es de la placa neuromuscular: anticuerpos contra el receptor de acetilcolina, ptosis de los dos párpados y fatiga."
+    },
+    {
+      "title": "La convulsión",
+      "text": "La convulsión son movimientos involuntarios, casi siempre generalizados, seguidos de una pérdida de la conciencia. La más común es la tónico-clónica, la crisis de gran mal, por una descarga neuronal excesiva y sincrónica. Si dura más de treinta minutos, o las crisis se repiten sin que el paciente se recupere, es un estado de mal epiléptico. El profesor aclara que convulsiones y sueño se preguntan poco, y solo algunos docentes."
+    },
+    {
+      "title": "Las fases de la crisis",
+      "text": "Las fases de la crisis. Primero, el aura: alucinaciones, mareo, adormecimiento o emociones que avisan. Después, la fase tónica: el cuerpo se pone rígido y se arquea, y el paciente puede orinarse encima. Luego, la fase clónica: el paciente se sacude con fuerza y larga saliva por la boca. Y por último, la fase postictal: el paciente queda débil, atónico, con la conciencia perdida o confusa."
+    },
+    {
+      "title": "Parálisis de Todd",
+      "text": "Una pregunta que algunos docentes hacen siempre: qué es la parálisis de Todd, o paresia postictal. Es una debilidad transitoria que aparece después de la crisis convulsiva, casi siempre de un lado del cuerpo, que dura minutos u horas y desaparece sola, en general antes de las cuarenta y ocho horas."
+    },
+    {
+      "title": "Convulsión no es epilepsia",
+      "text": "Convulsión no es lo mismo que epilepsia. La convulsión es la manifestación clínica, la crisis tónico-clónica, y puede tener una causa puntual, como la fiebre: si se retira la causa, deja de convulsionar. La epilepsia es una condición permanente y recurrente, por una lesión del sistema nervioso central, como en el lóbulo temporal o después de un traumatismo. Y puede no convulsionar: en la crisis de ausencia, el chico desaparece unos segundos, deja de escribir, y vuelve. Las crisis son parciales, simples si no hay pérdida de conciencia, complejas si la hay, o con generalización secundaria; o generalizadas. Y según la causa, idiopáticas, criptogénicas o sintomáticas."
+    },
+    {
+      "title": "Con qué no confundirla",
+      "text": "Los diagnósticos diferenciales. El síncope: baja el flujo de sangre al cerebro, el paciente pierde la conciencia y la recupera enseguida. La crisis psicógena: pacientes ansiosos que hiperventilan, con movimientos bruscos pero sin una verdadera fase tónica. Las crisis por drogas o por abstinencia, como al suspender bruscamente el alcohol. Y la crisis aguda sintomática más importante: la convulsión febril del niño, que no depende de cuánta fiebre tenga, sino de cada chico."
+    },
+    {
+      "title": "Quién regula el sueño",
+      "text": "El sueño. Casi siempre, un trastorno del sueño es una lesión del hipotálamo. Si se lesiona el hipotálamo posterior, el paciente duerme mucho: hipersomnia. Si se lesiona el anterior, insomnio. El ciclo de vigilia y sueño lo regula la formación reticular del tronco, muy ligada al sistema autónomo: el simpático acentúa la vigilia, y el parasimpático profundiza el sueño."
+    },
+    {
+      "title": "Las etapas del sueño",
+      "text": "Y lo que se pregunta del sueño son sus etapas. Las etapas uno y dos del sueño no REM son el sueño superficial: el paciente está entre dormido y despierto, y se despierta fácilmente. Las etapas tres y cuatro son el sueño profundo: predomina el parasimpático, bajan la frecuencia cardíaca y la presión, y aparecen los ronquidos. Y alrededor de una hora y media después de dormirse llega el sueño REM: es cuando el paciente sueña, con movimientos oculares rápidos y los músculos atónicos, y en el electroencefalograma aparecen las ondas en dientes de sierra."
+    }
+  ]
+}

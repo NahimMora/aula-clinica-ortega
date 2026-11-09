@@ -1,0 +1,122 @@
+{
+  "src": "media/neu-03/clase.mp4",
+  "poster": "media/neu-03/clase.jpg",
+  "vtt": "media/neu-03/clase.vtt",
+  "duration": "11:47",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · El olfato"
+    },
+    {
+      "t": 34,
+      "label": "Fisiopatología · La vía óptica"
+    },
+    {
+      "t": 112,
+      "label": "Fisiopatología · Pupila y músculos"
+    },
+    {
+      "t": 181,
+      "label": "Teoría · Generalidades"
+    },
+    {
+      "t": 294,
+      "label": "Teoría · I olfatorio"
+    },
+    {
+      "t": 365,
+      "label": "Teoría · II óptico"
+    },
+    {
+      "t": 520,
+      "label": "Teoría · III, IV y VI"
+    }
+  ],
+  "script": [
+    {
+      "title": "El olfato no pasa por el tálamo",
+      "text": "El primer par, el olfatorio. Su primera neurona está en la mucosa olfatoria, la mancha amarilla, debajo de la lámina cribosa del etmoides. Los filetes nerviosos atraviesan los agujeros de la lámina cribosa y forman el bulbo olfatorio, la segunda neurona. Y de ahí la vía va directo al uncus del hipocampo, el área periamigdalina, en el lóbulo temporal. Es el único par sensorial que no hace sinapsis en el tálamo."
+    },
+    {
+      "title": "La vía óptica: quién cruza y quién no",
+      "text": "La vía óptica. Cada retina tiene una mitad nasal y una mitad temporal, y el campo se invierte: la retina nasal ve el campo temporal, y la retina temporal ve el campo nasal. En el quiasma óptico se cruzan solamente las fibras nasales, las que ven los campos temporales. Las temporales siguen por el mismo lado. Así, cada cintilla óptica lleva la mitad opuesta del campo visual de los dos ojos. Hace sinapsis en el cuerpo geniculado del tálamo, sigue por las radiaciones ópticas y termina en la cisura calcarina del lóbulo occipital."
+    },
+    {
+      "title": "Dónde está la lesión, qué campo se pierde",
+      "text": "Con esto se entienden las lesiones. Si se lesiona el nervio óptico, se pierden todas las fibras de ese ojo: ceguera, o amaurosis, del mismo lado. Si se lesiona el quiasma, se cortan las fibras que cruzan, las nasales, que son las que ven los campos temporales: el paciente pierde los dos campos temporales. Es una hemianopsia bitemporal, heterónima, porque se pierden mitades distintas. Y si la lesión es por detrás del quiasma, por ejemplo en la cintilla izquierda, se pierde la misma mitad del campo en los dos ojos, la derecha: una hemianopsia homónima, del lado opuesto a la lesión."
+    },
+    {
+      "title": "El reflejo fotomotor",
+      "text": "El reflejo fotomotor tiene cinco componentes. El estímulo es la luz. La vía aferente es el segundo par: a la altura de la cintilla óptica, el nervio manda una fibra hacia el mesencéfalo. El centro es el núcleo de Edinger-Westphal, un núcleo parasimpático, que se comunica con el núcleo del tercer par. La vía eferente son las fibras parasimpáticas que viajan dentro del tercer par, y la respuesta es la contracción de la pupila, la miosis. Como la información llega a los dos lados, también se contrae la pupila del otro ojo: el reflejo consensual."
+    },
+    {
+      "title": "Por qué el ojo del III se va abajo y afuera",
+      "text": "Un ejemplo para entender las parálisis. El tercer par mueve el ojo hacia arriba, hacia abajo y hacia adentro; además levanta el párpado y contrae la pupila. Si se paraliza, quedan funcionando solos el recto externo, del sexto par, y el oblicuo superior, del cuarto. Sin oponente, tiran el ojo hacia afuera y hacia abajo. Y como ya no levanta el párpado ni contrae la pupila, hay ptosis y midriasis."
+    },
+    {
+      "title": "El examen físico neurológico",
+      "text": "El examen físico del sistema nervioso es lo que más se pregunta en el parcial: los síndromes neurológicos son casi puro examen físico. Hay que repasar del primer parcial las facies, sobre todo la parálisis facial central y periférica, la parkinsoniana, la miasténica, la de Claude Bernard-Horner y su contraria, la de Pourfour du Petit; la actitud, la marcha, el estado de conciencia y el coma. Y lo nuevo: los pares craneales, la motilidad, la sensibilidad, la gnosia, la praxia, el lenguaje y la taxia."
+    },
+    {
+      "title": "Doce pares: motores, sensoriales y mixtos",
+      "text": "Los doce pares se clasifican en motores, sensoriales y mixtos. Motores: los oculomotores, el tercero, el cuarto y el sexto; el undécimo, el espinal, que mueve el cuello y el hombro; y el duodécimo, el hipogloso, que mueve la lengua. Sensoriales: el primero, el olfatorio; el segundo, el óptico; y el octavo, el auditivo. Mixtos: el quinto, el séptimo, el noveno y el décimo. Y llevan fibras parasimpáticas el tercero, el séptimo, el noveno y el décimo. Sensitivo se refiere al tacto; sensorial, a los órganos de los sentidos."
+    },
+    {
+      "title": "Dónde nace cada par",
+      "text": "Dónde nace cada par. El origen real es el núcleo donde se forman sus fibras; el aparente, el lugar donde sale del tronco. El profesor aclara que no se pregunta en el parcial, aunque algunos docentes lo preguntan. El primero y el segundo no nacen del tronco: son intracraneales. El tercero y el cuarto nacen en el mesencéfalo. Del quinto al octavo, en la protuberancia; el sexto, el séptimo y el octavo, en el surco entre la protuberancia y el bulbo. Y del noveno al duodécimo, en el bulbo."
+    },
+    {
+      "title": "I par: olfatorio",
+      "text": "El primer par, el olfatorio: de la mucosa olfatoria al bulbo olfatorio, y de ahí al uncus del hipocampo. Pregunta de parcial: es el único nervio sensorial que no hace escala en el tálamo. Se explora con los ojos cerrados, tapando una narina por vez, con una sustancia que no irrite la mucosa, y el paciente tiene que reconocerla."
+    },
+    {
+      "title": "Alteraciones del olfato",
+      "text": "Las alteraciones del olfato pueden ser cuantitativas: hiperosmia, hiposmia o anosmia. O cualitativas: la parosmia, un olor distorsionado; la cacosmia, sentir olores desagradables, frecuente en el embarazo; y las alucinaciones, sentir un olor sin estímulo. Toda alucinación indica una lesión del área de ese sentido, no del nervio: las alucinaciones olfatorias son del uncus del hipocampo, y se llaman crisis uncinadas. La causa más frecuente de alteración del olfato es el resfrío. También los traumatismos, la fractura de la base del cráneo, los tumores, y el Parkinson, que atrofia el bulbo olfatorio. Cuando es bilateral y por una inflamación, como en el covid, se recupera."
+    },
+    {
+      "title": "II par: óptico",
+      "text": "El segundo par, el óptico, uno de los más preguntados. Su origen real son las células ganglionares de la retina, y su origen aparente, el quiasma óptico. Y su recorrido, pregunta de parcial para todos los docentes, tiene cuatro porciones: intraocular, dentro del globo; intraorbitaria, en la órbita; intracanalicular, en el agujero óptico; e intracraneal, hasta el quiasma."
+    },
+    {
+      "title": "La vía óptica, como el Padre Nuestro",
+      "text": "La vía óptica hay que saberla como el Padre Nuestro. Empieza en la retina, con los conos y los bastones, que pasan el estímulo a las células bipolares y a las ganglionares, cuyos axones forman el nervio óptico. En el quiasma se cruzan las fibras nasales. Siguen las cintillas ópticas hasta el cuerpo geniculado externo del tálamo, y de ahí las radiaciones ópticas, superiores e inferiores, llegan a la cisura calcarina del lóbulo occipital. Por delante del quiasma está la parte prequiasmática: el globo y el nervio; por detrás, la retroquiasmática."
+    },
+    {
+      "title": "Hemianopsias",
+      "text": "Las hemianopsias se preguntan siempre. La lesión del nervio óptico, la prequiasmática más común, da ceguera, o amaurosis, del mismo ojo. La lesión del quiasma da una hemianopsia heterónima bitemporal: se pierden los dos campos temporales, mitades distintas. Y la lesión de la cintilla da una hemianopsia homónima: la misma mitad del campo en los dos ojos, del lado opuesto. Toda lesión por detrás del quiasma es homónima."
+    },
+    {
+      "title": "Cuadrantanopsias",
+      "text": "Las radiaciones ópticas se dividen en superiores e inferiores, y otra vez el campo se invierte: las inferiores ven el campo superior, y las superiores, el inferior. Si se lesionan las radiaciones, se pierde un solo cuadrante, el mismo en los dos ojos: una cuadrantanopsia homónima. Si se lesionan las inferiores, el paciente pierde el cuadrante superior; si se lesionan las superiores, el inferior."
+    },
+    {
+      "title": "Cómo se explora el II par",
+      "text": "El segundo par se explora con cuatro cosas. La agudeza visual: de lejos con la tabla de Snellen, de cerca con la de Jaeger; si está disminuida, hablamos de ambliopía. Los colores, con las láminas de Ishihara: la alteración es la discromatopsia, y la más conocida, el daltonismo, que afecta el rojo y el verde. La campimetría, que en el consultorio se hace por confrontación. Y el fondo de ojo, con el oftalmoscopio, que casi siempre lo hace el oftalmólogo."
+    },
+    {
+      "title": "III, IV y VI: qué músculo inerva cada uno",
+      "text": "Pregunta de parcial: qué músculo inerva cada par oculomotor. El tercer par, el motor ocular común, inerva los rectos superior, inferior e interno, el oblicuo inferior, y el elevador del párpado superior; además contrae la pupila. El cuarto, el patético, inerva el oblicuo superior, que lleva el ojo hacia abajo y hacia adentro, a mirar la punta de la nariz. Y el sexto, el motor ocular externo, inerva el recto externo, que lleva el ojo hacia afuera."
+    },
+    {
+      "title": "Parálisis del III par",
+      "text": "La parálisis del tercer par, lo que tienen que responder en el parcial. Si es completa, el ojo se va hacia afuera y hacia abajo, hay ptosis palpebral, y la pupila queda dilatada, en midriasis. Si es parcial, está todo afectado menos la pupila: responde al reflejo fotomotor."
+    },
+    {
+      "title": "Parálisis del IV y del VI",
+      "text": "Si se paraliza el cuarto par, el ojo ya no puede bajar hacia adentro, y queda más alto: el paciente ve doble al mirar hacia abajo, por ejemplo al bajar una escalera. Es el signo de Bielschowsky, que algunos docentes preguntan: con el sistema nervioso no se puede ir a rendir sin saberlo. Si se paraliza el sexto par, el ojo ya no puede ir hacia afuera, y queda desviado hacia adentro."
+    },
+    {
+      "title": "Diplopía y estrabismo",
+      "text": "Lo principal que se ve en la motilidad ocular es el estrabismo, el ojo desviado, junto con la diplopía, la visión doble. La diplopía aparece o empeora cuando el paciente intenta mirar hacia el lado del músculo paralizado. Puede ser horizontal, con las imágenes una al lado de la otra, o vertical, una arriba de la otra. La motilidad se explora pidiéndole que siga el dedo, dibujando una hache."
+    },
+    {
+      "title": "Nistagmo",
+      "text": "El nistagmo es pregunta de parcial y de final. Son movimientos oscilatorios de los ojos, horizontales, verticales o rotatorios. Puede ser fisiológico, provocado, o patológico. El patológico indica una lesión del cerebelo o del vestíbulo. El central, cerebeloso, puede ser horizontal o vertical. El periférico, vestibular, es horizontal y rotatorio. Los que se preguntan son el vestibular y el cerebeloso. Se describe por su sentido, su fase, su dirección, su frecuencia y su intensidad, de grado uno a tres."
+    },
+    {
+      "title": "La pupila y sus reflejos",
+      "text": "La pupila es la motilidad intrínseca, y depende solo del tercer par. Miosis es la pupila chica; midriasis, grande; anisocoria, distintas entre sí; y el hippus, pequeñas oscilaciones con la luz. Si se lesiona el mesencéfalo, se pierde la contracción y aparece midriasis. Los reflejos: el fotomotor, con la luz, el segundo par, el núcleo de Edinger-Westphal y el tercer par; el consensual, se ilumina un ojo y también se contrae el otro; y el de acomodación y convergencia, al mirar un objeto cercano."
+    }
+  ]
+}

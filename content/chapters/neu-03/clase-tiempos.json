@@ -1,0 +1,377 @@
+{
+ "fps": 24,
+ "total": 16960,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-olfato",
+   "inicio": 96,
+   "frames": 733,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 259
+    },
+    {
+     "inicio": 355,
+     "frames": 194
+    },
+    {
+     "inicio": 549,
+     "frames": 280
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-via",
+   "inicio": 829,
+   "frames": 915,
+   "beats": [
+    {
+     "inicio": 829,
+     "frames": 301
+    },
+    {
+     "inicio": 1130,
+     "frames": 247
+    },
+    {
+     "inicio": 1377,
+     "frames": 367
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-campos",
+   "inicio": 1744,
+   "frames": 959,
+   "beats": [
+    {
+     "inicio": 1744,
+     "frames": 276
+    },
+    {
+     "inicio": 2020,
+     "frames": 385
+    },
+    {
+     "inicio": 2405,
+     "frames": 298
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-fotomotor",
+   "inicio": 2703,
+   "frames": 937,
+   "beats": [
+    {
+     "inicio": 2703,
+     "frames": 347
+    },
+    {
+     "inicio": 3050,
+     "frames": 195
+    },
+    {
+     "inicio": 3245,
+     "frames": 395
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-iii",
+   "inicio": 3640,
+   "frames": 711,
+   "beats": [
+    {
+     "inicio": 3640,
+     "frames": 282
+    },
+    {
+     "inicio": 3922,
+     "frames": 429
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-repaso",
+   "inicio": 4351,
+   "frames": 828,
+   "beats": [
+    {
+     "inicio": 4351,
+     "frames": 224
+    },
+    {
+     "inicio": 4575,
+     "frames": 604
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasif",
+   "inicio": 5179,
+   "frames": 1005,
+   "beats": [
+    {
+     "inicio": 5179,
+     "frames": 431
+    },
+    {
+     "inicio": 5610,
+     "frames": 574
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-origen",
+   "inicio": 6184,
+   "frames": 886,
+   "beats": [
+    {
+     "inicio": 6184,
+     "frames": 359
+    },
+    {
+     "inicio": 6543,
+     "frames": 422
+    },
+    {
+     "inicio": 6965,
+     "frames": 105
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-olfatorio",
+   "inicio": 7070,
+   "frames": 557,
+   "beats": [
+    {
+     "inicio": 7070,
+     "frames": 320
+    },
+    {
+     "inicio": 7390,
+     "frames": 237
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-olfato-alt",
+   "inicio": 7627,
+   "frames": 1145,
+   "beats": [
+    {
+     "inicio": 7627,
+     "frames": 443
+    },
+    {
+     "inicio": 8070,
+     "frames": 264
+    },
+    {
+     "inicio": 8334,
+     "frames": 438
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-optico",
+   "inicio": 8772,
+   "frames": 635,
+   "beats": [
+    {
+     "inicio": 8772,
+     "frames": 272
+    },
+    {
+     "inicio": 9044,
+     "frames": 363
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-via",
+   "inicio": 9407,
+   "frames": 889,
+   "beats": [
+    {
+     "inicio": 9407,
+     "frames": 341
+    },
+    {
+     "inicio": 9748,
+     "frames": 548
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hemianopsias",
+   "inicio": 10296,
+   "frames": 751,
+   "beats": [
+    {
+     "inicio": 10296,
+     "frames": 267
+    },
+    {
+     "inicio": 10563,
+     "frames": 205
+    },
+    {
+     "inicio": 10768,
+     "frames": 279
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cuadrantes",
+   "inicio": 11047,
+   "frames": 638,
+   "beats": [
+    {
+     "inicio": 11047,
+     "frames": 264
+    },
+    {
+     "inicio": 11311,
+     "frames": 374
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-explora-ii",
+   "inicio": 11685,
+   "frames": 812,
+   "beats": [
+    {
+     "inicio": 11685,
+     "frames": 538
+    },
+    {
+     "inicio": 12223,
+     "frames": 274
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-musculos",
+   "inicio": 12497,
+   "frames": 770,
+   "beats": [
+    {
+     "inicio": 12497,
+     "frames": 379
+    },
+    {
+     "inicio": 12876,
+     "frames": 391
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-iii",
+   "inicio": 13267,
+   "frames": 493,
+   "beats": [
+    {
+     "inicio": 13267,
+     "frames": 331
+    },
+    {
+     "inicio": 13598,
+     "frames": 162
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-iv-vi",
+   "inicio": 13760,
+   "frames": 618,
+   "beats": [
+    {
+     "inicio": 13760,
+     "frames": 445
+    },
+    {
+     "inicio": 14205,
+     "frames": 173
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diplopia",
+   "inicio": 14378,
+   "frames": 658,
+   "beats": [
+    {
+     "inicio": 14378,
+     "frames": 360
+    },
+    {
+     "inicio": 14738,
+     "frames": 298
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-nistagmo",
+   "inicio": 15036,
+   "frames": 973,
+   "beats": [
+    {
+     "inicio": 15036,
+     "frames": 344
+    },
+    {
+     "inicio": 15380,
+     "frames": 427
+    },
+    {
+     "inicio": 15807,
+     "frames": 202
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-pupila",
+   "inicio": 16009,
+   "frames": 831,
+   "beats": [
+    {
+     "inicio": 16009,
+     "frames": 461
+    },
+    {
+     "inicio": 16470,
+     "frames": 370
+    }
+   ]
+  }
+ ]
+}

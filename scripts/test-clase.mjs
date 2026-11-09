@@ -33,6 +33,9 @@ const CONFIG = {
   'ren-06': { mapa: ['Infección urinaria', 'Vía y germen', 'Baja: cistitis', 'Alta: pielonefritis', 'Complicada', 'Diagnóstico'], apartado: 'Baja o alta', titulo: /cistitis/i, maniobra: /Puñopercusión|puntos/i },
   'ren-07': { mapa: ['Litiasis renoureteral', 'Tipos', 'Factores', 'Cólico', 'Diagnóstico'], apartado: 'Tipos', titulo: /tipos de cálculos/i, maniobra: /Puñopercusión|puntos/i },
   'neu-01': { mapa: ['Motivos de consulta', 'Cefalea', 'Primarias', 'Vértigo', 'Equilibrio'], apartado: 'Las primarias', titulo: /migraña/i, maniobra: null },
+  'neu-02': { mapa: ['Motivos de consulta II', 'Movimientos', 'Debilidad', 'Periférico', 'Convulsiones', 'Sueño'], apartado: 'Convulsiones', titulo: /convulsión/i, maniobra: null },
+  'neu-03': { mapa: ['Pares craneales I', 'I olfatorio', 'II óptico', 'III, IV y VI', 'Pupila'], apartado: 'II óptico', titulo: /óptico/i, maniobra: null },
+  'neu-04': { mapa: ['Pares craneales II', 'V trigémino', 'VII facial', 'VIII', 'La lengua', 'IX a XII'], apartado: 'VII facial', titulo: /facial/i, maniobra: null },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

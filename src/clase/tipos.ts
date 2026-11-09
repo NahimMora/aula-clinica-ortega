@@ -116,7 +116,11 @@ export type FiguraId =
   | 'motora'
   | 'temblor'
   | 'crisis'
-  | 'sueno';
+  | 'sueno'
+  | 'via-optica'
+  | 'oculomotores'
+  | 'tronco-pares'
+  | 'boca';
 
 export type FiguraSpec = { f: FiguraId } & Record<string, unknown>;
 

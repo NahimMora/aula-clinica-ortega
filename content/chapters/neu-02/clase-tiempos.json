@@ -1,0 +1,449 @@
+{
+ "fps": 24,
+ "total": 20381,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-nucleos",
+   "inicio": 96,
+   "frames": 1060,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 386
+    },
+    {
+     "inicio": 482,
+     "frames": 321
+    },
+    {
+     "inicio": 803,
+     "frames": 353
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-motoneurona",
+   "inicio": 1156,
+   "frames": 889,
+   "beats": [
+    {
+     "inicio": 1156,
+     "frames": 496
+    },
+    {
+     "inicio": 1652,
+     "frames": 393
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-guillain",
+   "inicio": 2045,
+   "frames": 970,
+   "beats": [
+    {
+     "inicio": 2045,
+     "frames": 335
+    },
+    {
+     "inicio": 2380,
+     "frames": 332
+    },
+    {
+     "inicio": 2712,
+     "frames": 303
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-miastenia",
+   "inicio": 3015,
+   "frames": 564,
+   "beats": [
+    {
+     "inicio": 3015,
+     "frames": 255
+    },
+    {
+     "inicio": 3270,
+     "frames": 309
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-convulsion",
+   "inicio": 3579,
+   "frames": 984,
+   "beats": [
+    {
+     "inicio": 3579,
+     "frames": 382
+    },
+    {
+     "inicio": 3961,
+     "frames": 266
+    },
+    {
+     "inicio": 4227,
+     "frames": 336
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-mov",
+   "inicio": 4563,
+   "frames": 558,
+   "beats": [
+    {
+     "inicio": 4563,
+     "frames": 328
+    },
+    {
+     "inicio": 4891,
+     "frames": 230
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-temblor",
+   "inicio": 5121,
+   "frames": 722,
+   "beats": [
+    {
+     "inicio": 5121,
+     "frames": 375
+    },
+    {
+     "inicio": 5496,
+     "frames": 347
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-temblor-tipos",
+   "inicio": 5843,
+   "frames": 985,
+   "beats": [
+    {
+     "inicio": 5843,
+     "frames": 295
+    },
+    {
+     "inicio": 6138,
+     "frames": 318
+    },
+    {
+     "inicio": 6456,
+     "frames": 372
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-corea",
+   "inicio": 6828,
+   "frames": 1054,
+   "beats": [
+    {
+     "inicio": 6828,
+     "frames": 369
+    },
+    {
+     "inicio": 7197,
+     "frames": 223
+    },
+    {
+     "inicio": 7420,
+     "frames": 462
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-balismo",
+   "inicio": 7882,
+   "frames": 498,
+   "beats": [
+    {
+     "inicio": 7882,
+     "frames": 294
+    },
+    {
+     "inicio": 8176,
+     "frames": 204
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otros",
+   "inicio": 8380,
+   "frames": 953,
+   "beats": [
+    {
+     "inicio": 8380,
+     "frames": 283
+    },
+    {
+     "inicio": 8663,
+     "frames": 361
+    },
+    {
+     "inicio": 9024,
+     "frames": 309
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-fasciculacion",
+   "inicio": 9333,
+   "frames": 623,
+   "beats": [
+    {
+     "inicio": 9333,
+     "frames": 379
+    },
+    {
+     "inicio": 9712,
+     "frames": 244
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-debilidad",
+   "inicio": 9956,
+   "frames": 730,
+   "beats": [
+    {
+     "inicio": 9956,
+     "frames": 293
+    },
+    {
+     "inicio": 10249,
+     "frames": 437
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-decusacion",
+   "inicio": 10686,
+   "frames": 593,
+   "beats": [
+    {
+     "inicio": 10686,
+     "frames": 375
+    },
+    {
+     "inicio": 11061,
+     "frames": 218
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-neuropatias",
+   "inicio": 11279,
+   "frames": 810,
+   "beats": [
+    {
+     "inicio": 11279,
+     "frames": 506
+    },
+    {
+     "inicio": 11785,
+     "frames": 304
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-poli",
+   "inicio": 12089,
+   "frames": 885,
+   "beats": [
+    {
+     "inicio": 12089,
+     "frames": 496
+    },
+    {
+     "inicio": 12585,
+     "frames": 389
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-guillain",
+   "inicio": 12974,
+   "frames": 849,
+   "beats": [
+    {
+     "inicio": 12974,
+     "frames": 259
+    },
+    {
+     "inicio": 13233,
+     "frames": 379
+    },
+    {
+     "inicio": 13612,
+     "frames": 211
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-miopatia",
+   "inicio": 13823,
+   "frames": 954,
+   "beats": [
+    {
+     "inicio": 13823,
+     "frames": 412
+    },
+    {
+     "inicio": 14235,
+     "frames": 542
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-convulsion",
+   "inicio": 14777,
+   "frames": 711,
+   "beats": [
+    {
+     "inicio": 14777,
+     "frames": 366
+    },
+    {
+     "inicio": 15143,
+     "frames": 345
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-fases",
+   "inicio": 15488,
+   "frames": 801,
+   "beats": [
+    {
+     "inicio": 15488,
+     "frames": 234
+    },
+    {
+     "inicio": 15722,
+     "frames": 195
+    },
+    {
+     "inicio": 15917,
+     "frames": 171
+    },
+    {
+     "inicio": 16088,
+     "frames": 201
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-todd",
+   "inicio": 16289,
+   "frames": 457,
+   "beats": [
+    {
+     "inicio": 16289,
+     "frames": 457
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-epilepsia",
+   "inicio": 16746,
+   "frames": 1156,
+   "beats": [
+    {
+     "inicio": 16746,
+     "frames": 358
+    },
+    {
+     "inicio": 17104,
+     "frames": 437
+    },
+    {
+     "inicio": 17541,
+     "frames": 361
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diferenciales",
+   "inicio": 17902,
+   "frames": 809,
+   "beats": [
+    {
+     "inicio": 17902,
+     "frames": 444
+    },
+    {
+     "inicio": 18346,
+     "frames": 365
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sueno",
+   "inicio": 18711,
+   "frames": 658,
+   "beats": [
+    {
+     "inicio": 18711,
+     "frames": 369
+    },
+    {
+     "inicio": 19080,
+     "frames": 289
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-etapas",
+   "inicio": 19369,
+   "frames": 892,
+   "beats": [
+    {
+     "inicio": 19369,
+     "frames": 307
+    },
+    {
+     "inicio": 19676,
+     "frames": 249
+    },
+    {
+     "inicio": 19925,
+     "frames": 336
+    }
+   ]
+  }
+ ]
+}
