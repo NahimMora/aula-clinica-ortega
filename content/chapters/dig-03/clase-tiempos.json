@@ -1,0 +1,829 @@
+{
+ "fps": 24,
+ "total": 26506,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-absorcion",
+   "inicio": 96,
+   "frames": 615,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 266
+    },
+    {
+     "inicio": 362,
+     "frames": 136
+    },
+    {
+     "inicio": 498,
+     "frames": 213
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-alta-baja",
+   "inicio": 711,
+   "frames": 602,
+   "beats": [
+    {
+     "inicio": 711,
+     "frames": 300
+    },
+    {
+     "inicio": 1011,
+     "frames": 302
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-enterotoxina",
+   "inicio": 1313,
+   "frames": 661,
+   "beats": [
+    {
+     "inicio": 1313,
+     "frames": 317
+    },
+    {
+     "inicio": 1630,
+     "frames": 178
+    },
+    {
+     "inicio": 1808,
+     "frames": 166
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-neurotoxina",
+   "inicio": 1974,
+   "frames": 528,
+   "beats": [
+    {
+     "inicio": 1974,
+     "frames": 197
+    },
+    {
+     "inicio": 2171,
+     "frames": 166
+    },
+    {
+     "inicio": 2337,
+     "frames": 165
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-citotoxina",
+   "inicio": 2502,
+   "frames": 708,
+   "beats": [
+    {
+     "inicio": 2502,
+     "frames": 321
+    },
+    {
+     "inicio": 2823,
+     "frames": 168
+    },
+    {
+     "inicio": 2991,
+     "frames": 219
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-suh",
+   "inicio": 3210,
+   "frames": 635,
+   "beats": [
+    {
+     "inicio": 3210,
+     "frames": 273
+    },
+    {
+     "inicio": 3483,
+     "frames": 170
+    },
+    {
+     "inicio": 3653,
+     "frames": 192
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-osmotica",
+   "inicio": 3845,
+   "frames": 590,
+   "beats": [
+    {
+     "inicio": 3845,
+     "frames": 306
+    },
+    {
+     "inicio": 4151,
+     "frames": 104
+    },
+    {
+     "inicio": 4255,
+     "frames": 180
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-secretora",
+   "inicio": 4435,
+   "frames": 538,
+   "beats": [
+    {
+     "inicio": 4435,
+     "frames": 246
+    },
+    {
+     "inicio": 4681,
+     "frames": 112
+    },
+    {
+     "inicio": 4793,
+     "frames": 180
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-inflamatoria",
+   "inicio": 4973,
+   "frames": 453,
+   "beats": [
+    {
+     "inicio": 4973,
+     "frames": 155
+    },
+    {
+     "inicio": 5128,
+     "frames": 178
+    },
+    {
+     "inicio": 5306,
+     "frames": 120
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-malabsortiva",
+   "inicio": 5426,
+   "frames": 741,
+   "beats": [
+    {
+     "inicio": 5426,
+     "frames": 249
+    },
+    {
+     "inicio": 5675,
+     "frames": 183
+    },
+    {
+     "inicio": 5858,
+     "frames": 309
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-motora",
+   "inicio": 6167,
+   "frames": 425,
+   "beats": [
+    {
+     "inicio": 6167,
+     "frames": 148
+    },
+    {
+     "inicio": 6315,
+     "frames": 164
+    },
+    {
+     "inicio": 6479,
+     "frames": 113
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-defecacion",
+   "inicio": 6592,
+   "frames": 683,
+   "beats": [
+    {
+     "inicio": 6592,
+     "frames": 253
+    },
+    {
+     "inicio": 6845,
+     "frames": 154
+    },
+    {
+     "inicio": 6999,
+     "frames": 276
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-bristol",
+   "inicio": 7275,
+   "frames": 499,
+   "beats": [
+    {
+     "inicio": 7275,
+     "frames": 218
+    },
+    {
+     "inicio": 7493,
+     "frames": 128
+    },
+    {
+     "inicio": 7621,
+     "frames": 153
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-constipacion",
+   "inicio": 7774,
+   "frames": 705,
+   "beats": [
+    {
+     "inicio": 7774,
+     "frames": 256
+    },
+    {
+     "inicio": 8030,
+     "frames": 449
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-tenesmo",
+   "inicio": 8479,
+   "frames": 536,
+   "beats": [
+    {
+     "inicio": 8479,
+     "frames": 174
+    },
+    {
+     "inicio": 8653,
+     "frames": 116
+    },
+    {
+     "inicio": 8769,
+     "frames": 246
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-sangrado",
+   "inicio": 9015,
+   "frames": 461,
+   "beats": [
+    {
+     "inicio": 9015,
+     "frames": 268
+    },
+    {
+     "inicio": 9283,
+     "frames": 193
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-definicion",
+   "inicio": 9476,
+   "frames": 442,
+   "beats": [
+    {
+     "inicio": 9476,
+     "frames": 261
+    },
+    {
+     "inicio": 9737,
+     "frames": 181
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-evolucion",
+   "inicio": 9918,
+   "frames": 879,
+   "beats": [
+    {
+     "inicio": 9918,
+     "frames": 335
+    },
+    {
+     "inicio": 10253,
+     "frames": 224
+    },
+    {
+     "inicio": 10477,
+     "frames": 320
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alta-baja",
+   "inicio": 10797,
+   "frames": 867,
+   "beats": [
+    {
+     "inicio": 10797,
+     "frames": 240
+    },
+    {
+     "inicio": 11037,
+     "frames": 299
+    },
+    {
+     "inicio": 11336,
+     "frames": 192
+    },
+    {
+     "inicio": 11528,
+     "frames": 136
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-acuosa-disenterica",
+   "inicio": 11664,
+   "frames": 581,
+   "beats": [
+    {
+     "inicio": 11664,
+     "frames": 345
+    },
+    {
+     "inicio": 12009,
+     "frames": 236
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-disentericas",
+   "inicio": 12245,
+   "frames": 670,
+   "beats": [
+    {
+     "inicio": 12245,
+     "frames": 264
+    },
+    {
+     "inicio": 12509,
+     "frames": 242
+    },
+    {
+     "inicio": 12751,
+     "frames": 164
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-toxinas",
+   "inicio": 12915,
+   "frames": 864,
+   "beats": [
+    {
+     "inicio": 12915,
+     "frames": 260
+    },
+    {
+     "inicio": 13175,
+     "frames": 209
+    },
+    {
+     "inicio": 13384,
+     "frames": 140
+    },
+    {
+     "inicio": 13524,
+     "frames": 255
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-viajero",
+   "inicio": 13779,
+   "frames": 594,
+   "beats": [
+    {
+     "inicio": 13779,
+     "frames": 402
+    },
+    {
+     "inicio": 14181,
+     "frames": 192
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-persistente",
+   "inicio": 14373,
+   "frames": 613,
+   "beats": [
+    {
+     "inicio": 14373,
+     "frames": 189
+    },
+    {
+     "inicio": 14562,
+     "frames": 93
+    },
+    {
+     "inicio": 14655,
+     "frames": 96
+    },
+    {
+     "inicio": 14751,
+     "frames": 144
+    },
+    {
+     "inicio": 14895,
+     "frames": 91
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cronica",
+   "inicio": 14986,
+   "frames": 928,
+   "beats": [
+    {
+     "inicio": 14986,
+     "frames": 216
+    },
+    {
+     "inicio": 15202,
+     "frames": 172
+    },
+    {
+     "inicio": 15374,
+     "frames": 167
+    },
+    {
+     "inicio": 15541,
+     "frames": 210
+    },
+    {
+     "inicio": 15751,
+     "frames": 163
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-funcional-organica",
+   "inicio": 15914,
+   "frames": 563,
+   "beats": [
+    {
+     "inicio": 15914,
+     "frames": 332
+    },
+    {
+     "inicio": 16246,
+     "frames": 231
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-anamnesis",
+   "inicio": 16477,
+   "frames": 820,
+   "beats": [
+    {
+     "inicio": 16477,
+     "frames": 212
+    },
+    {
+     "inicio": 16689,
+     "frames": 115
+    },
+    {
+     "inicio": 16804,
+     "frames": 155
+    },
+    {
+     "inicio": 16959,
+     "frames": 143
+    },
+    {
+     "inicio": 17102,
+     "frames": 195
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-cuando-estudiar",
+   "inicio": 17297,
+   "frames": 741,
+   "beats": [
+    {
+     "inicio": 17297,
+     "frames": 575
+    },
+    {
+     "inicio": 17872,
+     "frames": 166
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen-diarrea",
+   "inicio": 18038,
+   "frames": 681,
+   "beats": [
+    {
+     "inicio": 18038,
+     "frames": 230
+    },
+    {
+     "inicio": 18268,
+     "frames": 200
+    },
+    {
+     "inicio": 18468,
+     "frames": 251
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-roma",
+   "inicio": 18719,
+   "frames": 888,
+   "beats": [
+    {
+     "inicio": 18719,
+     "frames": 476
+    },
+    {
+     "inicio": 19195,
+     "frames": 95
+    },
+    {
+     "inicio": 19290,
+     "frames": 148
+    },
+    {
+     "inicio": 19438,
+     "frames": 169
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasif-constipacion",
+   "inicio": 19607,
+   "frames": 929,
+   "beats": [
+    {
+     "inicio": 19607,
+     "frames": 742
+    },
+    {
+     "inicio": 20349,
+     "frames": 187
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-alarma",
+   "inicio": 20536,
+   "frames": 430,
+   "beats": [
+    {
+     "inicio": 20536,
+     "frames": 310
+    },
+    {
+     "inicio": 20846,
+     "frames": 120
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-bristol",
+   "inicio": 20966,
+   "frames": 495,
+   "beats": [
+    {
+     "inicio": 20966,
+     "frames": 309
+    },
+    {
+     "inicio": 21275,
+     "frames": 94
+    },
+    {
+     "inicio": 21369,
+     "frames": 92
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-estudios-constipacion",
+   "inicio": 21461,
+   "frames": 1034,
+   "beats": [
+    {
+     "inicio": 21461,
+     "frames": 202
+    },
+    {
+     "inicio": 21663,
+     "frames": 182
+    },
+    {
+     "inicio": 21845,
+     "frames": 110
+    },
+    {
+     "inicio": 21955,
+     "frames": 157
+    },
+    {
+     "inicio": 22112,
+     "frames": 264
+    },
+    {
+     "inicio": 22376,
+     "frames": 119
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-dolor-anal",
+   "inicio": 22495,
+   "frames": 648,
+   "beats": [
+    {
+     "inicio": 22495,
+     "frames": 234
+    },
+    {
+     "inicio": 22729,
+     "frames": 154
+    },
+    {
+     "inicio": 22883,
+     "frames": 151
+    },
+    {
+     "inicio": 23034,
+     "frames": 109
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-fournier",
+   "inicio": 23143,
+   "frames": 388,
+   "beats": [
+    {
+     "inicio": 23143,
+     "frames": 237
+    },
+    {
+     "inicio": 23380,
+     "frames": 151
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sangrado",
+   "inicio": 23531,
+   "frames": 549,
+   "beats": [
+    {
+     "inicio": 23531,
+     "frames": 275
+    },
+    {
+     "inicio": 23806,
+     "frames": 274
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otros",
+   "inicio": 24080,
+   "frames": 805,
+   "beats": [
+    {
+     "inicio": 24080,
+     "frames": 209
+    },
+    {
+     "inicio": 24289,
+     "frames": 168
+    },
+    {
+     "inicio": 24457,
+     "frames": 121
+    },
+    {
+     "inicio": 24578,
+     "frames": 134
+    },
+    {
+     "inicio": 24712,
+     "frames": 173
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-pujo-tenesmo",
+   "inicio": 24885,
+   "frames": 531,
+   "beats": [
+    {
+     "inicio": 24885,
+     "frames": 204
+    },
+    {
+     "inicio": 25089,
+     "frames": 221
+    },
+    {
+     "inicio": 25310,
+     "frames": 106
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-guante",
+   "inicio": 25416,
+   "frames": 970,
+   "beats": [
+    {
+     "inicio": 25416,
+     "frames": 154
+    },
+    {
+     "inicio": 25570,
+     "frames": 172
+    },
+    {
+     "inicio": 25742,
+     "frames": 150
+    },
+    {
+     "inicio": 25892,
+     "frames": 290
+    },
+    {
+     "inicio": 26182,
+     "frames": 204
+    }
+   ]
+  }
+ ]
+}

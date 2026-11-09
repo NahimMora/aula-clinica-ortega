@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react';
 import { BIL_H, BIL_W, BiliarFig, BristolGlyph, TR_H, TR_W, TractoFig } from '../visual/anatomia';
 import type { Organo, ViaBiliar, VTone } from '../visual/tipos';
-import { type BaseFig, CIELO, DURAZNO, ESTOMAGO, INK, INK2, INK3, INTESTINO, L, LILA, LINE, MENTA, Pulso, ROJO, ROSA, SANGRE, apf, clamp, ease } from './figuras-base';
+import { type BaseFig, CIELO, DURAZNO, ESTOMAGO, HIGADO, ManoFrente, INK, INK2, INK3, INTESTINO, L, LILA, LINE, MENTA, Pulso, ROJO, ROSA, SANGRE, apf, clamp, ease } from './figuras-base';
 
 const PIEL = 'var(--v-skin)';
 const HUESO = '#d8cdbd';
@@ -1328,7 +1328,7 @@ function Defecacion({ t, paso, dt, modo = 'normal' }: BaseFig & { modo?: ModoRec
           hemorroides: [
             [ROSA, 0, ['Hemorroides:', 'venas del', 'canal anal']],
             [ROJO, 1, ['Fisura:', 'desgarro']],
-            [INK, 2, ['Gotas rojas', 'al final']],
+            [INK, 1, ['Gotas rojas', 'al final']],
           ],
         } as Record<ModoRecto, [string, number, string[]][]>
       )[modo].map(([c, n, lineas], k) => (
@@ -1430,7 +1430,7 @@ function Bilirrubina({ t, paso, dt, modo = 'normal' }: BaseFig & { modo?: ModoBi
         const rompe = hemolisis && i % 2 === 0;
         return <ellipse key={i} cx={x} cy={92} rx={rompe ? 9 : 12} ry={7} fill={rompe ? 'none' : '#e2384f'} stroke="#ff8a96" strokeWidth={rompe ? 2 : 0} strokeDasharray={rompe ? '3 3' : undefined} />;
       })}
-      <L x={120} y={44} c={INK2} s={21} w={550}>
+      <L x={20} y={44} a="start" c={INK2} s={21} w={550}>
         Glóbulos rojos → hemoglobina
       </L>
       {/* Indirecta unida a albúmina */}
@@ -1440,8 +1440,11 @@ function Bilirrubina({ t, paso, dt, modo = 'normal' }: BaseFig & { modo?: ModoBi
       <path d="M330,150 L470,140 L500,220 L470,300 L340,300 L310,220 Z" fill="#8a5450" stroke={roto ? ROJO : '#5d2a2a'} strokeWidth={roto ? 5 : 3} />
       <circle cx={405} cy={215} r={22} fill="#5d2a2a" opacity={0.7} />
       {roto && <path d="M350,170 L380,200 L360,230 M440,160 L420,200 L450,240" stroke={ROJO} strokeWidth={4} fill="none" />}
-      <L x={405} y={330} c={INK2} s={20} w={550}>
-        Hepatocito: capta, conjuga, excreta
+      <L x={380} y={330} a="end" c={INK2} s={20} w={550}>
+        Hepatocito:
+      </L>
+      <L x={380} y={356} a="end" c={INK2} s={20} w={550}>
+        capta, conjuga, excreta
       </L>
       {/* Bilis e intestino */}
       <path d="M400,300 C404,360 420,410 470,440 L780,452" fill="none" stroke="var(--v-bile)" strokeWidth={16} strokeLinecap="round" />
@@ -1528,6 +1531,320 @@ function Biliar({ t, paso, dt, vistas = [{}] }: BaseFig & { vistas?: VistaBiliar
   );
 }
 
+/* ─────────── Ascitis en corte transversal: decúbito dorsal y lateral ─────────── */
+
+function Ascitis({ t, paso, dt, vistas = ['dorsal', 'lateral'] }: BaseFig & { vistas?: ('dorsal' | 'lateral' | 'onda')[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const giro = v === 'lateral' ? -90 * u : 0;
+  // Corte del abdomen (elipse) con la columna atrás; el líquido cae a lo declive y las asas flotan.
+  const asas = [
+    [-60, -40],
+    [10, -55],
+    [70, -30],
+    [-20, -10],
+    [40, 5],
+  ];
+  const ola = v === 'onda' ? Math.sin(t * 6) * 6 : 0;
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label="Ascitis: el líquido cae a lo declive y las asas flotan">
+      <g transform={`translate(400 270) rotate(${giro})`}>
+        <ellipse rx={250} ry={170} fill={PIEL} stroke={LINE} strokeWidth={4} />
+        <defs>
+          <clipPath id="cl-asc">
+            <ellipse rx={232} ry={152} />
+          </clipPath>
+        </defs>
+        <g clipPath="url(#cl-asc)">
+          {/* El líquido siempre abajo de la pantalla: compensamos la rotación */}
+          <g transform={`rotate(${-giro})`}>
+            <path d={`M-300,${20 + ola} C-150,${10 - ola} 150,${30 + ola} 300,${20 - ola} L300,300 L-300,300 Z`} fill="#4b6f8f" opacity={0.75} />
+          </g>
+          <g transform={`rotate(${-giro})`}>
+            {asas.map(([x, y], i) => (
+              <circle key={i} cx={x} cy={y - 40 + Math.sin(t * 1.5 + i) * 3} r={32} fill={INTESTINO} stroke="#8f5f56" strokeWidth={3} />
+            ))}
+          </g>
+        </g>
+        <rect x={-30} y={128} width={60} height={46} rx={10} fill={HUESO} />
+      </g>
+      {v !== 'onda' && (
+        <>
+          <L x={400} y={36} c={CIELO} s={23} o={u}>
+            {v === 'dorsal' ? 'Arriba timpanismo: asas con gas' : 'El líquido se corre al lado declive'}
+          </L>
+          <L x={400} y={500} c={DURAZNO} s={23} o={u}>
+            {v === 'dorsal' ? 'Flancos mates: matidez de concavidad superior' : 'Matidez desplazable'}
+          </L>
+        </>
+      )}
+      {v === 'onda' && (
+        <>
+          <ManoFrente x={140} y={260} escala={0.8} />
+          <rect x={385} y={90} width={30} height={150} rx={12} fill="#d6b49d" stroke="#6f5a4e" strokeWidth={2} opacity={u} />
+          <L x={400} y={36} c={LILA} s={23} o={u}>
+            Onda ascítica: golpe en un flanco, se siente en el otro
+          </L>
+          <L x={400} y={500} c={INK2} s={21} w={550} o={u}>
+            El borde de una mano en la línea media frena la onda de la pared
+          </L>
+        </>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── Circulación colateral ─────────── */
+
+function Colateral({ t, paso, dt, vistas = ['porto', 'cava'] }: BaseFig & { vistas?: ('porto' | 'cava')[] }) {
+  const v = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  const C = 'M200,40 C150,40 120,90 118,150 L112,320 C110,400 130,460 160,500 L440,500 C470,460 490,400 488,320 L482,150 C480,90 450,40 400,40 Z';
+  const ombligo: [number, number] = [300, 300];
+  const medusa = Array.from({ length: 8 }, (_, i) => {
+    const a = (i / 8) * Math.PI * 2;
+    const x2 = ombligo[0] + Math.cos(a) * 110;
+    const y2 = ombligo[1] + Math.sin(a) * 90;
+    const cx = ombligo[0] + Math.cos(a + 0.5) * 60;
+    const cy = ombligo[1] + Math.sin(a + 0.5) * 50;
+    return `M${ombligo[0]},${ombligo[1]} Q${cx},${cy} ${x2},${y2}`;
+  });
+  const asc = [150, 200, 400, 450].map((x, i) => `M${x},480 C${x + (i % 2 ? 20 : -20)},380 ${x + (i % 2 ? -20 : 20)},250 ${x},90`);
+  const sentido = (d: string, k: number, rev = false) => <Pulso key={k} d={d} t={rev ? -t : t} c={CIELO} v={35} w={4} desfase={k * 13} />;
+  return (
+    <svg viewBox="0 0 800 540" role="img" aria-label="Circulación colateral portocava y cavocava">
+      <path d={C} fill={PIEL} stroke={LINE} strokeWidth={3} />
+      <circle cx={ombligo[0]} cy={ombligo[1]} r={8} fill={LINE} />
+      {v === 'porto' && (
+        <g opacity={u}>
+          {medusa.map((d, k) => (
+            <path key={k} d={d} fill="none" stroke="#5b7fb0" strokeWidth={7} strokeLinecap="round" />
+          ))}
+          {medusa.map((d, k) => sentido(d, k))}
+          <L x={640} y={180} c={CIELO} s={24}>
+            Portocava
+          </L>
+          <L x={640} y={212} c={INK2} s={21} w={550}>
+            sale del ombligo:
+          </L>
+          <L x={640} y={240} c={INK2} s={21} w={550}>
+            cabeza de medusa
+          </L>
+          <L x={640} y={300} c={INK} s={21} w={550}>
+            Hipertensión portal
+          </L>
+        </g>
+      )}
+      {v === 'cava' && (
+        <g opacity={u}>
+          {asc.map((d, k) => (
+            <path key={k} d={d} fill="none" stroke="#5b7fb0" strokeWidth={7} strokeLinecap="round" />
+          ))}
+          {asc.map((d, k) => sentido(d, k, false))}
+          <L x={640} y={180} c={LILA} s={24}>
+            Cavocava
+          </L>
+          <L x={640} y={212} c={INK2} s={21} w={550}>
+            ascendente: del pubis
+          </L>
+          <L x={640} y={240} c={INK2} s={21} w={550}>
+            hacia el tórax
+          </L>
+          <L x={640} y={300} c={INK} s={21} w={550}>
+            Obstrucción de la cava
+          </L>
+        </g>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── Palpar con la inspiración: el hígado y el bazo bajan ─────────── */
+
+function Inspiracion({ t, paso, dt, organo = 'higado' }: BaseFig & { organo?: 'higado' | 'bazo' }) {
+  const ap = (n: number) => apf(paso, dt, n);
+  const resp = paso >= 1 ? (1 - Math.cos(t * 1.6)) / 2 : 0;
+  const baja = 34 * resp;
+  const higado = organo === 'higado';
+  return (
+    <svg viewBox="0 0 800 520" role="img" aria-label={higado ? 'El hígado desciende con la inspiración hacia la mano' : 'El bazo crece en dirección a la fosa ilíaca derecha'}>
+      <path d="M150,40 C110,60 96,120 100,200 L106,470 L694,470 L700,200 C704,120 690,60 650,40 Z" fill={PIEL} stroke={LINE} strokeWidth={3} />
+      {/* Rebordes costales */}
+      <path d="M150,170 C250,230 330,250 400,250 C470,250 550,230 650,170" fill="none" stroke={HUESO} strokeWidth={10} strokeLinecap="round" opacity={0.7} />
+      <path d={`M140,${110 + baja} C250,${70 + baja} 400,${80 + baja} 560,${120 + baja}`} fill="none" stroke={MUSCULO} strokeWidth={8} opacity={0.8} />
+      {higado ? (
+        <g transform={`translate(0 ${baja})`}>
+          <path d="M120,130 C200,100 360,110 470,150 C430,210 360,250 280,268 C200,282 140,260 120,220 Z" fill={HIGADO} stroke="#5d2a2a" strokeWidth={3} />
+        </g>
+      ) : (
+        <g>
+          {(() => {
+            const g = 1 + 1.4 * ap(2);
+            return <ellipse cx={600 - 60 * ap(2)} cy={170 + 80 * ap(2)} rx={46 * g} ry={26 * g} transform={`rotate(-35 ${600 - 60 * ap(2)} ${170 + 80 * ap(2)})`} fill="#7a4a72" stroke="#4e2c49" strokeWidth={3} />;
+          })()}
+          <g opacity={ap(2)}>
+            <Flecha d="M560,230 L300,420" c={DURAZNO} id="cl-bz-dir" />
+          </g>
+        </g>
+      )}
+      <ManoFrente x={higado ? 260 : 300} y={higado ? 360 : 420} escala={0.9} />
+      <g opacity={ap(0)}>
+        <L x={400} y={500} c={INK} s={22}>
+          {higado ? 'La mano espera debajo del reborde, desde la fosa ilíaca derecha' : 'El bazo normal no se palpa: está bajo las costillas'}
+        </L>
+      </g>
+      <g opacity={ap(1)}>
+        <L x={720} y={60} a="end" c={MENTA} s={23}>
+          Inspiración: el diafragma baja
+        </L>
+        <L x={720} y={90} a="end" c={MENTA} s={23}>
+          {higado ? 'y empuja el hígado hacia la mano' : 'y lo acerca al reborde'}
+        </L>
+      </g>
+      {!higado && (
+        <L x={540} y={400} c={DURAZNO} s={23} o={ap(2)}>
+          Crece hacia la fosa ilíaca derecha
+        </L>
+      )}
+    </svg>
+  );
+}
+
+/* ─────────── Reflujo gastroesofágico y Barrett ─────────── */
+
+type ModoReflujo = 'normal' | 'erge' | 'presion' | 'barrett';
+
+function Reflujo({ t, paso, dt, vistas = ['normal', 'erge'] }: BaseFig & { vistas?: ModoReflujo[] }) {
+  const m = vistas[Math.min(paso, vistas.length - 1)];
+  const u = vistas.length > 1 ? apf(paso, dt, paso) : 1;
+  if (m === 'barrett') {
+    // Zoom de la mucosa del tercio inferior: plano estratificado → cilíndrico simple.
+    const w = 760;
+    const cambia = clamp(u * 1.1);
+    const capas = Array.from({ length: 4 }, (_, f) =>
+      Array.from({ length: 13 }, (_, i) => {
+        const x = 20 + i * 56 + (f % 2 ? 28 : 0);
+        const y = 330 - f * 34;
+        return <ellipse key={`${f}-${i}`} cx={x} cy={y} rx={26} ry={13} fill="#e7c9c0" stroke="#b48d84" strokeWidth={1.5} />;
+      }),
+    );
+    const columnas = Array.from({ length: 16 }, (_, i) => (
+      <g key={i}>
+        <rect x={420 + i * 22} y={230} width={20} height={120} rx={6} fill="#d9a0a8" stroke="#a46670" strokeWidth={1.5} />
+        <ellipse cx={430 + i * 22} cy={330} rx={6} ry={8} fill="#7a3f4c" />
+        {i % 4 === 1 && <ellipse cx={430 + i * 22} cy={258} rx={7} ry={14} fill="#f3eef6" opacity={0.85} />}
+      </g>
+    ));
+    return (
+      <svg viewBox="0 0 800 480" role="img" aria-label="Esófago de Barrett: metaplasia del epitelio">
+        <rect x={20} y={360} width={w} height={60} fill="#7c4a4f" opacity={0.6} />
+        <g>{capas}</g>
+        <g opacity={cambia}>
+          <rect x={410} y={200} width={370} height={160} fill={'var(--v-bg)'} />
+          {columnas}
+        </g>
+        {Array.from({ length: 6 }, (_, i) => (
+          <text key={i} x={60 + i * 120} y={150 + Math.sin(t * 2 + i) * 10} fill={ACIDO} fontSize={24} fontWeight={700} fontFamily="Inter Variable, sans-serif">
+            H⁺
+          </text>
+        ))}
+        <L x={200} y={440} c={INK} s={22}>
+          Plano estratificado
+        </L>
+        <L x={200} y={466} c={INK2} s={19} w={550}>
+          no soporta el ácido
+        </L>
+        <g opacity={cambia}>
+          <L x={600} y={440} c={ROSA} s={22}>
+            Cilíndrico (intestinal)
+          </L>
+          <L x={600} y={466} c={INK2} s={19} w={550}>
+            Barrett: preneoplásico
+          </L>
+        </g>
+        <L x={400} y={60} c={ACIDO} s={23}>
+          Años de reflujo ácido
+        </L>
+      </svg>
+    );
+  }
+  const abierto = m === 'erge' || m === 'presion' ? 0.5 + 0.5 * Math.abs(Math.sin(t * 1.8)) : 0;
+  const empuje = m === 'presion' ? 6 * Math.abs(Math.sin(t * 2)) : 0;
+  const sube = m === 'erge' || m === 'presion';
+  const gotas = Array.from({ length: 10 }, (_, i) => {
+    const v = (t * 0.32 + i / 10) % 1;
+    const y = sube ? 300 - v * (120 + 160 * abierto) : 330 + ((i * 17) % 60);
+    const x = 300 + Math.sin(i * 2.1) * (sube ? 10 : 50);
+    return <circle key={i} cx={x} cy={y} r={7} fill={ACIDO} opacity={sube ? 1 - v * 0.6 : 0.9} />;
+  });
+  const anchoEEI = 8 + 22 * abierto;
+  return (
+    <svg viewBox="0 0 800 500" role="img" aria-label="Barrera antirreflujo y reflujo gastroesofágico">
+      <path d="M270,0 L270,250 M330,0 L330,250" stroke={MUCOSA} strokeWidth={10} />
+      <rect x={275} y={0} width={50} height={250} fill={MUCOSA} opacity={0.55} />
+      {/* Diafragma */}
+      <path d="M20,236 C120,214 210,226 262,236 M338,236 C420,224 600,214 780,240" fill="none" stroke={MUSCULO} strokeWidth={12} strokeLinecap="round" opacity={0.85} />
+      {/* Estómago */}
+      <path d={`M270,280 C200,300 170,380 200,440 C240,500 430,500 470,430 C510,360 470,${290 - empuje} 410,${272 - empuje} C380,264 350,268 330,280 Z`} fill={ESTOMAGO} stroke="#8f5f56" strokeWidth={3} />
+      {/* Esfínter esofágico inferior */}
+      <rect x={300 - 32} y={248} width={32 - anchoEEI / 2} height={36} rx={8} fill={MUSCULO} />
+      <rect x={300 + anchoEEI / 2} y={248} width={32 - anchoEEI / 2} height={36} rx={8} fill={MUSCULO} />
+      {gotas}
+      {m === 'presion' && (
+        <g>
+          <Flecha d="M300,500 L300,450" c={MENTA} id="cl-rf-p1" />
+          <Flecha d="M120,420 L180,420" c={MENTA} id="cl-rf-p2" />
+          <Flecha d="M560,420 L500,420" c={MENTA} id="cl-rf-p3" />
+        </g>
+      )}
+      <L x={520} y={266} a="start" c={INK} s={22}>
+        Esfínter esofágico inferior
+      </L>
+      <L x={120} y={200} c={INK2} s={20} w={550}>
+        Diafragma
+      </L>
+      <g opacity={u}>
+        {m === 'normal' && (
+          <>
+            <L x={560} y={60} c={MENTA} s={24}>
+              El esfínter cerrado
+            </L>
+            <L x={560} y={90} c={MENTA} s={24}>
+              frena el ácido
+            </L>
+          </>
+        )}
+        {m === 'erge' && (
+          <>
+            <L x={560} y={60} c={ACIDO} s={24}>
+              Se relaja cuando no debe:
+            </L>
+            <L x={560} y={90} c={ACIDO} s={24}>
+              el ácido sube
+            </L>
+            <L x={560} y={130} c={INK2} s={20} w={550}>
+              pirosis, regurgitación
+            </L>
+          </>
+        )}
+        {m === 'presion' && (
+          <>
+            <L x={560} y={60} c={MENTA} s={24}>
+              Más presión abdominal
+            </L>
+            <L x={560} y={90} c={INK2} s={20} w={550}>
+              abdominales después de comer,
+            </L>
+            <L x={560} y={116} c={INK2} s={20} w={550}>
+              decúbito, comida copiosa
+            </L>
+          </>
+        )}
+      </g>
+    </svg>
+  );
+}
+
 export const FIGURAS_DIG = {
   deglucion: Deglucion,
   esofago: Esofago,
@@ -1545,4 +1862,8 @@ export const FIGURAS_DIG = {
   bristol: Bristol,
   bilirrubina: Bilirrubina,
   biliar: Biliar,
+  ascitis: Ascitis,
+  colateral: Colateral,
+  inspiracion: Inspiracion,
+  reflujo: Reflujo,
 } satisfies Record<string, (p: never) => ReactNode>;

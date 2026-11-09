@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-03 — Diarrea, constipación y trastornos anorrectales.
@@ -278,6 +279,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig03-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -294,6 +296,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -318,6 +321,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-d03',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -329,6 +333,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-d04',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -343,6 +348,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-d05',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -358,6 +364,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-d06',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'toxinas',
@@ -370,6 +377,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-d07',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'anorrectal',
@@ -385,6 +393,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig03-q01',
+      origen: 'practica',
       topic: 'Alta vs baja',
       difficulty: 1,
       emphasis: true,
@@ -400,6 +409,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q02',
+      origen: 'practica',
       topic: 'Disentérica',
       difficulty: 2,
       emphasis: true,
@@ -415,6 +425,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q03',
+      origen: 'practica',
       topic: 'Disentérica',
       difficulty: 3,
       stem: 'La complicación que puede producir la **verotoxina** de la E. coli O157 es:',
@@ -429,6 +440,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q04',
+      origen: 'practica',
       topic: 'Toxinas',
       difficulty: 2,
       stem: 'Vómitos y diarrea pocas horas después de comer una ensalada con **mayonesa**. La toxina responsable es:',
@@ -443,6 +455,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q05',
+      origen: 'practica',
       topic: 'Crónica',
       difficulty: 2,
       stem: 'Una diarrea crónica que **persiste en ayunas** orienta a mecanismo:',
@@ -457,6 +470,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q06',
+      origen: 'practica',
       topic: 'Crónica',
       difficulty: 1,
       emphasis: true,
@@ -472,6 +486,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q07',
+      origen: 'practica',
       topic: 'Crónica',
       difficulty: 2,
       stem: '¿Cuál de estos datos sugiere una diarrea crónica **orgánica**?',
@@ -486,6 +501,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q08',
+      origen: 'practica',
       topic: 'Bristol',
       difficulty: 1,
       emphasis: true,
@@ -501,6 +517,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q09',
+      origen: 'practica',
       topic: 'Roma',
       difficulty: 2,
       emphasis: true,
@@ -516,6 +533,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q10',
+      origen: 'practica',
       topic: 'Constipación',
       difficulty: 1,
       stem: 'La causa **más frecuente** de constipación a nivel mundial es:',
@@ -530,6 +548,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q11',
+      origen: 'practica',
       topic: 'Pujo y tenesmo',
       difficulty: 1,
       emphasis: true,
@@ -545,6 +564,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig03-q12',
+      origen: 'practica',
       topic: 'Anorrectal',
       difficulty: 2,
       stem: 'Dolor intenso **después** de defecar, «como si pasara un vidrio», con gotas de sangre roja:',
@@ -556,6 +576,51 @@ const chapter: Chapter = {
       ],
       answer: 1,
       refs: [M6('07:05')],
+    },
+    {
+      id: 'dig03-q13',
+      origen: 'practica',
+      topic: 'Mecanismos',
+      difficulty: 2,
+      stem: 'La **enterotoxina** del cólera produce diarrea porque:',
+      options: [
+        { text: 'Activa la secreción de cloro y agua hacia la luz sin destruir la mucosa.', why: 'Correcto: diarrea acuosa, voluminosa.' },
+        { text: 'Destruye la mucosa del colon.', why: 'Eso hace una citotoxina (disentérica).' },
+        { text: 'Aumenta el peristaltismo por acción nerviosa.', why: 'Eso es la neurotoxina del S. aureus.' },
+        { text: 'Impide la absorción de grasas.', why: 'Eso es malabsorción.' },
+      ],
+      answer: 0,
+      refs: [M5('16:22'), r('argente-libro', undefined, '655')],
+    },
+    {
+      id: 'dig03-q14',
+      origen: 'practica',
+      topic: 'Mecanismos',
+      difficulty: 2,
+      stem: 'Una diarrea crónica que **persiste en ayunas** orienta a un mecanismo:',
+      options: [
+        { text: 'Secretor.', why: 'Correcto: la secreción activa no depende de lo que se come.' },
+        { text: 'Osmótico.', why: 'La osmótica cede con el ayuno.' },
+        { text: 'Por intolerancia a la lactosa.', why: 'Es osmótica: cede al suspender la leche.' },
+        { text: 'Por dieta pobre en fibra.', why: 'Eso causa constipación.' },
+      ],
+      answer: 0,
+      refs: [r('argente-libro', undefined, '655')],
+    },
+    {
+      id: 'dig03-q15',
+      origen: 'practica',
+      topic: 'Constipación',
+      difficulty: 3,
+      stem: 'En el **anismo**, al pujar:',
+      options: [
+        { text: 'El puborrectal se contrae en lugar de relajarse.', why: 'Correcto: es la disfunción del piso pélvico.' },
+        { text: 'El esfínter interno no existe.', why: 'No.' },
+        { text: 'El colon no tiene plexo mientérico.', why: 'Eso es Hirschsprung (tránsito lento).' },
+        { text: 'El paciente expulsa el balón sin dificultad.', why: 'Justamente no lo puede expulsar.' },
+      ],
+      answer: 0,
+      refs: [M5('35:11'), M6('04:59')],
     },
   ],
 
@@ -640,6 +705,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig03-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Niño con diarrea con sangre que luego presenta oliguria y anemia. Pensás en:',
@@ -654,6 +720,7 @@ const chapter: Chapter = {
       },
       {
         id: 'dig03-x02',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Paciente de 62 años con constipación reciente, anemia y pérdida de peso. La conducta es:',
@@ -669,7 +736,13 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['tacto-rectal'],
+    note: 'Inspección anal, tacto rectal, maniobra del descenso y signo del guante.',
+  },
+
   escenas,
+  clase,
   diagrams: {},
 };
 

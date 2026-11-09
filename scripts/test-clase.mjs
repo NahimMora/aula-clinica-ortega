@@ -13,6 +13,8 @@ const FOTOS = flag === '--fotos';
 const CONFIG = {
   'dig-01': { mapa: ['Vómito', 'Disfagia', 'Dispepsia', 'Orofaríngea', 'Esofágica', 'Mecánica', 'Motora', 'Funcional', 'Orgánica', 'Mallory-Weiss'], apartado: 'Disfagia', titulo: /disfagia/i, maniobra: /Bazuqueo|chapoteo/i },
   'dig-03': { mapa: ['Diarrea', 'Constipación', 'Anorrectal', 'Aguda', 'Persistente', 'Crónica', 'Acuosa', 'Disentérica', 'Bristol', 'Pujo y tenesmo'], apartado: 'Constipación', titulo: /constipación|roma/i, maniobra: /Tacto rectal/i },
+  'dig-04': { mapa: ['Bilirrubina', 'Indirecta', 'Directa', 'Prehepática', 'Hepática', 'Poshepática', 'Síndrome coledociano', 'Courvoisier', 'Hemólisis', 'Colestasis'], apartado: 'Clasificación', titulo: /hepática/i, maniobra: /hígado|Hígado/ },
+  'dig-05': { mapa: ['Inspección', 'Auscultación', 'Percusión', 'Palpación', 'Ascitis', 'Soplos', 'Traube', 'Puntos', 'Profunda'], apartado: 'Palpación', titulo: /palpación/i, maniobra: /Blumberg|Murphy/ },
   'dig-02': { mapa: ['Visceral', 'Somático', 'Referido', 'Médico', 'Quirúrgico', 'Inespecífico', 'Inflamatorio', 'Obstructivo', 'Perforativo', 'Hemorrágico', 'Vascular'], apartado: 'Clasificación', titulo: /clasifica/i, maniobra: /Blumberg/ },
 };
 const cfg = CONFIG[id];

@@ -1,0 +1,202 @@
+{
+  "src": "media/dig-03/clase.mp4",
+  "poster": "media/dig-03/clase.jpg",
+  "vtt": "media/dig-03/clase.vtt",
+  "duration": "18:24",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · El intestino normal"
+    },
+    {
+      "t": 54,
+      "label": "Fisiopatología · Las toxinas"
+    },
+    {
+      "t": 160,
+      "label": "Fisiopatología · Cinco mecanismos"
+    },
+    {
+      "t": 274,
+      "label": "Fisiopatología · Defecar"
+    },
+    {
+      "t": 394,
+      "label": "Teoría · Diarrea"
+    },
+    {
+      "t": 686,
+      "label": "Teoría · Cómo se estudia"
+    },
+    {
+      "t": 779,
+      "label": "Teoría · Constipación"
+    },
+    {
+      "t": 937,
+      "label": "Teoría · Anorrectal"
+    }
+  ],
+  "script": [
+    {
+      "title": "Absorber y secretar: un equilibrio",
+      "text": "Empecemos por lo normal. En el intestino delgado, las vellosidades multiplican la superficie, y por ahí pasa a la sangre casi toda el agua que llega. Lo poco que queda llega al colon, que termina de secar la materia fecal. Toda diarrea, sea cual sea su causa, es lo mismo: se rompe el equilibrio entre lo que se absorbe y lo que se secreta."
+    },
+    {
+      "title": "Por qué una es voluminosa y la otra frecuente",
+      "text": "Esto explica la diferencia entre la diarrea alta y la baja. Si falla el intestino delgado, que es el que maneja casi todo el líquido, la diarrea es acuosa y de gran volumen. Si lo que se inflama es el colon, el recto irritado pide evacuar con muy poco contenido. Entonces el paciente va muchas veces, poca cantidad, y con moco, pus o sangre."
+    },
+    {
+      "title": "Enterotoxina: saca agua a la luz",
+      "text": "Las diarreas agudas se entienden por sus toxinas. La primera es la enterotoxina: la traen el cólera, la Escherichia coli enterotoxigénica o el rotavirus, con el agua o la comida. La toxina no destruye la mucosa: lo que hace es activar la secreción de cloro y de agua hacia la luz. El resultado es una diarrea acuosa, de gran volumen, y el riesgo es la deshidratación."
+    },
+    {
+      "title": "Neurotoxina: acelera el intestino",
+      "text": "La segunda es la neurotoxina, y el ejemplo clásico es el estafilococo dorado, en el huevo o la mayonesa. Esta toxina actúa sobre el sistema nervioso autónomo del intestino y aumenta el peristaltismo. El paciente vomita y tiene diarrea pocas horas después de comer, y puede deshidratarse mucho."
+    },
+    {
+      "title": "Citotoxina: destruye la mucosa",
+      "text": "La tercera es la citotoxina. La producen la Shigella y la Escherichia coli enterohemorrágica, y también el Clostridium difficile cuando un antibiótico, como la clindamicina, altera la flora. Esta toxina sí destruye la mucosa del colon: la mucosa sangra y se llena de leucocitos. Por eso la diarrea trae moco, pus y sangre, con fiebre, pujo y tenesmo. Es la diarrea disentérica."
+    },
+    {
+      "title": "Si la verotoxina pasa a la sangre",
+      "text": "Y la complicación que hay que conocer. La verotoxina de la Shigella o de la Escherichia coli O ciento cincuenta y siete puede atravesar la mucosa dañada y pasar a la sangre. Ahí lesiona el endotelio de los vasos, sobre todo en el riñón, y se forman pequeños trombos. Es el síndrome urémico hemolítico: insuficiencia renal aguda, con anemia hemolítica y plaquetas bajas."
+    },
+    {
+      "title": "Osmótica: el soluto que arrastra agua",
+      "text": "Pasemos a la diarrea crónica, que tiene cinco mecanismos. El primero es el osmótico. El ejemplo es el déficit de lactasa: la lactosa de la leche no se absorbe. Ese azúcar queda en la luz y retiene agua. La clave para reconocerla: si el paciente deja de tomar leche, o ayuna, la diarrea se va."
+    },
+    {
+      "title": "Secretora: el intestino que no para",
+      "text": "El segundo es el secretor. Un tumor que produce hormonas, como el VIPoma o el gastrinoma del Zollinger-Ellison, o el uso de laxantes... hace que las criptas secreten líquido de forma activa. La diferencia con la osmótica es que esta no depende de lo que se come: persiste aunque el paciente ayune."
+    },
+    {
+      "title": "Inflamatoria: la mucosa dañada",
+      "text": "El tercero es el inflamatorio, como en la enfermedad de Crohn o la colitis ulcerosa. El epitelio se daña y se liberan sustancias inflamatorias, y la mucosa pierde líquido hacia la luz. Por eso hay fiebre, dolor, y sangre en la materia fecal."
+    },
+    {
+      "title": "Malabsortiva: la grasa que flota",
+      "text": "El cuarto, el que el profesor pide que aprendas, es el malabsortivo. En la celíaca, por ejemplo, las vellosidades se atrofian. Sin superficie, no se absorben las grasas, y tampoco las proteínas, el hierro ni las vitaminas. La grasa sale con las heces: son brillantes, abundantes y flotan en el agua. Es la esteatorrea. Y el paciente adelgaza, se anemiza y baja la albúmina."
+    },
+    {
+      "title": "Motora: no da tiempo a absorber",
+      "text": "Y el quinto es el motor, como en el hipertiroidismo o el intestino irritable. El tránsito se acelera, y el contenido pasa tan rápido que no hay tiempo para absorberlo. La mucosa está sana: el problema es la velocidad."
+    },
+    {
+      "title": "La defecación normal",
+      "text": "Para entender la constipación, veamos la defecación normal. La materia fecal llega al recto, lo distiende, y aparece el deseo de evacuar. Por reflejo, el esfínter anal interno, que es involuntario, se relaja. Y al pujar, el paciente relaja voluntariamente el músculo puborrectal y el esfínter externo. El ángulo entre el recto y el ano se abre, y la materia fecal sale."
+    },
+    {
+      "title": "Por qué la forma dice el tránsito",
+      "text": "La forma de la materia fecal refleja cuánto tiempo estuvo en el colon. Cuanto más tiempo pasa, más agua se absorbe. Si el tránsito es normal, la forma es la de una salchicha. Y si es muy rápido, no hay tiempo de secarla: sale pastosa o líquida."
+    },
+    {
+      "title": "Tres maneras de constiparse",
+      "text": "La constipación crónica puede tener tres mecanismos. En el tránsito lento, falla la inervación del colon, y el contenido avanza despacio. En la disfunción del piso pélvico, el paciente puja, pero el puborrectal se contrae en lugar de relajarse. Es el anismo: la materia fecal no sale. Y en las secundarias el colon está sano, y la causa está afuera: la dieta, un fármaco o el hipotiroidismo."
+    },
+    {
+      "title": "Por qué aparecen pujo y tenesmo",
+      "text": "Y por qué la diarrea disentérica da pujo y tenesmo. Porque el recto está inflamado. Sus receptores de distensión se activan aunque esté vacío. Entonces el paciente siente dolor y ganas de evacuar sin lograrlo, que es el pujo; o evacua y sigue sintiendo el recto ocupado, que es el tenesmo."
+    },
+    {
+      "title": "De dónde viene la sangre",
+      "text": "Y la sangre. Si sangra el canal anal, por hemorroides internas o una fisura, la sangre fresca cae al final, en gotas, después de la materia fecal. Si sangra el colon, la sangre se mezcla con las heces en su recorrido, y la materia fecal sale bañada en sangre."
+    },
+    {
+      "title": "Diarrea: qué es",
+      "text": "Vamos con la teoría. La diarrea es la disminución de la consistencia de las heces, con aumento de la frecuencia y del volumen de las deposiciones. Puede acompañarse de náuseas, vómitos, fiebre o dolor abdominal, que son muy frecuentes."
+    },
+    {
+      "title": "Por su evolución",
+      "text": "La clasificación más común es por su evolución. La aguda dura menos de dos semanas y casi siempre es una intoxicación alimentaria. También puede deberse a un fármaco, como la clindamicina. La persistente dura de dos a cuatro semanas. Empieza como una aguda, y las causas más comunes son los parásitos. Y la crónica dura más de cuatro semanas, y casi siempre es orgánica. Entre las específicas, la más común es la enfermedad celíaca; entre las inespecíficas, el intestino irritable."
+    },
+    {
+      "title": "Alta o baja",
+      "text": "Hay otra clasificación que el profesor pide conocer: alta o baja. La alta afecta el intestino delgado; la baja, el colon. En la alta predomina el volumen: el paciente va tres o cuatro veces, pero mucho líquido. En la baja predomina la frecuencia: puede ir diez veces al día, pero poquito. La alta es acuosa y clara. La baja es más oscura, porque trae moco, pus o sangre. Por eso a la alta se la llama acuosa, y a la baja, disentérica."
+    },
+    {
+      "title": "Acuosa y disentérica: quién las produce",
+      "text": "Según su fisiopatogenia, la diarrea aguda puede ser acuosa, que es la alta, o disentérica, que es la baja. La acuosa la producen virus, bacterias o parásitos, a través de sus toxinas. La disentérica, en cambio, siempre es bacteriana. Y lo que importa de la etiología es la toxina que cada germen produce."
+    },
+    {
+      "title": "Las dos bacterias de la disentérica",
+      "text": "Las bacterias de la disentérica son dos, y el profesor dice que no se olvidan: la Shigella y la Escherichia coli enterohemorrágica, la cepa O ciento cincuenta y siete. Las dos producen verotoxina. El paciente tiene pus, sangre y leucocitos en la materia fecal, fiebre, pujo y tenesmo. Y la complicación grave es el síndrome urémico hemolítico, con insuficiencia renal aguda."
+    },
+    {
+      "title": "Las toxinas y sus ejemplos",
+      "text": "Las toxinas, con sus ejemplos. La enterotoxina del cólera, de la Escherichia coli enterotoxigénica o del rotavirus saca agua a la luz. La neurotoxina del estafilococo dorado, típica del huevo y la mayonesa, aumenta el peristaltismo y da vómitos. La citotoxina de la Salmonella o del Clostridium difficile daña la mucosa. Y los gérmenes enteroadherentes, como los parásitos, se adhieren sin invadir. Y no te olvides: los fármacos producen una diarrea acuosa."
+    },
+    {
+      "title": "Diarrea del viajero y grupos de riesgo",
+      "text": "Un caso particular es la diarrea del viajero: el paciente viaja al Caribe o a África, toma el agua, y se contagia Escherichia coli enterotoxigénica o el vibrión del cólera. Es acuosa, sin fiebre, y se resuelve sola en menos de una semana. Los grupos de riesgo para las diarreas infecciosas son los viajeros, los homosexuales y los inmunodeprimidos."
+    },
+    {
+      "title": "Diarrea persistente",
+      "text": "La diarrea persistente dura de dos a cuatro semanas. Empieza siendo aguda y se prolonga. También se la llama posgastroenterítica. La mayoría de los pacientes son niños. Y la causa más común son los parásitos; si no, la Escherichia coli. Puede no tener síntomas generales."
+    },
+    {
+      "title": "Diarrea crónica: cinco mecanismos",
+      "text": "La diarrea crónica tiene cinco mecanismos. Osmótica: el déficit de lactasa; cede con el ayuno. Secretora: el VIPoma, el Zollinger-Ellison o los laxantes; persiste en ayunas. Inflamatoria: la enfermedad inflamatoria intestinal, con sangre, fiebre y dolor. Malabsortiva, la que el profesor dice que preguntan en el final: la celíaca o la giardiasis crónica, con esteatorrea. Y motora: el hipertiroidismo o el intestino irritable, por tránsito acelerado."
+    },
+    {
+      "title": "Diarrea crónica: ¿funcional u orgánica?",
+      "text": "Ante una diarrea crónica, hay que distinguir si es funcional u orgánica. La funcional aparece por la mañana, el paciente no adelgaza, y se diagnostica por exclusión, como el intestino irritable. La orgánica da deposiciones nocturnas y pérdida de peso, y como la mayoría se debe a malabsorción, aparecen anemia e hipoalbuminemia."
+    },
+    {
+      "title": "Anamnesis de la diarrea",
+      "text": "En la anamnesis, preguntá si aumentó la frecuencia o el volumen, y si trae moco, pus, sangre o restos de alimentos. El color, la consistencia, y qué estuvo comiendo. Si aparece por la mañana, suele ser funcional; si aparece de noche, orgánica. Si además vomita, pensá en una toxina, como la del estafilococo. Y los antecedentes: viajes, familiares con el mismo cuadro, antibióticos, el agua que toma."
+    },
+    {
+      "title": "La aguda: cuándo estudiarla",
+      "text": "La diarrea aguda es autolimitada: dura de tres a siete días, y en general no se estudia. Se indica hidratación oral y una dieta astringente. Pero si tiene sangre, fiebre, dolor muy intenso, deshidratación, o dura más de una semana, sí: laboratorio, una muestra de materia fecal para buscar leucocitos y hematíes, y coprocultivo. La endoscopia casi nunca se pide, salvo que después de dos semanas no haya diagnóstico."
+    },
+    {
+      "title": "Examen y laboratorio",
+      "text": "En el examen físico de la aguda, lo que más importa es la deshidratación: el estado mental, la presión y la frecuencia cardíaca. En la crónica, buscá los signos de malabsorción: anemia y déficit de vitaminas, de ácido fólico y de hierro. Y el laboratorio es lo primero que se pide: hemograma, ionograma, hepatograma, hormonas tiroideas por el hipertiroidismo, y el coprocultivo."
+    },
+    {
+      "title": "Constipación: criterios de Roma III",
+      "text": "La constipación se define por los criterios de Roma, y el profesor avisa que esto no se olvida y es pregunta de parcial. Dos o más de estos: esfuerzo para evacuar, heces duras, sensación de evacuación incompleta, sensación de bloqueo, o maniobras manuales, en al menos una de cada cuatro deposiciones. O menos de tres evacuaciones por semana. Durante tres meses en seis: noventa días, aunque no sean seguidos. Las heces blandas son raras sin laxantes, y no se cumplen los criterios de intestino irritable."
+    },
+    {
+      "title": "Cómo se clasifica",
+      "text": "La constipación aguda es benigna y se resuelve con un cambio de dieta. La crónica se clasifica en tres. La primaria o funcional, donde el problema está en el colon o en el piso pélvico: tránsito normal, tránsito lento o disfunción del piso pélvico. La secundaria o extracolónica, donde el colon está sano y la causa está afuera: la dieta, que es la causa más frecuente del mundo, los fármacos o el hipotiroidismo. Y la mecánica, que es rara. La disfunción del piso pélvico también se llama anismo: el paciente no puede relajar los músculos del periné."
+    },
+    {
+      "title": "La constipación que avisa",
+      "text": "Y ojo: la constipación puede avisar de un problema maligno. Un paciente de más de cincuenta años, constipado, que pierde peso y está anémico, lleva una colonoscopía. Como dice el profesor: no vaya a tener un cáncer por ahí."
+    },
+    {
+      "title": "Escala de Bristol",
+      "text": "Para describir la materia fecal se usa la escala de Bristol, que el profesor dice que preguntan en los parciales. Son siete tipos. El uno y el dos son de constipación. El tres y el cuatro son normales. Y del cinco al siete, diarrea."
+    },
+    {
+      "title": "Examen y estudios",
+      "text": "El diagnóstico es clínico. En el examen anorrectal se buscan fisuras, hemorroides o prolapso. En el tacto rectal se hace la maniobra del descenso: le pedís que puje, y debería expulsar el dedo. El colon por enema muestra causas estructurales. La colonoscopía se indica en el mayor de cincuenta años que adelgaza o está anémico. El test de expulsión del balón: se coloca un balón con agua en el recto y el paciente puja. Si no lo expulsa, el piso pélvico no se relaja. Y la manometría y la defecografía las hace el especialista."
+    },
+    {
+      "title": "El dolor anorrectal",
+      "text": "Los trastornos anorrectales. La defecación no debería doler. Las hemorroides duelen en el momento de defecar. La fisura anal duele después, y el paciente lo describe como si le pasaran un vidrio. La fístula, en cambio, no duele, salvo que se forme un absceso. También están la proctalgia fugaz y la proctitis."
+    },
+    {
+      "title": "Gangrena de Fournier",
+      "text": "Una emergencia: la gangrena de Fournier, una infección necrotizante del periné, con dolor, ampollas, pus y una piel que se decolora. Aparece sobre todo en diabéticos e inmunodeprimidos, y tiene alta mortalidad."
+    },
+    {
+      "title": "El sangrado: gotas o bañada",
+      "text": "El sangrado tiene una regla simple. Si el paciente termina de defecar y caen gotas de sangre roja brillante, pensá en hemorroides internas o en una fisura. Si la materia fecal sale bañada en sangre, oscura o fresca, el origen es el colon, y hay que hacer una colonoscopía, sobre todo si tiene más de cuarenta o cincuenta años."
+    },
+    {
+      "title": "Otros signos anorrectales",
+      "text": "Otros signos. La secreción de moco o pus aparece en abscesos y fístulas, sobre todo en la enfermedad de Crohn. Una masa puede ser un condiloma, un cáncer, una hemorroide, un prolapso o un absceso. El prurito es la segunda manifestación anorrectal más común. El bolo fecal es la materia fecal seca y dura que no se puede eliminar. Y la incontinencia, todo lo contrario: la pérdida involuntaria por una falla de los esfínteres."
+    },
+    {
+      "title": "Pujo y tenesmo",
+      "text": "Y esto es pregunta de parcial. El pujo es el dolor abdominal con deseo de evacuar, sin poder hacerlo. El tenesmo es cuando el paciente ya evacuó, y sigue sintiendo la necesidad de evacuar, como si el recto estuviera todavía ocupado. Los dos aparecen en las diarreas disentéricas."
+    },
+    {
+      "title": "Diagnóstico: inspección, tacto y guante",
+      "text": "Para el diagnóstico, se interroga el dolor, el prurito, el pujo y el tenesmo. En la inspección se buscan úlceras, verrugas, fisuras, masas o hemorroides. El tacto rectal es fundamental, pero no se hace en pacientes neutropénicos. Y el signo del guante: se hace el tacto con un guante blanco, y al retirar el dedo se mira el color. Rojo es sangre, negro es melena, amarillento es pus. Y la anoscopía completa el estudio. Con esto, tenés el capítulo. Ahora a practicar."
+    }
+  ]
+}

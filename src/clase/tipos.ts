@@ -94,7 +94,11 @@ export type FiguraId =
   | 'defecacion'
   | 'bristol'
   | 'bilirrubina'
-  | 'biliar';
+  | 'biliar'
+  | 'ascitis'
+  | 'colateral'
+  | 'inspiracion'
+  | 'reflujo';
 
 export type FiguraSpec = { f: FiguraId } & Record<string, unknown>;
 
