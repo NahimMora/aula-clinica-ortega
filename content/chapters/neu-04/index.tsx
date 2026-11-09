@@ -333,6 +333,11 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['trigemino-sensibilidad', 'reflejo-corneano', 'facial-mimica', 'weber-rinne', 'glosofaringeo-vago', 'espinal', 'hipogloso'],
+    note: 'Exploración del V al XII par.',
+  },
+
   clase,
   diagrams: {},
 };

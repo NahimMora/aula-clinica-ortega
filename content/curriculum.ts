@@ -89,7 +89,7 @@ export const SYSTEMS: SystemMeta[] = [
     chapters: [
       ch('maniobras', 'man-dig', 'Maniobras del examen digestivo', 'Digestivo', 'Inspección, auscultación, percusión y palpación del abdomen; hígado, bazo y vesícula.', 'Video Argente 19–27 · EF Digestivo · Pizarras'),
       ch('maniobras', 'man-ren', 'Maniobras del examen renal', 'Renal', 'Palpación renal y puntos dolorosos.', 'Video Argente 28 · MC Renal 3'),
-      ch('maniobras', 'man-neu', 'Maniobras del examen neurológico', 'Neurología', 'Pares craneales, motilidad, reflejos, sensibilidad, taxia y signos meníngeos.', 'Video Argente 29–35 · Pizarras'),
+      ch('maniobras', 'man-neu', 'Maniobras del examen neurológico', 'Neurología', 'En la biblioteca: 25 maniobras con su fragmento del video (pares craneales, motilidad, reflejos, sensibilidad, taxia y signos meníngeos).', 'Video Argente 30–35 · Clases de Ortega'),
     ],
   },
   {
@@ -100,7 +100,7 @@ export const SYSTEMS: SystemMeta[] = [
     icon: 'bone',
     description: 'Enfoque esencialmente práctico: técnica, ejecución e interpretación de las maniobras osteoarticulares.',
     chapters: [
-      ch('soma', 'soma-01', 'Maniobras osteoarticulares', 'Soma', 'Columna, hombro, codo, muñeca, cadera, rodilla y tobillo.', 'Video Argente 4 · Clase meníngeo y osteo · Pizarras'),
+      ch('soma', 'soma-01', 'Maniobras osteoarticulares', 'Soma', 'En la biblioteca: 12 maniobras con su fragmento del video (columna, túnel carpiano, cadera y rodilla).', 'Video Argente 4'),
     ],
   },
 ];

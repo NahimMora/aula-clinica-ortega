@@ -538,6 +538,11 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['romberg', 'indice-nariz', 'talon-rodilla', 'weber-rinne'],
+    note: 'Para el equilibrio y el vértigo: Romberg, taxia dinámica y las pruebas del VIII.',
+  },
+
   clase,
   diagrams: {},
 };

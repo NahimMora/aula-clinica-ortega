@@ -363,6 +363,11 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['trofismo-tono', 'fuerza-mingazzini', 'reflejo-plantar-babinski', 'clonus', 'reflejos-osteotendinosos', 'romberg', 'indice-nariz', 'talon-rodilla'],
+    note: 'El examen del síndrome piramidal y de la taxia.',
+  },
+
   clase,
   diagrams: {},
 };

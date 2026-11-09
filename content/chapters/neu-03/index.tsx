@@ -360,6 +360,11 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['par-olfatorio', 'campo-visual-confrontacion', 'fondo-de-ojo', 'motilidad-ocular', 'reflejos-pupilares'],
+    note: 'Exploración del I, II, III, IV y VI par y de las pupilas.',
+  },
+
   clase,
   diagrams: {},
 };

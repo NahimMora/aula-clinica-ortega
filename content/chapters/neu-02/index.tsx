@@ -360,6 +360,11 @@ const chapter: Chapter = {
     ],
   },
 
+  maneuvers: {
+    ids: ['trofismo-tono', 'fuerza-mingazzini', 'reflejos-osteotendinosos', 'reflejo-plantar-babinski'],
+    note: 'Para la debilidad: tono, fuerza, reflejos y Babinski.',
+  },
+
   clase,
   diagrams: {},
 };
