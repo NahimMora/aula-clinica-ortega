@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-12 — Hemorragias digestivas. Fuente: clases Hemorragias digestivas 1 y 2 (Ortega) + libro p. 389–390 (cuadro de clases, %).
@@ -42,7 +43,7 @@ const chapter: Chapter = {
   theory: [
     {
       id: 'clases',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Cuánto perdió: clases I a IV',
       priority: 'imprescindible',
       summary: 'Primero los signos vitales: si está inestable se estabiliza, después se busca la causa.',
@@ -84,7 +85,7 @@ const chapter: Chapter = {
     },
     {
       id: 'ortostatismo',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'La prueba de ortostatismo',
       priority: 'imprescindible',
       summary: 'Acostado y después de pie: si la presión cae, hay hipovolemia.',
@@ -128,7 +129,7 @@ const chapter: Chapter = {
     },
     {
       id: 'alta-baja',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clave',
       title: 'Alta vs baja: causas',
       priority: 'imprescindible',
       summary: 'Alta: úlcera. Baja: hemorroides y fisuras.',
@@ -203,6 +204,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig12-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -227,6 +229,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-d02',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -241,6 +244,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-d03',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -252,6 +256,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-d04',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'alta-baja',
@@ -265,6 +270,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-d05',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'muy-importante',
       ficha: 'alta-baja',
@@ -286,6 +292,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-d06',
+      origen: 'preguntero',
       prio: 'P2',
       priority: 'complementario',
       ficha: 'estudios',
@@ -298,6 +305,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig12-q01',
+      origen: 'practica',
       topic: 'Alta',
       difficulty: 1,
       emphasis: true,
@@ -313,6 +321,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q02',
+      origen: 'practica',
       topic: 'Baja',
       difficulty: 1,
       emphasis: true,
@@ -328,6 +337,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q03',
+      origen: 'practica',
       topic: 'Límites',
       difficulty: 1,
       stem: 'El límite entre hemorragia digestiva alta y baja es:',
@@ -342,6 +352,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q04',
+      origen: 'practica',
       topic: 'Formas',
       difficulty: 2,
       stem: 'La **melena** proviene en el 85 % de los casos de:',
@@ -356,6 +367,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q05',
+      origen: 'practica',
       topic: 'Formas',
       difficulty: 3,
       stem: 'Una hematoquecia puede venir del tubo **alto** cuando:',
@@ -370,6 +382,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q06',
+      origen: 'practica',
       topic: 'Clases',
       difficulty: 2,
       emphasis: true,
@@ -385,6 +398,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q07',
+      origen: 'practica',
       topic: 'Clases',
       difficulty: 2,
       stem: 'Una pérdida de **más de 2000 ml** (> 40 %) corresponde a:',
@@ -399,6 +413,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q08',
+      origen: 'practica',
       topic: 'Ortostatismo',
       difficulty: 2,
       emphasis: true,
@@ -414,6 +429,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q09',
+      origen: 'practica',
       topic: 'Laboratorio',
       difficulty: 2,
       stem: 'En la hemorragia digestiva **alta**, la urea suele estar:',
@@ -428,6 +444,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig12-q10',
+      origen: 'practica',
       topic: 'Estudios',
       difficulty: 1,
       stem: 'Paciente con anemia ferropénica y sangre oculta en materia fecal positiva. Estudio indicado:',
@@ -472,6 +489,11 @@ const chapter: Chapter = {
     },
   ],
 
+  maneuvers: {
+    ids: ['tacto-rectal'],
+    note: 'El tacto rectal confirma melena o hematoquecia y busca hemorroides, fisuras o masas.',
+  },
+
   closing: {
     map: {
       center: 'Hemorragias digestivas en una mirada',
@@ -505,6 +527,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig12-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Alcohólico con hematemesis abundante, ascitis y circulación colateral. La causa más probable del sangrado es:',
@@ -521,6 +544,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

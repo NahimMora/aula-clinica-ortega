@@ -1,0 +1,381 @@
+{
+ "fps": 24,
+ "total": 19185,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-compensa",
+   "inicio": 96,
+   "frames": 1202,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 407
+    },
+    {
+     "inicio": 503,
+     "frames": 327
+    },
+    {
+     "inicio": 830,
+     "frames": 167
+    },
+    {
+     "inicio": 997,
+     "frames": 301
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-ortostatismo",
+   "inicio": 1298,
+   "frames": 876,
+   "beats": [
+    {
+     "inicio": 1298,
+     "frames": 402
+    },
+    {
+     "inicio": 1700,
+     "frames": 135
+    },
+    {
+     "inicio": 1835,
+     "frames": 339
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-melena",
+   "inicio": 2174,
+   "frames": 884,
+   "beats": [
+    {
+     "inicio": 2174,
+     "frames": 528
+    },
+    {
+     "inicio": 2702,
+     "frames": 356
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hematocrito",
+   "inicio": 3058,
+   "frames": 815,
+   "beats": [
+    {
+     "inicio": 3058,
+     "frames": 385
+    },
+    {
+     "inicio": 3443,
+     "frames": 430
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-urea",
+   "inicio": 3873,
+   "frames": 735,
+   "beats": [
+    {
+     "inicio": 3873,
+     "frames": 336
+    },
+    {
+     "inicio": 4209,
+     "frames": 245
+    },
+    {
+     "inicio": 4454,
+     "frames": 154
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-intro",
+   "inicio": 4608,
+   "frames": 747,
+   "beats": [
+    {
+     "inicio": 4608,
+     "frames": 546
+    },
+    {
+     "inicio": 5154,
+     "frames": 201
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tabla",
+   "inicio": 5355,
+   "frames": 1404,
+   "beats": [
+    {
+     "inicio": 5355,
+     "frames": 711
+    },
+    {
+     "inicio": 6066,
+     "frames": 693
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hipovolemia",
+   "inicio": 6759,
+   "frames": 722,
+   "beats": [
+    {
+     "inicio": 6759,
+     "frames": 722
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-ortostatismo",
+   "inicio": 7481,
+   "frames": 794,
+   "beats": [
+    {
+     "inicio": 7481,
+     "frames": 444
+    },
+    {
+     "inicio": 7925,
+     "frames": 350
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hematemesis",
+   "inicio": 8275,
+   "frames": 655,
+   "beats": [
+    {
+     "inicio": 8275,
+     "frames": 365
+    },
+    {
+     "inicio": 8640,
+     "frames": 290
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-melena-hq",
+   "inicio": 8930,
+   "frames": 834,
+   "beats": [
+    {
+     "inicio": 8930,
+     "frames": 385
+    },
+    {
+     "inicio": 9315,
+     "frames": 449
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-formas-baja",
+   "inicio": 9764,
+   "frames": 869,
+   "beats": [
+    {
+     "inicio": 9764,
+     "frames": 375
+    },
+    {
+     "inicio": 10139,
+     "frames": 261
+    },
+    {
+     "inicio": 10400,
+     "frames": 233
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-treitz",
+   "inicio": 10633,
+   "frames": 709,
+   "beats": [
+    {
+     "inicio": 10633,
+     "frames": 293
+    },
+    {
+     "inicio": 10926,
+     "frames": 416
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hda-causas",
+   "inicio": 11342,
+   "frames": 804,
+   "beats": [
+    {
+     "inicio": 11342,
+     "frames": 359
+    },
+    {
+     "inicio": 11701,
+     "frames": 445
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hda-anamnesis",
+   "inicio": 12146,
+   "frames": 855,
+   "beats": [
+    {
+     "inicio": 12146,
+     "frames": 263
+    },
+    {
+     "inicio": 12409,
+     "frames": 592
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hdb-causas",
+   "inicio": 13001,
+   "frames": 905,
+   "beats": [
+    {
+     "inicio": 13001,
+     "frames": 269
+    },
+    {
+     "inicio": 13270,
+     "frames": 636
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hdb-anamnesis",
+   "inicio": 13906,
+   "frames": 1083,
+   "beats": [
+    {
+     "inicio": 13906,
+     "frames": 321
+    },
+    {
+     "inicio": 14227,
+     "frames": 438
+    },
+    {
+     "inicio": 14665,
+     "frames": 324
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-comparar",
+   "inicio": 14989,
+   "frames": 776,
+   "beats": [
+    {
+     "inicio": 14989,
+     "frames": 776
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen",
+   "inicio": 15765,
+   "frames": 1020,
+   "beats": [
+    {
+     "inicio": 15765,
+     "frames": 338
+    },
+    {
+     "inicio": 16103,
+     "frames": 682
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-endoscopia",
+   "inicio": 16785,
+   "frames": 968,
+   "beats": [
+    {
+     "inicio": 16785,
+     "frames": 335
+    },
+    {
+     "inicio": 17120,
+     "frames": 191
+    },
+    {
+     "inicio": 17311,
+     "frames": 442
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-lab",
+   "inicio": 17753,
+   "frames": 570,
+   "beats": [
+    {
+     "inicio": 17753,
+     "frames": 350
+    },
+    {
+     "inicio": 18103,
+     "frames": 220
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-forrest",
+   "inicio": 18323,
+   "frames": 742,
+   "beats": [
+    {
+     "inicio": 18323,
+     "frames": 621
+    },
+    {
+     "inicio": 18944,
+     "frames": 121
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+  "src": "media/dig-12/clase.mp4",
+  "poster": "media/dig-12/clase.jpg",
+  "vtt": "media/dig-12/clase.vtt",
+  "duration": "13:19",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · La pérdida"
+    },
+    {
+      "t": 90,
+      "label": "Fisiopatología · El color"
+    },
+    {
+      "t": 127,
+      "label": "Fisiopatología · La pérdida"
+    },
+    {
+      "t": 161,
+      "label": "Fisiopatología · El laboratorio"
+    },
+    {
+      "t": 192,
+      "label": "Teoría · Cuánto perdió"
+    },
+    {
+      "t": 344,
+      "label": "Teoría · Cómo se ve"
+    },
+    {
+      "t": 443,
+      "label": "Teoría · Alta o baja"
+    },
+    {
+      "t": 656,
+      "label": "Teoría · Examen y estudios"
+    }
+  ],
+  "script": [
+    {
+      "title": "Cómo compensa el cuerpo la pérdida",
+      "text": "Todo paciente que pierde sangre altera sus signos vitales, y la clave es entender por qué. Al perder volemia, llega menos sangre al corazón, y el gasto cardíaco cae. En la clase uno, menos del quince por ciento, casi no se nota. El cuerpo responde con el simpático: acelera el corazón, y contrae los vasos de la piel y del riñón, para mandar la sangre que queda a los órganos vitales. Por eso el paciente está pálido y taquicárdico. El riñón, para no perder más volumen, retiene agua y sal: orina cada vez menos. Cuando la pérdida supera el cuarenta por ciento, la compensación ya no alcanza: la presión cae, el cerebro recibe poca sangre, el paciente se confunde, y entra en shock hipovolémico."
+    },
+    {
+      "title": "Por qué el ortostatismo delata la hipovolemia",
+      "text": "El ortostatismo usa ese mismo mecanismo. Al pararse, la sangre baja por gravedad a las piernas. Con una volemia normal, el reflejo lo corrige enseguida, y la presión casi no cambia: cinco o diez milímetros, como mucho. Pero si el paciente perdió sangre, no tiene reserva para compensar. Entonces, al ponerse de pie, la sistólica cae más de veinte milímetros, la diastólica más de diez, el pulso sube más de treinta, o el paciente se marea. Es la hipotensión ortostática."
+    },
+    {
+      "title": "Sangre digerida o sangre fresca",
+      "text": "El color de la sangre en las heces depende del tiempo que pasó en el tubo digestivo. La sangre de un sangrado alto recorre todo el intestino: el ácido, las enzimas y las bacterias del colon degradan la hemoglobina, y las heces salen negras, como alquitrán, y fétidas. Es la melena, y hacen falta más de cincuenta mililitros. La sangre de un sangrado bajo sale enseguida, roja, sin tiempo de degradarse: la hematoquecia. Para que un sangrado alto salga rojo, tiene que ser enorme, más de un litro, o el tránsito muy rápido."
+    },
+    {
+      "title": "El hematocrito llega tarde",
+      "text": "Un detalle del laboratorio. En un sangrado agudo se pierde sangre entera: plasma y glóbulos rojos en la misma proporción. Por eso, al principio, el hematocrito puede ser normal, aunque el paciente haya perdido mucho. Baja recién a partir de las ocho horas, cuando el líquido de los tejidos pasa a los vasos para reponer el volumen, y se equilibra en uno o dos días. Y si el sangrado es crónico, lo que queda es una anemia ferropénica: bajan los glóbulos rojos, la hemoglobina y el hematocrito."
+    },
+    {
+      "title": "Por qué sube la urea",
+      "text": "Y otro dato del laboratorio que el profesor remarca: la urea está aumentada. ¿Por qué? La sangre que queda en el tubo digestivo alto se digiere como si fuera una comida muy rica en proteínas. Esas proteínas se absorben, y el hígado las transforma en urea. A eso se suma que, con la hipovolemia, llega menos sangre al riñón. El resultado es una urea alta, con una creatinina normal o apenas elevada."
+    },
+    {
+      "title": "Hemorragia digestiva",
+      "text": "Empieza la segunda parte de los síndromes digestivos, con tres temas que el profesor marca como muy preguntados en el parcial, en el choice, en el oral y en el final: hemorragia digestiva, cirrosis e hipertensión portal, y pancreatitis aguda. La hemorragia digestiva es una emergencia frecuente: más que un motivo de consulta, es un motivo de internación. Antes de buscar de dónde sangra, lo primero es saber cuánta sangre perdió, y eso se estima con los signos vitales."
+    },
+    {
+      "title": "Clases de hemorragia I a IV",
+      "text": "Esta tabla el profesor la pide como el Padre Nuestro, y sirve para cualquier hemorragia, no solo la digestiva. Clase uno, leve: menos de setecientos cincuenta mililitros, menos del quince por ciento; todo normal. Clase dos, moderada: hasta mil quinientos, treinta por ciento; el pulso entre cien y ciento diecinueve, la frecuencia respiratoria de veinte a treinta, la diuresis de veinte a treinta mililitros por hora, y el paciente ansioso. Clase tres, grave: hasta dos litros, cuarenta por ciento; pulso de ciento veinte a ciento treinta y nueve, sistólica menor de cien, orina de cinco a veinte por hora, ansioso y confuso. Y clase cuatro, masiva: más de dos litros, más del cuarenta por ciento; pulso de más de ciento cuarenta, respiración de más de cuarenta, no orina, está confuso. Eso ya es un shock hipovolémico, y hay que actuar de inmediato."
+    },
+    {
+      "title": "Manifestaciones de la hipovolemia",
+      "text": "Las manifestaciones de la hipovolemia, cada una con su porqué. La anemia ferropénica, cuando el sangrado es crónico. La hipotensión ortostática, porque no hay volemia para compensar al pararse. La lipotimia, porque el cerebro recibe poca sangre. La disnea, porque hay menos hemoglobina para llevar oxígeno. La angina, porque también le llega menos sangre al corazón. Y el shock, cuando la pérdida supera la compensación."
+    },
+    {
+      "title": "Prueba de hipotensión ortostática",
+      "text": "La prueba de hipotensión ortostática, que se pregunta en el parcial, tiene cinco pasos: el paciente acostado boca arriba; esperar por lo menos dos minutos; medir la frecuencia cardíaca y la presión; pedirle que se pare; y repetir la medición al minuto, a los tres y a los cinco minutos. Es positiva si la sistólica baja más de veinte milímetros de mercurio, la diastólica más de diez, o el paciente se marea o tiene una lipotimia. Si el pulso sube más de treinta latidos, también orienta a hipovolemia."
+    },
+    {
+      "title": "Hematemesis",
+      "text": "Las formas de presentación. La hematemesis es el vómito de sangre, roja o con coágulos en borra de café, y siempre indica un sangrado alto. Lo mismo significa un aspirado por sonda nasogástrica con sangre. Y su diagnóstico diferencial con la hemoptisis es pregunta de parcial: la hematemesis es ácida, oscura y con restos de alimento; ese cuadro está completo en el capítulo de vómitos."
+    },
+    {
+      "title": "Melena y hematoquecia",
+      "text": "La melena son heces negras y fétidas, de sangre digerida: en el ochenta y cinco por ciento viene del tubo digestivo alto. Menos del quince por ciento viene de abajo, del delgado o del colon derecho, y solo si el tránsito es lento. La hematoquecia es al revés: sangre roja, con las heces o sola, que en el ochenta y cinco por ciento viene de abajo. Puede venir de arriba si se pierden más de mil mililitros o si el tránsito es muy rápido. El profesor cuenta que se la preguntaron a un compañero en el final."
+    },
+    {
+      "title": "Sangre oculta, enterorragia y proctorragia",
+      "text": "En la hemorragia baja hay otras formas. La sangre oculta no se ve: se sospecha porque el laboratorio muestra una anemia ferropénica, y se busca en la materia fecal. Si está, el paso siguiente es la colonoscopía. La enterorragia son heces bañadas en sangre. La proctorragia es sangre pura, que gotea al final de la deposición: viene del recto o del ano. Y el color orienta la altura: el colon izquierdo da sangre rojo brillante; el derecho, más oscura; y el ciego hasta puede dar melena."
+    },
+    {
+      "title": "Alta o baja: el ángulo de Treitz",
+      "text": "La división la marca el ángulo de Treitz, al final de la cuarta porción del duodeno. La hemorragia alta va desde el esófago hasta el Treitz: es la más frecuente y la más grave. La baja está por debajo: yeyuno, íleon, colon, recto y ano. Es menos frecuente y menos grave; muchas veces pasa desapercibida, mezclada con las heces, el paciente suele estar hemodinámicamente estable, y en el ochenta por ciento se detiene sola."
+    },
+    {
+      "title": "Causas de hemorragia alta",
+      "text": "Las causas de hemorragia alta. La más frecuente, y es pregunta de parcial, es la úlcera péptica, alrededor del sesenta por ciento. Le sigue la gastritis erosiva, porque la no erosiva no sangra. Después, las várices esofágicas, por hipertensión portal de una cirrosis; el síndrome de Mallory-Weiss, con su tríada de hematemesis, vómitos y alcoholismo, por un desgarro lineal de la mucosa esofagogástrica; y la esofagitis, las neoplasias y las malformaciones arteriovenosas."
+    },
+    {
+      "title": "Toda hemorragia es secundaria",
+      "text": "Algo que el profesor repite: toda hemorragia digestiva es secundaria. Nadie vomita sangre sin una enfermedad de base, y la anamnesis va a buscarla. Si toma aspirina, antiinflamatorios o corticoides, tuvo Helicobacter, o tiene acidez y dolor epigástrico, se piensa en una úlcera o una gastritis. Si es un hombre alcohólico o con hepatitis a repetición, en várices por cirrosis. Si es alcohólico y vomita mucho, en un Mallory-Weiss. Y hay que averiguar enfermedades que alteren la coagulación."
+    },
+    {
+      "title": "Causas de hemorragia baja",
+      "text": "En la hemorragia baja hay una pregunta de parcial que muchos confunden: la causa más frecuente no es el cáncer ni los divertículos, sino las hemorroides y las fisuras anales. La edad ordena el resto. En el mayor de sesenta y cinco, divertículos, angiodisplasia, que son vasitos anormales del ciego y el colon ascendente, más frecuentes en la insuficiencia renal, y cáncer. En el menor de cuarenta y cinco, hemorroides, fisuras, enfermedad inflamatoria intestinal y divertículo de Meckel. Y en ancianos con enfermedad vascular, la colitis isquémica."
+    },
+    {
+      "title": "Anamnesis de la hemorragia baja",
+      "text": "La anamnesis de la hemorragia baja sigue la misma lógica. Si hay dolor, se piensa en una enfermedad inflamatoria o una isquemia; si no hay dolor, en angiodisplasia, divertículos o cáncer. Hay que buscar las alarmas de cáncer: una constipación que no tenía, la pérdida de peso, y los antecedentes familiares. El ejemplo de la clase: un joven con sangre oculta en la materia fecal cuyo abuelo murió de cáncer de colon. Ese antecedente cambia todo. Las hemorroides y las fisuras dan constipación, dolor, y sangre roja en el papel o gotas en el inodoro al final de la deposición. Y conviene preguntar por radioterapia previa y por insuficiencia renal."
+    },
+    {
+      "title": "Alta o baja: el cuadro",
+      "text": "Y todo junto en un cuadro. La alta llega hasta el Treitz, es la más frecuente y la más grave, se presenta como hematemesis o melena, desestabiliza más al paciente, su causa más frecuente es la úlcera péptica, y se estudia con endoscopía alta. La baja está por debajo del Treitz, es menos frecuente y menos grave, da hematoquecia, enterorragia, proctorragia o sangre oculta, el paciente suele estar estable, su causa más frecuente son las hemorroides y las fisuras, y se estudia con colonoscopía."
+    },
+    {
+      "title": "Examen físico",
+      "text": "En el examen físico, lo primero son los signos vitales: la hemorragia ya está; lo que importa es si el paciente está estable. Si no lo está, se lo estabiliza; si está estable, se busca la causa. Se evalúan la perfusión, la hidratación y la palidez; se buscan signos de hepatopatía crónica e hipertensión portal, que sugieren várices; y se hace un tacto rectal, que confirma la melena o la hematoquecia y muestra hemorroides o fisuras. La sonda nasogástrica completa: sangre roja indica sangrado activo; borra de café, que ya paró; un aspirado claro no descarta un sangrado alto, y si sale bilis, el origen está por debajo del Treitz."
+    },
+    {
+      "title": "Estudios",
+      "text": "En los estudios, la conducta principal es la endoscopía. En la alta, la endoscopía digestiva alta en las primeras veinticuatro horas: muestra la lesión, permite tratarla y orienta el pronóstico. En la baja, si el paciente está estable, la colonoscopía; la completa llega hasta la válvula ileocecal. Si la endoscopía no encuentra el foco y el paciente sigue sangrando, la arteriografía o angiografía mesentérica, con contraste, muestra el vaso que sangra. También el centellograma, y como último recurso la laparotomía. El estudio con bario ya no se usa."
+    },
+    {
+      "title": "Laboratorio",
+      "text": "El laboratorio: hemograma con plaquetas, tiempo de protrombina, KPTT, glucemia, urea, que está aumentada, y creatinina. Y siempre grupo y factor, porque puede necesitar una transfusión. Un dato práctico de la clase: si llega un paciente desangrándose y no se conoce su grupo, se le transfunde sangre cero negativo."
+    },
+    {
+      "title": "Clasificación de Forrest",
+      "text": "Y la clasificación de Forrest, que describe la úlcera sangrante en la endoscopía. El profesor aclara que no se pregunta en el parcial, pero conviene conocerla. Uno a es el sangrado activo en chorro; uno b, en sábana. Dos a, un vaso visible; dos b, un coágulo adherido; dos c, una base pigmentada. Y tres, una base limpia con fibrina. Cuanto más bajo el número, más riesgo de que vuelva a sangrar."
+    }
+  ]
+}

@@ -30,6 +30,8 @@ import { clase as planDig10 } from '../../content/chapters/dig-10/clase';
 import tiemposDig10 from '../../content/chapters/dig-10/clase-tiempos.json';
 import { clase as planDig11 } from '../../content/chapters/dig-11/clase';
 import tiemposDig11 from '../../content/chapters/dig-11/clase-tiempos.json';
+import { clase as planDig12 } from '../../content/chapters/dig-12/clase';
+import tiemposDig12 from '../../content/chapters/dig-12/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -191,6 +193,7 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'dig-12-clase', titulo: 'Hemorragias digestivas', plan: planDig12, tiempos: tiemposDig12 as TiemposClase },
   { id: 'dig-11-clase', titulo: 'Síndromes vesiculares', plan: planDig11, tiempos: tiemposDig11 as TiemposClase },
   { id: 'dig-10-clase', titulo: 'Peritonitis', plan: planDig10, tiempos: tiemposDig10 as TiemposClase },
   { id: 'dig-09-clase', titulo: 'Malabsorción e intestino irritable', plan: planDig09, tiempos: tiemposDig09 as TiemposClase },
