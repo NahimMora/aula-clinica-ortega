@@ -1,0 +1,122 @@
+{
+  "src": "media/dig-10/clase.mp4",
+  "poster": "media/dig-10/clase.jpg",
+  "vtt": "media/dig-10/clase.vtt",
+  "duration": "10:43",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Localizada o generalizada"
+    },
+    {
+      "t": 103,
+      "label": "Fisiopatología · Primaria y secundaria"
+    },
+    {
+      "t": 169,
+      "label": "Fisiopatología · Los signos"
+    },
+    {
+      "t": 228,
+      "label": "Teoría · Qué es y plastrón"
+    },
+    {
+      "t": 297,
+      "label": "Teoría · Primaria, secundaria, terciaria"
+    },
+    {
+      "t": 396,
+      "label": "Teoría · Clínica y examen"
+    },
+    {
+      "t": 547,
+      "label": "Teoría · Complementarios"
+    }
+  ],
+  "script": [
+    {
+      "title": "El peritoneo normal",
+      "text": "Para entender la peritonitis, primero el peritoneo normal, en un corte del abdomen. La hoja parietal tapiza por dentro la pared abdominal. Tiene la misma inervación que la pared, y por eso, cuando se irrita, duele mucho y en un punto preciso. La hoja visceral envuelve a los órganos: el hígado, el estómago, cada asa intestinal. Su dolor es sordo y mal localizado. Entre las dos hojas queda una cavidad virtual, con apenas una película de líquido, y estéril. Peritonitis es la inflamación de esa serosa."
+    },
+    {
+      "title": "Plastrón: localizada",
+      "text": "El ejemplo de la clase: un compañero con una apendicitis supurada o gangrenosa, en la fosa ilíaca derecha. El apéndice inflamado toca el peritoneo visceral, que irrita al parietal, y el parietal a la pared anterior del abdomen. El proceso queda como encapsulado ahí. Entonces duele en ese punto solo. Eso es el plastrón: una peritonitis localizada, en contacto con la pared anterior."
+    },
+    {
+      "title": "Generalizada: todo el peritoneo",
+      "text": "Si la infección alcanza toda la serosa, la peritonitis es generalizada. Todo el peritoneo parietal está irritado: la musculatura de la pared se contrae para protegerlo, y el intestino, bañado en inflamación, deja de moverse. El dolor es intenso y difuso, empeora con los movimientos, la tos y el estornudo, y el paciente flexiona las piernas para no estirar el peritoneo. El abdomen está en tabla y no se escuchan ruidos: es un íleo paralítico."
+    },
+    {
+      "title": "PBE: sin perforación",
+      "text": "La peritonitis primaria, o bacteriana espontánea. El paciente es un cirrótico: el hígado duro aumenta la presión en la vena porta, las venas del intestino se congestionan, y se acumula ascitis. La pared del intestino congestiva se vuelve más permeable, y bacterias de la flora normal la atraviesan, pasan a la linfa o a la sangre, y llegan al líquido ascítico. Eso es la traslocación bacteriana: no hay ninguna perforación. El resultado es una ascitis infectada por un solo germen, en general Escherichia coli. Y como no hay nada perforado, se trata con antibióticos, sin cirugía."
+    },
+    {
+      "title": "Secundaria: se perfora una víscera",
+      "text": "La peritonitis secundaria, la más frecuente. Se perfora una víscera hueca: el apéndice, el estómago por una úlcera, el intestino. Por el agujero sale el contenido, con muchísimas bacterias distintas, y también aire. La infección es polimicrobiana, el dolor empieza de golpe, y hay que operar para cerrar la perforación."
+    },
+    {
+      "title": "El aire libre: signo de Jobert",
+      "text": "Ese aire que escapa de la víscera perforada sube a lo más alto. Con el paciente acostado, lo más alto es adelante: se ubica entre la pared y el hígado. Normalmente, sobre el hígado se percute matidez. Ahora el aire se interpone, y se percute timpanismo. Eso es el signo de Jobert. Y en la radiografía de pie, el aire se ve debajo del diafragma: es el neumoperitoneo."
+    },
+    {
+      "title": "Por qué duele al soltar",
+      "text": "Y la palpación tiene su porqué. Al hundir la mano lentamente, se comprime el peritoneo visceral. Al soltar de golpe, la pared rebota y sacude al peritoneo parietal: si está inflamado, el dolor aparece o empeora. Si ese dolor es localizado, es el signo de Blumberg, el del plastrón. Si el dolor a la descompresión aparece en todo el abdomen, es el signo de Gueneau de Mussy: la peritonitis está generalizada."
+    },
+    {
+      "title": "Peritonitis",
+      "text": "La peritonitis es la inflamación de la serosa peritoneal, sea cual sea su causa, aunque en la práctica casi siempre es una infección. El profesor avisa que se pregunta muchísimo: en el parcial, en el oral y en el final. Puede ser generalizada, cuando se inflama todo el peritoneo, o localizada: el plastrón."
+    },
+    {
+      "title": "Plastrón",
+      "text": "El plastrón es una peritonitis localizada, en contacto con la pared anterior del abdomen. Es pregunta de parcial, y suele venir dentro de un caso clínico. El ejemplo típico es una apendicitis supurada o gangrenosa: el apéndice irrita el peritoneo de la fosa ilíaca derecha, el proceso queda encapsulado, y duele solo ahí."
+    },
+    {
+      "title": "Clasificación",
+      "text": "Se clasifica de dos maneras. Por su localización: generalizada o localizada, que es el plastrón. Y por su etiología: aséptica, sin gérmenes, cuando lo que irrita al peritoneo es una sustancia química, como la bilis o el jugo pancreático; o séptica, con infección, que se divide en primaria, secundaria y terciaria."
+    },
+    {
+      "title": "Primaria, secundaria y terciaria",
+      "text": "La peritonitis séptica tiene tres formas, que el profesor pide sí o sí junto con el plastrón. La primaria, o bacteriana espontánea: no hay perforación, se produce por traslocación bacteriana, en un cirrótico con ascitis o en un síndrome nefrótico; la produce un solo germen, Escherichia coli, y se trata con antibióticos. La secundaria, la más frecuente: una perforación de víscera hueca o la infección de un órgano, como una apendicitis o una colecistitis. Es polimicrobiana y quirúrgica. Y la terciaria es iatrogénica: los gérmenes llegan desde afuera, en una cirugía o un traumatismo abierto del abdomen."
+    },
+    {
+      "title": "Peritonitis bacteriana espontánea",
+      "text": "La peritonitis bacteriana espontánea es la infección del líquido ascítico sin ninguna perforación, y es una urgencia médica. Si escuchan PBE, piensen en un cirrótico: la cirrosis avanzada con hipertensión portal explica el ochenta a noventa por ciento. También puede darla el síndrome nefrótico, que pierde proteínas, hace edema generalizado y puede acumular ascitis. Es monomicrobiana, por Escherichia coli, y se trata con cefalosporinas de tercera o cuarta generación."
+    },
+    {
+      "title": "Secundaria y terciaria",
+      "text": "La secundaria aparece cuando se perfora el apéndice, una úlcera o el intestino, o cuando se infecta un órgano como la vesícula. Pasan muchos microorganismos a la cavidad, y la solución es quirúrgica. Y la terciaria es la que llega desde afuera: durante una cirugía en la que se perfora un órgano o se derrama un absceso, o por una herida abierta del abdomen."
+    },
+    {
+      "title": "Clínica",
+      "text": "La clínica es la de un abdomen agudo perforativo. El síntoma predominante es el dolor; cuando la peritonitis se generaliza, es intenso, difuso, y empeora con los movimientos, la tos y el estornudo. Se acompaña de fiebre, en el ochenta por ciento, náuseas y vómitos, y el paciente flexiona las piernas. En la peritonitis bacteriana espontánea, en cambio, el cuadro es más solapado: lo infectado es el líquido, el dolor es menos intenso, puede no haber fiebre, y los vómitos son raros."
+    },
+    {
+      "title": "Anamnesis y aspecto general",
+      "text": "En la anamnesis se busca la causa. Si se sospecha una PBE, se pregunta por la cirrosis: el alcohol, desde cuándo, los antecedentes familiares. Si se sospecha una perforación, se hace una semiología completa del dolor. Al examen general, el paciente tiene la facies pálida y dolorosa, los ojos hundidos, taquicardia, y signos de deshidratación e hipotensión: es la repercusión de la infección y del dolor."
+    },
+    {
+      "title": "Examen del abdomen: PBE o perforación",
+      "text": "En el abdomen, las dos peritonitis se diferencian. Inspección: en la PBE el abdomen está globoso, por la ascitis; en la perforación está plano, en tabla, y no acompaña la respiración. Auscultación: en la PBE el intestino sigue moviéndose; en la perforación hay íleo paralítico y no hay ruidos. Percusión: matidez por el líquido en la PBE; timpanismo, y el signo de Jobert, en la perforación. Y a la palpación, la perforación da contractura y dolor a la descompresión."
+    },
+    {
+      "title": "Signo de Jobert",
+      "text": "El signo de Jobert, pregunta de parcial: al percutir el área hepática, donde debería haber matidez, hay timpanismo. Es el aire que escapó de una víscera hueca perforada y se interpuso sobre el hígado. En la radiografía de tórax de pie, ese mismo aire se ve debajo del diafragma: el neumoperitoneo."
+    },
+    {
+      "title": "Blumberg y Gueneau de Mussy",
+      "text": "Blumberg y Gueneau de Mussy son el mismo fenómeno: dolor al descomprimir, que indica irritación del peritoneo parietal. La diferencia es la extensión. Blumberg es localizado, como en el plastrón de la apendicitis. Gueneau de Mussy es generalizado, el de la peritonitis difusa. Y no hay que confundir contractura con defensa: la contractura es involuntaria, el abdomen en tabla; la defensa es voluntaria."
+    },
+    {
+      "title": "Laboratorio",
+      "text": "Los complementarios son tres: laboratorio, imágenes y punción abdominal. En el laboratorio, la infección da leucocitosis de más de quince mil, con predominio de neutrófilos, y aumentan los reactantes de fase aguda, la PCR y la eritrosedimentación. Si cae el hematocrito, hay que pensar en una hemorragia intraabdominal. Se controla la función renal, que puede alterarse, los electrolitos y el estado ácido base: suele haber una acidosis metabólica, compensada con una alcalosis respiratoria. Y la amilasa, si se sospecha una pancreatitis."
+    },
+    {
+      "title": "Imágenes",
+      "text": "En imágenes, la radiografía simple de abdomen y la de tórax buscan una perforación: el aire debajo del diafragma, el mismo aire que da el signo de Jobert. La más usada es la ecografía, porque es accesible y barata: muestra el líquido libre y, muchas veces, el órgano comprometido, como el apéndice, la vesícula o el estómago."
+    },
+    {
+      "title": "Paracentesis",
+      "text": "Y la punción abdominal, la paracentesis, que el profesor pide como el Padre Nuestro. Cumple dos funciones: diagnóstica, porque confirma que la ascitis está infectada, y terapéutica, porque drena el líquido. El número que hay que saber: más de doscientos cincuenta neutrófilos por milímetro cúbico en el líquido ascítico. Eso se llama neutroascitis, y da el diagnóstico de certeza de peritonitis bacteriana espontánea."
+    }
+  ]
+}

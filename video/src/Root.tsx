@@ -26,6 +26,8 @@ import { clase as planDig08 } from '../../content/chapters/dig-08/clase';
 import tiemposDig08 from '../../content/chapters/dig-08/clase-tiempos.json';
 import { clase as planDig09 } from '../../content/chapters/dig-09/clase';
 import tiemposDig09 from '../../content/chapters/dig-09/clase-tiempos.json';
+import { clase as planDig10 } from '../../content/chapters/dig-10/clase';
+import tiemposDig10 from '../../content/chapters/dig-10/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -187,6 +189,7 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'dig-10-clase', titulo: 'Peritonitis', plan: planDig10, tiempos: tiemposDig10 as TiemposClase },
   { id: 'dig-09-clase', titulo: 'Malabsorción e intestino irritable', plan: planDig09, tiempos: tiemposDig09 as TiemposClase },
   { id: 'dig-08-clase', titulo: 'Síndrome pilórico e íleo', plan: planDig08, tiempos: tiemposDig08 as TiemposClase },
   { id: 'dig-07-clase', titulo: 'Síndrome ulceroso y gastritis', plan: planDig07, tiempos: tiemposDig07 as TiemposClase },

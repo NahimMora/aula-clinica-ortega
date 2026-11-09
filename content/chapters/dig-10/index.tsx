@@ -1,5 +1,6 @@
 import type { Chapter, SourceRef } from '@/types';
 import { escenas } from './escenas';
+import { clase } from './clase';
 
 /*
  * dig-10 — Peritonitis. Fuente: clases Peritonitis 1 y 2 (Ortega) + libro p. 383.
@@ -60,7 +61,7 @@ const chapter: Chapter = {
                 label: 'Por etiología',
                 tone: 'lilac',
                 children: [
-                  { label: 'Aséptica', tone: 'mint', note: 'Sin infección (p. ej., anasarca)' },
+                  { label: 'Aséptica', tone: 'mint', note: 'Sin gérmenes: irritación química (bilis, jugo pancreático, sangre)' },
                   { label: 'Séptica', tone: 'red', star: true, note: 'Primaria · secundaria · terciaria' },
                 ],
               },
@@ -72,7 +73,7 @@ const chapter: Chapter = {
     },
     {
       id: 'tipos',
-      kicker: 'Lo que toma ★',
+      kicker: 'Clasificación',
       title: 'Primaria, secundaria y terciaria',
       priority: 'imprescindible',
       summary: '«El plastrón y estos tres, sí o sí me tienen que saber.»',
@@ -134,7 +135,7 @@ const chapter: Chapter = {
       priority: 'imprescindible',
       summary: 'Más de 250 neutrófilos por mm³ en el líquido ascítico = diagnóstico de certeza de PBE.',
       blocks: [
-        { t: 'callout', kind: 'prof', title: 'Como el Padre Nuestro', text: '«Punción abdominal… pregunta de examen del doctor Odara: tienen que sabérsela como si fuese el Padre Nuestro.» La **paracentesis** es **diagnóstica y terapéutica**. **Más de 250 neutrófilos por mm³** en el líquido ascítico (neutroascitis) = **diagnóstico de certeza de PBE**: «se lo pueden preguntar en el oral o en el choice».', refs: [P2('03:42'), P2('04:25'), P2('05:09')] },
+        { t: 'callout', kind: 'prof', title: 'Como el Padre Nuestro', text: '«Tienen que sabérsela como si fuese el Padre Nuestro a lo que es la paracentesis.» La **paracentesis** es **diagnóstica y terapéutica**. **Más de 250 neutrófilos por mm³** en el líquido ascítico (neutroascitis) = **diagnóstico de certeza de PBE**: «se lo pueden preguntar en el oral o en el choice».', refs: [P2('03:42'), P2('04:25'), P2('05:09')] },
         {
           t: 'timeline',
           title: 'Qué pedir',
@@ -154,6 +155,7 @@ const chapter: Chapter = {
   developments: [
     {
       id: 'dig10-d01',
+      origen: 'preguntero',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
@@ -177,17 +179,19 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-d02',
+      origen: 'clase',
       prio: 'P0',
       priority: 'imprescindible',
       emphasis: true,
       ficha: 'estudios',
       question: '¿Cómo se diagnostica la peritonitis bacteriana espontánea?',
-      quote: { text: '«…punción abdominal, tienen que sabérsela como si fuese el Padre Nuestro»', refs: [P2('03:42')] },
+      quote: { text: '«…tienen que sabérsela como si fuese el Padre Nuestro a lo que es la paracentesis»', refs: [P2('03:42')] },
       answer: [{ t: 'p', text: 'Paciente cirrótico con ascitis, fiebre y dolor abdominal: **paracentesis** (diagnóstica y terapéutica). **Más de 250 neutrófilos por mm³** en el líquido ascítico = diagnóstico de certeza. Se trata con cefalosporinas de 3.ª–4.ª generación, sin cirugía.' }],
       refs: [P2('03:42'), P2('04:25'), P1('12:48')],
     },
     {
       id: 'dig10-d03',
+      origen: 'preguntero',
       prio: 'P1',
       priority: 'imprescindible',
       ficha: 'extension',
@@ -201,6 +205,7 @@ const chapter: Chapter = {
   mcq: [
     {
       id: 'dig10-q01',
+      origen: 'practica',
       topic: 'Plastrón',
       difficulty: 1,
       emphasis: true,
@@ -216,6 +221,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q02',
+      origen: 'practica',
       topic: 'Tipos',
       difficulty: 1,
       emphasis: true,
@@ -231,6 +237,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q03',
+      origen: 'practica',
       topic: 'PBE',
       difficulty: 2,
       emphasis: true,
@@ -246,6 +253,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q04',
+      origen: 'practica',
       topic: 'PBE',
       difficulty: 2,
       stem: 'La PBE es típicamente:',
@@ -260,6 +268,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q05',
+      origen: 'practica',
       topic: 'PBE',
       difficulty: 2,
       emphasis: true,
@@ -275,6 +284,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q06',
+      origen: 'practica',
       topic: 'PBE',
       difficulty: 1,
       stem: 'La causa más frecuente de PBE es:',
@@ -289,6 +299,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q07',
+      origen: 'practica',
       topic: 'Clínica',
       difficulty: 2,
       stem: 'Abdomen en tabla, timpanismo en el área hepática y RHA ausentes. ¿Qué peritonitis?',
@@ -303,6 +314,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q08',
+      origen: 'practica',
       topic: 'Signos',
       difficulty: 1,
       stem: 'Dolor a la descompresión **generalizado**:',
@@ -317,6 +329,7 @@ const chapter: Chapter = {
     },
     {
       id: 'dig10-q09',
+      origen: 'practica',
       topic: 'Tratamiento',
       difficulty: 2,
       stem: 'El tratamiento de la peritonitis **secundaria** es:',
@@ -361,6 +374,11 @@ const chapter: Chapter = {
     },
   ],
 
+  maneuvers: {
+    ids: ['descompresion-blumberg', 'palpacion-superficial-tension', 'abd-auscultacion-rha', 'ascitis-maniobras'],
+    note: 'Dolor a la descompresión, contractura, silencio abdominal y ascitis.',
+  },
+
   closing: {
     map: {
       center: 'Peritonitis en una mirada',
@@ -392,6 +410,7 @@ const chapter: Chapter = {
     miniExam: [
       {
         id: 'dig10-x01',
+        origen: 'practica',
         topic: 'Integración',
         difficulty: 2,
         stem: 'Cirrótico alcohólico con ascitis, fiebre y dolor abdominal leve. Paracentesis: 600 neutrófilos/mm³. Conducta:',
@@ -408,6 +427,7 @@ const chapter: Chapter = {
   },
 
   escenas,
+  clase,
   diagrams: {},
 };
 

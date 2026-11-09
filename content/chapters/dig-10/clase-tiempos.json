@@ -1,0 +1,381 @@
+{
+ "fps": 24,
+ "total": 15440,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-normal",
+   "inicio": 96,
+   "frames": 912,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 409
+    },
+    {
+     "inicio": 505,
+     "frames": 247
+    },
+    {
+     "inicio": 752,
+     "frames": 256
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-plastron",
+   "inicio": 1008,
+   "frames": 694,
+   "beats": [
+    {
+     "inicio": 1008,
+     "frames": 192
+    },
+    {
+     "inicio": 1200,
+     "frames": 273
+    },
+    {
+     "inicio": 1473,
+     "frames": 229
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-generalizada",
+   "inicio": 1702,
+   "frames": 777,
+   "beats": [
+    {
+     "inicio": 1702,
+     "frames": 148
+    },
+    {
+     "inicio": 1850,
+     "frames": 259
+    },
+    {
+     "inicio": 2109,
+     "frames": 370
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-pbe",
+   "inicio": 2479,
+   "frames": 984,
+   "beats": [
+    {
+     "inicio": 2479,
+     "frames": 335
+    },
+    {
+     "inicio": 2814,
+     "frames": 367
+    },
+    {
+     "inicio": 3181,
+     "frames": 282
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-perforacion",
+   "inicio": 3463,
+   "frames": 597,
+   "beats": [
+    {
+     "inicio": 3463,
+     "frames": 261
+    },
+    {
+     "inicio": 3724,
+     "frames": 159
+    },
+    {
+     "inicio": 3883,
+     "frames": 177
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-jobert",
+   "inicio": 4060,
+   "frames": 712,
+   "beats": [
+    {
+     "inicio": 4060,
+     "frames": 274
+    },
+    {
+     "inicio": 4334,
+     "frames": 269
+    },
+    {
+     "inicio": 4603,
+     "frames": 169
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-descompresion",
+   "inicio": 4772,
+   "frames": 701,
+   "beats": [
+    {
+     "inicio": 4772,
+     "frames": 499
+    },
+    {
+     "inicio": 5271,
+     "frames": 202
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-def",
+   "inicio": 5473,
+   "frames": 531,
+   "beats": [
+    {
+     "inicio": 5473,
+     "frames": 361
+    },
+    {
+     "inicio": 5834,
+     "frames": 170
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-plastron",
+   "inicio": 6004,
+   "frames": 552,
+   "beats": [
+    {
+     "inicio": 6004,
+     "frames": 267
+    },
+    {
+     "inicio": 6271,
+     "frames": 285
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clasificacion",
+   "inicio": 6556,
+   "frames": 580,
+   "beats": [
+    {
+     "inicio": 6556,
+     "frames": 209
+    },
+    {
+     "inicio": 6765,
+     "frames": 371
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-tres",
+   "inicio": 7136,
+   "frames": 1024,
+   "beats": [
+    {
+     "inicio": 7136,
+     "frames": 518
+    },
+    {
+     "inicio": 7654,
+     "frames": 299
+    },
+    {
+     "inicio": 7953,
+     "frames": 207
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-pbe",
+   "inicio": 8160,
+   "frames": 773,
+   "beats": [
+    {
+     "inicio": 8160,
+     "frames": 210
+    },
+    {
+     "inicio": 8370,
+     "frames": 563
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-secundaria",
+   "inicio": 8933,
+   "frames": 575,
+   "beats": [
+    {
+     "inicio": 8933,
+     "frames": 324
+    },
+    {
+     "inicio": 9257,
+     "frames": 251
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-clinica",
+   "inicio": 9508,
+   "frames": 868,
+   "beats": [
+    {
+     "inicio": 9508,
+     "frames": 357
+    },
+    {
+     "inicio": 9865,
+     "frames": 196
+    },
+    {
+     "inicio": 10061,
+     "frames": 315
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-facies",
+   "inicio": 10376,
+   "frames": 700,
+   "beats": [
+    {
+     "inicio": 10376,
+     "frames": 401
+    },
+    {
+     "inicio": 10777,
+     "frames": 299
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-examen",
+   "inicio": 11076,
+   "frames": 821,
+   "beats": [
+    {
+     "inicio": 11076,
+     "frames": 328
+    },
+    {
+     "inicio": 11404,
+     "frames": 493
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-jobert",
+   "inicio": 11897,
+   "frames": 518,
+   "beats": [
+    {
+     "inicio": 11897,
+     "frames": 331
+    },
+    {
+     "inicio": 12228,
+     "frames": 187
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-blumberg",
+   "inicio": 12415,
+   "frames": 736,
+   "beats": [
+    {
+     "inicio": 12415,
+     "frames": 201
+    },
+    {
+     "inicio": 12616,
+     "frames": 313
+    },
+    {
+     "inicio": 12929,
+     "frames": 222
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-lab",
+   "inicio": 13151,
+   "frames": 919,
+   "beats": [
+    {
+     "inicio": 13151,
+     "frames": 543
+    },
+    {
+     "inicio": 13694,
+     "frames": 376
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-imagenes",
+   "inicio": 14070,
+   "frames": 560,
+   "beats": [
+    {
+     "inicio": 14070,
+     "frames": 266
+    },
+    {
+     "inicio": 14336,
+     "frames": 294
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-paracentesis",
+   "inicio": 14630,
+   "frames": 690,
+   "beats": [
+    {
+     "inicio": 14630,
+     "frames": 351
+    },
+    {
+     "inicio": 14981,
+     "frames": 339
+    }
+   ]
+  }
+ ]
+}
