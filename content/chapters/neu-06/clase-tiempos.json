@@ -1,0 +1,321 @@
+{
+ "fps": 24,
+ "total": 14876,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "fisio",
+   "id": "f-componentes",
+   "inicio": 96,
+   "frames": 966,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 265
+    },
+    {
+     "inicio": 361,
+     "frames": 339
+    },
+    {
+     "inicio": 700,
+     "frames": 362
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-cushing",
+   "inicio": 1062,
+   "frames": 847,
+   "beats": [
+    {
+     "inicio": 1062,
+     "frames": 249
+    },
+    {
+     "inicio": 1311,
+     "frames": 208
+    },
+    {
+     "inicio": 1519,
+     "frames": 390
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-hernias",
+   "inicio": 1909,
+   "frames": 977,
+   "beats": [
+    {
+     "inicio": 1909,
+     "frames": 291
+    },
+    {
+     "inicio": 2200,
+     "frames": 286
+    },
+    {
+     "inicio": 2486,
+     "frames": 400
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-puncion",
+   "inicio": 2886,
+   "frames": 637,
+   "beats": [
+    {
+     "inicio": 2886,
+     "frames": 203
+    },
+    {
+     "inicio": 3089,
+     "frames": 200
+    },
+    {
+     "inicio": 3289,
+     "frames": 234
+    }
+   ]
+  },
+  {
+   "mazo": "fisio",
+   "id": "f-meningitis",
+   "inicio": 3523,
+   "frames": 892,
+   "beats": [
+    {
+     "inicio": 3523,
+     "frames": 277
+    },
+    {
+     "inicio": 3800,
+     "frames": 355
+    },
+    {
+     "inicio": 4155,
+     "frames": 260
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-sensibilidad",
+   "inicio": 4415,
+   "frames": 931,
+   "beats": [
+    {
+     "inicio": 4415,
+     "frames": 370
+    },
+    {
+     "inicio": 4785,
+     "frames": 325
+    },
+    {
+     "inicio": 5110,
+     "frames": 236
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-hte",
+   "inicio": 5346,
+   "frames": 1207,
+   "beats": [
+    {
+     "inicio": 5346,
+     "frames": 288
+    },
+    {
+     "inicio": 5634,
+     "frames": 486
+    },
+    {
+     "inicio": 6120,
+     "frames": 433
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-triada",
+   "inicio": 6553,
+   "frames": 938,
+   "beats": [
+    {
+     "inicio": 6553,
+     "frames": 409
+    },
+    {
+     "inicio": 6962,
+     "frames": 154
+    },
+    {
+     "inicio": 7116,
+     "frames": 375
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-papila",
+   "inicio": 7491,
+   "frames": 855,
+   "beats": [
+    {
+     "inicio": 7491,
+     "frames": 256
+    },
+    {
+     "inicio": 7747,
+     "frames": 226
+    },
+    {
+     "inicio": 7973,
+     "frames": 373
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-otros-signos",
+   "inicio": 8346,
+   "frames": 913,
+   "beats": [
+    {
+     "inicio": 8346,
+     "frames": 297
+    },
+    {
+     "inicio": 8643,
+     "frames": 250
+    },
+    {
+     "inicio": 8893,
+     "frames": 366
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-diagnostico-hte",
+   "inicio": 9259,
+   "frames": 498,
+   "beats": [
+    {
+     "inicio": 9259,
+     "frames": 498
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-contraindicaciones",
+   "inicio": 9757,
+   "frames": 514,
+   "beats": [
+    {
+     "inicio": 9757,
+     "frames": 514
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-lcr",
+   "inicio": 10271,
+   "frames": 920,
+   "beats": [
+    {
+     "inicio": 10271,
+     "frames": 355
+    },
+    {
+     "inicio": 10626,
+     "frames": 365
+    },
+    {
+     "inicio": 10991,
+     "frames": 200
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-definiciones",
+   "inicio": 11191,
+   "frames": 657,
+   "beats": [
+    {
+     "inicio": 11191,
+     "frames": 347
+    },
+    {
+     "inicio": 11538,
+     "frames": 310
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-causas",
+   "inicio": 11848,
+   "frames": 907,
+   "beats": [
+    {
+     "inicio": 11848,
+     "frames": 396
+    },
+    {
+     "inicio": 12244,
+     "frames": 511
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-triada-meningitis",
+   "inicio": 12755,
+   "frames": 874,
+   "beats": [
+    {
+     "inicio": 12755,
+     "frames": 509
+    },
+    {
+     "inicio": 13264,
+     "frames": 365
+    }
+   ]
+  },
+  {
+   "mazo": "teoria",
+   "id": "t-signos-meningeos",
+   "inicio": 13629,
+   "frames": 1127,
+   "beats": [
+    {
+     "inicio": 13629,
+     "frames": 359
+    },
+    {
+     "inicio": 13988,
+     "frames": 253
+    },
+    {
+     "inicio": 14241,
+     "frames": 515
+    }
+   ]
+  }
+ ]
+}

@@ -62,6 +62,8 @@ import { clase as planNeu04 } from '../../content/chapters/neu-04/clase';
 import tiemposNeu04 from '../../content/chapters/neu-04/clase-tiempos.json';
 import { clase as planNeu05 } from '../../content/chapters/neu-05/clase';
 import tiemposNeu05 from '../../content/chapters/neu-05/clase-tiempos.json';
+import { clase as planNeu06 } from '../../content/chapters/neu-06/clase';
+import tiemposNeu06 from '../../content/chapters/neu-06/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
@@ -223,6 +225,7 @@ interface CapClase {
 }
 
 const CLASES: CapClase[] = [
+  { id: 'neu-06-clase', titulo: 'Otros síndromes neurológicos', plan: planNeu06, tiempos: tiemposNeu06 as TiemposClase },
   { id: 'neu-05-clase', titulo: 'Motilidad y síndromes motores', plan: planNeu05, tiempos: tiemposNeu05 as TiemposClase },
   { id: 'neu-04-clase', titulo: 'Pares craneales II', plan: planNeu04, tiempos: tiemposNeu04 as TiemposClase },
   { id: 'neu-03-clase', titulo: 'Pares craneales I', plan: planNeu03, tiempos: tiemposNeu03 as TiemposClase },

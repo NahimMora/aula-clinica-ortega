@@ -1,0 +1,106 @@
+{
+  "src": "media/neu-06/clase.mp4",
+  "poster": "media/neu-06/clase.jpg",
+  "vtt": "media/neu-06/clase.vtt",
+  "duration": "10:20",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Fisiopatología · Hipertensión endocraneana"
+    },
+    {
+      "t": 120,
+      "label": "Fisiopatología · La punción"
+    },
+    {
+      "t": 146,
+      "label": "Fisiopatología · La meningitis"
+    },
+    {
+      "t": 183,
+      "label": "Teoría · Sensibilidad"
+    },
+    {
+      "t": 222,
+      "label": "Teoría · Hipertensión endocraneana"
+    },
+    {
+      "t": 385,
+      "label": "Teoría · Diagnóstico y punción"
+    },
+    {
+      "t": 466,
+      "label": "Teoría · Síndrome meníngeo"
+    }
+  ],
+  "script": [
+    {
+      "title": "Tres componentes en una caja que no se estira",
+      "text": "Dentro del cráneo, que es una caja rígida, hay tres componentes: el parénquima cerebral, la sangre, sobre todo la venosa, y el líquido cefalorraquídeo. Si uno de ellos aumenta, por ejemplo por un tumor, los otros dos tienen que disminuir para que la presión no suba. Pero esa compensación es limitada: rara vez se puede bajar la sangre o el líquido lo suficiente. Cuando la presión dentro del cráneo supera los quince milímetros de mercurio, o veinte centímetros de agua, hablamos de hipertensión endocraneana. Ojo: es un aumento de la presión del líquido, no necesariamente de su cantidad."
+    },
+    {
+      "title": "El efecto Cushing",
+      "text": "Cuando la hipertensión endocraneana es grave, comprime los vasos del cerebro: hay isquemia, falta oxígeno y se acumula dióxido de carbono en el tronco. El centro vasomotor responde con vasoconstricción: sube la presión arterial, para intentar empujar más sangre hacia el cerebro. Y los barorreceptores, ante esa hipertensión, frenan el corazón. El resultado es el efecto Cushing: hipertensión arterial, bradicardia y alteraciones de la respiración. No hay que confundirlo con el síndrome de Cushing."
+    },
+    {
+      "title": "Cuando ya no compensa: las hernias",
+      "text": "Cuando los mecanismos de compensación fallan, el cerebro se desplaza y se hernia. La hernia subfalcina pasa por debajo de la hoz del cerebro y compromete la circulación anterior. La transtentorial, o uncal, es la más frecuente: el uncus del lóbulo temporal pasa por la tienda del cerebelo y comprime el mesencéfalo, con el tercer par: aparece midriasis. Y la amigdalina: las amígdalas del cerebelo bajan por el agujero occipital y comprimen el bulbo, que maneja la respiración y el corazón. Es la hernia mortal. El profesor aclara que las hernias se preguntan más en un choice que en el oral."
+    },
+    {
+      "title": "Por qué la punción lumbar puede matar",
+      "text": "Por eso, si el paciente tiene hipertensión endocraneana con edema de papila, ni se les ocurra hacer una punción lumbar. Al sacar líquido por abajo, la diferencia de presión empuja el encéfalo hacia abajo, hacia el agujero occipital. El bulbo se enclava, se comprime, y como maneja la respiración y la función cardiovascular, el paciente hace un paro cardiorrespiratorio."
+    },
+    {
+      "title": "Cómo una infección inflama las meninges",
+      "text": "La mayoría de las meningitis son infecciosas, y el germen llega a las meninges casi siempre por la sangre; también puede llegar por continuidad, desde una sinusitis o una otitis. En el espacio subaracnoideo se replica e inflama: la barrera hematoencefálica se vuelve permeable, hay edema, baja el flujo de sangre, y se tapan las granulaciones de Pacchioni, que son las que reabsorben el líquido cefalorraquídeo. Por eso el paciente tiene, por un lado, irritación meníngea, con rigidez de nuca; y por el otro, hipertensión endocraneana: la cefalea y los vómitos."
+    },
+    {
+      "title": "Las vías de la sensibilidad",
+      "text": "La sensibilidad viaja por tres vías. La espinotalámica anterior lleva el tacto protopático, el tacto grosero. La espinotalámica lateral lleva la sensibilidad termoalgésica: el dolor y la temperatura. Y los cordones posteriores de Goll y Burdach llevan el tacto fino, epicrítico, y la sensibilidad profunda: la vibración, o palestesia; la posición, o batiestesia; y la presión, o barestesia. Por eso la polineuropatía pierde la sensibilidad superficial, distal, en guante y bota, y el síndrome cordonal posterior pierde la profunda."
+    },
+    {
+      "title": "Hipertensión endocraneana",
+      "text": "La hipertensión endocraneana es el aumento de la presión dentro del cráneo por encima de quince milímetros de mercurio, por una alteración del parénquima, de la sangre o del líquido cefalorraquídeo. Del parénquima: las masas, como tumores, abscesos, hemorragias o quistes. Del líquido: más producción, o más a menudo menos reabsorción, como en la meningitis o la hidrocefalia. De la sangre: sobre todo venosa, por una trombosis, o en la encefalopatía hipertensiva. Y una forma benigna, o idiopática, sin causa conocida, propia de mujeres jóvenes obesas, ligada a trastornos hormonales, anticonceptivos o corticoides. Casi siempre, la hipertensión endocraneana es secundaria a otra enfermedad del sistema nervioso."
+    },
+    {
+      "title": "La tríada",
+      "text": "La pregunta que el profesor más hace: la tríada de la hipertensión endocraneana. Primero, la cefalea, la más frecuente: holocraneana, continua, que empeora con la tos, el esfuerzo y los movimientos, y que no calma con los antiinflamatorios. Segundo, el vómito en chorro, o en proyectil: sin náuseas previas. Y tercero, el edema de papila, el hallazgo más importante, bilateral, que se ve en el fondo de ojo. Le duele la cabeza y vomita no siempre es hipertensión endocraneana; si tiene edema de papila bilateral, sí."
+    },
+    {
+      "title": "Las fases del edema de papila",
+      "text": "El edema de papila tiene tres fases, pregunta de parcial. La hiperémica: la papila se pone roja y las venas empiezan a dilatarse. La edematosa: los bordes se borran, las venas están muy dilatadas y tortuosas, las arterias se afinan y aparecen hemorragias. Y la atrófica: la papila queda pálida, por atrofia del nervio óptico. Para pensar en hipertensión endocraneana, el edema tiene que ser bilateral; el unilateral sugiere otra cosa, como un tumor o un desprendimiento de retina."
+    },
+    {
+      "title": "El VI par y el efecto Cushing",
+      "text": "Dos preguntas de bochazo. Cuál es el par craneal que más se lesiona en la hipertensión endocraneana: el sexto, el motor ocular externo; el ojo queda desviado hacia adentro. Y qué es el efecto Cushing: hipertensión arterial, bradicardia y alteraciones de la respiración. No confundir con el síndrome de Cushing. Además puede haber mareos, vértigo, convulsiones y alteración de la conciencia hasta el coma; respiración de Cheyne-Stokes o de Biot; signos de foco, según la zona comprimida; y el síndrome de Foster Kennedy, por un tumor frontal."
+    },
+    {
+      "title": "Diagnóstico: clínico",
+      "text": "Si les preguntan cómo se diagnostica la hipertensión endocraneana: es totalmente clínico, con la tríada y el fondo de ojo. Se completa con una tomografía o una resonancia para buscar la causa, que en las imágenes suele ser un edema cerebral, un tumor o una hemorragia. La punción lumbar, solo si no hay riesgo."
+    },
+    {
+      "title": "Contraindicaciones de la punción lumbar",
+      "text": "Las contraindicaciones de la punción lumbar, pregunta de examen: díganme tres. La hipertensión endocraneana con edema de papila; una lesión expansiva en la fosa posterior; los signos de foco neurológico; una hemorragia cerebral; una infección de la piel en el sitio donde se va a punzar; y una diátesis hemorrágica, o plaquetas bajas."
+    },
+    {
+      "title": "El líquido cefalorraquídeo",
+      "text": "El cuadro del líquido cefalorraquídeo hay que saberlo como el Padre Nuestro. El normal es claro, como agua de roca, con muy pocas células, glucosa cerca del sesenta por ciento de la glucemia y proteínas bajas. En la meningitis bacteriana, o supurada, es turbio, con polimorfonucleares, la glucosa baja, porque las bacterias la consumen, y las proteínas altas. En la viral es claro, con linfocitos y glucosa normal. Y en la tuberculosa también es claro y con linfocitos, pero la glucosa está baja y es la única con los cloruros bajos."
+    },
+    {
+      "title": "Meningitis, meningismo y reacción meníngea",
+      "text": "Lo que el profesor siempre pregunta: la diferencia entre meningitis, meningismo y reacción meníngea. En la meningitis hay clínica, signos y síntomas, y el líquido cefalorraquídeo está alterado. En el meningismo hay clínica, pero el líquido es normal, como en un golpe de calor. Y en la reacción meníngea el líquido está alterado, pero no hay clínica, como después de una punción."
+    },
+    {
+      "title": "Causas de meningitis",
+      "text": "Las causas pueden ser inflamatorias, casi siempre infecciosas: bacterias, virus, hongos como el criptococo, o parásitos como la cisticercosis. O no inflamatorias: hemorragias, neoplasias, colagenopatías. Entre las bacterias, en los recién nacidos predominan el estreptococo agalactiae y la Escherichia coli; después, el neumococo, el meningococo y el Haemophilus. La tuberculosa toma la base del cerebro; las demás, la convexidad. La mayoría son agudas; la tuberculosis y la sífilis pueden ser crónicas."
+    },
+    {
+      "title": "La tríada de la meningitis",
+      "text": "La tríada de la meningitis: siempre fiebre y rigidez de nuca, y un tercer signo que cambia con la edad. En el adulto, la cefalea; algunos docentes toman, en su lugar, la alteración del sensorio. En el niño, las convulsiones. Y en el anciano, la caída del estado de conciencia. La cefalea de la meningitis es menos intensa que la de la hipertensión endocraneana, pero persistente, holocraneana, con fotofobia y sonofobia. Y se explica justamente porque la meningitis produce hipertensión endocraneana."
+    },
+    {
+      "title": "Contractura y signos de irritación meníngea",
+      "text": "La contractura muscular y los signos de irritación meníngea hay que saberlos como el Padre Nuestro. La rigidez de nuca: el paciente no puede tocar el pecho con el mentón, y abre la boca para lograrlo, el signo de Lewinsohn. El signo de Brudzinski: al flexionar la nuca del paciente acostado, flexiona las rodillas; o al flexionarle una pierna, flexiona también la otra. Y el signo de Kernig: no puede sentarse, ni elevar la pierna extendida, sin flexionar la rodilla. Además, el signo del trípode, la posición en gatillo de fusil de los niños y el vientre en batea. Ojo: no toda rigidez de nuca es meningitis; también la tiene un anciano postrado o un parkinsoniano."
+    }
+  ]
+}

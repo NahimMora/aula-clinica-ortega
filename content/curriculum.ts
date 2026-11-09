@@ -75,7 +75,7 @@ export const SYSTEMS: SystemMeta[] = [
       ch('neuro', 'neu-03', 'Pares craneales I', 'Pares craneales', 'Clasificación y origen; olfatorio; óptico (vía óptica, hemianopsias); oculomotores III, IV y VI, pupila y nistagmo.', 'Clases Pares craneales 1–3', 'published'),
       ch('neuro', 'neu-04', 'Pares craneales II', 'Pares craneales', 'Trigémino, facial (central y periférica), vestibulococlear (Weber y Rinne), IX a XII y la inervación de la lengua.', 'Clases Pares craneales 4–6', 'published'),
       ch('neuro', 'neu-05', 'Motilidad y síndromes motores', 'Síndromes', 'Ataxia vestibular, cerebelosa y cordonal; piramidal (1.ª y 2.ª motoneurona, alternas); Parkinson y cerebeloso con sus tríadas.', 'Clases Síndromes del SN 1–4 · Meet 24/10 · Libro p493–505', 'published'),
-      ch('neuro', 'neu-06', 'Otros síndromes neurológicos', 'Síndromes', 'Sensibilidad, síndrome meníngeo e hipertensión endocraneana.', 'Síndromes del SN · Libro p481–506'),
+      ch('neuro', 'neu-06', 'Otros síndromes neurológicos', 'Síndromes', 'Sensibilidad, hipertensión endocraneana (tríada, papila, VI par, Cushing, hernias), punción lumbar y LCR, síndrome meníngeo.', 'Clases Síndromes del SN 5–7 · REC 26/10 · Meníngeo y osteo', 'published'),
     ],
   },
   {
