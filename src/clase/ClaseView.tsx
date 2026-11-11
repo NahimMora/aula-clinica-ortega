@@ -188,8 +188,10 @@ export default function ClaseView({ c }: { c: Chapter }) {
           <h2 className="clase__h">{actual.titulo}</h2>
           <ErrorBoundary label={`la sección «${actual.titulo}»`}>
             {actual.id === 'mapa' && <MapaArbol data={c.map} arbol={plan.mapa} />}
-            {actual.id === 'fisio' && <Visor mazo={plan.fisio} chapterId={c.id} />}
-            {actual.id === 'teoria' && <Visor mazo={plan.teoria} chapterId={c.id} seccionPedida={destino?.tab === 'teoria' ? destino.seccion : undefined} />}
+            {actual.id === 'fisio' && <Visor mazo={plan.fisio} chapterId={c.id} diapoPedida={params.get('d') ?? undefined} />}
+            {actual.id === 'teoria' && (
+              <Visor mazo={plan.teoria} chapterId={c.id} seccionPedida={destino?.tab === 'teoria' ? destino.seccion : undefined} diapoPedida={params.get('d') ?? undefined} />
+            )}
             {actual.id === 'video' && (
               <>
                 {plan.video ? <VideoPlayer video={plan.video} title={c.title} /> : <p className="empty">La clase completa todavía no está disponible.</p>}

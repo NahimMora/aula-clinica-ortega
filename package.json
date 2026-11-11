@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "check:content": "node scripts/check-content.mjs",
+    "preguntas": "node scripts/build-preguntas.mjs",
     "pdf": "node scripts/build-pdfs.mjs http://localhost:4791/aula-clinica-ortega/",
     "smoke": "node scripts/smoke-test.mjs",
     "tts": "node scripts/tts.mjs",

@@ -54,7 +54,7 @@ function useReloj(d: D, completa: boolean, nonce: number, visible: () => boolean
   return r;
 }
 
-export function Visor({ mazo, chapterId, seccionPedida }: { mazo: Mazo; chapterId: string; seccionPedida?: string }) {
+export function Visor({ mazo, chapterId, seccionPedida, diapoPedida }: { mazo: Mazo; chapterId: string; seccionPedida?: string; diapoPedida?: string }) {
   const claveIdx = `aula:clase:${chapterId}:${mazo.id}`;
   const claveVistas = `aula:clase:${chapterId}:vistas`;
   const [soloExamen, setSoloExamen] = useState(false);
@@ -103,6 +103,15 @@ export function Visor({ mazo, chapterId, seccionPedida }: { mazo: Mazo; chapterI
     const prim = mazo.diapos.find((x) => x.sec === seccionPedida);
     if (prim) ir(prim);
   }, [seccionPedida, mazo, ir]);
+
+  // Diapositiva puntual pedida por enlace (?d=…), p. ej., desde Preguntas de examen.
+  useEffect(() => {
+    const dp = diapoPedida ? mazo.diapos.find((x) => x.id === diapoPedida) : undefined;
+    if (!dp) return;
+    ir(dp);
+    const h = window.setTimeout(() => escenario.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 200);
+    return () => window.clearTimeout(h);
+  }, [diapoPedida, mazo, ir]);
 
   // Mantiene visible el apartado activo dentro de la barra, sin mover la página.
   useEffect(() => {

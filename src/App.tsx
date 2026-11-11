@@ -14,6 +14,7 @@ const ExamPage = lazy(() => import('@/pages/Study').then((m) => ({ default: m.Ex
 const ReviewPage = lazy(() => import('@/pages/Study').then((m) => ({ default: m.ReviewPage })));
 const ProgressPage = lazy(() => import('@/pages/ProgressPage').then((m) => ({ default: m.ProgressPage })));
 const ManeuversPage = lazy(() => import('@/pages/ManeuversPage').then((m) => ({ default: m.ManeuversPage })));
+const PreguntasPage = lazy(() => import('@/pages/PreguntasPage').then((m) => ({ default: m.PreguntasPage })));
 const SearchPage = lazy(() => import('@/pages/SearchPage').then((m) => ({ default: m.SearchPage })));
 
 export function App() {
@@ -32,6 +33,7 @@ export function App() {
             <Route path="repasar" element={<ReviewPage />} />
             <Route path="progreso" element={<ProgressPage />} />
             <Route path="maniobras" element={<ManeuversPage />} />
+            <Route path="preguntas" element={<PreguntasPage />} />
             <Route path="buscar" element={<SearchPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>

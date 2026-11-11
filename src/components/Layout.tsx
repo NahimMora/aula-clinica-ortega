@@ -14,13 +14,24 @@ const NAV = [
   { to: '/progreso', label: 'Progreso', icon: 'chart' },
 ];
 
+/** Apartado «Preguntas de examen» de la columna: oral más reciente y un acceso por sistema. */
+const PREGUNTAS = [
+  { s: 'oral-2026-11-10', label: 'Lo que tomó el martes 10/11' },
+  { s: 'digestivo', label: 'Digestivo' },
+  { s: 'renal', label: 'Nefrourológico' },
+  { s: 'neuro', label: 'Neurología' },
+  { s: 'soma', label: 'Soma y maniobras' },
+];
+
 export function Layout() {
   const [open, setOpen] = useState(false);
   const loc = useLocation();
   useEffect(() => {
-    setOpen(false);
     window.scrollTo({ top: 0 });
   }, [loc.pathname]);
+  useEffect(() => {
+    setOpen(false);
+  }, [loc.pathname, loc.search]);
   return (
     <div className={`shell ${open ? 'is-menu-open' : ''}`}>
       <a className="skip" href="#main">
@@ -130,6 +141,24 @@ function Sidebar() {
           </ul>
         </div>
       ))}
+      <div className="sidebar__sys tone-gold">
+        <NavLink to="/preguntas" className="sidebar__sys-title">
+          <span className="sidebar__sys-icon">
+            <Icon name="alert" size={17} />
+          </span>
+          Preguntas de examen
+        </NavLink>
+        <ul>
+          {PREGUNTAS.map((p) => (
+            <li key={p.s}>
+              <Link to={`/preguntas?s=${p.s}`} className="sidebar__ch">
+                <span className="dot" aria-hidden="true" />
+                <span>{p.label}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </aside>
   );
 }

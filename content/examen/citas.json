@@ -1,0 +1,2742 @@
+{
+ "sistemas": [
+  {
+   "id": "digestivo",
+   "title": "Sistema digestivo",
+   "tone": "rose",
+   "capitulos": [
+    {
+     "id": "dig-01",
+     "title": "Vómitos, disfagia y dispepsia",
+     "items": [
+      {
+       "id": "dig-01:t-definiciones",
+       "origen": "preguntero",
+       "texto": "¿Qué es el vómito? ¿Qué es la náusea?",
+       "link": "/capitulo/dig-01?t=teoria&d=t-definiciones",
+       "tema": "Vómito, náusea y lo que no es vómito"
+      },
+      {
+       "id": "dig-01:t-clasificacion",
+       "origen": "ortega",
+       "texto": "Cómo era el vómito y en qué momento apareció.",
+       "cita": "Les pueden preguntar.",
+       "ref": {
+        "src": "mc-dig-2",
+        "t": "16:21"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-clasificacion",
+       "tema": "Dos formas de clasificarlo"
+      },
+      {
+       "id": "dig-01:t-horario",
+       "origen": "preguntero",
+       "texto": "Tipos o clasificación de los vómitos.",
+       "link": "/capitulo/dig-01?t=teoria&d=t-horario",
+       "tema": "Por el horario"
+      },
+      {
+       "id": "dig-01:t-hemat-hemop",
+       "origen": "ortega",
+       "texto": "Diagnóstico diferencial entre hematemesis y hemoptisis.",
+       "cita": "Diagnóstico diferencial con hemoptisis, pregunta de parcial… por favor ese cuadrito tienen que sabérselo.",
+       "ref": {
+        "src": "hd-1",
+        "t": "08:10"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-hemat-hemop",
+       "tema": "Hematemesis frente a hemoptisis"
+      },
+      {
+       "id": "dig-01:t-complicaciones",
+       "origen": "ortega",
+       "texto": "Las complicaciones del vómito: en clase se avisa que se preguntan.",
+       "ref": {
+        "src": "mc-dig-2",
+        "t": "23:19"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-complicaciones",
+       "tema": "Complicaciones del vómito"
+      },
+      {
+       "id": "dig-01:t-mallory",
+       "origen": "preguntero",
+       "texto": "¿Qué es el síndrome de Mallory-Weiss? Tríada o cronología.",
+       "cita": "Hay una tríada característica… hematemesis, vómito y alcoholismo.",
+       "ref": {
+        "src": "hd-1",
+        "t": "16:48"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-mallory",
+       "tema": "Síndrome de Mallory-Weiss"
+      },
+      {
+       "id": "dig-01:t-laboratorio",
+       "origen": "ortega",
+       "texto": "El ionograma en el paciente que vomita.",
+       "cita": "…pero no hay que olvidar nunca el ionograma.",
+       "ref": {
+        "src": "mc-dig-2",
+        "t": "30:46"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-laboratorio",
+       "tema": "Laboratorio: CEUCGO y algo más"
+      },
+      {
+       "id": "dig-01:t-orofaringea",
+       "origen": "ortega",
+       "texto": "Las características de la disfagia orofaríngea.",
+       "cita": "Esta característica no la pueden… olvidarse, todo está aquí.",
+       "ref": {
+        "src": "mc-dig-1",
+        "t": "04:03"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-orofaringea",
+       "tema": "Orofaríngea: cómo se presenta"
+      },
+      {
+       "id": "dig-01:t-acalasia",
+       "origen": "ortega",
+       "texto": "Disfagia intermitente y lentamente progresiva para sólidos y líquidos.",
+       "cita": "Lo que siempre suelen preguntar es este que voy a marcar aquí.",
+       "ref": {
+        "src": "mc-dig-1",
+        "t": "21:38"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-acalasia",
+       "tema": "La que siempre preguntan"
+      },
+      {
+       "id": "dig-01:t-funcional-organica",
+       "origen": "ortega",
+       "texto": "La más frecuente es la funcional; entre las orgánicas, la úlcera.",
+       "cita": "La número 1, la que no deben olvidarse, es la úlcera péptica.",
+       "ref": {
+        "src": "mc-dig-1",
+        "t": "31:46"
+       },
+       "link": "/capitulo/dig-01?t=teoria&d=t-funcional-organica",
+       "tema": "Funcional u orgánica"
+      }
+     ]
+    },
+    {
+     "id": "dig-02",
+     "title": "Dolor abdominal y abdomen agudo",
+     "items": [
+      {
+       "id": "dig-02:t-sindrome",
+       "origen": "preguntero",
+       "texto": "¿Qué es el abdomen agudo? ¿Cuál es su síntoma característico?",
+       "link": "/capitulo/dig-02?t=teoria&d=t-sindrome",
+       "tema": "Abdomen agudo: qué es"
+      },
+      {
+       "id": "dig-02:t-rebote",
+       "origen": "preguntero",
+       "texto": "Tipos de dolor: visceral, somático y referido.",
+       "link": "/capitulo/dig-02?t=teoria&d=t-rebote",
+       "tema": "Compresión, descompresión y rebote"
+      },
+      {
+       "id": "dig-02:t-clasificacion",
+       "origen": "preguntero",
+       "texto": "¿Cómo se clasifica según la duración y según la etiología?",
+       "link": "/capitulo/dig-02?t=teoria&d=t-clasificacion",
+       "tema": "Cómo se clasifica"
+      },
+      {
+       "id": "dig-02:t-ecg",
+       "origen": "preguntero",
+       "texto": "Dolor agudo supraumbilical: electrocardiograma.",
+       "link": "/capitulo/dig-02?t=teoria&d=t-ecg",
+       "tema": "La regla que no se negocia"
+      },
+      {
+       "id": "dig-02:t-cinco",
+       "origen": "ortega",
+       "texto": "Nombrar los cinco.",
+       "cita": "Esto es pregunta de parcial… hay cinco grandes abdómenes agudos quirúrgicos que se tienen que saber como el Padre Nuestro.",
+       "ref": {
+        "src": "mc-dig-3",
+        "t": "17:02"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-cinco",
+       "tema": "Los cinco abdómenes agudos quirúrgicos"
+      },
+      {
+       "id": "dig-02:t-cuadro5",
+       "origen": "preguntero",
+       "texto": "Cuadro de causas, dolor y examen clave de cada uno.",
+       "link": "/capitulo/dig-02?t=teoria&d=t-cuadro5",
+       "tema": "El cuadro para estudiar"
+      },
+      {
+       "id": "dig-02:t-cronologia",
+       "origen": "preguntero",
+       "texto": "Diferenciar cronología y tríada de Murphy.",
+       "cita": "Hay dos cosas importantes que quiero que diferencien: cronología de Murphy y tríada de Murphy.",
+       "ref": {
+        "src": "mc-dig-3",
+        "t": "20:25"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-cronologia",
+       "tema": "Cronología de Murphy: el recorrido"
+      },
+      {
+       "id": "dig-02:t-triada",
+       "origen": "preguntero",
+       "texto": "¿Qué es la tríada de Murphy?",
+       "ref": {
+        "src": "mc-dig-3",
+        "t": "21:10"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-triada",
+       "tema": "Tríada de Murphy: la secuencia"
+      },
+      {
+       "id": "dig-02:t-blumberg",
+       "origen": "preguntero",
+       "texto": "Rebote localizado y generalizado.",
+       "cita": "Eso tienen que conocer.",
+       "ref": {
+        "src": "mc-dig-3",
+        "t": "27:59"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-blumberg",
+       "tema": "Blumberg y Gueneau de Mussy"
+      },
+      {
+       "id": "dig-02:t-obstructivo",
+       "origen": "preguntero",
+       "texto": "Obstructivo mecánico: etiologías, clínica y examen físico.",
+       "link": "/capitulo/dig-02?t=teoria&d=t-obstructivo",
+       "tema": "Obstructivo: las causas"
+      },
+      {
+       "id": "dig-02:t-perforativo",
+       "origen": "preguntero",
+       "texto": "Perforativo: etiologías, clínica y examen físico.",
+       "link": "/capitulo/dig-02?t=teoria&d=t-perforativo",
+       "tema": "Perforativo: causas y peritonitis"
+      },
+      {
+       "id": "dig-02:t-jobert",
+       "origen": "ortega",
+       "texto": "Definir el signo de Jobert.",
+       "cita": "Si no saben este signo, los mandan a su casa.",
+       "ref": {
+        "src": "mc-dig-4",
+        "t": "05:09"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-jobert",
+       "tema": "Signo de Jobert"
+      },
+      {
+       "id": "dig-02:t-hemorragico",
+       "origen": "preguntero",
+       "texto": "Hemorrágico: etiologías, clínica y examen físico.",
+       "link": "/capitulo/dig-02?t=teoria&d=t-hemorragico",
+       "tema": "Hemorrágico: se desangra adentro"
+      },
+      {
+       "id": "dig-02:t-matidez",
+       "origen": "ortega",
+       "texto": "Matidez a la percusión en el hemorrágico.",
+       "cita": "Eso es lo que te van a preguntar en el parcial.",
+       "ref": {
+        "src": "mc-dig-4",
+        "t": "12:24"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-matidez",
+       "tema": "A la percusión: matidez"
+      },
+      {
+       "id": "dig-02:t-cullen",
+       "origen": "preguntero",
+       "texto": "¿A qué corresponden Cullen y Grey-Turner?",
+       "cita": "No es patognomónico de la pancreatitis necrohemorrágica. Ojo por eso, muchos dicen eso, no es así.",
+       "ref": {
+        "src": "mc-dig-4",
+        "t": "09:35"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-cullen",
+       "tema": "Cullen y Grey-Turner"
+      },
+      {
+       "id": "dig-02:t-aire-sangre",
+       "origen": "ortega",
+       "texto": "Percusión en perforativo y hemorrágico.",
+       "cita": "Lo que yo no quiero que se olviden son dos.",
+       "ref": {
+        "src": "mc-dig-4",
+        "t": "25:28"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-aire-sangre",
+       "tema": "Lo que no se puede olvidar"
+      },
+      {
+       "id": "dig-02:t-vascular",
+       "origen": "preguntero",
+       "texto": "Vascular: etiologías, clínica y examen físico.",
+       "cita": "Es el más letal de todos los abdómenes agudos.",
+       "ref": {
+        "src": "mc-dig-4",
+        "t": "13:04"
+       },
+       "link": "/capitulo/dig-02?t=teoria&d=t-vascular",
+       "tema": "Vascular o isquémico: el más letal"
+      },
+      {
+       "id": "dig-02:t-alicia",
+       "origen": "preguntero",
+       "texto": "¿Cómo se semiografía el dolor?",
+       "link": "/capitulo/dig-02?t=teoria&d=t-alicia",
+       "tema": "Anamnesis: ALICIA"
+      },
+      {
+       "id": "dig-02:t-regiones",
+       "origen": "preguntero",
+       "texto": "Cuadro según cuadrantes y posibles causas de abdomen agudo.",
+       "link": "/capitulo/dig-02?t=teoria&d=t-regiones",
+       "tema": "Dónde duele y qué hay debajo"
+      }
+     ]
+    },
+    {
+     "id": "dig-03",
+     "title": "Diarrea, constipación y trastornos anorrectales",
+     "items": [
+      {
+       "id": "dig-03:t-definicion",
+       "origen": "preguntero",
+       "texto": "¿Qué es la diarrea? Definición.",
+       "link": "/capitulo/dig-03?t=teoria&d=t-definicion",
+       "tema": "Diarrea: qué es"
+      },
+      {
+       "id": "dig-03:t-evolucion",
+       "origen": "preguntero",
+       "texto": "¿Cómo se clasifica la diarrea?",
+       "link": "/capitulo/dig-03?t=teoria&d=t-evolucion",
+       "tema": "Por su evolución"
+      },
+      {
+       "id": "dig-03:t-alta-baja",
+       "origen": "ortega",
+       "texto": "Diarrea alta frente a diarrea baja.",
+       "cita": "Es importante que la conozcan.",
+       "ref": {
+        "src": "mc-dig-5",
+        "t": "03:09"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-alta-baja",
+       "tema": "Alta o baja"
+      },
+      {
+       "id": "dig-03:t-acuosa-disenterica",
+       "origen": "ortega",
+       "texto": "Diarrea acuosa y disentérica.",
+       "cita": "Esto no se lo puse en el apunte, pero usted lo tiene que conocer.",
+       "ref": {
+        "src": "mc-dig-5",
+        "t": "07:05"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-acuosa-disenterica",
+       "tema": "Acuosa y disentérica: quién las produce"
+      },
+      {
+       "id": "dig-03:t-disentericas",
+       "origen": "ortega",
+       "texto": "Las bacterias de la diarrea disentérica.",
+       "cita": "Y yo siempre digo dos… Nunca no olvidemos estas.",
+       "ref": {
+        "src": "mc-dig-5",
+        "t": "09:22"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-disentericas",
+       "tema": "Las dos bacterias de la disentérica"
+      },
+      {
+       "id": "dig-03:t-toxinas",
+       "origen": "ortega",
+       "texto": "Fármacos y diarrea acuosa.",
+       "cita": "…los fármacos producen una diarrea acuosa, no hay que olvidarse…",
+       "ref": {
+        "src": "mc-dig-5",
+        "t": "18:47"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-toxinas",
+       "tema": "Las toxinas y sus ejemplos"
+      },
+      {
+       "id": "dig-03:t-persistente",
+       "origen": "preguntero",
+       "texto": "¿Qué es la diarrea persistente?",
+       "link": "/capitulo/dig-03?t=teoria&d=t-persistente",
+       "tema": "Diarrea persistente"
+      },
+      {
+       "id": "dig-03:t-cronica",
+       "origen": "ortega",
+       "texto": "La diarrea malabsortiva.",
+       "cita": "La que yo quiero que ustedes se aprendan… y preguntan en el final.",
+       "ref": {
+        "src": "mc-dig-5",
+        "t": "21:26"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-cronica",
+       "tema": "Diarrea crónica: cinco mecanismos"
+      },
+      {
+       "id": "dig-03:t-roma",
+       "origen": "ortega",
+       "texto": "Definición de constipación por criterios de Roma.",
+       "cita": "…esto no se tiene que olvidar, estas [son] preguntas [de] parciales.",
+       "ref": {
+        "src": "mc-dig-5",
+        "t": "29:27"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-roma",
+       "tema": "Constipación: criterios de Roma III"
+      },
+      {
+       "id": "dig-03:t-bristol",
+       "origen": "ortega",
+       "texto": "Los siete tipos de la escala de Bristol.",
+       "cita": "…una escala importantísima… que preguntan en los parciales, que se llama escala de Bristol, que son siete tipos.",
+       "ref": {
+        "src": "mc-dig-6",
+        "t": "01:43"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-bristol",
+       "tema": "Escala de Bristol"
+      },
+      {
+       "id": "dig-03:t-pujo-tenesmo",
+       "origen": "ortega",
+       "texto": "Qué es el pujo y qué es el tenesmo.",
+       "cita": "…eso es pregunta de parcial y eso aparece en las diarreas disentéricas.",
+       "ref": {
+        "src": "mc-dig-6",
+        "t": "12:52"
+       },
+       "link": "/capitulo/dig-03?t=teoria&d=t-pujo-tenesmo",
+       "tema": "Pujo y tenesmo"
+      },
+      {
+       "id": "dig-03:t-guante",
+       "origen": "preguntero",
+       "texto": "¿Cómo se realiza la prueba del guante?",
+       "link": "/capitulo/dig-03?t=teoria&d=t-guante",
+       "tema": "Diagnóstico: inspección, tacto y guante"
+      }
+     ]
+    },
+    {
+     "id": "dig-04",
+     "title": "Ictericia",
+     "items": [
+      {
+       "id": "dig-04:t-aviso",
+       "origen": "ortega",
+       "texto": "Ictericia para el tercer parcial.",
+       "cita": "Ictericia, preguntan muchísimo en este parcial.",
+       "ref": {
+        "src": "mc-dig-6",
+        "t": "16:13"
+       },
+       "link": "/capitulo/dig-04?t=teoria&d=t-aviso",
+       "tema": "Ictericia: el aviso del profesor"
+      },
+      {
+       "id": "dig-04:t-definicion",
+       "origen": "preguntero",
+       "texto": "Definición y valores normales de bilirrubina total, directa e indirecta.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-definicion",
+       "tema": "Qué es y valores normales"
+      },
+      {
+       "id": "dig-04:t-pseudo",
+       "origen": "preguntero",
+       "texto": "Hiperbilirrubinemia subclínica y pseudoictericia.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-pseudo",
+       "tema": "No confundir: pseudoictericia"
+      },
+      {
+       "id": "dig-04:t-indirecta-directa",
+       "origen": "preguntero",
+       "texto": "Tabla de diferenciación entre bilirrubina indirecta y directa.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-indirecta-directa",
+       "tema": "Indirecta y directa"
+      },
+      {
+       "id": "dig-04:t-kernicterus",
+       "origen": "preguntero",
+       "texto": "¿Qué es el kernicterus?",
+       "link": "/capitulo/dig-04?t=teoria&d=t-kernicterus",
+       "tema": "Kernicterus"
+      },
+      {
+       "id": "dig-04:t-clasificacion",
+       "origen": "preguntero",
+       "texto": "Clasifique la ictericia y diga qué bilirrubina aumenta en cada una.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-clasificacion",
+       "tema": "Pre, intra y poshepática"
+      },
+      {
+       "id": "dig-04:t-causas-pre",
+       "origen": "preguntero",
+       "texto": "Etiologías prehepáticas, hepáticas y poshepáticas.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-causas-pre",
+       "tema": "Causas prehepáticas y hepáticas"
+      },
+      {
+       "id": "dig-04:t-acompanantes",
+       "origen": "preguntero",
+       "texto": "Rasgos clínicos que hacen pensar en un paciente ictérico.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-acompanantes",
+       "tema": "Síntomas que acompañan"
+      },
+      {
+       "id": "dig-04:t-examen",
+       "origen": "ortega",
+       "texto": "El hábito de Chvostek.",
+       "cita": "Esos hábitos de Chvostek lo van a volver a preguntar ahora y lo tienen que saber.",
+       "ref": {
+        "src": "ef-dig-1",
+        "t": "17:15"
+       },
+       "link": "/capitulo/dig-04?t=teoria&d=t-examen",
+       "tema": "Examen físico"
+      },
+      {
+       "id": "dig-04:t-coledociano",
+       "origen": "ortega",
+       "texto": "Síndrome coledociano: ictericia, acolia o hipocolia y coluria.",
+       "cita": "¿Qué es síndrome coledociano? Pregunta de parcial… como si fuese el padre nuestro, me lo saben.",
+       "ref": {
+        "src": "vesic",
+        "t": "24:49"
+       },
+       "link": "/capitulo/dig-04?t=teoria&d=t-coledociano",
+       "tema": "Síndrome coledociano"
+      },
+      {
+       "id": "dig-04:t-courvoisier",
+       "origen": "preguntero",
+       "texto": "Ley de Courvoisier-Terrier y signo de Courvoisier.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-courvoisier",
+       "tema": "Ley de Courvoisier-Terrier"
+      },
+      {
+       "id": "dig-04:t-marcadores",
+       "origen": "preguntero",
+       "texto": "Rasgos de laboratorio y marcadores a solicitar.",
+       "link": "/capitulo/dig-04?t=teoria&d=t-marcadores",
+       "tema": "Tres grupos de marcadores"
+      }
+     ]
+    },
+    {
+     "id": "dig-05",
+     "title": "Examen físico del aparato digestivo",
+     "items": [
+      {
+       "id": "dig-05:t-ombligo",
+       "origen": "ortega",
+       "texto": "Abdomen distendido: ombligo hacia adentro u hacia afuera.",
+       "cita": "Esto lo tienen que saber como el padre nuestro.",
+       "ref": {
+        "src": "ef-dig-1",
+        "t": "08:39"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-ombligo",
+       "tema": "El ombligo en un abdomen distendido"
+      },
+      {
+       "id": "dig-05:t-cicatrices",
+       "origen": "ortega",
+       "texto": "Cicatriz quirúrgica = abdomen asimétrico.",
+       "cita": "Es un abdomen asimétrico, eso no se olviden nunca.",
+       "ref": {
+        "src": "ef-dig-1",
+        "t": "16:05"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-cicatrices",
+       "tema": "Cicatrices: abdomen asimétrico"
+      },
+      {
+       "id": "dig-05:t-chvostek",
+       "origen": "ortega",
+       "texto": "El hábito de Chvostek.",
+       "cita": "Esos hábitos de Chvostek lo van a volver a preguntar ahora y lo tienen que saber.",
+       "ref": {
+        "src": "ef-dig-1",
+        "t": "17:15"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-chvostek",
+       "tema": "Vello: el hábito de Chvostek"
+      },
+      {
+       "id": "dig-05:t-cullen",
+       "origen": "ortega",
+       "texto": "Cullen y Grey-Turner no son patognomónicos de pancreatitis.",
+       "cita": "Ustedes dicen eso, lo van a bochar conmigo.",
+       "ref": {
+        "src": "ef-dig-1",
+        "t": "20:18"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-cullen",
+       "tema": "Equimosis: Cullen y Grey-Turner"
+      },
+      {
+       "id": "dig-05:t-soplos",
+       "origen": "ortega",
+       "texto": "Los soplos del abdomen; el más importante, el del aneurisma de aorta.",
+       "cita": "Eso no se tiene que olvidar.",
+       "ref": {
+        "src": "ef-dig-1",
+        "t": "29:31"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-soplos",
+       "tema": "Soplos, frotes y murmullo"
+      },
+      {
+       "id": "dig-05:t-ascitis",
+       "origen": "ortega",
+       "texto": "Ascitis.",
+       "cita": "Tienen que sabérselo como la palma de su mano… no me saben ascitis, lo van a bochar.",
+       "ref": {
+        "src": "ef-dig-2",
+        "t": "04:10"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-ascitis",
+       "tema": "Ascitis: matidez de concavidad superior"
+      },
+      {
+       "id": "dig-05:t-tension",
+       "origen": "ortega",
+       "texto": "Blumberg (localizado) y Gueneau de Mussy (generalizado).",
+       "cita": "Si es localizada se llama signo de Blumberg, eso no se olvide.",
+       "ref": {
+        "src": "ef-dig-2",
+        "t": "16:50"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-tension",
+       "tema": "Abdomen tenso y doloroso"
+      },
+      {
+       "id": "dig-05:t-chapoteo",
+       "origen": "ortega",
+       "texto": "Chapoteo gástrico: síndrome pilórico.",
+       "cita": "Chapoteo gástrico o bazuqueo gástrico, pregunta de parcial.",
+       "ref": {
+        "src": "ef-dig-2",
+        "t": "18:12"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-chapoteo",
+       "tema": "Chapoteo o bazuqueo gástrico"
+      },
+      {
+       "id": "dig-05:t-apendiculares",
+       "origen": "ortega",
+       "texto": "Los puntos apendiculares.",
+       "cita": "Puntos apendiculares como si fuese la palma de su mano, me lo tienen que saber.",
+       "ref": {
+        "src": "ef-dig-2",
+        "t": "19:27"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-apendiculares",
+       "tema": "Puntos apendiculares"
+      },
+      {
+       "id": "dig-05:t-pancreaticos",
+       "origen": "ortega",
+       "texto": "Puntos pancreáticos y biliares.",
+       "cita": "…y los puntos pancreáticos biliares, me lo saben todos.",
+       "ref": {
+        "src": "ef-dig-2",
+        "t": "21:06"
+       },
+       "link": "/capitulo/dig-05?t=teoria&d=t-pancreaticos",
+       "tema": "Puntos pancreáticos y biliares"
+      },
+      {
+       "id": "dig-05:dig05-d03",
+       "origen": "ortega",
+       "texto": "¿En qué orden se examina el abdomen y por qué difiere del tórax?",
+       "cita": "…uno del examen físico más preguntado de todos junto con el respiratorio",
+       "ref": {
+        "src": "ef-dig-1",
+        "t": "01:05"
+       },
+       "link": "/capitulo/dig-05?s=d-dig05-d03",
+       "desarrollo": true
+      }
+     ]
+    },
+    {
+     "id": "dig-06",
+     "title": "Síndrome esofágico",
+     "items": [
+      {
+       "id": "dig-06:t-definicion",
+       "origen": "preguntero",
+       "texto": "Definición de síndrome esofágico y sus cinco síntomas.",
+       "link": "/capitulo/dig-06?t=teoria&d=t-definicion",
+       "tema": "Síndrome esofágico: los cinco síntomas"
+      },
+      {
+       "id": "dig-06:t-etiologias",
+       "origen": "preguntero",
+       "texto": "Cuadro de etiologías del síndrome esofágico con ejemplos.",
+       "link": "/capitulo/dig-06?t=teoria&d=t-etiologias",
+       "tema": "El cuadro de etiologías"
+      }
+     ]
+    },
+    {
+     "id": "dig-07",
+     "title": "Síndrome ulceroso y gastritis",
+     "items": [
+      {
+       "id": "dig-07:t-aviso",
+       "origen": "ortega",
+       "texto": "Úlcera péptica y gastritis.",
+       "cita": "Pregunta muchísimo lo que es úlcera péptica, tienen que saber úlcera péptica, tienen que saber de gastritis.",
+       "ref": {
+        "src": "sd-ulc-1",
+        "t": "00:23"
+       },
+       "link": "/capitulo/dig-07?t=teoria&d=t-aviso",
+       "tema": "Úlcera y gastritis: lo más preguntado"
+      },
+      {
+       "id": "dig-07:t-clasificacion",
+       "origen": "preguntero",
+       "texto": "Clasificación de las úlceras pépticas.",
+       "link": "/capitulo/dig-07?t=teoria&d=t-clasificacion",
+       "tema": "Aguda o crónica"
+      },
+      {
+       "id": "dig-07:t-localizacion",
+       "origen": "ortega",
+       "texto": "Localización de la úlcera péptica.",
+       "cita": "Antro gástrico y primera y segunda porción del duodeno. Eso sí o sí se tienen que saber.",
+       "ref": {
+        "src": "sd-ulc-1",
+        "t": "03:00"
+       },
+       "link": "/capitulo/dig-07?t=teoria&d=t-localizacion",
+       "tema": "Dónde se ubican"
+      },
+      {
+       "id": "dig-07:t-etiologia",
+       "origen": "ortega",
+       "texto": "Factores de riesgo más frecuentes: H. pylori y AINE. La fisiopatogenia puede tomarse en el oral.",
+       "cita": "…no es pregunta de parcial en el choice, pero lo pueden preguntar en el oral.",
+       "ref": {
+        "src": "sd-ulc-2",
+        "t": "15:18"
+       },
+       "link": "/capitulo/dig-07?t=teoria&d=t-etiologia",
+       "tema": "Las dos causas más frecuentes"
+      },
+      {
+       "id": "dig-07:t-otras-causas",
+       "origen": "preguntero",
+       "texto": "Principales etiologías. ¿Qué es el síndrome de Zollinger-Ellison?",
+       "link": "/capitulo/dig-07?t=teoria&d=t-otras-causas",
+       "tema": "Otros factores"
+      },
+      {
+       "id": "dig-07:t-diagnostico",
+       "origen": "ortega",
+       "texto": "El estándar de la úlcera es la endoscopia digestiva alta.",
+       "cita": "Preguntas de parcial, y esto lo preguntan en los choices.",
+       "ref": {
+        "src": "sd-ulc-2",
+        "t": "33:12"
+       },
+       "link": "/capitulo/dig-07?t=teoria&d=t-diagnostico",
+       "tema": "Diagnóstico: endoscopia"
+      },
+      {
+       "id": "dig-07:t-complicaciones",
+       "origen": "ortega",
+       "texto": "Las complicaciones de la úlcera.",
+       "cita": "¿Cuáles son las complicaciones? Preguntas de parcial.",
+       "ref": {
+        "src": "sd-ulc-3",
+        "t": "05:35"
+       },
+       "link": "/capitulo/dig-07?t=teoria&d=t-complicaciones",
+       "tema": "Complicaciones de la úlcera"
+      },
+      {
+       "id": "dig-07:t-gastritis",
+       "origen": "preguntero",
+       "texto": "Definición y clasificación de la gastritis.",
+       "link": "/capitulo/dig-07?t=teoria&d=t-gastritis",
+       "tema": "Gastritis: definición y clasificación"
+      },
+      {
+       "id": "dig-07:t-ab",
+       "origen": "ortega",
+       "texto": "La gastritis no erosiva: tipo A y tipo B.",
+       "cita": "La no erosiva es la que le van a preguntar a ustedes.",
+       "ref": {
+        "src": "sd-ulc-3",
+        "t": "10:07"
+       },
+       "link": "/capitulo/dig-07?t=teoria&d=t-ab",
+       "tema": "Gastritis tipo A y tipo B"
+      }
+     ]
+    },
+    {
+     "id": "dig-08",
+     "title": "Síndrome pilórico e íleo",
+     "items": [
+      {
+       "id": "dig-08:t-piloro-def",
+       "origen": "ortega",
+       "texto": "Síndrome pilórico: definición, causas, clínica y diagnóstico (en el oral).",
+       "cita": "Se lo van a preguntar en el oral… la clínica, esto sí o sí tienen que saber.",
+       "ref": {
+        "src": "sd-pil",
+        "t": "05:04"
+       },
+       "link": "/capitulo/dig-08?t=teoria&d=t-piloro-def",
+       "tema": "Síndrome pilórico: qué es"
+      },
+      {
+       "id": "dig-08:t-piloro-causas",
+       "origen": "preguntero",
+       "texto": "Etiología del síndrome pilórico: obstructiva y no obstructiva.",
+       "link": "/capitulo/dig-08?t=teoria&d=t-piloro-causas",
+       "tema": "Causas"
+      },
+      {
+       "id": "dig-08:t-piloro-clinica",
+       "origen": "ortega",
+       "texto": "El síntoma cardinal del síndrome pilórico.",
+       "cita": "Nunca se olviden cuál es el síntoma cardinal, que es el vómito.",
+       "ref": {
+        "src": "sd-pil",
+        "t": "08:59"
+       },
+       "link": "/capitulo/dig-08?t=teoria&d=t-piloro-clinica",
+       "tema": "Clínica: el vómito"
+      },
+      {
+       "id": "dig-08:t-piloro-examen",
+       "origen": "preguntero",
+       "texto": "¿Qué maniobra realiza ante un síndrome pilórico?",
+       "link": "/capitulo/dig-08?t=teoria&d=t-piloro-examen",
+       "tema": "Examen físico"
+      },
+      {
+       "id": "dig-08:t-ileo-def",
+       "origen": "ortega",
+       "texto": "Íleo: muy preguntado, en el choice y en el oral.",
+       "cita": "Íleo es preguntado en el parcial, choice y tanto en el oral… El íleo es muy preguntado.",
+       "ref": {
+        "src": "ileo",
+        "t": "02:22"
+       },
+       "link": "/capitulo/dig-08?t=teoria&d=t-ileo-def",
+       "tema": "Íleo: qué es"
+      },
+      {
+       "id": "dig-08:t-paralitico",
+       "origen": "ortega",
+       "texto": "La causa más frecuente de íleo paralítico es la posoperatoria.",
+       "cita": "La causa más frecuente es el íleo posoperatorio. Ese no se tiene que olvidar nunca.",
+       "ref": {
+        "src": "ileo",
+        "t": "05:34"
+       },
+       "link": "/capitulo/dig-08?t=teoria&d=t-paralitico",
+       "tema": "Causas del íleo paralítico"
+      },
+      {
+       "id": "dig-08:t-mecanico",
+       "origen": "preguntero",
+       "texto": "Etiología del íleo mecánico (obstructivo).",
+       "link": "/capitulo/dig-08?t=teoria&d=t-mecanico",
+       "tema": "Causas del íleo mecánico"
+      },
+      {
+       "id": "dig-08:t-ileo-clinica",
+       "origen": "ortega",
+       "texto": "Manifestaciones clínicas del íleo.",
+       "cita": "Esto sí tienen que sabérselo como el padre nuestro.",
+       "ref": {
+        "src": "ileo",
+        "t": "09:37"
+       },
+       "link": "/capitulo/dig-08?t=teoria&d=t-ileo-clinica",
+       "tema": "Clínica del íleo"
+      },
+      {
+       "id": "dig-08:t-ileo-examen",
+       "origen": "ortega",
+       "texto": "Abdomen distendido, timpánico y sin ruidos hidroaéreos: íleo paralítico.",
+       "cita": "Esto lo van a preguntar en el parcial… lo más preguntado: abdomen distendido, timpánico y ausencia de ruido hidroaéreo.",
+       "ref": {
+        "src": "ileo",
+        "t": "13:48"
+       },
+       "link": "/capitulo/dig-08?t=teoria&d=t-ileo-examen",
+       "tema": "Examen físico: paralítico o mecánico"
+      }
+     ]
+    },
+    {
+     "id": "dig-09",
+     "title": "Malabsorción e intestino irritable",
+     "items": [
+      {
+       "id": "dig-09:t-fases",
+       "origen": "ortega",
+       "texto": "Las fases intraluminal y mucosa: las más frecuentes y las que se preguntan.",
+       "cita": "La que yo sí o sí quiero que sepan es la fase intraluminal y la fase mucosa, que es la más frecuente que le pueden llegar a preguntar.",
+       "ref": {
+        "src": "malabs-1",
+        "t": "27:40"
+       },
+       "link": "/capitulo/dig-09?t=teoria&d=t-fases",
+       "tema": "Las tres fases"
+      },
+      {
+       "id": "dig-09:t-diarrea",
+       "origen": "ortega",
+       "texto": "La diarrea crónica como manifestación cardinal de la malabsorción.",
+       "cita": "Si no me dicen diarrea crónica en un síndrome de mala absorción, lo van a bochar.",
+       "ref": {
+        "src": "malabs-1",
+        "t": "28:54"
+       },
+       "link": "/capitulo/dig-09?t=teoria&d=t-diarrea",
+       "tema": "Lo cardinal: la diarrea crónica"
+      },
+      {
+       "id": "dig-09:t-esteatorrea",
+       "origen": "ortega",
+       "texto": "Qué es la esteatorrea.",
+       "cita": "Esteatorrea, pregunta de parcial, choice, final, oral, en cualquier lado del mundo donde vayan, me van a preguntar.",
+       "ref": {
+        "src": "malabs-1",
+        "t": "08:10"
+       },
+       "link": "/capitulo/dig-09?t=teoria&d=t-esteatorrea",
+       "tema": "Esteatorrea"
+      },
+      {
+       "id": "dig-09:t-vandekamer",
+       "origen": "ortega",
+       "texto": "El test de Van de Kamer.",
+       "cita": "Prueba de Van de Kamer. Pregunta de parcial. Como si fuese el Padre Nuestro también tienen que saber el test de Van de Kamer.",
+       "ref": {
+        "src": "malabs-1",
+        "t": "30:06"
+       },
+       "link": "/capitulo/dig-09?t=teoria&d=t-vandekamer",
+       "tema": "Van de Kamer y Sudán"
+      },
+      {
+       "id": "dig-09:t-roma",
+       "origen": "ortega",
+       "texto": "Los criterios de Roma del intestino irritable.",
+       "cita": "Lo que son los criterios de Roma es pregunta de parcial. Esto, lo que está en el cuadrito, sí o sí lo tienen que estudiar.",
+       "ref": {
+        "src": "sii",
+        "t": "01:53"
+       },
+       "link": "/capitulo/dig-09?t=teoria&d=t-roma",
+       "tema": "Criterios de Roma"
+      }
+     ]
+    },
+    {
+     "id": "dig-10",
+     "title": "Peritonitis",
+     "items": [
+      {
+       "id": "dig-10:t-def",
+       "origen": "ortega",
+       "texto": "Peritonitis: en el parcial, el oral y el final.",
+       "cita": "La peritonitis es muy preguntada, tienen que saber peritonitis sí o sí; la van a preguntar muchísimo en el parcial.",
+       "ref": {
+        "src": "perit-1",
+        "t": "00:02"
+       },
+       "link": "/capitulo/dig-10?t=teoria&d=t-def",
+       "tema": "Peritonitis"
+      },
+      {
+       "id": "dig-10:t-plastron",
+       "origen": "ortega",
+       "texto": "El plastrón, en general dentro de un caso clínico.",
+       "cita": "Es una peritonitis localizada y es pregunta de parcial; siempre suelen poner algún caso clínico donde habla sobre el plastrón.",
+       "ref": {
+        "src": "perit-1",
+        "t": "02:19"
+       },
+       "link": "/capitulo/dig-10?t=teoria&d=t-plastron",
+       "tema": "Plastrón"
+      },
+      {
+       "id": "dig-10:t-tres",
+       "origen": "ortega",
+       "texto": "El plastrón y las peritonitis primaria, secundaria y terciaria.",
+       "cita": "La que le van a preguntar a ustedes obviamente es plastrón y obviamente estos tres: sí o sí me tienen que saber.",
+       "ref": {
+        "src": "perit-1",
+        "t": "06:17"
+       },
+       "link": "/capitulo/dig-10?t=teoria&d=t-tres",
+       "tema": "Primaria, secundaria y terciaria"
+      },
+      {
+       "id": "dig-10:t-jobert",
+       "origen": "ortega",
+       "texto": "El signo de Jobert.",
+       "cita": "¿Recuerdan cuál era el signo de Jobert? Pregunta de parcial.",
+       "ref": {
+        "src": "perit-1",
+        "t": "23:05"
+       },
+       "link": "/capitulo/dig-10?t=teoria&d=t-jobert",
+       "tema": "Signo de Jobert"
+      },
+      {
+       "id": "dig-10:t-blumberg",
+       "origen": "preguntero",
+       "texto": "¿Qué es el signo de Blumberg y el de Gueneau de Mussy?",
+       "link": "/capitulo/dig-10?t=teoria&d=t-blumberg",
+       "tema": "Blumberg y Gueneau de Mussy"
+      },
+      {
+       "id": "dig-10:t-paracentesis",
+       "origen": "ortega",
+       "texto": "La paracentesis y el número de neutrófilos.",
+       "cita": "Tienen que sabérsela como si fuese el Padre Nuestro a lo que es la paracentesis.",
+       "ref": {
+        "src": "perit-2",
+        "t": "04:13"
+       },
+       "link": "/capitulo/dig-10?t=teoria&d=t-paracentesis",
+       "tema": "Paracentesis"
+      }
+     ]
+    },
+    {
+     "id": "dig-11",
+     "title": "Síndromes vesiculares",
+     "items": [
+      {
+       "id": "dig-11:t-4f",
+       "origen": "ortega",
+       "texto": "Las 4 F de la litiasis vesicular.",
+       "cita": "Las 4 F me las tienen que saber.",
+       "ref": {
+        "src": "vesic",
+        "t": "06:59"
+       },
+       "link": "/capitulo/dig-11?t=teoria&d=t-4f",
+       "tema": "Las 4 F y los factores de riesgo"
+      },
+      {
+       "id": "dig-11:t-asintomatica",
+       "origen": "preguntero",
+       "texto": "¿Qué es la litiasis vesicular asintomática?",
+       "link": "/capitulo/dig-11?t=teoria&d=t-asintomatica",
+       "tema": "Litiasis asintomática"
+      },
+      {
+       "id": "dig-11:t-colico",
+       "origen": "preguntero",
+       "texto": "¿Qué es un cólico biliar?",
+       "link": "/capitulo/dig-11?t=teoria&d=t-colico",
+       "tema": "Cólico biliar"
+      },
+      {
+       "id": "dig-11:t-colecistitis",
+       "origen": "ortega",
+       "texto": "El signo de Murphy en la colecistitis aguda.",
+       "cita": "El signo de Murphy o la maniobra de Murphy la tienen que saber.",
+       "ref": {
+        "src": "vesic",
+        "t": "19:04"
+       },
+       "link": "/capitulo/dig-11?t=teoria&d=t-colecistitis",
+       "tema": "Colecistitis aguda y signo de Murphy"
+      },
+      {
+       "id": "dig-11:t-complicaciones",
+       "origen": "preguntero",
+       "texto": "¿Qué es el síndrome de Mirizzi?",
+       "link": "/capitulo/dig-11?t=teoria&d=t-complicaciones",
+       "tema": "Complicaciones de la colecistitis"
+      },
+      {
+       "id": "dig-11:t-sin-ictericia",
+       "origen": "ortega",
+       "texto": "Por qué no hay ictericia en la litiasis vesicular.",
+       "cita": "¿Por qué no hay ictericia en los pacientes que tienen litiasis vesicular? Y eso obviamente es pregunta de examen.",
+       "ref": {
+        "src": "vesic",
+        "t": "10:26"
+       },
+       "link": "/capitulo/dig-11?t=teoria&d=t-sin-ictericia",
+       "tema": "¿Por qué la litiasis vesicular no da ictericia?"
+      },
+      {
+       "id": "dig-11:t-ictericia-dolor",
+       "origen": "ortega",
+       "texto": "El signo de Bard y Pick y la ley de Courvoisier-Terrier.",
+       "cita": "Lo tienen que saber para ahora lo que es el signo de Bard y Pick y lo que es la ley de Courvoisier-Terrier, que eso es pregunta de parcial.",
+       "ref": {
+        "src": "vesic",
+        "t": "15:50"
+       },
+       "link": "/capitulo/dig-11?t=teoria&d=t-ictericia-dolor",
+       "tema": "Ictericia con o sin dolor"
+      },
+      {
+       "id": "dig-11:t-coledociano",
+       "origen": "ortega",
+       "texto": "Qué es el síndrome coledociano.",
+       "cita": "¿Qué es síndrome coledociano? Pregunta de parcial. Esto sí, lo que estoy marcando aquí, sí o sí, como si fuese el Padre Nuestro, me lo saben.",
+       "ref": {
+        "src": "vesic",
+        "t": "24:49"
+       },
+       "link": "/capitulo/dig-11?t=teoria&d=t-coledociano",
+       "tema": "Síndrome coledociano"
+      },
+      {
+       "id": "dig-11:t-coledocolitiasis",
+       "origen": "preguntero",
+       "texto": "¿Qué es la coledocolitiasis?",
+       "link": "/capitulo/dig-11?t=teoria&d=t-coledocolitiasis",
+       "tema": "Coledocolitiasis"
+      },
+      {
+       "id": "dig-11:t-colangitis",
+       "origen": "preguntero",
+       "texto": "¿Qué es la colangitis? ¿Tríada de Charcot?",
+       "link": "/capitulo/dig-11?t=teoria&d=t-colangitis",
+       "tema": "Colangitis: tríada de Charcot"
+      },
+      {
+       "id": "dig-11:t-lab",
+       "origen": "ortega",
+       "texto": "Los marcadores de colestasis.",
+       "cita": "¿Cuáles son los marcadores de colestasis? Eso tienen que sabérselo.",
+       "ref": {
+        "src": "vesic",
+        "t": "19:30"
+       },
+       "link": "/capitulo/dig-11?t=teoria&d=t-lab",
+       "tema": "Laboratorio"
+      },
+      {
+       "id": "dig-11:t-otros",
+       "origen": "preguntero",
+       "texto": "Colecistitis aguda alitiásica y colecistitis crónica.",
+       "link": "/capitulo/dig-11?t=teoria&d=t-otros",
+       "tema": "Otras formas"
+      }
+     ]
+    },
+    {
+     "id": "dig-12",
+     "title": "Hemorragias digestivas",
+     "items": [
+      {
+       "id": "dig-12:t-intro",
+       "origen": "ortega",
+       "texto": "Hemorragia digestiva, cirrosis e hipertensión portal, y pancreatitis aguda.",
+       "cita": "Esos temas son muy preguntados en el parcial, son muy preguntados en el final, sobre todo en la parte choice y en el oral.",
+       "ref": {
+        "src": "hd-1",
+        "t": "00:15"
+       },
+       "link": "/capitulo/dig-12?t=teoria&d=t-intro",
+       "tema": "Hemorragia digestiva"
+      },
+      {
+       "id": "dig-12:t-tabla",
+       "origen": "ortega",
+       "texto": "La tabla de parámetros vitales según la clase de hemorragia.",
+       "cita": "Este cuadrito… tienen que sabérselo como el Padre Nuestro.",
+       "ref": {
+        "src": "hd-1",
+        "t": "02:22"
+       },
+       "link": "/capitulo/dig-12?t=teoria&d=t-tabla",
+       "tema": "Clases de hemorragia I a IV"
+      },
+      {
+       "id": "dig-12:t-ortostatismo",
+       "origen": "ortega",
+       "texto": "Cómo se hace el ortostatismo y cuándo es positivo.",
+       "cita": "Esto lo preguntan en el parcial: cuál de estas características tiene que tener el paciente o cuándo decimos que el paciente tiene ortostatismo positivo.",
+       "ref": {
+        "src": "hd-1",
+        "t": "21:05"
+       },
+       "link": "/capitulo/dig-12?t=teoria&d=t-ortostatismo",
+       "tema": "Prueba de hipotensión ortostática"
+      },
+      {
+       "id": "dig-12:t-hematemesis",
+       "origen": "ortega",
+       "texto": "Diagnóstico diferencial de hematemesis y hemoptisis.",
+       "cita": "¿Cómo es el diagnóstico diferencial de hematemesis con hemoptisis? Pregunta de parcial.",
+       "ref": {
+        "src": "hd-1",
+        "t": "08:10"
+       },
+       "link": "/capitulo/dig-12?t=teoria&d=t-hematemesis",
+       "tema": "Hematemesis"
+      },
+      {
+       "id": "dig-12:t-hda-causas",
+       "origen": "ortega",
+       "texto": "La causa más frecuente de hemorragia digestiva alta.",
+       "cita": "¿Cuál es la causa más frecuente de hemorragia digestiva alta? Tiene que decir úlceras. Esto es pregunta de parcial.",
+       "ref": {
+        "src": "hd-1",
+        "t": "16:28"
+       },
+       "link": "/capitulo/dig-12?t=teoria&d=t-hda-causas",
+       "tema": "Causas de hemorragia alta"
+      },
+      {
+       "id": "dig-12:t-hdb-causas",
+       "origen": "ortega",
+       "texto": "La causa más frecuente de hemorragia digestiva baja.",
+       "cita": "Una pregunta de parcial que muchos confunden: ¿es más frecuente un sangrado por cáncer o por divertículo que por hemorroides? Las hemorroides son más frecuentes.",
+       "ref": {
+        "src": "hd-2",
+        "t": "01:22"
+       },
+       "link": "/capitulo/dig-12?t=teoria&d=t-hdb-causas",
+       "tema": "Causas de hemorragia baja"
+      },
+      {
+       "id": "dig-12:t-comparar",
+       "origen": "preguntero",
+       "texto": "Cuadro de diferenciación clínica de HDA y HDB.",
+       "link": "/capitulo/dig-12?t=teoria&d=t-comparar",
+       "tema": "Alta o baja: el cuadro"
+      },
+      {
+       "id": "dig-12:t-forrest",
+       "origen": "preguntero",
+       "texto": "Explique la clasificación de Forrest.",
+       "link": "/capitulo/dig-12?t=teoria&d=t-forrest",
+       "tema": "Clasificación de Forrest"
+      }
+     ]
+    },
+    {
+     "id": "dig-13",
+     "title": "Cirrosis e hipertensión portal",
+     "items": [
+      {
+       "id": "dig-13:t-def",
+       "origen": "ortega",
+       "texto": "Cirrosis e hipertensión portal: en el oral, el parcial y el final.",
+       "cita": "Es importante que cirrosis se lo sepan como la palma de su mano… lo preguntan muchísimo.",
+       "ref": {
+        "src": "cirr-1",
+        "t": "00:15"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-def",
+       "tema": "Cirrosis"
+      },
+      {
+       "id": "dig-13:t-tres",
+       "origen": "preguntero",
+       "texto": "¿Cuáles son las tres manifestaciones clínicas de la cirrosis?",
+       "link": "/capitulo/dig-13?t=teoria&d=t-tres",
+       "tema": "Las tres manifestaciones"
+      },
+      {
+       "id": "dig-13:t-etiologia",
+       "origen": "preguntero",
+       "texto": "Etiologías de la cirrosis.",
+       "link": "/capitulo/dig-13?t=teoria&d=t-etiologia",
+       "tema": "Causas"
+      },
+      {
+       "id": "dig-13:t-compensada",
+       "origen": "preguntero",
+       "texto": "Manifestaciones clínicas de cirrosis compensada y descompensada.",
+       "link": "/capitulo/dig-13?t=teoria&d=t-compensada",
+       "tema": "Compensada y descompensada"
+      },
+      {
+       "id": "dig-13:t-child",
+       "origen": "ortega",
+       "texto": "La clasificación de Child-Pugh.",
+       "cita": "Pregunta de parcial, como el Padre Nuestro me tienen que saber la clasificación de Child-Pugh. El que no se sepa esto… lo bochan directamente.",
+       "ref": {
+        "src": "cirr-2",
+        "t": "07:14"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-child",
+       "tema": "Clasificación de Child-Pugh"
+      },
+      {
+       "id": "dig-13:t-htp-def",
+       "origen": "ortega",
+       "texto": "Qué es la hipertensión portal.",
+       "cita": "La hipertensión portal es pregunta de parcial.",
+       "ref": {
+        "src": "htp-1",
+        "t": "00:14"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-htp-def",
+       "tema": "Hipertensión portal"
+      },
+      {
+       "id": "dig-13:t-htp-causas",
+       "origen": "preguntero",
+       "texto": "Clasificación prehepática, hepática y poshepática de la HTP. Etiologías.",
+       "link": "/capitulo/dig-13?t=teoria&d=t-htp-causas",
+       "tema": "Causas según el sitio"
+      },
+      {
+       "id": "dig-13:t-colaterales",
+       "origen": "ortega",
+       "texto": "Cuáles son las circulaciones colaterales.",
+       "cita": "Pregunta de parcial: ¿cuáles son las circulaciones venosas colaterales? ¿Cuántas hay?",
+       "ref": {
+        "src": "htp-1",
+        "t": "06:12"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-colaterales",
+       "tema": "Circulación colateral"
+      },
+      {
+       "id": "dig-13:t-varices",
+       "origen": "ortega",
+       "texto": "Las várices esofágicas.",
+       "cita": "La profunda, las várices esofágicas, es la que yo sí o sí quiero que sepan.",
+       "ref": {
+        "src": "htp-1",
+        "t": "12:09"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-varices",
+       "tema": "Várices esofágicas"
+      },
+      {
+       "id": "dig-13:t-direccion",
+       "origen": "ortega",
+       "texto": "Cómo se determina si la circulación es ascendente o descendente.",
+       "cita": "Pregunta de parcial… lo preguntan en el oral y lo preguntan en el final: ¿cómo diferencio yo si una circulación es ascendente o descendente?",
+       "ref": {
+        "src": "htp-1",
+        "t": "12:56"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-direccion",
+       "tema": "¿Ascendente o descendente?"
+      },
+      {
+       "id": "dig-13:t-ascitis",
+       "origen": "ortega",
+       "texto": "La ascitis.",
+       "cita": "Ascitis pregunta muchísimo. Muy preguntado. Cuando fui a rendir el final de clínica médica, a mí me preguntaron ascitis.",
+       "ref": {
+        "src": "htp-1",
+        "t": "16:27"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-ascitis",
+       "tema": "Ascitis"
+      },
+      {
+       "id": "dig-13:t-paracentesis",
+       "origen": "ortega",
+       "texto": "El gradiente de albúmina sero-ascítico (GASA).",
+       "cita": "Utilizamos un gradiente, pregunta de parcial: ¿cómo se llama ese gradiente? Gradiente albúmina sero-ascítica.",
+       "ref": {
+        "src": "htp-2",
+        "t": "17:10"
+       },
+       "link": "/capitulo/dig-13?t=teoria&d=t-paracentesis",
+       "tema": "Paracentesis y GASA"
+      },
+      {
+       "id": "dig-13:dig13-d02",
+       "origen": "preguntero",
+       "texto": "Mencione la clasificación de GASA.",
+       "cita": "…esto me lo estudian como si fuese el Padre Nuestro… lo preguntan en el parcial",
+       "ref": {
+        "src": "htp-2",
+        "t": "18:49"
+       },
+       "link": "/capitulo/dig-13?s=d-dig13-d02",
+       "desarrollo": true
+      }
+     ]
+    },
+    {
+     "id": "dig-14",
+     "title": "Insuficiencia hepática",
+     "items": [
+      {
+       "id": "dig-14:t-def",
+       "origen": "preguntero",
+       "texto": "Defina insuficiencia hepática aguda.",
+       "link": "/capitulo/dig-14?t=teoria&d=t-def",
+       "tema": "Insuficiencia hepática"
+      },
+      {
+       "id": "dig-14:t-ogrady",
+       "origen": "ortega",
+       "texto": "La clasificación de O’Grady.",
+       "cita": "Tienen que saber sí o sí la de O’Grady… esta no me pueden no saber.",
+       "ref": {
+        "src": "ih",
+        "t": "08:30"
+       },
+       "link": "/capitulo/dig-14?t=teoria&d=t-ogrady",
+       "tema": "Insuficiencia aguda: O’Grady"
+      },
+      {
+       "id": "dig-14:t-bernuau",
+       "origen": "preguntero",
+       "texto": "Clasificación de insuficiencia hepática aguda.",
+       "link": "/capitulo/dig-14?t=teoria&d=t-bernuau",
+       "tema": "Bernuau y Trey-Davidson"
+      },
+      {
+       "id": "dig-14:t-encefalopatia",
+       "origen": "ortega",
+       "texto": "La encefalopatía hepática.",
+       "cita": "Pregunta de parcial, choice, oral y en el final: si no saben encefalopatía hepática, lo van a bochar; tienen que sabérselo sí o sí.",
+       "ref": {
+        "src": "ih",
+        "t": "19:08"
+       },
+       "link": "/capitulo/dig-14?t=teoria&d=t-encefalopatia",
+       "tema": "Encefalopatía hepática"
+      },
+      {
+       "id": "dig-14:t-grados",
+       "origen": "preguntero",
+       "texto": "Clasificación de West Haven para encefalopatía hepática y para qué sirve.",
+       "link": "/capitulo/dig-14?t=teoria&d=t-grados",
+       "tema": "Grados de encefalopatía (West Haven)"
+      },
+      {
+       "id": "dig-14:t-cronica",
+       "origen": "preguntero",
+       "texto": "¿Qué es la insuficiencia hepática crónica?",
+       "link": "/capitulo/dig-14?t=teoria&d=t-cronica",
+       "tema": "Insuficiencia hepática crónica"
+      },
+      {
+       "id": "dig-14:t-aguda-cronica",
+       "origen": "ortega",
+       "texto": "Diferencia entre la insuficiencia hepática aguda y la crónica.",
+       "cita": "Es un diagnóstico diferencial, pregunta de examen puede ser: la insuficiencia hepática aguda se diferencia de la crónica porque en esta última hay un síndrome extrapiramidal.",
+       "ref": {
+        "src": "ih",
+        "t": "48:03"
+       },
+       "link": "/capitulo/dig-14?t=teoria&d=t-aguda-cronica",
+       "tema": "Aguda o crónica: el cuadro"
+      }
+     ]
+    },
+    {
+     "id": "dig-15",
+     "title": "Pancreatitis aguda",
+     "items": [
+      {
+       "id": "dig-15:t-def",
+       "origen": "ortega",
+       "texto": "Pancreatitis aguda: choice, oral y final.",
+       "cita": "Pancreatitis aguda tienen que sabérselo sí o sí como la palma de la mano.",
+       "ref": {
+        "src": "pa-2",
+        "t": "01:11"
+       },
+       "link": "/capitulo/dig-15?t=teoria&d=t-def",
+       "tema": "Pancreatitis aguda"
+      },
+      {
+       "id": "dig-15:t-causas",
+       "origen": "ortega",
+       "texto": "Las causas más frecuentes de pancreatitis aguda.",
+       "cita": "Pregunta de examen y lo van a preguntar en el parcial: cuáles son las causas más frecuentes que me producen la pancreatitis aguda.",
+       "ref": {
+        "src": "pa-1",
+        "t": "01:56"
+       },
+       "link": "/capitulo/dig-15?t=teoria&d=t-causas",
+       "tema": "Causas"
+      },
+      {
+       "id": "dig-15:t-dolor",
+       "origen": "ortega",
+       "texto": "Las manifestaciones clínicas de la pancreatitis aguda.",
+       "cita": "Manifestaciones clínicas de lo que es la pancreatitis aguda, pregunta de parcial.",
+       "ref": {
+        "src": "pa-2",
+        "t": "00:03"
+       },
+       "link": "/capitulo/dig-15?t=teoria&d=t-dolor",
+       "tema": "El dolor"
+      },
+      {
+       "id": "dig-15:t-cullen",
+       "origen": "ortega",
+       "texto": "Los signos de Cullen y Grey Turner.",
+       "cita": "Lo más característico es esto, y esto pregunta de parcial, chicos: el signo de Cullen, el signo de Grey Turner.",
+       "ref": {
+        "src": "pa-2",
+        "t": "05:10"
+       },
+       "link": "/capitulo/dig-15?t=teoria&d=t-cullen",
+       "tema": "Cullen y Grey Turner"
+      },
+      {
+       "id": "dig-15:t-sistemicas",
+       "origen": "ortega",
+       "texto": "La hemoconcentración en la pancreatitis aguda.",
+       "cita": "Eso quiero que lo tengan en cuenta, lo pueden preguntar en el parcial, en el oral: por qué los pacientes están hemoconcentrados.",
+       "ref": {
+        "src": "pa-2",
+        "t": "10:36"
+       },
+       "link": "/capitulo/dig-15?t=teoria&d=t-sistemicas",
+       "tema": "Falla multiorgánica"
+      },
+      {
+       "id": "dig-15:t-ranson",
+       "origen": "ortega",
+       "texto": "Los criterios de Ranson y de Balthazar.",
+       "cita": "No me pueden no saber los criterios de Balthazar, no me pueden no saber los criterios de Ranson. Si no me saben esto, lo van a bochar.",
+       "ref": {
+        "src": "pa-2",
+        "t": "20:52"
+       },
+       "link": "/capitulo/dig-15?t=teoria&d=t-ranson",
+       "tema": "Criterios de Ranson"
+      },
+      {
+       "id": "dig-15:t-balthazar",
+       "origen": "preguntero",
+       "texto": "Mencione los criterios de Ranson y los criterios tomográficos de Balthazar.",
+       "link": "/capitulo/dig-15?t=teoria&d=t-balthazar",
+       "tema": "Criterios de Balthazar"
+      }
+     ]
+    },
+    {
+     "id": "man-digestivo",
+     "title": "Examen físico: maniobras",
+     "items": [
+      {
+       "id": "man:palpacion-superficial-tension",
+       "origen": "ortega",
+       "texto": "Palpación superficial: mano de escultor, maniobra del esfuerzo y tensión abdominal",
+       "nota": "La palpación es «la parte más preguntada, la parte en la cual bochan».",
+       "ref": {
+        "src": "ef-dig-2",
+        "t": "10:56"
+       },
+       "link": "/maniobras?m=palpacion-superficial-tension",
+       "maniobra": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "renal",
+   "title": "Sistema nefrourológico",
+   "tone": "sky",
+   "capitulos": [
+    {
+     "id": "ren-01",
+     "title": "Motivos de consulta nefrourológicos",
+     "items": [
+      {
+       "id": "ren-01:t-edema",
+       "origen": "preguntero",
+       "texto": "¿Por qué mecanismos se produce el edema de origen renal?",
+       "link": "/capitulo/ren-01?t=teoria&d=t-edema",
+       "tema": "Los tres edemas renales"
+      },
+      {
+       "id": "ren-01:t-colico",
+       "origen": "preguntero",
+       "texto": "Describa el dolor lumbar de origen renal y el cólico renoureteral.",
+       "link": "/capitulo/ren-01?t=teoria&d=t-colico",
+       "tema": "Cólico renoureteral"
+      },
+      {
+       "id": "ren-01:t-obstruccion",
+       "origen": "ortega",
+       "texto": "El paciente con obstrucción urinaria.",
+       "cita": "Estos pacientes que tienen una obstrucción urinaria: esto es pregunta de parcial.",
+       "ref": {
+        "src": "mc-ren-1",
+        "t": "25:22"
+       },
+       "link": "/capitulo/ren-01?t=teoria&d=t-obstruccion",
+       "tema": "El paciente con obstrucción urinaria"
+      },
+      {
+       "id": "ren-01:t-poliuria",
+       "origen": "ortega",
+       "texto": "El cuadro de la poliuria.",
+       "cita": "Este cuadrito lo pregunta… se lo sabe en sangre.",
+       "ref": {
+        "src": "mc-ren-2",
+        "t": "08:38"
+       },
+       "link": "/capitulo/ren-01?t=teoria&d=t-poliuria",
+       "tema": "Cómo se estudia la poliuria"
+      },
+      {
+       "id": "ren-01:t-aspecto",
+       "origen": "ortega",
+       "texto": "Interpretar las características de la orina.",
+       "cita": "Esto es importante, porque es pregunta de parcial… es importante empezar a interpretar las características de la orina.",
+       "ref": {
+        "src": "mc-ren-2",
+        "t": "12:14"
+       },
+       "link": "/capitulo/ren-01?t=teoria&d=t-aspecto",
+       "tema": "Aspecto de la orina"
+      },
+      {
+       "id": "ren-01:t-hematuria",
+       "origen": "ortega",
+       "texto": "El paciente con hematuria.",
+       "cita": "Es una pregunta de parcial, pregunta de final, pregunta para todos.",
+       "ref": {
+        "src": "mc-ren-2",
+        "t": "14:33"
+       },
+       "link": "/capitulo/ren-01?t=teoria&d=t-hematuria",
+       "tema": "Hematuria"
+      },
+      {
+       "id": "ren-01:t-hematuria-origen",
+       "origen": "ortega",
+       "texto": "Hematuria isomórfica y dismórfica.",
+       "cita": "Y obviamente eso tiene que saber, si no para el parcial, porque es pregunta de parcial.",
+       "ref": {
+        "src": "mc-ren-1",
+        "t": "14:54"
+       },
+       "link": "/capitulo/ren-01?t=teoria&d=t-hematuria-origen",
+       "tema": "Glomerular o de la vía urinaria"
+      },
+      {
+       "id": "ren-01:t-tres-vasos",
+       "origen": "ortega",
+       "texto": "La prueba de los tres vasos.",
+       "cita": "Si es al principio, al final o en los tres vasitos, con la prueba de los tres vasos: pregunta de parcial.",
+       "ref": {
+        "src": "mc-ren-2",
+        "t": "20:13"
+       },
+       "link": "/capitulo/ren-01?t=teoria&d=t-tres-vasos",
+       "tema": "Prueba de los tres vasos"
+      },
+      {
+       "id": "ren-01:ren01-d01",
+       "origen": "preguntero",
+       "texto": "Defina hematuria y clasifíquela. ¿Cómo diferencia una hematuria glomerular de una de la vía urinaria?",
+       "cita": "¿Dismórfica o isomórfica? Siempre preguntan de eso",
+       "ref": {
+        "src": "mc-ren-2",
+        "t": "24:36"
+       },
+       "link": "/capitulo/ren-01?s=d-ren01-d01",
+       "desarrollo": true
+      },
+      {
+       "id": "ren-01:ren01-d02",
+       "origen": "ortega",
+       "texto": "¿En qué consiste la prueba de los tres vasos de Guyon y qué indica cada resultado?",
+       "cita": "…esta es pregunta de parcial de la doctora González… la prueba de los tres vasos de Guyon",
+       "ref": {
+        "src": "mc-ren-2",
+        "t": "18:29"
+       },
+       "link": "/capitulo/ren-01?s=d-ren01-d02",
+       "desarrollo": true
+      }
+     ]
+    },
+    {
+     "id": "ren-02",
+     "title": "Examen físico nefrourológico",
+     "items": [
+      {
+       "id": "ren-02:t-proteinuria",
+       "origen": "ortega",
+       "texto": "Cómo se valora a un paciente con proteinuria.",
+       "cita": "En el final o en los parciales, por ejemplo: ¿cómo valoran ustedes un paciente que tiene proteinuria?",
+       "ref": {
+        "src": "ef-ren",
+        "t": "24:33"
+       },
+       "link": "/capitulo/ren-02?t=teoria&d=t-proteinuria",
+       "tema": "El paciente con proteinuria"
+      },
+      {
+       "id": "ren-02:t-metodos",
+       "origen": "ortega",
+       "texto": "Los métodos para medir la proteinuria.",
+       "cita": "Las que más se usan… y eso tiene que conocer, porque eso le preguntan en el parcial.",
+       "ref": {
+        "src": "ef-ren",
+        "t": "21:29"
+       },
+       "link": "/capitulo/ren-02?t=teoria&d=t-metodos",
+       "tema": "Cómo se mide"
+      },
+      {
+       "id": "ren-02:t-sedimento",
+       "origen": "preguntero",
+       "texto": "¿Qué es la proteinuria por sobrecarga y cómo se detecta?",
+       "link": "/capitulo/ren-02?t=teoria&d=t-sedimento",
+       "tema": "Qué acompaña a la proteinuria"
+      },
+      {
+       "id": "ren-02:t-guyon",
+       "origen": "ortega",
+       "texto": "La maniobra de Guyon.",
+       "cita": "La primera es la maniobra de Guyon, que esta maniobra siempre la preguntan.",
+       "ref": {
+        "src": "ef-ren",
+        "t": "29:25"
+       },
+       "link": "/capitulo/ren-02?t=teoria&d=t-guyon",
+       "tema": "Maniobra de Guyon"
+      }
+     ]
+    },
+    {
+     "id": "ren-03",
+     "title": "Síndrome nefrítico",
+     "items": [
+      {
+       "id": "ren-03:t-def",
+       "origen": "preguntero",
+       "texto": "Defina síndrome nefrítico y nombre su tríada característica.",
+       "link": "/capitulo/ren-03?t=teoria&d=t-def",
+       "tema": "Síndrome nefrítico"
+      },
+      {
+       "id": "ren-03:t-tres-h",
+       "origen": "ortega",
+       "texto": "La tríada característica del síndrome nefrítico.",
+       "cita": "¿Cuál es la tríada característica del síndrome nefrítico? Son las tres H: hematuria, hipertensión arterial, hiperazoemia.",
+       "ref": {
+        "src": "nefritico",
+        "t": "04:09"
+       },
+       "link": "/capitulo/ren-03?t=teoria&d=t-tres-h",
+       "tema": "La tríada: las tres H"
+      },
+      {
+       "id": "ren-03:t-postestreptococica",
+       "origen": "ortega",
+       "texto": "La causa más frecuente y qué preguntar en la anamnesis.",
+       "cita": "Preguntas de parcial: todo paciente que tiene un síndrome nefrítico… tienen que preguntar si hace una semana o dos semanas tuvieron una infección.",
+       "ref": {
+        "src": "nefritico",
+        "t": "09:09"
+       },
+       "link": "/capitulo/ren-03?t=teoria&d=t-postestreptococica",
+       "tema": "La causa más frecuente: postestreptocócica"
+      }
+     ]
+    },
+    {
+     "id": "ren-04",
+     "title": "Síndrome nefrótico",
+     "items": [
+      {
+       "id": "ren-04:t-def",
+       "origen": "ortega",
+       "texto": "La definición del síndrome nefrótico.",
+       "cita": "Pero yo quiero que me sepan la definición del síndrome nefrótico.",
+       "ref": {
+        "src": "nefrotico",
+        "t": "03:54"
+       },
+       "link": "/capitulo/ren-04?t=teoria&d=t-def",
+       "tema": "Síndrome nefrótico"
+      },
+      {
+       "id": "ren-04:t-causas",
+       "origen": "ortega",
+       "texto": "La causa más frecuente de síndrome nefrótico.",
+       "cita": "¿Cuál es la causa más frecuente de síndrome nefrótico? Esa es la pregunta que siempre hacen en los parciales.",
+       "ref": {
+        "src": "nefrotico",
+        "t": "07:41"
+       },
+       "link": "/capitulo/ren-04?t=teoria&d=t-causas",
+       "tema": "La causa más frecuente"
+      },
+      {
+       "id": "ren-04:t-clinica",
+       "origen": "preguntero",
+       "texto": "Manifestaciones clínicas del síndrome nefrótico.",
+       "link": "/capitulo/ren-04?t=teoria&d=t-clinica",
+       "tema": "Clínica"
+      }
+     ]
+    },
+    {
+     "id": "ren-05",
+     "title": "Insuficiencia renal",
+     "items": [
+      {
+       "id": "ren-05:t-def",
+       "origen": "ortega",
+       "texto": "Insuficiencia renal.",
+       "cita": "Insuficiencia renal es uno de los muy preguntados en el parcial y lo deben saber.",
+       "ref": {
+        "src": "ir-1",
+        "t": "00:02"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-def",
+       "tema": "Insuficiencia renal"
+      },
+      {
+       "id": "ren-05:t-rifle",
+       "origen": "ortega",
+       "texto": "Los criterios RIFLE y AKIN.",
+       "cita": "Criterios que ustedes van a preguntar en el parcial, criterios que siempre lo deben saber, criterios que deben conocer para toda su vida como médico.",
+       "ref": {
+        "src": "ir-1",
+        "t": "12:23"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-rifle",
+       "tema": "Criterios RIFLE"
+      },
+      {
+       "id": "ren-05:t-causas",
+       "origen": "ortega",
+       "texto": "Las causas de insuficiencia renal aguda.",
+       "cita": "Y aquí es donde suelen preguntar mucho: ¿cuáles son las causas de insuficiencia renal aguda?",
+       "ref": {
+        "src": "ir-1",
+        "t": "18:23"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-causas",
+       "tema": "Causas de insuficiencia renal aguda"
+      },
+      {
+       "id": "ren-05:t-sodio",
+       "origen": "ortega",
+       "texto": "Por qué la prerrenal elimina menos sodio y la renal más.",
+       "cita": "Esto es pregunta de parcial: ¿por qué elimina más sodio la etiología renal o parenquimatosa y por qué elimina menos sodio la prerrenal?",
+       "ref": {
+        "src": "ir-2",
+        "t": "21:00"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-sodio",
+       "tema": "Prerrenal o necrosis tubular"
+      },
+      {
+       "id": "ren-05:t-calcio",
+       "origen": "ortega",
+       "texto": "Por qué hay hipocalcemia en la insuficiencia renal.",
+       "cita": "Hay una pregunta que le hacen los parciales: la hipocalcemia, ¿por qué? Principalmente porque no se sintetiza vitamina D.",
+       "ref": {
+        "src": "ir-2",
+        "t": "11:36"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-calcio",
+       "tema": "Calcio y fósforo"
+      },
+      {
+       "id": "ren-05:t-anemia",
+       "origen": "ortega",
+       "texto": "La anemia en la insuficiencia renal aguda.",
+       "cita": "La anemia, pregunta de parcial: los pacientes que tienen insuficiencia renal aguda no tienen anemia al comienzo.",
+       "ref": {
+        "src": "ir-2",
+        "t": "12:52"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-anemia",
+       "tema": "La anemia: aguda o crónica"
+      },
+      {
+       "id": "ren-05:t-irc",
+       "origen": "ortega",
+       "texto": "La causa más frecuente de insuficiencia renal crónica.",
+       "cita": "Pregunta de parcial: ¿cuáles son las etiologías más frecuentes de la insuficiencia renal crónica? La nefropatía diabética… No le dicen eso, los bochan.",
+       "ref": {
+        "src": "ir-2",
+        "t": "27:05"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-irc",
+       "tema": "Insuficiencia renal crónica"
+      },
+      {
+       "id": "ren-05:t-aguda-cronica",
+       "origen": "ortega",
+       "texto": "La ecografía en la insuficiencia renal aguda y crónica.",
+       "cita": "En la insuficiencia renal crónica el riñón está disminuido de tamaño y de aspecto granular, y en la aguda suele estar aumentado de tamaño. Pregunta de parcial.",
+       "ref": {
+        "src": "ir-3",
+        "t": "11:53"
+       },
+       "link": "/capitulo/ren-05?t=teoria&d=t-aguda-cronica",
+       "tema": "Aguda o crónica"
+      }
+     ]
+    },
+    {
+     "id": "ren-06",
+     "title": "Infección urinaria",
+     "items": [
+      {
+       "id": "ren-06:t-def",
+       "origen": "ortega",
+       "texto": "Infección urinaria.",
+       "cita": "Lo pueden llegar a preguntar en el final; en el parcial lo suelen preguntar.",
+       "ref": {
+        "src": "itu-1",
+        "t": "00:45"
+       },
+       "link": "/capitulo/ren-06?t=teoria&d=t-def",
+       "tema": "Infección urinaria"
+      },
+      {
+       "id": "ren-06:t-vias",
+       "origen": "ortega",
+       "texto": "La vía y el germen más frecuentes.",
+       "cita": "Si esas dos cosas no le saben responder a los profesores, están bochados: tienen que saber que la vía ascendente es la más frecuente y la Escherichia coli.",
+       "ref": {
+        "src": "nefritico",
+        "t": "24:48"
+       },
+       "link": "/capitulo/ren-06?t=teoria&d=t-vias",
+       "tema": "Vías de infección"
+      },
+      {
+       "id": "ren-06:t-germenes",
+       "origen": "ortega",
+       "texto": "Los microorganismos causales.",
+       "cita": "Los microorganismos causales, que le pueden llegar a preguntar a ustedes en el parcial.",
+       "ref": {
+        "src": "itu-1",
+        "t": "14:39"
+       },
+       "link": "/capitulo/ren-06?t=teoria&d=t-germenes",
+       "tema": "Los gérmenes"
+      },
+      {
+       "id": "ren-06:t-baja",
+       "origen": "ortega",
+       "texto": "Cómo se presenta la ITU en la guardia.",
+       "cita": "¿Cómo se presenta en la guardia? Y esto es pregunta de parcial… El síntoma cardinal es la disuria. No se olviden de eso.",
+       "ref": {
+        "src": "itu-1",
+        "t": "23:14"
+       },
+       "link": "/capitulo/ren-06?t=teoria&d=t-baja",
+       "tema": "ITU baja: cistitis"
+      },
+      {
+       "id": "ren-06:t-alta",
+       "origen": "ortega",
+       "texto": "La pielonefritis aguda.",
+       "cita": "A ustedes lo que le preguntan es la pielonefritis aguda. Pregunta de parcial.",
+       "ref": {
+        "src": "itu-1",
+        "t": "21:54"
+       },
+       "link": "/capitulo/ren-06?t=teoria&d=t-alta",
+       "tema": "ITU alta: pielonefritis aguda"
+      },
+      {
+       "id": "ren-06:t-baja-alta",
+       "origen": "preguntero",
+       "texto": "Cuadro comparativo de etiología y clínica de ITU alta y baja.",
+       "link": "/capitulo/ren-06?t=teoria&d=t-baja-alta",
+       "tema": "Baja o alta: el cuadro"
+      },
+      {
+       "id": "ren-06:t-asintomatica",
+       "origen": "preguntero",
+       "texto": "¿Qué es la bacteriuria asintomática?",
+       "link": "/capitulo/ren-06?t=teoria&d=t-asintomatica",
+       "tema": "Bacteriuria asintomática"
+      },
+      {
+       "id": "ren-06:t-complicada",
+       "origen": "ortega",
+       "texto": "Los factores de riesgo de una ITU complicada.",
+       "cita": "Como si fuese el Padre Nuestro lo tienen que saber, es pregunta de parcial.",
+       "ref": {
+        "src": "itu-2",
+        "t": "04:32"
+       },
+       "link": "/capitulo/ren-06?t=teoria&d=t-complicada",
+       "tema": "ITU complicada: factores de riesgo"
+      },
+      {
+       "id": "ren-06:t-recaida",
+       "origen": "ortega",
+       "texto": "Recaída y reinfección.",
+       "cita": "Recaída y reinfección le van a preguntar en el parcial.",
+       "ref": {
+        "src": "itu-2",
+        "t": "07:09"
+       },
+       "link": "/capitulo/ren-06?t=teoria&d=t-recaida",
+       "tema": "Recaída o reinfección"
+      },
+      {
+       "id": "ren-06:t-dx",
+       "origen": "preguntero",
+       "texto": "¿Qué significa bacteriuria y leucocituria?",
+       "link": "/capitulo/ren-06?t=teoria&d=t-dx",
+       "tema": "Cómo se diagnostica"
+      }
+     ]
+    },
+    {
+     "id": "ren-07",
+     "title": "Litiasis renoureteral",
+     "items": [
+      {
+       "id": "ren-07:t-factores",
+       "origen": "ortega",
+       "texto": "Los factores predisponentes de la litiasis.",
+       "cita": "Esto puede ser pregunta de parcial, lo anotan ahí: los principales factores epidemiológicos, factores predisponentes.",
+       "ref": {
+        "src": "lit-1",
+        "t": "01:37"
+       },
+       "link": "/capitulo/ren-07?t=teoria&d=t-factores",
+       "tema": "Factores predisponentes"
+      },
+      {
+       "id": "ren-07:t-inhibidores",
+       "origen": "ortega",
+       "texto": "Los inhibidores de la formación de cálculos.",
+       "cita": "Esto puede ser pregunta de parcial, pero no me interesa ser pregunta de parcial o no: lo que yo quiero que sepan es esto sí o sí.",
+       "ref": {
+        "src": "lit-1",
+        "t": "06:01"
+       },
+       "link": "/capitulo/ren-07?t=teoria&d=t-inhibidores",
+       "tema": "Citrato y magnesio"
+      },
+      {
+       "id": "ren-07:t-tipos",
+       "origen": "ortega",
+       "texto": "Los tipos de cálculos y el más frecuente.",
+       "cita": "Esto es pregunta de examen y de cajón. Le van a preguntar cuáles son los tipos de cálculos que existen y cuál es el más frecuente.",
+       "ref": {
+        "src": "lit-1",
+        "t": "07:39"
+       },
+       "link": "/capitulo/ren-07?t=teoria&d=t-tipos",
+       "tema": "Los tipos de cálculos"
+      },
+      {
+       "id": "ren-07:t-calcicos",
+       "origen": "ortega",
+       "texto": "El cálculo más frecuente y cómo se ve.",
+       "cita": "Sí o sí es pregunta de parcial: cuál es uno de los cálculos más frecuentes… Recordemos que el calcio es radiopaco.",
+       "ref": {
+        "src": "lit-1",
+        "t": "11:29"
+       },
+       "link": "/capitulo/ren-07?t=teoria&d=t-calcicos",
+       "tema": "Los cálcicos"
+      },
+      {
+       "id": "ren-07:t-otros",
+       "origen": "ortega",
+       "texto": "Los cálculos de estruvita y de ácido úrico.",
+       "cita": "Y faltan dos cálculos más, que es importante tener en cuenta, y esta es pregunta del examen: litiasis por fosfato amónico magnésico, los famosos cálculos de estruvita.",
+       "ref": {
+        "src": "lit-2",
+        "t": "05:10"
+       },
+       "link": "/capitulo/ren-07?t=teoria&d=t-otros",
+       "tema": "Estruvita, ácido úrico y cistina"
+      },
+      {
+       "id": "ren-07:t-colico",
+       "origen": "preguntero",
+       "texto": "Defina el cólico renoureteral.",
+       "link": "/capitulo/ren-07?t=teoria&d=t-colico",
+       "tema": "El cólico renoureteral"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "neuro",
+   "title": "Sistema nervioso",
+   "tone": "lilac",
+   "capitulos": [
+    {
+     "id": "neu-01",
+     "title": "Motivos de consulta neurológicos I",
+     "items": [
+      {
+       "id": "neu-01:t-conciencia",
+       "origen": "ortega",
+       "texto": "El síncope.",
+       "cita": "El síncope lo tienen que conocer… pregunta de parcial… Síncope pregunta muchísimo.",
+       "ref": {
+        "src": "mc-neu-1",
+        "t": "12:08"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-conciencia",
+       "tema": "Pérdida del conocimiento"
+      },
+      {
+       "id": "neu-01:t-talamo",
+       "origen": "ortega",
+       "texto": "Las funciones del tálamo y la vía que no hace escala en él.",
+       "cita": "El tálamo tiene muchas funciones, y esto fue la pregunta de parcial de algunos doctores.",
+       "ref": {
+        "src": "mc-neu-1",
+        "t": "20:18"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-talamo",
+       "tema": "El tálamo tiene muchas funciones"
+      },
+      {
+       "id": "neu-01:t-clasif",
+       "origen": "ortega",
+       "texto": "Las cefaleas primarias.",
+       "cita": "Las cefaleas primarias son las cefaleas que deben conocer para el parcial… porque le van a preguntar eso en el parcial.",
+       "ref": {
+        "src": "mc-neu-1",
+        "t": "22:39"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-clasif",
+       "tema": "Primarias y secundarias"
+      },
+      {
+       "id": "neu-01:t-migrana-mujer",
+       "origen": "ortega",
+       "texto": "En qué sexo es más frecuente la migraña.",
+       "cita": "Es más frecuente en mujeres. Y esto es pregunta de parcial, y esto lo dan en clases.",
+       "ref": {
+        "src": "mc-neu-2",
+        "t": "03:37"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-migrana-mujer",
+       "tema": "Más frecuente en mujeres"
+      },
+      {
+       "id": "neu-01:t-mareo",
+       "origen": "ortega",
+       "texto": "Mareo, vértigo y trastornos del equilibrio.",
+       "cita": "Hay cosas que yo acá le voy a hablar que deben conocer para el parcial, principalmente mareo y vértigo y trastorno del equilibrio.",
+       "ref": {
+        "src": "mc-neu-2",
+        "t": "16:57"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-mareo",
+       "tema": "Mareo y vértigo"
+      },
+      {
+       "id": "neu-01:t-equilibrio",
+       "origen": "ortega",
+       "texto": "Los elementos anatomofuncionales que mantienen el equilibrio.",
+       "cita": "Cuando están en la evaluación, yo les pregunto a ustedes cuáles son los elementos anatomofuncionales que mantienen el equilibrio de la persona.",
+       "ref": {
+        "src": "mc-neu-2",
+        "t": "22:14"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-equilibrio",
+       "tema": "Los elementos del equilibrio"
+      },
+      {
+       "id": "neu-01:t-romberg",
+       "origen": "ortega",
+       "texto": "En qué lesiones el Romberg es positivo y en cuál es negativo.",
+       "cita": "Prueba de Romberg es positiva en vestibular y cordonal posterior, y es negativa en el cerebeloso. Eso no se olviden, porque es pregunta de parcial.",
+       "ref": {
+        "src": "mc-neu-2",
+        "t": "29:56"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-romberg",
+       "tema": "Marchas y Romberg"
+      },
+      {
+       "id": "neu-01:t-examen-vertigo",
+       "origen": "ortega",
+       "texto": "El nistagmo.",
+       "cita": "La presencia de nistagmo también es importante… nistagmo con mayúscula… es pregunta de parcial. Lo tienen que conocer.",
+       "ref": {
+        "src": "mc-neu-2",
+        "t": "30:52"
+       },
+       "link": "/capitulo/neu-01?t=teoria&d=t-examen-vertigo",
+       "tema": "Examen del paciente con vértigo"
+      }
+     ]
+    },
+    {
+     "id": "neu-02",
+     "title": "Motivos de consulta neurológicos II",
+     "items": [
+      {
+       "id": "neu-02:t-mov",
+       "origen": "ortega",
+       "texto": "Los movimientos involuntarios anormales.",
+       "cita": "Movimientos involuntarios anormales, otro de los temas que son muy preguntados en los parciales.",
+       "ref": {
+        "src": "mc-neu-3",
+        "t": "00:00"
+       },
+       "link": "/capitulo/neu-02?t=teoria&d=t-mov",
+       "tema": "Movimientos involuntarios anormales"
+      },
+      {
+       "id": "neu-02:t-temblor",
+       "origen": "ortega",
+       "texto": "El temblor.",
+       "cita": "El temblor usted tiene que conocerlo… porque se lo van a preguntar.",
+       "ref": {
+        "src": "mc-neu-3",
+        "t": "02:48"
+       },
+       "link": "/capitulo/neu-02?t=teoria&d=t-temblor",
+       "tema": "El temblor"
+      },
+      {
+       "id": "neu-02:t-otros",
+       "origen": "ortega",
+       "texto": "Los movimientos involuntarios más preguntados.",
+       "cita": "Yo quiero que ustedes sepan los movimientos involuntarios: temblor, corea, el hemibalismo, la atetosis y los tics, que son por lo general lo más preguntado de todos.",
+       "ref": {
+        "src": "mc-neu-3",
+        "t": "22:02"
+       },
+       "link": "/capitulo/neu-02?t=teoria&d=t-otros",
+       "tema": "Atetosis, mioclonías, distonías y tics"
+      },
+      {
+       "id": "neu-02:t-fasciculacion",
+       "origen": "ortega",
+       "texto": "La fasciculación.",
+       "cita": "La fasciculación, pregunta de parcial: es típica en los pacientes que tienen hipotonía, y sobre todo el síndrome de la segunda motoneurona.",
+       "ref": {
+        "src": "mc-neu-3",
+        "t": "21:06"
+       },
+       "link": "/capitulo/neu-02?t=teoria&d=t-fasciculacion",
+       "tema": "Fasciculaciones e hipocinesia"
+      },
+      {
+       "id": "neu-02:t-neuropatias",
+       "origen": "ortega",
+       "texto": "Las características de las neuropatías.",
+       "cita": "Esto es pregunta de parcial, lo que les puse en el cuadrito.",
+       "ref": {
+        "src": "mc-neu-3",
+        "t": "29:36"
+       },
+       "link": "/capitulo/neu-02?t=teoria&d=t-neuropatias",
+       "tema": "Neuropatías"
+      },
+      {
+       "id": "neu-02:t-todd",
+       "origen": "ortega",
+       "texto": "La parálisis de Todd.",
+       "cita": "Pregunta de parcial… pregunta siempre qué es la parálisis de Todd o la paresia postictal.",
+       "ref": {
+        "src": "mc-neu-4",
+        "t": "17:25"
+       },
+       "link": "/capitulo/neu-02?t=teoria&d=t-todd",
+       "tema": "Parálisis de Todd"
+      },
+      {
+       "id": "neu-02:t-etapas",
+       "origen": "ortega",
+       "texto": "Las etapas del sueño.",
+       "cita": "Lo que le van a preguntar en sí, y característicamente, son las fases o las etapas del sueño.",
+       "ref": {
+        "src": "mc-neu-4",
+        "t": "27:28"
+       },
+       "link": "/capitulo/neu-02?t=teoria&d=t-etapas",
+       "tema": "Las etapas del sueño"
+      }
+     ]
+    },
+    {
+     "id": "neu-03",
+     "title": "Pares craneales I",
+     "items": [
+      {
+       "id": "neu-03:t-olfatorio",
+       "origen": "ortega",
+       "texto": "El olfatorio es el único que no hace sinapsis en el tálamo.",
+       "cita": "Pregunta de parcial: es el único nervio sensorial que no hace escala en el tálamo.",
+       "ref": {
+        "src": "pc-1",
+        "t": "14:33"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-olfatorio",
+       "tema": "I par: olfatorio"
+      },
+      {
+       "id": "neu-03:t-optico",
+       "origen": "ortega",
+       "texto": "El recorrido del nervio óptico.",
+       "cita": "Estas cuatro porciones me forman el nervio óptico, y esto es pregunta de parcial por todos los doctores.",
+       "ref": {
+        "src": "pc-1",
+        "t": "23:53"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-optico",
+       "tema": "II par: óptico"
+      },
+      {
+       "id": "neu-03:t-via",
+       "origen": "ortega",
+       "texto": "La vía óptica.",
+       "cita": "La vía óptica es importantísima, chicos, la tienen que saber como si fuese el Padre Nuestro.",
+       "ref": {
+        "src": "pc-1",
+        "t": "24:42"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-via",
+       "tema": "La vía óptica, como el Padre Nuestro"
+      },
+      {
+       "id": "neu-03:t-hemianopsias",
+       "origen": "ortega",
+       "texto": "Las hemianopsias.",
+       "cita": "Hemianopsia, pregunta de parcial: no pueden no conocer hemianopsia, por lo general lo van a preguntar siempre en el parcial.",
+       "ref": {
+        "src": "pc-2",
+        "t": "10:33"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-hemianopsias",
+       "tema": "Hemianopsias"
+      },
+      {
+       "id": "neu-03:t-musculos",
+       "origen": "ortega",
+       "texto": "Qué músculo inerva el III, el IV y el VI.",
+       "cita": "Lo que sí le pueden llegar a preguntar es qué músculo del ojo inerva el tercer par, el cuarto par y el sexto par. Eso es pregunta de parcial, y eso sí lo tienen que saber.",
+       "ref": {
+        "src": "pc-3",
+        "t": "10:54"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-musculos",
+       "tema": "III, IV y VI: qué músculo inerva cada uno"
+      },
+      {
+       "id": "neu-03:t-iii",
+       "origen": "ortega",
+       "texto": "La función del III par y qué le pasa al paciente si se lesiona.",
+       "cita": "Eso es lo que le tienen que responder en el parcial, que le preguntan cuál es la función del tercer par y qué es lo que le hace al paciente.",
+       "ref": {
+        "src": "pc-3",
+        "t": "07:57"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-iii",
+       "tema": "Parálisis del III par"
+      },
+      {
+       "id": "neu-03:t-iv-vi",
+       "origen": "ortega",
+       "texto": "La parálisis del IV par.",
+       "cita": "No pueden no saber nervioso, lo van a bochar de una.",
+       "ref": {
+        "src": "pc-3",
+        "t": "09:49"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-iv-vi",
+       "tema": "Parálisis del IV y del VI"
+      },
+      {
+       "id": "neu-03:t-nistagmo",
+       "origen": "ortega",
+       "texto": "El nistagmo.",
+       "cita": "Esto es pregunta de parcial, por favor, chicos, no me pueden no saber… [un docente] le encanta preguntar nistagmo, tanto en el parcial como en los finales.",
+       "ref": {
+        "src": "pc-3",
+        "t": "22:14"
+       },
+       "link": "/capitulo/neu-03?t=teoria&d=t-nistagmo",
+       "tema": "Nistagmo"
+      }
+     ]
+    },
+    {
+     "id": "neu-04",
+     "title": "Pares craneales II",
+     "items": [
+      {
+       "id": "neu-04:t-facial",
+       "origen": "ortega",
+       "texto": "El séptimo par.",
+       "cita": "Otro par muy importante, otro par que pregunta muchísimo.",
+       "ref": {
+        "src": "pc-4",
+        "t": "17:53"
+       },
+       "link": "/capitulo/neu-04?t=teoria&d=t-facial",
+       "tema": "VII par: facial"
+      },
+      {
+       "id": "neu-04:t-paralisis-facial",
+       "origen": "ortega",
+       "texto": "La parálisis facial central y periférica.",
+       "cita": "Lo que sí quiero que estudien, por favor, es parálisis facial central, parálisis facial periférica: no me pueden no saber eso.",
+       "ref": {
+        "src": "pc-4",
+        "t": "25:06"
+       },
+       "link": "/capitulo/neu-04?t=teoria&d=t-paralisis-facial",
+       "tema": "Parálisis facial central y periférica"
+      },
+      {
+       "id": "neu-04:t-viii",
+       "origen": "ortega",
+       "texto": "El VIII par.",
+       "cita": "Es un par craneal que es directamente para bochar al alumno, entonces es un par que tienen que estudiarlo bien.",
+       "ref": {
+        "src": "pc-5",
+        "t": "01:02"
+       },
+       "link": "/capitulo/neu-04?t=teoria&d=t-viii",
+       "tema": "VIII par: vestibulococlear"
+      },
+      {
+       "id": "neu-04:t-hipoacusia",
+       "origen": "ortega",
+       "texto": "Las pruebas para evaluar la vía auditiva.",
+       "cita": "La prueba de Weber es la prueba que más tienen que conocer… le pueden llegar a preguntar, y no se tienen que olvidar de eso.",
+       "ref": {
+        "src": "pc-5",
+        "t": "11:21"
+       },
+       "link": "/capitulo/neu-04?t=teoria&d=t-hipoacusia",
+       "tema": "Hipoacusia: Weber, Rinne y Schwabach"
+      },
+      {
+       "id": "neu-04:neu04-d01",
+       "origen": "ortega",
+       "texto": "¿Cómo está inervada la lengua?",
+       "cita": "…hay una pregunta que hacen siempre en el parcial… es cómo está inervada la lengua",
+       "ref": {
+        "src": "pc-4",
+        "t": "07:02"
+       },
+       "link": "/capitulo/neu-04?s=d-neu04-d01",
+       "desarrollo": true
+      }
+     ]
+    },
+    {
+     "id": "neu-05",
+     "title": "Motilidad y síndromes motores",
+     "items": [
+      {
+       "id": "neu-05:t-ataxia",
+       "origen": "ortega",
+       "texto": "El síndrome cordonal posterior y los trastornos del equilibrio.",
+       "cita": "Pregunta de final: [a una docente] le gusta preguntar «hablame sobre el síndrome cordonal posterior».",
+       "ref": {
+        "src": "sn-1",
+        "t": "03:28"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-ataxia",
+       "tema": "Trastorno del equilibrio: tres síndromes"
+      },
+      {
+       "id": "neu-05:t-piramidal",
+       "origen": "ortega",
+       "texto": "El examen físico del paciente con síndrome piramidal.",
+       "cita": "Todo eso es pregunta de examen… Si yo le pregunto el examen físico de un paciente que tiene un síndrome piramidal, me tienen que decir todo eso.",
+       "ref": {
+        "src": "neu-meet-1024",
+        "t": "13:57"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-piramidal",
+       "tema": "Síndrome piramidal"
+      },
+      {
+       "id": "neu-05:t-piramidal-signos",
+       "origen": "ortega",
+       "texto": "Los signos del síndrome piramidal.",
+       "cita": "El síndrome piramidal… es pregunta de examen.",
+       "ref": {
+        "src": "neu-meet-1024",
+        "t": "21:12"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-piramidal-signos",
+       "tema": "Qué se encuentra al examen"
+      },
+      {
+       "id": "neu-05:t-hemiplejias",
+       "origen": "ortega",
+       "texto": "La hemiplejía espástica.",
+       "cita": "El más común y el más característico, y el que le van a preguntar a ustedes en los exámenes… es la hemiplejía espástica.",
+       "ref": {
+        "src": "neu-meet-1024",
+        "t": "27:11"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-hemiplejias",
+       "tema": "Hemiplejía fláccida y espástica"
+      },
+      {
+       "id": "neu-05:t-topografia",
+       "origen": "ortega",
+       "texto": "La topografía del síndrome piramidal.",
+       "cita": "Esta pregunta es de final… le van a decir dónde es lo más frecuente que se lesione en un paciente que tiene un síndrome piramidal: en la cápsula interna.",
+       "ref": {
+        "src": "sn-3",
+        "t": "04:21"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-topografia",
+       "tema": "Dónde está la lesión"
+      },
+      {
+       "id": "neu-05:t-weber",
+       "origen": "ortega",
+       "texto": "Las hemiplejías alternas.",
+       "cita": "Si es hemiplejía alterna o síndrome piramidal alterno, significa que la lesión de la vía piramidal está en el tronco encefálico. No se olviden, porque es pregunta de examen.",
+       "ref": {
+        "src": "neu-meet-1024",
+        "t": "33:12"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-weber",
+       "tema": "Weber y Millard-Gubler"
+      },
+      {
+       "id": "neu-05:t-segunda",
+       "origen": "ortega",
+       "texto": "La diferencia entre la primera y la segunda motoneurona.",
+       "cita": "La pregunta que siempre hacen en los finales es cuál es la diferencia entre el síndrome piramidal de la primera motoneurona y de la segunda motoneurona.",
+       "ref": {
+        "src": "sn-3",
+        "t": "16:34"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-segunda",
+       "tema": "Segunda motoneurona: la triple A"
+      },
+      {
+       "id": "neu-05:t-mononeuropatias",
+       "origen": "ortega",
+       "texto": "Las mononeuropatías de la mano y el Claude Bernard-Horner.",
+       "cita": "El síndrome de Claude Bernard-Horner esto sí pregunto yo, la facies sobre todo.",
+       "ref": {
+        "src": "neu-meet-1024",
+        "t": "53:06"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-mononeuropatias",
+       "tema": "Las manos y el pie caído"
+      },
+      {
+       "id": "neu-05:t-extrapiramidal",
+       "origen": "ortega",
+       "texto": "La clínica del síndrome extrapiramidal.",
+       "cita": "Lo más importante y lo que suelen preguntar siempre en el final es la clínica.",
+       "ref": {
+        "src": "sn-4",
+        "t": "00:01"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-extrapiramidal",
+       "tema": "Síndrome extrapiramidal"
+      },
+      {
+       "id": "neu-05:t-triada-parkinson",
+       "origen": "ortega",
+       "texto": "La tríada del Parkinson y el núcleo lesionado.",
+       "cita": "Siempre yo le pregunto cuál es la tríada de Parkinson… y eso es pregunta de examen: no me saben tríadas del Parkinson, es para bochazo.",
+       "ref": {
+        "src": "neu-meet-1024",
+        "t": "01:07:15"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-triada-parkinson",
+       "tema": "La tríada del Parkinson"
+      },
+      {
+       "id": "neu-05:t-cerebeloso",
+       "origen": "ortega",
+       "texto": "La tríada y la semiología del síndrome cerebeloso.",
+       "cita": "Pregunta de examen: tríadas del síndrome cerebeloso… vértigo de tipo central, cefalea holocraneana y vómitos.",
+       "ref": {
+        "src": "neu-meet-1024",
+        "t": "01:17:55"
+       },
+       "link": "/capitulo/neu-05?t=teoria&d=t-cerebeloso",
+       "tema": "Síndrome cerebeloso"
+      }
+     ]
+    },
+    {
+     "id": "neu-06",
+     "title": "Otros síndromes neurológicos",
+     "items": [
+      {
+       "id": "neu-06:t-triada",
+       "origen": "ortega",
+       "texto": "La tríada de la hipertensión endocraneana.",
+       "cita": "La pregunta de examen más comúnmente que yo siempre suelo preguntar es: ¿cuál es la tríada de hipertensión endocraneana?",
+       "ref": {
+        "src": "neu-rec-1026",
+        "t": "19:19"
+       },
+       "link": "/capitulo/neu-06?t=teoria&d=t-triada",
+       "tema": "La tríada"
+      },
+      {
+       "id": "neu-06:t-papila",
+       "origen": "ortega",
+       "texto": "Las fases del edema de papila.",
+       "cita": "Esto es pregunta de parcial: cuántas fases tiene el edema de papila. Tiene tres fases: una hiperémica, una edematosa y una atrófica.",
+       "ref": {
+        "src": "sn-5",
+        "t": "26:44"
+       },
+       "link": "/capitulo/neu-06?t=teoria&d=t-papila",
+       "tema": "Las fases del edema de papila"
+      },
+      {
+       "id": "neu-06:t-otros-signos",
+       "origen": "ortega",
+       "texto": "El par más lesionado y el efecto Cushing.",
+       "cita": "¿Cuál es el par craneal que más veces está lesionado en una hipertensión endocraneana? El par número seis. Eso es pregunta de examen. Y otra cosa más: yo le pregunto qué es el efecto Cushing.",
+       "ref": {
+        "src": "neu-rec-1026",
+        "t": "22:55"
+       },
+       "link": "/capitulo/neu-06?t=teoria&d=t-otros-signos",
+       "tema": "El VI par y el efecto Cushing"
+      },
+      {
+       "id": "neu-06:t-contraindicaciones",
+       "origen": "ortega",
+       "texto": "Tres contraindicaciones de la punción lumbar.",
+       "cita": "Y yo le digo: decirme tres contraindicaciones para hacer una punción lumbar.",
+       "ref": {
+        "src": "neu-rec-1026",
+        "t": "31:01"
+       },
+       "link": "/capitulo/neu-06?t=teoria&d=t-contraindicaciones",
+       "tema": "Contraindicaciones de la punción lumbar"
+      },
+      {
+       "id": "neu-06:t-lcr",
+       "origen": "ortega",
+       "texto": "El LCR en la meningitis bacteriana, viral y tuberculosa.",
+       "cita": "Esto es pregunta de examen: cómo se ve el líquido cefalorraquídeo en una meningitis supurada, en una meningitis viral y en una meningitis tuberculosa.",
+       "ref": {
+        "src": "neu-rec-1026",
+        "t": "41:26"
+       },
+       "link": "/capitulo/neu-06?t=teoria&d=t-lcr",
+       "tema": "El líquido cefalorraquídeo"
+      },
+      {
+       "id": "neu-06:t-definiciones",
+       "origen": "ortega",
+       "texto": "La diferencia entre meningitis, meningismo y reacción meníngea.",
+       "cita": "Pero yo siempre pregunto esto, pregunta de examen: ¿cuál es la diferencia entre meningitis, meningismo y reacción meníngea?",
+       "ref": {
+        "src": "neu-rec-1026",
+        "t": "32:15"
+       },
+       "link": "/capitulo/neu-06?t=teoria&d=t-definiciones",
+       "tema": "Meningitis, meningismo y reacción meníngea"
+      },
+      {
+       "id": "neu-06:t-signos-meningeos",
+       "origen": "ortega",
+       "texto": "Los signos de irritación meníngea.",
+       "cita": "Estas maniobras, chicos, como el Padre Nuestro, porque se la van a preguntar: signo de Kernig, signo de Brudzinski.",
+       "ref": {
+        "src": "sn-6",
+        "t": "33:28"
+       },
+       "link": "/capitulo/neu-06?t=teoria&d=t-signos-meningeos",
+       "tema": "Contractura y signos de irritación meníngea"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soma",
+   "title": "Soma",
+   "tone": "peach",
+   "capitulos": [
+    {
+     "id": "man-soma",
+     "title": "Examen físico: maniobras",
+     "items": [
+      {
+       "id": "man:cajon-rodilla",
+       "origen": "ortega",
+       "texto": "Maniobra del cajón (ligamentos cruzados) · Bostezo de la rodilla (ligamentos laterales) · Choque rotuliano (derrame de rodilla) · Prueba de McMurray (meniscos) · Maniobra de Apley (meniscos)",
+       "nota": "«Las maniobras para las rodillas son las maniobras que van a preguntar en el examen.»",
+       "ref": {
+        "src": "meningeo-osteo",
+        "t": "46:17"
+       },
+       "link": "/maniobras?m=cajon-rodilla",
+       "maniobra": true
+      },
+      {
+       "id": "man:tinel",
+       "origen": "ortega",
+       "texto": "Signo de Tinel (túnel carpiano) · Maniobra de Phalen (túnel carpiano)",
+       "nota": "«Bien, estas son las maniobras que más se preguntan»: Phalen y Tinel, para el nervio mediano.",
+       "ref": {
+        "src": "meningeo-osteo",
+        "t": "46:00"
+       },
+       "link": "/maniobras?m=tinel",
+       "maniobra": true
+      },
+      {
+       "id": "man:codo-tenista",
+       "origen": "ortega",
+       "texto": "Codo de tenista: epicondilitis (Cozen)",
+       "nota": "«Miembros superiores… es lo que yo le voy a preguntar… Respecto al codo, son dos maniobras, algo que se parece muchísimo: codo de tenista, codo de golfista.»",
+       "ref": {
+        "src": "meningeo-osteo",
+        "t": "39:46"
+       },
+       "link": "/maniobras?m=codo-tenista",
+       "maniobra": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

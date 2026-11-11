@@ -44,6 +44,12 @@ Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase 
    `ffmpeg -i video/out/<id>-clase-muda.mp4 -i sources/tts-cache/<id>/clase/narracion.wav -vf scale=1280:-2 -c:v libx264 -preset slow -crf 30 -tune animation -r 24 -c:a aac -b:a 64k -ac 1 -movflags +faststart -shortest public/media/<id>/clase.mp4` + póster jpg.
 8. build, `npm run check:content`, test; commit con rutas explícitas; push; `gh run watch`; test contra la URL pública.
 
+### Preguntas de examen (2026-11-11)
+- Apartado propio en la columna, después de Soma: ruta `/preguntas` (`src/pages/PreguntasPage.tsx`, estilos `src/styles/preguntas.css`), con accesos por sistema (`?s=digestivo|renal|neuro|soma|oral-…`).
+- Datos: `content/examen/citas.json` se **genera** con `npm run preguntas` (`scripts/build-preguntas.mjs`): junta los avisos `examen` de las diapositivas (ortega / preguntero), las frases de desarrollos que avisan que se toma y no repiten una diapositiva, y las notas del profesor en maniobras. **Re-correrlo si cambia un `clase.ts`, un desarrollo o una maniobra.**
+- Orales: `content/examen/orales.ts` (a mano, relato de compañeras). Oral del 10/11 cargado (teórico + práctico); `rel` marca «Tomada el 10/11» en la lista general.
+- Enlace directo a una diapositiva: `/capitulo/<id>?t=teoria|fisio&d=<id-diapo>` (prop `diapoPedida` del `Visor`).
+
 ## 1. Qué es
 **Aula Clínica — Semiología I**: web de estudio de Semiología y Clínica Médica I basada en las clases del Dr. Ortega.
 - Sitio publicado: https://nahimmora.github.io/aula-clinica-ortega/
@@ -159,4 +165,5 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 - 2026-11-08 (noche) — dig-02 a dig-15 publicados de a uno (cada uno con su commit y deploy). Digestivo completo. Siguiente: nefrourológico.
 - 2026-11-08 (corrección) — dig-02: se abandona Aula Clínica 2.0; vuelve la estructura original con mapa jerárquico, fisiopatología, diapositivas navegables y clase completa con Tomás.
 - 2026-11-08 (madrugada) — Kit `urinario` + `nefrona`; ren-01 a ren-07 publicados de a uno; 6 maniobras renales. Renal completo. Siguiente: nervioso.
+- 2026-11-11 — Apartado «Preguntas de examen» (236 preguntas: 168 de Ortega, 68 del preguntero) y oral del martes 10/11.
 - 2026-11-09 — Clase visual de ren-01…ren-07 (verificadas en la URL pública). Neurología completa: neu-01…neu-06 creados y publicados con video. Biblioteca de maniobras neurológicas (25) y osteoarticulares (12). PDF regenerados. Ojo: en el info.json del video Argente los capítulos 33 y 34 tienen los títulos invertidos (taxia ≈ 13 656–13 894 s; sensibilidad ≈ 13 903–14 322 s). El test del visor en celular ahora hace clic directo en el botón (una barra fija lo tapaba). Preguntero neuro = «construidas desde las clases»: nunca origen «preguntero»; los desarrollos son «de clase» solo con aviso verificado. Hay una carpeta `C:/c/Users/...` creada por error (rutas `/c/...` con MSYS_NO_PATHCONV): se puede borrar a mano; en los tests usar rutas `C:/...`.
