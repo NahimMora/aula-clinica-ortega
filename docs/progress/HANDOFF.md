@@ -45,7 +45,7 @@ Pedido vigente: llevar TODOS los capítulos al formato del piloto dig-02 (clase 
 8. build, `npm run check:content`, test; commit con rutas explícitas; push; `gh run watch`; test contra la URL pública.
 
 ### Preguntas de examen (2026-11-11)
-- Apartado propio en la columna, después de Soma: ruta `/preguntas` (`src/pages/PreguntasPage.tsx`, estilos `src/styles/preguntas.css`), con accesos por sistema (`?s=digestivo|renal|neuro|soma|oral-…`).
+- Apartado propio en la columna, después de Soma: ruta `/preguntas` (`src/pages/PreguntasPage.tsx`, estilos `src/styles/preguntas.css`). Pestañas por sistema (`?s=digestivo|renal|neuro|soma|oral-…`), capítulos plegables y **respuesta dentro de cada pregunta** (pedido de la usuaria: no tener que ir a otra página y que no sea eterna). La respuesta (`resp`) se arma en el generador desde los bloques de la diapositiva (sin la figura; si dice poco, suma su «aclara»), los puntos clave del desarrollo o la técnica de la maniobra.
 - Datos: `content/examen/citas.json` se **genera** con `npm run preguntas` (`scripts/build-preguntas.mjs`): junta los avisos `examen` de las diapositivas (ortega / preguntero), las frases de desarrollos que avisan que se toma y no repiten una diapositiva, y las notas del profesor en maniobras. **Re-correrlo si cambia un `clase.ts`, un desarrollo o una maniobra.**
 - Orales: `content/examen/orales.ts` (a mano, relato de compañeras). Oral del 10/11 cargado (teórico + práctico); `rel` marca «Tomada el 10/11» en la lista general.
 - Enlace directo a una diapositiva: `/capitulo/<id>?t=teoria|fisio&d=<id-diapo>` (prop `diapoPedida` del `Visor`).
