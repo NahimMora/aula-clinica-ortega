@@ -12,6 +12,7 @@
     "check:content": "node scripts/check-content.mjs",
     "preguntas": "node scripts/build-preguntas.mjs",
     "pdf": "node scripts/build-pdfs.mjs http://localhost:4791/aula-clinica-ortega/",
+    "pdf:parcial": "node scripts/build-pdf-parcial.mjs http://localhost:4791/aula-clinica-ortega/",
     "smoke": "node scripts/smoke-test.mjs",
     "tts": "node scripts/tts.mjs",
     "tts:clase": "node scripts/tts-clase.mjs",

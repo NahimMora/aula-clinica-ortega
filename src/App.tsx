@@ -16,6 +16,8 @@ const ProgressPage = lazy(() => import('@/pages/ProgressPage').then((m) => ({ de
 const ManeuversPage = lazy(() => import('@/pages/ManeuversPage').then((m) => ({ default: m.ManeuversPage })));
 const PreguntasPage = lazy(() => import('@/pages/PreguntasPage').then((m) => ({ default: m.PreguntasPage })));
 const SearchPage = lazy(() => import('@/pages/SearchPage').then((m) => ({ default: m.SearchPage })));
+const ImprimirParcial = lazy(() => import('@/pages/ImprimirParcial').then((m) => ({ default: m.ImprimirParcial })));
+const ImprimirParcialCompacto = lazy(() => import('@/pages/ImprimirParcialCompacto').then((m) => ({ default: m.ImprimirParcialCompacto })));
 const ParcialPage = lazy(() => import('@/pages/ParcialPage').then((m) => ({ default: m.ParcialPage })));
 
 export function App() {
@@ -24,6 +26,8 @@ export function App() {
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/imprimir/:id" element={<PrintManual />} />
+          <Route path="/imprimir-parcial/:sistema" element={<ImprimirParcial />} />
+          <Route path="/imprimir-parcial/:sistema/compacto" element={<ImprimirParcialCompacto />} />
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="sistema/:id" element={<SystemPage />} />

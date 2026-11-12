@@ -10,11 +10,13 @@ import { Refs, Rich } from '@/components/Rich';
 import { findChapter } from '@content/curriculum';
 import { MANIOBRAS_PARCIAL } from '@content/parcial/maniobras';
 import { PREGUNTAS } from '@content/parcial/preguntas';
-import { COMO_RESPONDER, EXCLUIDOS, FECHA_PARCIAL, SISTEMAS_PARCIAL, TEMAS, temaById, temasDe } from '@content/parcial/temario';
+import { COMO_RESPONDER, EXCLUIDOS, FECHA_PARCIAL, SISTEMAS_PARCIAL, TEMAS, enPizarra, temaById, temasDe } from '@content/parcial/temario';
 import type { EstadoPregunta, PreguntaParcial, Prioridad, SistemaParcial, TemaParcial } from '@content/parcial/tipos';
 import { Maniqui } from '@/parcial/Maniqui';
 import { MiniVisor } from '@/parcial/MiniVisor';
 import { ParesTabla } from '@/parcial/ParesTabla';
+import { VideosTema } from '@/parcial/VideosTema';
+import { asset } from '@/components/VideoPlayer';
 import { ESTADO_LABEL, Etiquetas, Fundamento, Marcador, PreguntaCard } from '@/parcial/PreguntaCard';
 import { useMarcas, type Marca } from '@/parcial/marcas';
 import { setLast } from '@/lib/progress';
@@ -28,6 +30,8 @@ const PRIO: Record<Prioridad, { label: string; desc: string }> = {
   complementario: { label: 'Complementario', desc: 'Lo necesario para sostener las repreguntas' },
 };
 const SISTEMA = Object.fromEntries(SISTEMAS_PARCIAL.map((s) => [s.id, s])) as Record<SistemaParcial, (typeof SISTEMAS_PARCIAL)[number]>;
+/** PDF imprimible del parcial por sistema (npm run pdf:parcial). */
+const PDF_PARCIAL: Partial<Record<SistemaParcial, { completo: string; imprimir: string }>> = { neuro: { completo: 'pdf/parcial-neuro.pdf', imprimir: 'pdf/parcial-neuro-imprimir.pdf' } };
 const preguntasDe = (tema: string) => PREGUNTAS.filter((p) => p.tema === tema);
 
 export function ParcialPage() {
@@ -150,6 +154,7 @@ function Inicio() {
                     <Link to={`/parcial/${s.id}?t=${t.id}`}>
                       <span className={`prio-dot prio-dot--${t.prioridad}`} title={PRIO[t.prioridad].label} />
                       <span className="temario__t">{t.titulo}</span>
+                      {enPizarra(t) && <PizarraBadge />}
                       <PrioBadge p={t.prioridad} />
                     </Link>
                   </li>
@@ -281,7 +286,17 @@ function SistemaVista({ s }: { s: SistemaParcial }) {
         </span>
         <div>
           <h1>{sis.titulo}</h1>
-          <p className="muted">{temas.length} temas para el parcial. Elegí uno: cada tema tiene sus preguntas, su teoría, sus maniobras y el cierre.</p>
+          <p className="muted">{temas.length} temas para el parcial, en el mismo orden que la web: primero los motivos de consulta, después el examen físico y los síndromes. Los que tienen el lápiz son los que Ortega escribió en la pizarra. Cada tema se recorre igual que un capítulo: fisiopatología, diapositivas, video, maniobras, memoria, preguntas y cierre.</p>
+          {PDF_PARCIAL[s] && (
+            <div className="psis__pdf">
+              <a className="btn btn--soft btn--sm" href={asset(PDF_PARCIAL[s]!.imprimir)} download>
+                <Icon name="download" size={15} /> PDF para imprimir: solo teoría
+              </a>
+              <a className="btn btn--ghost btn--sm" href={asset(PDF_PARCIAL[s]!.completo)} download>
+                <Icon name="download" size={15} /> PDF completo, con diapositivas
+              </a>
+            </div>
+          )}
         </div>
       </header>
       <div className="ptemas" role="tablist" aria-label="Temas">
@@ -298,6 +313,11 @@ function SistemaVista({ s }: { s: SistemaParcial }) {
           >
             <span className={`prio-dot prio-dot--${t.prioridad}`} />
             {t.titulo}
+            {enPizarra(t) && (
+              <span className="ptemas__piz" title="En la pizarra">
+                <Icon name="pen" size={13} />
+              </span>
+            )}
           </button>
         ))}
       </div>
@@ -324,26 +344,53 @@ function SistemaVista({ s }: { s: SistemaParcial }) {
   );
 }
 
-function Bloque({ id, icon, titulo, children, sub }: { id: string; icon: string; titulo: string; sub?: ReactNode; children: ReactNode }) {
-  return (
-    <section className="ptema__sec" id={id}>
-      <h2 className="ptema__h">
-        <Icon name={icon} size={19} /> {titulo}
-      </h2>
-      {sub && <p className="psec__sub">{sub}</p>}
-      {children}
-    </section>
-  );
+interface PestanaTema {
+  id: string;
+  label: string;
+  titulo: string;
+}
+
+const esFisio = (id: string) => id.startsWith('f-');
+
+/** Mismas pestañas y mismo orden que un capítulo: fisiopatología, diapositivas, video, maniobras, memoria, preguntas y cierre. */
+function pestanasDe(t: TemaParcial, nPreguntas: number): PestanaTema[] {
+  const out: PestanaTema[] = [];
+  if (t.diapos.some((d) => d.ids.some(esFisio))) out.push({ id: 'fisio', label: 'Fisiopatología', titulo: 'Fisiopatología' });
+  if (t.diapos.some((d) => d.ids.some((x) => !esFisio(x))) || t.nuevo?.length || t.id === 'pares') out.push({ id: 'teoria', label: 'Diapositivas', titulo: 'Diapositivas' });
+  if (t.capitulos.some((c) => !c.startsWith('soma'))) out.push({ id: 'video', label: 'Video', titulo: 'Clase en video' });
+  if (t.maniobras?.length || t.id === 'ef-digestivo' || t.id === 'ef-renal') out.push({ id: 'maniobras', label: 'Maniobras', titulo: 'Maniobras' });
+  if (t.memoria?.length) out.push({ id: 'memoria', label: 'Memoria', titulo: 'Memoria' });
+  if (nPreguntas) out.push({ id: 'preguntas', label: 'Preguntas', titulo: 'Preguntas del oral' });
+  out.push({ id: 'cierre', label: 'Cierre', titulo: 'Cierre e integración' });
+  return out;
 }
 
 function TemaVista({ t, pedida }: { t: TemaParcial; pedida?: string }) {
+  const [params, setParams] = useSearchParams();
   const ps = preguntasDe(t.id);
-  const fuentesDiapos = useMemo(() => t.diapos, [t.diapos]);
+  const pestanas = useMemo(() => pestanasDe(t, ps.length), [t, ps.length]);
+  const fisio = useMemo(() => t.diapos.map((d) => ({ cap: d.cap, ids: d.ids.filter(esFisio) })).filter((d) => d.ids.length), [t.diapos]);
+  const teoria = useMemo(() => t.diapos.map((d) => ({ cap: d.cap, ids: d.ids.filter((x) => !esFisio(x)) })).filter((d) => d.ids.length), [t.diapos]);
+  const pizarra = enPizarra(t);
+
+  // Enlaces previos: ?ir=teoria&d=cap:diapo (desde las preguntas) o ?ir=responder.
+  const ir = params.get('ir');
+  const desdeEnlace = ir === 'responder' ? 'preguntas' : ir === 'teoria' && pedida ? (esFisio(pedida.split(':')[1] ?? '') ? 'fisio' : 'teoria') : ir;
+  const pedidaP = params.get('p');
+  const actual = pestanas.find((x) => x.id === pedidaP) ?? pestanas.find((x) => x.id === desdeEnlace) ?? pestanas[0];
+  const idx = pestanas.indexOf(actual);
+  const ant = pestanas[idx - 1];
+  const sig = pestanas[idx + 1];
+  const irA = (p: string) => {
+    setParams({ t: t.id, p });
+    window.setTimeout(() => document.getElementById('tema-pestanas')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+  };
+
   return (
     <article className="ptema">
       <header className="ptema__head">
         <h2 className="ptema__titulo">
-          {t.titulo} <PrioBadge p={t.prioridad} />
+          {t.titulo} <PrioBadge p={t.prioridad} /> {pizarra && <PizarraBadge />}
         </h2>
         <aside className="callout callout--prof ptema__porque">
           <div className="callout__head">
@@ -366,89 +413,144 @@ function TemaVista({ t, pedida }: { t: TemaParcial; pedida?: string }) {
         </div>
       </header>
 
-      {ps.length > 0 && (
-        <Bloque id="responder" icon="target" titulo="¿Cómo responderlo frente a Ortega?" sub="Intentá responder en voz alta antes de abrir. Nivel 1: lo que decís primero · nivel 2: el porqué · nivel 3: las repreguntas.">
-          <div className="pq-lista">
-            {ps.map((p) => (
-              <PreguntaCard key={p.id} p={p} temaId={t.id} />
-            ))}
-          </div>
-        </Bloque>
-      )}
+      <nav className="secnav ptema__secnav" id="tema-pestanas" aria-label="Secciones del tema">
+        {pestanas.map((x, i) => (
+          <button key={x.id} type="button" className={`secnav__item ${x.id === actual.id ? 'is-on' : ''}`} aria-current={x.id === actual.id ? 'page' : undefined} onClick={() => irA(x.id)}>
+            <span className="secnav__letter">{i + 1}</span>
+            <span className="secnav__label">{x.label}</span>
+          </button>
+        ))}
+      </nav>
 
-      {t.id === 'pares' && (
-        <Bloque id="pares" icon="brain" titulo="Los doce pares en el esquema de Ortega" sub="Nombre · función · origen · examen físico · alteraciones. Activá «tapar» para tomarte examen.">
-          <ParesTabla />
-        </Bloque>
-      )}
-
-      {t.nuevo?.map((n, i) => (
-        <Bloque key={i} id={`nuevo-${i}`} icon="sparkle" titulo={n.titulo}>
-          <div className="ptema__nuevo">
-            <Blocks blocks={n.blocks} />
-            <Refs refs={n.refs} />
-          </div>
-        </Bloque>
-      ))}
-
-      {t.diapos.length > 0 && (
-        <Bloque id="teoria" icon="layers" titulo="Teoría: fisiopatología y diapositivas" sub="Las mismas diapositivas de los capítulos, solo las de este tema: primero la fisiopatología (qué pasa normalmente y qué se altera), después la teoría.">
-          <MiniVisor temaId={t.id} fuentes={fuentesDiapos} pedida={pedida} />
-        </Bloque>
-      )}
-
-      {(t.id === 'ef-digestivo' || t.id === 'ef-renal') && (
-        <Bloque id="maniqui" icon="target" titulo="Práctica del maniquí: ¿qué punto doloroso es este?">
-          <Maniqui sistema={t.id === 'ef-digestivo' ? 'digestivo' : 'renal'} />
-        </Bloque>
-      )}
-
-      {t.maniobras && t.maniobras.length > 0 && (
-        <Bloque id="maniobras" icon="hand" titulo="Cómo se examina: maniobras de este tema" sub="Las mismas de la biblioteca, con su fragmento de video cuando está verificado.">
-          <ManeuverList ids={t.maniobras} />
-        </Bloque>
-      )}
-
-      {t.memoria && t.memoria.length > 0 && (
-        <Bloque id="memoria" icon="bulb" titulo="Memoria">
-          <div className="pmemo">
-            {t.memoria.map((m) => (
-              <div key={m.gancho} className="pmemo__item">
-                <strong>{m.gancho}</strong>
-                <p>
-                  <Rich text={m.explica} />
-                </p>
+      <section className={`csec csec--${actual.id} clase__panel`} key={actual.id} id={actual.id === 'preguntas' ? 'responder' : actual.id}>
+        <h2 className="clase__h">{actual.titulo}</h2>
+        <ErrorBoundary label={`la sección «${actual.titulo}»`}>
+          {actual.id === 'fisio' && (
+            <>
+              <p className="psec__sub">Qué pasa normalmente y qué se altera: las mismas diapositivas del capítulo, solo las de este tema.</p>
+              <MiniVisor temaId={`${t.id}-fisio`} fuentes={fisio} pedida={pedida} />
+            </>
+          )}
+          {actual.id === 'teoria' && (
+            <>
+              {teoria.length > 0 && <MiniVisor temaId={t.id} fuentes={teoria} pedida={pedida} />}
+              {t.id === 'pares' && (
+                <div className="ptema__extra">
+                  <h3 className="ptema__h3">
+                    <Icon name="brain" size={18} /> Los doce pares en el esquema de Ortega
+                  </h3>
+                  <p className="psec__sub">Nombre · función · origen · examen físico · alteraciones. Activá «tapar» para tomarte examen.</p>
+                  <ParesTabla />
+                </div>
+              )}
+              {t.nuevo?.map((n, i) => (
+                <div key={i} className="ptema__extra ptema__extra--pizarra">
+                  <h3 className="ptema__h3">
+                    <Icon name="sparkle" size={18} /> {n.titulo}
+                  </h3>
+                  <div className="ptema__nuevo">
+                    <Blocks blocks={n.blocks} />
+                    <Refs refs={n.refs} />
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
+          {actual.id === 'video' && <VideosTema t={t} />}
+          {actual.id === 'maniobras' && (
+            <>
+              {(t.id === 'ef-digestivo' || t.id === 'ef-renal') && (
+                <div className="ptema__extra">
+                  <h3 className="ptema__h3">
+                    <Icon name="target" size={18} /> Práctica del maniquí: ¿qué punto doloroso es este?
+                  </h3>
+                  <Maniqui sistema={t.id === 'ef-digestivo' ? 'digestivo' : 'renal'} />
+                </div>
+              )}
+              {t.maniobras && t.maniobras.length > 0 && (
+                <>
+                  <p className="clase__nota">
+                    Las mismas de la <Link to="/maniobras">biblioteca de maniobras</Link>, con su fragmento de video cuando está verificado.
+                  </p>
+                  <ManeuverList ids={t.maniobras} />
+                </>
+              )}
+            </>
+          )}
+          {actual.id === 'memoria' && (
+            <div className="pmemo">
+              {(t.memoria ?? []).map((m) => (
+                <div key={m.gancho} className="pmemo__item">
+                  <strong>{m.gancho}</strong>
+                  <p>
+                    <Rich text={m.explica} />
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
+          {actual.id === 'preguntas' && (
+            <>
+              <p className="psec__sub">Intentá responder en voz alta antes de abrir. Nivel 1: lo que decís primero · nivel 2: el porqué · nivel 3: las repreguntas.</p>
+              <div className="pq-lista">
+                {ps.map((p) => (
+                  <PreguntaCard key={p.id} p={p} temaId={t.id} />
+                ))}
               </div>
-            ))}
-          </div>
-        </Bloque>
-      )}
-
-      <section className="quedate">
-        <h2>
-          <Icon name="check" size={20} /> Con esto tenés que quedarte
-        </h2>
-        <ul>
-          {t.quedate.map((q, i) => (
-            <li key={i}>
-              <Rich text={q} />
-            </li>
-          ))}
-        </ul>
-        <p className="quedate__caps">
-          Capítulo completo (para el final):{' '}
-          {t.capitulos.map((c, i) => {
-            const m = findChapter(c);
-            return (
-              <span key={c}>
-                {i > 0 && ' · '}
-                <Link to={m?.link ?? `/capitulo/${c}`}>{m?.title ?? c}</Link>
-              </span>
-            );
-          })}
-        </p>
+            </>
+          )}
+          {actual.id === 'cierre' && (
+            <section className="quedate">
+              <h2>
+                <Icon name="check" size={20} /> Con esto tenés que quedarte
+              </h2>
+              <ul>
+                {t.quedate.map((q, i) => (
+                  <li key={i}>
+                    <Rich text={q} />
+                  </li>
+                ))}
+              </ul>
+              <p className="quedate__caps">
+                Capítulo completo (para el final):{' '}
+                {t.capitulos.map((c, i) => {
+                  const m = findChapter(c);
+                  return (
+                    <span key={c}>
+                      {i > 0 && ' · '}
+                      <Link to={m?.link ?? `/capitulo/${c}`}>{m?.title ?? c}</Link>
+                    </span>
+                  );
+                })}
+              </p>
+            </section>
+          )}
+        </ErrorBoundary>
       </section>
+
+      <nav className="clase__pie" aria-label="Pestaña anterior y siguiente">
+        {ant ? (
+          <button type="button" onClick={() => irA(ant.id)}>
+            <Icon name="chevronLeft" size={16} /> {ant.label}
+          </button>
+        ) : (
+          <span />
+        )}
+        {sig && (
+          <button type="button" className="is-sig" onClick={() => irA(sig.id)}>
+            {sig.label} <Icon name="chevronRight" size={16} />
+          </button>
+        )}
+      </nav>
     </article>
+  );
+}
+
+function PizarraBadge() {
+  return (
+    <span className="pizarra-badge" title="Ortega lo escribió en la pizarra del repaso">
+      <Icon name="pen" size={12} /> En la pizarra
+    </span>
   );
 }
 

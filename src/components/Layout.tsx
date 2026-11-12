@@ -22,7 +22,16 @@ const PARCIAL = [
   { to: '/parcial/neuro', label: 'Sistema nervioso' },
   { to: '/parcial/soma', label: 'SOMA' },
   { to: '/parcial/maniobras', label: 'Maniobras y puntos dolorosos' },
-  { to: '/parcial/preguntas', label: 'Preguntas del examen oral' },
+];
+
+/** Preguntas de examen del parcial, una entrada por sistema (banco del parcial con respuesta en tres niveles). */
+const PARCIAL_PREGUNTAS = [
+  { s: 'digestivo', label: 'Digestivo' },
+  { s: 'renal', label: 'Renal' },
+  { s: 'neuro', label: 'Neurología' },
+  { s: 'soma', label: 'SOMA' },
+  { s: 'integracion', label: 'Integración' },
+  { s: 'simulacro', label: 'Simulacro oral' },
 ];
 
 /** Apartado «Preguntas de examen» de la columna: oral más reciente y un acceso por sistema. */
@@ -107,6 +116,7 @@ function TopBar({ onMenu, menuOpen }: { onMenu: () => void; menuOpen: boolean })
 
 function Sidebar() {
   const progress = useProgress();
+  const loc = useLocation();
   return (
     <aside className="sidebar" aria-label="Programa">
       <nav className="sidebar__nav sidebar__nav--mobile">
@@ -132,6 +142,22 @@ function Sidebar() {
               </NavLink>
             </li>
           ))}
+        </ul>
+        <div className="sidebar__subtit">
+          <Icon name="target" size={14} /> Preguntas de examen
+        </div>
+        <ul>
+          {PARCIAL_PREGUNTAS.map((p) => {
+            const on = loc.pathname === '/parcial/preguntas' && (new URLSearchParams(loc.search).get('s') ?? 'digestivo') === p.s;
+            return (
+              <li key={p.s}>
+                <Link to={`/parcial/preguntas?s=${p.s}`} className={`sidebar__ch ${on ? 'active' : ''}`} aria-current={on ? 'page' : undefined}>
+                  <span className="dot" aria-hidden="true" />
+                  <span>{p.label}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {SYSTEMS.map((s) => (

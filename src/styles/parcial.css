@@ -96,6 +96,7 @@
 .ptema__h > svg { color: var(--accent-700); }
 .ptema__nuevo { padding: 4px 2px; }
 .ptema__pie { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: 26px 0 0; }
+.ptema__pie .btn { max-width: 100%; white-space: normal; text-align: left; }
 
 .pmemo { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
 .pmemo__item { padding: 12px 14px; border-radius: 14px; background: var(--gold-50); border: 1px solid var(--gold-200); }
@@ -298,3 +299,17 @@
   .mq__modo { display: flex; }
   .mq__modo button { flex: 1 1 0; font-size: 0.82rem; padding: 7px 8px; }
 }
+
+/* Videos del tema */
+.pvideos { display: grid; gap: 12px; }
+.pvideos__tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.pvideos__nota { margin: 0; color: var(--ink-2); font-size: 0.92rem; }
+
+/* Tema con pestañas, igual que un capítulo */
+.ptema__secnav { margin-top: 22px; scroll-margin-top: 80px; }
+.ptema__extra { margin-top: 28px; }
+.ptema__h3 { display: flex; align-items: center; gap: 8px; font-size: 1.15rem; margin: 0 0 10px; }
+.ptema__extra--pizarra { padding: 16px 18px; border-radius: var(--radius); border: 1px solid var(--accent-200); background: var(--accent-50); }
+.pizarra-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 999px; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; vertical-align: middle; white-space: nowrap; background: var(--mint-100); color: var(--mint-700); }
+.ptemas__piz { display: inline-flex; margin-left: 4px; color: var(--mint-700); vertical-align: middle; }
+.psis__pdf { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; }

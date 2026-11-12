@@ -60,3 +60,97 @@ html.is-print body { background: #fff; }
 }
 .print .dpanel { opacity: 1 !important; }
 .print .dchoice, .print .slides, .print .dlegend .btn { display: none !important; }
+
+/* PDF del parcial (/imprimir-parcial/:sistema) */
+.pimp__diapos { display: grid; gap: 14px; margin: 12px 0; }
+.pimp__diapo { margin: 0; break-inside: avoid; }
+.pimp__diapo .visor__escenario { border-radius: 10px; }
+.pimp__diapo .visor__aclara { margin-top: 6px; font-size: 0.9rem; padding: 8px 12px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line); }
+.pimp__pide ol { margin: 4px 0 0; padding-left: 1.3em; }
+.pimp__pizarra { margin: 18px 0; padding: 2px 0 2px 16px; border-left: 4px solid var(--accent-400); }
+.pimp__pizarra .print__h3 { margin-top: 0; color: var(--accent-700); }
+.pimp__video { padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line); break-inside: avoid; }
+.pimp__video p { margin: 0 0 4px; }
+.pimp__video ul { margin: 0; padding-left: 1.2em; font-size: 0.9rem; }
+.pimp__manis { display: grid; gap: 10px; }
+.pimp__mani, .pimp__par { padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line); break-inside: avoid; }
+.pimp__mani h4, .pimp__par h4 { margin: 0 0 6px; }
+.pimp__mani dl, .pimp__par dl { margin: 0; display: grid; gap: 4px; }
+.pimp__mani dl > div, .pimp__par dl > div { display: grid; grid-template-columns: 110px 1fr; gap: 8px; }
+.pimp__mani dt, .pimp__par dt { font-size: 0.72rem; font-weight: 750; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-700); padding-top: 2px; }
+.pimp__mani dd, .pimp__par dd { margin: 0; font-size: 0.92rem; }
+.pimp__mani ol { margin: 0; padding-left: 1.2em; }
+.pimp__pares { display: grid; gap: 10px; }
+.pimp__ortega { margin: 8px 0 0; font-size: 0.9rem; padding: 6px 10px; border-radius: 8px; background: #fff6dc; }
+.pimp__preg { padding: 12px 16px; margin: 12px 0; border-radius: 14px; border: 1px solid var(--line); }
+.pimp__preg h4 { margin: 0 0 2px; font-size: 1.05rem; break-after: avoid; }
+.pimp__preg h5 { display: flex; align-items: center; gap: 6px; margin: 10px 0 4px; font-size: 0.92rem; break-after: avoid; }
+.pimp__tags { margin: 0 0 6px; font-size: 0.76rem; color: var(--ink-3); }
+.pimp__repreg { margin: 0; padding-left: 1.3em; }
+.pimp__repreg li { margin: 5px 0; break-inside: avoid; }
+.pimp__rel { font-size: 0.88rem; color: var(--ink-2); }
+.pimp__piz { color: var(--mint-700); font-size: 0.85em; }
+.pimp__crit { color: var(--rose-700); font-size: 0.85em; }
+.pimp .quedate { break-inside: avoid; }
+
+/* PDF compacto del parcial para imprimir (/imprimir-parcial/:sistema/compacto): dos columnas, solo teoría */
+.pc { max-width: 1000px; margin: 0 auto; padding: 16px; background: #fff; color: #1f1a24; font-size: 11.5px; line-height: 1.38; column-count: 2; column-gap: 22px; column-rule: 1px solid #e6dde3; }
+.pc p { margin: 0 0 3px; }
+.pc ul, .pc ol { margin: 0 0 4px; padding-left: 1.15em; }
+.pc li { margin: 0 0 1px; }
+.pc strong { color: #111; }
+.pc mark { background: #fff1b8; color: inherit; padding: 0 1px; }
+.pc__cab { column-span: all; border-bottom: 2px solid var(--accent-400); padding-bottom: 6px; margin-bottom: 8px; }
+.pc__cab h1 { font-size: 20px; margin: 0 0 3px; }
+.pc__cab p { font-size: 11px; color: #4a4152; }
+.pc__tema { margin: 0 0 6px; }
+.pc__titulo { column-span: all; font-size: 16px; margin: 12px 0 6px; padding: 5px 9px; border-radius: 6px; background: var(--accent-100); color: #1f1a24; display: flex; align-items: center; gap: 8px; break-after: avoid; }
+.pc__crit, .pc__piz { font-family: var(--font-body); font-size: 9px; font-weight: 800; letter-spacing: 0.06em; padding: 1px 6px; border-radius: 99px; }
+.pc__crit { background: #fbd0d8; color: #9c2440; }
+.pc__piz { background: #dbf0e6; color: #2b6d54; }
+.pc__pide { padding: 4px 8px; margin: 0 0 6px; border-left: 3px solid var(--accent-400); background: #faf6f8; break-inside: avoid; }
+.pc__h { font-family: var(--font-body); font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--accent-700); margin: 8px 0 3px; padding-bottom: 2px; border-bottom: 1px solid #e6dde3; break-after: avoid; }
+.pc__diapo { margin: 0 0 6px; break-inside: avoid-column; }
+.pc__diapo h4, .pc__preg h4 { font-family: var(--font-body); font-size: 11.5px; font-weight: 750; margin: 0 0 2px; break-after: avoid; }
+.pc__clave { padding: 2px 6px; background: #faf6f8; border-left: 2px solid var(--accent-400); }
+.pc__tabla { width: 100%; border-collapse: collapse; font-size: 10px; margin: 2px 0 4px; break-inside: avoid; }
+.pc__tabla th, .pc__tabla td { border: 1px solid #e0d6dd; padding: 1px 4px; vertical-align: top; text-align: left; }
+.pc__tabla th { background: #f5eff3; font-weight: 700; }
+.pc__comparar { list-style: none; padding-left: 0; }
+.pc__cadena { font-size: 10.8px; }
+.pc__arbol ul { margin-bottom: 0; }
+.pc__prof, .pc__examen { font-size: 10.8px; }
+.pc__examen { color: #9c2440; }
+.pc__examen strong { color: #9c2440; }
+.pc__aclara { font-size: 10.5px; color: #4a4152; font-style: italic; }
+.pc__pizarra { margin: 4px 0 6px; padding-left: 7px; border-left: 3px solid #5fb592; }
+.pc__pizarra .pc__h { color: #2b6d54; }
+.pc__memo { padding: 2px 6px; background: #fff6dc; margin-bottom: 3px; break-inside: avoid; }
+.pc__preg { margin: 0 0 7px; padding-bottom: 5px; border-bottom: 1px dashed #e0d6dd; }
+.pc__oral { padding: 2px 6px; background: #eef7f2; border-left: 2px solid #5fb592; }
+.pc__repreg { font-size: 10.8px; }
+.pc__error { font-size: 10.5px; color: #9c2440; }
+.pc__quedate { padding: 4px 8px; margin: 6px 0 4px; border: 1.5px solid var(--accent-400); border-radius: 6px; break-inside: avoid; }
+/* Bloques de la web dentro del PDF compacto: sin adornos, sin fuentes */
+.pc .refs, .pc .diagram button, .pc .wires { display: none !important; }
+.pc .tblock, .pc .callout, .pc .cards, .pc .card, .pc .compare, .pc .steps, .pc .chain, .pc .kv, .pc .def, .pc .table-wrap { box-shadow: none !important; margin: 3px 0 !important; padding: 3px 6px !important; border-radius: 4px !important; font-size: 11px; }
+.pc .cards, .pc .compare { display: block !important; }
+.pc .cards > *, .pc .compare > * { margin: 0 0 3px; padding: 2px 4px; }
+.pc table { font-size: 10px; }
+.pc .table-wrap { overflow: visible !important; padding: 0 !important; }
+.pc .btable th, .pc .btable td { padding: 1px 4px !important; }
+.pc h3, .pc h4, .pc h5 { line-height: 1.25; }
+.pc .callout__head { font-size: 10px; margin-bottom: 1px; }
+@media print { .pc { padding: 0; max-width: none; } }
+/* Mismo tamaño de letra en todo el PDF compacto (los bloques de la web traen tamaños propios) */
+.pc .pc__pizarra *, .pc .pc__preg * { font-size: 11px !important; line-height: 1.38 !important; letter-spacing: normal !important; }
+.pc .pc__pizarra table *, .pc .pc__preg table * { font-size: 10px !important; }
+.pc .pc__pizarra h3.pc__h { font-size: 10.5px !important; }
+.pc .pc__pizarra .card, .pc .pc__pizarra .cards > *, .pc .pc__pizarra .compare > *, .pc .pc__preg .card, .pc .pc__preg .cards > * { background: none !important; border: 0 !important; border-left: 2px solid #e0d6dd !important; border-radius: 0 !important; padding: 0 0 0 6px !important; margin: 0 0 3px !important; min-height: 0 !important; }
+.pc .pc__pizarra .def, .pc .pc__preg .def, .pc .pc__pizarra .callout, .pc .pc__preg .callout { background: none !important; border: 0 !important; border-left: 2px solid var(--accent-400) !important; border-radius: 0 !important; padding: 0 0 0 6px !important; }
+.pc .pc__pizarra p, .pc .pc__preg p { margin: 0 0 3px !important; }
+.pc .pc__pizarra ul, .pc .pc__preg ul, .pc .pc__pizarra ol, .pc .pc__preg ol { margin: 0 0 3px !important; padding-left: 1.15em !important; }
+.pc .pc__pizarra li, .pc .pc__preg li { margin: 0 !important; }
+.pc .pc__pizarra h3:not(.pc__h), .pc .pc__pizarra h4, .pc .pc__pizarra h5, .pc .pc__preg h3, .pc .pc__preg h5 { margin: 3px 0 1px !important; font-family: var(--font-body) !important; font-weight: 750 !important; }
+.pc .pc__pizarra th, .pc .pc__pizarra td, .pc .pc__preg th, .pc .pc__preg td { padding: 1px 4px !important; }
+.pc .pc__pizarra th, .pc .pc__preg th { text-transform: none !important; }

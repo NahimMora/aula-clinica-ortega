@@ -6,7 +6,8 @@ export const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\/
 
 const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
 
-export function VideoPlayer({ video, title }: { video: VideoMeta; title: string }) {
+/** `relevantes`: índices de capítulos del video que se marcan (p. ej., los que entran en el parcial). */
+export function VideoPlayer({ video, title, relevantes, etiquetaRelevante = 'Entra' }: { video: VideoMeta; title: string; relevantes?: number[]; etiquetaRelevante?: string }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [current, setCurrent] = useState(0);
   const [failed, setFailed] = useState(false);
@@ -47,9 +48,10 @@ export function VideoPlayer({ video, title }: { video: VideoMeta; title: string 
         <ol className="vplayer__chapters">
           {video.chapters.map((c, i) => (
             <li key={i}>
-              <button className={i === activeIdx ? 'is-on' : ''} onClick={() => seek(c.t)}>
+              <button className={`${i === activeIdx ? 'is-on' : ''} ${relevantes?.includes(i) ? 'is-rel' : ''}`} onClick={() => seek(c.t)}>
                 <span className="vplayer__t">{fmt(c.t)}</span>
                 <span>{c.label}</span>
+                {relevantes?.includes(i) && <span className="vplayer__rel">{etiquetaRelevante}</span>}
               </button>
             </li>
           ))}

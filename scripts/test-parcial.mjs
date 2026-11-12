@@ -69,22 +69,35 @@ for (const s of SIS) {
     const tabs = await p.$$('.ptemas__tab');
     await tabs[i].click();
     await espera(400);
-    await p.waitForSelector('.visor__escenario, .ptema__sec#maniobras', { timeout: 20000 }).catch(() => null);
-    await espera(500);
-    const info = await p.evaluate(() => ({
-      titulo: document.querySelector('.ptema__titulo')?.firstChild?.textContent?.trim(),
-      preguntas: document.querySelectorAll('.ptema .pq').length,
-      visor: Boolean(document.querySelector('.ptema .visor__escenario')),
-      n: document.querySelector('.ptema .visor__n')?.textContent,
-      tieneDiapos: Boolean(document.querySelector('#teoria')),
-      maniobras: Boolean(document.querySelector('#maniobras .mplaylist, #maniobras .empty')),
-      quedate: document.querySelectorAll('.quedate li').length,
-      cargando: document.body.innerText.includes('Cargando diapositivas'),
-    }));
-    if (info.tieneDiapos) ok(info.visor && !info.cargando, `${s} · ${info.titulo}: visor (${info.n})`);
-    ok(info.quedate > 0, `${s} · ${info.titulo}: «Con esto tenés que quedarte» (${info.quedate}) · ${info.preguntas} preguntas`);
-    ok(await sinErrorBoundary(p), `${s} · ${info.titulo}: sin error de sección`);
+    // Cada tema se recorre por pestañas, como un capítulo.
+    const pest = await p.$$eval('#tema-pestanas .secnav__label', (b) => b.map((x) => x.textContent));
+    const titulo = await p.$eval('.ptema__titulo', (e) => e.firstChild?.textContent?.trim());
+    const orden = ['Fisiopatología', 'Diapositivas', 'Video', 'Maniobras', 'Memoria', 'Preguntas', 'Cierre'];
+    ok(pest.every((x, k) => k === 0 || orden.indexOf(x) > orden.indexOf(pest[k - 1])), `${s} · ${titulo}: pestañas en orden (${pest.join(' → ')})`);
+    const info = { preguntas: 0, quedate: 0 };
+    for (let j = 0; j < pest.length; j++) {
+      await p.evaluate((j) => document.querySelectorAll('#tema-pestanas .secnav__item')[j].click(), j);
+      await espera(300);
+      if (pest[j] === 'Fisiopatología' || pest[j] === 'Diapositivas') {
+        await p.waitForSelector('.clase__panel .visor__escenario, .clase__panel .pares, .clase__panel .ptema__nuevo', { timeout: 20000 }).catch(() => null);
+        const v = await p.evaluate(() => ({ visor: Boolean(document.querySelector('.clase__panel .visor__escenario, .clase__panel .pares, .clase__panel .ptema__nuevo')), cargando: document.body.innerText.includes('Cargando diapositivas') }));
+        ok(v.visor && !v.cargando, `${s} · ${titulo}: ${pest[j]}`);
+      }
+      if (pest[j] === 'Video') {
+        await p.waitForSelector('.clase__panel video', { timeout: 20000 }).catch(() => null);
+        ok(Boolean(await p.$('.clase__panel video source')), `${s} · ${titulo}: video`);
+      }
+      if (pest[j] === 'Maniobras') ok(Boolean(await p.$('.clase__panel .mplaylist, .clase__panel .empty, .clase__panel .mq')), `${s} · ${titulo}: maniobras`);
+      if (pest[j] === 'Preguntas') info.preguntas = await p.$$eval('.ptema .pq', (x) => x.length);
+      if (pest[j] === 'Cierre') info.quedate = await p.$$eval('.quedate li', (x) => x.length);
+    }
+    ok(info.quedate > 0, `${s} · ${titulo}: «Con esto tenés que quedarte» (${info.quedate}) · ${info.preguntas} preguntas`);
+    ok(await sinErrorBoundary(p), `${s} · ${titulo}: sin error de sección`);
   }
+  // Pestaña de preguntas del último tema
+  const btnPreg = await p.$$('#tema-pestanas .secnav__item');
+  for (const b of btnPreg) if ((await b.evaluate((e) => e.textContent)).includes('Preguntas')) await b.click();
+  await espera(300);
   // Abrir una pregunta y sus tres niveles
   const pq = await p.$('.ptema .pq summary');
   if (pq) {
@@ -102,13 +115,17 @@ for (const s of SIS) {
     const marcado = await p.$('.ptema .pq[open] .pq__marca--gold.is-on');
     ok(Boolean(marcado), `${s}: marca «Dudé» guardada`);
   }
-  // Avanzar una diapositiva del visor
+  // Avanzar una diapositiva del visor (primer tema, primera pestaña)
+  await p.evaluate(() => document.querySelectorAll('.ptemas__tab')[0].click());
+  await espera(300);
+  await p.evaluate(() => [...document.querySelectorAll('#tema-pestanas .secnav__item')].find((b) => b.textContent.includes('Diapositivas'))?.click());
+  await p.waitForSelector('.ptema .visor__nav--sig', { timeout: 20000 }).catch(() => null);
   const sig = await p.$('.ptema .visor__nav--sig');
   if (sig) {
-    const antes = await p.$eval('.ptema .visor__n', (e) => e.textContent);
+    const antes = await p.$eval('.ptema .sl__cab h3', (e) => e.textContent);
     await sig.click();
-    await espera(300);
-    const despues = await p.$eval('.ptema .visor__n', (e) => e.textContent);
+    await espera(400);
+    const despues = await p.$eval('.ptema .sl__cab h3', (e) => e.textContent);
     ok(antes !== despues, `${s}: el visor avanza (${antes} → ${despues})`);
   }
   await p.screenshot({ path: join(outDir, `desk_parcial_${s}.png`) });
@@ -118,7 +135,7 @@ for (const s of SIS) {
 
 // 4. Pares craneales: tabla y tapar
 {
-  const p = await abrir('/parcial/neuro?t=pares');
+  const p = await abrir('/parcial/neuro?t=pares&p=teoria');
   await p.waitForSelector('.pares__tabla', { timeout: 15000 });
   const filas = await p.$$eval('.pares__tabla tbody tr', (r) => r.length);
   ok(filas === 12, `pares: ${filas} filas`);

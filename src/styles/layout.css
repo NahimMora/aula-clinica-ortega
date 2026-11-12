@@ -334,3 +334,6 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
 .ptema-aviso a { color: #ffb3bd; font-weight: 650; }
 
 @media (max-width: 560px) { .parcial-banner { flex-wrap: wrap; padding: 12px 14px; } .parcial-banner__ir { width: 100%; justify-content: center; } }
+
+/* Subtítulo dentro de un apartado de la columna (p. ej., preguntas del parcial por sistema) */
+.sidebar__subtit { display: flex; align-items: center; gap: 6px; margin: 10px 0 2px 12px; font-size: 0.72rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }

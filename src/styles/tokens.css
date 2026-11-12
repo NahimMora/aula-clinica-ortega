@@ -172,3 +172,6 @@ html.is-print {
 
 .tone-gold { --accent-50: var(--gold-50); --accent-100: #3a3218; --accent-200: var(--gold-200); --accent-400: var(--gold-200); --accent-600: var(--gold-700); --accent-700: var(--gold-700); }
 .tone-red { --accent-50: #2e1820; --accent-100: #45202a; --accent-200: #6e2c3c; --accent-400: #ff6b7d; --accent-600: #ff8f9d; --accent-700: #ffb3bd; }
+/* En papel (PDF), rojo y dorado también en claro. */
+html.is-print .tone-red { --accent-50: #fde1e6; --accent-100: #fbd0d8; --accent-200: #f2a7b6; --accent-400: #e0607a; --accent-600: #c0334f; --accent-700: #9c2440; }
+html.is-print .tone-gold { --accent-100: #fff3cf; }

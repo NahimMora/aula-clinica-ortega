@@ -441,7 +441,7 @@ export const TEMAS: TemaParcial[] = [
     titulo: 'Examen físico digestivo y puntos dolorosos',
     prioridad: 'critico',
     porque: 'En el repaso: «la idea es pasar y decirme qué punto doloroso es este» en el maniquí; nombró los cinco apendiculares y preguntó los pancreáticos y biliares. En el oral del 10/11 pidió maniobras de hígado, bazo y riñón **por su nombre**. En clase: los apendiculares «como la palma de la mano».',
-    fuentes: [R('37:31'), R('37:59'), R('38:30'), ORAL, { src: 'ef-dig-2', t: '19:27' }],
+    fuentes: [R('37:31'), R('37:59'), R('38:30'), PZ, ORAL, { src: 'ef-dig-2', t: '19:27' }],
     pide: ['Reconocer en el maniquí los **puntos apendiculares** (McBurney, Cope, Morris, Lanz, Lecene) y los **pancreáticos y biliares**.', 'Signos: **Blumberg**, **Gueneau de Mussy**, **Rovsing**, **psoas**.', 'Maniobras de **hígado** (Chauffard, Güemes, Mathieu, Gilbert), **bazo** (Schuster, Naegeli, Merlo, Galambos) y **vesícula** (Murphy).'],
     diapos: [
       { cap: 'dig-05', ids: ['t-topografia', 't-orden', 'f-orden', 't-apendiculares', 't-pancreaticos', 't-otros-puntos', 't-tension', 'f-inspiracion', 't-higado', 't-higado-como', 'f-bazo', 't-bazo', 't-vesicula', 't-ascitis', 't-maniobras-ascitis', 't-traube', 't-chapoteo'] },
@@ -1076,4 +1076,17 @@ export const TEMAS: TemaParcial[] = [
 export const temaById = (id: string) => TEMAS.find((t) => t.id === id);
 /** Temas del parcial que se estudian en un capítulo (para el aviso en la página del capítulo). */
 export const temasDelCapitulo = (cap: string) => TEMAS.filter((t) => t.capitulos.includes(cap) || t.diapos.some((d) => d.cap === cap && d.ids.length >= 3));
-export const temasDe = (s: SistemaParcial) => TEMAS.filter((t) => t.sistema === s);
+/** Lo escribió en las pizarras del repaso (o en las fotos de pizarra de neurología): se destaca. */
+export const enPizarra = (t: TemaParcial) => t.fuentes.some((f) => f.src === 'pizarra-repaso' || f.src === 'pizarra');
+/** Mismo orden que la web: primero los motivos de consulta, después el examen físico y los síndromes (orden de los capítulos). */
+const posicion = (t: TemaParcial) => {
+  // dig-04 → 4: el número del capítulo es su lugar en la web.
+  const i = Number(t.capitulos[0]?.split('-')[1] ?? 99);
+  // En el capítulo de dolor abdominal, primero el dolor y después el abdomen agudo.
+  return i * 10 + (t.id === 'abdomen-agudo' ? 1 : 0);
+};
+export const temasDe = (s: SistemaParcial) =>
+  TEMAS.map((t, i) => ({ t, i }))
+    .filter((x) => x.t.sistema === s)
+    .sort((a, b) => posicion(a.t) - posicion(b.t) || a.i - b.i)
+    .map((x) => x.t);

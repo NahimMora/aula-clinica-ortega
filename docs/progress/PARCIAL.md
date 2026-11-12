@@ -78,3 +78,13 @@ Valsalva cervical, Naffziger-Jones, Adson, Schober, Bragard, Lasègue invertido,
 | soma | Columna: cervical, dorsal, lumbar y sacroilíaca | obligatorio | 03:54, 04:22 | oral 10/11, pizarra | soma-01 | 0 | 15 | 3 (1 reales) |
 | soma | Miembro superior: hombro, codo y muñeca | critico | 04:38 | meningeo-osteo, pizarra | soma-01 | 0 | 6 | 2 (2 reales) |
 | soma | Miembro inferior: cadera, rodilla y tobillo | obligatorio | 04:38 | meningeo-osteo, pizarra | soma-01 | 0 | 8 | 1 (1 reales) |
+
+## Cambios del 12/11 (pedido: «igual que los capítulos»)
+- **Cada tema se recorre por pestañas, como un capítulo y en su orden**: Fisiopatología → Diapositivas (con lo que agregó en la pizarra y, en pares, el cuadro de los doce) → **Video** → Maniobras (con el maniquí en los exámenes físicos) → Memoria → Preguntas del oral → Cierre. Arriba quedan «Por qué entra» y «Qué te puede pedir». Pestaña en la URL: `?t=<tema>&p=<pestaña>`; los enlaces viejos `?ir=teoria&d=…` y `?ir=responder` siguen abriendo la pestaña correcta.
+- **Video**: la clase narrada de cada capítulo del tema (`src/parcial/VideosTema.tsx`), con las partes del tema marcadas «Entra» (se calculan con las secciones de las diapositivas que usa el tema) y el video breve de repaso cuando existe.
+- **Orden de los temas = orden de la web** (número del primer capítulo): primero los motivos de consulta (disfagia, dolor abdominal, abdomen agudo, ictericia), después el examen físico y los síndromes.
+- **Pizarra**: `enPizarra(t)` (fuente `pizarra-repaso` o `pizarra`) marca con lápiz los temas que Ortega escribió en la pizarra (pestañas, temario y PDF). Se agregó la pizarra a la fuente del examen físico digestivo («Ex» en la pizarra de digestivo).
+- **Columna**: dentro de «Parcial del lunes», «Preguntas de examen» con una entrada por sistema (+ integración y simulacro). El apartado general «Preguntas de examen» sigue igual.
+- **PDF del parcial**: ruta imprimible `/imprimir-parcial/:sistema` (`src/pages/ImprimirParcial.tsx`) y `npm run pdf:parcial -- neuro` (`scripts/build-pdf-parcial.mjs`, con `vite preview --port 4791`). `public/pdf/parcial-neuro.pdf`: 9 temas, 96 diapositivas, 20 preguntas con los tres niveles abiertos, maniobras completas, cuadro y fichas de los pares.
+- `test-parcial.mjs` recorre ahora cada pestaña de cada tema (250 verificaciones).
+- **PDF para imprimir** (`npm run pdf:parcial -- --compacto neuro` → `public/pdf/parcial-neuro-imprimir.pdf`, ruta `/imprimir-parcial/:sistema/compacto`): dos columnas, solo teoría y lo clave (diapositivas pasadas a texto, pizarra, maniobras, memoria, preguntas y cierre), sin video, sin minutos ni fuentes. 21 páginas contra 107 del completo.
