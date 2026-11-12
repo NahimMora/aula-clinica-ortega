@@ -16,6 +16,7 @@ import { Maniqui } from '@/parcial/Maniqui';
 import { MiniVisor } from '@/parcial/MiniVisor';
 import { ParesTabla } from '@/parcial/ParesTabla';
 import { VideosTema } from '@/parcial/VideosTema';
+import { videoDeTema } from '@/parcial/VideoTema';
 import { asset } from '@/components/VideoPlayer';
 import { ESTADO_LABEL, Etiquetas, Fundamento, Marcador, PreguntaCard } from '@/parcial/PreguntaCard';
 import { useMarcas, type Marca } from '@/parcial/marcas';
@@ -357,7 +358,7 @@ function pestanasDe(t: TemaParcial, nPreguntas: number): PestanaTema[] {
   const out: PestanaTema[] = [];
   if (!t.fisioJunto && t.diapos.some((d) => d.ids.some(esFisio))) out.push({ id: 'fisio', label: 'Fisiopatología', titulo: 'Fisiopatología' });
   if (t.diapos.some((d) => d.ids.some((x) => t.fisioJunto || !esFisio(x))) || t.nuevo?.length || t.id === 'pares') out.push({ id: 'teoria', label: 'Diapositivas', titulo: 'Diapositivas' });
-  if (t.capitulos.some((c) => !c.startsWith('soma'))) out.push({ id: 'video', label: 'Video', titulo: 'Clase en video' });
+  if (videoDeTema(t.id) || t.capitulos.some((c) => !c.startsWith('soma'))) out.push({ id: 'video', label: 'Video', titulo: 'Video del tema' });
   if (t.maniobras?.length || t.id === 'ef-digestivo' || t.id === 'ef-renal') out.push({ id: 'maniobras', label: 'Maniobras', titulo: 'Maniobras' });
   if (t.memoria?.length) out.push({ id: 'memoria', label: 'Memoria', titulo: 'Memoria' });
   if (nPreguntas) out.push({ id: 'preguntas', label: 'Preguntas', titulo: 'Preguntas del oral' });

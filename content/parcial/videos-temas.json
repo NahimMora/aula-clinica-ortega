@@ -1,6 +1,6 @@
 {
  "ictericia": {
-  "total": 743.25,
+  "total": 904.13,
   "segmentos": [
    {
     "src": "media/dig-04/clase.mp4",
@@ -99,6 +99,14 @@
     "titulo": "Indirecta y directa"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 4,
+    "fin": 81.5,
+    "titulo": "El metabolismo de la bilirrubina en cinco pasos"
+   },
+   {
     "src": "media/dig-04/clase.mp4",
     "vtt": "media/dig-04/clase.vtt",
     "poster": "media/dig-04/clase.jpg",
@@ -121,6 +129,14 @@
     "ini": 408.083,
     "fin": 439.875,
     "titulo": "Causas prehepáticas y hepáticas"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 81.5,
+    "fin": 118.458,
+    "titulo": "Hiperbilirrubinemias hereditarias"
    },
    {
     "src": "media/dig-04/clase.mp4",
@@ -179,6 +195,14 @@
     "titulo": "Tres grupos de marcadores"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 118.458,
+    "fin": 164.875,
+    "titulo": "Patrón hepatocelular o colestásico"
+   },
+   {
     "src": "media/dig-04/clase.mp4",
     "vtt": "media/dig-04/clase.vtt",
     "poster": "media/dig-04/clase.jpg",
@@ -197,7 +221,7 @@
   ]
  },
  "abdomen-agudo": {
-  "total": 999.75,
+  "total": 1289.46,
   "segmentos": [
    {
     "src": "media/dig-02/clase.mp4",
@@ -288,6 +312,14 @@
     "titulo": "Isquemia mesentérica: el intestino se muere"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 164.875,
+    "fin": 198.5,
+    "titulo": "Dolor abdominal no es abdomen agudo"
+   },
+   {
     "src": "media/dig-02/clase.mp4",
     "vtt": "media/dig-02/clase.vtt",
     "poster": "media/dig-02/clase.jpg",
@@ -376,6 +408,14 @@
     "titulo": "Blumberg y Gueneau de Mussy"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 198.5,
+    "fin": 255.958,
+    "titulo": "1. Inflamatorio: el más frecuente"
+   },
+   {
     "src": "media/dig-02/clase.mp4",
     "vtt": "media/dig-02/clase.vtt",
     "poster": "media/dig-02/clase.jpg",
@@ -398,6 +438,14 @@
     "ini": 1108.5,
     "fin": 1127.792,
     "titulo": "No confundir: mecánico y paralítico"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 255.958,
+    "fin": 312.958,
+    "titulo": "2. Obstructivo"
    },
    {
     "src": "media/dig-02/clase.mp4",
@@ -440,6 +488,14 @@
     "titulo": "Signo de Popper"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 312.958,
+    "fin": 366.458,
+    "titulo": "3. Perforativo"
+   },
+   {
     "src": "media/dig-02/clase.mp4",
     "vtt": "media/dig-02/clase.vtt",
     "poster": "media/dig-02/clase.jpg",
@@ -472,6 +528,14 @@
     "titulo": "Lo que no se puede olvidar"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 366.458,
+    "fin": 406.958,
+    "titulo": "4. Hemorrágico"
+   },
+   {
     "src": "media/dig-02/clase.mp4",
     "vtt": "media/dig-02/clase.vtt",
     "poster": "media/dig-02/clase.jpg",
@@ -486,6 +550,14 @@
     "ini": 1381.083,
     "fin": 1418.792,
     "titulo": "Clínica: la hora de oro"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 406.958,
+    "fin": 454.583,
+    "titulo": "5. Vascular o isquémico: el más letal"
    }
   ]
  },
@@ -607,7 +679,7 @@
   ]
  },
  "hemorragia": {
-  "total": 770.87,
+  "total": 808.21,
   "segmentos": [
    {
     "src": "media/dig-12/clase.mp4",
@@ -770,6 +842,14 @@
     "titulo": "Clasificación de Forrest"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 454.583,
+    "fin": 491.917,
+    "titulo": "Lo que aclaró sobre la hemorragia digestiva"
+   },
+   {
     "src": "media/dig-01/clase.mp4",
     "vtt": "media/dig-01/clase.vtt",
     "poster": "media/dig-01/clase.jpg",
@@ -788,7 +868,7 @@
   ]
  },
  "cirrosis": {
-  "total": 1078.79,
+  "total": 1135.54,
   "segmentos": [
    {
     "src": "media/dig-13/clase.mp4",
@@ -1013,6 +1093,14 @@
     "ini": 851.583,
     "fin": 892.583,
     "titulo": "El líquido ascítico"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 491.917,
+    "fin": 548.667,
+    "titulo": "Complicaciones de la cirrosis y su porqué"
    },
    {
     "src": "media/dig-14/clase.mp4",
@@ -1746,7 +1834,7 @@
   ]
  },
  "funciones-renales": {
-  "total": 165.5,
+  "total": 253.29,
   "segmentos": [
    {
     "src": "media/ren-05/clase.mp4",
@@ -1773,6 +1861,22 @@
     "titulo": "El hueso del renal crónico"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 548.667,
+    "fin": 594.833,
+    "titulo": "Función normal → qué pasa si se pierde (1)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 594.833,
+    "fin": 636.458,
+    "titulo": "Función normal → qué pasa si se pierde (2)"
+   },
+   {
     "src": "media/ren-05/clase.mp4",
     "vtt": "media/ren-05/clase.vtt",
     "poster": "media/ren-05/clase.jpg",
@@ -1791,7 +1895,7 @@
   ]
  },
  "nefrotico": {
-  "total": 376.75,
+  "total": 448.13,
   "segmentos": [
    {
     "src": "media/ren-04/clase.mp4",
@@ -1866,6 +1970,14 @@
     "titulo": "Todo sale de la proteinuria"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 636.458,
+    "fin": 666.333,
+    "titulo": "Nefrótico: de la membrana al edema"
+   },
+   {
     "src": "media/ren-04/clase.mp4",
     "vtt": "media/ren-04/clase.vtt",
     "poster": "media/ren-04/clase.jpg",
@@ -1882,6 +1994,14 @@
     "titulo": "Complicaciones"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 666.333,
+    "fin": 707.833,
+    "titulo": "Por qué se infecta y por qué hace trombosis"
+   },
+   {
     "src": "media/ren-03/clase.mp4",
     "vtt": "media/ren-03/clase.vtt",
     "poster": "media/ren-03/clase.jpg",
@@ -1892,7 +2012,7 @@
   ]
  },
  "nefritico": {
-  "total": 307.04,
+  "total": 348.13,
   "segmentos": [
    {
     "src": "media/ren-03/clase.mp4",
@@ -1933,6 +2053,14 @@
     "ini": 119.708,
     "fin": 144.958,
     "titulo": "La tríada: las tres H"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 707.833,
+    "fin": 748.917,
+    "titulo": "Nefrítico: la cadena del repaso"
    },
    {
     "src": "media/ren-03/clase.mp4",
@@ -1985,7 +2113,7 @@
   ]
  },
  "ira": {
-  "total": 381.37,
+  "total": 422.29,
   "segmentos": [
    {
     "src": "media/ren-05/clase.mp4",
@@ -2044,6 +2172,14 @@
     "titulo": "Causas de insuficiencia renal aguda"
    },
    {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 748.917,
+    "fin": 789.833,
+    "titulo": "Pre, renal y pos: dónde está el problema"
+   },
+   {
     "src": "media/ren-05/clase.mp4",
     "vtt": "media/ren-05/clase.vtt",
     "poster": "media/ren-05/clase.jpg",
@@ -2078,7 +2214,7 @@
   ]
  },
  "erc": {
-  "total": 265.75,
+  "total": 353.46,
   "segmentos": [
    {
     "src": "media/ren-05/clase.mp4",
@@ -2095,6 +2231,14 @@
     "ini": 508.75,
     "fin": 554.792,
     "titulo": "Estadios por filtrado"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 789.833,
+    "fin": 830.833,
+    "titulo": "Estadios KDIGO (como en la pizarra)"
    },
    {
     "src": "media/ren-05/clase.mp4",
@@ -2143,6 +2287,14 @@
     "ini": 593.542,
     "fin": 622.333,
     "titulo": "Aguda o crónica"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 830.833,
+    "fin": 877.542,
+    "titulo": "Indicaciones de hemodiálisis: A-E-I-O-U"
    }
   ]
  },
@@ -2453,8 +2605,48 @@
   ]
  },
  "conciencia": {
-  "total": 83.46,
+  "total": 268.75,
   "segmentos": [
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 877.542,
+    "fin": 912.167,
+    "titulo": "Estado de conciencia: nivel y contenido"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 912.167,
+    "fin": 950.583,
+    "titulo": "Fisiopatología: qué nos mantiene despiertos"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 950.583,
+    "fin": 996.333,
+    "titulo": "Escala de Glasgow"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 996.333,
+    "fin": 1033.083,
+    "titulo": "Glasgow y nivel de conciencia (pizarra)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1033.083,
+    "fin": 1062.833,
+    "titulo": "Vigil no es lúcido"
+   },
    {
     "src": "media/neu-01/clase.mp4",
     "vtt": "media/neu-01/clase.vtt",
@@ -2599,8 +2791,16 @@
   ]
  },
  "piramidal": {
-  "total": 514.13,
+  "total": 640.79,
   "segmentos": [
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1062.833,
+    "fin": 1110.708,
+    "titulo": "La pizarra de motilidad"
+   },
    {
     "src": "media/neu-05/clase.mp4",
     "vtt": "media/neu-05/clase.vtt",
@@ -2728,11 +2928,27 @@
     "ini": 540.583,
     "fin": 575.958,
     "titulo": "Síndrome de Guillain-Barré"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1110.708,
+    "fin": 1152.75,
+    "titulo": "Síndromes motores: tono, trofismo y fuerza"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1152.75,
+    "fin": 1189.5,
+    "titulo": "Síndromes motores: reflejos y marcha"
    }
   ]
  },
  "funciones-superiores": {
-  "total": 38.79,
+  "total": 145.46,
   "segmentos": [
    {
     "src": "media/neu-06/clase.mp4",
@@ -2741,6 +2957,30 @@
     "ini": 183.958,
     "fin": 222.75,
     "titulo": "Las vías de la sensibilidad"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1189.5,
+    "fin": 1230.5,
+    "titulo": "Sensibilidad superficial y profunda"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1230.5,
+    "fin": 1262.875,
+    "titulo": "Apraxia ideomotora e ideatoria"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1262.875,
+    "fin": 1296.167,
+    "titulo": "Afasia de Broca y de Wernicke"
    }
   ]
  },
@@ -3001,6 +3241,253 @@
     "ini": 427.958,
     "fin": 466.292,
     "titulo": "El líquido cefalorraquídeo"
+   }
+  ]
+ },
+ "soma-columna": {
+  "total": 447.96,
+  "segmentos": [
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1296.167,
+    "fin": 1324.458,
+    "titulo": "Maniobra de Spurling (columna cervical)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1324.458,
+    "fin": 1354.208,
+    "titulo": "Maniobra de Valsalva (columna cervical)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1354.208,
+    "fin": 1386.125,
+    "titulo": "Maniobra de Naffziger-Jones (columna cervical)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1386.125,
+    "fin": 1424.5,
+    "titulo": "Prueba de Adson (desfiladero torácico)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1424.5,
+    "fin": 1451.75,
+    "titulo": "Maniobra de Adams (escoliosis)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1451.75,
+    "fin": 1484.083,
+    "titulo": "Test de Schober (movilidad lumbar)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1484.083,
+    "fin": 1516.167,
+    "titulo": "Maniobra de Goldthwait (lumbalgia)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1516.167,
+    "fin": 1539.417,
+    "titulo": "Maniobra de Lasègue (ciatalgia)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1539.417,
+    "fin": 1574.292,
+    "titulo": "Maniobra de Bragard (Lasègue reforzado)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1574.292,
+    "fin": 1602.417,
+    "titulo": "Maniobra de Neri (y Neri sensibilizada)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1602.417,
+    "fin": 1629.875,
+    "titulo": "Lasègue invertido (posterior)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1629.875,
+    "fin": 1659.458,
+    "titulo": "Maniobra de apertura de Volkmann (sacroilíaca)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1659.458,
+    "fin": 1685.542,
+    "titulo": "Maniobra de cierre de Erichsen (sacroilíaca)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1685.542,
+    "fin": 1712.625,
+    "titulo": "Maniobra de Patrick o FABERE (sacroilíaca y cadera)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1712.625,
+    "fin": 1744.125,
+    "titulo": "Maniobra de Gaenslen (sacroilíaca)"
+   }
+  ]
+ },
+ "soma-mmss": {
+  "total": 151.75,
+  "segmentos": [
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1744.125,
+    "fin": 1773.917,
+    "titulo": "Prueba de la caída del brazo (hombro, supraespinoso)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1773.917,
+    "fin": 1800.333,
+    "titulo": "Codo de tenista: epicondilitis (Cozen)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1800.333,
+    "fin": 1823.542,
+    "titulo": "Codo de golfista: epitrocleitis (Cozen invertida)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1823.542,
+    "fin": 1845.125,
+    "titulo": "Signo de Tinel (túnel carpiano)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1845.125,
+    "fin": 1869.708,
+    "titulo": "Percusión del túnel carpiano (como la enseña Ortega)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1869.708,
+    "fin": 1895.875,
+    "titulo": "Maniobra de Phalen (túnel carpiano)"
+   }
+  ]
+ },
+ "soma-mmii": {
+  "total": 218.46,
+  "segmentos": [
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1895.875,
+    "fin": 1925.167,
+    "titulo": "Maniobra del cajón (ligamentos cruzados)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1925.167,
+    "fin": 1953.375,
+    "titulo": "Bostezo de la rodilla (ligamentos laterales)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1953.375,
+    "fin": 1976.25,
+    "titulo": "Maniobra de Apley (meniscos)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 1976.25,
+    "fin": 2010.75,
+    "titulo": "Prueba de McMurray (meniscos)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 2010.75,
+    "fin": 2038.208,
+    "titulo": "Choque rotuliano (derrame de rodilla)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 2038.208,
+    "fin": 2065.292,
+    "titulo": "Maniobra de Patrick o FABERE (sacroilíaca y cadera)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 2065.292,
+    "fin": 2092,
+    "titulo": "Maniobra de Thomas (flexo de cadera)"
+   },
+   {
+    "src": "media/parcial/diapos.mp4",
+    "vtt": "media/parcial/diapos.vtt",
+    "poster": "media/parcial/diapos.jpg",
+    "ini": 2092,
+    "fin": 2114.333,
+    "titulo": "Prueba de Thompson (tendón de Aquiles)"
    }
   ]
  }

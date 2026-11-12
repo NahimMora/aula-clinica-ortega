@@ -85,7 +85,7 @@ for (const s of SIS) {
       }
       if (pest[j] === 'Video') {
         await p.waitForSelector('.clase__panel video', { timeout: 20000 }).catch(() => null);
-        ok(Boolean(await p.$('.clase__panel video source')), `${s} · ${titulo}: video`);
+        ok(await p.evaluate(() => [...document.querySelectorAll('.clase__panel video')].some((v) => v.currentSrc || v.querySelector('source'))), `${s} · ${titulo}: video`);
       }
       if (pest[j] === 'Maniobras') ok(Boolean(await p.$('.clase__panel .mplaylist, .clase__panel .empty, .clase__panel .mq')), `${s} · ${titulo}: maniobras`);
       if (pest[j] === 'Preguntas') info.preguntas = await p.$$eval('.ptema .pq', (x) => x.length);
