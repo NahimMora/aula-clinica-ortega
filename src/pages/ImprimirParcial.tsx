@@ -8,7 +8,7 @@ import { Refs, Rich } from '@/components/Rich';
 import { asset } from '@/components/VideoPlayer';
 import { AssetCtx, Diapositiva } from '@/clase/Diapositiva';
 import type { Diapositiva as D } from '@/clase/tipos';
-import { loadChapter } from '@/lib/useChapter';
+import { planDe } from '@/parcial/MiniVisor';
 import { findChapter } from '@content/curriculum';
 import { maneuverById } from '@content/maneuvers';
 import { PARES } from '@content/parcial/pares';
@@ -40,15 +40,16 @@ async function armar(t: TemaParcial): Promise<TemaImp> {
   const fisio: DiapoImp[] = [];
   const teoria: DiapoImp[] = [];
   for (const f of t.diapos) {
-    const plan = (await loadChapter(f.cap))?.clase;
+    const plan = await planDe(f.cap);
     if (!plan) continue;
     for (const id of f.ids) {
       const esF = id.startsWith('f-');
+      const aFisio = esF && !t.fisioJunto;
       const mazo = esF ? plan.fisio : plan.teoria;
       const d = mazo.diapos.find((x) => x.id === id);
       if (!d) continue;
       const sec = mazo.secciones.find((s) => s.id === d.sec)?.label ?? '';
-      (esF ? fisio : teoria).push({ d, sec: esF ? `Fisiopatología · ${findChapter(f.cap)?.title ?? f.cap}` : sec, aclara: d.aclara });
+      (aFisio ? fisio : teoria).push({ d, sec: esF ? `Fisiopatología · ${findChapter(f.cap)?.title ?? f.cap}` : f.cap === 'parcial' ? 'Repaso del 11/11' : sec, aclara: d.aclara });
     }
   }
   return { t, fisio, teoria, videos: await videosDe(t) };

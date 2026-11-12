@@ -355,8 +355,8 @@ const esFisio = (id: string) => id.startsWith('f-');
 /** Mismas pestañas y mismo orden que un capítulo: fisiopatología, diapositivas, video, maniobras, memoria, preguntas y cierre. */
 function pestanasDe(t: TemaParcial, nPreguntas: number): PestanaTema[] {
   const out: PestanaTema[] = [];
-  if (t.diapos.some((d) => d.ids.some(esFisio))) out.push({ id: 'fisio', label: 'Fisiopatología', titulo: 'Fisiopatología' });
-  if (t.diapos.some((d) => d.ids.some((x) => !esFisio(x))) || t.nuevo?.length || t.id === 'pares') out.push({ id: 'teoria', label: 'Diapositivas', titulo: 'Diapositivas' });
+  if (!t.fisioJunto && t.diapos.some((d) => d.ids.some(esFisio))) out.push({ id: 'fisio', label: 'Fisiopatología', titulo: 'Fisiopatología' });
+  if (t.diapos.some((d) => d.ids.some((x) => t.fisioJunto || !esFisio(x))) || t.nuevo?.length || t.id === 'pares') out.push({ id: 'teoria', label: 'Diapositivas', titulo: 'Diapositivas' });
   if (t.capitulos.some((c) => !c.startsWith('soma'))) out.push({ id: 'video', label: 'Video', titulo: 'Clase en video' });
   if (t.maniobras?.length || t.id === 'ef-digestivo' || t.id === 'ef-renal') out.push({ id: 'maniobras', label: 'Maniobras', titulo: 'Maniobras' });
   if (t.memoria?.length) out.push({ id: 'memoria', label: 'Memoria', titulo: 'Memoria' });
@@ -370,12 +370,12 @@ function TemaVista({ t, pedida }: { t: TemaParcial; pedida?: string }) {
   const ps = preguntasDe(t.id);
   const pestanas = useMemo(() => pestanasDe(t, ps.length), [t, ps.length]);
   const fisio = useMemo(() => t.diapos.map((d) => ({ cap: d.cap, ids: d.ids.filter(esFisio) })).filter((d) => d.ids.length), [t.diapos]);
-  const teoria = useMemo(() => t.diapos.map((d) => ({ cap: d.cap, ids: d.ids.filter((x) => !esFisio(x)) })).filter((d) => d.ids.length), [t.diapos]);
+  const teoria = useMemo(() => t.diapos.map((d) => ({ cap: d.cap, ids: d.ids.filter((x) => t.fisioJunto || !esFisio(x)) })).filter((d) => d.ids.length), [t.diapos, t.fisioJunto]);
   const pizarra = enPizarra(t);
 
   // Enlaces previos: ?ir=teoria&d=cap:diapo (desde las preguntas) o ?ir=responder.
   const ir = params.get('ir');
-  const desdeEnlace = ir === 'responder' ? 'preguntas' : ir === 'teoria' && pedida ? (esFisio(pedida.split(':')[1] ?? '') ? 'fisio' : 'teoria') : ir;
+  const desdeEnlace = ir === 'responder' ? 'preguntas' : ir === 'teoria' && pedida ? (!t.fisioJunto && esFisio(pedida.split(':')[1] ?? '') ? 'fisio' : 'teoria') : ir;
   const pedidaP = params.get('p');
   const actual = pestanas.find((x) => x.id === pedidaP) ?? pestanas.find((x) => x.id === desdeEnlace) ?? pestanas[0];
   const idx = pestanas.indexOf(actual);
@@ -433,7 +433,7 @@ function TemaVista({ t, pedida }: { t: TemaParcial; pedida?: string }) {
           )}
           {actual.id === 'teoria' && (
             <>
-              {teoria.length > 0 && <MiniVisor temaId={t.id} fuentes={teoria} pedida={pedida} />}
+              {teoria.length > 0 && <MiniVisor temaId={t.id} fuentes={teoria} pedida={pedida} junto={t.fisioJunto} />}
               {t.id === 'pares' && (
                 <div className="ptema__extra">
                   <h3 className="ptema__h3">

@@ -1,12 +1,17 @@
-// Visor de diapositivas: barra de apartados, avance manual y aclaraciones debajo.
+// Visor de diapositivas paso a paso (como Fármaco): cada «Siguiente» revela una parte de la diapositiva
+// y debajo aparece la explicación de ese paso, la misma que narra el video. Al terminar los pasos,
+// «Siguiente» pasa a la diapositiva que sigue.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Refs, Rich } from '@/components/Rich';
 import { Icon } from '@/components/Icon';
 import { asset } from '@/components/VideoPlayer';
-import { AssetCtx, Diapositiva, type Reloj } from './Diapositiva';
+import { AssetCtx, Diapositiva, Txt, type Reloj } from './Diapositiva';
 import type { Diapositiva as D, Mazo } from './tipos';
 
-const PASO_S = 0.55;
+/** Duración de la aparición de un paso (Diapositiva usa 0,42 s). */
+const ANIM_S = 0.6;
+/** Las figuras con movimiento siguen animándose este tiempo después del último toque; después quedan quietas (en el celular, un dibujo moviéndose sin parar tilda la página). */
+const VIVA_S = 6;
 
 const leer = (k: string) => {
   try {
@@ -23,79 +28,78 @@ const guardar = (k: string, v: string) => {
   }
 };
 
-/** Avanza los pasos y el tiempo de la diapositiva. Si ya fue vista, arranca completa. */
-function useReloj(d: D, completa: boolean, nonce: number, visible: () => boolean): Reloj {
-  const max = Math.max(0, d.voz.length - 1);
-  const [r, setR] = useState<Reloj>({ t: 0, paso: completa ? max : 0, dt: completa ? 9 : 0 });
+/** Tiempo de la diapositiva (t) y del paso actual (dt). Solo corre mientras hay algo que animar. */
+function useReloj(d: D, paso: number, nonce: number, visible: () => boolean): Reloj {
+  const [r, setR] = useState<Reloj>({ t: 0, paso, dt: 0 });
+  const t0 = useRef(performance.now());
+  const idPrevio = useRef(d.id);
   useEffect(() => {
+    if (idPrevio.current !== d.id) {
+      idPrevio.current = d.id;
+      t0.current = performance.now();
+    }
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setR({ t: 0, paso: max, dt: 9 });
+      setR({ t: 4, paso, dt: 9 });
       return;
     }
+    const inicioPaso = performance.now();
+    const hasta = d.fig ? VIVA_S : ANIM_S + 0.1;
     let raf = 0;
-    const t0 = performance.now();
     let ult = 0;
-    const continua = Boolean(d.fig);
-    const fin = (max + 1) * PASO_S + 0.6;
     const tick = (now: number) => {
-      // El sello de requestAnimationFrame puede ser anterior a t0.
-      const t = Math.max(0, (now - t0) / 1000);
-      if (now - ult >= 33 && (visible() || t < 0.1)) {
+      const dt = Math.max(0, (now - inicioPaso) / 1000);
+      if (now - ult >= 33 && visible()) {
         ult = now;
-        const paso = completa ? max : Math.min(max, Math.floor(t / PASO_S));
-        setR({ t, paso, dt: completa ? 9 : t - paso * PASO_S });
+        setR({ t: Math.max(0, (now - t0.current) / 1000), paso, dt });
       }
-      if (continua || t < fin) raf = requestAnimationFrame(tick);
+      if (dt < hasta) raf = requestAnimationFrame(tick);
+      else setR({ t: Math.max(0, (now - t0.current) / 1000), paso, dt: 9 });
     };
-    setR({ t: 0, paso: completa ? max : 0, dt: completa ? 9 : 0 });
+    setR({ t: Math.max(0, (performance.now() - t0.current) / 1000), paso, dt: 0 });
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [d.id, d.fig, completa, max, nonce, visible]);
+  }, [d.id, d.fig, paso, nonce, visible]);
   return r;
 }
 
 export function Visor({ mazo, chapterId, seccionPedida, diapoPedida }: { mazo: Mazo; chapterId: string; seccionPedida?: string; diapoPedida?: string }) {
   const claveIdx = `aula:clase:${chapterId}:${mazo.id}`;
-  const claveVistas = `aula:clase:${chapterId}:vistas`;
   const [soloExamen, setSoloExamen] = useState(false);
   const lista = useMemo(() => (soloExamen ? mazo.diapos.filter((d) => d.examen) : mazo.diapos), [mazo, soloExamen]);
-  const [id, setId] = useState(() => {
+  const [pos, setPos] = useState<{ id: string; paso: number }>(() => {
     const g = leer(claveIdx);
-    return g && mazo.diapos.some((d) => d.id === g) ? g : mazo.diapos[0].id;
+    return { id: g && mazo.diapos.some((d) => d.id === g) ? g : mazo.diapos[0].id, paso: 0 };
   });
   const [nonce, setNonce] = useState(0);
-  const vistas = useRef<Set<string>>(new Set<string>((() => {
-    try {
-      return JSON.parse(leer(claveVistas) ?? '[]') as string[];
-    } catch {
-      return [];
-    }
-  })()));
-  const idx = Math.max(0, lista.findIndex((d) => d.id === id));
+  const idx = Math.max(0, lista.findIndex((d) => d.id === pos.id));
   const d = lista[idx] ?? lista[0];
-  const [completa, setCompleta] = useState(() => vistas.current.has(d.id));
+  const max = Math.max(0, d.voz.length - 1);
+  const paso = Math.min(pos.paso, max);
   const barra = useRef<HTMLDivElement>(null);
   const escenario = useRef<HTMLDivElement>(null);
   const enPantalla = useRef(true);
   const visible = useCallback(() => enPantalla.current, []);
-  const reloj = useReloj(d, completa, nonce, visible);
+  const reloj = useReloj(d, paso, nonce, visible);
   const secActual = d.sec;
 
-  const ir = useCallback(
-    (nuevo: D) => {
-      setCompleta(vistas.current.has(nuevo.id));
-      setId(nuevo.id);
-    },
-    [],
-  );
+  const ir = useCallback((nuevo: D, alFinal = false) => {
+    setPos({ id: nuevo.id, paso: alFinal ? Math.max(0, nuevo.voz.length - 1) : 0 });
+  }, []);
+
+  const ant = lista[idx - 1];
+  const sig = lista[idx + 1];
+  const avanzar = useCallback(() => {
+    if (paso < max) setPos({ id: d.id, paso: paso + 1 });
+    else if (sig) ir(sig);
+  }, [paso, max, d.id, sig, ir]);
+  const retroceder = useCallback(() => {
+    if (paso > 0) setPos({ id: d.id, paso: paso - 1 });
+    else if (ant) ir(ant, true);
+  }, [paso, d.id, ant, ir]);
 
   useEffect(() => {
     guardar(claveIdx, d.id);
-    if (!vistas.current.has(d.id)) {
-      vistas.current.add(d.id);
-      guardar(claveVistas, JSON.stringify([...vistas.current]));
-    }
-  }, [d.id, claveIdx, claveVistas]);
+  }, [d.id, claveIdx]);
 
   // Salto pedido desde afuera (enlace profundo).
   useEffect(() => {
@@ -104,11 +108,11 @@ export function Visor({ mazo, chapterId, seccionPedida, diapoPedida }: { mazo: M
     if (prim) ir(prim);
   }, [seccionPedida, mazo, ir]);
 
-  // Diapositiva puntual pedida por enlace (?d=…), p. ej., desde Preguntas de examen.
+  // Diapositiva puntual pedida por enlace (?d=…), p. ej., desde Preguntas de examen: se muestra completa.
   useEffect(() => {
     const dp = diapoPedida ? mazo.diapos.find((x) => x.id === diapoPedida) : undefined;
     if (!dp) return;
-    ir(dp);
+    ir(dp, true);
     const h = window.setTimeout(() => escenario.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 200);
     return () => window.clearTimeout(h);
   }, [diapoPedida, mazo, ir]);
@@ -131,25 +135,24 @@ export function Visor({ mazo, chapterId, seccionPedida, diapoPedida }: { mazo: M
     return () => io.disconnect();
   }, []);
 
-  const ant = lista[idx - 1];
-  const sig = lista[idx + 1];
-
   useEffect(() => {
     const tecla = (e: KeyboardEvent) => {
       const el = e.target as HTMLElement;
       if (e.altKey || e.ctrlKey || e.metaKey || /^(INPUT|TEXTAREA|SELECT|VIDEO|IFRAME)$/.test(el.tagName)) return;
-      if (e.key === 'ArrowRight' && sig) ir(sig);
-      if (e.key === 'ArrowLeft' && ant) ir(ant);
+      if (e.key === 'ArrowRight') avanzar();
+      if (e.key === 'ArrowLeft') retroceder();
     };
     window.addEventListener('keydown', tecla);
     return () => window.removeEventListener('keydown', tecla);
-  }, [ant, sig, ir]);
+  }, [avanzar, retroceder]);
 
-  const toque = useRef<number | null>(null);
+  // Deslizar con el dedo: solo cuenta si el gesto es claramente horizontal (si no, era scroll de la página).
+  const toque = useRef<{ x: number; y: number } | null>(null);
 
   const seccionesVisibles = mazo.secciones.filter((s) => lista.some((x) => x.sec === s.id));
   const nombreSec = mazo.secciones.find((s) => s.id === d.sec)?.label;
   const posTotal = soloExamen ? `${idx + 1} / ${lista.length} con aviso` : `${idx + 1} / ${lista.length}`;
+  const ultimo = paso >= max && !sig;
 
   return (
     <AssetCtx.Provider value={asset}>
@@ -176,41 +179,65 @@ export function Visor({ mazo, chapterId, seccionPedida, diapoPedida }: { mazo: M
           className="visor__escenario"
           ref={escenario}
           onTouchStart={(e) => {
-            toque.current = e.touches[0].clientX;
+            toque.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
           }}
           onTouchEnd={(e) => {
-            if (toque.current === null) return;
-            const dx = e.changedTouches[0].clientX - toque.current;
+            const t0 = toque.current;
             toque.current = null;
-            if (Math.abs(dx) < 60) return;
-            if (dx < 0 && sig) ir(sig);
-            if (dx > 0 && ant) ir(ant);
+            if (!t0) return;
+            const dx = e.changedTouches[0].clientX - t0.x;
+            const dy = e.changedTouches[0].clientY - t0.y;
+            if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 2) return;
+            if (dx < 0) avanzar();
+            else retroceder();
           }}
         >
           <Diapositiva key={d.id} d={d} reloj={reloj} seccion={nombreSec} />
         </div>
 
+        <div className="visor__paso">
+          {d.voz.length > 1 && (
+            <div className="visor__puntos" role="group" aria-label="Pasos de la diapositiva">
+              {d.voz.map((_, i) => (
+                <button key={i} type="button" className={i <= paso ? 'ya' : ''} aria-label={`Paso ${i + 1} de ${d.voz.length}`} aria-current={i === paso ? 'step' : undefined} onClick={() => setPos({ id: d.id, paso: i })} />
+              ))}
+            </div>
+          )}
+          <p className="visor__narracion" aria-live="polite">
+            <Txt text={d.voz[paso] ?? ''} />
+          </p>
+        </div>
+
         <div className="visor__control">
-          <button type="button" className="visor__nav" onClick={() => ant && ir(ant)} disabled={!ant} aria-label="Diapositiva anterior">
-            <Icon name="chevronLeft" size={20} />
+          <button type="button" className="visor__btn" onClick={retroceder} disabled={!ant && paso === 0}>
+            <Icon name="chevronLeft" size={18} /> Anterior
           </button>
           <span className="visor__n" aria-live="polite">
             {posTotal}
           </span>
-          <button type="button" className="visor__nav visor__nav--sig" onClick={() => sig && ir(sig)} disabled={!sig} aria-label="Diapositiva siguiente">
-            <Icon name="chevronRight" size={20} />
+          <button type="button" className="visor__btn visor__btn--sig" onClick={avanzar} disabled={ultimo}>
+            {paso < max ? 'Siguiente' : 'Siguiente diapositiva'} <Icon name="chevronRight" size={18} />
           </button>
+        </div>
+        <div className="visor__extra">
+          {paso < max && (
+            <button type="button" className="visor__mini" onClick={() => setPos({ id: d.id, paso: max })}>
+              <Icon name="eye" size={14} /> Ver la diapositiva completa
+            </button>
+          )}
+          {paso > 0 && (
+            <button
+              type="button"
+              className="visor__mini"
+              onClick={() => {
+                setPos({ id: d.id, paso: 0 });
+                setNonce((n) => n + 1);
+              }}
+            >
+              <Icon name="refresh" size={14} /> Desde el principio
+            </button>
+          )}
           <span className="visor__sp" />
-          <button
-            type="button"
-            className="visor__mini"
-            onClick={() => {
-              setCompleta(false);
-              setNonce((n) => n + 1);
-            }}
-          >
-            <Icon name="refresh" size={14} /> Repetir animación
-          </button>
           {mazo.diapos.some((x) => x.examen) && (
             <label className="visor__mini visor__solo">
               <input

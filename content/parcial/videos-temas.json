@@ -1,0 +1,3007 @@
+{
+ "ictericia": {
+  "total": 743.25,
+  "segmentos": [
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 4,
+    "fin": 43.25,
+    "titulo": "El circuito de la bilirrubina"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 43.25,
+    "fin": 70.833,
+    "titulo": "Por qué solo la directa da coluria"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 70.833,
+    "fin": 89.292,
+    "titulo": "Dónde se ve primero"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 89.292,
+    "fin": 118.875,
+    "titulo": "Prehepática: sobra bilirrubina"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 118.875,
+    "fin": 147.375,
+    "titulo": "Hepática: falla el hepatocito"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 147.375,
+    "fin": 175.125,
+    "titulo": "Poshepática: la bilis no sale"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 175.125,
+    "fin": 199.167,
+    "titulo": "Por qué una vesícula se distiende y la otra no"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 199.167,
+    "fin": 236.708,
+    "titulo": "La vitamina K y la prueba de Koller"
+   },
+   {
+    "src": "media/dig-11/clase.mp4",
+    "vtt": "media/dig-11/clase.vtt",
+    "poster": "media/dig-11/clase.jpg",
+    "ini": 96.875,
+    "fin": 131.208,
+    "titulo": "Por qué la litiasis no da ictericia"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 254,
+    "fin": 282.458,
+    "titulo": "Qué es y valores normales"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 282.458,
+    "fin": 306.958,
+    "titulo": "No confundir: pseudoictericia"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 306.958,
+    "fin": 337.208,
+    "titulo": "Indirecta y directa"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 337.208,
+    "fin": 363.083,
+    "titulo": "Kernicterus"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 363.083,
+    "fin": 408.083,
+    "titulo": "Pre, intra y poshepática"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 408.083,
+    "fin": 439.875,
+    "titulo": "Causas prehepáticas y hepáticas"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 439.875,
+    "fin": 459.458,
+    "titulo": "Causas poshepáticas"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 528.167,
+    "fin": 567.833,
+    "titulo": "Síntomas que acompañan"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 567.833,
+    "fin": 598.583,
+    "titulo": "El tinte y el estado general"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 598.583,
+    "fin": 649.542,
+    "titulo": "Examen físico"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 669.375,
+    "fin": 694.667,
+    "titulo": "Síndrome coledociano"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 694.667,
+    "fin": 725.208,
+    "titulo": "Ley de Courvoisier-Terrier"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 725.208,
+    "fin": 764.542,
+    "titulo": "Tres grupos de marcadores"
+   },
+   {
+    "src": "media/dig-04/clase.mp4",
+    "vtt": "media/dig-04/clase.vtt",
+    "poster": "media/dig-04/clase.jpg",
+    "ini": 795.583,
+    "fin": 818.083,
+    "titulo": "Prueba de Koller"
+   },
+   {
+    "src": "media/dig-11/clase.mp4",
+    "vtt": "media/dig-11/clase.vtt",
+    "poster": "media/dig-11/clase.jpg",
+    "ini": 525.708,
+    "fin": 557.417,
+    "titulo": "Ictericia con o sin dolor"
+   }
+  ]
+ },
+ "abdomen-agudo": {
+  "total": 999.75,
+  "segmentos": [
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 75.417,
+    "fin": 100.792,
+    "titulo": "La pared y sus dos hojas"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 218.417,
+    "fin": 257.167,
+    "titulo": "Apendicitis: un dolor que cambia de mecanismo"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 257.167,
+    "fin": 285.833,
+    "titulo": "Comprimir y soltar: qué estás explorando"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 285.833,
+    "fin": 314.167,
+    "titulo": "Por qué se endurece el abdomen"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 332.792,
+    "fin": 369.458,
+    "titulo": "Obstáculo: el intestino lucha"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 369.458,
+    "fin": 399.25,
+    "titulo": "Íleo paralítico: sin obstáculo, sin movimiento"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 399.25,
+    "fin": 426.458,
+    "titulo": "Si se perfora: el aire sube"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 426.458,
+    "fin": 454.917,
+    "titulo": "Qué contenido irrita el peritoneo"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 454.917,
+    "fin": 480.75,
+    "titulo": "Si sangra: la sangre cae"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 480.75,
+    "fin": 512.458,
+    "titulo": "El cuerpo compensa la pérdida"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 512.458,
+    "fin": 547.75,
+    "titulo": "Isquemia mesentérica: el intestino se muere"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 547.75,
+    "fin": 587.167,
+    "titulo": "Abdomen agudo: qué es"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 692.042,
+    "fin": 709.25,
+    "titulo": "Cómo se clasifica"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 811.75,
+    "fin": 840.833,
+    "titulo": "Los cinco abdómenes agudos quirúrgicos"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 840.833,
+    "fin": 860.25,
+    "titulo": "El cuadro para estudiar"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 860.25,
+    "fin": 882.958,
+    "titulo": "Inflamatorio: todo lo que termina en -itis"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 882.958,
+    "fin": 910,
+    "titulo": "Cronología de Murphy: el recorrido"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 910,
+    "fin": 935.792,
+    "titulo": "Tríada de Murphy: la secuencia"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 935.792,
+    "fin": 963,
+    "titulo": "Apendicitis: cuatro estadios"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 963,
+    "fin": 992.25,
+    "titulo": "Colecistitis aguda"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 992.25,
+    "fin": 1024.333,
+    "titulo": "Qué encontrás al examen"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1024.333,
+    "fin": 1041.25,
+    "titulo": "Blumberg y Gueneau de Mussy"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1041.25,
+    "fin": 1071.792,
+    "titulo": "Obstructivo: las causas"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1071.792,
+    "fin": 1108.5,
+    "titulo": "Clínica y examen"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1108.5,
+    "fin": 1127.792,
+    "titulo": "No confundir: mecánico y paralítico"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1127.792,
+    "fin": 1149.958,
+    "titulo": "Perforativo: causas y peritonitis"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1149.958,
+    "fin": 1180.583,
+    "titulo": "Clínica: el paciente inmóvil"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1180.583,
+    "fin": 1201.542,
+    "titulo": "Contractura y defensa"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1201.542,
+    "fin": 1228.917,
+    "titulo": "Signo de Jobert"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1228.917,
+    "fin": 1243.958,
+    "titulo": "Signo de Popper"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1243.958,
+    "fin": 1274.292,
+    "titulo": "Hemorrágico: se desangra adentro"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1274.292,
+    "fin": 1299.708,
+    "titulo": "A la percusión: matidez"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1299.708,
+    "fin": 1326.833,
+    "titulo": "Cullen y Grey-Turner"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1326.833,
+    "fin": 1348.417,
+    "titulo": "Lo que no se puede olvidar"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1348.417,
+    "fin": 1381.083,
+    "titulo": "Vascular o isquémico: el más letal"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1381.083,
+    "fin": 1418.792,
+    "titulo": "Clínica: la hora de oro"
+   }
+  ]
+ },
+ "dolor-abdominal": {
+  "total": 410.21,
+  "segmentos": [
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 4,
+    "fin": 49.75,
+    "titulo": "Del estímulo a la corteza"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 49.75,
+    "fin": 75.417,
+    "titulo": "Dos fibras, dos dolores"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 100.792,
+    "fin": 131.875,
+    "titulo": "Dolor visceral: qué lo dispara"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 131.875,
+    "fin": 155.375,
+    "titulo": "Por qué uno se localiza y el otro no"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 155.375,
+    "fin": 187.167,
+    "titulo": "Dolor somático: cuando llega al parietal"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 187.167,
+    "fin": 218.417,
+    "titulo": "Dolor referido: la convergencia"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 587.167,
+    "fin": 612.125,
+    "titulo": "Dolor visceral"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 612.125,
+    "fin": 639.25,
+    "titulo": "Dolor somático"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 639.25,
+    "fin": 664.667,
+    "titulo": "Compresión, descompresión y rebote"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 664.667,
+    "fin": 692.042,
+    "titulo": "Dolor referido"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 709.25,
+    "fin": 734.083,
+    "titulo": "Agudo y crónico"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 790.792,
+    "fin": 811.75,
+    "titulo": "La regla que no se negocia"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1418.792,
+    "fin": 1448.125,
+    "titulo": "Anamnesis: ALICIA"
+   },
+   {
+    "src": "media/dig-02/clase.mp4",
+    "vtt": "media/dig-02/clase.vtt",
+    "poster": "media/dig-02/clase.jpg",
+    "ini": 1448.125,
+    "fin": 1489.292,
+    "titulo": "Lo que acompaña al dolor"
+   }
+  ]
+ },
+ "hemorragia": {
+  "total": 770.87,
+  "segmentos": [
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 4,
+    "fin": 54.083,
+    "titulo": "Cómo compensa el cuerpo la pérdida"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 54.083,
+    "fin": 90.583,
+    "titulo": "Por qué el ortostatismo delata la hipovolemia"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 90.583,
+    "fin": 127.417,
+    "titulo": "Sangre digerida o sangre fresca"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 127.417,
+    "fin": 161.375,
+    "titulo": "El hematocrito llega tarde"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 161.375,
+    "fin": 192,
+    "titulo": "Por qué sube la urea"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 192,
+    "fin": 223.125,
+    "titulo": "Hemorragia digestiva"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 443.042,
+    "fin": 472.583,
+    "titulo": "Alta o baja: el ángulo de Treitz"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 472.583,
+    "fin": 506.083,
+    "titulo": "Causas de hemorragia alta"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 541.708,
+    "fin": 579.417,
+    "titulo": "Causas de hemorragia baja"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 344.792,
+    "fin": 372.083,
+    "titulo": "Hematemesis"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 372.083,
+    "fin": 406.833,
+    "titulo": "Melena y hematoquecia"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 406.833,
+    "fin": 443.042,
+    "titulo": "Sangre oculta, enterorragia y proctorragia"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 624.542,
+    "fin": 656.875,
+    "titulo": "Alta o baja: el cuadro"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 223.125,
+    "fin": 281.625,
+    "titulo": "Clases de hemorragia I a IV"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 281.625,
+    "fin": 311.708,
+    "titulo": "Manifestaciones de la hipovolemia"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 311.708,
+    "fin": 344.792,
+    "titulo": "Prueba de hipotensión ortostática"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 656.875,
+    "fin": 699.375,
+    "titulo": "Examen físico"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 739.708,
+    "fin": 763.458,
+    "titulo": "Laboratorio"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 699.375,
+    "fin": 739.708,
+    "titulo": "Estudios"
+   },
+   {
+    "src": "media/dig-12/clase.mp4",
+    "vtt": "media/dig-12/clase.vtt",
+    "poster": "media/dig-12/clase.jpg",
+    "ini": 763.458,
+    "fin": 794.375,
+    "titulo": "Clasificación de Forrest"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 580.542,
+    "fin": 625.083,
+    "titulo": "Hematemesis frente a hemoptisis"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 727.542,
+    "fin": 744.25,
+    "titulo": "Síndrome de Mallory-Weiss"
+   }
+  ]
+ },
+ "cirrosis": {
+  "total": 1078.79,
+  "segmentos": [
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 4,
+    "fin": 35.167,
+    "titulo": "El sistema porta normal"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 35.167,
+    "fin": 71.667,
+    "titulo": "Qué hace la cirrosis"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 71.667,
+    "fin": 109.875,
+    "titulo": "Lo que el hígado deja de hacer"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 109.875,
+    "fin": 144.833,
+    "titulo": "La sangre busca otro camino"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 144.833,
+    "fin": 181.542,
+    "titulo": "Cómo se forma la ascitis"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 181.542,
+    "fin": 213.083,
+    "titulo": "Esplenomegalia e hiperesplenismo"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 213.083,
+    "fin": 248.958,
+    "titulo": "Hacia dónde va la sangre"
+   },
+   {
+    "src": "media/dig-14/clase.mp4",
+    "vtt": "media/dig-14/clase.vtt",
+    "poster": "media/dig-14/clase.jpg",
+    "ini": 4,
+    "fin": 40.25,
+    "titulo": "El camino del amonio"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 103.292,
+    "fin": 144.292,
+    "titulo": "PBE: sin perforación"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 248.958,
+    "fin": 278.75,
+    "titulo": "Cirrosis"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 278.75,
+    "fin": 307.75,
+    "titulo": "Las tres manifestaciones"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 307.75,
+    "fin": 347.292,
+    "titulo": "Causas"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 347.292,
+    "fin": 395.5,
+    "titulo": "Cirrosis alcohólica"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 395.5,
+    "fin": 435.417,
+    "titulo": "Compensada y descompensada"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 435.417,
+    "fin": 473.875,
+    "titulo": "Estigmas en la piel"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 473.875,
+    "fin": 505.417,
+    "titulo": "Hábito de Chvostek y otras alteraciones"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 505.417,
+    "fin": 555.208,
+    "titulo": "Clasificación de Child-Pugh"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 555.208,
+    "fin": 578.458,
+    "titulo": "Child A, B y C"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 578.458,
+    "fin": 606.875,
+    "titulo": "Hipertensión portal"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 606.875,
+    "fin": 633.292,
+    "titulo": "Causas según el sitio"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 633.292,
+    "fin": 665.5,
+    "titulo": "Circulación colateral"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 665.5,
+    "fin": 695.292,
+    "titulo": "Várices esofágicas"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 695.292,
+    "fin": 727.25,
+    "titulo": "¿Ascendente o descendente?"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 727.25,
+    "fin": 744.583,
+    "titulo": "Esplenomegalia"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 744.583,
+    "fin": 773.292,
+    "titulo": "Ascitis"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 773.292,
+    "fin": 809.5,
+    "titulo": "Examen físico de la ascitis"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 809.5,
+    "fin": 851.583,
+    "titulo": "Paracentesis y GASA"
+   },
+   {
+    "src": "media/dig-13/clase.mp4",
+    "vtt": "media/dig-13/clase.vtt",
+    "poster": "media/dig-13/clase.jpg",
+    "ini": 851.583,
+    "fin": 892.583,
+    "titulo": "El líquido ascítico"
+   },
+   {
+    "src": "media/dig-14/clase.mp4",
+    "vtt": "media/dig-14/clase.vtt",
+    "poster": "media/dig-14/clase.jpg",
+    "ini": 234.125,
+    "fin": 274.292,
+    "titulo": "Encefalopatía hepática"
+   },
+   {
+    "src": "media/dig-14/clase.mp4",
+    "vtt": "media/dig-14/clase.vtt",
+    "poster": "media/dig-14/clase.jpg",
+    "ini": 274.292,
+    "fin": 314.875,
+    "titulo": "Grados de encefalopatía (West Haven)"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 340,
+    "fin": 372.208,
+    "titulo": "Peritonitis bacteriana espontánea"
+   }
+  ]
+ },
+ "peritonitis": {
+  "total": 572.71,
+  "segmentos": [
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 4,
+    "fin": 42,
+    "titulo": "El peritoneo normal"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 42,
+    "fin": 70.917,
+    "titulo": "Plastrón: localizada"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 70.917,
+    "fin": 103.292,
+    "titulo": "Generalizada: todo el peritoneo"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 103.292,
+    "fin": 144.292,
+    "titulo": "PBE: sin perforación"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 144.292,
+    "fin": 169.167,
+    "titulo": "Secundaria: se perfora una víscera"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 169.167,
+    "fin": 198.833,
+    "titulo": "El aire libre: signo de Jobert"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 198.833,
+    "fin": 228.042,
+    "titulo": "Por qué duele al soltar"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 228.042,
+    "fin": 250.167,
+    "titulo": "Peritonitis"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 250.167,
+    "fin": 273.167,
+    "titulo": "Plastrón"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 273.167,
+    "fin": 297.333,
+    "titulo": "Clasificación"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 297.333,
+    "fin": 340,
+    "titulo": "Primaria, secundaria y terciaria"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 340,
+    "fin": 372.208,
+    "titulo": "Peritonitis bacteriana espontánea"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 372.208,
+    "fin": 396.167,
+    "titulo": "Secundaria y terciaria"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 396.167,
+    "fin": 432.333,
+    "titulo": "Clínica"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 432.333,
+    "fin": 461.5,
+    "titulo": "Anamnesis y aspecto general"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 461.5,
+    "fin": 495.708,
+    "titulo": "Examen del abdomen: PBE o perforación"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 495.708,
+    "fin": 517.292,
+    "titulo": "Signo de Jobert"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 517.292,
+    "fin": 547.958,
+    "titulo": "Blumberg y Gueneau de Mussy"
+   },
+   {
+    "src": "media/dig-10/clase.mp4",
+    "vtt": "media/dig-10/clase.vtt",
+    "poster": "media/dig-10/clase.jpg",
+    "ini": 609.583,
+    "fin": 638.333,
+    "titulo": "Paracentesis"
+   }
+  ]
+ },
+ "ulcera-gastritis": {
+  "total": 501.54,
+  "segmentos": [
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 4,
+    "fin": 34.125,
+    "titulo": "Cómo se defiende el estómago"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 34.125,
+    "fin": 57.667,
+    "titulo": "AINE: se pierden las prostaglandinas"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 57.667,
+    "fin": 91.125,
+    "titulo": "Helicobacter pylori: la nube alcalina"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 91.125,
+    "fin": 115,
+    "titulo": "Erosión o úlcera: la profundidad"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 115,
+    "fin": 138.542,
+    "titulo": "Zollinger-Ellison: demasiada gastrina"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 138.542,
+    "fin": 174.667,
+    "titulo": "Gastritis autoinmune: sin células parietales"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 195.333,
+    "fin": 234.667,
+    "titulo": "Aguda o crónica"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 234.667,
+    "fin": 254.375,
+    "titulo": "Dónde se ubican"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 254.375,
+    "fin": 280,
+    "titulo": "Las dos causas más frecuentes"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 280,
+    "fin": 311.5,
+    "titulo": "Otros factores"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 311.5,
+    "fin": 337.25,
+    "titulo": "El dolor de la úlcera"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 357.625,
+    "fin": 376.917,
+    "titulo": "Gástrica o duodenal"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 376.917,
+    "fin": 407.958,
+    "titulo": "Diagnóstico: endoscopia"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 465.125,
+    "fin": 502.583,
+    "titulo": "Complicaciones de la úlcera"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 502.583,
+    "fin": 532.458,
+    "titulo": "Gastritis: definición y clasificación"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 532.458,
+    "fin": 572.958,
+    "titulo": "Gastritis tipo A y tipo B"
+   },
+   {
+    "src": "media/dig-07/clase.mp4",
+    "vtt": "media/dig-07/clase.vtt",
+    "poster": "media/dig-07/clase.jpg",
+    "ini": 572.958,
+    "fin": 603.75,
+    "titulo": "Clínica y diagnóstico de la gastritis"
+   }
+  ]
+ },
+ "pancreatitis": {
+  "total": 563.79,
+  "segmentos": [
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 4,
+    "fin": 38.917,
+    "titulo": "El páncreas que se digiere a sí mismo"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 38.917,
+    "fin": 67.833,
+    "titulo": "Cálculo y alcohol: cómo la desencadenan"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 67.833,
+    "fin": 106.958,
+    "titulo": "El exudado se difunde"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 106.958,
+    "fin": 146.208,
+    "titulo": "Hipovolemia con hemoconcentración"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 146.208,
+    "fin": 171.833,
+    "titulo": "Calcio bajo y glucosa alta"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 171.833,
+    "fin": 199.042,
+    "titulo": "Pancreatitis aguda"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 199.042,
+    "fin": 234.167,
+    "titulo": "Causas"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 234.167,
+    "fin": 260.833,
+    "titulo": "Edematosa y necrohemorrágica"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 260.833,
+    "fin": 298.917,
+    "titulo": "El dolor"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 298.917,
+    "fin": 344.667,
+    "titulo": "Vómitos y examen del abdomen"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 344.667,
+    "fin": 372.292,
+    "titulo": "Cullen y Grey Turner"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 372.292,
+    "fin": 412.833,
+    "titulo": "Falla multiorgánica"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 443.708,
+    "fin": 485.833,
+    "titulo": "Laboratorio"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 507.875,
+    "fin": 562.917,
+    "titulo": "Criterios de Ranson"
+   },
+   {
+    "src": "media/dig-15/clase.mp4",
+    "vtt": "media/dig-15/clase.vtt",
+    "poster": "media/dig-15/clase.jpg",
+    "ini": 562.917,
+    "fin": 594.333,
+    "titulo": "Criterios de Balthazar"
+   },
+   {
+    "src": "media/dig-11/clase.mp4",
+    "vtt": "media/dig-11/clase.vtt",
+    "poster": "media/dig-11/clase.jpg",
+    "ini": 652.167,
+    "fin": 678.542,
+    "titulo": "Pancreatitis biliar y cáncer de la ampolla"
+   }
+  ]
+ },
+ "disfagia": {
+  "total": 438.79,
+  "segmentos": [
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 275.125,
+    "fin": 306.125,
+    "titulo": "La deglución normal"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 306.125,
+    "fin": 330.542,
+    "titulo": "Cuando no se puede transferir"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 330.542,
+    "fin": 352.25,
+    "titulo": "Obstáculo o motor que falla"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 352.25,
+    "fin": 380.083,
+    "titulo": "Acalasia: el esófago que no vacía"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 859.25,
+    "fin": 880.917,
+    "titulo": "Disfagia: qué es"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 880.917,
+    "fin": 900.208,
+    "titulo": "Dos disfagias según dónde se traba"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 900.208,
+    "fin": 933.167,
+    "titulo": "Orofaríngea: cómo se presenta"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 933.167,
+    "fin": 967.417,
+    "titulo": "Orofaríngea: causas"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 967.417,
+    "fin": 996.583,
+    "titulo": "Esofágica: cómo se presenta"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 996.583,
+    "fin": 1032.875,
+    "titulo": "Mecánica o motora"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 1032.875,
+    "fin": 1062.875,
+    "titulo": "Esofágica: causas"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 1062.875,
+    "fin": 1084.583,
+    "titulo": "Lo que no es disfagia"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 1119.375,
+    "fin": 1134.708,
+    "titulo": "La que siempre preguntan"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 1134.708,
+    "fin": 1167.917,
+    "titulo": "Examen físico en la disfagia"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 1167.917,
+    "fin": 1201.417,
+    "titulo": "Qué estudio pedir"
+   },
+   {
+    "src": "media/dig-01/clase.mp4",
+    "vtt": "media/dig-01/clase.vtt",
+    "poster": "media/dig-01/clase.jpg",
+    "ini": 1201.417,
+    "fin": 1227.875,
+    "titulo": "La disfagia esofágica en un árbol"
+   }
+  ]
+ },
+ "ef-digestivo": {
+  "total": 483.17,
+  "segmentos": [
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 270.667,
+    "fin": 300.333,
+    "titulo": "Cuatro cuadrantes o nueve regiones"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 300.333,
+    "fin": 319.792,
+    "titulo": "El orden cambia"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 35,
+    "fin": 55.042,
+    "titulo": "Por qué se ausculta antes de palpar"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 855.292,
+    "fin": 885.667,
+    "titulo": "Puntos apendiculares"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 885.667,
+    "fin": 915.333,
+    "titulo": "Puntos pancreáticos y biliares"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 915.333,
+    "fin": 956.625,
+    "titulo": "Los demás puntos"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 797.167,
+    "fin": 833.25,
+    "titulo": "Abdomen tenso y doloroso"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 200.458,
+    "fin": 221.208,
+    "titulo": "Por qué se palpa en inspiración"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 956.625,
+    "fin": 990.583,
+    "titulo": "Hígado: monomanual y bimanual"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 990.583,
+    "fin": 1016.75,
+    "titulo": "Cómo es el hígado que palpás"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 221.208,
+    "fin": 251,
+    "titulo": "Por qué el bazo se busca desde la fosa ilíaca derecha"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 1016.75,
+    "fin": 1051.833,
+    "titulo": "Bazo: a la derecha y a la izquierda del paciente"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 1051.833,
+    "fin": 1079.958,
+    "titulo": "Vesícula: la maniobra de Murphy"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 681.625,
+    "fin": 708,
+    "titulo": "Ascitis: matidez de concavidad superior"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 708,
+    "fin": 735.625,
+    "titulo": "Tres maniobras para la ascitis"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 654.958,
+    "fin": 681.625,
+    "titulo": "Espacio semilunar de Traube"
+   },
+   {
+    "src": "media/dig-05/clase.mp4",
+    "vtt": "media/dig-05/clase.vtt",
+    "poster": "media/dig-05/clase.jpg",
+    "ini": 833.25,
+    "fin": 855.292,
+    "titulo": "Chapoteo o bazuqueo gástrico"
+   }
+  ]
+ },
+ "funciones-renales": {
+  "total": 165.5,
+  "segmentos": [
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 76.458,
+    "fin": 113.792,
+    "titulo": "Lo que el riñón deja de hacer"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 113.792,
+    "fin": 152.708,
+    "titulo": "Por qué la anemia llega tarde"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 152.708,
+    "fin": 188.333,
+    "titulo": "El hueso del renal crónico"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 431.125,
+    "fin": 457.333,
+    "titulo": "Calcio y fósforo"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 457.333,
+    "fin": 484.75,
+    "titulo": "La anemia: aguda o crónica"
+   }
+  ]
+ },
+ "nefrotico": {
+  "total": 376.75,
+  "segmentos": [
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 4,
+    "fin": 37.958,
+    "titulo": "La barrera que deja pasar la albúmina"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 37.958,
+    "fin": 81.125,
+    "titulo": "El círculo del edema"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 81.125,
+    "fin": 118.292,
+    "titulo": "Por qué el nefrótico hace trombosis"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 118.292,
+    "fin": 146.333,
+    "titulo": "Infecciones y lípidos"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 146.333,
+    "fin": 175.042,
+    "titulo": "Síndrome nefrótico"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 175.042,
+    "fin": 188.458,
+    "titulo": "Primario o secundario"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 188.458,
+    "fin": 223.625,
+    "titulo": "La causa más frecuente"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 223.625,
+    "fin": 244.583,
+    "titulo": "La diabetes, en etapas"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 244.583,
+    "fin": 274.375,
+    "titulo": "Todo sale de la proteinuria"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 274.375,
+    "fin": 310.667,
+    "titulo": "Clínica"
+   },
+   {
+    "src": "media/ren-04/clase.mp4",
+    "vtt": "media/ren-04/clase.vtt",
+    "poster": "media/ren-04/clase.jpg",
+    "ini": 348.542,
+    "fin": 383.125,
+    "titulo": "Complicaciones"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 170.083,
+    "fin": 205.583,
+    "titulo": "Nefrítico o nefrótico"
+   }
+  ]
+ },
+ "nefritico": {
+  "total": 307.04,
+  "segmentos": [
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 4,
+    "fin": 39.375,
+    "titulo": "De la garganta al riñón"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 39.375,
+    "fin": 72.333,
+    "titulo": "El capilar que se rompe"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 72.333,
+    "fin": 98.958,
+    "titulo": "Del filtrado bajo a las tres H"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 98.958,
+    "fin": 119.708,
+    "titulo": "Síndrome nefrítico"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 119.708,
+    "fin": 144.958,
+    "titulo": "La tríada: las tres H"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 144.958,
+    "fin": 170.083,
+    "titulo": "Cómo se ve"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 170.083,
+    "fin": 205.583,
+    "titulo": "Nefrítico o nefrótico"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 205.583,
+    "fin": 229,
+    "titulo": "La causa más frecuente: postestreptocócica"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 229,
+    "fin": 252.583,
+    "titulo": "Otras causas"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 252.583,
+    "fin": 286.542,
+    "titulo": "Laboratorio"
+   },
+   {
+    "src": "media/ren-03/clase.mp4",
+    "vtt": "media/ren-03/clase.vtt",
+    "poster": "media/ren-03/clase.jpg",
+    "ini": 321.792,
+    "fin": 346.292,
+    "titulo": "Complicaciones"
+   }
+  ]
+ },
+ "ira": {
+  "total": 381.37,
+  "segmentos": [
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 4,
+    "fin": 41,
+    "titulo": "Dónde falla: antes, dentro o después del riñón"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 41,
+    "fin": 76.458,
+    "titulo": "Por qué la prerrenal retiene sodio"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 76.458,
+    "fin": 113.792,
+    "titulo": "Lo que el riñón deja de hacer"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 188.333,
+    "fin": 216.375,
+    "titulo": "Insuficiencia renal"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 216.375,
+    "fin": 258.5,
+    "titulo": "Criterios RIFLE"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 258.5,
+    "fin": 295.542,
+    "titulo": "Criterios AKIN"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 295.542,
+    "fin": 335.25,
+    "titulo": "Causas de insuficiencia renal aguda"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 335.25,
+    "fin": 368.208,
+    "titulo": "Prerrenal o necrosis tubular"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 368.208,
+    "fin": 394.25,
+    "titulo": "La aguda es un episodio"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 394.25,
+    "fin": 431.125,
+    "titulo": "Clínica de la insuficiencia aguda"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 593.542,
+    "fin": 622.333,
+    "titulo": "Aguda o crónica"
+   }
+  ]
+ },
+ "erc": {
+  "total": 265.75,
+  "segmentos": [
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 484.75,
+    "fin": 508.75,
+    "titulo": "Insuficiencia renal crónica"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 508.75,
+    "fin": 554.792,
+    "titulo": "Estadios por filtrado"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 554.792,
+    "fin": 593.542,
+    "titulo": "El paciente renal crónico"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 152.708,
+    "fin": 188.333,
+    "titulo": "El hueso del renal crónico"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 431.125,
+    "fin": 457.333,
+    "titulo": "Calcio y fósforo"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 113.792,
+    "fin": 152.708,
+    "titulo": "Por qué la anemia llega tarde"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 457.333,
+    "fin": 484.75,
+    "titulo": "La anemia: aguda o crónica"
+   },
+   {
+    "src": "media/ren-05/clase.mp4",
+    "vtt": "media/ren-05/clase.vtt",
+    "poster": "media/ren-05/clase.jpg",
+    "ini": 593.542,
+    "fin": 622.333,
+    "titulo": "Aguda o crónica"
+   }
+  ]
+ },
+ "ef-renal": {
+  "total": 158.67,
+  "segmentos": [
+   {
+    "src": "media/ren-02/clase.mp4",
+    "vtt": "media/ren-02/clase.vtt",
+    "poster": "media/ren-02/clase.jpg",
+    "ini": 68.625,
+    "fin": 101.542,
+    "titulo": "Por qué se palpa el riñón en la inspiración"
+   },
+   {
+    "src": "media/ren-02/clase.mp4",
+    "vtt": "media/ren-02/clase.vtt",
+    "poster": "media/ren-02/clase.jpg",
+    "ini": 312.125,
+    "fin": 342.292,
+    "titulo": "Maniobra de Guyon"
+   },
+   {
+    "src": "media/ren-02/clase.mp4",
+    "vtt": "media/ren-02/clase.vtt",
+    "poster": "media/ren-02/clase.jpg",
+    "ini": 342.292,
+    "fin": 370.542,
+    "titulo": "Montenegro, Israel y Glenard"
+   },
+   {
+    "src": "media/ren-02/clase.mp4",
+    "vtt": "media/ren-02/clase.vtt",
+    "poster": "media/ren-02/clase.jpg",
+    "ini": 370.542,
+    "fin": 408.208,
+    "titulo": "Puñopercusión, puntos y auscultación"
+   },
+   {
+    "src": "media/ren-02/clase.mp4",
+    "vtt": "media/ren-02/clase.vtt",
+    "poster": "media/ren-02/clase.jpg",
+    "ini": 282.458,
+    "fin": 312.125,
+    "titulo": "Examen general: el edema"
+   }
+  ]
+ },
+ "pares": {
+  "total": 1132.33,
+  "segmentos": [
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 215.792,
+    "fin": 257.667,
+    "titulo": "Doce pares: motores, sensoriales y mixtos"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 257.667,
+    "fin": 294.583,
+    "titulo": "Dónde nace cada par"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 4,
+    "fin": 34.542,
+    "titulo": "El olfato no pasa por el tálamo"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 294.583,
+    "fin": 317.792,
+    "titulo": "I par: olfatorio"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 317.792,
+    "fin": 365.5,
+    "titulo": "Alteraciones del olfato"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 365.5,
+    "fin": 391.958,
+    "titulo": "II par: óptico"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 34.542,
+    "fin": 72.667,
+    "titulo": "La vía óptica: quién cruza y quién no"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 391.958,
+    "fin": 429,
+    "titulo": "La vía óptica, como el Padre Nuestro"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 72.667,
+    "fin": 112.625,
+    "titulo": "Dónde está la lesión, qué campo se pierde"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 429,
+    "fin": 460.292,
+    "titulo": "Hemianopsias"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 460.292,
+    "fin": 486.875,
+    "titulo": "Cuadrantanopsias"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 486.875,
+    "fin": 520.708,
+    "titulo": "Cómo se explora el II par"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 520.708,
+    "fin": 552.792,
+    "titulo": "III, IV y VI: qué músculo inerva cada uno"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 151.667,
+    "fin": 181.292,
+    "titulo": "Por qué el ojo del III se va abajo y afuera"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 552.792,
+    "fin": 573.333,
+    "titulo": "Parálisis del III par"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 573.333,
+    "fin": 599.083,
+    "titulo": "Parálisis del IV y del VI"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 599.083,
+    "fin": 626.5,
+    "titulo": "Diplopía y estrabismo"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 112.625,
+    "fin": 151.667,
+    "titulo": "El reflejo fotomotor"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 667.042,
+    "fin": 701.667,
+    "titulo": "La pupila y sus reflejos"
+   },
+   {
+    "src": "media/neu-03/clase.mp4",
+    "vtt": "media/neu-03/clase.vtt",
+    "poster": "media/neu-03/clase.jpg",
+    "ini": 626.5,
+    "fin": 667.042,
+    "titulo": "Nistagmo"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 117,
+    "fin": 158.583,
+    "titulo": "V par: trigémino"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 158.583,
+    "fin": 199.542,
+    "titulo": "Los núcleos del trigémino y cómo se explora"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 4,
+    "fin": 46.333,
+    "titulo": "Por qué la parálisis central respeta la frente"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 199.542,
+    "fin": 236,
+    "titulo": "VII par: facial"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 236,
+    "fin": 282.125,
+    "titulo": "Parálisis facial central y periférica"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 282.125,
+    "fin": 316.958,
+    "titulo": "VIII par: vestibulococlear"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 46.333,
+    "fin": 87.125,
+    "titulo": "Weber: hacia dónde se va el sonido"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 316.958,
+    "fin": 357.292,
+    "titulo": "Hipoacusia: Weber, Rinne y Schwabach"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 357.292,
+    "fin": 399,
+    "titulo": "Cómo se explora la rama vestibular"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 399,
+    "fin": 440.417,
+    "titulo": "IX glosofaríngeo y X vago"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 87.125,
+    "fin": 117,
+    "titulo": "Cómo está inervada la lengua"
+   },
+   {
+    "src": "media/neu-04/clase.mp4",
+    "vtt": "media/neu-04/clase.vtt",
+    "poster": "media/neu-04/clase.jpg",
+    "ini": 440.417,
+    "fin": 473.167,
+    "titulo": "XI espinal y XII hipogloso"
+   }
+  ]
+ },
+ "conciencia": {
+  "total": 83.46,
+  "segmentos": [
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 302.583,
+    "fin": 345.458,
+    "titulo": "Pérdida del conocimiento"
+   },
+   {
+    "src": "media/dig-14/clase.mp4",
+    "vtt": "media/dig-14/clase.vtt",
+    "poster": "media/dig-14/clase.jpg",
+    "ini": 274.292,
+    "fin": 314.875,
+    "titulo": "Grados de encefalopatía (West Haven)"
+   }
+  ]
+ },
+ "cefalea": {
+  "total": 500.12,
+  "segmentos": [
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 345.458,
+    "fin": 374.958,
+    "titulo": "Cefalea"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 4,
+    "fin": 46.708,
+    "titulo": "Por dónde viaja el dolor de cabeza"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 46.708,
+    "fin": 79.792,
+    "titulo": "El tálamo: la estación de todas las sensaciones"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 374.958,
+    "fin": 403.917,
+    "titulo": "El tálamo tiene muchas funciones"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 403.917,
+    "fin": 431.417,
+    "titulo": "Primarias y secundarias"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 79.792,
+    "fin": 115.958,
+    "titulo": "Migraña: del aura al dolor"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 431.417,
+    "fin": 476.25,
+    "titulo": "Migraña"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 476.25,
+    "fin": 494.833,
+    "titulo": "Más frecuente en mujeres"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 494.833,
+    "fin": 535.5,
+    "titulo": "Sin aura y con aura"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 535.5,
+    "fin": 574,
+    "titulo": "Cefalea tensional"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 574,
+    "fin": 589.667,
+    "titulo": "Formas de la tensional"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 115.958,
+    "fin": 147.625,
+    "titulo": "Cefalea en racimos: un ojo que se llena de parasimpático"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 589.667,
+    "fin": 631.75,
+    "titulo": "Cefalea en racimos (Horton)"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 631.75,
+    "fin": 666.875,
+    "titulo": "Neuralgia del trigémino"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 666.875,
+    "fin": 701.958,
+    "titulo": "Las tres primarias, lado a lado"
+   }
+  ]
+ },
+ "piramidal": {
+  "total": 514.13,
+  "segmentos": [
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 207.458,
+    "fin": 244.583,
+    "titulo": "Síndrome piramidal"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 4,
+    "fin": 40.042,
+    "titulo": "El camino de la vía piramidal"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 244.583,
+    "fin": 278.792,
+    "titulo": "Qué se encuentra al examen"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 278.792,
+    "fin": 306.375,
+    "titulo": "Navaja o rueda dentada"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 40.042,
+    "fin": 69.792,
+    "titulo": "Fláccida primero, espástica después"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 306.375,
+    "fin": 336.625,
+    "titulo": "Hemiplejía fláccida y espástica"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 336.625,
+    "fin": 369.542,
+    "titulo": "Dónde está la lesión"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 69.792,
+    "fin": 103.292,
+    "titulo": "Hemiplejía alterna: el par de un lado, el cuerpo del otro"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 369.542,
+    "fin": 394.833,
+    "titulo": "Weber y Millard-Gubler"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 394.833,
+    "fin": 416.667,
+    "titulo": "Segunda motoneurona: la triple A"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 416.667,
+    "fin": 454.333,
+    "titulo": "Las manos y el pie caído"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 48.167,
+    "fin": 85.208,
+    "titulo": "Primera o segunda motoneurona"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 414.833,
+    "fin": 445.25,
+    "titulo": "Debilidad: primera y segunda motoneurona"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 445.25,
+    "fin": 469.958,
+    "titulo": "Arriba o abajo de la decusación"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 85.208,
+    "fin": 125.625,
+    "titulo": "Guillain-Barré: el sistema inmune ataca la mielina"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 540.583,
+    "fin": 575.958,
+    "titulo": "Síndrome de Guillain-Barré"
+   }
+  ]
+ },
+ "funciones-superiores": {
+  "total": 38.79,
+  "segmentos": [
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 183.958,
+    "fin": 222.75,
+    "titulo": "Las vías de la sensibilidad"
+   }
+  ]
+ },
+ "extrapiramidal": {
+  "total": 280.42,
+  "segmentos": [
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 454.333,
+    "fin": 485.25,
+    "titulo": "Síndrome extrapiramidal"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 103.292,
+    "fin": 133.792,
+    "titulo": "Parkinson: se apaga la sustancia negra"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 485.25,
+    "fin": 513.333,
+    "titulo": "La tríada del Parkinson"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 513.333,
+    "fin": 561.375,
+    "titulo": "Cómo se ve un parkinsoniano"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 278.792,
+    "fin": 306.375,
+    "titulo": "Navaja o rueda dentada"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 4,
+    "fin": 48.167,
+    "titulo": "Dopamina contra acetilcolina"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 213.375,
+    "fin": 243.458,
+    "titulo": "El temblor"
+   },
+   {
+    "src": "media/neu-02/clase.mp4",
+    "vtt": "media/neu-02/clase.vtt",
+    "poster": "media/neu-02/clase.jpg",
+    "ini": 243.458,
+    "fin": 284.5,
+    "titulo": "Cada temblor y su enfermedad"
+   }
+  ]
+ },
+ "cerebeloso": {
+  "total": 207.75,
+  "segmentos": [
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 561.375,
+    "fin": 603.333,
+    "titulo": "Síndrome cerebeloso"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 133.792,
+    "fin": 169.042,
+    "titulo": "Qué hace el cerebelo, y qué pasa sin él"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 169.042,
+    "fin": 207.458,
+    "titulo": "Trastorno del equilibrio: tres síndromes"
+   },
+   {
+    "src": "media/neu-05/clase.mp4",
+    "vtt": "media/neu-05/clase.vtt",
+    "poster": "media/neu-05/clase.jpg",
+    "ini": 603.333,
+    "fin": 626.917,
+    "titulo": "Síndrome cordonal posterior"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 186.292,
+    "fin": 230.167,
+    "titulo": "Por qué el Romberg separa al cerebeloso"
+   },
+   {
+    "src": "media/neu-01/clase.mp4",
+    "vtt": "media/neu-01/clase.vtt",
+    "poster": "media/neu-01/clase.jpg",
+    "ini": 825.333,
+    "fin": 850,
+    "titulo": "Marchas y Romberg"
+   }
+  ]
+ },
+ "hte": {
+  "total": 348,
+  "segmentos": [
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 4,
+    "fin": 44.25,
+    "titulo": "Tres componentes en una caja que no se estira"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 44.25,
+    "fin": 79.542,
+    "titulo": "El efecto Cushing"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 79.542,
+    "fin": 120.25,
+    "titulo": "Cuando ya no compensa: las hernias"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 120.25,
+    "fin": 146.792,
+    "titulo": "Por qué la punción lumbar puede matar"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 222.75,
+    "fin": 273.042,
+    "titulo": "Hipertensión endocraneana"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 273.042,
+    "fin": 312.125,
+    "titulo": "La tríada"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 312.125,
+    "fin": 347.75,
+    "titulo": "Las fases del edema de papila"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 347.75,
+    "fin": 385.792,
+    "titulo": "El VI par y el efecto Cushing"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 385.792,
+    "fin": 406.542,
+    "titulo": "Diagnóstico: clínico"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 406.542,
+    "fin": 427.958,
+    "titulo": "Contraindicaciones de la punción lumbar"
+   }
+  ]
+ },
+ "meningeo": {
+  "total": 224.04,
+  "segmentos": [
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 146.792,
+    "fin": 183.958,
+    "titulo": "Cómo una infección inflama las meninges"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 466.292,
+    "fin": 493.667,
+    "titulo": "Meningitis, meningismo y reacción meníngea"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 493.667,
+    "fin": 531.458,
+    "titulo": "Causas de meningitis"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 531.458,
+    "fin": 567.875,
+    "titulo": "La tríada de la meningitis"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 567.875,
+    "fin": 614.833,
+    "titulo": "Contractura y signos de irritación meníngea"
+   },
+   {
+    "src": "media/neu-06/clase.mp4",
+    "vtt": "media/neu-06/clase.vtt",
+    "poster": "media/neu-06/clase.jpg",
+    "ini": 427.958,
+    "fin": 466.292,
+    "titulo": "El líquido cefalorraquídeo"
+   }
+  ]
+ }
+}

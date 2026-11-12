@@ -119,13 +119,17 @@ for (const s of SIS) {
   await p.evaluate(() => document.querySelectorAll('.ptemas__tab')[0].click());
   await espera(300);
   await p.evaluate(() => [...document.querySelectorAll('#tema-pestanas .secnav__item')].find((b) => b.textContent.includes('Diapositivas'))?.click());
-  await p.waitForSelector('.ptema .visor__nav--sig', { timeout: 20000 }).catch(() => null);
-  const sig = await p.$('.ptema .visor__nav--sig');
+  await p.waitForSelector('.ptema .visor__btn--sig', { timeout: 20000 }).catch(() => null);
+  const sig = await p.$('.ptema .visor__btn--sig');
   if (sig) {
     const antes = await p.$eval('.ptema .sl__cab h3', (e) => e.textContent);
-    await sig.click();
-    await espera(400);
-    const despues = await p.$eval('.ptema .sl__cab h3', (e) => e.textContent);
+    // Paso a paso: «Siguiente» hasta que cambie la diapositiva (máx. 8 pasos).
+    let despues = antes;
+    for (let k = 0; k < 8 && despues === antes; k++) {
+      await sig.click();
+      await espera(350);
+      despues = await p.$eval('.ptema .sl__cab h3', (e) => e.textContent);
+    }
     ok(antes !== despues, `${s}: el visor avanza (${antes} → ${despues})`);
   }
   await p.screenshot({ path: join(outDir, `desk_parcial_${s}.png`) });

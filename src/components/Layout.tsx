@@ -1,5 +1,6 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { InstalarApp } from './InstalarApp';
 import { SYSTEMS, isAvailable } from '@content/curriculum';
 import { useProgress } from '@/lib/progress';
 import { Icon } from './Icon';
@@ -119,6 +120,7 @@ function Sidebar() {
   const loc = useLocation();
   return (
     <aside className="sidebar" aria-label="Programa">
+      <InstalarApp />
       <nav className="sidebar__nav sidebar__nav--mobile">
         {NAV.map((n) => (
           <NavLink key={n.to} to={n.to} end={n.end} className="sidebar__link">

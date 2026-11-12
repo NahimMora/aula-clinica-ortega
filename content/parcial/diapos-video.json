@@ -1,0 +1,306 @@
+{
+  "src": "media/parcial/diapos.mp4",
+  "poster": "media/parcial/diapos.jpg",
+  "vtt": "media/parcial/diapos.vtt",
+  "duration": "35:19",
+  "chapters": [
+    {
+      "t": 4,
+      "label": "Teoría · Ictericia: lo del repaso"
+    },
+    {
+      "t": 164,
+      "label": "Teoría · Abdomen agudo: los cinco tipos"
+    },
+    {
+      "t": 454,
+      "label": "Teoría · Hemorragia: lo que aclaró"
+    },
+    {
+      "t": 491,
+      "label": "Teoría · Complicaciones de la cirrosis"
+    },
+    {
+      "t": 548,
+      "label": "Teoría · Funciones del riñón"
+    },
+    {
+      "t": 636,
+      "label": "Teoría · Nefrótico: el razonamiento"
+    },
+    {
+      "t": 707,
+      "label": "Teoría · Nefrítico: la cadena"
+    },
+    {
+      "t": 748,
+      "label": "Teoría · IRA: pre, renal y pos"
+    },
+    {
+      "t": 789,
+      "label": "Teoría · ERC: KDIGO y AEIOU"
+    },
+    {
+      "t": 877,
+      "label": "Teoría · Estado de conciencia"
+    },
+    {
+      "t": 1062,
+      "label": "Teoría · Pizarra de motilidad"
+    },
+    {
+      "t": 1189,
+      "label": "Teoría · Sensibilidad, praxia y lenguaje"
+    },
+    {
+      "t": 1296,
+      "label": "Teoría · Columna"
+    },
+    {
+      "t": 1744,
+      "label": "Teoría · Miembro superior"
+    },
+    {
+      "t": 1895,
+      "label": "Teoría · Miembro inferior"
+    }
+  ],
+  "script": [
+    {
+      "title": "El metabolismo de la bilirrubina en cinco pasos",
+      "text": "El metabolismo de la bilirrubina hay que poder recitarlo en cinco pasos. Primero, la producción: el bazo destruye los glóbulos rojos viejos, que viven unos ciento veinte días. El hemo se transforma en biliverdina y después en bilirrubina indirecta, que es liposoluble. Segundo, el transporte: como es liposoluble, la indirecta viaja en la sangre pegada a la albúmina. Por eso no se filtra en el riñón y no da coluria. En el recién nacido puede atravesar la barrera y llegar al cerebro: es el kernicterus. Tercero, la captación: el hepatocito la toma de la sangre. Esto es lo que falla en el síndrome de Gilbert. Cuarto, la conjugación: una enzima, la glucuroniltransferasa, la une al ácido glucurónico. Así se forma la bilirrubina directa, que ahora es hidrosoluble. Esta enzima es la que falta o funciona poco en el Crigler-Najjar. Y quinto, la excreción: la directa pasa a la bilis, y esto es lo que falla en el Dubin-Johnson y el Rotor. En el intestino las bacterias la transforman en urobilinógeno y estercobilina, que es lo que le da el color a la materia fecal."
+    },
+    {
+      "title": "Hiperbilirrubinemias hereditarias",
+      "text": "En el repaso nombró las hiperbilirrubinemias hereditarias. Gilbert es la más frecuente y es benigna: falla la captación, y el paciente se pone un poco amarillo con el ayuno o el estrés. Crigler-Najjar: falla la conjugación, y el tipo uno es grave en el recién nacido. Dubin-Johnson y Rotor: falla la excreción de la directa hacia la bilis. La regla para no confundirse: Gilbert y Crigler-Najjar fallan antes de conjugar, así que sube la indirecta. Dubin-Johnson y Rotor fallan después de conjugar, así que sube la directa."
+    },
+    {
+      "title": "Patrón hepatocelular o colestásico",
+      "text": "El laboratorio separa dos patrones. Hepatocelular: se rompe el hepatocito y salen las enzimas que tiene adentro, las transaminasas, GPT y GOT, muy altas. Si predomina la GPT pensá en una hepatitis viral; si la GOT duplica a la GPT, en el alcohol. Colestásico: la bilis no sale, y suben la fosfatasa alcalina y la gama glutamil transpeptidasa, que están en la membrana del canalículo biliar. La GGT confirma que esa fosfatasa alcalina viene del hígado y no del hueso. Resumido en una línea: las transaminasas miden daño, la fosfatasa alcalina y la GGT miden colestasis, y la albúmina y la protrombina miden función, porque son lo que el hígado fabrica."
+    },
+    {
+      "title": "Dolor abdominal no es abdomen agudo",
+      "text": "Lo primero que aclaró: dolor abdominal es un síntoma, y puede ser crónico, funcional, o incluso venir de afuera del abdomen. Abdomen agudo, en cambio, es un síndrome: un dolor abdominal agudo, de menos de cuarenta y ocho a setenta y dos horas, y que en general necesita una resolución quirúrgica urgente. Y tiene cinco tipos: inflamatorio, obstructivo, perforativo, hemorrágico y vascular. Vamos uno por uno: qué es, por qué pasa y qué encontrás."
+    },
+    {
+      "title": "1. Inflamatorio: el más frecuente",
+      "text": "El inflamatorio es el más frecuente: es la inflamación aguda de una víscera, todo lo que termina en itis, hasta que irrita el peritoneo. La apendicitis es la causa más frecuente; también la colecistitis, la diverticulitis y la pancreatitis. El mecanismo: se obstruye la luz, por ejemplo con un fecalito, la víscera se distiende y se infecta. Al principio duele como dolor visceral, mal localizado, alrededor del ombligo. Cuando la inflamación llega al peritoneo parietal, el dolor se vuelve somático y se localiza: en la apendicitis, en la fosa ilíaca derecha. En la clínica, el dolor migra, hay anorexia y vómitos, y la fiebre aparece después del dolor: es la cronología de Murphy. Al examen, los puntos dolorosos, el Blumberg, el Rovsing y el psoas. Si la peritonitis se generaliza, el Gueneau de Mussy."
+    },
+    {
+      "title": "2. Obstructivo",
+      "text": "El obstructivo: algo impide el tránsito del contenido intestinal. Es un íleo mecánico. Las causas: bridas, que son adherencias de una cirugía previa y la causa más frecuente en el intestino delgado; hernias atascadas, tumores como el cáncer de colon, el vólvulo o un fecaloma. Por arriba del obstáculo el intestino lucha para pasar el contenido, y se distiende con gas y líquido. Aparecen vómitos, primero alimentarios, después biliosos y al final fecaloides. Y como el líquido queda secuestrado en la luz, el paciente se deshidrata. La clínica son cuatro cosas: dolor cólico, vómitos, distensión y falta de eliminación de gases y materia fecal. Al examen, el abdomen está distendido y timpánico, y se auscultan ruidos de lucha, metálicos. Siempre hay que buscar cicatrices y hernias."
+    },
+    {
+      "title": "3. Perforativo",
+      "text": "El perforativo: se perfora una víscera hueca, y lo que tiene adentro, aire, ácido, bilis o materia fecal, cae en la cavidad peritoneal y produce una peritonitis. La causa más frecuente es la úlcera péptica perforada. El contenido irrita el peritoneo, primero en forma química y después se infecta. El peritoneo parietal inflamado da un dolor somático muy intenso y una contractura refleja de los músculos de la pared. Además, el aire libre sube y se interpone entre el hígado y la pared del abdomen. Por eso la clínica es un dolor súbito, como una puñalada, que se generaliza, y el paciente queda inmóvil porque cualquier movimiento le duele. Al examen, abdomen en tabla, Gueneau de Mussy, y el signo de Jobert: desaparece la matidez del hígado porque ahora hay aire adelante."
+    },
+    {
+      "title": "4. Hemorrágico",
+      "text": "El hemorrágico es un sangrado dentro de la cavidad peritoneal. Las causas: un embarazo ectópico roto, la ruptura de un aneurisma de aorta, o un traumatismo de bazo o de hígado. Lo que domina es la pérdida de volumen: el paciente entra en hipovolemia, con taquicardia, hipotensión, palidez y hasta shock. La sangre irrita mucho menos que el ácido, así que el abdomen suele estar blando, aunque duela. Al examen hay matidez en los flancos por el líquido, y si sangra el retroperitoneo aparecen el signo de Cullen, una equimosis alrededor del ombligo, y el de Grey-Turner, en los flancos."
+    },
+    {
+      "title": "5. Vascular o isquémico: el más letal",
+      "text": "El vascular o isquémico es el más letal: se interrumpe la irrigación del intestino y el intestino se muere. La causa más frecuente es una embolia en la arteria mesentérica superior, en un paciente con fibrilación auricular. Sin oxígeno, primero se necrosa la mucosa y aparece acidosis láctica. Después se rompe la barrera, pasan bacterias, la necrosis atraviesa toda la pared y el intestino se perfora. Lo característico es un dolor muy intenso, desproporcionado para lo poco que encontrás al examen, y que no calma con analgésicos, en un paciente mayor con fibrilación auricular o aterosclerosis. Por eso es traicionero: al principio el abdomen parece casi normal. El lactato elevado ayuda."
+    },
+    {
+      "title": "Lo que aclaró sobre la hemorragia digestiva",
+      "text": "Lo que aclaró en el repaso: si te pregunta cómo se clasifica la hemorragia digestiva, la respuesta es alta o baja, según el ángulo de Treitz. El cuadro de clases uno a cuatro no clasifica la hemorragia digestiva: sirve para estimar cuánto volumen perdió el paciente, es decir, la hipovolemia, sea por sangrado, vómitos, diarrea o quemaduras. Y la clasificación de Forrest es endoscópica, de la úlcera que sangra, para el riesgo de resangrado. Él dijo que no se metan ahí: lo que va a preguntar es la clasificación de la hemorragia digestiva."
+    },
+    {
+      "title": "Complicaciones de la cirrosis y su porqué",
+      "text": "Cada complicación de la cirrosis tiene su porqué. La hemorragia: la hipertensión portal obliga a la sangre a buscar colaterales, y se forman várices esofágicas de pared fina que se rompen. La ascitis: se suman la presión portal alta, la albúmina baja, que no retiene el agua en los vasos, y la vasodilatación, que activa el sistema renina angiotensina y retiene sodio y agua. Y la peritonitis bacteriana espontánea: ascitis, bacterias que pasan desde el intestino y pocas defensas, sin que nada se perfore. La encefalopatía: el hígado no transforma el amoníaco en urea, y además la sangre del intestino pasa por las colaterales sin depurarse, así que el amoníaco llega al cerebro: confusión, asterixis y coma. El síndrome hepatorrenal: el riñón se vasocontrae y falla aunque esté sano. Y el hepatocarcinoma, por la regeneración continua en nódulos."
+    },
+    {
+      "title": "Función normal → qué pasa si se pierde (1)",
+      "text": "Ortega insistió: para saber la clínica, tienen que saber las funciones normales. El riñón filtra, y elimina la urea y la creatinina: si falla, se acumulan y aparece el síndrome urémico, con náuseas, prurito, encefalopatía y pericarditis. Además fabrica eritropoyetina, que estimula a la médula ósea: si falta, aparece la anemia del renal crónico. El riñón activa la vitamina D, y sin vitamina D activa no se absorbe calcio: hipocalcemia. Y normalmente retiene calcio y elimina fósforo; cuando falla se invierte, sube el fósforo y baja el calcio, la paratiroides se estimula y saca calcio del hueso: hiperparatiroidismo secundario y osteodistrofia renal."
+    },
+    {
+      "title": "Función normal → qué pasa si se pierde (2)",
+      "text": "El riñón regula la presión arterial con el sistema renina angiotensina aldosterona, y maneja el agua y el sodio. Si falla, retiene agua y sal: hipertensión, edema, y en el extremo, edema agudo de pulmón. También es la vía principal para eliminar el potasio: si se acumula, la hiperpotasemia produce arritmias y paro cardíaco. Y elimina los ácidos y genera bicarbonato: si falla, aparece la acidosis metabólica, con la respiración profunda de Kussmaul. El filtrado glomerular se estima con fórmulas a partir de la creatinina, y lo normal es alrededor de ciento veinte mililitros por minuto."
+    },
+    {
+      "title": "Nefrótico: de la membrana al edema",
+      "text": "El razonamiento que pidió: en el síndrome nefrótico la membrana basal del glomérulo pierde su carga negativa y sus poros se agrandan. Entonces pasan a la orina todas las proteínas, no solamente la albúmina, y el paciente queda con hipoproteinemia. Sin albúmina baja la presión oncótica, que es la que mantiene el agua dentro de los vasos, y el agua sale al intersticio: edema blando, a predominio matinal en los párpados, que puede llegar a la anasarca."
+    },
+    {
+      "title": "Por qué se infecta y por qué hace trombosis",
+      "text": "Las complicaciones salen de lo que se pierde por la orina. Se infecta porque pierde anticuerpos y fracciones del complemento. Sin complemento no hay opsonización, y las bacterias encapsuladas no se destruyen. La infección típica es la peritonitis bacteriana espontánea, igual que en la cirrosis. Y hace trombosis porque pierde antitrombina tres, que es chica y se filtra. La antitrombina inactiva a la trombina: sin ella la coagulación queda sin freno. Además el hígado, estimulado por la albúmina baja, fabrica más fibrinógeno y factores. La trombosis típica es la de la vena renal."
+    },
+    {
+      "title": "Nefrítico: la cadena del repaso",
+      "text": "Así lo encadenó: después de una infección por estreptococo se forman anticuerpos e inmunocomplejos que se depositan en el glomérulo. La inflamación daña y rompe los capilares glomerulares, y por eso pasan glóbulos rojos a la orina: hematuria. Al mismo tiempo baja el filtrado: el paciente orina poco, retiene agua y sal, y aparecen el edema y la hipertensión; y como retiene urea, la hiperazoemia. Y la diferencia entre primaria y secundaria: primaria es cuando la lesión está solamente en el riñón; secundaria, cuando una enfermedad sistémica, como el lupus, una vasculitis o una endocarditis, afecta secundariamente al riñón."
+    },
+    {
+      "title": "Pre, renal y pos: dónde está el problema",
+      "text": "Para la insuficiencia renal aguda, preguntate dónde está el problema. Prerrenal: antes del riñón, le llega poca sangre, por deshidratación, hemorragia, insuficiencia cardíaca o shock; el riñón está sano y ahorra sodio. Renal: el daño está en el riñón, como la necrosis tubular aguda, y el túbulo lesionado pierde sodio. Posrenal: la orina no puede salir, por ejemplo por una hiperplasia de próstata. La prerrenal es la más frecuente. Y en la pizarra, para la aguda dejó los criterios RIFLE y AKIN; KDIGO lo escribió para la enfermedad renal crónica."
+    },
+    {
+      "title": "Estadios KDIGO (como en la pizarra)",
+      "text": "Los estadios KDIGO, como los escribió en la pizarra. Lo normal es un filtrado mayor de ciento veinte. G uno, mayor de noventa: hay daño renal, como proteinuria, con filtrado normal. G dos, de sesenta a noventa. G tres se divide en dos: tres a, de cuarenta y cinco a sesenta, y tres b, de treinta a cuarenta y cinco. G cuatro, de quince a treinta. Y G cinco, menos de quince: es la falla renal, y la flecha de la pizarra lleva a la hemodiálisis. El riesgo aumenta a medida que bajás en la tabla."
+    },
+    {
+      "title": "Indicaciones de hemodiálisis: A-E-I-O-U",
+      "text": "Las indicaciones de hemodiálisis se recuerdan con las vocales. A, acidosis grave: pH menor de siete coma uno o bicarbonato menor de quince. E, electrolitos: potasio mayor de siete, porque produce arritmias y paro. I, intoxicaciones por sustancias que se pueden dializar, como el metanol, el litio o los salicilatos. O, de overload: sobrecarga de volumen que no responde a los diuréticos. Y U, uremia: urea mayor de doscientos, o síntomas como encefalopatía o pericarditis. Lo que aclaró: con un solo criterio ya hay indicación. Pero un paciente que deja de orinar, si no tiene ningún otro criterio, no se dializa solo por eso."
+    },
+    {
+      "title": "Estado de conciencia: nivel y contenido",
+      "text": "Empezá siempre por la definición. El estado de conciencia es el estado en el que la persona se da cuenta de sí misma y de su entorno, y puede responder a los estímulos. Tiene dos partes. El nivel es cuán despierto está: vigil, somnoliento, obnubilado, estuporoso o en coma, y se mide con la escala de Glasgow. El contenido es lo que sabe de sí y del entorno: se explora preguntándole quién es, dónde está y en qué fecha estamos, o sea, la orientación en persona, espacio y tiempo."
+    },
+    {
+      "title": "Fisiopatología: qué nos mantiene despiertos",
+      "text": "Para entender por qué un paciente se duerme o entra en coma, hay que saber qué nos mantiene despiertos. Es el sistema reticular activador ascendente, un grupo de neuronas en el tronco encefálico. Este sistema sube y activa la corteza de los dos hemisferios. El nivel depende del tronco; el contenido, de la corteza. Por eso baja el nivel de conciencia cuando se lesiona el tronco, o cuando se afectan los dos hemisferios en forma difusa, como en la hipoglucemia o una intoxicación. Una lesión chica en un solo hemisferio, en cambio, no te deja en coma."
+    },
+    {
+      "title": "Escala de Glasgow",
+      "text": "La escala de Glasgow mide el nivel de conciencia con tres respuestas. La apertura ocular, de uno a cuatro: espontánea, a la voz, al dolor o no abre. La respuesta verbal, de uno a cinco: orientada, confusa, palabras inapropiadas, sonidos incomprensibles o nada. Y la motora, de uno a seis: obedece órdenes, localiza el dolor, se retira, flexión anormal, que es la decorticación, extensión, que es la descerebración, o nada. Para acordarte: ojos cuatro, verbal cinco, motor seis. Cuatro más cinco más seis da quince, el máximo. El mínimo es tres, uno en cada una: nunca cero."
+    },
+    {
+      "title": "Glasgow y nivel de conciencia (pizarra)",
+      "text": "En la pizarra escribió los rangos. Quince es vigil: despierto, responde normal. Trece o catorce, somnolencia: parece dormido, se despierta con la voz, responde y se vuelve a dormir. Once o doce, obnubilación: necesita estímulos más fuertes y responde lento. Nueve o diez es el estupor: ya no responde a la voz, solamente al estímulo doloroso. Y ocho o menos es coma: no responde ni a la voz ni al dolor. Con ocho o menos además hay que proteger la vía aérea."
+    },
+    {
+      "title": "Vigil no es lúcido",
+      "text": "Una trampa que remarcó: vigil no es lo mismo que lúcido. Vigil quiere decir despierto, Glasgow quince; habla solamente del nivel. Lúcido es vigil y además orientado en tiempo, espacio y persona: junta el nivel y el contenido. Entonces, un paciente con Glasgow quince, con los ojos abiertos, pero que dice cosas sin sentido, está vigil pero confuso. No está lúcido."
+    },
+    {
+      "title": "La pizarra de motilidad",
+      "text": "La pizarra de motilidad la divide en tres. La motilidad activa voluntaria es la fuerza: se explora con maniobras de oposición, el paciente empuja contra tu mano, y con las maniobras deficitarias de Barré y Mingazzini, donde el miembro débil no sostiene la posición y cae. La activa involuntaria son los movimientos automáticos medulares, el clonus y las sincinesias, y los reflejos superficiales y profundos. Y la pasiva es el tono y el trofismo: movilizás vos el miembro. Si hay hipertonía, en la piramidal es en navaja y en la extrapiramidal en rueda dentada. Si hay hipotonía, se busca con las maniobras de André-Thomas y de Stewart-Holmes. Y el trofismo son las masas musculares."
+    },
+    {
+      "title": "Síndromes motores: tono, trofismo y fuerza",
+      "text": "Esta es la tabla de síndromes motores de la pizarra, por filas. El tono: la miopatía da hipotonía proximal, la neuropatía distal y el cerebeloso generalizada. La primera motoneurona es fláccida al principio y después espástica, con hipertonía. La segunda motoneurona da hipotonía o atonía, y el Parkinson, hipertonía rígida. El trofismo: la atrofia es por desuso en todos, salvo en la segunda motoneurona, donde la atrofia es propia de la lesión. Y la fuerza: hemiparesia o hemiplejía en la primera motoneurona, paraparesia según el nivel en la segunda, y normal en el extrapiramidal y el cerebeloso."
+    },
+    {
+      "title": "Síndromes motores: reflejos y marcha",
+      "text": "Los reflejos: en la primera motoneurona hay hiperreflexia profunda, Babinski, se pierden los reflejos cutaneoabdominales y aparecen el clonus y las sincinesias. En la segunda motoneurona, arreflexia. En el Parkinson, el reflejo palmomentoniano. Y la marcha, que siempre pregunta: miopatía, marcha del pato; primera motoneurona, helicópoda o en guadaña; la que figura en tijeras en la pizarra; Parkinson, marcha parkinsoniana; cerebeloso, marcha del ebrio; y neuropatía, marcha escarbante o en steppage."
+    },
+    {
+      "title": "Sensibilidad superficial y profunda",
+      "text": "La sensibilidad superficial es el tacto grueso, el dolor y la temperatura, y va por la vía espinotalámica, que cruza en la médula. La profunda es el tacto fino, la presión, que es la barestesia, el peso, que es la barognosia, la posición, que es la batiestesia, y la vibración con el diapasón, que es la palestesia. Va por los cordones posteriores y cruza en el bulbo. La gnosia táctil, o estereognosia, es reconocer un objeto con los ojos cerrados solo por el tacto: su forma y su material. Si la sensibilidad está bien pero no lo reconoce, es una astereognosia, por una lesión del lóbulo parietal."
+    },
+    {
+      "title": "Apraxia ideomotora e ideatoria",
+      "text": "Apraxia es no poder hacer un acto motor aprendido, aunque el paciente entiende la orden y no tiene una parálisis ni un trastorno sensitivo que lo explique. En la ideomotora sabe qué tiene que hacer, pero no puede ejecutar el gesto cuando se lo pedís, aunque lo haga en forma automática: le decís que haga la señal de la cruz o que salude, y no puede. En la ideatoria pierde el plan del acto: no sabe la secuencia ni para qué sirven los objetos. Le das una vela y fósforos, y no sabe encenderla."
+    },
+    {
+      "title": "Afasia de Broca y de Wernicke",
+      "text": "Las dos afasias clásicas. La de Broca es motora, de expresión: la lesión está en las áreas cuarenta y cuatro y cuarenta y cinco, en el lóbulo frontal. El paciente comprende, pero habla poco, con esfuerzo, como un telegrama, y suele tener una hemiparesia derecha. La de Wernicke es sensitiva, de comprensión: la lesión está en el área veintidós, en el lóbulo temporal. El paciente no comprende, habla fluido pero sin sentido, y no se da cuenta de que se equivoca."
+    },
+    {
+      "title": "Maniobra de Spurling (columna cervical)",
+      "text": "Maniobra de Spurling (columna cervical). Explora la compresión de una raíz cervical (cervicobraquialgia). Cómo se hace: Comprimir la cabeza hacia abajo. Lateralizarla hacia un lado y después hacia el otro. Es positiva si dolor o parestesias en el miembro superior del lado hacia el que se lateraliza. Compresión radicular cervical (cervicobraquialgia)."
+    },
+    {
+      "title": "Maniobra de Valsalva (columna cervical)",
+      "text": "Maniobra de Valsalva (columna cervical). Explora la compresión de una raíz nerviosa cervical al aumentar la presión intratecal. Cómo se hace: Pedir una inspiración profunda y una espiración con la glotis cerrada (como el esfuerzo de defecar). Es positiva si dolor en el miembro superior. El esfuerzo sube la presión intratecal y comprime una raíz ya irritada: radiculopatía cervical (hernia de disco)."
+    },
+    {
+      "title": "Maniobra de Naffziger-Jones (columna cervical)",
+      "text": "Maniobra de Naffziger-Jones (columna cervical). Explora la compresión radicular al aumentar la presión venosa e intratecal. Cómo se hace: Comprimir las venas yugulares a los dos lados del cuello durante unos segundos. Es positiva si dolor a nivel cervical o radicular. Al comprimir las yugulares sube la presión venosa cefálica e intratecal: si una raíz está comprimida, aparece el dolor. Mismo fundamento que el Valsalva."
+    },
+    {
+      "title": "Prueba de Adson (desfiladero torácico)",
+      "text": "Prueba de Adson (desfiladero torácico). Explora la compresión de la arteria subclavia en el desfiladero cervicotorácico (escalenos, costilla cervical). Cómo se hace: Llevar el brazo a abducción, extensión y rotación externa. Pedir que inspire profundo y rote la cabeza hacia el brazo explorado. Palpar el pulso radial durante la maniobra. Es positiva si el pulso radial disminuye o desaparece. Compresión de la arteria subclavia: síndrome del desfiladero torácico (escaleno anterior, costilla cervical)."
+    },
+    {
+      "title": "Maniobra de Adams (escoliosis)",
+      "text": "Maniobra de Adams (escoliosis). Explora si una escoliosis es funcional o estructural. Cómo se hace: Inspeccionar la columna y los hemitórax con el tronco flexionado. Es positiva si la desviación se acentúa y aparece una giba (un hemitórax más alto). Si se endereza: escoliosis funcional. Si se magnifica: estructural."
+    },
+    {
+      "title": "Test de Schober (movilidad lumbar)",
+      "text": "Test de Schober (movilidad lumbar). Explora la flexión de la columna lumbar. Cómo se hace: Marcar la apófisis espinosa de L5 y otra marca 10 cm por encima. Pedir que se flexione intentando tocarse los pies con la punta de los dedos. Medir otra vez la distancia entre las dos marcas. Es positiva si aumenta menos de 3 cm. Rigidez lumbar: típica de la espondilitis anquilosante; también contractura o discopatía."
+    },
+    {
+      "title": "Maniobra de Goldthwait (lumbalgia)",
+      "text": "Maniobra de Goldthwait (lumbalgia). Explora si el dolor lumbar es real o simulado. Cómo se hace: Elevar el miembro inferior extendido hasta 70°: la masa lumbar no se mueve. Pasar de los 70°: la mano siente que la masa lumbar se contrae. Es positiva si dolor por encima de los 70° (lesión lumbar real). Dolor antes de los 70°, cuando la columna no se mueve: orienta a simulación."
+    },
+    {
+      "title": "Maniobra de Lasègue (ciatalgia)",
+      "text": "Maniobra de Lasègue (ciatalgia). Explora el estiramiento del nervio ciático. Cómo se hace: Elevar lentamente el miembro inferior con la rodilla extendida. Es positiva si dolor en la cara posterior del muslo y la pierna a cierto ángulo. Compromiso del nervio ciático (hernia de disco lumbar)."
+    },
+    {
+      "title": "Maniobra de Bragard (Lasègue reforzado)",
+      "text": "Maniobra de Bragard (Lasègue reforzado). Explora la irritación del nervio ciático (radiculitis lumbosacra). Cómo se hace: Hacer el Lasègue; si es positivo, bajar un poco la pierna hasta que desaparezca el dolor. A esa altura, hacer una dorsiflexión fuerte del pie. Es positiva si reaparece el dolor radicular. La dorsiflexión vuelve a estirar el ciático: confirma que el dolor del Lasègue es radicular (hernia de disco L5–S1) y no de los isquiotibiales."
+    },
+    {
+      "title": "Maniobra de Neri (y Neri sensibilizada)",
+      "text": "Maniobra de Neri (y Neri sensibilizada). Explora la tensión de las raíces lumbosacras (ciatalgia). Cómo se hace: Flexionar la cabeza hasta que el mentón toque el esternón. Sensibilizada: con la pierna estirada, volver a flexionar la cabeza. Es positiva si dolor u hormigueo en la cara posterior del muslo y la pierna. Compromiso del nervio ciático."
+    },
+    {
+      "title": "Lasègue invertido (posterior)",
+      "text": "Lasègue invertido (posterior). Explora la raíz L4 y el nervio femoral (crural). Cómo se hace: Con la rodilla flexionada, extender el muslo (levantarlo de la camilla). Es positiva si dolor en la cara anterior del muslo. Radiculopatía L4 (hernia de disco lumbar alta): estira el nervio femoral, así como el Lasègue estira el ciático."
+    },
+    {
+      "title": "Maniobra de apertura de Volkmann (sacroilíaca)",
+      "text": "Maniobra de apertura de Volkmann (sacroilíaca). Explora la articulación sacroilíaca (sacroileítis). Cómo se hace: Con las dos manos sobre las espinas ilíacas anterosuperiores, presionar hacia afuera y hacia abajo (abre la pelvis por delante). Es positiva si dolor en la región sacroilíaca. Sacroileítis o lesión de la sacroilíaca. Es específica pero poco sensible."
+    },
+    {
+      "title": "Maniobra de cierre de Erichsen (sacroilíaca)",
+      "text": "Maniobra de cierre de Erichsen (sacroilíaca). Explora la articulación sacroilíaca. Cómo se hace: Comprimir las crestas / espinas ilíacas hacia adentro (cierra la pelvis). Es positiva si dolor en la región sacroilíaca. Sacroileítis. Específica pero poco sensible, como la de apertura."
+    },
+    {
+      "title": "Maniobra de Patrick o FABERE (sacroilíaca y cadera)",
+      "text": "Maniobra de Patrick o FABERE (sacroilíaca y cadera). Explora la articulación sacroilíaca y la cadera. Cómo se hace: Flexión, ABducción y Rotación Externa de la cadera. Fijar la pelvis y presionar la rodilla hacia la camilla. Es positiva si dolor en la región sacroilíaca o en la cadera. Sacroileítis o patología de la cadera."
+    },
+    {
+      "title": "Maniobra de Gaenslen (sacroilíaca)",
+      "text": "Maniobra de Gaenslen (sacroilíaca). Explora la articulación sacroilíaca del lado de la pierna que cae. Cómo se hace: Dejar que una pierna caiga fuera de la camilla (extensión de la cadera). La otra se flexiona y se lleva contra el tórax. Es positiva si dolor en la sacroilíaca y en la cara posterior del muslo del lado que cae. Las dos caderas en direcciones opuestas tuercen la sacroilíaca: sacroileítis."
+    },
+    {
+      "title": "Prueba de la caída del brazo (hombro, supraespinoso)",
+      "text": "Prueba de la caída del brazo (hombro, supraespinoso). Explora la integridad del supraespinoso (manguito rotador). Cómo se hace: Llevar el hombro a 90° de abducción y pedir que sostenga la posición. Si la sostiene, aplicar una contrarresistencia. Es positiva si el brazo cae (desgarro total); cede ante la resistencia. Lesión del supraespinoso del manguito rotador."
+    },
+    {
+      "title": "Codo de tenista: epicondilitis (Cozen)",
+      "text": "Codo de tenista: epicondilitis (Cozen). Explora la inflamación de los extensores en el epicóndilo. Cómo se hace: Pedir que haga extensión dorsal de la muñeca (llevar la mano hacia arriba). El examinador se opone intentando flexionarla. Es positiva si dolor en el epicóndilo. Epicondilitis (codo de tenista)."
+    },
+    {
+      "title": "Codo de golfista: epitrocleitis (Cozen invertida)",
+      "text": "Codo de golfista: epitrocleitis (Cozen invertida). Explora la inflamación de los flexores en la epitróclea. Cómo se hace: Pedir que flexione la muñeca. El examinador se opone. Es positiva si dolor en la epitróclea. Epitrocleitis (codo de golfista)."
+    },
+    {
+      "title": "Signo de Tinel (túnel carpiano)",
+      "text": "Signo de Tinel (túnel carpiano). Explora la irritación del nervio mediano en el canal carpiano. Cómo se hace: Percutir sobre el ligamento anterior del carpo. Es positiva si hormigueo o dolor en los dedos del territorio del mediano. Síndrome del túnel carpiano."
+    },
+    {
+      "title": "Percusión del túnel carpiano (como la enseña Ortega)",
+      "text": "Percusión del túnel carpiano (como la enseña Ortega). Explora el nervio mediano en el canal carpiano. Cómo se hace: Percutir en el medio de la muñeca, sobre el ligamento anterior del carpo. Es positiva si sensación de descarga eléctrica en la mano o el brazo. Compresión del mediano: síndrome del túnel carpiano."
+    },
+    {
+      "title": "Maniobra de Phalen (túnel carpiano)",
+      "text": "Maniobra de Phalen (túnel carpiano). Explora la compresión del nervio mediano en el carpo. Cómo se hace: Oponer los dorsos de las manos con las muñecas flexionadas a 90°. Mantener 30 a 60 segundos. Es positiva si parestesias, hormigueo y dolor en los dedos. Compresión del mediano: túnel carpiano."
+    },
+    {
+      "title": "Maniobra del cajón (ligamentos cruzados)",
+      "text": "Maniobra del cajón (ligamentos cruzados). Explora los ligamentos cruzados de la rodilla. Cómo se hace: Traccionar la tibia hacia adelante (cajón anterior). Empujarla hacia atrás (cajón posterior). Es positiva si la tibia se desplaza hacia adelante o hacia atrás. Anterior: ligamento cruzado anterior. Posterior: cruzado posterior."
+    },
+    {
+      "title": "Bostezo de la rodilla (ligamentos laterales)",
+      "text": "Bostezo de la rodilla (ligamentos laterales). Explora los ligamentos colaterales interno y externo. Cómo se hace: Llevar la pierna hacia afuera (valgo) y hacia adentro (varo) con la rodilla fija. Es positiva si la articulación se «abre» (bostezo). Apertura interna: ligamento colateral interno. Externa: colateral externo."
+    },
+    {
+      "title": "Maniobra de Apley (meniscos)",
+      "text": "Maniobra de Apley (meniscos). Explora la integridad de los meniscos. Cómo se hace: Comprimir la rodilla hacia abajo (contra la camilla). Rotar la pierna hacia adentro y hacia afuera manteniendo la presión. Es positiva si dolor o «crack». Lesión de menisco."
+    },
+    {
+      "title": "Prueba de McMurray (meniscos)",
+      "text": "Prueba de McMurray (meniscos). Explora la integridad de los meniscos. Cómo se hace: Flexionar la rodilla a 90°. Llevarla al valgo con rotación interna de la pierna y extender lentamente, palpando la línea articular. Repetir en sentido contrario (varo y rotación externa). Es positiva si dolor o chasquido palpable o audible. Con valgo y rotación interna: menisco externo; en sentido contrario: menisco interno."
+    },
+    {
+      "title": "Choque rotuliano (derrame de rodilla)",
+      "text": "Choque rotuliano (derrame de rodilla). Explora la presencia de líquido en la rodilla. Cómo se hace: Con la mano proximal, comprimir por encima de la rótula hacia abajo. Con el índice de la otra mano, presionar la rótula perpendicularmente, con sacudidas. Es positiva si la rótula se hunde y rebota (choque). Derrame articular."
+    },
+    {
+      "title": "Maniobra de Patrick o FABERE (sacroilíaca y cadera)",
+      "text": "Maniobra de Patrick o FABERE (sacroilíaca y cadera). Explora la articulación sacroilíaca y la cadera. Cómo se hace: Flexión, ABducción y Rotación Externa de la cadera. Fijar la pelvis y presionar la rodilla hacia la camilla. Es positiva si dolor en la región sacroilíaca o en la cadera. Sacroileítis o patología de la cadera."
+    },
+    {
+      "title": "Maniobra de Thomas (flexo de cadera)",
+      "text": "Maniobra de Thomas (flexo de cadera). Explora una actitud de flexión fija de la cadera. Cómo se hace: Flexionar al máximo un miembro inferior sobre la cadera (borra la lordosis). Observar el miembro opuesto. Es positiva si el miembro opuesto se levanta (flexiona). Actitud de flexión (flexo) de la cadera opuesta."
+    },
+    {
+      "title": "Prueba de Thompson (tendón de Aquiles)",
+      "text": "Prueba de Thompson (tendón de Aquiles). Explora la integridad del tendón de Aquiles. Cómo se hace: Comprimir la pantorrilla (gemelos y sóleo). Observar el pie. Es positiva si flexión plantar disminuida o ausente. Rotura del tendón de Aquiles."
+    }
+  ]
+}

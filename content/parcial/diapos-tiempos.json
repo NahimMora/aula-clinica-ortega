@@ -1,0 +1,1125 @@
+{
+ "fps": 24,
+ "total": 50864,
+ "portada": 96,
+ "cierre": 120,
+ "voz": "es-AR-TomasNeural",
+ "diapos": [
+  {
+   "mazo": "parcial",
+   "id": "p-ict-metabolismo",
+   "inicio": 96,
+   "frames": 1860,
+   "beats": [
+    {
+     "inicio": 96,
+     "frames": 452
+    },
+    {
+     "inicio": 548,
+     "frames": 408
+    },
+    {
+     "inicio": 956,
+     "frames": 212
+    },
+    {
+     "inicio": 1168,
+     "frames": 413
+    },
+    {
+     "inicio": 1581,
+     "frames": 375
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-ict-hereditarias",
+   "inicio": 1956,
+   "frames": 887,
+   "beats": [
+    {
+     "inicio": 1956,
+     "frames": 574
+    },
+    {
+     "inicio": 2530,
+     "frames": 313
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-ict-patron",
+   "inicio": 2843,
+   "frames": 1114,
+   "beats": [
+    {
+     "inicio": 2843,
+     "frames": 810
+    },
+    {
+     "inicio": 3653,
+     "frames": 304
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-aa-def",
+   "inicio": 3957,
+   "frames": 807,
+   "beats": [
+    {
+     "inicio": 3957,
+     "frames": 221
+    },
+    {
+     "inicio": 4178,
+     "frames": 295
+    },
+    {
+     "inicio": 4473,
+     "frames": 291
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-aa-inflamatorio",
+   "inicio": 4764,
+   "frames": 1379,
+   "beats": [
+    {
+     "inicio": 4764,
+     "frames": 400
+    },
+    {
+     "inicio": 5164,
+     "frames": 537
+    },
+    {
+     "inicio": 5701,
+     "frames": 442
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-aa-obstructivo",
+   "inicio": 6143,
+   "frames": 1368,
+   "beats": [
+    {
+     "inicio": 6143,
+     "frames": 475
+    },
+    {
+     "inicio": 6618,
+     "frames": 437
+    },
+    {
+     "inicio": 7055,
+     "frames": 456
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-aa-perforativo",
+   "inicio": 7511,
+   "frames": 1284,
+   "beats": [
+    {
+     "inicio": 7511,
+     "frames": 386
+    },
+    {
+     "inicio": 7897,
+     "frames": 457
+    },
+    {
+     "inicio": 8354,
+     "frames": 441
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-aa-hemorragico",
+   "inicio": 8795,
+   "frames": 972,
+   "beats": [
+    {
+     "inicio": 8795,
+     "frames": 315
+    },
+    {
+     "inicio": 9110,
+     "frames": 370
+    },
+    {
+     "inicio": 9480,
+     "frames": 287
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-aa-vascular",
+   "inicio": 9767,
+   "frames": 1143,
+   "beats": [
+    {
+     "inicio": 9767,
+     "frames": 353
+    },
+    {
+     "inicio": 10120,
+     "frames": 317
+    },
+    {
+     "inicio": 10437,
+     "frames": 473
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-hd-aclaro",
+   "inicio": 10910,
+   "frames": 896,
+   "beats": [
+    {
+     "inicio": 10910,
+     "frames": 237
+    },
+    {
+     "inicio": 11147,
+     "frames": 331
+    },
+    {
+     "inicio": 11478,
+     "frames": 328
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-cir-complicaciones",
+   "inicio": 11806,
+   "frames": 1362,
+   "beats": [
+    {
+     "inicio": 11806,
+     "frames": 802
+    },
+    {
+     "inicio": 12608,
+     "frames": 560
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-ren-funciones-1",
+   "inicio": 13168,
+   "frames": 1108,
+   "beats": [
+    {
+     "inicio": 13168,
+     "frames": 613
+    },
+    {
+     "inicio": 13781,
+     "frames": 495
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-ren-funciones-2",
+   "inicio": 14276,
+   "frames": 999,
+   "beats": [
+    {
+     "inicio": 14276,
+     "frames": 365
+    },
+    {
+     "inicio": 14641,
+     "frames": 414
+    },
+    {
+     "inicio": 15055,
+     "frames": 220
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-nefrotico-razon",
+   "inicio": 15275,
+   "frames": 717,
+   "beats": [
+    {
+     "inicio": 15275,
+     "frames": 217
+    },
+    {
+     "inicio": 15492,
+     "frames": 500
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-nefrotico-complicaciones",
+   "inicio": 15992,
+   "frames": 996,
+   "beats": [
+    {
+     "inicio": 15992,
+     "frames": 485
+    },
+    {
+     "inicio": 16477,
+     "frames": 511
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-nefritico-cadena",
+   "inicio": 16988,
+   "frames": 986,
+   "beats": [
+    {
+     "inicio": 16988,
+     "frames": 630
+    },
+    {
+     "inicio": 17618,
+     "frames": 356
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-ira-donde",
+   "inicio": 17974,
+   "frames": 982,
+   "beats": [
+    {
+     "inicio": 17974,
+     "frames": 676
+    },
+    {
+     "inicio": 18650,
+     "frames": 306
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-erc-kdigo",
+   "inicio": 18956,
+   "frames": 984,
+   "beats": [
+    {
+     "inicio": 18956,
+     "frames": 459
+    },
+    {
+     "inicio": 19415,
+     "frames": 525
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-erc-aeiou",
+   "inicio": 19940,
+   "frames": 1121,
+   "beats": [
+    {
+     "inicio": 19940,
+     "frames": 848
+    },
+    {
+     "inicio": 20788,
+     "frames": 273
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-conc-def",
+   "inicio": 21061,
+   "frames": 831,
+   "beats": [
+    {
+     "inicio": 21061,
+     "frames": 284
+    },
+    {
+     "inicio": 21345,
+     "frames": 547
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-conc-sraa",
+   "inicio": 21892,
+   "frames": 922,
+   "beats": [
+    {
+     "inicio": 21892,
+     "frames": 315
+    },
+    {
+     "inicio": 22207,
+     "frames": 234
+    },
+    {
+     "inicio": 22441,
+     "frames": 373
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-conc-glasgow",
+   "inicio": 22814,
+   "frames": 1098,
+   "beats": [
+    {
+     "inicio": 22814,
+     "frames": 771
+    },
+    {
+     "inicio": 23585,
+     "frames": 327
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-conc-rangos",
+   "inicio": 23912,
+   "frames": 882,
+   "beats": [
+    {
+     "inicio": 23912,
+     "frames": 511
+    },
+    {
+     "inicio": 24423,
+     "frames": 371
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-conc-lucido",
+   "inicio": 24794,
+   "frames": 714,
+   "beats": [
+    {
+     "inicio": 24794,
+     "frames": 255
+    },
+    {
+     "inicio": 25049,
+     "frames": 181
+    },
+    {
+     "inicio": 25230,
+     "frames": 278
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-mot-pizarra",
+   "inicio": 25508,
+   "frames": 1149,
+   "beats": [
+    {
+     "inicio": 25508,
+     "frames": 434
+    },
+    {
+     "inicio": 25942,
+     "frames": 229
+    },
+    {
+     "inicio": 26171,
+     "frames": 486
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-mot-tabla-1",
+   "inicio": 26657,
+   "frames": 1009,
+   "beats": [
+    {
+     "inicio": 26657,
+     "frames": 568
+    },
+    {
+     "inicio": 27225,
+     "frames": 441
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-mot-tabla-2",
+   "inicio": 27666,
+   "frames": 882,
+   "beats": [
+    {
+     "inicio": 27666,
+     "frames": 436
+    },
+    {
+     "inicio": 28102,
+     "frames": 446
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-sens",
+   "inicio": 28548,
+   "frames": 984,
+   "beats": [
+    {
+     "inicio": 28548,
+     "frames": 610
+    },
+    {
+     "inicio": 29158,
+     "frames": 374
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-praxia",
+   "inicio": 29532,
+   "frames": 777,
+   "beats": [
+    {
+     "inicio": 29532,
+     "frames": 244
+    },
+    {
+     "inicio": 29776,
+     "frames": 533
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-afasias",
+   "inicio": 30309,
+   "frames": 799,
+   "beats": [
+    {
+     "inicio": 30309,
+     "frames": 458
+    },
+    {
+     "inicio": 30767,
+     "frames": 341
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-spurling",
+   "inicio": 31108,
+   "frames": 679,
+   "beats": [
+    {
+     "inicio": 31108,
+     "frames": 219
+    },
+    {
+     "inicio": 31327,
+     "frames": 205
+    },
+    {
+     "inicio": 31532,
+     "frames": 255
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-valsalva-cervical",
+   "inicio": 31787,
+   "frames": 714,
+   "beats": [
+    {
+     "inicio": 31787,
+     "frames": 235
+    },
+    {
+     "inicio": 32022,
+     "frames": 195
+    },
+    {
+     "inicio": 32217,
+     "frames": 284
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-naffziger",
+   "inicio": 32501,
+   "frames": 766,
+   "beats": [
+    {
+     "inicio": 32501,
+     "frames": 234
+    },
+    {
+     "inicio": 32735,
+     "frames": 163
+    },
+    {
+     "inicio": 32898,
+     "frames": 369
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-adson",
+   "inicio": 33267,
+   "frames": 921,
+   "beats": [
+    {
+     "inicio": 33267,
+     "frames": 279
+    },
+    {
+     "inicio": 33546,
+     "frames": 345
+    },
+    {
+     "inicio": 33891,
+     "frames": 297
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-adams",
+   "inicio": 34188,
+   "frames": 654,
+   "beats": [
+    {
+     "inicio": 34188,
+     "frames": 192
+    },
+    {
+     "inicio": 34380,
+     "frames": 150
+    },
+    {
+     "inicio": 34530,
+     "frames": 312
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-schober",
+   "inicio": 34842,
+   "frames": 776,
+   "beats": [
+    {
+     "inicio": 34842,
+     "frames": 164
+    },
+    {
+     "inicio": 35006,
+     "frames": 383
+    },
+    {
+     "inicio": 35389,
+     "frames": 229
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-goldthwait",
+   "inicio": 35618,
+   "frames": 770,
+   "beats": [
+    {
+     "inicio": 35618,
+     "frames": 184
+    },
+    {
+     "inicio": 35802,
+     "frames": 299
+    },
+    {
+     "inicio": 36101,
+     "frames": 287
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-lasegue",
+   "inicio": 36388,
+   "frames": 558,
+   "beats": [
+    {
+     "inicio": 36388,
+     "frames": 169
+    },
+    {
+     "inicio": 36557,
+     "frames": 144
+    },
+    {
+     "inicio": 36701,
+     "frames": 245
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-bragard",
+   "inicio": 36946,
+   "frames": 837,
+   "beats": [
+    {
+     "inicio": 36946,
+     "frames": 216
+    },
+    {
+     "inicio": 37162,
+     "frames": 277
+    },
+    {
+     "inicio": 37439,
+     "frames": 344
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-neri",
+   "inicio": 37783,
+   "frames": 675,
+   "beats": [
+    {
+     "inicio": 37783,
+     "frames": 208
+    },
+    {
+     "inicio": 37991,
+     "frames": 264
+    },
+    {
+     "inicio": 38255,
+     "frames": 203
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-lasegue-invertido",
+   "inicio": 38458,
+   "frames": 659,
+   "beats": [
+    {
+     "inicio": 38458,
+     "frames": 195
+    },
+    {
+     "inicio": 38653,
+     "frames": 170
+    },
+    {
+     "inicio": 38823,
+     "frames": 294
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-volkmann",
+   "inicio": 39117,
+   "frames": 710,
+   "beats": [
+    {
+     "inicio": 39117,
+     "frames": 218
+    },
+    {
+     "inicio": 39335,
+     "frames": 237
+    },
+    {
+     "inicio": 39572,
+     "frames": 255
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-erichsen",
+   "inicio": 39827,
+   "frames": 626,
+   "beats": [
+    {
+     "inicio": 39827,
+     "frames": 189
+    },
+    {
+     "inicio": 40016,
+     "frames": 187
+    },
+    {
+     "inicio": 40203,
+     "frames": 250
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-patrick-fabere",
+   "inicio": 40453,
+   "frames": 650,
+   "beats": [
+    {
+     "inicio": 40453,
+     "frames": 211
+    },
+    {
+     "inicio": 40664,
+     "frames": 237
+    },
+    {
+     "inicio": 40901,
+     "frames": 202
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-columna-gaenslen",
+   "inicio": 41103,
+   "frames": 756,
+   "beats": [
+    {
+     "inicio": 41103,
+     "frames": 212
+    },
+    {
+     "inicio": 41315,
+     "frames": 253
+    },
+    {
+     "inicio": 41568,
+     "frames": 291
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmss-caida-brazo",
+   "inicio": 41859,
+   "frames": 715,
+   "beats": [
+    {
+     "inicio": 41859,
+     "frames": 225
+    },
+    {
+     "inicio": 42084,
+     "frames": 254
+    },
+    {
+     "inicio": 42338,
+     "frames": 236
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmss-codo-tenista",
+   "inicio": 42574,
+   "frames": 634,
+   "beats": [
+    {
+     "inicio": 42574,
+     "frames": 214
+    },
+    {
+     "inicio": 42788,
+     "frames": 250
+    },
+    {
+     "inicio": 43038,
+     "frames": 170
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmss-codo-golfista",
+   "inicio": 43208,
+   "frames": 557,
+   "beats": [
+    {
+     "inicio": 43208,
+     "frames": 221
+    },
+    {
+     "inicio": 43429,
+     "frames": 163
+    },
+    {
+     "inicio": 43592,
+     "frames": 173
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmss-tinel",
+   "inicio": 43765,
+   "frames": 518,
+   "beats": [
+    {
+     "inicio": 43765,
+     "frames": 195
+    },
+    {
+     "inicio": 43960,
+     "frames": 128
+    },
+    {
+     "inicio": 44088,
+     "frames": 195
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmss-tunel-carpiano-percusion",
+   "inicio": 44283,
+   "frames": 590,
+   "beats": [
+    {
+     "inicio": 44283,
+     "frames": 200
+    },
+    {
+     "inicio": 44483,
+     "frames": 163
+    },
+    {
+     "inicio": 44646,
+     "frames": 227
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmss-phalen",
+   "inicio": 44873,
+   "frames": 628,
+   "beats": [
+    {
+     "inicio": 44873,
+     "frames": 183
+    },
+    {
+     "inicio": 45056,
+     "frames": 237
+    },
+    {
+     "inicio": 45293,
+     "frames": 208
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-cajon-rodilla",
+   "inicio": 45501,
+   "frames": 703,
+   "beats": [
+    {
+     "inicio": 45501,
+     "frames": 190
+    },
+    {
+     "inicio": 45691,
+     "frames": 230
+    },
+    {
+     "inicio": 45921,
+     "frames": 283
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-bostezo-rodilla",
+   "inicio": 46204,
+   "frames": 677,
+   "beats": [
+    {
+     "inicio": 46204,
+     "frames": 208
+    },
+    {
+     "inicio": 46412,
+     "frames": 188
+    },
+    {
+     "inicio": 46600,
+     "frames": 281
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-apley",
+   "inicio": 46881,
+   "frames": 549,
+   "beats": [
+    {
+     "inicio": 46881,
+     "frames": 165
+    },
+    {
+     "inicio": 47046,
+     "frames": 249
+    },
+    {
+     "inicio": 47295,
+     "frames": 135
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-mcmurray",
+   "inicio": 47430,
+   "frames": 828,
+   "beats": [
+    {
+     "inicio": 47430,
+     "frames": 169
+    },
+    {
+     "inicio": 47599,
+     "frames": 389
+    },
+    {
+     "inicio": 47988,
+     "frames": 270
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-choque-rotuliano",
+   "inicio": 48258,
+   "frames": 659,
+   "beats": [
+    {
+     "inicio": 48258,
+     "frames": 181
+    },
+    {
+     "inicio": 48439,
+     "frames": 305
+    },
+    {
+     "inicio": 48744,
+     "frames": 173
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-patrick-fabere",
+   "inicio": 48917,
+   "frames": 650,
+   "beats": [
+    {
+     "inicio": 48917,
+     "frames": 211
+    },
+    {
+     "inicio": 49128,
+     "frames": 237
+    },
+    {
+     "inicio": 49365,
+     "frames": 202
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-thomas",
+   "inicio": 49567,
+   "frames": 641,
+   "beats": [
+    {
+     "inicio": 49567,
+     "frames": 193
+    },
+    {
+     "inicio": 49760,
+     "frames": 227
+    },
+    {
+     "inicio": 49987,
+     "frames": 221
+    }
+   ]
+  },
+  {
+   "mazo": "parcial",
+   "id": "p-soma-mmii-thompson",
+   "inicio": 50208,
+   "frames": 536,
+   "beats": [
+    {
+     "inicio": 50208,
+     "frames": 179
+    },
+    {
+     "inicio": 50387,
+     "frames": 176
+    },
+    {
+     "inicio": 50563,
+     "frames": 181
+    }
+   ]
+  }
+ ]
+}

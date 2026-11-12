@@ -79,6 +79,10 @@ async function recorrerMazo(page, tab, etiqueta) {
     // Con la CPU ocupada (render en paralelo) el estado final de la diapositiva tarda en aplicarse.
     await dormir(etiqueta === 'vivo' ? 220 : 260);
     await page.waitForSelector('.sl h3', { timeout: 8000 });
+    // El visor va paso a paso: para medir la diapositiva entera, se muestra completa.
+    await page.evaluate(() => [...document.querySelectorAll('.visor__extra .visor__mini')].find((b) => b.textContent.includes('completa'))?.click());
+    await dormir(200);
+    if (!(await page.$eval('.visor__narracion', (e) => e.textContent.trim().length > 0).catch(() => false))) mal(`${etiqueta} ${i + 1}: sin explicación debajo de la diapositiva`);
     const r = await page.evaluate(() => {
       const sl = document.querySelector('.sl');
       const cuerpo = document.querySelector('.sl__cuerpo');
@@ -97,7 +101,7 @@ async function recorrerMazo(page, tab, etiqueta) {
       await el.screenshot({ path: join(out, `${etiqueta}-${tab}-${String(i + 1).padStart(2, '0')}.jpg`), type: 'jpeg', quality: 72 });
     }
     // Clic real del mouse, como un usuario (el CSS del visor evita que las barras fijas tapen el botón).
-    if (i < total - 1) await page.click('.visor__nav--sig');
+    if (i < total - 1) await page.click('.visor__btn--sig');
   }
 }
 
@@ -122,7 +126,7 @@ await dormir(150);
 let sel = await page.$eval('.visor__apartados .is-on', (e) => e.textContent);
 let tit = await page.$eval('.sl h3', (e) => e.textContent);
 if (sel !== cfg.apartado || !cfg.titulo.test(tit)) mal(`salto a ${cfg.apartado}: «${sel}» / «${tit}»`);
-await page.click('.visor__nav--sig');
+await page.click('.visor__btn--sig');
 await dormir(100);
 const antes = await page.$eval('.visor__n', (e) => e.textContent);
 await page.evaluate(() => [...document.querySelectorAll('.secnav__item')].find((b) => b.textContent.includes('Choice')).click());

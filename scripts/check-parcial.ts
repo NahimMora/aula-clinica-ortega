@@ -8,10 +8,12 @@ import { PUNTOS_DOLOROSOS } from '../content/parcial/puntos';
 import { MANIOBRAS_PARCIAL } from '../content/parcial/maniobras';
 import { MANEUVERS } from '../content/maneuvers/index';
 import { SOURCES } from '../content/sources';
+import { MAZO_PARCIAL } from '../content/parcial/diapos';
 
 const errores: string[] = [];
 const diapos = new Map<string, Set<string>>();
 const idsDe = (cap: string) => {
+  if (cap === 'parcial') return new Set(MAZO_PARCIAL.diapos.map((d) => d.id));
   if (!diapos.has(cap)) {
     const s = readFileSync(`content/chapters/${cap}/clase.ts`, 'utf8').replace(/\r/g, '');
     diapos.set(cap, new Set([...s.matchAll(/\n\s+id: '([^']+)',\n\s+sec: '/g)].map((m) => m[1])));
@@ -53,6 +55,15 @@ for (const p of PREGUNTAS) {
 for (const x of PARES) {
   for (const m of x.maniobras) if (!man.has(m)) errores.push(`par ${x.n}: no existe la maniobra ${m}`);
   if (x.diapo) diapoOk(x.diapo, `par ${x.n}`);
+}
+// Diapositivas propias del parcial: narración en cada paso, fuentes conocidas y ninguna sin usar.
+const usadas = new Set(TEMAS.flatMap((t) => t.diapos.filter((d) => d.cap === 'parcial').flatMap((d) => d.ids)));
+for (const d of MAZO_PARCIAL.diapos) {
+  if (!d.voz.length || d.voz.some((v) => !v.trim())) errores.push(`diapositiva ${d.id}: sin narración`);
+  const pasos = Math.max(0, ...d.bloques.map((b) => b.en ?? 0));
+  if (pasos > d.voz.length - 1) errores.push(`diapositiva ${d.id}: tiene ${pasos + 1} pasos y ${d.voz.length} narraciones`);
+  for (const r of d.refs) fuenteOk(r.src, `diapositiva ${d.id}`);
+  if (!usadas.has(d.id)) errores.push(`diapositiva ${d.id}: no la usa ningún tema`);
 }
 for (const p of PUNTOS_DOLOROSOS) for (const r of p.refs) fuenteOk(r.src, `punto ${p.id}`);
 for (const [s, d] of Object.entries(MANIOBRAS_PARCIAL))

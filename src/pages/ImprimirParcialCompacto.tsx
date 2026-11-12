@@ -8,7 +8,7 @@ import { Blocks } from '@/components/Blocks';
 import { Rich } from '@/components/Rich';
 import { Txt } from '@/clase/Diapositiva';
 import type { BloqueDiapo, Diapositiva as D, NodoArbol } from '@/clase/tipos';
-import { loadChapter } from '@/lib/useChapter';
+import { planDe } from '@/parcial/MiniVisor';
 import { maneuverById } from '@content/maneuvers';
 import { PARES } from '@content/parcial/pares';
 import { PREGUNTAS } from '@content/parcial/preguntas';
@@ -28,12 +28,12 @@ async function armar(t: TemaParcial): Promise<TemaC> {
   const fisio: D[] = [];
   const teoria: D[] = [];
   for (const f of t.diapos) {
-    const plan = (await loadChapter(f.cap))?.clase;
+    const plan = await planDe(f.cap);
     if (!plan) continue;
     for (const id of f.ids) {
       const esF = id.startsWith('f-');
       const d = (esF ? plan.fisio : plan.teoria).diapos.find((x) => x.id === id);
-      if (d) (esF ? fisio : teoria).push(d);
+      if (d) (esF && !t.fisioJunto ? fisio : teoria).push(d);
     }
   }
   return { t, fisio, teoria };

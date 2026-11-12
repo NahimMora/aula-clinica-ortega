@@ -65,6 +65,8 @@ import tiemposNeu05 from '../../content/chapters/neu-05/clase-tiempos.json';
 import { clase as planNeu06 } from '../../content/chapters/neu-06/clase';
 import tiemposNeu06 from '../../content/chapters/neu-06/clase-tiempos.json';
 import type { PlanClase } from '../../src/clase/tipos';
+import { MAZO_PARCIAL } from '../../content/parcial/diapos';
+import tiemposParcial from '../../content/parcial/diapos-tiempos.json';
 import { AssetCtx, Diapositiva } from '../../src/clase/Diapositiva';
 import '../../src/styles/tokens.css';
 import '../../src/styles/clase.css';
@@ -224,7 +226,10 @@ interface CapClase {
   tiempos: TiemposClase;
 }
 
+const PLAN_PARCIAL = { fisio: { id: 'fisio', secciones: [], diapos: [] }, teoria: MAZO_PARCIAL } as unknown as PlanClase;
+
 const CLASES: CapClase[] = [
+  { id: 'parcial-diapos', titulo: 'Parcial del lunes: lo del repaso', plan: PLAN_PARCIAL, tiempos: tiemposParcial as TiemposClase },
   { id: 'neu-06-clase', titulo: 'Otros síndromes neurológicos', plan: planNeu06, tiempos: tiemposNeu06 as TiemposClase },
   { id: 'neu-05-clase', titulo: 'Motilidad y síndromes motores', plan: planNeu05, tiempos: tiemposNeu05 as TiemposClase },
   { id: 'neu-04-clase', titulo: 'Pares craneales II', plan: planNeu04, tiempos: tiemposNeu04 as TiemposClase },

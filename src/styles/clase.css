@@ -205,3 +205,21 @@
   .mtree__nodo--0, .mtree__nodo--1, .mtree__nodo--2 { width: auto; flex: none; }
 }
 @media print { .visor, .clase__pie { display: none; } }
+
+/* Visor paso a paso (como Fármaco): explicación debajo de la diapositiva y botones grandes */
+.visor__paso { margin-top: 10px; }
+.visor__puntos { display: flex; gap: 6px; margin: 0 0 8px; }
+.visor__puntos button { width: 22px; height: 6px; padding: 0; border: 0; border-radius: 99px; background: var(--line-2); cursor: pointer; }
+.visor__puntos button.ya { background: var(--accent-600); }
+.visor__narracion { margin: 0; padding: 12px 16px; min-height: 4.6em; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); font-size: 1.06rem; line-height: 1.55; color: var(--ink); max-width: none; }
+.visor__control { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.visor__btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 8px 16px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); font: inherit; font-weight: 600; font-size: 0.95rem; cursor: pointer; touch-action: manipulation; }
+.visor__btn--sig { flex: 1; background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.visor__btn:disabled { opacity: 0.4; cursor: default; }
+.visor__control .visor__n { flex: 0 0 auto; }
+.visor__extra { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.visor__escenario { touch-action: pan-y; }
+@media (max-width: 620px) {
+  .visor__narracion { font-size: 1rem; padding: 10px 12px; }
+  .visor__btn { padding: 8px 12px; }
+}

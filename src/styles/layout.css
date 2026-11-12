@@ -337,3 +337,8 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
 
 /* Subtítulo dentro de un apartado de la columna (p. ej., preguntas del parcial por sistema) */
 .sidebar__subtit { display: flex; align-items: center; gap: 6px; margin: 10px 0 2px 12px; font-size: 0.72rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+
+/* Instalar como app */
+.instalar { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; margin: 0 0 12px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--accent-200); background: var(--accent-50); color: var(--ink); font: inherit; font-weight: 650; font-size: 0.9rem; cursor: pointer; }
+.instalar:hover { border-color: var(--accent-400); }
+.instalar-ios p { margin: -4px 0 12px; font-size: 0.82rem; color: var(--ink-2); }

@@ -23,6 +23,31 @@ const CIERRE = 120;
 
 // Solo para la voz: nombres que el sintetizador lee mal. Los subtítulos conservan la grafía correcta.
 const PRONUNCIA = [
+  // Parcial: maniobras de SOMA y nombres de la pizarra
+  [/Spurling/g, 'Spérling'],
+  [/Naffziger-Jones/g, 'Náfsiguer Yóns'],
+  [/Adson/g, 'Ádson'],
+  [/Adams/g, 'Ádams'],
+  [/Schober/g, 'Shóber'],
+  [/Goldthwait/g, 'Góldueit'],
+  [/Lasègue/g, 'Laség'],
+  [/Bragard/g, 'Bragár'],
+  [/Volkmann/g, 'Fólkman'],
+  [/Erichsen/g, 'Érijsen'],
+  [/FABERE/g, 'fabere'],
+  [/Gaenslen/g, 'Guénslen'],
+  [/Cozen/g, 'Cósen'],
+  [/Tinel/g, 'Tinél'],
+  [/Phalen/g, 'Fálen'],
+  [/Apley/g, 'Ápli'],
+  [/McMurray/g, 'Mac Múrrei'],
+  [/Thompson/g, 'Tómson'],
+  [/Mingazzini/g, 'Mingatsíni'],
+  [/André-Thomas/g, 'André Tomá'],
+  [/Stewart-Holmes/g, 'Estiúart Jólms'],
+  [/Kussmaul/g, 'Kúsmaul'],
+  [/Wernicke/g, 'Vérnike'],
+  [/KDIGO/g, 'ca, di, ai, ge, o'],
   [/Gueneau de Mussy/g, 'Guenó de Musí'],
   [/Grey-Turner|Grey Turner/g, 'Grei Térner'],
   [/Cullen/g, 'Cálen'],
@@ -181,12 +206,16 @@ const pronunciar = (s) => PRONUNCIA.reduce((a, [re, r]) => a.replace(re, r), s);
 
 const id = process.argv[2];
 if (!id) throw new Error('Falta el id del capítulo');
-const chDir = join('content', 'chapters', id);
+// «parcial»: las diapositivas propias del parcial (content/parcial/diapos.ts) en un solo video.
+const esParcial = id === 'parcial';
+const chDir = esParcial ? join('content', 'parcial') : join('content', 'chapters', id);
 const cache = join('sources', 'tts-cache', id, 'clase');
 mkdirSync(cache, { recursive: true });
 const tmp = join(cache, 'clase.mjs');
-await build({ entryPoints: [join(chDir, 'clase.ts')], bundle: true, format: 'esm', platform: 'node', outfile: tmp, logLevel: 'error', alias: { '@': resolve('src') } });
-const { clase } = await import(pathToFileURL(resolve(tmp)).href + `?v=${Date.now()}`);
+await build({ entryPoints: [join(chDir, esParcial ? 'diapos.ts' : 'clase.ts')], bundle: true, format: 'esm', platform: 'node', outfile: tmp, logLevel: 'error', alias: { '@': resolve('src') } });
+const modulo = await import(pathToFileURL(resolve(tmp)).href + `?v=${Date.now()}`);
+const clase = esParcial ? { fisio: { id: 'fisio', secciones: [], diapos: [] }, teoria: modulo.MAZO_PARCIAL } : modulo.clase;
+const base = esParcial ? 'diapos' : 'clase';
 
 const probe = (f) => Number(spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], { encoding: 'utf8' }).stdout.trim());
 const ff = (...a) => {
@@ -293,10 +322,10 @@ const lista = join(cache, '_lista.txt');
 writeFileSync(lista, partes.map((p) => `file '${resolve(p).replace(/\\/g, '/')}'`).join('\n'));
 ff('-f', 'concat', '-safe', '0', '-i', lista, '-c:a', 'pcm_s16le', join(cache, 'narracion.wav'));
 
-writeFileSync(join(chDir, 'clase-tiempos.json'), JSON.stringify({ fps: FPS, total, portada: PORTADA, cierre: CIERRE, voz: VOICE, diapos }, null, 1));
+writeFileSync(join(chDir, `${base}-tiempos.json`), JSON.stringify({ fps: FPS, total, portada: PORTADA, cierre: CIERRE, voz: VOICE, diapos }, null, 1));
 mkdirSync(join('public', 'media', id), { recursive: true });
-writeFileSync(join('public', 'media', id, 'clase.vtt'), vtt);
+writeFileSync(join('public', 'media', id, `${base}.vtt`), vtt);
 const secs = total / FPS;
 const duracion = secs >= 3600 ? `${Math.floor(secs / 3600)} h ${Math.round((secs % 3600) / 60)} min` : `${Math.floor(secs / 60)}:${String(Math.round(secs % 60)).padStart(2, '0')}`;
-writeFileSync(join(chDir, 'clase-video.json'), JSON.stringify({ src: `media/${id}/clase.mp4`, poster: `media/${id}/clase.jpg`, vtt: `media/${id}/clase.vtt`, duration: duracion, chapters: capitulos, script: guion }, null, 2));
+writeFileSync(join(chDir, `${base}-video.json`), JSON.stringify({ src: `media/${id}/${base}.mp4`, poster: `media/${id}/${base}.jpg`, vtt: `media/${id}/${base}.vtt`, duration: duracion, chapters: capitulos, script: guion }, null, 2));
 console.log(`Total: ${total} fotogramas (${duracion}) · ${diapos.length} diapositivas · voz ${VOICE}`);

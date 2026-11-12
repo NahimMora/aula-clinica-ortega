@@ -2,7 +2,7 @@
 .parcial { max-width: 1080px; }
 
 /* Barra de secciones del parcial */
-.pnav { position: sticky; top: var(--topbar-h); z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: -6px 0 18px; padding: 8px 10px; border-radius: 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border: 1px solid var(--line); }
+.pnav { position: relative; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: -6px 0 18px; padding: 8px 10px; border-radius: 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border: 1px solid var(--line); }
 .pnav__marca { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: #45202a; color: #ffb3bd; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase; white-space: nowrap; }
 .pnav__items { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; flex: 1 1 auto; min-width: 0; }
 .pnav__items::-webkit-scrollbar { display: none; }
@@ -313,3 +313,17 @@
 .pizarra-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 999px; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; vertical-align: middle; white-space: nowrap; background: var(--mint-100); color: var(--mint-700); }
 .ptemas__piz { display: inline-flex; margin-left: 4px; color: var(--mint-700); vertical-align: middle; }
 .psis__pdf { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* Video del tema (tramos seguidos de las clases) */
+.vtema__marco { position: relative; display: flex; flex-direction: column; background: #000; }
+.vtema__marco video { width: 100%; aspect-ratio: 16 / 9; display: block; background: #000; cursor: pointer; }
+.vtema__barra { display: flex; align-items: center; gap: 8px; padding: 6px 10px; background: #15121b; color: #f3eef6; }
+.vtema__b { display: inline-grid; place-items: center; min-width: 36px; height: 34px; padding: 0 8px; border-radius: 8px; border: 0; background: rgba(255, 255, 255, 0.08); color: inherit; font: inherit; font-size: 0.82rem; font-weight: 700; cursor: pointer; }
+.vtema__b.is-on { background: rgba(255, 255, 255, 0.22); }
+.vtema__t { font-size: 0.8rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.vtema__rango { flex: 1; min-width: 60px; accent-color: var(--accent-400); }
+.vtema__marco:fullscreen { justify-content: center; }
+.vtema__marco:fullscreen video { flex: 1; aspect-ratio: auto; max-height: calc(100vh - 48px); }
+.pvideos__clases { margin-top: 10px; }
+.pvideos__clases > summary { cursor: pointer; font-weight: 650; color: var(--ink-2); padding: 6px 0; }
+@media (max-width: 620px) { .vtema__t { display: none; } }

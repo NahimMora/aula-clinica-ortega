@@ -25,6 +25,8 @@ export interface TemaParcial {
   pide: Inline[];
   /** Teoría ya desarrollada: fisiopatología primero, después la teoría. */
   diapos: DiaposDe[];
+  /** true: la fisiopatología no va en una pestaña aparte sino dentro de las diapositivas, junto a lo que explica (en el orden de `diapos`). */
+  fisioJunto?: boolean;
   /** Lo que el repaso agrega y no estaba en los capítulos (criterios, valores, tablas). */
   nuevo?: { titulo: string; blocks: Block[]; refs?: SourceRef[] }[];
   /** Maniobras de la biblioteca relacionadas con el tema. */

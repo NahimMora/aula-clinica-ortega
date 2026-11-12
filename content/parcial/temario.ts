@@ -79,57 +79,15 @@ export const TEMAS: TemaParcial[] = [
       'Síndrome coledociano, Courvoisier-Terrier y examen físico.',
     ],
     diapos: [
-      { cap: 'dig-04', ids: ['f-circuito', 'f-coluria', 'f-escleras', 'f-pre', 'f-hepatica', 'f-post', 'f-courvoisier', 'f-koller', 't-definicion', 't-pseudo', 't-indirecta-directa', 't-kernicterus', 't-clasificacion', 't-causas-pre', 't-causas-post', 't-acompanantes', 't-tinte', 't-examen', 't-coledociano', 't-courvoisier', 't-marcadores', 't-koller'] },
+      { cap: 'dig-04', ids: ['f-circuito', 'f-coluria', 'f-escleras', 'f-pre', 'f-hepatica', 'f-post', 'f-courvoisier', 'f-koller'] },
+      { cap: 'dig-04', ids: ['t-definicion', 't-pseudo', 't-indirecta-directa'] },
+      { cap: 'parcial', ids: ['p-ict-metabolismo'] },
+      { cap: 'dig-04', ids: ['t-kernicterus', 't-clasificacion', 't-causas-pre'] },
+      { cap: 'parcial', ids: ['p-ict-hereditarias'] },
+      { cap: 'dig-04', ids: ['t-causas-post', 't-acompanantes', 't-tinte', 't-examen', 't-coledociano', 't-courvoisier', 't-marcadores'] },
+      { cap: 'parcial', ids: ['p-ict-patron'] },
+      { cap: 'dig-04', ids: ['t-koller'] },
       { cap: 'dig-11', ids: ['f-sin-ictericia', 't-ictericia-dolor'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'El metabolismo en cinco pasos (lo que tenés que poder recitar)',
-        blocks: [
-          {
-            t: 'steps',
-            items: [
-              { title: '1. Producción', text: 'El **bazo** destruye glóbulos rojos viejos (120 días): hemo → biliverdina → **bilirrubina indirecta** (no conjugada, liposoluble).' },
-              { title: '2. Transporte', text: 'Viaja en sangre **unida a la albúmina**: por eso no se filtra en el riñón (no da coluria) y puede atravesar la barrera del neonato (kernicterus).' },
-              { title: '3. Captación', text: 'El **hepatocito** la capta (falla en el **Gilbert**).' },
-              { title: '4. Conjugación', text: 'La enzima **glucuroniltransferasa** la une al ácido glucurónico → **bilirrubina directa** (conjugada, hidrosoluble). Falla en el **Crigler-Najjar**.' },
-              { title: '5. Excreción', text: 'Pasa a la bilis (falla en **Dubin-Johnson** y **Rotor**) → intestino → bacterias → **urobilinógeno** y **estercobilina** (color de las heces); parte vuelve a la sangre y sale por la orina.' },
-            ],
-          },
-        ],
-        refs: [{ src: 'libro', p: '10' }],
-      },
-      {
-        titulo: 'Hiperbilirrubinemias hereditarias (las nombró en el repaso)',
-        blocks: [
-          {
-            t: 'table',
-            head: ['Síndrome', 'Qué falla', 'Bilirrubina', 'Clave'],
-            rows: [
-              ['**Gilbert**', '**Captación** (y algo de conjugación)', 'Indirecta', 'La **más frecuente**; benigna. Ictericia leve con ayuno, estrés o infecciones.'],
-              ['**Crigler-Najjar**', '**Conjugación**: falta (tipo I) o hay poca (tipo II) glucuroniltransferasa', 'Indirecta', 'El tipo I es grave en el recién nacido (kernicterus).'],
-              ['**Dubin-Johnson**', '**Excreción** de la directa a la bilis', 'Directa', 'Hígado **negro** (pigmento); benigna.'],
-              ['**Rotor**', '**Excreción / almacenamiento**', 'Directa', 'Como Dubin-Johnson pero sin pigmento.'],
-            ],
-            caption: 'Regla: las dos primeras fallan **antes** de conjugar (sube la indirecta); las dos últimas **después** (sube la directa).',
-          },
-        ],
-        refs: [R('55:32'), { src: 'libro', p: '12' }],
-      },
-      {
-        titulo: 'Patrón hepatocelular o colestásico',
-        blocks: [
-          {
-            t: 'compare',
-            cols: [
-              { title: 'Hepatocelular (se rompe el hepatocito)', tone: 'lilac', items: ['**GPT (ALT)** y **GOT (AST)** muy altas: son enzimas de **adentro** del hepatocito que salen cuando se necrosa.', 'GPT > GOT: hepatitis **viral**; GOT > GPT (2:1): **alcohol**.', 'FAL y GGT normales o poco elevadas.', 'Causas: hepatitis virales, tóxicas, alcohol, cirrosis.'] },
-              { title: 'Colestásico (la bilis no sale)', tone: 'gold', items: ['**FAL** y **GGT** muy altas: son enzimas de la **membrana del canalículo biliar** que aumentan cuando la bilis se estanca.', 'La GGT confirma que la FAL alta es **hepática** (y no ósea).', 'Transaminasas normales o poco elevadas; **bilirrubina directa** alta.', 'Causas: obstrucción biliar (cálculo, cáncer de cabeza de páncreas), colestasis intrahepática.'] },
-            ],
-          },
-          { t: 'callout', kind: 'key', title: 'En una línea', text: 'Transaminasas = **daño del hepatocito**; FAL + GGT = **colestasis**; albúmina y protrombina = **función** (síntesis).' },
-        ],
-        refs: [{ src: 'libro', p: '14' }],
-      },
     ],
     maniobras: ['higado-monomanual-cuchara', 'higado-bimanual', 'hepatometria', 'vesicula-murphy'],
     memoria: [
@@ -160,81 +118,18 @@ export const TEMAS: TemaParcial[] = [
       'Signos: Blumberg, Gueneau de Mussy, Rovsing, psoas, Jobert, Cullen y Grey-Turner, matidez.',
     ],
     diapos: [
-      { cap: 'dig-02', ids: ['f-hojas', 'f-apendicitis', 'f-maniobra', 'f-contractura', 'f-lucha', 'f-paralitico', 'f-aire', 'f-peritonitis', 'f-sangre', 'f-hipovolemia', 'f-isquemia', 't-sindrome', 't-clasificacion', 't-cinco', 't-cuadro5', 't-itis', 't-cronologia', 't-triada', 't-estadios', 't-colecistitis', 't-examen-inflamatorio', 't-blumberg', 't-obstructivo', 't-obstructivo-clinica', 't-mecanico-paralitico', 't-perforativo', 't-perforativo-clinica', 't-contractura', 't-jobert', 't-popper', 't-hemorragico', 't-matidez', 't-cullen', 't-aire-sangre', 't-vascular', 't-hora-oro'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Cada tipo explicado: qué es, qué pasa y qué encontrás',
-        blocks: [
-          {
-            t: 'accordion',
-            items: [
-              {
-                title: '1. Inflamatorio — el más frecuente',
-                blocks: [
-                  { t: 'def', term: 'Qué es', text: 'Inflamación aguda de una víscera abdominal (todo lo que termina en **-itis**) que termina irritando el peritoneo.' },
-                  { t: 'kv', items: [
-                    { k: 'Causas', v: '**Apendicitis** (la más frecuente), colecistitis, diverticulitis, pancreatitis, anexitis.' },
-                    { k: 'Mecanismo', v: 'Se obstruye la luz (fecalito, cálculo) → la víscera se distiende, se infecta y se edematiza → primero duele como **visceral** (mal localizado, periumbilical) → cuando la inflamación llega al **peritoneo parietal**, el dolor es **somático** y se localiza (FID en la apendicitis).' },
-                    { k: 'Clínica', v: 'Dolor progresivo que migra y se localiza, anorexia, náuseas o vómitos, **fiebre** después del dolor (cronología de Murphy).' },
-                    { k: 'Examen', v: 'Puntos dolorosos, **Blumberg** (rebote localizado), **Rovsing**, **psoas**, defensa. Si se generaliza: **Gueneau de Mussy**.' },
-                  ] },
-                ],
-              },
-              {
-                title: '2. Obstructivo',
-                blocks: [
-                  { t: 'def', term: 'Qué es', text: 'Algo impide el tránsito del contenido intestinal (íleo **mecánico**).' },
-                  { t: 'kv', items: [
-                    { k: 'Causas', v: '**Bridas** (adherencias posquirúrgicas: la más frecuente en intestino delgado), **hernias atascadas**, **tumores** (cáncer de colon), vólvulo, invaginación, fecaloma.' },
-                    { k: 'Mecanismo', v: 'Por arriba del obstáculo el intestino **lucha** (peristaltismo aumentado) y se **distiende** con gas y líquido → vómitos (alimentarios → biliosos → **fecaloides**), se secuestra líquido en la luz → **deshidratación**, hipopotasemia y alcalosis. Si se compromete la irrigación: estrangulación.' },
-                    { k: 'Clínica', v: '**Dolor cólico**, **vómitos**, **distensión** y **falta de eliminación de gases y heces**.' },
-                    { k: 'Examen', v: 'Abdomen distendido, timpánico; **ruidos hidroaéreos de lucha** (metálicos); buscar cicatrices y hernias. En el paralítico, en cambio, RHA **ausentes**.' },
-                  ] },
-                ],
-              },
-              {
-                title: '3. Perforativo',
-                blocks: [
-                  { t: 'def', term: 'Qué es', text: 'Se perfora una **víscera hueca** y su contenido (aire, ácido, bilis, materia fecal) cae en la cavidad peritoneal → **peritonitis**.' },
-                  { t: 'kv', items: [
-                    { k: 'Causas', v: '**Úlcera péptica perforada** (la más frecuente), apendicitis o diverticulitis perforadas, cáncer, traumatismo.' },
-                    { k: 'Mecanismo', v: 'El contenido es químicamente irritante (y después infectado) → **peritonitis química y luego bacteriana**. El peritoneo parietal inflamado produce dolor somático intenso y una **contractura refleja** de la pared (arco reflejo). El **aire libre** sube y se interpone entre el hígado y la pared.' },
-                    { k: 'Clínica', v: 'Dolor **súbito**, intenso, «en puñalada», que se **generaliza**; el paciente queda **inmóvil**.' },
-                    { k: 'Examen', v: '**Abdomen en tabla**, **Gueneau de Mussy**, **signo de Jobert** (desaparece la matidez hepática por el aire), RHA ausentes. Rx: neumoperitoneo bajo el diafragma.' },
-                  ] },
-                ],
-              },
-              {
-                title: '4. Hemorrágico',
-                blocks: [
-                  { t: 'def', term: 'Qué es', text: 'Sangrado **dentro de la cavidad peritoneal** (hemoperitoneo).' },
-                  { t: 'kv', items: [
-                    { k: 'Causas', v: '**Embarazo ectópico roto**, ruptura de un **aneurisma de aorta**, traumatismo (bazo, hígado), quiste ovárico hemorrágico.' },
-                    { k: 'Mecanismo', v: 'Se pierde volumen hacia la cavidad → **hipovolemia** (taquicardia, hipotensión, palidez, shock). La sangre irrita menos que el ácido: el abdomen suele ser **blando** y doloroso.' },
-                    { k: 'Clínica', v: 'Dolor + **signos de hipovolemia**.' },
-                    { k: 'Examen', v: '**Matidez** en flancos (líquido), abdomen blando; **Cullen** (equimosis periumbilical) y **Grey-Turner** (en flancos) en el sangrado retroperitoneal.' },
-                  ] },
-                ],
-              },
-              {
-                title: '5. Vascular o isquémico — el más letal',
-                blocks: [
-                  { t: 'def', term: 'Qué es', text: 'Se interrumpe la **irrigación del intestino** y el intestino se necrosa.' },
-                  { t: 'kv', items: [
-                    { k: 'Causas', v: '**Embolia de la arteria mesentérica superior** (fibrilación auricular: la más frecuente), trombosis arterial (aterosclerosis), trombosis venosa mesentérica, isquemia no oclusiva (bajo gasto).' },
-                    { k: 'Mecanismo', v: 'Sin oxígeno, la mucosa se necrosa primero → acidosis láctica → se rompe la barrera y pasan bacterias → necrosis transmural, perforación y peritonitis.' },
-                    { k: 'Clínica', v: 'Dolor **intenso, desproporcionado al examen físico** y que **no calma con analgésicos**; paciente añoso con FA o aterosclerosis.' },
-                    { k: 'Examen', v: 'Al principio el abdomen está casi normal (por eso es traicionero); después distensión, RHA ausentes, peritonitis. **Lactato** elevado.' },
-                  ] },
-                ],
-              },
-            ],
-          },
-          { t: 'callout', kind: 'warn', title: 'No confundir', text: '**Dolor abdominal** es un síntoma (puede ser crónico, funcional, extraabdominal). **Abdomen agudo** es un **síndrome**: dolor abdominal agudo, de menos de 48–72 h (hasta una semana), que suele requerir resolución **quirúrgica urgente**.', refs: [R('43:24')] },
-        ],
-        refs: [{ src: 'libro', p: '2' }, { src: 'mc-dig-3', t: '17:02' }],
-      },
+      { cap: 'dig-02', ids: ['f-hojas', 'f-apendicitis', 'f-maniobra', 'f-contractura', 'f-lucha', 'f-paralitico', 'f-aire', 'f-peritonitis', 'f-sangre', 'f-hipovolemia', 'f-isquemia'] },
+      { cap: 'parcial', ids: ['p-aa-def'] },
+      { cap: 'dig-02', ids: ['t-sindrome', 't-clasificacion', 't-cinco', 't-cuadro5', 't-itis', 't-cronologia', 't-triada', 't-estadios', 't-colecistitis', 't-examen-inflamatorio', 't-blumberg'] },
+      { cap: 'parcial', ids: ['p-aa-inflamatorio'] },
+      { cap: 'dig-02', ids: ['t-obstructivo', 't-obstructivo-clinica', 't-mecanico-paralitico'] },
+      { cap: 'parcial', ids: ['p-aa-obstructivo'] },
+      { cap: 'dig-02', ids: ['t-perforativo', 't-perforativo-clinica', 't-contractura', 't-jobert', 't-popper'] },
+      { cap: 'parcial', ids: ['p-aa-perforativo'] },
+      { cap: 'dig-02', ids: ['t-hemorragico', 't-matidez', 't-cullen', 't-aire-sangre'] },
+      { cap: 'parcial', ids: ['p-aa-hemorragico'] },
+      { cap: 'dig-02', ids: ['t-vascular', 't-hora-oro'] },
+      { cap: 'parcial', ids: ['p-aa-vascular'] },
     ],
     maniobras: ['puntos-dolorosos-abdomen', 'descompresion-blumberg', 'palpacion-superficial-tension', 'abd-percusion-traube', 'abd-auscultacion-rha', 'abd-inspeccion-estatica-dinamica'],
     memoria: [
@@ -284,16 +179,8 @@ export const TEMAS: TemaParcial[] = [
     ],
     diapos: [
       { cap: 'dig-12', ids: ['f-compensa', 'f-ortostatismo', 'f-melena', 'f-hematocrito', 'f-urea', 't-intro', 't-treitz', 't-hda-causas', 't-hdb-causas', 't-hematemesis', 't-melena-hq', 't-formas-baja', 't-comparar', 't-tabla', 't-hipovolemia', 't-ortostatismo', 't-examen', 't-lab', 't-endoscopia', 't-forrest'] },
+      { cap: 'parcial', ids: ['p-hd-aclaro'] },
       { cap: 'dig-01', ids: ['t-hemat-hemop', 't-mallory'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Lo que aclaró en el repaso',
-        blocks: [
-          { t: 'callout', kind: 'prof', title: 'El cuadro es de hipovolemia', text: 'El cuadro de clases I a IV **no clasifica la hemorragia digestiva**: sirve para estimar **cuánto volumen perdió** cualquier paciente (por sangrado, vómitos, diarrea, quemaduras). Si te pregunta por hemorragia digestiva, la clasificación es **alta o baja** (Treitz); si te pregunta por hipovolemia, el cuadro.', refs: [R('45:02')] },
-          { t: 'callout', kind: 'warn', title: 'Forrest: no la uses para clasificar la hemorragia', text: '«Forrest no es para hemorragia digestiva alta, es para úlceras pépticas… y no se metan ahí. Yo voy a preguntar la **clasificación de hemorragia digestiva**.» Forrest es la clasificación **endoscópica** de la úlcera que sangra (riesgo de resangrado). Si te pide clasificar la hemorragia: **alta o baja** según el ángulo de Treitz.', refs: [R('45:40'), R('45:57'), { src: 'hd-2', t: '26:51' }] },
-        ],
-      },
     ],
     maniobras: ['tacto-rectal'],
     memoria: [{ gancho: 'I-II-III-IV ≈ 15-30-40 %', explica: 'Pérdida < 15 %, 15–30 %, 30–40 % y > 40 % del volumen. La PA recién cae en la clase **III**: antes compensa la taquicardia.' }],
@@ -322,28 +209,9 @@ export const TEMAS: TemaParcial[] = [
     ],
     diapos: [
       { cap: 'dig-13', ids: ['f-porta', 'f-cirrosis', 'f-funcion', 'f-colaterales', 'f-ascitis', 'f-bazo', 'f-direccion', 't-def', 't-tres', 't-etiologia', 't-alcoholica', 't-compensada', 't-piel', 't-chvostek', 't-child', 't-child-grados', 't-htp-def', 't-htp-causas', 't-colaterales', 't-varices', 't-direccion', 't-bazo', 't-ascitis', 't-ascitis-examen', 't-paracentesis', 't-liquido'] },
+      { cap: 'parcial', ids: ['p-cir-complicaciones'] },
       { cap: 'dig-14', ids: ['f-amonio', 't-encefalopatia', 't-grados'] },
       { cap: 'dig-10', ids: ['f-pbe', 't-pbe'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Complicaciones de la cirrosis, cada una con su porqué',
-        blocks: [
-          {
-            t: 'table',
-            head: ['Complicación', 'Por qué aparece'],
-            rows: [
-              ['**Hemorragia digestiva alta** por várices', 'Hipertensión portal → la sangre busca colaterales porto-sistémicas → **várices esofágicas** de pared fina que se rompen.'],
-              ['**Ascitis**', 'Hipertensión portal (presión) + **hipoalbuminemia** (baja la oncótica) + vasodilatación esplácnica → se activa el SRAA y se retiene sodio y agua.'],
-              ['**Peritonitis bacteriana espontánea**', 'Ascitis + traslocación bacteriana intestinal + **pocas defensas** (el hígado sintetiza menos complemento): infección **sin perforación**; > 250 neutrófilos/mm³ en el líquido.'],
-              ['**Encefalopatía hepática**', 'El hígado no transforma el **amoníaco** en urea y la sangre portal pasa por las colaterales sin depurarse → el amoníaco llega al cerebro (astrocitos) → confusión, **asterixis**, coma.'],
-              ['**Síndrome hepatorrenal**', 'Vasodilatación esplácnica → el riñón se vasocontrae → IRA **funcional** (prerrenal) en un riñón sano.'],
-              ['**Hepatocarcinoma**', 'Regeneración continua en nódulos.'],
-            ],
-          },
-        ],
-        refs: [{ src: 'libro' }],
-      },
     ],
     maniobras: ['ascitis-maniobras', 'abd-inspeccion-estatica-dinamica', 'higado-bimanual', 'higado-monomanual-cuchara', 'hepatometria', 'bazo-decubito-dorsal', 'bazo-schuster', 'abd-percusion-traube'],
     memoria: [{ gancho: 'BATEA', explica: '**B**ilirrubina, **A**lbúmina, **T**iempo de protrombina, **E**ncefalopatía, **A**scitis. 5–6 puntos = A · 7–9 = B · 10–15 = C.' }],
@@ -443,6 +311,7 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En el repaso: «la idea es pasar y decirme qué punto doloroso es este» en el maniquí; nombró los cinco apendiculares y preguntó los pancreáticos y biliares. En el oral del 10/11 pidió maniobras de hígado, bazo y riñón **por su nombre**. En clase: los apendiculares «como la palma de la mano».',
     fuentes: [R('37:31'), R('37:59'), R('38:30'), PZ, ORAL, { src: 'ef-dig-2', t: '19:27' }],
     pide: ['Reconocer en el maniquí los **puntos apendiculares** (McBurney, Cope, Morris, Lanz, Lecene) y los **pancreáticos y biliares**.', 'Signos: **Blumberg**, **Gueneau de Mussy**, **Rovsing**, **psoas**.', 'Maniobras de **hígado** (Chauffard, Güemes, Mathieu, Gilbert), **bazo** (Schuster, Naegeli, Merlo, Galambos) y **vesícula** (Murphy).'],
+    fisioJunto: true,
     diapos: [
       { cap: 'dig-05', ids: ['t-topografia', 't-orden', 'f-orden', 't-apendiculares', 't-pancreaticos', 't-otros-puntos', 't-tension', 'f-inspiracion', 't-higado', 't-higado-como', 'f-bazo', 't-bazo', 't-vesicula', 't-ascitis', 't-maniobras-ascitis', 't-traube', 't-chapoteo'] },
     ],
@@ -466,30 +335,8 @@ export const TEMAS: TemaParcial[] = [
     fuentes: [R('23:25'), R('24:31'), R('25:25'), R('27:27'), R('28:23'), R('29:00'), R('33:43')],
     pide: ['Cada función y **qué pasa cuando se pierde** (es la clínica de la insuficiencia renal).', 'Cómo se estima el filtrado glomerular (fórmulas).'],
     diapos: [
+      { cap: 'parcial', ids: ['p-ren-funciones-1', 'p-ren-funciones-2'] },
       { cap: 'ren-05', ids: ['f-consecuencias', 'f-anemia', 'f-hueso', 't-calcio', 't-anemia'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Función normal → qué pasa si se pierde',
-        blocks: [
-          {
-            t: 'table',
-            head: ['Función normal', 'Si se pierde', 'Clínica'],
-            rows: [
-              ['**Filtrar** y eliminar urea y creatinina', 'Se acumulan (azoemia)', '**Síndrome urémico**: náuseas, vómitos, aliento urémico, prurito, encefalopatía, pericarditis'],
-              ['Producir **eritropoyetina** (células peritubulares de la corteza): estimula la médula a fabricar glóbulos rojos', 'Falta eritropoyetina', '**Anemia** normocítica normocrómica (en la **crónica**)'],
-              ['**Activar la vitamina D** (1-α-hidroxilación → calcitriol): absorbe calcio en el intestino', 'Baja el calcitriol', '**Hipocalcemia**'],
-              ['Regular **calcio y fósforo**: retiene calcio y elimina fósforo', 'Se invierte: retiene fósforo y pierde calcio', 'Hiperfosfatemia + hipocalcemia → **hiperparatiroidismo secundario** → el hueso se reabsorbe (**osteodistrofia renal**)'],
-              ['Regular la **presión arterial** con el **SRAA** (renina → angiotensina II → aldosterona)', 'Se altera la renina y se retiene volumen', '**HTA** (o hipotensión si falta renina)'],
-              ['Manejar **agua y sodio** (con aldosterona y ADH)', 'Retiene agua y sal', '**Edema**, HTA, insuficiencia cardíaca, edema agudo de pulmón'],
-              ['Eliminar **potasio** (es la vía principal)', 'Se acumula', '**Hiperpotasemia**: arritmias, **paro cardíaco**'],
-              ['Regular el **pH**: elimina H⁺ y reabsorbe/genera **bicarbonato**', 'Retiene ácidos', '**Acidosis metabólica**: respiración de Kussmaul'],
-            ],
-          },
-          { t: 'callout', kind: 'note', title: 'Cómo se estima el filtrado', text: 'Con fórmulas a partir de la **creatinina**: **Cockcroft-Gault**, **MDRD** y **CKD-EPI** (la que se usa hoy). Lo normal es ≈ **120 ml/min/1,73 m²**.', refs: [R('34:24')] },
-        ],
-        refs: [R('23:25')],
-      },
     ],
     quedate: [
       'Cada signo de la insuficiencia renal es **una función que se perdió**.',
@@ -514,32 +361,11 @@ export const TEMAS: TemaParcial[] = [
       '**Complicaciones** con su porqué: infecciones (PBE), trombosis, aterosclerosis.',
     ],
     diapos: [
-      { cap: 'ren-04', ids: ['f-barrera', 'f-circulo', 'f-trombosis', 'f-infecciones', 't-def', 't-primarias', 't-causas', 't-diabetes', 't-fisio', 't-clinica', 't-complicaciones'] },
+      { cap: 'ren-04', ids: ['f-barrera', 'f-circulo', 'f-trombosis', 'f-infecciones', 't-def', 't-primarias', 't-causas', 't-diabetes', 't-fisio'] },
+      { cap: 'parcial', ids: ['p-nefrotico-razon'] },
+      { cap: 'ren-04', ids: ['t-clinica', 't-complicaciones'] },
+      { cap: 'parcial', ids: ['p-nefrotico-complicaciones'] },
       { cap: 'ren-03', ids: ['t-vs-nefrotico'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'El razonamiento que pidió en el repaso',
-        blocks: [
-          {
-            t: 'chain',
-            items: [
-              { label: 'La membrana basal glomerular pierde su **carga negativa** y sus poros se agrandan', kind: 'cause' },
-              { label: 'Pasan a la orina **todas** las proteínas, no solo la albúmina: **hipoproteinemia**', kind: 'mech' },
-              { label: 'Albúmina ↓ → baja la presión oncótica → el agua sale al intersticio', kind: 'mech' },
-              { label: '**Edema** blando, matinal, en párpados → anasarca', kind: 'sign' },
-            ],
-          },
-          {
-            t: 'compare',
-            cols: [
-              { title: '¿Por qué se infecta?', tone: 'sky', items: ['Pierde **IgG** (anticuerpos) y fracciones del **complemento** (C3) por la orina.', 'Sin complemento no hay **opsonización**: las bacterias encapsuladas no se destruyen.', 'Complicación infecciosa típica: **peritonitis bacteriana espontánea**, «al igual que la cirrosis».'] },
-              { title: '¿Por qué hace trombosis?', tone: 'red', items: ['Pierde **antitrombina III** (es chica y se filtra).', 'La antitrombina III **inactiva la trombina**: sin ella, la coagulación queda sin freno → **estado protrombótico**.', 'Además el hígado fabrica más fibrinógeno y factores (estimulado por la hipoalbuminemia).', 'Típica: **trombosis de la vena renal**.'] },
-            ],
-          },
-        ],
-        refs: [R('30:23'), R('31:28'), R('32:48'), R('33:00')],
-      },
     ],
     maniobras: ['rinon-guyon', 'punopercusion-lumbar'],
     memoria: [{ gancho: 'Nefr-ÓTICO = PROTEÍNAS', explica: 'Nefrótico: se escapan proteínas (> 3,5 g). Nefrítico: se rompe el capilar y pasa **sangre** (hematuria).' }],
@@ -559,25 +385,9 @@ export const TEMAS: TemaParcial[] = [
     fuentes: [PZ, R('08:07'), R('09:23'), R('11:31'), R('13:13'), R('31:35'), ORAL],
     pide: ['**Definición** (inflamación glomerular: el capilar se rompe).', 'La tríada: **hematuria, HTA, hiperazoemia** (las 3 H) con edema y oliguria.', 'Causa más frecuente: **glomerulonefritis postestreptocócica** (niño; 1–3 semanas después de una faringitis o impétigo).', '**Complicaciones**.', 'Diferencias con el nefrótico.'],
     diapos: [
-      { cap: 'ren-03', ids: ['f-inmuno', 'f-pared', 'f-cascada', 't-def', 't-tres-h', 't-clinica', 't-vs-nefrotico', 't-postestreptococica', 't-causas', 't-lab', 't-complicaciones'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Cómo lo encadenó en el repaso',
-        blocks: [
-          {
-            t: 'chain',
-            items: [
-              { label: 'Infección por **estreptococo** → anticuerpos → **inmunocomplejos** que se depositan en el glomérulo', kind: 'cause' },
-              { label: 'Inflamación → se **dañan y se rompen los capilares** glomerulares', kind: 'mech' },
-              { label: 'Pasan **glóbulos rojos** (hematuria dismórfica, cilindros hemáticos) y **baja el filtrado**', kind: 'mech' },
-              { label: 'Filtrado bajo → **oliguria** → retiene agua y sal → **edema** e **HTA**; retiene urea → **hiperazoemia**', kind: 'sign' },
-            ],
-          },
-          { t: 'callout', kind: 'prof', title: 'Primaria o secundaria', text: '**Primaria**: la lesión está **solo en el riñón**. **Secundaria**: una **enfermedad sistémica** afecta secundariamente al riñón (lupus, vasculitis, endocarditis).', refs: [R('12:14')] },
-        ],
-        refs: [R('09:16'), R('13:33')],
-      },
+      { cap: 'ren-03', ids: ['f-inmuno', 'f-pared', 'f-cascada', 't-def', 't-tres-h'] },
+      { cap: 'parcial', ids: ['p-nefritico-cadena'] },
+      { cap: 'ren-03', ids: ['t-clinica', 't-vs-nefrotico', 't-postestreptococica', 't-causas', 't-lab', 't-complicaciones'] },
     ],
     maniobras: ['rinon-guyon', 'punopercusion-lumbar'],
     quedate: [
@@ -597,26 +407,9 @@ export const TEMAS: TemaParcial[] = [
     fuentes: [PZ, R('14:57'), R('21:13'), R('21:25'), { src: 'ir-1', t: '12:23' }],
     pide: ['**Definición** (caída brusca del filtrado: horas o días, reversible).', '**Clasificación**: prerrenal, renal y posrenal.', '**Etiologías** de cada una; la **más frecuente: prerrenal**.', '**Criterios RIFLE y AKIN** con sus valores.', 'Clínica (oliguria, azoemia, hiperpotasemia, acidosis, sobrecarga).'],
     diapos: [
-      { cap: 'ren-05', ids: ['f-donde', 'f-sodio', 'f-consecuencias', 't-def', 't-rifle', 't-akin', 't-causas', 't-sodio', 't-episodio', 't-ira-clinica', 't-aguda-cronica'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Pre, renal y pos: dónde está el problema',
-        blocks: [
-          {
-            t: 'table',
-            head: ['', 'Prerrenal', 'Renal (parenquimatosa)', 'Posrenal'],
-            rows: [
-              ['Dónde', '**Antes** del riñón: le llega poca sangre', 'En el **riñón**: glomérulo, túbulo, intersticio o vasos', '**Después**: la orina no sale'],
-              ['Ejemplos', 'Deshidratación severa, hemorragia, **insuficiencia cardíaca** (el corazón no bombea), shock, sepsis', '**Necrosis tubular aguda** (isquemia o tóxicos), glomerulonefritis, nefritis intersticial', '**Hiperplasia prostática**, cálculos bilaterales, tumores'],
-              ['El riñón', 'Está **sano** y ahorra sodio: **Na urinario < 20**', 'Lesionado: **pierde sodio** (> 40)', 'Hidronefrosis en la ecografía'],
-              ['Frecuencia', '**La más frecuente**', '—', '—'],
-            ],
-          },
-          { t: 'callout', kind: 'note', title: 'KDIGO', text: 'KDIGO también tiene criterios para la lesión renal aguda (unifica RIFLE y AKIN en tres estadios). En la pizarra del repaso, **KDIGO** está escrito para la **enfermedad renal crónica**, y para la aguda dejó **RIFLE y AKIN**.', refs: [PZ] },
-        ],
-        refs: [R('21:25'), R('22:04')],
-      },
+      { cap: 'ren-05', ids: ['f-donde', 'f-sodio', 'f-consecuencias', 't-def', 't-rifle', 't-akin', 't-causas'] },
+      { cap: 'parcial', ids: ['p-ira-donde'] },
+      { cap: 'ren-05', ids: ['t-sodio', 't-episodio', 't-ira-clinica', 't-aguda-cronica'] },
     ],
     maniobras: ['punopercusion-lumbar', 'puntos-renoureterales'],
     memoria: [{ gancho: 'RIFLE = Riesgo · Injuria · Fallo · Loss · End', explica: 'Los tres primeros por creatinina ×1,5 / ×2 / ×3 (o diuresis < 0,5 ml/kg/h por 6 y 12 h, < 0,3 por 24 h); Loss > 4 semanas; End > 3 meses.' }],
@@ -635,49 +428,12 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En la pizarra con los valores: **FG > 120 ml/min** normal, **G1 > 90 · G2 60–90 · G3a 45–60 · G3b 30–45 · G4 15–30 · G5 < 15 → HD**, y al lado las indicaciones de diálisis **A-E-I-O-U** con sus números. Lo dictó en clase y preguntó «¿cuánto es el filtrado normal?».',
     fuentes: [PZ, R('15:15'), R('15:56'), R('17:53'), R('18:35'), R('19:00'), R('20:16')],
     pide: ['**Definición** (> 3 meses, irreversible).', '**Clasificación KDIGO** por filtrado, con el **3a y 3b**.', 'Filtrado normal (≈ 120 ml/min).', 'Causas: **diabetes**, HTA, glomerulopatías.', '**Indicaciones de hemodiálisis (AEIOU)** con sus valores y el porqué de cada una.', 'Complicaciones: anemia, hueso, hiperpotasemia, acidosis, uremia.'],
+    fisioJunto: true,
     diapos: [
-      { cap: 'ren-05', ids: ['f-anemia', 'f-hueso', 't-irc', 't-estadios', 't-irc-clinica', 't-calcio', 't-anemia', 't-aguda-cronica'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Estadios KDIGO (como en la pizarra)',
-        blocks: [
-          {
-            t: 'table',
-            head: ['Estadio', 'FG (ml/min/1,73 m²)', 'Qué pasa'],
-            rows: [
-              ['Normal', '**> 120**', '—'],
-              ['**G1**', '**> 90**', 'Daño renal (proteinuria, imágenes) con filtrado normal'],
-              ['**G2**', '**60–90**', 'Descenso leve'],
-              ['**G3a**', '**45–60**', 'Descenso leve a moderado: empiezan anemia y trastornos del calcio-fósforo'],
-              ['**G3b**', '**30–45**', 'Descenso moderado a grave'],
-              ['**G4**', '**15–30**', 'Descenso grave: acidosis, hiperpotasemia; preparar diálisis'],
-              ['**G5**', '**< 15**', '**Falla renal**: síndrome urémico → **hemodiálisis** o trasplante'],
-            ],
-            caption: 'En la pizarra, una flecha marca que el **riesgo aumenta** hacia abajo y que el G5 lleva a **HD**.',
-          },
-        ],
-        refs: [PZ, R('16:06')],
-      },
-      {
-        titulo: 'Indicaciones de hemodiálisis: A-E-I-O-U',
-        blocks: [
-          {
-            t: 'table',
-            head: ['', 'Indicación (valores de la pizarra)', 'Por qué'],
-            rows: [
-              ['**A**', '**Acidosis metabólica** grave: **pH < 7,1** o **bicarbonato < 15**', 'El riñón no elimina H⁺ ni repone bicarbonato; la acidez deprime el corazón.'],
-              ['**E**', '**Electrolitos**: **potasio > 7** mEq/l', 'La hiperpotasemia produce **arritmias y paro**; el riñón es la vía principal de salida del K⁺.'],
-              ['**I**', '**Intoxicaciones** por sustancias dializables', 'Metanol, etilenglicol, litio, salicilatos: la diálisis los saca de la sangre.'],
-              ['**O**', '**Overload** (sobrecarga de volumen) **refractaria a los diuréticos**', 'Edema agudo de pulmón o insuficiencia cardíaca que no responde: la única forma de sacar el agua.'],
-              ['**U**', '**Uremia**: **urea > 200 mg/dl** (o síntomas: encefalopatía, pericarditis)', 'Los tóxicos urémicos dañan cerebro, pericardio y plaquetas.'],
-            ],
-          },
-          { t: 'callout', kind: 'prof', title: 'Lo que aclaró', text: 'No todo paciente con IRA va a diálisis: la mayoría tiene **alto riesgo** de necesitarla. Un paciente que **deja de orinar pero no tiene ningún otro criterio** no se dializa por eso solo. Con **uno** de los criterios ya tiene indicación; con dos, peor.', refs: [R('18:10'), R('20:28')] },
-          { t: 'callout', kind: 'warn', title: 'Sobre el valor del potasio', text: 'En la pizarra quedó **K⁺ > 7**. En la bibliografía suele usarse **> 6,5 mEq/l** o hiperpotasemia refractaria con cambios en el ECG: si te pregunta, decí el valor de la pizarra y que lo que importa es que sea **grave o refractaria**.', refs: [PZ] },
-        ],
-        refs: [PZ, R('18:35')],
-      },
+      { cap: 'ren-05', ids: ['t-irc', 't-estadios'] },
+      { cap: 'parcial', ids: ['p-erc-kdigo'] },
+      { cap: 'ren-05', ids: ['t-irc-clinica', 'f-hueso', 't-calcio', 'f-anemia', 't-anemia', 't-aguda-cronica'] },
+      { cap: 'parcial', ids: ['p-erc-aeiou'] },
     ],
     memoria: [
       { gancho: '90 · 60 · 45 · 30 · 15', explica: 'Los cortes de los estadios, de G1 a G5. El 3 se parte en **45**.' },
@@ -699,6 +455,7 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En el oral del 10/11 pidió «cualquier maniobra de riñón» en el maniquí. En el repaso, los puntos dolorosos entran en la misma consigna: «¿qué punto doloroso es este?».',
     fuentes: [ORAL, R('37:41'), { src: 'ef-ren' }],
     pide: ['Palpación renal: **Guyon** (peloteo), **Montenegro**, **Israel**, **Glenard**.', '**Puñopercusión** (Giordano).', 'Puntos **renoureterales**: ureteral superior y medio; renales posteriores **costovertebral** y **costomuscular**.'],
+    fisioJunto: true,
     diapos: [
       { cap: 'ren-02', ids: ['f-guyon', 't-guyon', 't-otras', 't-percusion', 't-general'] },
     ],
@@ -720,6 +477,7 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En el repaso, dentro del examen físico («el examen físico, todo»): de cada par, «¿cómo se llama? ¿cuál es su función?», su **origen** y cómo se explora. Preguntó qué par se afecta en el **síndrome piramidal** (el VII) y cómo se evalúa el **campo visual**. En el oral del 10/11 **bochó a varios** por no saber el XI. En sus clases: «es un par para bochar al alumno» (VIII), «lo van a bochar de una» (IV).',
     fuentes: [R('01:03:30'), R('01:03:55'), R('01:07:17'), R('01:08:07'), ORAL, { src: 'pc-3', t: '09:49' }, { src: 'pc-5', t: '01:02' }],
     pide: ['Para cada par: **nombre · función · tipo · origen real y aparente · examen físico · alteraciones**.', '¿Qué par se afecta en el **síndrome piramidal**? El **VII** (parálisis facial central). ¿Y en la **HTE**? El **VI**.', 'Vía óptica y **campimetría** por confrontación; músculos del III, IV y VI.', 'Parálisis facial central y periférica; Weber y Rinne; signo de la cortina; desviación de la lengua.'],
+    fisioJunto: true,
     diapos: [
       { cap: 'neu-03', ids: ['t-clasif', 't-origen', 'f-olfato', 't-olfatorio', 't-olfato-alt', 't-optico', 'f-via', 't-via', 'f-campos', 't-hemianopsias', 't-cuadrantes', 't-explora-ii', 't-musculos', 'f-iii', 't-iii', 't-iv-vi', 't-diplopia', 'f-fotomotor', 't-pupila', 't-nistagmo'] },
       { cap: 'neu-04', ids: ['t-trigemino', 't-trigemino-nucleos', 'f-facial', 't-facial', 't-paralisis-facial', 't-viii', 'f-weber', 't-hipoacusia', 't-vestibular', 't-ix-x', 'f-lengua', 't-xi-xii'] },
@@ -747,56 +505,9 @@ export const TEMAS: TemaParcial[] = [
     fuentes: [PZ, ORAL, R('58:07'), R('58:45'), R('59:03'), R('01:00:01'), R('01:02:02'), R('01:02:36')],
     pide: ['**Definición** de estado de conciencia y sus dos partes: **nivel** y **contenido**.', 'Escala de **Glasgow**: componentes, puntajes (3 a 15) e interpretación.', 'Grados del nivel: vigil, somnolencia, obnubilación, estupor, coma, y cómo responde a los estímulos.', 'Contenido: orientación en **tiempo, espacio y persona**; **lucidez** y **confusión**.'],
     diapos: [
+      { cap: 'parcial', ids: ['p-conc-def', 'p-conc-sraa', 'p-conc-glasgow', 'p-conc-rangos', 'p-conc-lucido'] },
       { cap: 'neu-01', ids: ['t-conciencia'] },
       { cap: 'dig-14', ids: ['t-grados'] },
-    ],
-    nuevo: [
-      {
-        titulo: 'Nivel y contenido de la conciencia',
-        blocks: [
-          { t: 'def', term: 'Estado de conciencia', text: 'Estado en el que la persona se da cuenta de sí misma y de su entorno y puede responder a los estímulos. Tiene dos partes: **nivel** (estar despierto, «vigilia») y **contenido** (lo que la persona sabe de sí y del entorno).' },
-          {
-            t: 'compare',
-            cols: [
-              { title: 'Nivel (cuán despierto)', tone: 'sky', items: ['Depende del **sistema reticular activador ascendente** (tronco) y su proyección a la corteza.', 'Se mide con la **escala de Glasgow**.', 'Vigil → somnolencia → obnubilación → estupor → **coma**.'] },
-              { title: 'Contenido (qué sabe)', tone: 'lilac', items: ['Depende de la **corteza cerebral**.', 'Se explora preguntando **quién es, dónde está y en qué fecha estamos**: orientación en **persona, espacio y tiempo**.', 'Alterado: **confusión**, desorientación, delirio.'] },
-            ],
-          },
-          { t: 'callout', kind: 'prof', title: 'Vigil no es lúcido', text: '**Vigil** = despierto (Glasgow 15/15). **Lúcido** = vigil **y** orientado en tiempo, espacio y persona: la lucidez une el nivel y el contenido. Un paciente puede estar 15/15, con los ojos abiertos, y decir cosas sin sentido: está **vigil pero confuso**, no lúcido.', refs: [R('01:02:36'), R('01:03:16')] },
-        ],
-        refs: [R('58:31'), R('58:45')],
-      },
-      {
-        titulo: 'Escala de Glasgow',
-        blocks: [
-          {
-            t: 'table',
-            head: ['Apertura ocular (O)', 'Respuesta verbal (V)', 'Respuesta motora (M)'],
-            rows: [
-              ['4 · Espontánea', '5 · Orientada', '6 · Obedece órdenes'],
-              ['3 · Al estímulo verbal', '4 · Confusa', '5 · Localiza el dolor'],
-              ['2 · Al dolor', '3 · Palabras inapropiadas', '4 · Retira al dolor (flexión normal)'],
-              ['1 · No abre', '2 · Sonidos incomprensibles', '3 · Flexión anormal (**decorticación**)'],
-              ['', '1 · No hay', '2 · Extensión (**descerebración**)'],
-              ['', '', '1 · No hay'],
-            ],
-            caption: 'Mínimo **3**, máximo **15**. Los valores de cada respuesta son los de la escala estándar (en clase se dan los rangos totales).',
-          },
-          {
-            t: 'table',
-            head: ['Glasgow (pizarra)', 'Nivel', 'Cómo responde'],
-            rows: [
-              ['**15/15**', '**Vigil**', 'Despierto, responde normalmente.'],
-              ['**13–14/15**', '**Somnolencia**', 'Parece dormido; se despierta con el **estímulo verbal**, responde y se vuelve a dormir.'],
-              ['**11–12/15**', '**Obnubilación**', 'Más dormido: necesita estímulos más intensos; respuestas lentas.'],
-              ['**9–10/15**', '**Estupor**', '**No** responde al estímulo verbal; se despierta con el **estímulo doloroso**.'],
-              ['**≤ 8/15**', '**Coma**', 'No responde ni al estímulo **verbal** ni al **doloroso**.'],
-            ],
-            caption: 'Los rangos numéricos son los de la pizarra del repaso. Los nombres de 13–14 (somnolencia) y 11–12 (obnubilación) se reconstruyeron del audio, que en ese tramo se entiende mal: «parece que está durmiendo… obnubilación… 9–10, estuporoso… menos de 8». ≤ 8 también marca la necesidad de proteger la vía aérea.',
-          },
-        ],
-        refs: [PZ, R('59:03'), R('01:00:01'), R('01:01:20')],
-      },
     ],
     memoria: [{ gancho: 'O4 · V5 · M6', explica: 'Ojos hasta 4, verbal hasta 5, motor hasta 6: 4 + 5 + 6 = 15. El mínimo es 3 (1 + 1 + 1), nunca 0.' }],
     quedate: [
@@ -815,8 +526,9 @@ export const TEMAS: TemaParcial[] = [
     porque: 'Es el **único motivo de consulta** neurológico que dejó en la pizarra del parcial. En el repaso pidió las características de la **tensional**, la **migraña con y sin aura** y las otras cefaleas primarias.',
     fuentes: [PZ, R('01:13:20')],
     pide: ['**Definición** y por dónde viaja el dolor (trigémino → tálamo).', 'Clasificación: **primarias** y **secundarias**.', 'Migraña (con y sin aura; más frecuente en mujeres), tensional, en racimos; neuralgia del trigémino.', 'Signos de alarma: cefalea secundaria (HTE, meningitis, hemorragia).'],
+    fisioJunto: true,
     diapos: [
-      { cap: 'neu-01', ids: ['f-via', 'f-talamo', 'f-migrana', 'f-cluster', 't-cefalea', 't-talamo', 't-clasif', 't-migrana', 't-migrana-mujer', 't-aura', 't-tensional', 't-tensional-formas', 't-racimos', 't-neuralgia', 't-comparar'] },
+      { cap: 'neu-01', ids: ['t-cefalea', 'f-via', 'f-talamo', 't-talamo', 't-clasif', 'f-migrana', 't-migrana', 't-migrana-mujer', 't-aura', 't-tensional', 't-tensional-formas', 'f-cluster', 't-racimos', 't-neuralgia', 't-comparar'] },
     ],
     quedate: [
       'Cefalea: dolor en el cráneo; el cerebro no duele: duelen **meninges, vasos y nervios** (trigémino).',
@@ -833,44 +545,12 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En la pizarra (Sd. piramidal). En el repaso: «¿qué se encuentra al examen físico en un paciente con síndrome piramidal?… tienen que saber la motilidad», las maniobras de oposición (fuerza) y los traveses de dedo (tono). En el oral del 10/11 preguntó **motilidad** y «nadie la supo responder».',
     fuentes: [PZ, R('01:06:42'), R('01:06:53'), R('01:09:17'), ORAL],
     pide: ['Examen de la motilidad según su pizarra: **activa** (voluntaria: fuerza; involuntaria: movimientos automáticos medulares y reflejos) y **pasiva** (tono y trofismo).', 'Síndrome piramidal: qué encontrás al examen; 1.ª y 2.ª motoneurona; Babinski, clonus, hiperreflexia, espasticidad en navaja.', '¿Qué par craneal se afecta en el piramidal? El **VII** (parálisis facial central).', 'La tabla comparativa de los síndromes motores.'],
-    nuevo: [
-      {
-        titulo: 'La pizarra de motilidad',
-        blocks: [
-          {
-            t: 'compare',
-            cols: [
-              { title: 'Activa · voluntaria → fuerza', tone: 'sky', items: ['Maniobras **de oposición** (el paciente empuja contra la mano del examinador).', 'Maniobras **deficitarias** de **Barré** y **Mingazzini** (sostener una posición: el miembro parético cae).'] },
-              { title: 'Activa · involuntaria', tone: 'lilac', items: ['**Movimientos automáticos medulares**: **clonus** y **sincinesias**.', '**Reflejos**: **superficiales (7)** y **profundos (10)**.'] },
-              { title: 'Pasiva → tono y trofismo', tone: 'gold', items: ['**Tono**: movilizar pasivamente; **traveses de dedo** (extensibilidad).', '**Hipertonía**: piramidal → **signo de la navaja**; extrapiramidal → **rueda dentada**.', '**Hipo/atonía**: maniobras de **André-Thomas** y de **Stewart-Holmes** (rebote).', '**Trofismo**: masas musculares (atrofia).'] },
-            ],
-          },
-        ],
-        refs: [{ src: 'pizarra', note: 'Pizarra de motilidad' }, R('01:09:17')],
-      },
-      {
-        titulo: 'Tabla de los síndromes motores (pizarra de Ortega)',
-        blocks: [
-          {
-            t: 'table',
-            head: ['', 'Miopatía', 'Piramidal 1.ª MN (cerebral)', 'Piramidal 2.ª MN (medular)', 'Extrapiramidal (Parkinson)', 'Cerebeloso', 'Neuropatía'],
-            rows: [
-              ['**Tono**', 'Hipotonía **proximal**', 'Fláccido → hipotonía; espástico → **hipertonía**', 'Hipotonía / atonía', 'Hipertonía **rígida**', 'Hipotonía **generalizada**', 'Hipotonía **distal**'],
-              ['**Trofismo**', 'La atrofia es por **desuso**', '(desuso)', '**Atrofia**', '(desuso)', '(desuso)', '(desuso)'],
-              ['**Fuerza**', '+/−', '**Hemiparesia / plejía**', 'Según la localización: **paraparesia / plejía**', 'Normal', 'Normal', '+/−'],
-              ['**Reflejos**', 'Normales', 'Superficiales: **arreflexia cutaneoabdominal** y cremasteriana, **Babinski** y sucedáneos · profundos: **hiperreflexia**', '**Arreflexia** · Babinski **bilateral**', 'Reflejo **palmomentoniano**', 'Normales', 'Normales en la pizarra (en la bibliografía: disminuidos distales)'],
-              ['**Mov. automáticos medulares**', '—', '**Clonus**, **sincinesias**', '—', '—', '—', '—'],
-              ['**Marcha**', '**Del pato**', '**Helicópoda** (en guadaña)', '**En tijeras**', '**Parkinsoniana**', '**Del ebrio**', '**Escarbante** (steppage)'],
-            ],
-            caption: 'Transcripta de la foto de la pizarra de motilidad. «La atrofia es por desuso» cruza todas las columnas salvo la de la 2.ª motoneurona, donde la atrofia es propia de la lesión.',
-          },
-        ],
-        refs: [{ src: 'pizarra', note: 'Pizarra «Motilidad»' }],
-      },
-    ],
+    fisioJunto: true,
     diapos: [
-      { cap: 'neu-05', ids: ['f-via-piramidal', 'f-espasticidad', 'f-alterna', 't-piramidal', 't-piramidal-signos', 't-navaja', 't-hemiplejias', 't-topografia', 't-weber', 't-segunda', 't-mononeuropatias'] },
+      { cap: 'parcial', ids: ['p-mot-pizarra'] },
+      { cap: 'neu-05', ids: ['t-piramidal', 'f-via-piramidal', 't-piramidal-signos', 't-navaja', 'f-espasticidad', 't-hemiplejias', 't-topografia', 'f-alterna', 't-weber', 't-segunda', 't-mononeuropatias'] },
       { cap: 'neu-02', ids: ['f-motoneurona', 't-debilidad', 't-decusacion', 'f-guillain', 't-guillain'] },
+      { cap: 'parcial', ids: ['p-mot-tabla-1', 'p-mot-tabla-2'] },
     ],
     maniobras: ['trofismo-tono', 'fuerza-mingazzini', 'reflejos-osteotendinosos', 'reflejo-plantar-babinski', 'clonus'],
     quedate: [
@@ -888,46 +568,9 @@ export const TEMAS: TemaParcial[] = [
     porque: 'Son parte del examen físico neurológico («todos son físicos, chicos»). En el repaso contó que preguntó **apraxia ideomotora** y **apraxia ideacional**, y una afasia (en el audio no se entiende cuál). La sensibilidad y la estereognosia están en sus pizarras de neurología.',
     fuentes: [R('01:09:50'), R('01:09:56'), { src: 'pizarra', note: 'Pizarra de sensibilidad y gnosia' }, { src: 'pc-1', t: '05:02' }],
     pide: ['**Sensibilidad** superficial y profunda, con sus nombres.', '**Gnosia** táctil: **estereognosia**.', '**Praxia**: qué es la apraxia; ideomotora e ideatoria (ideacional).', '**Lenguaje**: afasia de Broca y de Wernicke.'],
-    diapos: [{ cap: 'neu-06', ids: ['t-sensibilidad'] }],
-    nuevo: [
-      {
-        titulo: 'Sensibilidad (pizarra)',
-        blocks: [
-          {
-            t: 'compare',
-            cols: [
-              { title: 'Superficial', tone: 'sky', items: ['Tacto **grueso**', '**Dolor**', '**Temperatura**', 'Va por la vía **espinotalámica** (cruza en la médula).'] },
-              { title: 'Profunda', tone: 'lilac', items: ['Tacto **fino**', 'Dolor somático profundo', 'Presión → **barestesia**', 'Peso → **barognosia**', 'Posición → **batiestesia**', 'Vibración → **palestesia** (diapasón)', 'Va por los **cordones posteriores** (cruza en el bulbo).'] },
-            ],
-          },
-          { t: 'def', term: 'Gnosia táctil: estereognosia', text: 'Reconocer un objeto con los ojos cerrados solo por el tacto: su **forma** (morfognosia) y su **material** (hilognosia). Si se pierde: **astereognosia** (lesión del lóbulo **parietal** con la sensibilidad conservada).' },
-        ],
-        refs: [{ src: 'pizarra', note: 'Pizarra de sensibilidad y gnosia' }],
-      },
-      {
-        titulo: 'Praxia y lenguaje',
-        blocks: [
-          { t: 'def', term: 'Apraxia', text: 'Incapacidad de realizar un **acto motor aprendido**, con la orden comprendida y **sin parálisis**, ataxia ni trastorno sensitivo que lo explique.' },
-          {
-            t: 'table',
-            head: ['Tipo', 'Qué falla', 'Ejemplo de exploración'],
-            rows: [
-              ['**Ideomotora**', 'Sabe **qué** hacer pero no puede ejecutar el gesto a la orden (sí lo hace en forma automática)', '«Hágame la señal de la cruz», «salude», «haga como que se peina»'],
-              ['**Ideatoria (ideacional)**', 'Pierde el **plan** del acto: no sabe la secuencia ni el uso de los objetos', 'Darle una vela y fósforos: no sabe encenderla'],
-              ['Constructiva', 'No puede copiar o armar figuras', 'Copiar un dibujo'],
-              ['Del vestir', 'No logra vestirse', 'Ponerse una prenda'],
-            ],
-          },
-          {
-            t: 'compare',
-            cols: [
-              { title: 'Afasia de Broca (motora, de expresión)', tone: 'peach', items: ['Lesión del **área 44–45** (frontal inferior, hemisferio dominante).', '**Comprende** pero habla poco, con esfuerzo, telegráfico.', 'Suele acompañarse de hemiparesia derecha.'] },
-              { title: 'Afasia de Wernicke (sensitiva, de comprensión)', tone: 'sky', items: ['Lesión del **área 22** (temporal superior posterior).', '**No comprende**; habla fluido pero sin sentido (parafasias, jergafasia).', 'No se da cuenta de su error.'] },
-            ],
-          },
-        ],
-        refs: [R('01:09:50'), { src: 'libro' }],
-      },
+    diapos: [
+      { cap: 'neu-06', ids: ['t-sensibilidad'] },
+      { cap: 'parcial', ids: ['p-sens', 'p-praxia', 'p-afasias'] },
     ],
     maniobras: ['sensibilidad-superficial', 'sensibilidad-profunda'],
     quedate: [
@@ -946,8 +589,9 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En la pizarra. En el oral del 10/11 preguntó la **tríada del Parkinson**, el tipo de temblor y cómo es la rigidez.',
     fuentes: [PZ, ORAL],
     pide: ['Definición (ganglios de la base).', 'Tríada: **bradicinesia, rigidez y temblor**; núcleo lesionado: **sustancia negra**.', 'Temblor **de reposo**; rigidez en **rueda dentada** (plástica).', 'Diferencia con el piramidal.'],
+    fisioJunto: true,
     diapos: [
-      { cap: 'neu-05', ids: ['f-parkinson', 't-extrapiramidal', 't-triada-parkinson', 't-parkinson-clinica', 't-navaja'] },
+      { cap: 'neu-05', ids: ['t-extrapiramidal', 'f-parkinson', 't-triada-parkinson', 't-parkinson-clinica', 't-navaja'] },
       { cap: 'neu-02', ids: ['f-nucleos', 't-temblor', 't-temblor-tipos'] },
     ],
     maniobras: ['trofismo-tono'],
@@ -966,8 +610,9 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En la pizarra. En el repaso: «decime 4 o 5 características de los signos del cerebelo», «¿cuál es la alteración estática o dinámica?» y cómo se diferencia del cordonal posterior con el cuadro de las ataxias: dismetría, adiadococinesia, temblor intencional, marcha, nistagmo, hipotonía, **sin trastorno de la sensibilidad**.',
     fuentes: [PZ, R('01:11:32'), R('01:11:54'), R('01:12:03'), R('01:12:42')],
     pide: ['Definición y causas.', '**Examen físico**: ataxia (marcha de ebrio), **dismetría** (índice-nariz, talón-rodilla), **adiadococinesia**, **temblor intencional**, **nistagmo**, **hipotonía**, disartria (palabra escandida), asinergia.', 'Romberg **negativo** (a diferencia del cordonal posterior).'],
+    fisioJunto: true,
     diapos: [
-      { cap: 'neu-05', ids: ['f-cerebelo', 't-cerebeloso', 't-ataxia', 't-cordonal'] },
+      { cap: 'neu-05', ids: ['t-cerebeloso', 'f-cerebelo', 't-ataxia', 't-cordonal'] },
       { cap: 'neu-01', ids: ['f-romberg', 't-romberg'] },
     ],
     maniobras: ['indice-nariz', 'talon-rodilla', 'romberg', 'trofismo-tono'],
@@ -1026,7 +671,9 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En el repaso: «SOMA es examen físico: son maniobras… todo lo que es columna, miembro superior e inferior». En el oral del 10/11 pidió «cualquier maniobra lumbar» y, por explicar Goldthwait con su nombre, «tiene 10, váyase».',
     fuentes: [R('03:54'), R('04:22'), ORAL, { src: 'pizarra' }],
     pide: ['**Cervical**: Spurling, Valsalva, Naffziger-Jones, Adson.', '**Dorsal**: Adams.', '**Lumbar**: Schober, Goldthwait, Lasègue, Bragard (Lasègue reforzado), Neri y Neri reforzado, Lasègue invertido.', '**Sacroilíaca**: Volkmann (apertura), Erichsen (cierre), FABERE o del 4 (Patrick), Gaenslen.'],
-    diapos: [],
+    diapos: [
+      { cap: 'parcial', ids: ['p-soma-columna-spurling', 'p-soma-columna-valsalva-cervical', 'p-soma-columna-naffziger', 'p-soma-columna-adson', 'p-soma-columna-adams', 'p-soma-columna-schober', 'p-soma-columna-goldthwait', 'p-soma-columna-lasegue', 'p-soma-columna-bragard', 'p-soma-columna-neri', 'p-soma-columna-lasegue-invertido', 'p-soma-columna-volkmann', 'p-soma-columna-erichsen', 'p-soma-columna-patrick-fabere', 'p-soma-columna-gaenslen'] },
+    ],
     maniobras: ['spurling', 'valsalva-cervical', 'naffziger', 'adson', 'adams', 'schober', 'goldthwait', 'lasegue', 'bragard', 'neri', 'lasegue-invertido', 'volkmann', 'erichsen', 'patrick-fabere', 'gaenslen'],
     quedate: [
       'Cervical → **Spurling** (compresión radicular).',
@@ -1044,7 +691,9 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En la clase de osteoarticular avisó: «miembros superiores: donde está el círculo azul es lo que yo le voy a preguntar». En la pizarra quedaron encerrados codo de **tenista** y de **golfista**, **Tinel**, **túnel carpiano** y **Phalen**. En el repaso volvió a nombrar el codo de tenista.',
     fuentes: [{ src: 'meningeo-osteo', t: '39:46' }, { src: 'meningeo-osteo', t: '43:04' }, R('04:38'), { src: 'pizarra' }],
     pide: ['**Hombro**: prueba de la caída del brazo (supraespinoso).', '**Codo**: codo de tenista (epicondilitis) y de golfista (epitrocleitis).', '**Muñeca**: Tinel, percusión del túnel carpiano y Phalen (nervio mediano).'],
-    diapos: [],
+    diapos: [
+      { cap: 'parcial', ids: ['p-soma-mmss-caida-brazo', 'p-soma-mmss-codo-tenista', 'p-soma-mmss-codo-golfista', 'p-soma-mmss-tinel', 'p-soma-mmss-tunel-carpiano-percusion', 'p-soma-mmss-phalen'] },
+    ],
     maniobras: ['caida-brazo', 'codo-tenista', 'codo-golfista', 'tinel', 'tunel-carpiano-percusion', 'phalen'],
     quedate: [
       'Tenista = **epicóndilo** (extensores; dolor al extender la muñeca contra resistencia).',
@@ -1062,7 +711,9 @@ export const TEMAS: TemaParcial[] = [
     porque: 'En la clase de osteoarticular: «las maniobras para las rodillas son las maniobras que van a preguntar en el examen». En la pizarra quedaron encerrados **cajón**, **bostezo** y **Apley**.',
     fuentes: [{ src: 'meningeo-osteo', t: '46:17' }, { src: 'pizarra' }, R('04:38')],
     pide: ['**Rodilla**: ligamentos **cruzados** → cajón anterior y posterior; **laterales** → bostezo; **meniscos** → Apley y McMurray; derrame → choque rotuliano.', '**Cadera**: Patrick (FABERE), Thomas.', '**Tobillo**: Thompson (Aquiles).'],
-    diapos: [],
+    diapos: [
+      { cap: 'parcial', ids: ['p-soma-mmii-cajon-rodilla', 'p-soma-mmii-bostezo-rodilla', 'p-soma-mmii-apley', 'p-soma-mmii-mcmurray', 'p-soma-mmii-choque-rotuliano', 'p-soma-mmii-patrick-fabere', 'p-soma-mmii-thomas', 'p-soma-mmii-thompson'] },
+    ],
     maniobras: ['cajon-rodilla', 'bostezo-rodilla', 'apley', 'mcmurray', 'choque-rotuliano', 'patrick-fabere', 'thomas', 'thompson'],
     quedate: [
       'Cruzados → **cajón** (anterior: LCA; posterior: LCP).',
