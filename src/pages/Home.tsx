@@ -20,6 +20,18 @@ export function Home() {
   }).length;
   return (
     <div className="page home">
+      <Link to="/parcial" className="parcial-banner">
+        <span className="parcial-banner__icono">
+          <Icon name="flag" size={24} />
+        </span>
+        <span className="parcial-banner__texto">
+          <strong>Parcial del lunes</strong>
+          <span>Temas fundamentales para el examen oral: solo lo que Ortega confirmó en el repaso, con preguntas, maniobras y puntos dolorosos.</span>
+        </span>
+        <span className="parcial-banner__ir">
+          Entrar <Icon name="arrowRight" size={16} />
+        </span>
+      </Link>
       <section className="hero">
         <div className="hero__text">
           <span className="hero__kicker">Semiología y Clínica Médica I · basada en las clases del Dr. Ortega</span>

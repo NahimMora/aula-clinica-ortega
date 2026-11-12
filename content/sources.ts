@@ -81,6 +81,9 @@ export const SOURCES: Record<string, SourceInfo> = Object.fromEntries(
     clase('neu-meet-1024', 'Grabación neurología (24/10, Meet)', 'neuro'),
     clase('meningeo-osteo', 'Clase signos meníngeos y osteoarticular (audio)', 'soma'),
     clase('repaso-pato', 'Clase de repaso', 'general'),
+    clase('repaso-1111', 'Clase de repaso para el parcial (11/11)', 'general'),
+    { id: 'pizarra-repaso', label: 'Pizarras del repaso (11/11)', kind: 'pizarra' },
+    clase('oral-1011', 'Oral del martes 10/11 (relato de compañeras)', 'general'),
     // Otras fuentes
     { id: 'libro', label: 'Libro Clínica Médica I (2023) — L. Ortega', kind: 'libro' },
     { id: 'pizarra', label: 'Fotos de pizarra (clases prácticas)', kind: 'pizarra' },

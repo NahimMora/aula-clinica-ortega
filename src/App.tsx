@@ -16,6 +16,7 @@ const ProgressPage = lazy(() => import('@/pages/ProgressPage').then((m) => ({ de
 const ManeuversPage = lazy(() => import('@/pages/ManeuversPage').then((m) => ({ default: m.ManeuversPage })));
 const PreguntasPage = lazy(() => import('@/pages/PreguntasPage').then((m) => ({ default: m.PreguntasPage })));
 const SearchPage = lazy(() => import('@/pages/SearchPage').then((m) => ({ default: m.SearchPage })));
+const ParcialPage = lazy(() => import('@/pages/ParcialPage').then((m) => ({ default: m.ParcialPage })));
 
 export function App() {
   return (
@@ -35,6 +36,8 @@ export function App() {
             <Route path="maniobras" element={<ManeuversPage />} />
             <Route path="preguntas" element={<PreguntasPage />} />
             <Route path="buscar" element={<SearchPage />} />
+            <Route path="parcial" element={<ParcialPage />} />
+            <Route path="parcial/:sec" element={<ParcialPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

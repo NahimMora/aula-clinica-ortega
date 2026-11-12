@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import type { Chapter } from '@/types';
 import { findSystem, neighbours } from '@content/curriculum';
+import { temasDelCapitulo } from '@content/parcial/temario';
 import { MapaArbol } from '@/components/ConceptMap';
 import { Closing } from '@/components/Closing';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
@@ -119,6 +120,7 @@ export default function ClaseView({ c }: { c: Chapter }) {
   const actual = tabs[idx];
   const [ancla, setAncla] = useState<string | null>(null);
   const vistas = tabs.filter((x) => pc?.visited.includes(x.id)).length;
+  const parcial = useMemo(() => temasDelCapitulo(c.id), [c.id]);
   const pct = Math.round((vistas / tabs.length) * 100);
 
   const irA = useCallback(
@@ -172,6 +174,16 @@ export default function ClaseView({ c }: { c: Chapter }) {
             {pct}% recorrido
           </span>
         </div>
+        {parcial.length > 0 && (
+          <p className="ptema-aviso">
+            <Icon name="flag" size={15} /> Entra en el parcial del lunes:
+            {parcial.map((t) => (
+              <Link key={t.id} to={`/parcial/${t.sistema}?t=${t.id}`}>
+                {t.titulo}
+              </Link>
+            ))}
+          </p>
+        )}
       </header>
 
       <nav className="secnav" aria-label="Secciones del capítulo">

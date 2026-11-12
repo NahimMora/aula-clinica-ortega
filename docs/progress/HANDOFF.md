@@ -1,6 +1,10 @@
 # HANDOFF — Cómo continuar este proyecto (para otra IA o persona)
 
-> Leé esto primero. Se actualiza a medida que avanza el trabajo. Última actualización: 2026-11-09.
+> Leé esto primero. Se actualiza a medida que avanza el trabajo. Última actualización: 2026-11-11.
+
+## 00. PARCIAL DEL LUNES 16/11 (pedido del 2026-11-11, manda sobre lo demás hasta el parcial)
+
+Módulo independiente «Parcial del lunes» (`/parcial`): temario recortado al repaso del 11/11, con preguntas en tres niveles (respuesta oral · fundamento · repreguntas), visor con las diapositivas de los capítulos, maniobras por tema y apartado general, práctica del maniquí (puntos dolorosos) y simulacro oral. Los capítulos originales no se tocaron (solo un aviso con enlace en `ClaseView`). **Todo el detalle, las decisiones, las partes dudosas del audio y la matriz de cobertura: [`docs/progress/PARCIAL.md`](PARCIAL.md).** Verificar con `npm run check:parcial` y `node scripts/test-parcial.mjs <url> <carpeta>`.
 
 ## 0. ESTADO ACTUAL — migración de todos los capítulos al formato dig-02 (pedido del 2026-11-08, manda sobre las secciones 2 y 4)
 
@@ -165,5 +169,6 @@ Plataforma completa por sistemas (digestivo, renal, neuro, maniobras, soma); cad
 - 2026-11-08 (noche) — dig-02 a dig-15 publicados de a uno (cada uno con su commit y deploy). Digestivo completo. Siguiente: nefrourológico.
 - 2026-11-08 (corrección) — dig-02: se abandona Aula Clínica 2.0; vuelve la estructura original con mapa jerárquico, fisiopatología, diapositivas navegables y clase completa con Tomás.
 - 2026-11-08 (madrugada) — Kit `urinario` + `nefrona`; ren-01 a ren-07 publicados de a uno; 6 maniobras renales. Renal completo. Siguiente: nervioso.
+- 2026-11-11 (noche) — Módulo «Parcial del lunes» (28 temas, 74 preguntas, 12 pares, 19 puntos dolorosos, 10 maniobras de SOMA nuevas); ver PARCIAL.md.
 - 2026-11-11 — Apartado «Preguntas de examen» (236 preguntas: 168 de Ortega, 68 del preguntero) y oral del martes 10/11.
 - 2026-11-09 — Clase visual de ren-01…ren-07 (verificadas en la URL pública). Neurología completa: neu-01…neu-06 creados y publicados con video. Biblioteca de maniobras neurológicas (25) y osteoarticulares (12). PDF regenerados. Ojo: en el info.json del video Argente los capítulos 33 y 34 tienen los títulos invertidos (taxia ≈ 13 656–13 894 s; sensibilidad ≈ 13 903–14 322 s). El test del visor en celular ahora hace clic directo en el botón (una barra fija lo tapaba). Preguntero neuro = «construidas desde las clases»: nunca origen «preguntero»; los desarrollos son «de clase» solo con aviso verificado. Hay una carpeta `C:/c/Users/...` creada por error (rutas `/c/...` con MSYS_NO_PATHCONV): se puede borrar a mano; en los tests usar rutas `C:/...`.

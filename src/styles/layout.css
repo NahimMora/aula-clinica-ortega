@@ -321,3 +321,16 @@ a.sidebar__ch.active { background: var(--surface); color: var(--ink); font-weigh
   .soon { padding: 24px; }
 }
 .hero__cta .btn { white-space: normal; text-align: left; }
+
+/* Parcial del lunes: acceso destacado en el inicio y aviso en los capítulos */
+.parcial-banner { display: flex; align-items: center; gap: 14px; margin: 0 0 18px; padding: 14px 18px; border-radius: var(--radius-lg); background: linear-gradient(135deg, #45202a, #2e1820); border: 1px solid #6e2c3c; color: var(--ink); text-decoration: none; box-shadow: var(--shadow-sm); }
+.parcial-banner:hover { border-color: #ff6b7d; }
+.parcial-banner__icono { flex-shrink: 0; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; background: #6e2c3c; color: #ffb3bd; }
+.parcial-banner__texto { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.parcial-banner__texto strong { font-size: 1.1rem; }
+.parcial-banner__texto span { color: var(--ink-2); font-size: 0.9rem; }
+.parcial-banner__ir { flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: #ffb3bd; color: #2e1820; font-weight: 750; font-size: 0.9rem; }
+.ptema-aviso { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 10px 0 0; padding: 8px 12px; border-radius: 12px; background: #2e1820; border: 1px solid #6e2c3c; font-size: 0.88rem; color: var(--ink-2); }
+.ptema-aviso a { color: #ffb3bd; font-weight: 650; }
+
+@media (max-width: 560px) { .parcial-banner { flex-wrap: wrap; padding: 12px 14px; } .parcial-banner__ir { width: 100%; justify-content: center; } }

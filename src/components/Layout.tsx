@@ -14,6 +14,17 @@ const NAV = [
   { to: '/progreso', label: 'Progreso', icon: 'chart' },
 ];
 
+/** Apartado «Parcial del lunes», arriba de todo en la columna: temario recortado del repaso del 11/11. */
+const PARCIAL = [
+  { to: '/parcial', label: 'Temario y cómo responder' },
+  { to: '/parcial/digestivo', label: 'Aparato digestivo' },
+  { to: '/parcial/renal', label: 'Aparato renal' },
+  { to: '/parcial/neuro', label: 'Sistema nervioso' },
+  { to: '/parcial/soma', label: 'SOMA' },
+  { to: '/parcial/maniobras', label: 'Maniobras y puntos dolorosos' },
+  { to: '/parcial/preguntas', label: 'Preguntas del examen oral' },
+];
+
 /** Apartado «Preguntas de examen» de la columna: oral más reciente y un acceso por sistema. */
 const PREGUNTAS = [
   { s: 'oral-2026-11-10', label: 'Lo que tomó el martes 10/11' },
@@ -105,6 +116,24 @@ function Sidebar() {
           </NavLink>
         ))}
       </nav>
+      <div className="sidebar__sys sidebar__parcial tone-red">
+        <NavLink to="/parcial" end className="sidebar__sys-title">
+          <span className="sidebar__sys-icon">
+            <Icon name="flag" size={17} />
+          </span>
+          Parcial del lunes
+        </NavLink>
+        <ul>
+          {PARCIAL.slice(1).map((p) => (
+            <li key={p.to}>
+              <NavLink to={p.to} className="sidebar__ch">
+                <span className="dot" aria-hidden="true" />
+                <span>{p.label}</span>
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
       {SYSTEMS.map((s) => (
         <div key={s.id} className={`sidebar__sys tone-${s.tone}`}>
           <NavLink to={`/sistema/${s.id}`} className="sidebar__sys-title">
