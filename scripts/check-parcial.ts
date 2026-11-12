@@ -9,6 +9,7 @@ import { MANIOBRAS_PARCIAL } from '../content/parcial/maniobras';
 import { MANEUVERS } from '../content/maneuvers/index';
 import { SOURCES } from '../content/sources';
 import { MAZO_PARCIAL } from '../content/parcial/diapos';
+import { CHOICE_DE_CAPITULOS, CHOICE_NUEVOS } from '../content/parcial/choice';
 
 const errores: string[] = [];
 const diapos = new Map<string, Set<string>>();
@@ -65,6 +66,28 @@ for (const d of MAZO_PARCIAL.diapos) {
   for (const r of d.refs) fuenteOk(r.src, `diapositiva ${d.id}`);
   if (!usadas.has(d.id)) errores.push(`diapositiva ${d.id}: no la usa ningún tema`);
 }
+// Choice: los de los capítulos existen, los temas existen, las respuestas son válidas y no hay ids repetidos.
+const mcqDe = new Map<string, Set<string>>();
+for (const [tema, fuentes] of Object.entries(CHOICE_DE_CAPITULOS)) {
+  if (!temaIds.has(tema)) errores.push(`choice: tema inexistente ${tema}`);
+  for (const { cap, ids } of fuentes) {
+    if (!mcqDe.has(cap)) mcqDe.set(cap, new Set([...readFileSync(`content/chapters/${cap}/index.tsx`, 'utf8').matchAll(/id: '([a-z0-9]+-[qx]\d+)'/g)].map((m) => m[1])));
+    for (const id of ids) if (!mcqDe.get(cap)!.has(id)) errores.push(`choice ${tema}: no existe ${cap}:${id}`);
+  }
+}
+const idsChoice = new Set<string>();
+for (const c of CHOICE_NUEVOS) {
+  if (!temaIds.has(c.tema)) errores.push(`choice ${c.id}: tema inexistente ${c.tema}`);
+  if (idsChoice.has(c.id)) errores.push(`choice ${c.id}: id repetido`);
+  idsChoice.add(c.id);
+  if (c.answer < 0 || c.answer >= c.options.length) errores.push(`choice ${c.id}: respuesta fuera de las opciones`);
+  if (c.options.some((o) => !o.why.trim())) errores.push(`choice ${c.id}: opción sin explicación`);
+  for (const r of c.refs ?? []) fuenteOk(r.src, `choice ${c.id}`);
+}
+for (const t of TEMAS) {
+  const n = (CHOICE_DE_CAPITULOS[t.id] ?? []).reduce((a, f) => a + f.ids.length, 0) + CHOICE_NUEVOS.filter((c) => c.tema === t.id).length;
+  if (n < 4) errores.push(`tema ${t.id}: solo ${n} choice`);
+}
 for (const p of PUNTOS_DOLOROSOS) for (const r of p.refs) fuenteOk(r.src, `punto ${p.id}`);
 for (const [s, d] of Object.entries(MANIOBRAS_PARCIAL))
   for (const g of d.grupos) {
@@ -76,7 +99,8 @@ const general = new Set(Object.values(MANIOBRAS_PARCIAL).flatMap((d) => d.grupos
 for (const t of TEMAS) for (const m of t.maniobras ?? []) if (!general.has(m)) errores.push(`maniobra ${m} (tema ${t.id}) no está en el apartado general`);
 
 const reales = PREGUNTAS.filter((p) => p.estado !== 'simulada').length;
-console.log(`check-parcial: ${TEMAS.length} temas · ${PREGUNTAS.length} preguntas (${reales} reales) · ${PARES.length} pares · ${PUNTOS_DOLOROSOS.length} puntos`);
+const totalChoice = Object.values(CHOICE_DE_CAPITULOS).flat().reduce((a, f) => a + f.ids.length, 0) + CHOICE_NUEVOS.length;
+console.log(`check-parcial: ${totalChoice} choice · ${TEMAS.length} temas · ${PREGUNTAS.length} preguntas (${reales} reales) · ${PARES.length} pares · ${PUNTOS_DOLOROSOS.length} puntos`);
 if (errores.length) {
   console.error(errores.join('\n'));
   process.exit(1);

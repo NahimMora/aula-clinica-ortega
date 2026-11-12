@@ -328,3 +328,6 @@
 .pvideos__clases { margin-top: 10px; }
 .pvideos__clases > summary { cursor: pointer; font-weight: 650; color: var(--ink-2); padding: 6px 0; }
 @media (max-width: 620px) { .vtema__t { display: none; } }
+
+/* Choice del parcial */
+.pchoice__modo { margin: 10px 0 14px; }

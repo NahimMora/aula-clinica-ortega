@@ -44,7 +44,7 @@ const sinErrorBoundary = (page) => page.evaluate(() => !document.body.innerText.
   const info = await p.evaluate(() => ({ h1: document.querySelector('h1')?.textContent, temas: document.querySelectorAll('.temario li').length, nav: document.querySelectorAll('.pnav__item').length, sidebar: !!document.querySelector('.sidebar__parcial') }));
   ok(info.h1?.includes('Temas fundamentales'), `portada: h1 «${info.h1}»`);
   ok(info.temas >= 25, `portada: ${info.temas} temas en el temario`);
-  ok(info.nav === 7, `portada: ${info.nav} accesos en la barra del parcial`);
+  ok(info.nav === 8, `portada: ${info.nav} accesos en la barra del parcial`);
   ok(info.sidebar, 'columna: bloque «Parcial del lunes»');
   await p.screenshot({ path: join(outDir, 'desk_parcial.png') });
   ok(p.errs.length === 0, `portada sin errores ${p.errs.join(' | ')}`);
@@ -72,7 +72,7 @@ for (const s of SIS) {
     // Cada tema se recorre por pestañas, como un capítulo.
     const pest = await p.$$eval('#tema-pestanas .secnav__label', (b) => b.map((x) => x.textContent));
     const titulo = await p.$eval('.ptema__titulo', (e) => e.firstChild?.textContent?.trim());
-    const orden = ['Fisiopatología', 'Diapositivas', 'Video', 'Maniobras', 'Memoria', 'Preguntas', 'Cierre'];
+    const orden = ['Fisiopatología', 'Diapositivas', 'Video', 'Maniobras', 'Memoria', 'Choice', 'Preguntas', 'Cierre'];
     ok(pest.every((x, k) => k === 0 || orden.indexOf(x) > orden.indexOf(pest[k - 1])), `${s} · ${titulo}: pestañas en orden (${pest.join(' → ')})`);
     const info = { preguntas: 0, quedate: 0 };
     for (let j = 0; j < pest.length; j++) {

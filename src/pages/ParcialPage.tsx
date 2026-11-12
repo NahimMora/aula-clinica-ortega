@@ -6,6 +6,8 @@ import { Blocks } from '@/components/Blocks';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { Icon } from '@/components/Icon';
 import { ManeuverList } from '@/components/Maneuvers';
+import { QuizList } from '@/components/Practice';
+import { useChoice } from '@/parcial/useChoice';
 import { Refs, Rich } from '@/components/Rich';
 import { findChapter } from '@content/curriculum';
 import { MANIOBRAS_PARCIAL } from '@content/parcial/maniobras';
@@ -44,6 +46,7 @@ export function ParcialPage() {
   if (!sec) cuerpo = <Inicio />;
   else if (sec === 'maniobras') cuerpo = <ManiobrasVista />;
   else if (sec === 'preguntas') cuerpo = <PreguntasVista />;
+  else if (sec === 'choice') cuerpo = <ChoiceVista />;
   else if (sec in SISTEMA) cuerpo = <SistemaVista s={sec as SistemaParcial} />;
   else return <NotFound />;
   return (
@@ -61,6 +64,7 @@ function NavParcial({ actual }: { actual: string }) {
     { id: 'inicio', to: '/parcial', label: 'Temario', icon: 'map' },
     ...SISTEMAS_PARCIAL.map((s) => ({ id: s.id, to: `/parcial/${s.id}`, label: s.corto, icon: s.icono })),
     { id: 'maniobras', to: '/parcial/maniobras', label: 'Maniobras y puntos', icon: 'hand' },
+    { id: 'choice', to: '/parcial/choice', label: 'Choice', icon: 'check' },
     { id: 'preguntas', to: '/parcial/preguntas', label: 'Preguntas del oral', icon: 'target' },
   ];
   return (
@@ -287,7 +291,7 @@ function SistemaVista({ s }: { s: SistemaParcial }) {
         </span>
         <div>
           <h1>{sis.titulo}</h1>
-          <p className="muted">{temas.length} temas para el parcial, en el mismo orden que la web: primero los motivos de consulta, después el examen físico y los síndromes. Los que tienen el lápiz son los que Ortega escribió en la pizarra. Cada tema se recorre igual que un capítulo: fisiopatología, diapositivas, video, maniobras, memoria, preguntas y cierre.</p>
+          <p className="muted">{temas.length} temas para el parcial, en el mismo orden que la web: primero los motivos de consulta, después el examen físico y los síndromes. Los que tienen el lápiz son los que Ortega escribió en la pizarra. Cada tema se recorre igual que un capítulo: fisiopatología, diapositivas, video, maniobras, memoria, choice, preguntas y cierre.</p>
           {PDF_PARCIAL[s] && (
             <div className="psis__pdf">
               <a className="btn btn--soft btn--sm" href={asset(PDF_PARCIAL[s]!.imprimir)} download>
@@ -361,6 +365,7 @@ function pestanasDe(t: TemaParcial, nPreguntas: number): PestanaTema[] {
   if (videoDeTema(t.id) || t.capitulos.some((c) => !c.startsWith('soma'))) out.push({ id: 'video', label: 'Video', titulo: 'Video del tema' });
   if (t.maniobras?.length || t.id === 'ef-digestivo' || t.id === 'ef-renal') out.push({ id: 'maniobras', label: 'Maniobras', titulo: 'Maniobras' });
   if (t.memoria?.length) out.push({ id: 'memoria', label: 'Memoria', titulo: 'Memoria' });
+  out.push({ id: 'choice', label: 'Choice', titulo: 'Choice' });
   if (nPreguntas) out.push({ id: 'preguntas', label: 'Preguntas', titulo: 'Preguntas del oral' });
   out.push({ id: 'cierre', label: 'Cierre', titulo: 'Cierre e integración' });
   return out;
@@ -490,6 +495,7 @@ function TemaVista({ t, pedida }: { t: TemaParcial; pedida?: string }) {
               ))}
             </div>
           )}
+          {actual.id === 'choice' && <ChoiceTemaVista temaId={t.id} />}
           {actual.id === 'preguntas' && (
             <>
               <p className="psec__sub">Intentá responder en voz alta antes de abrir. Nivel 1: lo que decís primero · nivel 2: el porqué · nivel 3: las repreguntas.</p>
@@ -654,6 +660,94 @@ const PESTANAS_P: { id: SistemaParcial | 'integracion' | 'simulacro'; label: str
 function resumenEstados(ps: PreguntaParcial[]) {
   const c = (e: EstadoPregunta) => ps.filter((p) => p.estado === e).length;
   return { confirmada: c('confirmada'), ampliada: c('ampliada'), nueva: c('nueva'), anterior: c('anterior'), simulada: c('simulada') };
+}
+
+/* ═════════════════════════════ Choice ═════════════════════════════ */
+
+function ChoiceTemaVista({ temaId }: { temaId: string }) {
+  const lista = useChoice([temaId]);
+  if (!lista) return <p className="empty">Cargando choice…</p>;
+  if (!lista.length) return <p className="empty">Este tema todavía no tiene choice.</p>;
+  const cap = new Map(lista.map((x) => [x.q.id, x.cap]));
+  return (
+    <>
+      <p className="psec__sub">Para practicar y consolidar. Las marcadas con ★ son temas que Ortega remarcó o preguntó; las respuestas son cortas, como las que pide en el oral.</p>
+      <QuizList questions={lista.map((x) => x.q)} chapterOf={(q) => cap.get(q.id) ?? 'parcial'} />
+    </>
+  );
+}
+
+function mezclar<T>(xs: T[], semilla: number): T[] {
+  const a = [...xs];
+  let x = semilla * 9301 + 49297;
+  for (let i = a.length - 1; i > 0; i--) {
+    x = (x * 9301 + 49297) % 233280;
+    const j = Math.floor((x / 233280) * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function ChoiceVista() {
+  const [params, setParams] = useSearchParams();
+  const s = (SISTEMAS_PARCIAL.find((x) => x.id === params.get('s'))?.id ?? 'digestivo') as SistemaParcial;
+  const modo = params.get('m') === 'mezcla' ? 'mezcla' : 'tema';
+  const temas = temasDe(s);
+  const lista = useChoice(temas.map((t) => t.id));
+  const [semilla, setSemilla] = useState(1);
+  const cap = useMemo(() => new Map((lista ?? []).map((x) => [x.q.id, x.cap])), [lista]);
+  const chapterOf = (q: { id: string }) => cap.get(q.id) ?? 'parcial';
+  return (
+    <>
+      <header className="psis">
+        <span className="psis__icono">
+          <Icon name="check" size={24} />
+        </span>
+        <div>
+          <h1>Choice del parcial</h1>
+          <p className="muted">Para practicar y consolidar lo estudiado, y para las preguntas cortas y concretas que hace Ortega. Elegí una opción y mirá por qué es correcta y por qué las otras no. «Erradas» te deja repasar solo las que fallaste.</p>
+        </div>
+      </header>
+      <div className="seg seg--wide" role="tablist" aria-label="Sistema">
+        {SISTEMAS_PARCIAL.map((x) => (
+          <button key={x.id} role="tab" aria-selected={x.id === s} className={x.id === s ? 'is-on' : ''} onClick={() => setParams({ s: x.id, m: modo })}>
+            <Icon name={x.icono} size={15} /> {x.corto}
+          </button>
+        ))}
+      </div>
+      <div className="seg pchoice__modo" role="tablist" aria-label="Cómo practicar">
+        <button role="tab" aria-selected={modo === 'tema'} className={modo === 'tema' ? 'is-on' : ''} onClick={() => setParams({ s, m: 'tema' })}>
+          Por tema
+        </button>
+        <button role="tab" aria-selected={modo === 'mezcla'} className={modo === 'mezcla' ? 'is-on' : ''} onClick={() => setParams({ s, m: 'mezcla' })}>
+          Todo mezclado
+        </button>
+      </div>
+      {!lista ? (
+        <p className="empty">Cargando choice…</p>
+      ) : modo === 'mezcla' ? (
+        <>
+          <p className="psec__sub">
+            {lista.length} choice de {SISTEMA[s].titulo.toLowerCase()} en orden al azar, como en un examen.{' '}
+            <button type="button" className="btn btn--ghost btn--sm" onClick={() => setSemilla((n) => n + 1)}>
+              <Icon name="refresh" size={14} /> Mezclar de nuevo
+            </button>
+          </p>
+          <QuizList key={semilla} questions={mezclar(lista.map((x) => x.q), semilla)} chapterOf={chapterOf} />
+        </>
+      ) : (
+        temas.map((t) => {
+          const qs = lista.filter((x) => x.tema === t.id).map((x) => x.q);
+          if (!qs.length) return null;
+          return (
+            <Plegable key={t.id} titulo={t.titulo} extra={<span className="pgrupo__n">{qs.length} choice</span>}>
+              <QuizList questions={qs} chapterOf={chapterOf} />
+            </Plegable>
+          );
+        })
+      )}
+    </>
+  );
 }
 
 function PreguntasVista() {

@@ -25,6 +25,14 @@ const PARCIAL = [
   { to: '/parcial/maniobras', label: 'Maniobras y puntos dolorosos' },
 ];
 
+/** Choice del parcial, una entrada por sistema. */
+const PARCIAL_CHOICE = [
+  { s: 'digestivo', label: 'Digestivo' },
+  { s: 'renal', label: 'Renal' },
+  { s: 'neuro', label: 'Neurología' },
+  { s: 'soma', label: 'SOMA' },
+];
+
 /** Preguntas de examen del parcial, una entrada por sistema (banco del parcial con respuesta en tres niveles). */
 const PARCIAL_PREGUNTAS = [
   { s: 'digestivo', label: 'Digestivo' },
@@ -144,6 +152,22 @@ function Sidebar() {
               </NavLink>
             </li>
           ))}
+        </ul>
+        <div className="sidebar__subtit">
+          <Icon name="check" size={14} /> Choice
+        </div>
+        <ul>
+          {PARCIAL_CHOICE.map((p) => {
+            const on = loc.pathname === '/parcial/choice' && (new URLSearchParams(loc.search).get('s') ?? 'digestivo') === p.s;
+            return (
+              <li key={p.s}>
+                <Link to={`/parcial/choice?s=${p.s}`} className={`sidebar__ch ${on ? 'active' : ''}`} aria-current={on ? 'page' : undefined}>
+                  <span className="dot" aria-hidden="true" />
+                  <span>{p.label}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <div className="sidebar__subtit">
           <Icon name="target" size={14} /> Preguntas de examen
