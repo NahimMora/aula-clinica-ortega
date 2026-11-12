@@ -77,7 +77,8 @@ export function VideoTema({ id, titulo }: { id: string; titulo: string }) {
   useEffect(() => {
     if (!jugando) return;
     let raf = 0;
-    const tick = () => {
+    let ultimo = 0;
+    const tick = (ahora: number) => {
       const el = ref.current;
       const k = iRef.current;
       const s = segs[k];
@@ -94,7 +95,10 @@ export function VideoTema({ id, titulo }: { id: string; titulo: string }) {
             cargar(k + 1, 0, true);
           }
         }
-        setTTema(off[iRef.current] + Math.max(0, el.currentTime - segs[iRef.current].ini));
+        if (ahora - ultimo > 250) {
+          ultimo = ahora;
+          setTTema(off[iRef.current] + Math.max(0, el.currentTime - segs[iRef.current].ini));
+        }
       }
       raf = requestAnimationFrame(tick);
     };
@@ -149,6 +153,11 @@ export function VideoTema({ id, titulo }: { id: string; titulo: string }) {
           >
             {s.vtt && <track key={s.vtt} kind="captions" srcLang="es" label="Español" src={asset(s.vtt)} default={subs} />}
           </video>
+        )}
+        {!falla && !jugando && (
+          <button type="button" className="vtema__toque" aria-label="Reproducir" onClick={() => void ref.current?.play().catch(() => undefined)}>
+            <Icon name="play" size={30} />
+          </button>
         )}
         <div className="vtema__barra">
           <button
